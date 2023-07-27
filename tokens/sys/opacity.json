@@ -1,0 +1,8 @@
+{
+  "opacity": {
+    "disabled": {
+      "value": "{opacity.300}",
+      "type": "opacity"
+    }
+  }
+}

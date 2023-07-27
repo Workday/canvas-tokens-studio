@@ -1,0 +1,28 @@
+{
+  "depth": {
+    "1": {
+      "value": "{shadow.100}",
+      "type": "boxShadow"
+    },
+    "2": {
+      "value": "{shadow.200}",
+      "type": "boxShadow"
+    },
+    "3": {
+      "value": "{shadow.300}",
+      "type": "boxShadow"
+    },
+    "4": {
+      "value": "{shadow.400}",
+      "type": "boxShadow"
+    },
+    "5": {
+      "value": "{shadow.500}",
+      "type": "boxShadow"
+    },
+    "6": {
+      "value": "{shadow.600}",
+      "type": "boxShadow"
+    }
+  }
+}

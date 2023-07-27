@@ -1,0 +1,27 @@
+{
+  "shape": {
+    "zero": {
+      "value": "0rem",
+      "type": "borderRadius"
+    },
+    "small": {
+      "value": "{base.dimension}*0.5",
+      "type": "borderRadius",
+      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches."
+    },
+    "medium": {
+      "value": "{base.dimension}",
+      "type": "borderRadius",
+      "description": "Use this for form components presenting text information or inputs: Text Inputs and Text Area, Dropdowns, Menus and Banners.\n"
+    },
+    "large": {
+      "value": "{base.dimension}*2",
+      "type": "borderRadius",
+      "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts.\n"
+    },
+    "circle": {
+      "value": "62.5 * {base.dimension}",
+      "type": "borderRadius"
+    }
+  }
+}

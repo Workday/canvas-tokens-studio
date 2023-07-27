@@ -1,0 +1,16 @@
+{
+  "tokenSetOrder": [
+    "base",
+    "sys/brand/cnvs",
+    "sys/brand/brand-a",
+    "sys/brand/brand-b",
+    "sys/color",
+    "sys/space",
+    "sys/shape",
+    "sys/type",
+    "sys/depth",
+    "sys/border",
+    "sys/opacity",
+    "component/button"
+  ]
+}

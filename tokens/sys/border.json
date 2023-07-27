@@ -1,0 +1,99 @@
+{
+  "line": {
+    "alert": {
+      "value": {
+        "color": "{palette.cantaloupe.600}",
+        "width": "1",
+        "style": "inner"
+      },
+      "type": "border"
+    },
+    "focus": {
+      "value": {
+        "color": "{palette.blueberry.400}",
+        "width": "1",
+        "style": "outer"
+      },
+      "type": "border"
+    },
+    "hover": {
+      "value": {
+        "color": "{palette.licorice.500}",
+        "width": "1",
+        "style": "inner"
+      },
+      "type": "border"
+    },
+    "default": {
+      "value": {
+        "color": "{palette.licorice.200}",
+        "width": "1",
+        "style": "inner"
+      },
+      "type": "border"
+    },
+    "error": {
+      "value": {
+        "color": "{palette.cinnamon.500}",
+        "width": "1",
+        "style": "outer"
+      },
+      "type": "border"
+    },
+    "disabled": {
+      "value": {
+        "color": "{palette.soap.600}",
+        "width": "1",
+        "style": "inner"
+      },
+      "type": "border"
+    }
+  },
+  "border": {
+    "input": {
+      "default": {
+        "value": {
+          "border": "{line.default}"
+        },
+        "type": "composition"
+      },
+      "hover": {
+        "value": {
+          "border": "{line.hover}"
+        },
+        "type": "composition"
+      },
+      "focus": {
+        "value": {
+          "color": "{palette.blueberry.400}",
+          "width": "1px",
+          "style": "solid",
+          "boxShadow": "{shadow.solid.inner.focus}"
+        },
+        "type": "composition"
+      },
+      "disabled": {
+        "value": {
+          "color": "{palette.soap.600}",
+          "width": "1",
+          "style": "solid"
+        },
+        "type": "composition"
+      },
+      "alert": {
+        "value": {
+          "boxShadow": "{shadow.solid.inner.alert}",
+          "border": "{line.alert}"
+        },
+        "type": "composition"
+      },
+      "error": {
+        "value": {
+          "boxShadow": "{shadow.solid.inner.error}",
+          "border": "{line.error}"
+        },
+        "type": "composition"
+      }
+    }
+  }
+}
