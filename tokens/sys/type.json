@@ -82,7 +82,7 @@
           "fontFamily": "{font-family.50}",
           "fontWeight": "{font-weight.400}",
           "letterSpacing": "{letter-spacing.100}",
-          "lineHeight": "{line-height.200}",
+          "lineHeight": "{line-height.250}",
           "fontSize": "{font-size.100}"
         },
         "type": "typography"
@@ -249,6 +249,24 @@
         "value": "{line-height.700}",
         "type": "lineHeights"
       }
+    }
+  },
+  "font-weight": {
+    "light": {
+      "value": "{font-weight.300}",
+      "type": "fontWeights"
+    },
+    "normal": {
+      "value": "{font-weight.400}",
+      "type": "fontWeights"
+    },
+    "medium": {
+      "value": "{font-weight.500}",
+      "type": "fontWeights"
+    },
+    "bold": {
+      "value": "{font-weight.700}",
+      "type": "fontWeights"
     }
   }
 }

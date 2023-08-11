@@ -1,9 +1,9 @@
 {
   "tokenSetOrder": [
     "base",
-    "sys/brand/cnvs",
-    "sys/brand/brand-a",
-    "sys/brand/brand-b",
+    "brand/default",
+    "brand/brand-a",
+    "brand/brand-b",
     "sys/color",
     "sys/space",
     "sys/shape",
