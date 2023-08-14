@@ -5,7 +5,8 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base": "enabled",
-      "sys/other": "disabled"
+      "sys/other": "disabled",
+      "sys/opacity": "disabled"
     },
     "group": "Base",
     "$figmaCollectionId": "VariableCollectionId:19450:543",
@@ -194,7 +195,8 @@
     "selectedTokenSets": {
       "base": "source",
       "brand/default": "enabled",
-      "sys/other": "disabled"
+      "sys/other": "disabled",
+      "sys/opacity": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -240,7 +242,8 @@
     "selectedTokenSets": {
       "base": "source",
       "brand/brand-a": "enabled",
-      "sys/other": "disabled"
+      "sys/other": "disabled",
+      "sys/opacity": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -286,7 +289,8 @@
     "selectedTokenSets": {
       "base": "source",
       "brand/brand-b": "enabled",
-      "sys/other": "disabled"
+      "sys/other": "disabled",
+      "sys/opacity": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -354,8 +358,8 @@
       "sys/type": "enabled",
       "sys/depth": "enabled",
       "sys/border": "enabled",
-      "sys/opacity": "enabled",
-      "sys/other": "disabled"
+      "sys/other": "enabled",
+      "sys/opacity": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:751",
     "$figmaModeId": "19450:9",
