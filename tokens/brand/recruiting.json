@@ -1,0 +1,190 @@
+{
+  "brand": {
+    "primary": {
+      "lightest": {
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.7",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "light": {
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.3",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "base": {
+        "value": "#207936",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.15",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "darkest": {
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.3",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "accent": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      }
+    },
+    "alert": {
+      "lightest": {
+        "value": "{palette.cantaloupe.100}",
+        "type": "color",
+        "$extensions": {}
+      },
+      "light": {
+        "value": "{palette.cantaloupe.200}",
+        "type": "color",
+        "$extensions": {}
+      },
+      "base": {
+        "value": "{palette.cantaloupe.400}",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{palette.cantaloupe.500}",
+        "type": "color",
+        "$extensions": {}
+      },
+      "darkest": {
+        "value": "{palette.cantaloupe.600}",
+        "type": "color",
+        "$extensions": {}
+      },
+      "accent": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color",
+        "$extensions": {}
+      }
+    },
+    "error": {
+      "lightest": {
+        "value": "{palette.cinnamon.100}",
+        "type": "color"
+      },
+      "light": {
+        "value": "{palette.cinnamon.200}",
+        "type": "color"
+      },
+      "base": {
+        "value": "{palette.cinnamon.500}",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{palette.cinnamon.600}",
+        "type": "color"
+      },
+      "darkest": {
+        "value": "{palette.cinnamon.500}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.4",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "accent": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      }
+    },
+    "success": {
+      "lightest": {
+        "value": "{palette.green-apple.100}",
+        "type": "color"
+      },
+      "light": {
+        "value": "{palette.green-apple.300}",
+        "type": "color"
+      },
+      "base": {
+        "value": "{palette.green-apple.400}",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{palette.green-apple.500}",
+        "type": "color"
+      },
+      "darkest": {
+        "value": "{palette.green-apple.600}",
+        "type": "color"
+      },
+      "accent": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      }
+    },
+    "neutral": {
+      "lightest": {
+        "value": "{palette.soap.200}",
+        "type": "color"
+      },
+      "light": {
+        "value": "{palette.soap.300}",
+        "type": "color"
+      },
+      "base": {
+        "value": "{palette.soap.600}",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{palette.licorice.300}",
+        "type": "color"
+      },
+      "darkest": {
+        "value": "{palette.licorice.400}",
+        "type": "color"
+      },
+      "accent": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      }
+    },
+    "common": {
+      "focusOutline": {
+        "value": "{palette.blueberry.400}",
+        "type": "color"
+      }
+    }
+  }
+}
