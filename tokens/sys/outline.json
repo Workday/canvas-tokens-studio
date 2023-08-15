@@ -44,7 +44,7 @@
             "y": "0",
             "blur": "0",
             "spread": "2",
-            "color": "{brand.error.base}",
+            "color": "{palette.cinnamon.500}",
             "type": "innerShadow"
           }
         ],

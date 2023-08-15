@@ -20,7 +20,7 @@
       "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts.\n"
     },
     "circle": {
-      "value": "62.5 * {base.dimension}",
+      "value": "249.75 * {base.dimension}",
       "type": "borderRadius"
     }
   }
