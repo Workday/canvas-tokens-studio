@@ -293,7 +293,7 @@
           "type": "color"
         },
         "alert": {
-          "value": "{palette.cantaloupe.400}",
+          "value": "{palette.cantaloupe.600}",
           "type": "color"
         }
       }
