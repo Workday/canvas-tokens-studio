@@ -332,11 +332,11 @@
         "type": "color"
       },
       "text": {
-        "value": "{color.fg.type.link}",
+        "value": "{color.fg.type.link.default}",
         "type": "color"
       },
       "text-pressed": {
-        "value": "{color.fg.type.link-pressed}",
+        "value": "{color.fg.type.link.active}",
         "type": "color"
       }
     },

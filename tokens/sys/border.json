@@ -19,7 +19,7 @@
     "active": {
       "value": {
         "color": "{palette.blueberry.400}",
-        "width": "1",
+        "width": "2",
         "style": "solid"
       },
       "type": "border"
