@@ -325,8 +325,13 @@
       }
     },
     "common": {
-      "focusOutline": {
+      "focus-outline": {
         "value": "#08fff4",
+        "type": "color",
+        "$extensions": {}
+      },
+      "error-outline": {
+        "value": "{brand.error.base}",
         "type": "color",
         "$extensions": {}
       }

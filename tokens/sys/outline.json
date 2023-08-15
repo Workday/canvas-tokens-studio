@@ -16,7 +16,7 @@
             "y": "0",
             "blur": "0",
             "spread": "4",
-            "color": "{brand.common.focusOutline}",
+            "color": "{brand.common.focus-outline}",
             "type": "dropShadow"
           }
         ],

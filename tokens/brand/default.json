@@ -145,8 +145,12 @@
       }
     },
     "common": {
-      "focusOutline": {
+      "focus-outline": {
         "value": "{palette.blueberry.400}",
+        "type": "color"
+      },
+      "error-outline": {
+        "value": "{palette.cinnamon.500}",
         "type": "color"
       }
     }

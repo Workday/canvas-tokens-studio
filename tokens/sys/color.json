@@ -139,11 +139,11 @@
         "active": {
           "value": "{palette.blueberry.600}",
           "type": "color"
-        },
-        "gradient": {
-          "value": "linear-gradient(90deg, {palette.blueberry.500} 0%, {palette.blueberry.400} 100%);",
-          "type": "color"
         }
+      },
+      "gradient": {
+        "value": "linear-gradient(90deg, {palette.blueberry.500} 0%, {palette.blueberry.400} 100%);",
+        "type": "color"
       },
       "delete": {
         "default": {
@@ -272,28 +272,38 @@
     },
     "border": {
       "input": {
-        "value": "{palette.licorice.200}",
-        "type": "color",
+        "default": {
+          "value": "{palette.licorice.200}",
+          "type": "color",
+          "error": {
+            "value": "{palette.cinnamon.500}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "value": "{palette.licorice.500}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{palette.soap.600}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "error": {
+            "value": "{palette.cinnamon.500}",
+            "type": "color"
+          }
+        },
         "error": {
           "value": "{palette.cinnamon.500}",
           "type": "color"
+        },
+        "alert": {
+          "value": "{palette.cantaloupe.400}",
+          "type": "color"
         }
-      },
-      "input-hover": {
-        "value": "{palette.licorice.500}",
-        "type": "color"
-      },
-      "input-disabled": {
-        "value": "{palette.soap.600}",
-        "type": "color"
-      },
-      "input-error": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color"
-      },
-      "input-alert": {
-        "value": "{palette.cantaloupe.400}",
-        "type": "color"
       }
     },
     "shadow": {
@@ -307,7 +317,7 @@
       }
     },
     "focus-ring": {
-      "value": "{brand.common.focusOutline}",
+      "value": "{brand.common.focus-outline}",
       "type": "color"
     },
     "overlay": {

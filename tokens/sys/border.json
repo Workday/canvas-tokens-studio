@@ -1,18 +1,10 @@
 {
   "line": {
-    "alert": {
+    "default": {
       "value": {
-        "color": "{palette.cantaloupe.600}",
+        "color": "{palette.licorice.200}",
         "width": "1",
         "style": "inner"
-      },
-      "type": "border"
-    },
-    "focus": {
-      "value": {
-        "color": "{palette.blueberry.400}",
-        "width": "1",
-        "style": "outer"
       },
       "type": "border"
     },
@@ -24,9 +16,25 @@
       },
       "type": "border"
     },
-    "default": {
+    "active": {
       "value": {
-        "color": "{palette.licorice.200}",
+        "color": "{palette.blueberry.400}",
+        "width": "1",
+        "style": "solid"
+      },
+      "type": "border"
+    },
+    "disabled": {
+      "value": {
+        "color": "{palette.soap.600}",
+        "width": "1",
+        "style": "inner"
+      },
+      "type": "border"
+    },
+    "alert": {
+      "value": {
+        "color": "{palette.cantaloupe.600}",
         "width": "1",
         "style": "inner"
       },
@@ -37,14 +45,6 @@
         "color": "{palette.cinnamon.500}",
         "width": "1",
         "style": "outer"
-      },
-      "type": "border"
-    },
-    "disabled": {
-      "value": {
-        "color": "{palette.soap.600}",
-        "width": "1",
-        "style": "inner"
       },
       "type": "border"
     }
@@ -63,34 +63,29 @@
         },
         "type": "composition"
       },
-      "focus": {
+      "active": {
         "value": {
-          "color": "{palette.blueberry.400}",
-          "width": "1px",
-          "style": "solid",
-          "boxShadow": "{shadow.solid.inner.focus}"
+          "border": "{line.active}"
         },
         "type": "composition"
       },
       "disabled": {
         "value": {
-          "color": "{palette.soap.600}",
-          "width": "1",
-          "style": "solid"
+          "border": "{line.disabled}"
         },
         "type": "composition"
       },
       "alert": {
         "value": {
-          "boxShadow": "{shadow.solid.inner.alert}",
-          "border": "{line.alert}"
+          "border": "{line.alert}",
+          "boxShadow": "{outline.inner.alert}"
         },
         "type": "composition"
       },
       "error": {
         "value": {
-          "boxShadow": "{shadow.solid.inner.error}",
-          "border": "{line.error}"
+          "border": "{line.error}",
+          "boxShadow": "{outline.inner.error}"
         },
         "type": "composition"
       }

@@ -4,9 +4,7 @@
     "name": "Base",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "base": "enabled",
-      "sys/outline": "disabled",
-      "brand/recruiting": "disabled"
+      "base": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19451:1089",
     "$figmaModeId": "19457:0",
@@ -194,9 +192,7 @@
     "name": "Default",
     "selectedTokenSets": {
       "base": "source",
-      "brand/default": "enabled",
-      "sys/outline": "disabled",
-      "brand/recruiting": "disabled"
+      "brand/default": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -230,7 +226,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focusOutline": "42e05f6461b251a4d07dee28a096f489f28c49de"
+      "brand.common.focus-outline": "42e05f6461b251a4d07dee28a096f489f28c49de",
+      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:719",
     "$figmaModeId": "19450:6",
@@ -244,16 +241,50 @@
       "base": "source",
       "brand/recruiting": "enabled"
     },
-    "group": "Brand"
+    "$figmaVariableReferences": {
+      "brand.primary.lightest": "ba3e494f89f36458e175245cc53e4aacb70ca774",
+      "brand.primary.light": "49f513925937b48a068d06d5980da189abf15672",
+      "brand.primary.base": "63305e2edcb22519c8161af1902586d383b35c60",
+      "brand.primary.dark": "2aa995d91e5ff8a794238cf41553fc2663886c74",
+      "brand.primary.darkest": "e069d638e5fa01a875d26f2a19726ee582ffaca6",
+      "brand.primary.accent": "71067645d02d2bbd02cd7a73bcf382c85f7885a0",
+      "brand.alert.lightest": "6b4903c394b9fc67cdfdfd9a7bbd11d89a7881b0",
+      "brand.alert.light": "d94044195d27867cf696813e8739b300b84b2c89",
+      "brand.alert.base": "79c054e8469d5e2354dec00faa4c674f031add0d",
+      "brand.alert.dark": "9d8efa4fa7d4275d01b7ca9db9dbd75e592734c3",
+      "brand.alert.darkest": "dfa87c8b0302319a6fb7aefb42c8caa5072aeed7",
+      "brand.alert.accent": "c903d0889117f42fb6d3532b3995b184802d9c21",
+      "brand.error.lightest": "2e514bad234423244a416da4287d41b7242126de",
+      "brand.error.light": "ab7259fbdac6184da4416f7edd412e4998152080",
+      "brand.error.base": "af674b5c018a923e4dd56ed01af0cef551261dd0",
+      "brand.error.dark": "afc73b3533ee09645511724dca5b9423f49d51ef",
+      "brand.error.darkest": "02a883d496b31510b912496a125f15bd1e893f0e",
+      "brand.error.accent": "6c1c3e8c9cdcf082facd6df96a01bad41d2b38e0",
+      "brand.success.lightest": "baf4f6f7f949a7b4b94094738ba2695702364f34",
+      "brand.success.light": "44dcf89ef885507adbf769d2432e7915ec831273",
+      "brand.success.base": "0c71c233962d0382d15aea29b1874a1938064d77",
+      "brand.success.dark": "7d8b15cbd29f1d79c7eab783253546969d15f32a",
+      "brand.success.darkest": "76b79f47651b9d368fbe6569cb4d283ed8ca0fb0",
+      "brand.success.accent": "bcb3f7be648d592ef2838fe6edfd9a078b44c5c9",
+      "brand.neutral.lightest": "0079ca375f211e45b11fce397424df6e940f8d85",
+      "brand.neutral.light": "cd11b635deac701f4c9bb6486378898fff62b68f",
+      "brand.neutral.base": "e8810fffa2b7e050c8e6456c286b5e7b06cc48f1",
+      "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
+      "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
+      "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
+      "brand.common.focus-outline": "c86f9687829a16b28bd7111dd995373ffd34231d",
+      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
+    },
+    "group": "Brand",
+    "$figmaCollectionId": "VariableCollectionId:19450:719",
+    "$figmaModeId": "19463:0"
   },
   {
     "id": "6ca304153445ff80c95aed8790b5445a5dead0ef",
     "name": "Brand A",
     "selectedTokenSets": {
       "base": "source",
-      "brand/brand-a": "enabled",
-      "sys/outline": "disabled",
-      "brand/recruiting": "disabled"
+      "brand/brand-a": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -287,7 +318,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focusOutline": "42e05f6461b251a4d07dee28a096f489f28c49de"
+      "brand.common.focus-outline": "42e05f6461b251a4d07dee28a096f489f28c49de",
+      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:719",
     "$figmaModeId": "19450:7",
@@ -298,9 +330,7 @@
     "name": "Brand B",
     "selectedTokenSets": {
       "base": "source",
-      "brand/brand-b": "enabled",
-      "sys/outline": "disabled",
-      "brand/recruiting": "disabled"
+      "brand/brand-b": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -334,7 +364,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focusOutline": "42e05f6461b251a4d07dee28a096f489f28c49de"
+      "brand.common.focus-outline": "42e05f6461b251a4d07dee28a096f489f28c49de",
+      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:719",
     "$figmaModeId": "19450:8",
@@ -369,7 +400,7 @@
       "sys/depth": "enabled",
       "sys/border": "enabled",
       "sys/outline": "enabled",
-      "brand/recruiting": "disabled"
+      "sys/opacity": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:751",
     "$figmaModeId": "19450:9",
@@ -414,11 +445,12 @@
       "color.fg.icon.primary": "caa95e035967d8d7432ad7fb16a17e21e750baad",
       "color.fg.link.default": "d217d0d848981ff49fcdc95121c73f70e182d2ed",
       "color.fg.link.active": "73a5c63c2f1f80af85c9734ecfccf69d642f6520",
-      "color.border.input": "77579421ae05802afaf3b803629421d8652e5b33",
-      "color.border.input-hover": "adb23a5ec7c2f5dbcccb0707509236b656187105",
-      "color.border.input-disabled": "edf3b4dd44bdb4def3cbfd22d7ea5bcf57374061",
-      "color.border.input-error": "f4d81924f353bace59e13d13a700ab26137e3bbf",
-      "color.border.input-alert": "791cd9919451f8d22aa5d89d62baab709cea0194",
+      "color.border.input.default": "77579421ae05802afaf3b803629421d8652e5b33",
+      "color.border.input.hover": "adb23a5ec7c2f5dbcccb0707509236b656187105",
+      "color.border.input.disabled": "edf3b4dd44bdb4def3cbfd22d7ea5bcf57374061",
+      "color.border.input.active": "afae8eba366784c0df16bb91d530a2b1fe59bc93",
+      "color.border.input.error": "f4d81924f353bace59e13d13a700ab26137e3bbf",
+      "color.border.input.alert": "791cd9919451f8d22aa5d89d62baab709cea0194",
       "color.shadow.main": "06c21e18703ad6f2a5d267182a5f9b4ca187724a",
       "color.shadow.accent": "3d57b8e58465bf35c2d5a8fa4a8042f5efae5368",
       "color.focus-ring": "7210f7286bd5cd96f2e6020957b8cf84d5f384d9",
@@ -440,9 +472,9 @@
       "color.data-viz.07": "ea7c882c316c12c320b4f6cbdf430563f9c6508e",
       "color.data-viz.08": "149fcfee9d56744d48d185366247aef35af9bfc8",
       "color.data-viz.09": "28d8ac42fbcf616fbdd6bd591328d407a8212a63",
-      "font-size.subtext.small": "33e607a87b2699c8cf484e3a987b3336a136e19d",
-      "font-size.subtext.medium": "e2eda8e5652f65964f2fe09fabf73ce0571cb0a9",
       "font-size.subtext.large": "edc8bef96e93eaacdf743c1bbddf3fd8099ef886",
+      "font-size.subtext.medium": "e2eda8e5652f65964f2fe09fabf73ce0571cb0a9",
+      "font-size.subtext.small": "33e607a87b2699c8cf484e3a987b3336a136e19d",
       "font-size.body.small": "3279e4bef4ce15e157a4a62991606d3999390b3a",
       "font-size.body.medium": "e0f08a2ac42cc4b20c6471db4dcfc896ba5b6ca2",
       "font-size.body.large": "6a8a65768a2854876c8e3ea8451ea3309e25c388",

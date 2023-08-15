@@ -181,8 +181,12 @@
       }
     },
     "common": {
-      "focusOutline": {
-        "value": "{palette.blueberry.400}",
+      "focus-outline": {
+        "value": "{brand.primary.base}",
+        "type": "color"
+      },
+      "error-outline": {
+        "value": "{brand.error.base}",
         "type": "color"
       }
     }

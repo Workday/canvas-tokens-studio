@@ -137,16 +137,16 @@
   },
   "font-size": {
     "subtext": {
-      "small": {
-        "value": "{font-size.25}",
+      "large": {
+        "value": "{font-size.75}",
         "type": "sizing"
       },
       "medium": {
         "value": "{font-size.50}",
         "type": "sizing"
       },
-      "large": {
-        "value": "{font-size.75}",
+      "small": {
+        "value": "{font-size.25}",
         "type": "sizing"
       }
     },
