@@ -7,7 +7,7 @@
           "borderRadius": "{shape.medium}",
           "borderColor": "{color.border.input.default}",
           "fill": "{color.bg.default}",
-          "boxShadow": "none"
+          "boxShadow": "{focus.inactive}"
         },
         "type": "composition"
       },
