@@ -16,35 +16,11 @@
       },
       "type": "border"
     },
-    "active": {
-      "value": {
-        "color": "{color.border.input.active}",
-        "width": "2",
-        "style": "solid"
-      },
-      "type": "border"
-    },
     "disabled": {
       "value": {
         "color": "{color.border.input.disabled}",
         "width": "1",
         "style": "inner"
-      },
-      "type": "border"
-    },
-    "alert": {
-      "value": {
-        "color": "{color.border.input.alert}",
-        "width": "1",
-        "style": "inner"
-      },
-      "type": "border"
-    },
-    "error": {
-      "value": {
-        "color": "{color.border.input.error}",
-        "width": "1",
-        "style": "outer"
       },
       "type": "border"
     }
@@ -63,29 +39,9 @@
         },
         "type": "composition"
       },
-      "active": {
-        "value": {
-          "border": "{line.active}"
-        },
-        "type": "composition"
-      },
       "disabled": {
         "value": {
           "border": "{line.disabled}"
-        },
-        "type": "composition"
-      },
-      "alert": {
-        "value": {
-          "border": "{line.alert}",
-          "boxShadow": "{outline.inner.alert}"
-        },
-        "type": "composition"
-      },
-      "error": {
-        "value": {
-          "border": "{line.error}",
-          "boxShadow": "{outline.inner.error}"
         },
         "type": "composition"
       }

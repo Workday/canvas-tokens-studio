@@ -12,7 +12,6 @@
     "sys/depth",
     "sys/border",
     "sys/opacity",
-    "sys/outline",
     "component/button",
     "component/input"
   ]

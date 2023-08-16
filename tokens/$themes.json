@@ -399,7 +399,6 @@
       "sys/type": "enabled",
       "sys/depth": "enabled",
       "sys/border": "enabled",
-      "sys/outline": "enabled",
       "sys/opacity": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:751",
