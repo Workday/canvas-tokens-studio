@@ -174,11 +174,7 @@
       "input": {
         "default": {
           "value": "{palette.licorice.200}",
-          "type": "color",
-          "error": {
-            "value": "{palette.cinnamon.500}",
-            "type": "color"
-          }
+          "type": "color"
         },
         "hover": {
           "value": "{palette.licorice.500}",
