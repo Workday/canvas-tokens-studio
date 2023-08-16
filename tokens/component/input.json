@@ -7,7 +7,7 @@
           "borderRadius": "{shape.medium}",
           "borderColor": "{color.border.input.default}",
           "fill": "{color.bg.default}",
-          "boxShadow": "{focus.inactive}"
+          "boxShadow": "none"
         },
         "type": "composition"
       },
@@ -27,7 +27,7 @@
           "borderRadius": "{shape.medium}",
           "borderColor": "{brand.common.focus-outline}",
           "fill": "{color.bg.default}",
-          "boxShadow": "{focus.inactive}"
+          "boxShadow": "{input.focus.inactive}"
         },
         "type": "composition"
       },
@@ -37,7 +37,7 @@
           "borderRadius": "{shape.medium}",
           "borderColor": "{brand.common.error-inner}",
           "fill": "{color.bg.default}",
-          "boxShadow": "{focus.error}"
+          "boxShadow": "{input.focus.error}"
         },
         "type": "composition"
       },
@@ -47,7 +47,7 @@
           "borderRadius": "{shape.medium}",
           "borderColor": "{brand.alert.darkest}",
           "fill": "{color.bg.default}",
-          "boxShadow": "{focus.alert}"
+          "boxShadow": "{input.focus.alert}"
         },
         "type": "composition"
       }
