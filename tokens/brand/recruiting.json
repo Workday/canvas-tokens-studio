@@ -2,24 +2,60 @@
   "brand": {
     "primary": {
       "lightest": {
-        "value": "{palette.blueberry.100}",
-        "type": "color"
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.7",
+              "space": "lch"
+            }
+          }
+        }
       },
       "light": {
-        "value": "{palette.blueberry.200}",
-        "type": "color"
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.3",
+              "space": "lch"
+            }
+          }
+        }
       },
       "base": {
-        "value": "{palette.blueberry.400}",
+        "value": "#207936",
         "type": "color"
       },
       "dark": {
-        "value": "{palette.blueberry.500}",
-        "type": "color"
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.15",
+              "space": "lch"
+            }
+          }
+        }
       },
       "darkest": {
-        "value": "{palette.blueberry.600}",
-        "type": "color"
+        "value": "{brand.primary.base}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.3",
+              "space": "lch"
+            }
+          }
+        }
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
@@ -145,8 +181,12 @@
       }
     },
     "common": {
-      "focusOutline": {
-        "value": "{palette.blueberry.400}",
+      "focus-outline": {
+        "value": "{brand.primary.base}",
+        "type": "color"
+      },
+      "error-outline": {
+        "value": "{brand.error.base}",
         "type": "color"
       }
     }

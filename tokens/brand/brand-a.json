@@ -8,7 +8,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.2",
+              "value": "0.7",
               "space": "lch"
             }
           }
@@ -21,7 +21,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.1",
+              "value": "0.4",
               "space": "lch"
             }
           }
@@ -38,7 +38,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.1",
+              "value": "0.15",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -52,7 +52,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.2",
+              "value": "0.3",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -72,7 +72,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.2",
+              "value": "0.7",
               "space": "lch"
             }
           }
@@ -85,7 +85,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.1",
+              "value": "0.4",
               "space": "lch"
             }
           }
@@ -102,7 +102,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.1",
+              "value": "0.15",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -116,7 +116,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.2",
+              "value": "0.3",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -137,7 +137,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.2",
+              "value": "0.7",
               "space": "lch"
             }
           }
@@ -150,7 +150,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.1",
+              "value": "0.4",
               "space": "lch"
             }
           }
@@ -167,7 +167,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.1",
+              "value": "0.15",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -181,7 +181,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.2",
+              "value": "0.3",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -202,7 +202,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.2",
+              "value": "0.7",
               "space": "lch"
             }
           }
@@ -215,7 +215,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.1",
+              "value": "0.4",
               "space": "lch"
             }
           }
@@ -232,7 +232,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.1",
+              "value": "0.15",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -246,7 +246,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.2",
+              "value": "0.3",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -267,7 +267,7 @@
           "studio.tokens": {
             "modify": {
               "type": "lighten",
-              "value": "0.2",
+              "value": "0.3",
               "space": "lch"
             }
           }
@@ -297,7 +297,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.1",
+              "value": "0.3",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -311,7 +311,7 @@
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.2",
+              "value": "0.5",
               "space": "lch",
               "color": "{palette.licorice.600} "
             }
@@ -325,8 +325,13 @@
       }
     },
     "common": {
-      "focusOutline": {
+      "focus-outline": {
         "value": "#08fff4",
+        "type": "color",
+        "$extensions": {}
+      },
+      "error-outline": {
+        "value": "{brand.error.base}",
         "type": "color",
         "$extensions": {}
       }
