@@ -4,7 +4,8 @@
     "name": "Base",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "base": "enabled"
+      "base": "enabled",
+      "component/input": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19451:1089",
     "$figmaModeId": "19457:0",
@@ -192,7 +193,8 @@
     "name": "Default",
     "selectedTokenSets": {
       "base": "source",
-      "brand/default": "enabled"
+      "brand/default": "enabled",
+      "component/input": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -239,7 +241,8 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base": "source",
-      "brand/recruiting": "enabled"
+      "brand/recruiting": "enabled",
+      "component/input": "disabled"
     },
     "$figmaVariableReferences": {
       "brand.primary.lightest": "ba3e494f89f36458e175245cc53e4aacb70ca774",
@@ -284,7 +287,8 @@
     "name": "Brand A",
     "selectedTokenSets": {
       "base": "source",
-      "brand/brand-a": "enabled"
+      "brand/brand-a": "enabled",
+      "component/input": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -330,7 +334,8 @@
     "name": "Brand B",
     "selectedTokenSets": {
       "base": "source",
-      "brand/brand-b": "enabled"
+      "brand/brand-b": "enabled",
+      "component/input": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -400,7 +405,8 @@
       "sys/depth": "enabled",
       "sys/border": "enabled",
       "sys/outline": "enabled",
-      "sys/opacity": "enabled"
+      "sys/opacity": "enabled",
+      "component/input": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:751",
     "$figmaModeId": "19450:9",

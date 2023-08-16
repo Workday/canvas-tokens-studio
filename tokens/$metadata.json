@@ -13,6 +13,7 @@
     "sys/border",
     "sys/opacity",
     "sys/outline",
-    "component/button"
+    "component/button",
+    "component/input"
   ]
 }

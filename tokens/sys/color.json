@@ -190,11 +190,7 @@
         },
         "active": {
           "value": "{palette.blueberry.400}",
-          "type": "color",
-          "error": {
-            "value": "{palette.cinnamon.500}",
-            "type": "color"
-          }
+          "type": "color"
         },
         "error": {
           "value": "{palette.cinnamon.500}",
