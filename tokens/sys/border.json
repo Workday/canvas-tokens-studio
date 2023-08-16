@@ -1,50 +1,12 @@
 {
-  "line": {
-    "default": {
-      "value": {
-        "color": "{color.border.input.default}",
-        "width": "1",
-        "style": "inner"
-      },
-      "type": "border"
-    },
-    "hover": {
-      "value": {
-        "color": "{color.border.input.hover}",
-        "width": "1",
-        "style": "inner"
-      },
-      "type": "border"
-    },
-    "disabled": {
-      "value": {
-        "color": "{color.border.input.disabled}",
-        "width": "1",
-        "style": "inner"
-      },
-      "type": "border"
-    }
-  },
   "border": {
-    "input": {
-      "default": {
-        "value": {
-          "border": "{line.default}"
-        },
-        "type": "composition"
+    "div": {
+      "value": {
+        "color": "{palette.soap.500}",
+        "width": "1",
+        "style": "solid"
       },
-      "hover": {
-        "value": {
-          "border": "{line.hover}"
-        },
-        "type": "composition"
-      },
-      "disabled": {
-        "value": {
-          "border": "{line.disabled}"
-        },
-        "type": "composition"
-      }
+      "type": "border"
     }
   }
 }

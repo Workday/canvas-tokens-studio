@@ -226,8 +226,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focus-outline": "42e05f6461b251a4d07dee28a096f489f28c49de",
-      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
+      "brand.common.error.inner": "26cd927ce3dd6288bb5031d410f21afdec168746",
+      "brand.common.outer.focus": "42e05f6461b251a4d07dee28a096f489f28c49de"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:719",
     "$figmaModeId": "19450:6",
@@ -272,8 +272,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focus-outline": "c86f9687829a16b28bd7111dd995373ffd34231d",
-      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
+      "brand.common.error.inner": "26cd927ce3dd6288bb5031d410f21afdec168746",
+      "brand.common.outer.focus": "c86f9687829a16b28bd7111dd995373ffd34231d"
     },
     "group": "Brand",
     "$figmaCollectionId": "VariableCollectionId:19450:719",
@@ -318,8 +318,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focus-outline": "42e05f6461b251a4d07dee28a096f489f28c49de",
-      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
+      "brand.common.error.inner": "26cd927ce3dd6288bb5031d410f21afdec168746",
+      "brand.common.outer.focus": "42e05f6461b251a4d07dee28a096f489f28c49de"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:719",
     "$figmaModeId": "19450:7",
@@ -364,8 +364,8 @@
       "brand.neutral.dark": "75180fee6e4db3cc1dd59c50e38684393f78c4bc",
       "brand.neutral.darkest": "18999f9bc1dacbebed8a7972efe1a3633d9885a8",
       "brand.neutral.accent": "e40b0da90a3c8bc056caa14ebb8a508ba9565c9c",
-      "brand.common.focus-outline": "42e05f6461b251a4d07dee28a096f489f28c49de",
-      "brand.common.error-outline": "26cd927ce3dd6288bb5031d410f21afdec168746"
+      "brand.common.error.inner": "26cd927ce3dd6288bb5031d410f21afdec168746",
+      "brand.common.outer.focus": "42e05f6461b251a4d07dee28a096f489f28c49de"
     },
     "$figmaCollectionId": "VariableCollectionId:19450:719",
     "$figmaModeId": "19450:8",
