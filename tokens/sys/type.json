@@ -269,611 +269,547 @@
       "type": "fontWeights"
     }
   },
-  "more-styles": {
+  "More styles": {
     "subtext": {
-      "small": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.150}",
-            "font-size": "{font-size.25}",
-            "lettersmallpacing": "{letter-spacing.50}",
-            "fontSize": "{font-size.25}",
-            "letterSpacing": "{letter-spacing.50}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.50}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.25}"
-            },
-            "type": "typography",
-            "description": "smallubtext smallmall Link (10px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "mono": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.25}",
-              "lettersmallpacing": "{letter-spacing.50}"
-            },
-            "type": "typography",
-            "description": "smallubtext smallmall Mono (10px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          },
-          "description": "smallubtext smallmall (10px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
+      "small-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.50}"
         },
-        "700": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.700}",
-            "lineHeight": "{line-height.150}",
-            "font-size": "{font-size.25}",
-            "lettersmallpacing": "{letter-spacing.50}",
-            "fontSize": "{font-size.25}",
-            "letterSpacing": "{letter-spacing.50}"
-          },
-          "type": "typography",
-          "description": "smallubtext smallmall (10px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.bold}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.25}",
-              "lettersmallpacing": "{letter-spacing.50}"
-            },
-            "type": "typography",
-            "description": "smallubtext smallmall Link (10px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "mono": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.25}",
-              "lettersmallpacing": "{letter-spacing.50}"
-            },
-            "type": "typography",
-            "description": "smallubtext smallmall Mono (10px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          }
-        },
-        "link": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.50}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.25}",
-              "lettersmallpacing": "{letter-spacing.50}",
-              "textDecoration": "underline",
-              "fontSize": "{font-size.25}",
-              "letterSpacing": "{letter-spacing.50}"
-            },
-            "type": "typography",
-            "description": "smallubtext smallmall Link (10px) - (400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          }
-        },
-        "mono": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.25}",
-              "lettersmallpacing": "{letter-spacing.50}",
-              "fontSize": "{font-size.25}",
-              "letterSpacing": "{letter-spacing.50}"
-            },
-            "type": "typography",
-            "description": "smallubtext smallmall Mono (10px) - (400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          }
-        }
+        "type": "typography",
+        "description": "smallmall (10px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "medium": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.150}",
-            "font-size": "{font-size.50}",
-            "lettersmallpacing": "{letter-spacing.150}",
-            "fontSize": "{font-size.50}",
-            "letterSpacing": "{letter-spacing.100}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.50}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Medium Link (12px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "mono": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.50}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Medium Mono (12px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          },
-          "description": "smallubtext Medium (12px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
+      "small-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.50}",
+          "lineHeight": "{line-height.50}"
         },
-        "700": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.150}",
-            "lettersmallpacing": "{letter-spacing.200}",
-            "font-size": "{font-size.50}",
-            "fontSize": "{font-size.50}",
-            "letterSpacing": "{letter-spacing.100}"
-          },
-          "type": "typography",
-          "description": "smallubtext Medium (12px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.bold}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.50}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Medium Link (12px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "mono": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.700}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.50}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Medium Mono (12px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          }
-        },
-        "link": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.50}",
-              "lettersmallpacing": "{letter-spacing.150}",
-              "fontSize": "{font-size.50}",
-              "letterSpacing": "{letter-spacing.100}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "smallubtext Medium Link (12px) - (400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          }
-        },
-        "mono": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.50}",
-              "lettersmallpacing": "{letter-spacing.150}",
-              "fontSize": "{font-size.50}",
-              "letterSpacing": "{letter-spacing.100}"
-            },
-            "type": "typography",
-            "description": "smallubtext Medium Mono (12px) - (400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          }
-        }
+        "type": "typography",
+        "description": "smallmall (10px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "large": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.200}",
-            "font-size": "{font-size.250}",
-            "lettersmallpacing": "{letter-spacing.150}",
-            "fontSize": "{font-size.75}",
-            "letterSpacing": "{letter-spacing.150}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.250}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Large Link (14px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "mono": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.250}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Large Mono (14px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          },
-          "description": "smallubtext Large (14px).500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
+      "small-link-400": {
+        "value": {
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.50}",
+          "textDecoration": "underline",
+          "fontFamily": "{font-family.50}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.50}"
         },
-        "700": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.700}",
-            "lineHeight": "{line-height.200}",
-            "font-size": "{font-size.250}",
-            "lettersmallpacing": "{letter-spacing.150}",
-            "fontSize": "{font-size.75}",
-            "letterSpacing": "{letter-spacing.150}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.bold}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.250}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Large Link (14px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "mono": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.150}",
-              "font-size": "{font-size.250}",
-              "lettersmallpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Large Mono (14px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          },
-          "description": "smallubtext Large (14px) - 700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
+        "type": "typography",
+        "description": "smallmall-link(10px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "small-link-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.50}",
+          "textDecoration": "underline"
         },
-        "link": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.200}",
-              "font-size": "{font-size.250}",
-              "lettersmallpacing": "{letter-spacing.150}",
-              "fontSize": "{font-size.75}",
-              "letterSpacing": "{letter-spacing.150}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "smallubtext Large Link (14px) - (400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
-          }
+        "type": "typography",
+        "description": "smallmall-link(10px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "small-link-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.150}",
+          "textDecoration": "underline"
         },
-        "mono": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.200}",
-              "font-size": "{font-size.250}",
-              "lettersmallpacing": "{letter-spacing.150}",
-              "fontSize": "{font-size.75}",
-              "letterSpacing": "{letter-spacing.150}"
-            },
-            "type": "typography",
-            "description": "smallubtext Large Mono (14px) - (400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          }
-        }
+        "type": "typography",
+        "description": "smallmall-link(10px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "small-mono-400": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "smallmall-mono(10px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "small-mono-500": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "smallmall-mono(10px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "small-mono-700": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.25}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "smallmall-mono(10px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}"
+        },
+        "type": "typography",
+        "description": "mediumedium (12px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}"
+        },
+        "type": "typography",
+        "description": "mediumedium (12px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-link-400": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "mediumedium-link(12px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "medium-link-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "mediumedium-link(12px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "medium-link-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "mediumedium-link(12px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "medium-mono-400": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}"
+        },
+        "type": "typography",
+        "description": "mediumedium-mono(12px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-mono-500": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}"
+        },
+        "type": "typography",
+        "description": "mediumedium-mono(12px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-mono-700": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.50}",
+          "letterSpacing": "{letter-spacing.200}"
+        },
+        "type": "typography",
+        "description": "mediumedium-mono(12px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "largearge (14px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "largearge (14px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-link-400": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.200}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "largearge-link(14px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "large-link-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "largearge-link(14px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "large-link-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.200}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "largearge-link(14px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "large-mono-400": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "largearge-mono(14px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-mono-500": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "largearge-mono(14px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-mono-700": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.150}",
+          "fontSize": "{font-size.75}",
+          "letterSpacing": "{letter-spacing.150}"
+        },
+        "type": "typography",
+        "description": "largearge-mono(14px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     },
-    "body": {
-      "small": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.250}",
-            "font-size": "{font-size.100}",
-            "lettersmallpacing": "{letter-spacing.100}",
-            "fontSize": "{font-size.100}",
-            "letterSpacing": "{letter-spacing.200}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.200}",
-              "font-size": "{font-size.100}",
-              "lettersmallpacing": "{letter-spacing.100}"
-            },
-            "type": "typography",
-            "description": "Body smallmall Link (16px).500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "description": "Body smallmall (16px).500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
+    "Body": {
+      "small-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.250}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.100}"
         },
-        "700": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.250}",
-            "font-size": "{font-size.100}",
-            "lettersmallpacing": "{letter-spacing.100}",
-            "fontSize": "{font-size.100}",
-            "letterSpacing": "{letter-spacing.200}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.bold}",
-              "lineHeight": "{line-height.200}",
-              "font-size": "{font-size.100}",
-              "lettersmallpacing": "{letter-spacing.100}"
-            },
-            "type": "typography",
-            "description": "Body smallmall Link (16px) - 700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "description": "Body smallmall (16px) - 700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-        },
-        "link": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.200}",
-              "font-size": "{font-size.100}",
-              "lettersmallpacing": "{letter-spacing.100}",
-              "fontSize": "{font-size.100}",
-              "letterSpacing": "{letter-spacing.200}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "Body smallmall Link (16px) - (400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          }
-        },
-        "mono": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.mono}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.200}",
-              "font-size": "{font-size.100}",
-              "lettersmallpacing": "{letter-spacing.100}",
-              "fontSize": "{font-size.100}",
-              "letterSpacing": "{letter-spacing.200}"
-            },
-            "type": "typography",
-            "description": "Body smallmall Mono (16px) - (400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-          }
-        }
+        "type": "typography",
+        "description": "smallmall (16px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "medium": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.300}",
-            "font-size": "{font-size.125}",
-            "fontSize": "{font-size.125}"
-          },
-          "type": "typography",
-          "link": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.250}",
-              "font-size": "{font-size.125}"
-            },
-            "type": "typography",
-            "description": "mediumedium.link (18px).500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "description": "mediumedium-(18px).500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
+      "small-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.100}"
         },
-        "700": {
-          "value": {
-            "fontFamily": "{font-family.default}",
-            "fontWeight": "{font-weight.bold}",
-            "lineHeight": "{line-height.300}",
-            "font-size": "{font-size.125}",
-            "fontSize": "{font-size.125}",
-            "letterSpacing": "none"
-          },
-          "type": "typography",
-          "description": "mediumedium-(18px) - 700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nsmallee Type Color smallwatches"
-        },
-        "link": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.300}",
-              "font-size": "{font-size.125}",
-              "fontSize": "{font-size.125}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "mediumedium.link (18px) - (400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "700": {
-            "value": {
-              "fontFamily": "{font-family.default}",
-              "fontWeight": "{font-weight.bold}",
-              "lineHeight": "{line-height.300}",
-              "font-size": "{font-size.125}",
-              "fontSize": "{font-size.125}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "mediumedium.link (18px) - 700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          }
-        }
+        "type": "typography",
+        "description": "smallmall (16px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "large": {
-        "700": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "lineHeight": "{line-height.300}",
-            "fontSize": "{font-size.150}",
-            "fontWeight": "{font-weight.700}"
-          },
-          "type": "typography",
-          "description": "Body Large (20px) - (700) Bold\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      "small-link-400": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.100}",
+          "textDecoration": "underline"
         },
-        "link": {
-          "400": {
-            "value": {
-              "fontFamily": "{font-family.50}",
-              "fontWeight": "{font-weight.400}",
-              "lineHeight": "{line-height.300}",
-              "fontSize": "{font-size.150}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "Body Large Link(20px) - (400) Regular\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "500": {
-            "value": {
-              "fontFamily": "{font-family.50}",
-              "fontWeight": "{font-weight.500}",
-              "lineHeight": "{line-height.300}",
-              "fontSize": "{font-size.150}"
-            },
-            "type": "typography",
-            "description": "Body Large Link(20px) - (500) Medium\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          },
-          "700": {
-            "value": {
-              "fontFamily": "{font-family.50}",
-              "fontWeight": "{font-weight.700}",
-              "lineHeight": "{line-height.300}",
-              "fontSize": "{font-size.150}",
-              "textDecoration": "underline"
-            },
-            "type": "typography",
-            "description": "Body Large Link(20px) - (500) Medium\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
-          }
-        }
+        "type": "typography",
+        "description": "smallmall-link(16px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "small-link-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.250}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.100}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "smallmall-link(16px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "small-link-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.100}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "smallmall-link(16px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "small-mono-400": {
+        "value": {
+          "fontFamily": "{font-family.mono}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.250}",
+          "fontSize": "{font-size.100}",
+          "letterSpacing": "{letter-spacing.100}"
+        },
+        "type": "typography",
+        "description": "smallmall-mono(16px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.125}"
+        },
+        "type": "typography",
+        "description": "mediumedium (18px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.125}"
+        },
+        "type": "typography",
+        "description": "mediumedium (18px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-link-400": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.125}"
+        },
+        "type": "typography",
+        "description": "mediumedium-link(18px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "medium-link-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.125}"
+        },
+        "type": "typography",
+        "description": "mediumedium-link(18px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "medium-link-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.125}"
+        },
+        "type": "typography",
+        "description": "mediumedium-link(18px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "large-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.150}"
+        },
+        "type": "typography",
+        "description": "largearge (20px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.150}"
+        },
+        "type": "typography",
+        "description": "largearge (20px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-link-400": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.150}"
+        },
+        "type": "typography",
+        "description": "largearge-link(20px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "large-link-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.300}",
+          "fontSize": "{font-size.150}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "largearge-link(20px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
+      },
+      "large-link-700": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.700}",
+          "lineHeight": "{line-height.50}",
+          "fontSize": "{font-size.150}",
+          "textDecoration": "underline"
+        },
+        "type": "typography",
+        "description": "largearge-link(20px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
       }
     },
     "heading": {
-      "small": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.350}",
-            "fontSize": "{font-size.200}"
-          },
-          "type": "typography",
-          "description": "Heading Small (24px) - (500) Medium\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
-        }
+      "small-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.350}",
+          "fontSize": "{font-size.200}"
+        },
+        "type": "typography",
+        "description": "smallmall (24px)-500\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "medium": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.400}",
-            "fontSize": "{font-size.250}"
-          },
-          "type": "typography",
-          "description": "Heading Medium (28px) - (500) Medium\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
-        }
+      "medium-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.400}",
+          "fontSize": "{font-size.250}"
+        },
+        "type": "typography",
+        "description": "mediumedium (28px)-500\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "large": {
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.450}",
-            "fontSize": "{font-size.300}"
-          },
-          "type": "typography",
-          "description": "Heading Large (32px) - (500) Medium\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
-        }
+      "large-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.450}",
+          "fontSize": "{font-size.300}"
+        },
+        "type": "typography",
+        "description": "largearge (32px)-500\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     },
     "title": {
-      "small": {
-        "300": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.300}",
-            "lineHeight": "{line-height.500}",
-            "fontSize": "{font-size.400}"
-          },
-          "type": "typography",
-          "description": "Title Small (40px) - (300) Light\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+      "small-300": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.300}",
+          "lineHeight": "{line-height.500}",
+          "fontSize": "{font-size.400}"
         },
-        "500": {
-          "value": {
-            "fontSize": "{font-size.400}",
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.500}"
-          },
-          "type": "typography",
-          "description": "Title Small (40px) - (500) Medium\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
-        }
+        "type": "typography",
+        "description": "Title Small (40px)-300\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "medium": {
-        "300": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.300}",
-            "lineHeight": "{line-height.600}",
-            "fontSize": "{font-size.500}"
-          },
-          "type": "typography",
-          "description": "Title Medium (48px) - (300) Light\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+      "small-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.500}",
+          "fontSize": "{font-size.400}"
         },
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "lineHeight": "{line-height.600}",
-            "fontSize": "{font-size.500}"
-          },
-          "type": "typography",
-          "description": "Title Medium (48px) - (500) Medium\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
-        }
+        "type": "typography",
+        "description": "Title Small (40px)-500\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
-      "large": {
-        "300": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.300}",
-            "lineHeight": "{line-height.600}",
-            "fontSize": "{font-size.500}"
-          },
-          "type": "typography",
-          "description": "Title Large (56px) - (300) Light\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+      "medium-300": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.300}",
+          "lineHeight": "{line-height.600}",
+          "fontSize": "{font-size.500}"
         },
-        "500": {
-          "value": {
-            "fontFamily": "{font-family.50}",
-            "fontWeight": "{font-weight.500}",
-            "fontSize": "{font-size.600}",
-            "lineHeight": "{line-height.title.large}"
-          },
-          "type": "typography",
-          "description": "Title Small (56px) - (500) Medium\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
-        }
+        "type": "typography",
+        "description": "mediumedium (48px)-300\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "medium-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.600}",
+          "fontSize": "{font-size.500}"
+        },
+        "type": "typography",
+        "description": "mediumedium (48px)-500\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-300": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.300}",
+          "lineHeight": "{line-height.700}",
+          "fontSize": "{font-size.500}"
+        },
+        "type": "typography",
+        "description": "largearge (56px)-300\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+      },
+      "large-500": {
+        "value": {
+          "fontFamily": "{font-family.default}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.700}",
+          "fontSize": "{font-size.600}"
+        },
+        "type": "typography",
+        "description": "Title Small (56px)-500\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     }
   }
