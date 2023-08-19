@@ -270,7 +270,7 @@
     }
   },
   "More styles": {
-    "Subtext": {
+    "subtext": {
       "small-500": {
         "value": {
           "fontFamily": "{font-family.default}",
@@ -297,7 +297,7 @@
         "value": {
           "fontSize": "{font-size.25}",
           "letterSpacing": "{letter-spacing.50}",
-          "textDecoration": "underline",
+          "textDecoration": "/*underline*/",
           "fontFamily": "{font-family.50}",
           "fontWeight": "{font-weight.400}",
           "lineHeight": "{line-height.50}"
@@ -312,7 +312,7 @@
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.25}",
           "letterSpacing": "{letter-spacing.50}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "smallmall-link(10px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -324,7 +324,7 @@
           "lineHeight": "{line-height.50}",
           "fontSize": "{font-size.25}",
           "letterSpacing": "{letter-spacing.150}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "smallmall-link(10px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -391,7 +391,7 @@
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.50}",
           "letterSpacing": "{letter-spacing.200}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "mediumedium-link(12px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -403,7 +403,7 @@
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.50}",
           "letterSpacing": "{letter-spacing.200}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "mediumedium-link(12px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -415,7 +415,7 @@
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.50}",
           "letterSpacing": "{letter-spacing.200}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "mediumedium-link(12px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -482,7 +482,7 @@
           "lineHeight": "{line-height.200}",
           "fontSize": "{font-size.75}",
           "letterSpacing": "{letter-spacing.150}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "largearge-link(14px)-400\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -494,7 +494,7 @@
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.75}",
           "letterSpacing": "{letter-spacing.150}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "largearge-link(14px)-500\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -506,7 +506,7 @@
           "lineHeight": "{line-height.200}",
           "fontSize": "{font-size.75}",
           "letterSpacing": "{letter-spacing.150}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "largearge-link(14px)-700\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlueberry 400"
@@ -575,7 +575,7 @@
           "lineHeight": "{line-height.50}",
           "fontSize": "{font-size.100}",
           "letterSpacing": "{letter-spacing.100}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "smallmall-link(16px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -587,7 +587,7 @@
           "lineHeight": "{line-height.250}",
           "fontSize": "{font-size.100}",
           "letterSpacing": "{letter-spacing.100}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "smallmall-link(16px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -599,7 +599,7 @@
           "lineHeight": "{line-height.50}",
           "fontSize": "{font-size.100}",
           "letterSpacing": "{letter-spacing.100}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "smallmall-link(16px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -640,7 +640,8 @@
           "fontFamily": "{font-family.default}",
           "fontWeight": "{font-weight.400}",
           "lineHeight": "{line-height.50}",
-          "fontSize": "{font-size.125}"
+          "fontSize": "{font-size.125}",
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "mediumedium-link(18px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -650,7 +651,8 @@
           "fontFamily": "{font-family.default}",
           "fontWeight": "{font-weight.500}",
           "lineHeight": "{line-height.300}",
-          "fontSize": "{font-size.125}"
+          "fontSize": "{font-size.125}",
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "mediumedium-link(18px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -660,7 +662,8 @@
           "fontFamily": "{font-family.default}",
           "fontWeight": "{font-weight.700}",
           "lineHeight": "{line-height.300}",
-          "fontSize": "{font-size.125}"
+          "fontSize": "{font-size.125}",
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "mediumedium-link(18px)-700\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -690,7 +693,8 @@
           "fontFamily": "{font-family.default}",
           "fontWeight": "{font-weight.400}",
           "lineHeight": "{line-height.300}",
-          "fontSize": "{font-size.150}"
+          "fontSize": "{font-size.150}",
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "largearge-link(20px)-400\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -701,7 +705,7 @@
           "fontWeight": "{font-weight.500}",
           "lineHeight": "{line-height.300}",
           "fontSize": "{font-size.150}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "largearge-link(20px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"
@@ -712,7 +716,7 @@
           "fontWeight": "{font-weight.700}",
           "lineHeight": "{line-height.50}",
           "fontSize": "{font-size.150}",
-          "textDecoration": "underline"
+          "textDecoration": "/*underline*/"
         },
         "type": "typography",
         "description": "largearge-link(20px)-500\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlueberry 400"

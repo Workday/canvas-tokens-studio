@@ -3,36 +3,44 @@
     "bg": {
       "default": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color"
+        "type": "color",
+        "description": "Background Default"
       },
       "alt": {
         "value": "{palette.soap.200}",
-        "type": "color"
+        "type": "color",
+        "description": "Background Alt"
       },
       "hover": {
         "value": "{palette.soap.300}",
-        "type": "color"
+        "type": "color",
+        "description": "Hover"
       },
       "active": {
         "value": "{palette.soap.400}",
-        "type": "color"
+        "type": "color",
+        "description": "Background Active"
       },
       "selected": {
         "value": "{palette.blueberry.200}",
-        "type": "color"
+        "type": "color",
+        "description": "Selected BG\n"
       },
       "primary": {
         "default": {
           "value": "{palette.blueberry.400}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary Default"
         },
         "hover": {
           "value": "{palette.blueberry.500}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary Hover\n"
         },
         "active": {
           "value": "{palette.blueberry.600}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary Active"
         }
       },
       "secondary": {
