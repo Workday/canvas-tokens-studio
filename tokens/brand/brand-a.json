@@ -60,7 +60,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "cyan",
         "type": "color"
       }
     },
@@ -189,7 +189,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "cyan",
         "type": "color",
         "$extensions": {}
       }
