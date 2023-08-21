@@ -150,7 +150,7 @@
     },
     "common": {
       "focus-outline": {
-        "value": "{brand.error.base}",
+        "value": "{brand.primary.base}",
         "type": "color"
       },
       "error-inner": {
