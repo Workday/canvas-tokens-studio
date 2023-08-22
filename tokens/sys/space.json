@@ -20,6 +20,10 @@
       "value": "{base.dimension}*4",
       "type": "spacing"
     },
+    "x5": {
+      "value": "{base.dimension}*5",
+      "type": "spacing"
+    },
     "x6": {
       "value": "{base.dimension}*6",
       "type": "spacing"

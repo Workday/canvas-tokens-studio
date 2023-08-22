@@ -31,16 +31,6 @@
         },
         "type": "composition"
       },
-      "error": {
-        "value": {
-          "borderWidth": "1",
-          "borderRadius": "{shape.medium}",
-          "borderColor": "{brand.common.error-inner}",
-          "fill": "{color.bg.default}",
-          "boxShadow": "{input.focus.error}"
-        },
-        "type": "composition"
-      },
       "alert": {
         "value": {
           "borderWidth": "1",
@@ -48,6 +38,16 @@
           "borderColor": "{brand.alert.darkest}",
           "fill": "{color.bg.default}",
           "boxShadow": "{input.focus.alert}"
+        },
+        "type": "composition"
+      },
+      "error": {
+        "value": {
+          "borderWidth": "1",
+          "borderRadius": "{shape.medium}",
+          "borderColor": "{brand.common.error-inner}",
+          "fill": "{color.bg.default}",
+          "boxShadow": "{input.focus.error}"
         },
         "type": "composition"
       }
