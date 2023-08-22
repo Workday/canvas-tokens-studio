@@ -322,7 +322,7 @@
     },
     "common": {
       "focus-outline": {
-        "value": "#08fff4",
+        "value": "{brand.primary.base}",
         "type": "color"
       },
       "error-inner": {
