@@ -1,12 +1,10 @@
 {
   "border": {
-    "div": {
-      "value": {
-        "color": "{palette.soap.500}",
-        "width": "1",
-        "style": "solid"
-      },
-      "type": "border"
-    }
+    "value": {
+      "color": "{palette.soap.500}",
+      "width": "1",
+      "style": "solid"
+    },
+    "type": "border"
   }
 }

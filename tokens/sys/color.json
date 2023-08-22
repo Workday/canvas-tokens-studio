@@ -71,7 +71,7 @@
           "type": "color"
         },
         "active": {
-          "value": "{brand.error.dark}",
+          "value": "#80160E",
           "type": "color"
         }
       },
@@ -226,11 +226,11 @@
     },
     "overlay": {
       "modal": {
-        "value": "rgba( {palette.black-pepper.600},{opacity.400})",
+        "value": "rgba({palette.black-pepper.600},{opacity.400})",
         "type": "color"
       },
       "tooltip": {
-        "value": "rgba( {palette.black-pepper.600},{opacity.500})",
+        "value": "rgba({palette.black-pepper.600},{opacity.500})",
         "type": "color"
       }
     },
