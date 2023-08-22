@@ -60,7 +60,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "cyan",
         "type": "color"
       }
     },
@@ -188,7 +188,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "cyan",
         "type": "color"
       }
     },
@@ -333,6 +333,10 @@
         "value": "{brand.alert.base}",
         "type": "color"
       }
+    },
+    "gradient": {
+      "value": "linear-gradient(90deg, {brand.primary.base} 0%, {brand.primary.dark} 100%)",
+      "type": "color"
     }
   }
 }
