@@ -75,17 +75,8 @@
         "type": "color"
       },
       "darkest": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "darken",
-              "value": "0.4",
-              "space": "lch"
-            }
-          }
-        }
+        "value": "#80160E",
+        "type": "color"
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
