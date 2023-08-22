@@ -125,8 +125,7 @@
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "error": {
@@ -190,8 +189,7 @@
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "success": {
@@ -255,8 +253,7 @@
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "neutral": {
@@ -320,25 +317,21 @@
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "common": {
       "focus-outline": {
         "value": "{brand.primary.base}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "error-inner": {
         "value": "{brand.error.base}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "alert-inner": {
         "value": "{brand.alert.base}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "gradient": {

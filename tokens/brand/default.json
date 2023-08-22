@@ -3,13 +3,11 @@
     "primary": {
       "lightest": {
         "value": "{palette.blueberry.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "light": {
         "value": "{palette.blueberry.200}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "base": {
         "value": "{palette.blueberry.400}",
@@ -17,13 +15,11 @@
       },
       "dark": {
         "value": "{palette.blueberry.500}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "darkest": {
         "value": "{palette.blueberry.600}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
@@ -33,13 +29,11 @@
     "alert": {
       "lightest": {
         "value": "{palette.cantaloupe.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "light": {
         "value": "{palette.cantaloupe.200}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "base": {
         "value": "{palette.cantaloupe.400}",
@@ -47,18 +41,15 @@
       },
       "dark": {
         "value": "{palette.cantaloupe.500}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "darkest": {
         "value": "{palette.cantaloupe.600}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "error": {
@@ -79,17 +70,8 @@
         "type": "color"
       },
       "darkest": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "darken",
-              "value": "0.4",
-              "space": "lch"
-            }
-          }
-        }
+        "value": "#80160E",
+        "type": "color"
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
