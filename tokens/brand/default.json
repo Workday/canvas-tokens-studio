@@ -29,13 +29,11 @@
     "alert": {
       "lightest": {
         "value": "{palette.cantaloupe.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "light": {
         "value": "{palette.cantaloupe.200}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "base": {
         "value": "{palette.cantaloupe.400}",
@@ -43,18 +41,15 @@
       },
       "dark": {
         "value": "{palette.cantaloupe.500}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "darkest": {
         "value": "{palette.cantaloupe.600}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       },
       "accent": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "$extensions": {}
+        "type": "color"
       }
     },
     "error": {
