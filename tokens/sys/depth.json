@@ -1,28 +1,34 @@
 {
   "depth": {
-    "1": {
+    "cards": {
       "value": "{shadow.100}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Depth on Cards"
     },
-    "2": {
+    "navigation": {
       "value": "{shadow.200}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "The depth applied to navigational elements"
     },
-    "3": {
+    "inline": {
       "value": "{shadow.300}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Shadow applied to inline or contextual popups, such as Menus."
     },
-    "4": {
+    "sheets": {
       "value": "{shadow.400}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Shadow applied to Side or Bottom Sheets"
     },
-    "5": {
+    "popups": {
       "value": "{shadow.500}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Shadow applied to elements that pop-over other UI on the screen, such as Banners, Snackbars, Toast Messages, non-modal Dialogs, and non-modal Side Panels. "
     },
-    "6": {
+    "modal": {
       "value": "{shadow.600}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Shadows that appear modal views that block user interaction. These are paired with a scrim using the $opacity.modal color token."
     }
   }
 }

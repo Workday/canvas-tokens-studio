@@ -1,10 +1,10 @@
 {
   "tokenSetOrder": [
     "base",
-    "brand/default",
-    "brand/recruiting",
-    "brand/brand-a",
-    "brand/brand-b",
+    "sys/brand/default",
+    "sys/brand/recruiting",
+    "sys/brand/brand-a",
+    "sys/brand/brand-b",
     "sys/color",
     "sys/space",
     "sys/shape",

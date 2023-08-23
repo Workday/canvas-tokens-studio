@@ -316,11 +316,11 @@
         "type": "borderRadius"
       },
       "default": {
-        "value": "{color.bg.secondary.default}",
+        "value": "{color.bg.inverse.default}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.secondary.focus}",
+        "value": "{color.bg.inverse.focus}",
         "type": "color"
       },
       "hover": {
@@ -342,19 +342,19 @@
     },
     "secondary": {
       "default": {
-        "value": "{color.bg.secondary.default}",
+        "value": "{color.bg.inverse.default}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.secondary.default}",
+        "value": "{color.bg.inverse.default}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.secondary.hover}",
+        "value": "{color.bg.inverse.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.secondary.active}",
+        "value": "{color.bg.inverse.active}",
         "type": "color"
       },
       "fg": {

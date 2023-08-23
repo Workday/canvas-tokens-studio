@@ -1,7 +1,7 @@
 {
   "color": {
     "bg": {
-      "default": {
+      "base": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
         "description": "Background Default"
@@ -26,26 +26,9 @@
         "type": "color",
         "description": "Selected BG\n"
       },
-      "primary": {
+      "inverse": {
         "default": {
-          "value": "{palette.blueberry.400}",
-          "type": "color",
-          "description": "Primary Default"
-        },
-        "hover": {
-          "value": "{palette.blueberry.500}",
-          "type": "color",
-          "description": "Primary Hover\n"
-        },
-        "active": {
-          "value": "{palette.blueberry.600}",
-          "type": "color",
-          "description": "Primary Active"
-        }
-      },
-      "secondary": {
-        "default": {
-          "value": "none",
+          "value": "rgba({palette.french-vanilla.100},0)",
           "type": "color"
         },
         "focus": {
@@ -58,20 +41,6 @@
         },
         "active": {
           "value": "{palette.black-pepper.400}",
-          "type": "color"
-        }
-      },
-      "delete": {
-        "default": {
-          "value": "{palette.cinnamon.500}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{palette.cinnamon.600}",
-          "type": "color"
-        },
-        "active": {
-          "value": "#80160E",
           "type": "color"
         }
       },
@@ -95,7 +64,8 @@
       },
       "overlay": {
         "value": "rgba({palette.black-pepper.600},{opacity.400})",
-        "type": "color"
+        "type": "color",
+        "description": "The color of the overlay when you enter a modal state"
       }
     },
     "fg": {
