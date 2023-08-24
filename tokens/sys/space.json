@@ -9,43 +9,47 @@
       "type": "spacing"
     },
     "x2": {
-      "value": "{base.dimension}*2",
+      "value": "{base.dimension} * 2",
       "type": "spacing"
     },
     "x3": {
-      "value": "{base.dimension}*3",
+      "value": "{base.dimension} * 3",
       "type": "spacing"
     },
     "x4": {
-      "value": "{base.dimension}*4",
+      "value": "{base.dimension} * 4",
+      "type": "spacing"
+    },
+    "x5": {
+      "value": "{base.dimension} * 5",
       "type": "spacing"
     },
     "x6": {
-      "value": "{base.dimension}*6",
+      "value": "{base.dimension} * 6",
       "type": "spacing"
     },
     "x8": {
-      "value": "{base.dimension}*8",
+      "value": "{base.dimension} * 8",
       "type": "spacing"
     },
     "x10": {
-      "value": "{base.dimension}*10",
+      "value": "{base.dimension} * 10",
       "type": "spacing"
     },
     "x12": {
-      "value": "{base.dimension}*12",
+      "value": "{base.dimension} * 12",
       "type": "spacing"
     },
     "x14": {
-      "value": "{base.dimension}*14",
+      "value": "{base.dimension} * 14",
       "type": "spacing"
     },
     "x16": {
-      "value": "{base.dimension}*16",
+      "value": "{base.dimension} * 16",
       "type": "spacing"
     },
     "x20": {
-      "value": "{base.dimension}*20",
+      "value": "{base.dimension} * 20",
       "type": "spacing"
     }
   }

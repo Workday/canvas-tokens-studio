@@ -332,11 +332,11 @@
         "type": "color"
       },
       "text": {
-        "value": "{color.fg.type.link}",
+        "value": "{color.fg.type.link.default}",
         "type": "color"
       },
       "text-pressed": {
-        "value": "{color.fg.type.link-pressed}",
+        "value": "{color.fg.type.link.active}",
         "type": "color"
       }
     },
@@ -358,7 +358,7 @@
         "type": "color"
       },
       "fg": {
-        "value": "{brand.primary.accent}",
+        "value": "{color.fg.type.heading}",
         "type": "color",
         "inverse": {
           "value": "{color.fg.type.inverse}",
@@ -380,7 +380,7 @@
         "type": "color"
       },
       "fg": {
-        "value": "{color.fg.type.inverse}",
+        "value": "{brand.error.accent}",
         "type": "color"
       }
     }

@@ -2,26 +2,28 @@
   "shape": {
     "zero": {
       "value": "0rem",
-      "type": "borderRadius"
+      "type": "borderRadius",
+      "description": "This is the initial shape of every new element. Use this for backgrounds screens and fixed navigation containers such as headers, and side-panels.\n"
     },
     "small": {
-      "value": "{base.dimension}*0.5",
+      "value": "{base.dimension} * 0.5",
       "type": "borderRadius",
-      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches."
+      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches.\n"
     },
     "medium": {
       "value": "{base.dimension}",
       "type": "borderRadius",
-      "description": "Use this for form components presenting text information or inputs: Text Inputs and Text Area, Dropdowns, Menus and Banners.\n"
+      "description": "Use this for form components presenting text information or inputs: Text Inputs and Text Area, Dropdowns, Menus and Banners."
     },
     "large": {
-      "value": "{base.dimension}*2",
+      "value": "{base.dimension} * 2",
       "type": "borderRadius",
       "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts.\n"
     },
     "circle": {
-      "value": "62.5 * {base.dimension}",
-      "type": "borderRadius"
+      "value": "{base.dimension} * 250",
+      "type": "borderRadius",
+      "description": "Commonly used for our standard buttons and profile avatars: All Primary, Secondary Buttons, Radio Buttons and Notification Badges.\n"
     }
   }
 }
