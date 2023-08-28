@@ -553,9 +553,6 @@
       "font-size.title.medium": "99717a635004176520c74a718ad2894d8278e0cd",
       "font-size.title.large": "20f124f766147cd03848e7d2ba8d1afd5d520cc1",
       "shape.zero": "b52a47f925defa0b160c646932dc93ec17239e0c",
-      "shape.small": "b2d9bf3d84ce3d206a32783c24ba1d4b1b313711",
-      "shape.medium": "7108fb072918f3db95271e60e7c3ed1ea2f77881",
-      "shape.large": "a908fce29447f4b0787932bbd93bf160495bb66f",
       "shape.circle": "c256024c05979898f14cf0c2ed30bd9986df6944",
       "space.zero": "029a4b49d8c45c823c9f00c39a9d2f33f8ef2dbc",
       "space.x1": "7d99d6b769c3af7f1a39ca6bcfb9d7160ba9b84a",
@@ -633,7 +630,10 @@
       "color.data-viz.06": "b6e865f9092b6dfab827ee47dd78a9fb69c55362",
       "color.data-viz.07": "64692dfe6db55a58b70edcfdcfdb706bb2446ecf",
       "color.data-viz.08": "655e656d13e320dfa97f236167ca71fc9d304e83",
-      "color.data-viz.09": "d6e93bc81f11d9671609aa5d1d395344c36ea938"
+      "color.data-viz.09": "d6e93bc81f11d9671609aa5d1d395344c36ea938",
+      "shape.xhalf": "b2d9bf3d84ce3d206a32783c24ba1d4b1b313711",
+      "shape.x": "7108fb072918f3db95271e60e7c3ed1ea2f77881",
+      "shape.x2": "a908fce29447f4b0787932bbd93bf160495bb66f"
     },
     "group": "System"
   }

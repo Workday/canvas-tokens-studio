@@ -2,26 +2,38 @@
   "shape": {
     "zero": {
       "value": "0rem",
-      "type": "borderRadius"
+      "type": "borderRadius",
+      "description": "These elements are typically persistent, fixed to the screen  and are not draggable"
     },
-    "small": {
+    "xhalf": {
       "value": "{base.dimension} * 0.5",
       "type": "borderRadius",
-      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches."
+      "description": "Subtle and very small components  that do not contain complex information"
     },
-    "medium": {
+    "x": {
       "value": "{base.dimension}",
       "type": "borderRadius",
-      "description": "Use this for form components presenting text information or inputs: Text Inputs and Text Area, Dropdowns, Menus and Banners.\n"
+      "description": "Use this for smaller form components"
     },
-    "large": {
+    "x2": {
       "value": "{base.dimension} * 2",
       "type": "borderRadius",
-      "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts.\n"
+      "description": "Secondary containers that house a moderate amount of information and form components"
+    },
+    "x4": {
+      "value": "{base.dimension} * 4",
+      "type": "borderRadius",
+      "description": "Primary containers that house a large amount of other elements and complex information"
+    },
+    "x6": {
+      "value": "{base.dimension} * 6",
+      "type": "borderRadius",
+      "description": "Full width sheets that are temporary and modal views"
     },
     "circle": {
       "value": "{base.dimension} * 250",
-      "type": "borderRadius"
+      "type": "borderRadius",
+      "description": "Commonly used for our buttons"
     }
   }
 }
