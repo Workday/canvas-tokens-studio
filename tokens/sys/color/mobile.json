@@ -26,77 +26,53 @@
         "type": "color",
         "description": "Selected BG\n"
       },
-      "action": {
-        "primary": {
-          "default": {
-            "value": "{palette.blueberry.400}",
-            "type": "color",
-            "description": "Primary Default"
-          },
-          "hover": {
-            "value": "{palette.blueberry.500}",
-            "type": "color",
-            "description": "Primary Hover\n"
-          },
-          "active": {
-            "value": "{palette.blueberry.600}",
-            "type": "color",
-            "description": "Primary Active"
-          }
+      "primary": {
+        "default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "Primary Default"
         },
-        "secondary": {
-          "default": {
-            "value": "none",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.black-pepper.300}",
-            "type": "color"
-          },
-          "active": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color"
-          }
+        "hover": {
+          "value": "{palette.blueberry.500}",
+          "type": "color",
+          "description": "Primary Hover\n"
         },
-        "delete": {
-          "default": {
-            "value": "{palette.cinnamon.500}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.cinnamon.600}",
-            "type": "color"
-          },
-          "active": {
-            "value": "#80160E",
-            "type": "color"
-          }
+        "active": {
+          "value": "{palette.blueberry.600}",
+          "type": "color",
+          "description": "Primary Active"
+        }
+      },
+      "secondary": {
+        "default": {
+          "value": "none",
+          "type": "color"
         },
-        "inverse": {
-          "default": {
-            "value": "rgba( {palette.french-vanilla.100} ,0)",
-            "type": "color"
-          },
-          "transparent": {
-            "value": "rgba( {palette.french-vanilla.100} ,0)",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.soap.300}",
-            "type": "color"
-          },
-          "active": {
-            "value": "{palette.soap.400}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          }
+        "focus": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{palette.black-pepper.300}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color"
+        }
+      },
+      "delete": {
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{palette.cinnamon.600}",
+          "type": "color"
+        },
+        "active": {
+          "value": "#80160E",
+          "type": "color"
         }
       },
       "status": {
@@ -112,6 +88,14 @@
           "value": "{palette.cantaloupe.400}",
           "type": "color"
         }
+      },
+      "help": {
+        "value": "rgba({palette.black-pepper.600},{opacity.500})",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "rgba({palette.black-pepper.600},{opacity.400})",
+        "type": "color"
       }
     },
     "fg": {
@@ -137,7 +121,15 @@
             "value": "{palette.blueberry.400}",
             "type": "color"
           },
+          "focus": {
+            "value": "{palette.blueberry.400}",
+            "type": "color"
+          },
           "active": {
+            "value": "{palette.blueberry.600}",
+            "type": "color"
+          },
+          "visited": {
             "value": "{palette.blueberry.600}",
             "type": "color"
           }
@@ -148,6 +140,10 @@
         },
         "error": {
           "value": "{palette.cinnamon.500}",
+          "type": "color"
+        },
+        "selected": {
+          "value": "{palette.blueberry.400}",
           "type": "color"
         }
       },
