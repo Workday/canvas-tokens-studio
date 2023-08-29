@@ -1,0 +1,28 @@
+{
+  "space": {
+    "x5": {
+      "value": "{base.dimension} * 5",
+      "type": "spacing"
+    },
+    "x6": {
+      "value": "{base.dimension} * 6",
+      "type": "spacing"
+    },
+    "x8": {
+      "value": "{base.dimension} * 8",
+      "type": "spacing"
+    },
+    "x10": {
+      "value": "{base.dimension} * 10",
+      "type": "spacing"
+    },
+    "x14": {
+      "value": "{base.dimension} * 14",
+      "type": "spacing"
+    },
+    "x20": {
+      "value": "{base.dimension} * 20",
+      "type": "spacing"
+    }
+  }
+}

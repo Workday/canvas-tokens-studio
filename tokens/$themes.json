@@ -4,7 +4,11 @@
     "name": "Base",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "base": "enabled"
+      "base": "enabled",
+      "sys/brand/default": "disabled",
+      "sys/brand/recruiting": "disabled",
+      "sys/brand/brand-a": "disabled",
+      "sys/brand/brand-b": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19501:2570",
     "$figmaModeId": "19512:0",
@@ -192,7 +196,10 @@
     "name": "Default",
     "selectedTokenSets": {
       "base": "source",
-      "brand/default": "enabled"
+      "sys/brand/default": "enabled",
+      "sys/brand/recruiting": "disabled",
+      "sys/brand/brand-a": "disabled",
+      "sys/brand/brand-b": "disabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:69169456728b0efc077d6d008b712b449ff43af5,"
@@ -242,7 +249,10 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base": "source",
-      "brand/recruiting": "enabled"
+      "sys/brand/default": "disabled",
+      "sys/brand/recruiting": "enabled",
+      "sys/brand/brand-a": "disabled",
+      "sys/brand/brand-b": "disabled"
     },
     "$figmaVariableReferences": {
       "brand.primary.lightest": "859341603930dc2ae88941552714bb580c7f7ccf",
@@ -288,7 +298,10 @@
     "name": "Brand A",
     "selectedTokenSets": {
       "base": "source",
-      "brand/brand-a": "enabled"
+      "sys/brand/default": "disabled",
+      "sys/brand/recruiting": "disabled",
+      "sys/brand/brand-a": "enabled",
+      "sys/brand/brand-b": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -335,7 +348,10 @@
     "name": "Brand B",
     "selectedTokenSets": {
       "base": "source",
-      "brand/brand-b": "enabled"
+      "sys/brand/default": "disabled",
+      "sys/brand/recruiting": "disabled",
+      "sys/brand/brand-a": "disabled",
+      "sys/brand/brand-b": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -535,7 +551,11 @@
       "sys/type": "enabled",
       "sys/depth": "enabled",
       "sys/border": "enabled",
-      "sys/opacity": "enabled"
+      "sys/opacity": "enabled",
+      "sys/brand/default": "disabled",
+      "sys/brand/recruiting": "disabled",
+      "sys/brand/brand-a": "disabled",
+      "sys/brand/brand-b": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:19501:1589",
     "$figmaModeId": "19501:7",
