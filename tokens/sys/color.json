@@ -26,53 +26,77 @@
         "type": "color",
         "description": "Selected BG\n"
       },
-      "primary": {
-        "default": {
-          "value": "{palette.blueberry.400}",
-          "type": "color",
-          "description": "Primary Default"
+      "action": {
+        "primary": {
+          "default": {
+            "value": "{palette.blueberry.400}",
+            "type": "color",
+            "description": "Primary Default"
+          },
+          "hover": {
+            "value": "{palette.blueberry.500}",
+            "type": "color",
+            "description": "Primary Hover\n"
+          },
+          "active": {
+            "value": "{palette.blueberry.600}",
+            "type": "color",
+            "description": "Primary Active"
+          }
         },
-        "hover": {
-          "value": "{palette.blueberry.500}",
-          "type": "color",
-          "description": "Primary Hover\n"
+        "secondary": {
+          "default": {
+            "value": "none",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{palette.black-pepper.300}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color"
+          }
         },
-        "active": {
-          "value": "{palette.blueberry.600}",
-          "type": "color",
-          "description": "Primary Active"
-        }
-      },
-      "secondary": {
-        "default": {
-          "value": "none",
-          "type": "color"
+        "delete": {
+          "default": {
+            "value": "{palette.cinnamon.500}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{palette.cinnamon.600}",
+            "type": "color"
+          },
+          "active": {
+            "value": "#80160E",
+            "type": "color"
+          }
         },
-        "focus": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{palette.black-pepper.300}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{palette.black-pepper.400}",
-          "type": "color"
-        }
-      },
-      "delete": {
-        "default": {
-          "value": "{palette.cinnamon.500}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{palette.cinnamon.600}",
-          "type": "color"
-        },
-        "active": {
-          "value": "#80160E",
-          "type": "color"
+        "inverse": {
+          "transparent": {
+            "value": "rgba( {palette.french-vanilla.100} ,0)",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{palette.soap.300}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{palette.soap.400}",
+            "type": "color"
+          }
         }
       },
       "status": {
@@ -121,15 +145,7 @@
             "value": "{palette.blueberry.400}",
             "type": "color"
           },
-          "focus": {
-            "value": "{palette.blueberry.400}",
-            "type": "color"
-          },
           "active": {
-            "value": "{palette.blueberry.600}",
-            "type": "color"
-          },
-          "visited": {
             "value": "{palette.blueberry.600}",
             "type": "color"
           }

@@ -170,11 +170,11 @@
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.primary.hover}",
+        "value": "{color.bg.action.primary.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.primary.active}",
+        "value": "{color.bg.action.primary.active}",
         "type": "color"
       },
       "fg": {
@@ -316,11 +316,11 @@
         "type": "borderRadius"
       },
       "default": {
-        "value": "{color.bg.secondary.default}",
+        "value": "{color.bg.action.secondary.default}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.secondary.focus}",
+        "value": "{color.bg.action.secondary.focus}",
         "type": "color"
       },
       "hover": {
@@ -342,19 +342,19 @@
     },
     "secondary": {
       "default": {
-        "value": "{color.bg.secondary.default}",
+        "value": "{color.bg.action.secondary.default}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.secondary.default}",
+        "value": "{color.bg.action.secondary.default}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.secondary.hover}",
+        "value": "{color.bg.action.secondary.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.secondary.active}",
+        "value": "{color.bg.action.secondary.active}",
         "type": "color"
       },
       "fg": {
@@ -368,15 +368,15 @@
     },
     "delete": {
       "default": {
-        "value": "{color.bg.delete.default}",
+        "value": "{color.bg.action.delete.default}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.delete.hover}",
+        "value": "{color.bg.action.delete.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.delete.active}",
+        "value": "{color.bg.action.delete.active}",
         "type": "color"
       },
       "fg": {
