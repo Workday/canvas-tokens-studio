@@ -796,11 +796,11 @@
   },
   "line-height": {
     "50": {
-      "value": "0.75rem",
+      "value": "1rem",
       "type": "lineHeights"
     },
     "100": {
-      "value": "{line-height.50}",
+      "value": "{line-height.50} + {font-scale.height.default}",
       "type": "lineHeights"
     },
     "150": {
@@ -824,35 +824,27 @@
       "type": "lineHeights"
     },
     "400": {
-      "value": "{line-height.350} + {font-scale.height.default}",
-      "type": "lineHeights"
-    },
-    "450": {
-      "value": "{line-height.400} + {font-scale.height.default}",
+      "value": "{line-height.350} + {font-scale.height.title}",
       "type": "lineHeights"
     },
     "500": {
-      "value": "{line-height.450} + {font-scale.height.title}",
+      "value": "{line-height.400} + {font-scale.height.title}",
       "type": "lineHeights"
     },
     "600": {
       "value": "{line-height.500} + {font-scale.height.title}",
       "type": "lineHeights"
     },
-    "700": {
-      "value": "{line-height.600} + {font-scale.height.title}",
+    "750": {
+      "value": "{line-height.600} + {font-scale.height.display}",
       "type": "lineHeights"
     },
-    "850": {
-      "value": "{line-height.700} + {font-scale.height.display}",
+    "900": {
+      "value": "{line-height.750} + {font-scale.height.display}",
       "type": "lineHeights"
     },
-    "1000": {
-      "value": "{line-height.850} + {font-scale.height.display}",
-      "type": "lineHeights"
-    },
-    "1150": {
-      "value": "{line-height.1000} + {font-scale.height.display}",
+    "1050": {
+      "value": "{line-height.900} + {font-scale.height.display}",
       "type": "lineHeights"
     }
   },
