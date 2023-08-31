@@ -502,7 +502,6 @@
       "color.shadow.main": "S:d9f41379adeb57e89a6ecfd2f1851db803b5f65a,",
       "color.shadow.accent": "S:7babb6501b39d4482b26eb3fd48b1518427372b7,",
       "color.focus-ring": "S:66d4606fac8c3ee6094c67b67059072ba3c901c0,",
-      "color.gradient": "S:79bfde1d3a9d12b0653eb1a609da308717005cc3,",
       "color.overlay.modal": "S:93c6f1ce3cbf92e353335f3e31672941547c257c,",
       "color.overlay.tooltip": "S:ab166654327727b3f98301fb6991fc452726affe,",
       "color.data-viz.10": "S:76aecfcfa8b7e5060e238fbbb0d1262086409e04,",
@@ -520,7 +519,8 @@
       "color.data-viz.06": "S:aefe4178e2717cf8b52619bd8b39c86f1525f653,",
       "color.data-viz.07": "S:7f02477b10c0630dbe5bd0c32439360077b16387,",
       "color.data-viz.08": "S:70326ee1a33f9781767faefe502750b03b76750f,",
-      "color.data-viz.09": "S:bd6059d0989e7cdaac2ea98065fe82e41cbed350,"
+      "color.data-viz.09": "S:bd6059d0989e7cdaac2ea98065fe82e41cbed350,",
+      "color.gradient.blueberry": "S:79bfde1d3a9d12b0653eb1a609da308717005cc3,"
     },
     "selectedTokenSets": {
       "base": "source",
