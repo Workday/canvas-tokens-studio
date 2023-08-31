@@ -24,7 +24,7 @@
         "type": "sizing"
       },
       "large": {
-        "value": "{font-size.25}",
+        "value": "{font-size.75}",
         "type": "sizing"
       }
     },
@@ -575,7 +575,8 @@
           "fontWeight": "{font-weight.400}",
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.100}",
-          "letterSpacing": "{letter-spacing.100}"
+          "letterSpacing": "{letter-spacing.100}",
+          "textDecoration": "underline"
         },
         "type": "typography",
         "description": "Body Small (16px) - (500) Medium\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
@@ -598,7 +599,8 @@
           "fontWeight": "{font-weight.700}",
           "lineHeight": "{line-height.150}",
           "fontSize": "{font-size.100}",
-          "letterSpacing": "{letter-spacing.100}"
+          "letterSpacing": "{letter-spacing.100}",
+          "textDecoration": "underline"
         },
         "type": "typography",
         "description": "Body Small (16px) - (500) Medium\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"

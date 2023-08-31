@@ -78,7 +78,7 @@
         },
         "inverse": {
           "default": {
-            "value": "rgba( {palette.french-vanilla.100} ,0)",
+            "value": "{palette.french-vanilla.100}",
             "type": "color"
           },
           "transparent": {
@@ -208,6 +208,11 @@
           "value": "{palette.cantaloupe.600}",
           "type": "color"
         }
+      },
+      "surface": {
+        "value": "{palette.soap.500}",
+        "type": "color",
+        "description": "Used on raised surfaces, like Cards or Toasts"
       }
     },
     "shadow": {
