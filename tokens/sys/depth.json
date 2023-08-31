@@ -2,27 +2,33 @@
   "depth": {
     "1": {
       "value": "{shadow.100}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Cards"
     },
     "2": {
       "value": "{shadow.200}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Top and Bottom Navigation"
     },
     "3": {
       "value": "{shadow.300}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Floating Action Button, Menus"
     },
     "4": {
       "value": "{shadow.400}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Bottom sheets"
     },
     "5": {
       "value": "{shadow.500}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Banners, Snackbars, Toast Messages, Non-modal Dialogs"
     },
     "6": {
       "value": "{shadow.600}",
-      "type": "boxShadow"
+      "type": "boxShadow",
+      "description": "Modal Dialogs, Side Panels"
     }
   }
 }
