@@ -182,7 +182,7 @@
       "font-scale.size.display": "c211de72429092a4803f17305a08c56c82a6b31a",
       "font-scale.height.default": "e805b7a3ba719e452376fb6fc1537a09f5c3dafa",
       "font-scale.height.title": "40b12c832505207640483ce9517d979b524eeefa",
-      "font-scale.height.display": "3dcdab2c4c7899b26884dd5210d615c15615dc0c"
+      "{size-scale} * font-scale.height.display": "3dcdab2c4c7899b26884dd5210d615c15615dc0c"
     },
     "$figmaCollectionId": "VariableCollectionId:19501:2570",
     "$figmaModeId": "19512:0"

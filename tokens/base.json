@@ -836,15 +836,15 @@
       "type": "lineHeights"
     },
     "750": {
-      "value": "{line-height.600} + {font-scale.height.display}",
+      "value": "{line-height.600} + {{size-scale} * font-scale.height.display}",
       "type": "lineHeights"
     },
     "900": {
-      "value": "{line-height.750} + {font-scale.height.display}",
+      "value": "{line-height.750} + {{size-scale} * font-scale.height.display}",
       "type": "lineHeights"
     },
     "1050": {
-      "value": "{line-height.900} + {font-scale.height.display}",
+      "value": "{line-height.900} + {{size-scale} * font-scale.height.display}",
       "type": "lineHeights"
     }
   },
@@ -855,15 +855,15 @@
         "type": "dimension"
       },
       "heading": {
-        "value": "0.25rem",
+        "value": "{scale} * {font-scale.size.default}",
         "type": "dimension"
       },
       "title": {
-        "value": "0.5rem",
+        "value": "{scale} * {font-scale.size.heading}",
         "type": "dimension"
       },
       "display": {
-        "value": "1rem",
+        "value": "{scale} * {font-scale.size.title}",
         "type": "dimension"
       }
     },
@@ -873,11 +873,11 @@
         "type": "dimension"
       },
       "title": {
-        "value": "0.5rem",
+        "value": "{scale} * 0.5rem",
         "type": "dimension"
       },
       "display": {
-        "value": "1rem",
+        "value": "{scale} * {font-scale.height.title}",
         "type": "dimension"
       }
     }
@@ -1060,5 +1060,10 @@
       ],
       "type": "boxShadow"
     }
+  },
+  "scale": {
+    "value": "2",
+    "type": "number",
+    "description": "The multiplier used to scale font-size between levels"
   }
 }
