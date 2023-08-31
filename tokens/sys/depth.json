@@ -2,33 +2,27 @@
   "depth": {
     "1": {
       "value": "{shadow.100}",
-      "type": "boxShadow",
-      "description": "Cards"
+      "type": "boxShadow"
     },
     "2": {
       "value": "{shadow.200}",
-      "type": "boxShadow",
-      "description": "Top and bottom navigation\n"
+      "type": "boxShadow"
     },
     "3": {
       "value": "{shadow.300}",
-      "type": "boxShadow",
-      "description": "FAB, Menu\n"
+      "type": "boxShadow"
     },
     "4": {
       "value": "{shadow.400}",
-      "type": "boxShadow",
-      "description": "Bottom sheets"
+      "type": "boxShadow"
     },
     "5": {
       "value": "{shadow.500}",
-      "type": "boxShadow",
-      "description": "Popups and popovers"
+      "type": "boxShadow"
     },
     "6": {
       "value": "{shadow.600}",
-      "type": "boxShadow",
-      "description": "Modal and Side Panels\n"
+      "type": "boxShadow"
     }
   }
 }
