@@ -3,12 +3,12 @@
     "zero": {
       "value": "0rem",
       "type": "borderRadius",
-      "description": "These elements are typically persistent, fixed to the screen  and are not draggable"
+      "description": "These elements are typically persistent, fixed to the screen and are not draggable"
     },
     "xhalf": {
       "value": "{base.dimension} * 0.5",
       "type": "borderRadius",
-      "description": "Subtle and very small components  that do not contain complex information"
+      "description": "Subtle and very small components that do not contain complex information"
     },
     "x": {
       "value": "{base.dimension}",

@@ -8,27 +8,27 @@
     "2": {
       "value": "{shadow.200}",
       "type": "boxShadow",
-      "description": "Top and Bottom Navigation"
+      "description": "• Top navigation\n• Bottom navigation"
     },
     "3": {
       "value": "{shadow.300}",
       "type": "boxShadow",
-      "description": "Floating Action Button, Menus"
+      "description": "• Floating Action Button (FAB)\n• Menus"
     },
     "4": {
       "value": "{shadow.400}",
       "type": "boxShadow",
-      "description": "Bottom sheets"
+      "description": "• Bottom sheets"
     },
     "5": {
       "value": "{shadow.500}",
       "type": "boxShadow",
-      "description": "Banners, Snackbars, Toast Messages, Non-modal Dialogs"
+      "description": "• Banners\n• Snackbars\n• Toast Messages\n• Non modal Dialogs\n• Side Panels(when opacity overlay behaviour is not applied)"
     },
     "6": {
       "value": "{shadow.600}",
       "type": "boxShadow",
-      "description": "Modal Dialogs, Side Panels"
+      "description": "• Modal Dialogs\n• Side Panels(when opacity overlay behaviour is applied)"
     }
   }
 }

@@ -3,8 +3,7 @@
     "bg": {
       "default": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "Background Default"
+        "type": "color"
       },
       "alt": {
         "value": "{palette.soap.200}",
@@ -24,7 +23,7 @@
       "selected": {
         "value": "{palette.blueberry.200}",
         "type": "color",
-        "description": "Selected BG\n"
+        "description": "Selected BG"
       },
       "action": {
         "primary": {
@@ -78,7 +77,7 @@
         },
         "inverse": {
           "default": {
-            "value": "rgba( {palette.french-vanilla.100} ,0)",
+            "value": "rgba( {palette.french-vanilla.100} )",
             "type": "color"
           },
           "transparent": {

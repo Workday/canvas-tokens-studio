@@ -5,6 +5,7 @@
       "width": "1",
       "style": "solid"
     },
-    "type": "border"
+    "type": "border",
+    "description": "Use to separate containers from parent backgrounds, or to separate groups of content. "
   }
 }
