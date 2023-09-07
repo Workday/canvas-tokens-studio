@@ -614,7 +614,6 @@
       "color.fg.type.link.default": "a101a2da63b0132b27c2ac6767127702b0ed218d",
       "color.fg.type.link.active": "2c76a96129fe9f46546770f20c89e5b9b4a94bec",
       "color.fg.type.inverse": "37c13a0b4533df0dc9f58e253392e8c6ffb4ccc7",
-      "color.fg.type.on-inverse.inactive": "7a690eed28a590d7e2c18e5bf9666da5f177cde8",
       "color.fg.type.on-inverse.active": "3d519bcc618a75d5a5f63ccf044ce0b1121d89d0",
       "color.fg.type.error": "8b4c10f208b903f84df5270e7c66c135cf2598ac",
       "color.fg.icon.fill": "4f9a18690a3465b6f67a9a88e1fbfe3318855b72",
@@ -650,6 +649,9 @@
       "color.data-viz.07": "64692dfe6db55a58b70edcfdcfdb706bb2446ecf",
       "color.data-viz.08": "655e656d13e320dfa97f236167ca71fc9d304e83",
       "color.data-viz.09": "d6e93bc81f11d9671609aa5d1d395344c36ea938",
+      "color.border.container": "b0b78e027d66ecee8d1ba59b7026ab956fa685d7",
+      "color.border.inverse": "5ce045402bf6144b93dd6af12b40117fb3cc1870",
+      "color.border.secondary": "1070cd13cf1e60e5358f8a35cefc802b269e6cbf",
       "font-size.subtext.small": "aa2c2e873d511d830ddaf255ce01a007f9391c6f",
       "font-size.subtext.medium": "bf29e74cc6fa0458f12d166be78e1f3a0f9e36b8",
       "font-size.subtext.large": "51fd70558797143187f0354acbfddb8b95c56139",
@@ -681,7 +683,8 @@
       "space.x12": "4b1fa713eca90c860bb79b2f57446aa60f86841d",
       "space.x14": "13ffddffeece1b903a8a2bf7147c6e66d64521c0",
       "space.x16": "c39d803aa765428f00615a5514f19e66ed242ea2",
-      "space.x20": "86bccd2e822eee875fc81c6c346b4aef0170b220"
+      "space.x20": "86bccd2e822eee875fc81c6c346b4aef0170b220",
+      "color.fg.type.on-inverse.default": "7a690eed28a590d7e2c18e5bf9666da5f177cde8"
     },
     "group": "System"
   }

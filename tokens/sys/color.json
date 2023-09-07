@@ -150,7 +150,7 @@
           "type": "color"
         },
         "on-inverse": {
-          "inactive": {
+          "default": {
             "value": "{palette.black-pepper.400}",
             "type": "color",
             "description": "Text color on inverse backgrounds"
