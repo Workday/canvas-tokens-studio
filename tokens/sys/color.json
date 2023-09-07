@@ -223,6 +223,21 @@
           "value": "{palette.cantaloupe.600}",
           "type": "color"
         }
+      },
+      "container": {
+        "value": "{palette.soap.500}",
+        "type": "color",
+        "description": "Border color used on Cards, Modals"
+      },
+      "inverse": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color",
+        "description": "Border color used against dark backgrounds\n"
+      },
+      "secondary": {
+        "value": "{palette.black-pepper.400}",
+        "type": "color",
+        "description": "Border color used in secondary buttons\n"
       }
     },
     "shadow": {
