@@ -191,6 +191,14 @@
           "value": "{palette.french-vanilla.100}",
           "type": "color"
         },
+        "secondary": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color"
+        },
+        "secondary-active": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color"
+        },
         "primary": {
           "value": "{palette.blueberry.400}",
           "type": "color"
