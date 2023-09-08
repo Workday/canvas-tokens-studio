@@ -44,24 +44,12 @@
           }
         },
         "secondary": {
-          "default": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
           "hover": {
             "value": "{palette.black-pepper.400}",
             "type": "color"
           },
           "active": {
             "value": "{palette.black-pepper.500}",
-            "type": "color"
-          },
-          "transparent": {
-            "value": "rgba({palette.french-vanilla.100},0)",
             "type": "color"
           }
         },

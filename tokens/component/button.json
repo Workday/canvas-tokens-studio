@@ -316,7 +316,7 @@
         "type": "borderRadius"
       },
       "default": {
-        "value": "{color.bg.action.secondary.default}",
+        "value": "{color.bg.action.secondary.focus}",
         "type": "color"
       },
       "focus": {
@@ -342,11 +342,11 @@
     },
     "secondary": {
       "default": {
-        "value": "{color.bg.action.secondary.default}",
+        "value": "{color.bg.action.secondary.focus}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.action.secondary.default}",
+        "value": "{color.bg.action.secondary.focus}",
         "type": "color"
       },
       "hover": {
