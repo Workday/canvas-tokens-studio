@@ -51,6 +51,14 @@
           "active": {
             "value": "{palette.black-pepper.500}",
             "type": "color"
+          },
+          "focus": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "default": {
+            "value": "rgba( {palette.french-vanilla.100},0)",
+            "type": "color"
           }
         },
         "delete": {
