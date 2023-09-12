@@ -170,11 +170,11 @@
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.action.primary.hover}",
+        "value": "{color.bg.button.primary.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.action.primary.active}",
+        "value": "{color.bg.button.primary.active}",
         "type": "color"
       },
       "fg": {
@@ -316,11 +316,11 @@
         "type": "borderRadius"
       },
       "default": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.button.secondary.focus}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.button.secondary.focus}",
         "type": "color"
       },
       "hover": {
@@ -342,19 +342,19 @@
     },
     "secondary": {
       "default": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.button.secondary.focus}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.button.secondary.focus}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.action.secondary.hover}",
+        "value": "{color.bg.button.secondary.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.action.secondary.active}",
+        "value": "{color.bg.button.secondary.active}",
         "type": "color"
       },
       "fg": {
@@ -368,15 +368,15 @@
     },
     "delete": {
       "default": {
-        "value": "{color.bg.action.delete.default}",
+        "value": "{color.bg.button.delete.default}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.action.delete.hover}",
+        "value": "{color.bg.button.delete.hover}",
         "type": "color"
       },
       "active": {
-        "value": "{color.bg.action.delete.active}",
+        "value": "{color.bg.button.delete.active}",
         "type": "color"
       },
       "fg": {

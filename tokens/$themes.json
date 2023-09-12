@@ -629,8 +629,6 @@
       "color.border.input.error": "04472e115df4e9795de2ef855407e27388300cec",
       "color.border.input.alert": "29a36edda346e25a5071696bf48ccb7b8a4fe864",
       "color.border.container": "b0b78e027d66ecee8d1ba59b7026ab956fa685d7",
-      "color.border.inverse": "5ce045402bf6144b93dd6af12b40117fb3cc1870",
-      "color.border.secondary": "1070cd13cf1e60e5358f8a35cefc802b269e6cbf",
       "color.shadow.main": "a3b424cf18939596e93b534117d3d18fd2bd96d6",
       "color.shadow.accent": "d06ae01dde2b5ede307eeca6c10c799f6f086e1b",
       "color.overlay.modal": "a8b2acb32d54ec41f67bf38a94142f195e0d5d3d",
@@ -683,7 +681,9 @@
       "space.x14": "13ffddffeece1b903a8a2bf7147c6e66d64521c0",
       "space.x16": "c39d803aa765428f00615a5514f19e66ed242ea2",
       "space.x20": "86bccd2e822eee875fc81c6c346b4aef0170b220",
-      "color.bg.action.transparent": "6b66f1a57a274f3557ec86f0879e442d44230285"
+      "color.bg.action.transparent": "6b66f1a57a274f3557ec86f0879e442d44230285",
+      "color.border.button.inverse": "5ce045402bf6144b93dd6af12b40117fb3cc1870",
+      "color.border.button.secondary": "1070cd13cf1e60e5358f8a35cefc802b269e6cbf"
     },
     "group": "System"
   }

@@ -25,7 +25,7 @@
         "type": "color",
         "description": "Selected BG"
       },
-      "action": {
+      "button": {
         "primary": {
           "default": {
             "value": "{palette.blueberry.400}",
@@ -37,6 +37,11 @@
             "type": "color",
             "description": "Primary Hover"
           },
+          "focus": {
+            "value": "{palette.blueberry.400}",
+            "type": "color",
+            "description": "Primary Default"
+          },
           "active": {
             "value": "{palette.blueberry.600}",
             "type": "color",
@@ -44,20 +49,38 @@
           }
         },
         "secondary": {
-          "hover": {
-            "value": "{palette.black-pepper.400}",
+          "default": {
+            "value": "rgba({palette.french-vanilla.100},0)",
             "type": "color"
           },
-          "active": {
-            "value": "{palette.black-pepper.500}",
+          "hover": {
+            "value": "{palette.black-pepper.400}",
             "type": "color"
           },
           "focus": {
             "value": "{palette.french-vanilla.100}",
             "type": "color"
           },
+          "active": {
+            "value": "{palette.black-pepper.500}",
+            "type": "color"
+          }
+        },
+        "tertiary": {
           "default": {
-            "value": "rgba({palette.french-vanilla.100},0)",
+            "value": "rgba({palette.french-vanilla.100} ,0)",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.soap.300}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{palette.soap.400}",
             "type": "color"
           }
         },
@@ -68,6 +91,10 @@
           },
           "hover": {
             "value": "{palette.cinnamon.600}",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.cinnamon.500}",
             "type": "color"
           },
           "active": {
@@ -234,15 +261,17 @@
         "type": "color",
         "description": "Border color used on Cards, Modals"
       },
-      "inverse": {
-        "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "Border color used against dark backgrounds\n"
-      },
-      "secondary": {
-        "value": "{palette.black-pepper.400}",
-        "type": "color",
-        "description": "Border color used in secondary buttons\n"
+      "button": {
+        "inverse": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color",
+          "description": "Border color used against dark backgrounds\n"
+        },
+        "secondary": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color",
+          "description": "Border color used in secondary buttons\n"
+        }
       }
     },
     "shadow": {
