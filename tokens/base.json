@@ -240,11 +240,11 @@
         "type": "color"
       },
       "200": {
-        "value": "#acecf3",
+        "value": "#aaecf3",
         "type": "color"
       },
       "300": {
-        "value": "#44c8d7",
+        "value": "#42c8d7",
         "type": "color"
       },
       "400": {
@@ -252,17 +252,17 @@
         "type": "color"
       },
       "500": {
-        "value": "#1a818c",
+        "value": "#1a838e",
         "type": "color"
       },
       "600": {
-        "value": "#156973",
+        "value": "#156b74",
         "type": "color"
       }
     },
     "toothpaste": {
       "100": {
-        "value": "#d7f1fc",
+        "value": "#d9f2fc",
         "type": "color"
       },
       "200": {
@@ -270,7 +270,7 @@
         "type": "color"
       },
       "300": {
-        "value": "#40b4e5",
+        "value": "#3eb3e5",
         "type": "color"
       },
       "400": {
@@ -278,11 +278,11 @@
         "type": "color"
       },
       "500": {
-        "value": "#0271a1",
+        "value": "#0272a2",
         "type": "color"
       },
       "600": {
-        "value": "#005B82;",
+        "value": "#005980",
         "type": "color"
       }
     },
