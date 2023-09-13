@@ -89,12 +89,12 @@
             "value": "{palette.cinnamon.500}",
             "type": "color"
           },
-          "hover": {
-            "value": "{palette.cinnamon.600}",
-            "type": "color"
-          },
           "focus": {
             "value": "{palette.cinnamon.500}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{palette.cinnamon.600}",
             "type": "color"
           },
           "active": {
@@ -215,13 +215,15 @@
           "value": "{palette.french-vanilla.100}",
           "type": "color"
         },
-        "secondary": {
-          "value": "{palette.black-pepper.400}",
-          "type": "color"
-        },
-        "secondary-active": {
-          "value": "{palette.black-pepper.500}",
-          "type": "color"
+        "on-inverse": {
+          "default": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{palette.black-pepper.500}",
+            "type": "color"
+          }
         },
         "primary": {
           "value": "{palette.blueberry.400}",
@@ -267,10 +269,10 @@
           "type": "color",
           "description": "Border color used against dark backgrounds\n"
         },
-        "secondary": {
+        "on-inverse": {
           "value": "{palette.black-pepper.400}",
           "type": "color",
-          "description": "Border color used in secondary buttons\n"
+          "description": "Border color for inverse buttons\n"
         }
       }
     },
