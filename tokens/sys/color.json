@@ -25,7 +25,7 @@
         "type": "color",
         "description": "Selected BG"
       },
-      "button": {
+      "action": {
         "primary": {
           "default": {
             "value": "{palette.blueberry.400}",
@@ -53,16 +53,38 @@
             "value": "rgba({palette.french-vanilla.100},0)",
             "type": "color"
           },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
           "hover": {
             "value": "{palette.black-pepper.400}",
             "type": "color"
           },
+          "focus": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
           "active": {
             "value": "{palette.black-pepper.500}",
+            "type": "color"
+          }
+        },
+        "inverse": {
+          "transparent": {
+            "value": "rgba({palette.french-vanilla.100},0)",
+            "type": "color"
+          },
+          "default": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{palette.soap.300}",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{palette.soap.400}",
             "type": "color"
           }
         },
@@ -89,41 +111,18 @@
             "value": "{palette.cinnamon.500}",
             "type": "color"
           },
-          "focus": {
-            "value": "{palette.cinnamon.500}",
-            "type": "color"
-          },
           "hover": {
             "value": "{palette.cinnamon.600}",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.cinnamon.500}",
             "type": "color"
           },
           "active": {
             "value": "#80160E",
             "type": "color"
           }
-        },
-        "inverse": {
-          "default": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.soap.300}",
-            "type": "color"
-          },
-          "active": {
-            "value": "{palette.soap.400}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          }
-        },
-        "transparent": {
-          "value": "rgba({palette.french-vanilla.100} ,0)",
-          "type": "color",
-          "description": "No fill"
         }
       },
       "status": {
@@ -159,6 +158,14 @@
           "value": "{palette.licorice.100}",
           "type": "color"
         },
+        "inverse": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color"
+        },
         "link": {
           "default": {
             "value": "{palette.blueberry.400}",
@@ -168,14 +175,22 @@
             "value": "{palette.blueberry.600}",
             "type": "color"
           }
-        },
+        }
+      },
+      "action": {
         "inverse": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color"
-        },
-        "on-inverse": {
           "default": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          },
+          "alt": {
             "value": "{palette.black-pepper.400}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          },
+          "hover": {
+            "value": "{palette.black-pepper.500}",
             "type": "color",
             "description": "Text color on inverse backgrounds"
           },
@@ -183,11 +198,41 @@
             "value": "{palette.black-pepper.500}",
             "type": "color",
             "description": "Text color on inverse backgrounds"
+          },
+          "focus": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
           }
         },
-        "error": {
-          "value": "{palette.cinnamon.500}",
-          "type": "color"
+        "secondary": {
+          "default": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          },
+          "focus": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          },
+          "hover": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          },
+          "active": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "Text color on inverse backgrounds"
+          }
         }
       },
       "icon": {
@@ -214,16 +259,6 @@
         "inverse": {
           "value": "{palette.french-vanilla.100}",
           "type": "color"
-        },
-        "on-inverse": {
-          "default": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color"
-          },
-          "active": {
-            "value": "{palette.black-pepper.500}",
-            "type": "color"
-          }
         },
         "primary": {
           "value": "{palette.blueberry.400}",
