@@ -25,6 +25,14 @@
         "type": "color",
         "description": "Selected BG"
       },
+      "translucent": {
+        "value": "rgba({palette.black-pepper.600},{opacity.500})",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "rgba({palette.black-pepper.600},{opacity.400})",
+        "type": "color"
+      },
       "action": {
         "primary": {
           "default": {
@@ -142,11 +150,11 @@
     },
     "fg": {
       "type": {
-        "heading": {
+        "high-emphasis": {
           "value": "{palette.black-pepper.400}",
           "type": "color"
         },
-        "body": {
+        "default": {
           "value": "{palette.black-pepper.300}",
           "type": "color"
         },
@@ -272,12 +280,12 @@
           "value": "{palette.licorice.200}",
           "type": "color"
         },
-        "hover": {
-          "value": "{palette.licorice.500}",
-          "type": "color"
-        },
         "disabled": {
           "value": "{palette.soap.600}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{palette.licorice.500}",
           "type": "color"
         },
         "pressed": {
@@ -298,13 +306,22 @@
         "type": "color",
         "description": "Border color used on Cards, Modals"
       },
-      "button": {
-        "inverse": {
+      "action": {
+        "secondary": {
+          "default": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color",
+            "description": "Border color used on Cards, Modals"
+          }
+        }
+      },
+      "inverse": {
+        "default": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
           "description": "Border color used against dark backgrounds\n"
         },
-        "on-inverse": {
+        "alt": {
           "value": "{palette.black-pepper.400}",
           "type": "color",
           "description": "Border color for inverse buttons\n"
@@ -318,16 +335,6 @@
       },
       "accent": {
         "value": "rgba({palette.licorice.600},{opacity.100})",
-        "type": "color"
-      }
-    },
-    "overlay": {
-      "modal": {
-        "value": "rgba({palette.black-pepper.600},{opacity.400})",
-        "type": "color"
-      },
-      "tooltip": {
-        "value": "rgba({palette.black-pepper.600},{opacity.500})",
         "type": "color"
       }
     },
