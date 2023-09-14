@@ -1,11 +1,13 @@
 {
   "border": {
-    "value": {
-      "color": "{palette.soap.500}",
-      "width": "1",
-      "style": "solid"
-    },
-    "type": "border",
-    "description": "Use to separate containers from parent backgrounds, or to separate groups of content. "
+    "container": {
+      "value": {
+        "color": "{color.border.container}",
+        "width": "1",
+        "style": "solid"
+      },
+      "type": "border",
+      "description": "Use to separate containers from parent backgrounds, or to separate groups of content. "
+    }
   }
 }
