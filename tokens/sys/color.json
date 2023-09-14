@@ -102,11 +102,11 @@
             "type": "color"
           },
           "hover": {
-            "value": "{palette.french-vanilla.100}",
+            "value": "{palette.soap.300}",
             "type": "color"
           },
           "focus": {
-            "value": "{palette.soap.300}",
+            "value": "{palette.french-vanilla.100}",
             "type": "color"
           },
           "pressed": {
@@ -150,11 +150,11 @@
     },
     "fg": {
       "type": {
-        "high-emphasis": {
+        "heading": {
           "value": "{palette.black-pepper.400}",
           "type": "color"
         },
-        "default": {
+        "body": {
           "value": "{palette.black-pepper.300}",
           "type": "color"
         },

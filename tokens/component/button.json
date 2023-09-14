@@ -358,7 +358,7 @@
         "type": "color"
       },
       "fg": {
-        "value": "{color.fg.type.high-emphasis}",
+        "value": "{color.fg.type.heading}",
         "type": "color",
         "inverse": {
           "value": "{color.fg.type.inverse}",

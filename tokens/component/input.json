@@ -124,7 +124,7 @@
     "label": {
       "value": {
         "typography": "{type.subtext.large}",
-        "fill": "{color.fg.type.default}",
+        "fill": "{color.fg.type.body}",
         "fontWeights": "{font-weight.500}"
       },
       "type": "composition",
@@ -133,7 +133,7 @@
     "text": {
       "value": {
         "typography": "{type.body.small}",
-        "fill": "{color.fg.type.default}"
+        "fill": "{color.fg.type.body}"
       },
       "type": "composition",
       "description": "\n"
@@ -150,7 +150,7 @@
       "alert": {
         "value": {
           "typography": "{type.subtext.medium}",
-          "fill": "{color.fg.type.default}"
+          "fill": "{color.fg.type.body}"
         },
         "type": "composition",
         "description": "\n"

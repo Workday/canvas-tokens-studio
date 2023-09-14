@@ -564,8 +564,8 @@
       "color.bg.action.secondary.focus": "S:46391ea4f2a033ec0034be14f39119bcbfe2da25,",
       "color.bg.overlay": "S:9a9c73a6506a4aa619e52660c53a488bd95e2ca9,",
       "color.bg.translucent": "S:c0b97a08723db5decf63fa8e31a58cac56f093a2,",
-      "color.fg.type.default": "S:a6b858fddace556d529daa4459df97fae3c459b0,",
-      "color.fg.type.high-emphasis": "S:219f7da5f7cb1f32839dc635a683af19b6a30a01,"
+      "color.fg.type.body": "S:a6b858fddace556d529daa4459df97fae3c459b0,",
+      "color.fg.type.heading": "S:219f7da5f7cb1f32839dc635a683af19b6a30a01,"
     },
     "selectedTokenSets": {
       "base": "source",
@@ -693,8 +693,8 @@
       "space.x20": "86bccd2e822eee875fc81c6c346b4aef0170b220",
       "color.bg.overlay": "a8b2acb32d54ec41f67bf38a94142f195e0d5d3d",
       "color.bg.translucent": "04068327d4fd156fb64ab513fa831f26a4486597",
-      "color.fg.type.default": "2e8e3b1ddb4828c26bf6c4e0ada9a3957a029f0f",
-      "color.fg.type.high-emphasis": "1c1389fc5a56c57819ca5e2eeb1921a60f5b3507"
+      "color.fg.type.body": "2e8e3b1ddb4828c26bf6c4e0ada9a3957a029f0f",
+      "color.fg.type.heading": "1c1389fc5a56c57819ca5e2eeb1921a60f5b3507"
     },
     "group": "System"
   }
