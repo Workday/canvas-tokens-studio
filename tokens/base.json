@@ -282,7 +282,7 @@
         "type": "color"
       },
       "600": {
-        "value": "#005B82;",
+        "value": "#005B82",
         "type": "color"
       }
     },
@@ -1041,7 +1041,7 @@
         {
           "x": "0",
           "y": "2",
-          "blur": "16",
+          "blur": "8",
           "spread": "0",
           "color": "rgba({palette.licorice.600},{opacity.100})",
           "type": "dropShadow"
