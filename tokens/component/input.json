@@ -4,7 +4,7 @@
       "default": {
         "value": {
           "borderWidth": "1",
-          "borderRadius": "{shape.x}",
+          "borderRadius": "{shape.x1}",
           "borderColor": "{color.border.input.default}",
           "fill": "{color.bg.default}",
           "boxShadow": "none",
@@ -15,7 +15,7 @@
       "hover": {
         "value": {
           "borderWidth": "1",
-          "borderRadius": "{shape.x}",
+          "borderRadius": "{shape.x1}",
           "borderColor": "{color.border.input.hover}",
           "fill": "{color.bg.default}",
           "boxShadow": "none",
@@ -26,7 +26,7 @@
       "focus": {
         "value": {
           "borderWidth": "1",
-          "borderRadius": "{shape.x}",
+          "borderRadius": "{shape.x1}",
           "borderColor": "{brand.common.focus-outline}",
           "fill": "{color.bg.default}",
           "boxShadow": "{input.focus.inactive}",
@@ -37,7 +37,7 @@
       "alert": {
         "value": {
           "borderWidth": "1",
-          "borderRadius": "{shape.x}",
+          "borderRadius": "{shape.x1}",
           "borderColor": "{brand.alert.darkest}",
           "fill": "{color.bg.default}",
           "boxShadow": "{input.focus.alert}",
@@ -48,7 +48,7 @@
       "error": {
         "value": {
           "borderWidth": "1",
-          "borderRadius": "{shape.x}",
+          "borderRadius": "{shape.x1}",
           "borderColor": "{brand.common.error-inner}",
           "fill": "{color.bg.default}",
           "boxShadow": "{input.focus.error}",

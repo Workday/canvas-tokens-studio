@@ -136,7 +136,7 @@
         }
       },
       "radius": {
-        "value": "{shape.circle}",
+        "value": "{shape.round}",
         "type": "borderRadius"
       }
     },
@@ -170,7 +170,7 @@
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.action.primary.hover}",
+        "value": "{color.bg.primary.hover}",
         "type": "color"
       },
       "active": {

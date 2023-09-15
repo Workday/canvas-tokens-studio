@@ -10,7 +10,7 @@
       "type": "borderRadius",
       "description": "Subtle and very small components that do not contain complex information"
     },
-    "x": {
+    "x1": {
       "value": "{base.dimension}",
       "type": "borderRadius",
       "description": "Use this for smaller form components"
@@ -30,7 +30,7 @@
       "type": "borderRadius",
       "description": "Full width sheets that are temporary and modal views"
     },
-    "circle": {
+    "round": {
       "value": "{base.dimension} * 250",
       "type": "borderRadius",
       "description": "Commonly used for our buttons"

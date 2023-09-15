@@ -678,11 +678,9 @@
       "font-size.title.large": "dc786d33246073999675ec49caf415bd2e257ba5",
       "shape.zero": "5374d1e1ee8f173d990038b318dac7941e73ffcf",
       "shape.xhalf": "6ae7aada449656b4d0b27423c1cb314b03e8cf73",
-      "shape.x": "a606daff1246201d8262166157c4f1c6ea81b8e4",
       "shape.x2": "8b8319c9c5deabb44343ef8774b88e1f29be95e6",
       "shape.x4": "3f372ce329a9eeb7c9261579fb8b4e0229e5d4c7",
       "shape.x6": "457e8f393a245e11b6eb41023fa91a971973a7d0",
-      "shape.circle": "a96725c2c5662c4c99851dac7fd5b8678df70fdd",
       "space.zero": "17957f08b619045831cbba98fcb6e420051c72aa",
       "space.x1": "b315987ba359a9f5bb8fefef4fc6b2c7ac9fbf41",
       "space.x2": "08575248dda8170868ce07af40d3f445c8efbb84",
@@ -695,7 +693,9 @@
       "space.x12": "31ab02c529b5728b40d924cc6aee85128afc5764",
       "space.x14": "fbc63b2b056957ae7159d679c05f1c3f6e3517fe",
       "space.x16": "2d9e09afbef044461735411b2024a9eef412d7f6",
-      "space.x20": "ba0447295633b7a82e2569286b15380390e3333c"
+      "space.x20": "ba0447295633b7a82e2569286b15380390e3333c",
+      "shape.x1": "a606daff1246201d8262166157c4f1c6ea81b8e4",
+      "shape.round": "a96725c2c5662c4c99851dac7fd5b8678df70fdd"
     },
     "group": "System"
   }

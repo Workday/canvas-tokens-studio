@@ -33,29 +33,29 @@
         "value": "rgba({palette.black-pepper.600},{opacity.400})",
         "type": "color"
       },
-      "action": {
-        "primary": {
-          "default": {
-            "value": "{palette.blueberry.400}",
-            "type": "color",
-            "description": "Primary Default"
-          },
-          "hover": {
-            "value": "{palette.blueberry.500}",
-            "type": "color",
-            "description": "Primary Hover"
-          },
-          "focus": {
-            "value": "{palette.blueberry.400}",
-            "type": "color",
-            "description": "Primary Default"
-          },
-          "pressed": {
-            "value": "{palette.blueberry.600}",
-            "type": "color",
-            "description": "Primary pressed"
-          }
+      "primary": {
+        "default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "Primary Default"
         },
+        "hover": {
+          "value": "{palette.blueberry.500}",
+          "type": "color",
+          "description": "Primary Hover"
+        },
+        "focus": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "Primary Default"
+        },
+        "pressed": {
+          "value": "{palette.blueberry.600}",
+          "type": "color",
+          "description": "Primary pressed"
+        }
+      },
+      "action": {
         "secondary": {
           "default": {
             "value": "rgba({palette.french-vanilla.100},0)",
@@ -198,7 +198,7 @@
             "description": "Text color on inverse backgrounds"
           },
           "hover": {
-            "value": "{palette.black-pepper.500}",
+            "value": "{palette.black-pepper.400}",
             "type": "color",
             "description": "Text color on inverse backgrounds"
           },
@@ -261,7 +261,7 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{palette.soap.600}",
+          "value": "{palette.soap.200}",
           "type": "color"
         },
         "inverse": {
@@ -281,7 +281,7 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{palette.soap.600}",
+          "value": "{palette.licorice.100}",
           "type": "color"
         },
         "hover": {
