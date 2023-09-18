@@ -316,11 +316,11 @@
         "type": "borderRadius"
       },
       "default": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.secondary.focus}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.secondary.focus}",
         "type": "color"
       },
       "hover": {
@@ -332,7 +332,7 @@
         "type": "color"
       },
       "text": {
-        "value": "{color.fg.type.link.default}",
+        "value": "{color.fg.text.link-default}",
         "type": "color"
       },
       "text-pressed": {
@@ -342,15 +342,15 @@
     },
     "secondary": {
       "default": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.secondary.focus}",
         "type": "color"
       },
       "focus": {
-        "value": "{color.bg.action.secondary.focus}",
+        "value": "{color.bg.secondary.focus}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.action.secondary.hover}",
+        "value": "{color.bg.secondary.hover}",
         "type": "color"
       },
       "active": {
@@ -358,7 +358,7 @@
         "type": "color"
       },
       "fg": {
-        "value": "{color.fg.type.heading}",
+        "value": "{color.fg.text.heading}",
         "type": "color",
         "inverse": {
           "value": "{color.fg.type.inverse}",
@@ -368,11 +368,11 @@
     },
     "delete": {
       "default": {
-        "value": "{color.bg.action.delete.default}",
+        "value": "{color.bg.delete.default}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.bg.action.delete.hover}",
+        "value": "{color.bg.delete.hover}",
         "type": "color"
       },
       "active": {

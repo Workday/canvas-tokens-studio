@@ -3,7 +3,8 @@
     "bg": {
       "default": {
         "value": "{palette.french-vanilla.100}",
-        "type": "color"
+        "type": "color",
+        "description": "Cards, App Background"
       },
       "alt": {
         "value": "{palette.soap.200}",
@@ -20,6 +21,24 @@
         "type": "color",
         "description": "Background pressed"
       },
+      "inverse": {
+        "default": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{palette.soap.300}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "{palette.soap.400}",
+          "type": "color"
+        }
+      },
       "selected": {
         "value": "{palette.blueberry.200}",
         "type": "color",
@@ -27,6 +46,10 @@
       },
       "translucent": {
         "value": "rgba({palette.black-pepper.600},{opacity.500})",
+        "type": "color"
+      },
+      "transparent": {
+        "value": "rgba({palette.french-vanilla.100},0)",
         "type": "color"
       },
       "overlay": {
@@ -44,93 +67,38 @@
           "type": "color",
           "description": "Primary Hover"
         },
-        "focus": {
-          "value": "{palette.blueberry.400}",
-          "type": "color",
-          "description": "Primary Default"
-        },
         "pressed": {
           "value": "{palette.blueberry.600}",
           "type": "color",
           "description": "Primary pressed"
         }
       },
-      "action": {
-        "secondary": {
-          "default": {
-            "value": "rgba({palette.french-vanilla.100},0)",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "pressed": {
-            "value": "{palette.black-pepper.500}",
-            "type": "color"
-          }
+      "secondary": {
+        "hover": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color"
         },
-        "inverse": {
-          "transparent": {
-            "value": "rgba({palette.french-vanilla.100},0)",
-            "type": "color"
-          },
-          "default": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.soap.300}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "pressed": {
-            "value": "{palette.soap.400}",
-            "type": "color"
-          }
+        "focus": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color"
         },
-        "tertiary": {
-          "default": {
-            "value": "rgba({palette.french-vanilla.100} ,0)",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.soap.300}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "pressed": {
-            "value": "{palette.soap.400}",
-            "type": "color"
-          }
+        "pressed": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color"
+        }
+      },
+      "delete": {
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color"
         },
-        "delete": {
-          "default": {
-            "value": "{palette.cinnamon.500}",
-            "type": "color"
-          },
-          "hover": {
-            "value": "{palette.cinnamon.600}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.cinnamon.500}",
-            "type": "color"
-          },
-          "pressed": {
-            "value": "#80160E",
-            "type": "color"
-          }
+        "hover": {
+          "value": "{palette.cinnamon.600}",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "#80160E",
+          "type": "color"
         }
       },
       "status": {
@@ -149,13 +117,38 @@
       }
     },
     "fg": {
-      "type": {
+      "default": {
+        "value": "{palette.black-pepper.300}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{palette.black-pepper.400}",
+        "type": "color"
+      },
+      "inverse": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color",
+        "description": "Foreground color "
+      },
+      "disabled": {
+        "value": "{palette.soap.600}",
+        "type": "color"
+      },
+      "text": {
         "heading": {
           "value": "{palette.black-pepper.400}",
           "type": "color"
         },
+        "heading-pressed": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color"
+        },
         "body": {
           "value": "{palette.black-pepper.300}",
+          "type": "color"
+        },
+        "body-pressed": {
+          "value": "{palette.black-pepper.400}",
           "type": "color"
         },
         "hint": {
@@ -170,77 +163,34 @@
           "value": "{palette.french-vanilla.100}",
           "type": "color"
         },
+        "link-default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color"
+        },
+        "link-pressed": {
+          "value": "{palette.blueberry.600}",
+          "type": "color"
+        },
         "error": {
           "value": "{palette.cinnamon.500}",
           "type": "color"
-        },
-        "link": {
-          "default": {
-            "value": "{palette.blueberry.400}",
-            "type": "color"
-          },
-          "pressed": {
-            "value": "{palette.blueberry.600}",
-            "type": "color"
-          }
         }
       },
-      "action": {
-        "inverse": {
-          "default": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "alt": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "hover": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "pressed": {
-            "value": "{palette.black-pepper.500}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "focus": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          }
+      "on-inverse": {
+        "default": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color",
+          "description": "Foreground color "
         },
-        "secondary": {
-          "default": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "focus": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "hover": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          },
-          "pressed": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          }
+        "hover": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color",
+          "description": "Foreground color "
         },
-        "primary": {
-          "default": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "Text color on inverse backgrounds"
-          }
+        "pressed": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color",
+          "description": "Foreground color "
         }
       },
       "icon": {
@@ -275,7 +225,7 @@
       }
     },
     "border": {
-      "input": {
+      "inputs": {
         "default": {
           "value": "{palette.licorice.200}",
           "type": "color"
@@ -306,26 +256,31 @@
         "type": "color",
         "description": "Border color used on Cards, Modals"
       },
-      "action": {
-        "secondary": {
-          "default": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "Border color used on Cards, Modals"
-          }
-        }
-      },
       "inverse": {
-        "default": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color",
-          "description": "Border color used against dark backgrounds\n"
-        },
-        "alt": {
-          "value": "{palette.black-pepper.400}",
-          "type": "color",
-          "description": "Border color for inverse buttons\n"
-        }
+        "value": "{palette.french-vanilla.100}",
+        "type": "color",
+        "description": "Border color used against dark backgrounds\n"
+      },
+      "on-inverse": {
+        "value": "{palette.black-pepper.400}",
+        "type": "color"
+      },
+      "on-inverse-pressed": {
+        "value": "{palette.black-pepper.500}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{palette.black-pepper.400}",
+        "type": "color"
+      },
+      "secondary-pressed": {
+        "value": "{palette.black-pepper.500}",
+        "type": "color"
+      },
+      "primary": {
+        "value": "{palette.blueberry.400}",
+        "type": "color",
+        "description": "primary"
       }
     },
     "shadow": {
