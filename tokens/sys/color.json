@@ -21,6 +21,23 @@
         "type": "color",
         "description": "Pressed"
       },
+      "selected": {
+        "value": "{palette.blueberry.200}",
+        "type": "color",
+        "description": "Selected BG"
+      },
+      "translucent": {
+        "value": "rgba({palette.black-pepper.600},{opacity.500})",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "rgba({palette.black-pepper.600},{opacity.400})",
+        "type": "color"
+      },
+      "transparent": {
+        "value": "rgba({palette.french-vanilla.100},0)",
+        "type": "color"
+      },
       "inverse": {
         "default": {
           "value": "{palette.french-vanilla.100}",
@@ -39,23 +56,6 @@
           "value": "{palette.soap.400}",
           "type": "color"
         }
-      },
-      "selected": {
-        "value": "{palette.blueberry.200}",
-        "type": "color",
-        "description": "Selected BG"
-      },
-      "translucent": {
-        "value": "rgba({palette.black-pepper.600},{opacity.500})",
-        "type": "color"
-      },
-      "transparent": {
-        "value": "rgba({palette.french-vanilla.100},0)",
-        "type": "color"
-      },
-      "overlay": {
-        "value": "rgba({palette.black-pepper.600},{opacity.400})",
-        "type": "color"
       },
       "primary": {
         "default": {
@@ -137,20 +137,24 @@
       },
       "text": {
         "heading": {
-          "value": "{palette.black-pepper.400}",
-          "type": "color"
-        },
-        "heading-pressed": {
-          "value": "{palette.black-pepper.500}",
-          "type": "color"
+          "default": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "{palette.black-pepper.500}",
+            "type": "color"
+          }
         },
         "body": {
-          "value": "{palette.black-pepper.300}",
-          "type": "color"
-        },
-        "body-pressed": {
-          "value": "{palette.black-pepper.400}",
-          "type": "color"
+          "default": {
+            "value": "{palette.black-pepper.300}",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color"
+          }
         },
         "hint": {
           "value": "{palette.licorice.300}",
@@ -164,13 +168,15 @@
           "value": "{palette.french-vanilla.100}",
           "type": "color"
         },
-        "link-default": {
-          "value": "{palette.blueberry.400}",
-          "type": "color"
-        },
-        "link-pressed": {
-          "value": "{palette.blueberry.600}",
-          "type": "color"
+        "link": {
+          "default": {
+            "value": "{palette.blueberry.400}",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "{palette.blueberry.600}",
+            "type": "color"
+          }
         },
         "error": {
           "value": "{palette.cinnamon.500}",
@@ -252,6 +258,11 @@
           "type": "color"
         }
       },
+      "primary": {
+        "value": "{palette.blueberry.400}",
+        "type": "color",
+        "description": "primary"
+      },
       "container": {
         "value": "{palette.soap.500}",
         "type": "color",
@@ -263,25 +274,24 @@
         "description": "Border color used against dark backgrounds\n"
       },
       "on-inverse": {
-        "value": "{palette.black-pepper.400}",
-        "type": "color"
-      },
-      "on-inverse-pressed": {
-        "value": "{palette.black-pepper.500}",
-        "type": "color"
+        "default": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color"
+        }
       },
       "secondary": {
-        "value": "{palette.black-pepper.400}",
-        "type": "color"
-      },
-      "secondary-pressed": {
-        "value": "{palette.black-pepper.500}",
-        "type": "color"
-      },
-      "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "primary"
+        "default": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color"
+        }
       }
     },
     "shadow": {
