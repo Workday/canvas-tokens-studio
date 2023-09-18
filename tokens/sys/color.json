@@ -4,7 +4,7 @@
       "default": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
-        "description": "Cards, App Background"
+        "description": "Default"
       },
       "alt": {
         "value": "{palette.soap.200}",
@@ -19,24 +19,27 @@
       "pressed": {
         "value": "{palette.soap.400}",
         "type": "color",
-        "description": "Background pressed"
+        "description": "Pressed"
       },
       "inverse": {
         "default": {
           "value": "{palette.french-vanilla.100}",
-          "type": "color"
+          "type": "color",
+          "description": "On dark backgrounds"
         },
         "hover": {
-          "value": "{palette.soap.300}",
-          "type": "color"
-        },
-        "focus": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color"
-        },
-        "pressed": {
-          "value": "{palette.soap.400}",
-          "type": "color"
+          "hover": {
+            "value": "{palette.soap.300}",
+            "type": "color"
+          },
+          "focus": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "{palette.soap.400}",
+            "type": "color"
+          }
         }
       },
       "selected": {
