@@ -28,18 +28,16 @@
           "description": "On dark backgrounds"
         },
         "hover": {
-          "hover": {
-            "value": "{palette.soap.300}",
-            "type": "color"
-          },
-          "focus": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color"
-          },
-          "pressed": {
-            "value": "{palette.soap.400}",
-            "type": "color"
-          }
+          "value": "{palette.soap.300}",
+          "type": "color"
+        },
+        "focus": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "{palette.soap.400}",
+          "type": "color"
         }
       },
       "selected": {
