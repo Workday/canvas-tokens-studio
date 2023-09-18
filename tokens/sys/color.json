@@ -73,7 +73,7 @@
         "pressed": {
           "value": "{palette.blueberry.600}",
           "type": "color",
-          "description": "Primary pressed"
+          "description": "Primary Pressed"
         }
       },
       "secondary": {
