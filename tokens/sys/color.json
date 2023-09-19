@@ -274,7 +274,7 @@
       "on-inverse": {
         "default": {
           "value": "{palette.black-pepper.400}",
-          "type": "Border on inverse backgrounds"
+          "type": "color"
         },
         "pressed": {
           "value": "{palette.black-pepper.500}",
