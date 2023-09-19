@@ -4,7 +4,7 @@
       "default": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
-        "description": "Default"
+        "description": "Default BG"
       },
       "alt": {
         "value": "{palette.soap.200}",
@@ -28,15 +28,18 @@
       },
       "translucent": {
         "value": "rgba({palette.black-pepper.600},{opacity.500})",
-        "type": "color"
+        "type": "color",
+        "description": "Tooltip"
       },
       "overlay": {
         "value": "rgba({palette.black-pepper.600},{opacity.400})",
-        "type": "color"
+        "type": "color",
+        "description": "Modal overlay"
       },
       "transparent": {
         "value": "rgba({palette.french-vanilla.100},0)",
-        "type": "color"
+        "type": "color",
+        "description": "No fill applied"
       },
       "inverse": {
         "default": {
@@ -46,7 +49,8 @@
         },
         "hover": {
           "value": "{palette.soap.300}",
-          "type": "color"
+          "type": "color",
+          "description": "Hover against dark backgrounds"
         },
         "focus": {
           "value": "{palette.french-vanilla.100}",
@@ -129,7 +133,7 @@
       "inverse": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
-        "description": "Foreground color "
+        "description": "Used on dark backgrounds"
       },
       "disabled": {
         "value": "{palette.soap.600}",
@@ -166,7 +170,8 @@
         },
         "inverse": {
           "value": "{palette.french-vanilla.100}",
-          "type": "color"
+          "type": "color",
+          "description": "Text on dark backgrounds"
         },
         "link": {
           "default": {
@@ -187,31 +192,24 @@
         "default": {
           "value": "{palette.black-pepper.400}",
           "type": "color",
-          "description": "Foreground color "
+          "description": "Foreground on inverse backgrounds"
         },
         "hover": {
           "value": "{palette.black-pepper.500}",
           "type": "color",
-          "description": "Foreground color "
+          "description": "Foreground on inverse backgrounds"
         },
         "pressed": {
           "value": "{palette.black-pepper.500}",
           "type": "color",
-          "description": "Foreground color "
+          "description": "Foreground on inverse backgrounds"
         }
       },
       "icon": {
-        "fill": {
+        "default": {
           "value": "{palette.licorice.200}",
-          "type": "color"
-        },
-        "background": {
-          "value": "{palette.licorice.200}",
-          "type": "color"
-        },
-        "accent": {
-          "value": "{palette.licorice.200}",
-          "type": "color"
+          "type": "color",
+          "description": "Default system icon color"
         },
         "hover": {
           "value": "{palette.licorice.500}",
@@ -266,17 +264,17 @@
       "container": {
         "value": "{palette.soap.500}",
         "type": "color",
-        "description": "Border color used on Cards, Modals"
+        "description": "Containers"
       },
       "inverse": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
-        "description": "Border color used against dark backgrounds\n"
+        "description": "Border on dark backgrounds"
       },
       "on-inverse": {
         "default": {
           "value": "{palette.black-pepper.400}",
-          "type": "color"
+          "type": "Border on inverse backgrounds"
         },
         "pressed": {
           "value": "{palette.black-pepper.500}",
