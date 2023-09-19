@@ -820,7 +820,7 @@
     }
   },
   "base": {
-    "dimension": {
+    "unit": {
       "value": "0.25rem",
       "type": "dimension",
       "description": "Smallest unit in the baseline grid\n"

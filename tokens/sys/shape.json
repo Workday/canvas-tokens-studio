@@ -6,32 +6,32 @@
       "description": "These elements are typically persistent, fixed to the screen and are not draggable"
     },
     "xhalf": {
-      "value": "{base.dimension} * 0.5",
+      "value": "{base.unit} * 0.5",
       "type": "borderRadius",
       "description": "Subtle and very small components that do not contain complex information"
     },
     "x1": {
-      "value": "{base.dimension}",
+      "value": "{base.unit}",
       "type": "borderRadius",
       "description": "Use this for smaller form components"
     },
     "x2": {
-      "value": "{base.dimension} * 2",
+      "value": "{base.unit} * 2",
       "type": "borderRadius",
       "description": "Secondary containers that house a moderate amount of information and form components"
     },
     "x4": {
-      "value": "{base.dimension} * 4",
+      "value": "{base.unit} * 4",
       "type": "borderRadius",
       "description": "Primary containers that house a large amount of other elements and complex information"
     },
     "x6": {
-      "value": "{base.dimension} * 6",
+      "value": "{base.unit} * 6",
       "type": "borderRadius",
       "description": "Full width sheets that are temporary and modal views"
     },
     "round": {
-      "value": "{base.dimension} * 250",
+      "value": "{base.unit} * 250",
       "type": "borderRadius",
       "description": "Commonly used for our buttons"
     }

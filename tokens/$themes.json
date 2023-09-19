@@ -175,7 +175,6 @@
       "opacity.300": "0d247b1f979a58c66bb22c21c5ce6942ee1686fa",
       "opacity.400": "f111d985be16bb9ecc1a42ff25c088be1810de00",
       "opacity.500": "0c5999fa0b8506126ec07d8a100a10b3c40b8b42",
-      "base.dimension": "3c006dd9dd972546889a389b6e468291ca4ed669",
       "typescale.size.default": "db8068147f02bed826b1739e5167d2bbfddbbbb1",
       "typescale.size.heading": "4972d9a4275f906fb849cb2b79637faa79238a3a",
       "typescale.size.title": "8a1b48e766d3651eb336474e74ebf4098a194447",
@@ -183,7 +182,8 @@
       "typescale.height.default": "3518094cb398ca278c56f872a4141d1d2650165f",
       "typescale.height.title": "45628bfcb891191fdff9b0a45b3f0a7cfc407fa7",
       "typescale.height.display": "be73b10c19e7868a7862a6477599ae73a3a38f56",
-      "level": "5b6c7cb1e33b4d90d826b8262e37f0a0748c59ef"
+      "level": "5b6c7cb1e33b4d90d826b8262e37f0a0748c59ef",
+      "base.unit": "3c006dd9dd972546889a389b6e468291ca4ed669"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13306",
     "$figmaModeId": "19697:1"
