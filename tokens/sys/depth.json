@@ -1,34 +1,32 @@
 {
-  "depth": {
-    "1": {
-      "value": "{shadow.100}",
-      "type": "boxShadow",
-      "description": "Cards"
-    },
-    "2": {
-      "value": "{shadow.200}",
-      "type": "boxShadow",
-      "description": "• Top navigation\n• Bottom navigation"
-    },
-    "3": {
-      "value": "{shadow.300}",
-      "type": "boxShadow",
-      "description": "• Floating Action Button (FAB)\n• Menus"
-    },
-    "4": {
-      "value": "{shadow.400}",
-      "type": "boxShadow",
-      "description": "• Bottom sheets"
-    },
-    "5": {
-      "value": "{shadow.500}",
-      "type": "boxShadow",
-      "description": "• Banners\n• Snackbars\n• Toast Messages\n• Non modal Dialogs\n• Side Panels(when opacity overlay behaviour is not applied)"
-    },
-    "6": {
-      "value": "{shadow.600}",
-      "type": "boxShadow",
-      "description": "• Modal Dialogs\n• Side Panels(when opacity overlay behaviour is applied)"
-    }
+  "Depth 1": {
+    "value": "{shadow.100}",
+    "type": "boxShadow",
+    "description": "Standard card depth"
+  },
+  "Depth 2": {
+    "value": "{shadow.200}",
+    "type": "boxShadow",
+    "description": "Top navigation, Bottom Navigation"
+  },
+  "Depth 3": {
+    "value": "{shadow.300}",
+    "type": "boxShadow",
+    "description": "Floating Action Buttons (FAB), Menus"
+  },
+  "Depth 4": {
+    "value": "{shadow.400}",
+    "type": "boxShadow",
+    "description": "Bottom Sheets"
+  },
+  "Depth 5": {
+    "value": "{shadow.500}",
+    "type": "boxShadow",
+    "description": "Banners, Snackbars, Toast Messages, Non modal Dialogs, \nSide Panels (when opacity overlay behaviour is not applied)"
+  },
+  "Depth 6": {
+    "value": "{shadow.600}",
+    "type": "boxShadow",
+    "description": "Modal Dialogs, Side Panels (when opacity overlay behaviour\nis applied)"
   }
 }
