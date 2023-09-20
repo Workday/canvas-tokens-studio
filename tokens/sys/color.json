@@ -135,10 +135,6 @@
         "type": "color",
         "description": "Used on dark backgrounds"
       },
-      "disabled": {
-        "value": "{palette.soap.600}",
-        "type": "color"
-      },
       "text": {
         "heading": {
           "default": {
