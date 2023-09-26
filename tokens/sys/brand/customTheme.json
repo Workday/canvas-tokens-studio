@@ -28,7 +28,7 @@
         }
       },
       "base": {
-        "value": "#30d2a1",
+        "value": "purple",
         "type": "color"
       },
       "dark": {
@@ -60,7 +60,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -92,8 +92,18 @@
         }
       },
       "base": {
-        "value": "#e6e20e",
-        "type": "color"
+        "value": "{palette.cantaloupe.400}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.2",
+              "space": "lch",
+              "color": "{palette.sour-lemon.300} "
+            }
+          }
+        }
       },
       "dark": {
         "value": "{brand.alert.base}",
@@ -124,7 +134,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -156,8 +166,18 @@
         }
       },
       "base": {
-        "value": "#ff3ef1",
-        "type": "color"
+        "value": "{palette.cinnamon.500}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.2",
+              "space": "lch",
+              "color": "{palette.peach.200} "
+            }
+          }
+        }
       },
       "dark": {
         "value": "{brand.error.base}",
@@ -188,7 +208,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -220,8 +240,18 @@
         }
       },
       "base": {
-        "value": "#0dff7e",
-        "type": "color"
+        "value": "{palette.green-apple.400}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.1",
+              "space": "lch",
+              "color": "{palette.juicy-pear.200} "
+            }
+          }
+        }
       },
       "dark": {
         "value": "{brand.success.base}",
@@ -252,7 +282,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -284,7 +314,7 @@
         }
       },
       "base": {
-        "value": "#cdcdf1",
+        "value": "{palette.soap.500}",
         "type": "color"
       },
       "dark": {
@@ -316,13 +346,13 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
     "common": {
       "focus-outline": {
-        "value": "{brand.primary.base}",
+        "value": "turquoise",
         "type": "color"
       },
       "error-inner": {

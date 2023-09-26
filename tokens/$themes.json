@@ -4,7 +4,8 @@
     "name": "Base",
     "group": "Base",
     "selectedTokenSets": {
-      "base": "enabled"
+      "base": "enabled",
+      "sys/brand/customTheme": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -194,13 +195,13 @@
     "group": "Brand",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/default": "enabled"
+      "sys/brand/default": "enabled",
+      "sys/brand/customTheme": "disabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,",
       "brand.primary.lightest": "S:42f475c49309f3534173c7e1fdbd42acf3062d66,",
       "brand.primary.light": "S:517f85a301bb091f32f990be037ac106b8bc124e,",
-      "brand.primary.base": "S:3cbaad42243ae557376e03fc75e2b25f8329d4df,",
       "brand.primary.dark": "S:22e3cccac737bccfe2cce98800d3a43e78599aba,",
       "brand.primary.darkest": "S:d8813aaf6d438c41b057d19ffa37497998fc256a,",
       "brand.primary.accent": "S:00784b355a898694656f7253cd6f34f488a6bbab,",
@@ -230,12 +231,12 @@
       "brand.neutral.accent": "S:e1c45013db46a28f6b1d2ddee06c56cb969ea3be,",
       "brand.common.focus-outline": "S:6ddad413accc276722ab1759a59b02fb99169a29,",
       "brand.common.error-inner": "S:5d26091a6fa33f65ed5e4c77f29957a99c84385a,",
-      "brand.common.alert-inner": "S:5d129d06076ebb7d9823a982b30c401dc6cff346,"
+      "brand.common.alert-inner": "S:5d129d06076ebb7d9823a982b30c401dc6cff346,",
+      "brand.primary.base": "S:3cbaad42243ae557376e03fc75e2b25f8329d4df,"
     },
     "$figmaVariableReferences": {
       "brand.primary.lightest": "305706f0d2413e41173c3f4d4d1be3c5c5f75bad",
       "brand.primary.light": "3ba293182e1f5e066e661191e25cb69c8ee08de8",
-      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063",
       "brand.primary.dark": "2ff77a0485a3512f1cb4a19f3dd15bf2b53e9c46",
       "brand.primary.darkest": "2968e27ef9f6ed1a2e1083053f8616c0e283b197",
       "brand.primary.accent": "a930d2578c72b2e10277a63f0da1caec949e6bf3",
@@ -265,7 +266,8 @@
       "brand.neutral.accent": "944904a07aee2e85506cac337ee284b570fb78b8",
       "brand.common.focus-outline": "0b2eaa067a48a4a858c097d3e0283bf22a141a61",
       "brand.common.error-inner": "21617f8d1e51b668e28fdcc9e4a659d2b4e1c908",
-      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
+      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83",
+      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13546",
     "$figmaModeId": "19697:2"
@@ -276,13 +278,13 @@
     "group": "Brand",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/recruiting": "enabled"
+      "sys/brand/recruiting": "enabled",
+      "sys/brand/customTheme": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "brand.primary.lightest": "305706f0d2413e41173c3f4d4d1be3c5c5f75bad",
       "brand.primary.light": "3ba293182e1f5e066e661191e25cb69c8ee08de8",
-      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063",
       "brand.primary.dark": "2ff77a0485a3512f1cb4a19f3dd15bf2b53e9c46",
       "brand.primary.darkest": "2968e27ef9f6ed1a2e1083053f8616c0e283b197",
       "brand.primary.accent": "a930d2578c72b2e10277a63f0da1caec949e6bf3",
@@ -312,24 +314,23 @@
       "brand.neutral.accent": "944904a07aee2e85506cac337ee284b570fb78b8",
       "brand.common.focus-outline": "0b2eaa067a48a4a858c097d3e0283bf22a141a61",
       "brand.common.error-inner": "21617f8d1e51b668e28fdcc9e4a659d2b4e1c908",
-      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
+      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83",
+      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13546",
     "$figmaModeId": "19697:3"
   },
   {
     "id": "6ca304153445ff80c95aed8790b5445a5dead0ef",
-    "name": "Brand A",
-    "group": "Brand",
+    "name": "customTheme",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/brand-a": "enabled"
+      "sys/brand/customTheme": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "brand.primary.lightest": "305706f0d2413e41173c3f4d4d1be3c5c5f75bad",
       "brand.primary.light": "3ba293182e1f5e066e661191e25cb69c8ee08de8",
-      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063",
       "brand.primary.dark": "2ff77a0485a3512f1cb4a19f3dd15bf2b53e9c46",
       "brand.primary.darkest": "2968e27ef9f6ed1a2e1083053f8616c0e283b197",
       "brand.primary.accent": "a930d2578c72b2e10277a63f0da1caec949e6bf3",
@@ -359,57 +360,12 @@
       "brand.neutral.accent": "944904a07aee2e85506cac337ee284b570fb78b8",
       "brand.common.focus-outline": "0b2eaa067a48a4a858c097d3e0283bf22a141a61",
       "brand.common.error-inner": "21617f8d1e51b668e28fdcc9e4a659d2b4e1c908",
-      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
+      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83",
+      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13546",
-    "$figmaModeId": "19697:4"
-  },
-  {
-    "id": "d042c7d92e0e5caf6718adfe946242879b91b6dc",
-    "name": "Brand B",
-    "group": "Brand",
-    "selectedTokenSets": {
-      "base": "source",
-      "sys/brand/brand-b": "enabled"
-    },
-    "$figmaStyleReferences": {},
-    "$figmaVariableReferences": {
-      "brand.primary.lightest": "305706f0d2413e41173c3f4d4d1be3c5c5f75bad",
-      "brand.primary.light": "3ba293182e1f5e066e661191e25cb69c8ee08de8",
-      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063",
-      "brand.primary.dark": "2ff77a0485a3512f1cb4a19f3dd15bf2b53e9c46",
-      "brand.primary.darkest": "2968e27ef9f6ed1a2e1083053f8616c0e283b197",
-      "brand.primary.accent": "a930d2578c72b2e10277a63f0da1caec949e6bf3",
-      "brand.alert.lightest": "6c259faa99c7dfaaaf933e711bcbff70b49775a7",
-      "brand.alert.light": "ec26d2727c24ed0954a5347b24227ebdc38623a3",
-      "brand.alert.base": "693d07514f494fdfaa8d6a660e7287b32d5346b9",
-      "brand.alert.dark": "4dd066970569d810eb1a28910f6a38339e837a70",
-      "brand.alert.darkest": "ad61c4fbadddde8b2ca25df2cd920dfd4c9efeb6",
-      "brand.alert.accent": "3653e16101e2b0d9884ce157a46ca98a03d06f43",
-      "brand.error.lightest": "83a4954c0fad1b1294f35485a4b942e489c8f06f",
-      "brand.error.light": "5e46afbfa8877415beb28bad6955f4859f77ef29",
-      "brand.error.base": "854b5a131ed42fc5603ed4c0b5d641f6cd197f8d",
-      "brand.error.dark": "e2ba86c43d348cce3f9e40110a257a9a396c4702",
-      "brand.error.darkest": "01601d146e0e26903f8d39b34a03ec45f58e61f4",
-      "brand.error.accent": "b57fac1ed27f921898cf7d8bab6e5bd1c8946d1c",
-      "brand.success.lightest": "e5f5aca6cda7cd289117d97207411b007865688c",
-      "brand.success.light": "65d8535ba8a7c3d4188b3e0107b35d7b032a719a",
-      "brand.success.base": "1aa042a25f4f5008b3533f021d0a1b2eb9068e1c",
-      "brand.success.dark": "c5636f03da299d0b9637e50361f164cef616e544",
-      "brand.success.darkest": "7f1682891acfc337f4064caa7dbec275d0671a09",
-      "brand.success.accent": "cf265f688c215d02067f9ef0d89ba6bad34130b3",
-      "brand.neutral.lightest": "fbeb832b0644226197ff9a2e724da6766db3f6fa",
-      "brand.neutral.light": "773ba67f2253416dd0028ee9f65d13572dd73b09",
-      "brand.neutral.base": "8d47ebb5190c6528889c48a75a7a262d1fe91a22",
-      "brand.neutral.dark": "683aac72ada7824c8886f2b24c97f9def6278e32",
-      "brand.neutral.darkest": "a1599d15e49d09ad968ab338dff2b0c136e9933f",
-      "brand.neutral.accent": "944904a07aee2e85506cac337ee284b570fb78b8",
-      "brand.common.focus-outline": "0b2eaa067a48a4a858c097d3e0283bf22a141a61",
-      "brand.common.error-inner": "21617f8d1e51b668e28fdcc9e4a659d2b4e1c908",
-      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
-    },
-    "$figmaCollectionId": "VariableCollectionId:19697:13546",
-    "$figmaModeId": "19697:5"
+    "$figmaModeId": "19697:4",
+    "group": "Brand"
   },
   {
     "id": "0f4c571c01b987c72558499b8fe2cffbe7b93137",
@@ -422,7 +378,8 @@
       "sys/type": "enabled",
       "sys/depth": "enabled",
       "sys/border": "enabled",
-      "sys/opacity": "enabled"
+      "sys/opacity": "enabled",
+      "sys/brand/customTheme": "disabled"
     },
     "$figmaStyleReferences": {
       "type.title.medium": "S:81288930107dddb04356f7f0c70ba5033359e25e,",

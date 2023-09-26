@@ -177,15 +177,15 @@
     },
     "common": {
       "focus-outline": {
-        "value": "#9811c4",
+        "value": "#fa2af1",
         "type": "color"
       },
       "error-inner": {
-        "value": "#e60b0b",
+        "value": "{brand.error.base}",
         "type": "color"
       },
       "alert-inner": {
-        "value": "#f3b30c",
+        "value": "{brand.alert.base}",
         "type": "color"
       }
     },
