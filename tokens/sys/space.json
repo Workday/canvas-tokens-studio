@@ -5,6 +5,11 @@
       "type": "spacing",
       "description": "Use for stacked elements, like rows in tables"
     },
+    "xhalf": {
+      "value": "{base.unit} * 0.5",
+      "type": "spacing",
+      "description": "Mobile"
+    },
     "x1": {
       "value": "{base.unit}",
       "type": "spacing",
