@@ -4,8 +4,7 @@
     "name": "Base",
     "group": "Base",
     "selectedTokenSets": {
-      "base": "enabled",
-      "sys/brand/customTheme": "disabled"
+      "base": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -195,8 +194,7 @@
     "group": "Brand",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/default": "enabled",
-      "sys/brand/customTheme": "disabled"
+      "sys/brand/default": "enabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,",
@@ -237,6 +235,7 @@
     "$figmaVariableReferences": {
       "brand.primary.lightest": "305706f0d2413e41173c3f4d4d1be3c5c5f75bad",
       "brand.primary.light": "3ba293182e1f5e066e661191e25cb69c8ee08de8",
+      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063",
       "brand.primary.dark": "2ff77a0485a3512f1cb4a19f3dd15bf2b53e9c46",
       "brand.primary.darkest": "2968e27ef9f6ed1a2e1083053f8616c0e283b197",
       "brand.primary.accent": "a930d2578c72b2e10277a63f0da1caec949e6bf3",
@@ -266,8 +265,7 @@
       "brand.neutral.accent": "944904a07aee2e85506cac337ee284b570fb78b8",
       "brand.common.focus-outline": "0b2eaa067a48a4a858c097d3e0283bf22a141a61",
       "brand.common.error-inner": "21617f8d1e51b668e28fdcc9e4a659d2b4e1c908",
-      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83",
-      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063"
+      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13546",
     "$figmaModeId": "19697:2"
@@ -278,13 +276,13 @@
     "group": "Brand",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/recruiting": "enabled",
-      "sys/brand/customTheme": "disabled"
+      "sys/brand/recruiting": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "brand.primary.lightest": "305706f0d2413e41173c3f4d4d1be3c5c5f75bad",
       "brand.primary.light": "3ba293182e1f5e066e661191e25cb69c8ee08de8",
+      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063",
       "brand.primary.dark": "2ff77a0485a3512f1cb4a19f3dd15bf2b53e9c46",
       "brand.primary.darkest": "2968e27ef9f6ed1a2e1083053f8616c0e283b197",
       "brand.primary.accent": "a930d2578c72b2e10277a63f0da1caec949e6bf3",
@@ -314,11 +312,10 @@
       "brand.neutral.accent": "944904a07aee2e85506cac337ee284b570fb78b8",
       "brand.common.focus-outline": "0b2eaa067a48a4a858c097d3e0283bf22a141a61",
       "brand.common.error-inner": "21617f8d1e51b668e28fdcc9e4a659d2b4e1c908",
-      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83",
-      "brand.primary.base": "45abd33ebbd4af9912e05a27b12cfc63bd3ea063"
+      "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13546",
-    "$figmaModeId": "19697:3"
+    "$figmaModeId": "19924:3"
   },
   {
     "id": "6ca304153445ff80c95aed8790b5445a5dead0ef",
@@ -378,8 +375,7 @@
       "sys/type": "enabled",
       "sys/depth": "enabled",
       "sys/border": "enabled",
-      "sys/opacity": "enabled",
-      "sys/brand/customTheme": "disabled"
+      "sys/opacity": "enabled"
     },
     "$figmaStyleReferences": {
       "type.title.medium": "S:81288930107dddb04356f7f0c70ba5033359e25e,",
@@ -495,6 +491,35 @@
       "depth.6": "S:0098b3d0f60a01895d3ae2d404c236262b925f97,"
     },
     "$figmaVariableReferences": {
+      "font-size.subtext.small": "b1b91617978ef4807b32ac0b808dc3186b024691",
+      "font-size.subtext.medium": "fa62c48211b812a4121f34da43c2b65b8533cf8b",
+      "font-size.subtext.large": "7dae9d688f1e4233aeaa034a62600a490c8c992f",
+      "font-size.body.small": "183ad796ae957b29f297dcc2c723bef71fb14a6b",
+      "font-size.body.medium": "9adc3e1b544b256d211fe34cb1758bd9a8ac70d1",
+      "font-size.body.large": "0842380e7e711ace2a4cac7c7762b172dfbc476d",
+      "font-size.heading.small": "d7052cad437afb8a2554fcd9b55692c94509f56e",
+      "font-size.heading.medium": "055e8b0b1d80a2e7f6bea41f7424df21d4a30182",
+      "font-size.heading.large": "27a8ba8cb14be06dc9b2b00ee4954d8681f6a705",
+      "font-size.title.small": "d9d5e7deb6f377f07087c596975b27af445587f4",
+      "font-size.title.medium": "840ba52bffe7a9985663c3f2f98a44ebb333537d",
+      "font-size.title.large": "7aa25b47d2329c619564eca7832dcb2a93a8714a",
+      "shape.zero": "1c15a6e6b27a1f449a46b02489edd5925544dfa6",
+      "shape.xhalf": "0b00b5afe1e00010cf73d4acbe703e32655e22cd",
+      "shape.x1": "038d12a3158a70157286ce4694b3c00cce8db839",
+      "shape.x2": "050887f16086312c3d25fe071da3c208c27ba14f",
+      "shape.x4": "2f9bf847e9b5e507da3f21f05f89eda184a6e225",
+      "shape.x6": "77107767f6a5ed19c4b42cdb2be9a09fc1e51d1f",
+      "shape.round": "4a28c7d61181b2c7c3b78cd041f798c1157b60da",
+      "space.x16": "989a0e887bd0f417a57824890793244ed8b7eae9",
+      "space.zero": "3e341a397adfbae1766414503cfc3b7d12074384",
+      "space.x1": "a7e0f544eba9d31742005fa0ea5f09d777f815ac",
+      "space.x2": "ab369bc20208cb2c1f4a188f5cb26dd49285c513",
+      "space.x3": "532546160ec6a2a4686d9153888ac978e4c5b800",
+      "space.x4": "106a291452ecdafdc8ad653ab2f4ac49d5197927",
+      "space.x6": "359c7e79e45736f5c5aa17855c58f09f60d07d2d",
+      "space.x8": "7b3ea5faa312dd3a8230c2a6528a7a29ce2fa863",
+      "space.x10": "e5bbfa7526e099320107451a768412b8a6fb35c6",
+      "space.x20": "1842f55f6bab09ee21b469db56fd5ab37a7d0100",
       "color.bg.default": "a4530b7fe75a09af6e1512efefa80cf1ca629ca0",
       "color.bg.alt": "1378b4514ff0eb39be84ca1b321b44b7e1d9e70f",
       "color.bg.hover": "d68f59a5a6d563351c124bd8d16093aa2b069895",
@@ -570,42 +595,10 @@
       "color.data-viz.06": "7ddb2eda0c23032775ccf4784f622a1f7114ebe8",
       "color.data-viz.07": "1c0c1e623fad88468051249481d491a17a36281c",
       "color.data-viz.08": "323118d250c936a29c3d33315bd35799d60e0f98",
-      "color.data-viz.09": "e3cb69c5e80981aa4741474233d2a194f49bd201",
-      "font-size.subtext.small": "b1b91617978ef4807b32ac0b808dc3186b024691",
-      "font-size.subtext.medium": "fa62c48211b812a4121f34da43c2b65b8533cf8b",
-      "font-size.subtext.large": "7dae9d688f1e4233aeaa034a62600a490c8c992f",
-      "font-size.body.small": "183ad796ae957b29f297dcc2c723bef71fb14a6b",
-      "font-size.body.medium": "9adc3e1b544b256d211fe34cb1758bd9a8ac70d1",
-      "font-size.body.large": "0842380e7e711ace2a4cac7c7762b172dfbc476d",
-      "font-size.heading.small": "d7052cad437afb8a2554fcd9b55692c94509f56e",
-      "font-size.heading.medium": "055e8b0b1d80a2e7f6bea41f7424df21d4a30182",
-      "font-size.heading.large": "27a8ba8cb14be06dc9b2b00ee4954d8681f6a705",
-      "font-size.title.small": "d9d5e7deb6f377f07087c596975b27af445587f4",
-      "font-size.title.medium": "840ba52bffe7a9985663c3f2f98a44ebb333537d",
-      "font-size.title.large": "7aa25b47d2329c619564eca7832dcb2a93a8714a",
-      "shape.zero": "1c15a6e6b27a1f449a46b02489edd5925544dfa6",
-      "shape.xhalf": "0b00b5afe1e00010cf73d4acbe703e32655e22cd",
-      "shape.x1": "038d12a3158a70157286ce4694b3c00cce8db839",
-      "shape.x2": "050887f16086312c3d25fe071da3c208c27ba14f",
-      "shape.x4": "2f9bf847e9b5e507da3f21f05f89eda184a6e225",
-      "shape.x6": "77107767f6a5ed19c4b42cdb2be9a09fc1e51d1f",
-      "shape.round": "4a28c7d61181b2c7c3b78cd041f798c1157b60da",
-      "space.zero": "c52c7ec5ece2ed5d9242a83fb2a0103a184e4ab2",
-      "space.x1": "193ae95f93dd2adc8397e837fc015a50077d474f",
-      "space.x2": "e8aeb02a53677df34ff7fe17061c70b150873d85",
-      "space.x3": "f6b38d02e1536fa4e0b47030985edf6299fe5953",
-      "space.x4": "c5cdacc0247c7cd098f175359ac9481fc59882bc",
-      "space.x5": "844b7d166cce1dee6ec6c5347e5aa86824d6a9ea",
-      "space.x6": "3028a4ea1f0f1566b58f89c72d02607e37868dd8",
-      "space.x8": "5d74beed9108adcd61a2e18e682850532c4a1227",
-      "space.x10": "3d0dad060bc1956cccb77b673e78377735ce05c0",
-      "space.x12": "ff5aed715c3aee10d1a518689cb44e887f0e5dc0",
-      "space.x14": "8839c0be013eb5c0aa4c4f03d80d1371594fdd19",
-      "space.x16": "246ea0c5221379fac64b7d165bee2734689538f9",
-      "space.x20": "557e8a449822ddef71446c47c8c91db09a8d65ae"
+      "color.data-viz.09": "e3cb69c5e80981aa4741474233d2a194f49bd201"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13580",
-    "$figmaModeId": "19697:6",
+    "$figmaModeId": "19924:4",
     "group": "System"
   }
 ]

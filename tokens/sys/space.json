@@ -3,7 +3,7 @@
     "zero": {
       "value": "0",
       "type": "spacing",
-      "description": "• Use sparingly\n• When elements are stacked and require no space between them\n• Rows of data e.g. tables"
+      "description": "Use for stacked elements, like rows in tables"
     },
     "x1": {
       "value": "{base.unit}",
@@ -28,7 +28,7 @@
     "x5": {
       "value": "{base.unit} * 5",
       "type": "spacing",
-      "description": "Mobile"
+      "description": "Mobile only\n"
     },
     "x6": {
       "value": "{base.unit} * 6",
@@ -45,20 +45,15 @@
       "type": "spacing",
       "description": "• Used for outer margins on the overall page content \n• Used for inner margins on large items such as page sections"
     },
-    "x12": {
-      "value": "{base.unit} * 12",
-      "type": "spacing",
-      "description": "Mobile spacing"
-    },
     "x14": {
       "value": "{base.unit} * 14",
       "type": "spacing",
-      "description": "• Use to de-clutter your UI when alot of space is available\n• Separate banner sections from page content\n• Use to differentiate page content like page sections"
+      "description": "Mobile only\n"
     },
     "x16": {
       "value": "{base.unit} * 16",
       "type": "spacing",
-      "description": "Mobile"
+      "description": "Web only\n"
     },
     "x20": {
       "value": "{base.unit} * 20",
