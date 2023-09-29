@@ -4,8 +4,7 @@
     "name": "Base",
     "group": "Base",
     "selectedTokenSets": {
-      "base": "enabled",
-      "sys/brand/custom": "disabled"
+      "base": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -195,8 +194,7 @@
     "group": "Brand",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/default": "enabled",
-      "sys/brand/custom": "disabled"
+      "sys/brand/default": "enabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,",
@@ -277,8 +275,7 @@
     "name": "Candidate Home",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/recruiting": "enabled",
-      "sys/brand/custom": "disabled"
+      "sys/brand/recruiting": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -376,9 +373,7 @@
       "sys/shape": "enabled",
       "sys/type": "enabled",
       "sys/depth": "enabled",
-      "sys/border": "enabled",
-      "sys/opacity": "enabled",
-      "sys/brand/custom": "disabled"
+      "sys/opacity": "enabled"
     },
     "$figmaStyleReferences": {
       "type.title.medium": "S:81288930107dddb04356f7f0c70ba5033359e25e,",

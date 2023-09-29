@@ -729,7 +729,7 @@
     "unit": {
       "value": "0.25rem",
       "type": "dimension",
-      "description": "Smallest unit in the baseline grid\n"
+      "description": "The base unit used in the grid system.\n"
     }
   },
   "font-size": {
@@ -1065,6 +1065,6 @@
   "level": {
     "value": "2",
     "type": "number",
-    "description": "Multiplier to calculate the skip level between levesl in the type ramp."
+    "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
   }
 }

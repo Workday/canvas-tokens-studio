@@ -8,7 +8,6 @@
     "sys/shape",
     "sys/type",
     "sys/depth",
-    "sys/border",
     "sys/opacity"
   ]
 }
