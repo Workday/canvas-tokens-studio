@@ -4,7 +4,8 @@
     "name": "Base",
     "group": "Base",
     "selectedTokenSets": {
-      "base": "enabled"
+      "base": "enabled",
+      "sys/brand/custom": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -194,7 +195,8 @@
     "group": "Brand",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/default": "enabled"
+      "sys/brand/default": "enabled",
+      "sys/brand/custom": "disabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,",
@@ -272,11 +274,11 @@
   },
   {
     "id": "069e87c90def0e3d6074bd44041b77ca0dc9e5b5",
-    "name": "Recruiting",
-    "group": "Brand",
+    "name": "Candidate Home",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/recruiting": "enabled"
+      "sys/brand/recruiting": "enabled",
+      "sys/brand/custom": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -315,14 +317,15 @@
       "brand.common.alert-inner": "1263d4afe777384b74c621f70b26df6ae41e8e83"
     },
     "$figmaCollectionId": "VariableCollectionId:19697:13546",
-    "$figmaModeId": "19924:3"
+    "$figmaModeId": "19924:3",
+    "group": "Brand"
   },
   {
     "id": "6ca304153445ff80c95aed8790b5445a5dead0ef",
-    "name": "customTheme",
+    "name": "Custom",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/customTheme": "enabled"
+      "sys/brand/custom": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -369,13 +372,13 @@
     "name": "Default",
     "selectedTokenSets": {
       "base": "source",
-      "sys/color": "enabled",
       "sys/space": "enabled",
       "sys/shape": "enabled",
       "sys/type": "enabled",
       "sys/depth": "enabled",
       "sys/border": "enabled",
-      "sys/opacity": "enabled"
+      "sys/opacity": "enabled",
+      "sys/brand/custom": "disabled"
     },
     "$figmaStyleReferences": {
       "type.title.medium": "S:81288930107dddb04356f7f0c70ba5033359e25e,",

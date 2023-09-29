@@ -3,16 +3,12 @@
     "base",
     "sys/brand/default",
     "sys/brand/recruiting",
-    "sys/brand/customTheme",
-    "sys/brand/yellow",
-    "sys/color",
+    "sys/brand/custom",
     "sys/space",
     "sys/shape",
     "sys/type",
     "sys/depth",
     "sys/border",
-    "sys/opacity",
-    "component/button",
-    "component/input"
+    "sys/opacity"
   ]
 }
