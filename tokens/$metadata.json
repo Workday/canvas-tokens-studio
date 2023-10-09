@@ -1,18 +1,13 @@
 {
   "tokenSetOrder": [
     "base",
-    "brand/default",
-    "brand/recruiting",
-    "brand/brand-a",
-    "brand/brand-b",
-    "sys/color",
+    "sys/brand/default",
+    "sys/brand/recruiting",
+    "sys/brand/custom",
     "sys/space",
     "sys/shape",
     "sys/type",
     "sys/depth",
-    "sys/border",
-    "sys/opacity",
-    "component/button",
-    "component/input"
+    "sys/opacity"
   ]
 }

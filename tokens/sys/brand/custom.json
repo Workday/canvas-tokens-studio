@@ -28,7 +28,7 @@
         }
       },
       "base": {
-        "value": "#db46db",
+        "value": "purple",
         "type": "color"
       },
       "dark": {
@@ -60,7 +60,7 @@
         }
       },
       "accent": {
-        "value": "cyan",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -92,8 +92,18 @@
         }
       },
       "base": {
-        "value": "#e68a0d",
-        "type": "color"
+        "value": "{palette.cantaloupe.400}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.2",
+              "space": "lch",
+              "color": "{palette.sour-lemon.300} "
+            }
+          }
+        }
       },
       "dark": {
         "value": "{brand.alert.base}",
@@ -124,7 +134,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -156,8 +166,18 @@
         }
       },
       "base": {
-        "value": "#e52329",
-        "type": "color"
+        "value": "{palette.cinnamon.500}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.2",
+              "space": "lch",
+              "color": "{palette.peach.200} "
+            }
+          }
+        }
       },
       "dark": {
         "value": "{brand.error.base}",
@@ -188,7 +208,7 @@
         }
       },
       "accent": {
-        "value": "cyan",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -220,8 +240,18 @@
         }
       },
       "base": {
-        "value": "#77d124",
-        "type": "color"
+        "value": "{palette.green-apple.400}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.1",
+              "space": "lch",
+              "color": "{palette.juicy-pear.200} "
+            }
+          }
+        }
       },
       "dark": {
         "value": "{brand.success.base}",
@@ -252,7 +282,7 @@
         }
       },
       "accent": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "turquoise",
         "type": "color"
       }
     },
@@ -284,7 +314,7 @@
         }
       },
       "base": {
-        "value": "#e4e4e7",
+        "value": "{palette.soap.500}",
         "type": "color"
       },
       "dark": {
@@ -316,13 +346,13 @@
         }
       },
       "accent": {
-        "value": "#0df2db",
+        "value": "turquoise",
         "type": "color"
       }
     },
     "common": {
       "focus-outline": {
-        "value": "{brand.primary.base}",
+        "value": "turquoise",
         "type": "color"
       },
       "error-inner": {

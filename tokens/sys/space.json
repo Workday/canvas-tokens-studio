@@ -2,55 +2,68 @@
   "space": {
     "zero": {
       "value": "0",
-      "type": "spacing"
+      "type": "spacing",
+      "description": "Stacks, rows in tables"
+    },
+    "xhalf": {
+      "value": "{base.unit} * 0.5",
+      "type": "spacing",
+      "description": "Mobile"
     },
     "x1": {
-      "value": "{base.dimension}",
-      "type": "spacing"
+      "value": "{base.unit}",
+      "type": "spacing",
+      "description": "Compact spacing between text or icons"
     },
     "x2": {
-      "value": "{base.dimension} * 2",
-      "type": "spacing"
+      "value": "{base.unit} * 2",
+      "type": "spacing",
+      "description": "Commonly used to group compact elements like icon buttons"
     },
     "x3": {
-      "value": "{base.dimension} * 3",
-      "type": "spacing"
+      "value": "{base.unit} * 3",
+      "type": "spacing",
+      "description": "Use when compact padding is required"
     },
     "x4": {
-      "value": "{base.dimension} * 4",
-      "type": "spacing"
+      "value": "{base.unit} * 4",
+      "type": "spacing",
+      "description": "Default space token. Used to group Inputs with related data"
     },
     "x5": {
-      "value": "{base.dimension} * 5",
-      "type": "spacing"
+      "value": "{base.unit} * 5",
+      "type": "spacing",
+      "description": "Mobile only\n"
     },
     "x6": {
-      "value": "{base.dimension} * 6",
-      "type": "spacing"
+      "value": "{base.unit} * 6",
+      "type": "spacing",
+      "description": "• Padding around card content\n• Related elements where more space between them can be afforded\n• Separate section headings or titles from body text or inputs"
     },
     "x8": {
-      "value": "{base.dimension} * 8",
-      "type": "spacing"
+      "value": "{base.unit} * 8",
+      "type": "spacing",
+      "description": "• Standard spacing between cards\n• Used to separate groups of content \n• Separate section headings or titles from body text or inputs"
     },
     "x10": {
-      "value": "{base.dimension} * 10",
-      "type": "spacing"
-    },
-    "x12": {
-      "value": "{base.dimension} * 12",
-      "type": "spacing"
+      "value": "{base.unit} * 10",
+      "type": "spacing",
+      "description": "• Used for outer margins on the overall page content \n• Used for inner margins on large items such as page sections"
     },
     "x14": {
-      "value": "{base.dimension} * 14",
-      "type": "spacing"
+      "value": "{base.unit} * 14",
+      "type": "spacing",
+      "description": "Mobile only\n"
     },
     "x16": {
-      "value": "{base.dimension} * 16",
-      "type": "spacing"
+      "value": "{base.unit} * 16",
+      "type": "spacing",
+      "description": "- Use to de-clutter your UI when alot of space is available\n- Separate banner sections from page content\n- Use to differentiate page content like page sections"
     },
     "x20": {
-      "value": "{base.dimension} * 20",
-      "type": "spacing"
+      "value": "{base.unit} * 20",
+      "type": "spacing",
+      "description": "- Use sparingly\n- Helps to put focus on the primary element within your page\n- Use to de-clutter your UI when a lot of space is available"
     }
   }
 }
