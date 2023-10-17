@@ -2,72 +2,87 @@
   "font-family": {
     "default": {
       "value": "{font-family.50}",
-      "type": "fontFamilies"
+      "type": "fontFamilies",
+      "description": "Foundational typography setting used extensively across the entire design system. "
     },
     "mono": {
       "value": "{font-family.100}",
-      "type": "fontFamilies"
+      "type": "fontFamilies",
+      "description": "Used mainly for numbers and any text that need consistent spacing."
     },
     "global": {
       "value": "{font-family.200}",
-      "type": "fontFamilies"
+      "type": "fontFamilies",
+      "description": "Handle text display across multiple languages, accommodating character sets that require special typographic considerations."
     }
   },
   "font-size": {
     "subtext": {
       "small": {
         "value": "{font-size.25}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Subtext Small (10px) - Smallest size for auxiliary text; use for disclaimers or fine print."
       },
       "medium": {
         "value": "{font-size.50}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Subtext Medium (12px) - Default size for secondary information, useful for mid-size subtexts."
       },
       "large": {
         "value": "{font-size.75}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Subtext Large (14px) - Larger subtext for emphasis without becoming main content."
       }
     },
     "body": {
       "small": {
         "value": "{font-size.100}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Body Small (16px) - Compact size for body text; maximizes space in tight layouts."
       },
       "medium": {
         "value": "{font-size.125}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Body Medium (18px) - Standard body text size for balanced readability."
       },
       "large": {
         "value": "{font-size.150}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Body Large (20px) - Enhanced size for body text when emphasis or easier reading is needed."
       }
     },
     "heading": {
       "small": {
         "value": "{font-size.200}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Heading Small (24px) - Smaller heading size for subsections or secondary titles."
       },
       "medium": {
         "value": "{font-size.250}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Heading Medium (28px) - Standard size for main section headings."
       },
       "large": {
         "value": "{font-size.300}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Heading Large (32px) - Large headings for section starts or major transitions."
       }
     },
     "title": {
       "small": {
         "value": "{font-size.400}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Title Small (40px) - Smaller titles for less dominant page elements."
       },
       "medium": {
         "value": "{font-size.500}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Title Medium (48px) - Standard title size for main content areas."
       },
       "large": {
         "value": "{font-size.600}",
-        "type": "sizing"
+        "type": "sizing",
+        "description": "Title Large (56px) - Largest title size for key focal points or primary headings."
       }
     }
   },
@@ -75,76 +90,92 @@
     "subtext": {
       "small": {
         "value": "{line-height.50}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use small line-height for compact layouts such table cells or captions."
       },
       "medium": {
         "value": "{line-height.50}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use medium line-height for standard layouts for a more balance visual hierachy and legibility."
       },
       "large": {
         "value": "{line-height.100}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use large line-height for spacious layouts, ideal for long-form content, headlines, or text elements that could benefit from increased vertical spacing."
       }
     },
     "body": {
       "small": {
         "value": "{line-height.150}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use small line-height for compact layouts such table cells or captions."
       },
       "medium": {
         "value": "{line-height.200}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use medium line-height for standard layouts for a more balance visual hierachy and legibility."
       },
       "large": {
         "value": "{line-height.200}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use large line-height for spacious layouts, ideal for long-form content, headlines, or text elements that could benefit from increased vertical spacing."
       }
     },
     "heading": {
       "small": {
         "value": "{line-height.250}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use small line-height for compact layouts such table cells or captions."
       },
       "medium": {
         "value": "{line-height.300}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use medium line-height for standard layouts for a more balance visual hierachy and legibility."
       },
       "large": {
         "value": "{line-height.350}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use large line-height for spacious layouts, ideal for long-form content, headlines, or text elements that could benefit from increased vertical spacing."
       }
     },
     "title": {
       "small": {
         "value": "{line-height.400}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use small line-height for compact layouts such table cells or captions."
       },
       "medium": {
         "value": "{line-height.500}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use medium line-height for standard layouts for a more balance visual hierachy and legibility."
       },
       "large": {
         "value": "{line-height.600}",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Use large line-height for spacious layouts, ideal for long-form content, headlines, or text elements that could benefit from increased vertical spacing."
       }
     }
   },
   "font-weight": {
     "light": {
       "value": "{font-weight.300}",
-      "type": "fontWeights"
+      "type": "fontWeights",
+      "description": "Set the type to light weight ideal for less dominant appearance."
     },
     "normal": {
       "value": "{font-weight.400}",
-      "type": "fontWeights"
+      "type": "fontWeights",
+      "description": "Set the type to a normal weight ideal for a general appearance."
     },
     "medium": {
       "value": "{font-weight.500}",
-      "type": "fontWeights"
+      "type": "fontWeights",
+      "description": "Set the type to a medium weight ideal for a more moderate appearance."
     },
     "bold": {
       "value": "{font-weight.700}",
-      "type": "fontWeights"
+      "type": "fontWeights",
+      "description": "Set the type to a bold weight ideal for headings, emphasis, buttons and anything text that need attention."
     }
   },
   "type": {
@@ -157,7 +188,8 @@
           "fontSize": "{font-size.25}",
           "letterSpacing": "{letter-spacing.50}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Subtext Small (10px) - (400) Regular\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "medium": {
         "value": {
@@ -167,7 +199,8 @@
           "fontSize": "{font-size.50}",
           "letterSpacing": "{letter-spacing.100}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Subtext Medium (12px) - (400) Regular\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "large": {
         "value": {
@@ -177,7 +210,8 @@
           "fontSize": "{font-size.75}",
           "letterSpacing": "{letter-spacing.150}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Subtext Large (14px) - (400) Regular\n\n🧩Advised Use:\nComplex data\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     },
     "body": {
@@ -189,7 +223,8 @@
           "fontSize": "{font-size.100}",
           "letterSpacing": "{letter-spacing.200}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Body Small (16px) - (400) Regular\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "medium": {
         "value": {
@@ -198,7 +233,8 @@
           "lineHeight": "{line-height.200}",
           "fontSize": "{font-size.125}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Body Medium (18px) - (400) Regular\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "large": {
         "value": {
@@ -207,7 +243,8 @@
           "lineHeight": "{line-height.200}",
           "fontSize": "{font-size.150}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Body Large (20px) - (400) Regular\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     },
     "heading": {
@@ -218,7 +255,8 @@
           "lineHeight": "{line-height.250}",
           "fontSize": "{font-size.200}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Heading Small (24px) - (400) Regular\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "medium": {
         "value": {
@@ -227,7 +265,8 @@
           "lineHeight": "{line-height.300}",
           "fontSize": "{font-size.250}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Heading Medium (28px) - (400) Regular\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "large": {
         "value": {
@@ -236,7 +275,8 @@
           "lineHeight": "{line-height.350}",
           "fontSize": "{font-size.300}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Heading Large (32px) - (400) Regular\n\n🧩Advised Use:\nHeadings and Subheadings\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     },
     "title": {
@@ -247,7 +287,8 @@
           "lineHeight": "{line-height.400}",
           "fontSize": "{font-size.400}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Title Small (40px) - (400) Regular\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "medium": {
         "value": {
@@ -256,7 +297,8 @@
           "lineHeight": "{line-height.500}",
           "fontSize": "{font-size.500}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Title Medium (48px) - (400) Regular\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "large": {
         "value": {
@@ -265,7 +307,8 @@
           "lineHeight": "{line-height.600}",
           "fontSize": "{font-size.600}"
         },
-        "type": "typography"
+        "type": "typography",
+        "description": "Title Large (56px) - (400) Regular\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     }
   },
@@ -697,7 +740,7 @@
           "textDecoration": "underline"
         },
         "type": "typography",
-        "description": "Body Large (20px) - (500) Medium\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
+        "description": "Body Large (20px) - (400) Regular\n\n🧩Advised Use:\nParagraphs\n\n🖍Main Color:\nBlack Pepper 300\n\n✚ More Colors:\nSee Type Color Swatches"
       },
       "Body L Link - (500) Medium": {
         "value": {
@@ -813,7 +856,7 @@
           "fontSize": "{font-size.600}"
         },
         "type": "typography",
-        "description": "Title Small (56px) - (500) Medium\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
+        "description": "Title Large (56px) - (500) Medium\n\n🧩Advised Use:\nTitles\n\n🖍Main Color:\nBlack Pepper 400\n\n✚ More Colors:\nSee Type Color Swatches"
       }
     }
   }
