@@ -2,9 +2,6 @@
   "tokenSetOrder": [
     "base",
     "sys/brand/default",
-    "sys/brand/recruiting",
-    "sys/brand/customTheme",
-    "sys/brand/yellow",
     "sys/color",
     "sys/space",
     "sys/shape",

@@ -275,8 +275,7 @@
     "name": "Recruiting",
     "group": "Brand",
     "selectedTokenSets": {
-      "base": "source",
-      "sys/brand/recruiting": "enabled"
+      "base": "source"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -321,8 +320,7 @@
     "id": "6ca304153445ff80c95aed8790b5445a5dead0ef",
     "name": "customTheme",
     "selectedTokenSets": {
-      "base": "source",
-      "sys/brand/customTheme": "enabled"
+      "base": "source"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
