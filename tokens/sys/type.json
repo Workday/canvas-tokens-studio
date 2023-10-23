@@ -573,7 +573,7 @@
           "fontFamily": "{font-family.50}",
           "fontWeight": "{font-weight.400}",
           "lineHeight": "{line-height.150}",
-          "fontSize": "{font-size.200}",
+          "fontSize": "{font-size.100}",
           "letterSpacing": "{letter-spacing.100}",
           "textDecoration": "underline"
         },
