@@ -727,7 +727,7 @@
   },
   "base": {
     "unit": {
-      "value": "0.25",
+      "value": "0.25rem",
       "type": "dimension",
       "description": "The base unit used in the grid system.\n"
     },
