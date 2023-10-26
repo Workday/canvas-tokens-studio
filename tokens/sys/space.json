@@ -5,7 +5,7 @@
       "type": "spacing",
       "description": "Stacks, table rows"
     },
-    "xhalf": {
+    "half": {
       "value": "{base.unit} * 0.5",
       "type": "spacing",
       "description": "Mobile"
