@@ -104,6 +104,16 @@
       "type": "color",
       "description": "No fill applied"
     },
+    "shadow-soft": {
+      "value": "rgba({palette.licorice.600},{opacity.100})",
+      "type": "color",
+      "description": "Outer shadow depth color"
+    },
+    "shadow": {
+      "value": "rgba({palette.licorice.600},{opacity.200})",
+      "type": "color",
+      "description": "Inner shadow depth color"
+    },
     "emphasis-softest": {
       "value": "{palette.blueberry.100}",
       "type": "color",
@@ -199,16 +209,6 @@
       "value": "#80160E",
       "type": "color",
       "description": "Custom delete button active"
-    },
-    "shadow-soft": {
-      "value": "rgba({palette.licorice.600},{opacity.100})",
-      "type": "color",
-      "description": "Outer shadow depth color"
-    },
-    "shadow": {
-      "value": "rgba({palette.licorice.600},{opacity.200})",
-      "type": "color",
-      "description": "Inner shadow depth color"
     },
     "data-viz": {
       "10": {
