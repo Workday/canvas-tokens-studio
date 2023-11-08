@@ -3,22 +3,22 @@
     "main": {
       "value": "{palette.french-vanilla.100}",
       "type": "color",
-      "description": "Default BG"
+      "description": "Main whitespace, used throughout app, page level"
     },
     "surface": {
       "value": "{palette.french-vanilla.100}",
       "type": "color",
-      "description": "Containers"
+      "description": "Containers, cards, surfaces"
     },
     "bright": {
       "value": "{palette.french-vanilla.100}",
       "type": "color",
-      "description": "Containers"
+      "description": "Mostly Always White, used on dark bg, Inverse"
     },
     "subdued-softest": {
       "value": "{palette.soap.100}",
       "type": "color",
-      "description": "Disabled"
+      "description": "Lightest gray"
     },
     "subdued-soft": {
       "value": "{palette.soap.200}",
@@ -28,17 +28,17 @@
     "subdued": {
       "value": "{palette.soap.300}",
       "type": "color",
-      "description": "Disabled"
+      "description": "Alternative background when used with cards, bg hover"
     },
     "subdued-strong": {
       "value": "{palette.soap.400}",
       "type": "color",
-      "description": "Disabled"
+      "description": "Border"
     },
     "subdued-strongest": {
       "value": "{palette.soap.500}",
       "type": "color",
-      "description": "Disabled"
+      "description": "Table border"
     },
     "neutral-softest": {
       "value": "{palette.licorice.100}",
@@ -48,20 +48,22 @@
     "neutral-soft": {
       "value": "{palette.licorice.200}",
       "type": "color",
-      "description": "Hover"
+      "description": "Hover, Search form bg"
     },
     "neutral": {
       "value": "{palette.licorice.300}",
       "type": "color",
-      "description": "Pressed"
+      "description": "Pressed, Hint text"
     },
     "neutral-strong": {
       "value": "{palette.licorice.400}",
-      "type": "color"
+      "type": "color",
+      "description": "Icons, status Indicator text"
     },
     "neutral-strongest": {
       "value": "{palette.licorice.500}",
-      "type": "color"
+      "type": "color",
+      "description": "Pill borders, segmented control fg"
     },
     "supplement-softest": {
       "value": "{palette.black-pepper.200}",
@@ -69,19 +71,23 @@
     },
     "supplement-soft": {
       "value": "{palette.black-pepper.300}",
-      "type": "color"
+      "type": "color",
+      "description": "General body copy"
     },
     "supplement": {
       "value": "{palette.black-pepper.400}",
-      "type": "color"
+      "type": "color",
+      "description": "Header Text and icons"
     },
     "supplement-strong": {
       "value": "{palette.black-pepper.500}",
-      "type": "color"
+      "type": "color",
+      "description": "Secondary active"
     },
     "supplement-strongest": {
       "value": "{palette.black-pepper.600}",
-      "type": "color"
+      "type": "color",
+      "description": "Black, Darkest shade"
     },
     "translucent": {
       "value": "rgba({palette.black-pepper.600},{opacity.500})",
@@ -100,7 +106,8 @@
     },
     "emphasis-softest": {
       "value": "{palette.blueberry.100}",
-      "type": "color"
+      "type": "color",
+      "description": "Low-emphasis status"
     },
     "emphasis-soft": {
       "value": "{palette.blueberry.200}",
@@ -124,7 +131,8 @@
     },
     "positive-softest": {
       "value": "{palette.green-apple.100}",
-      "type": "color"
+      "type": "color",
+      "description": "Lox emphasis status indicator"
     },
     "positive-soft": {
       "value": "{palette.green-apple.200}",
@@ -132,7 +140,8 @@
     },
     "positive": {
       "value": "{palette.green-apple.400}",
-      "type": "color"
+      "type": "color",
+      "description": "Approved"
     },
     "positive-strong": {
       "value": "{palette.green-apple.500}",
@@ -140,11 +149,13 @@
     },
     "positive-strongest": {
       "value": "{palette.green-apple.600}",
-      "type": "color"
+      "type": "color",
+      "description": "Approved text, high emphasis status"
     },
     "caution-softest": {
       "value": "{palette.cantaloupe.100}",
-      "type": "color"
+      "type": "color",
+      "description": "Low emphasis status bg"
     },
     "caution-soft": {
       "value": "{palette.cantaloupe.200}",
@@ -152,19 +163,23 @@
     },
     "caution": {
       "value": "{palette.cantaloupe.400}",
-      "type": "color"
+      "type": "color",
+      "description": "Be cautious, alert"
     },
     "caution-strong": {
       "value": "{palette.cantaloupe.500}",
-      "type": "color"
+      "type": "color",
+      "description": "Alert hovers"
     },
     "caution-strongest": {
       "value": "{palette.cantaloupe.600}",
-      "type": "color"
+      "type": "color",
+      "description": "Outer ring for input alerts"
     },
     "attention-softest": {
       "value": "{palette.cinnamon.200}",
-      "type": "color"
+      "type": "color",
+      "description": "Low-emphasis attention"
     },
     "attention-soft": {
       "value": "{palette.cinnamon.300}",
@@ -172,23 +187,28 @@
     },
     "attention": {
       "value": "{palette.cinnamon.500}",
-      "type": "color"
+      "type": "color",
+      "description": "Needs Attention, Delete, Error, Count Badge,"
     },
     "attention-strong": {
       "value": "{palette.cinnamon.600}",
-      "type": "color"
+      "type": "color",
+      "description": "Delete hover"
     },
     "attention-strongest": {
       "value": "#80160E",
-      "type": "color"
+      "type": "color",
+      "description": "Custom delete button active"
     },
     "shadow-soft": {
       "value": "rgba({palette.licorice.600},{opacity.100})",
-      "type": "color"
+      "type": "color",
+      "description": "Outer shadow depth color"
     },
     "shadow": {
       "value": "rgba({palette.licorice.600},{opacity.200})",
-      "type": "color"
+      "type": "color",
+      "description": "Inner shadow depth color"
     },
     "data-viz": {
       "10": {
