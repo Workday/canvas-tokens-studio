@@ -1,13 +1,14 @@
 {
   "tokenSetOrder": [
-    "base",
-    "sys/brand/default",
-    "sys/brand/recruiting",
-    "sys/brand/custom",
-    "sys/space",
-    "sys/shape",
-    "sys/type",
-    "sys/depth",
-    "sys/opacity"
+    "mode/light",
+    "mode/dark",
+    "brand/canvas",
+    "brand/ingenuity",
+    "system/color",
+    "system/space",
+    "system/shape",
+    "system/depth",
+    "system/opacity",
+    "system/type"
   ]
 }

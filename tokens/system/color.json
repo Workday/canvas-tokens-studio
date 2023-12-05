@@ -1,0 +1,381 @@
+{
+  "color": {
+    "bg": {
+      "primary": {
+        "main": {
+          "value": "#305DFF",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#efeeff",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#c7c3ff",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#2d4bc7",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#293891",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "main": {
+          "value": "#FF003D",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#ffece7",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#ffbdac",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#ae2a1c",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#812418",
+          "type": "color"
+        }
+      },
+      "warning": {
+        "main": {
+          "value": "#FF7A00",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#fff6ea",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#ffdeb8",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#c77f23",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#925e1f",
+          "type": "color"
+        }
+      },
+      "positive": {
+        "main": {
+          "value": "#00B11C",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#effaef",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#c5ebc7",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#3a994f",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#2f713c",
+          "type": "color"
+        }
+      },
+      "magic": {
+        "main": {
+          "value": "#A027FF",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#f4eefb",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#d7c5f0",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#6b4da3",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#503a78",
+          "type": "color"
+        }
+      },
+      "muted": {
+        "main": {
+          "value": "#8e959d",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#ecedee",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#bcc0c5",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#405463",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#2e343b",
+          "type": "color"
+        }
+      },
+      "surface": {
+        "main": {
+          "value": "#FFFFFF",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#ecedf0",
+          "type": "color"
+        },
+        "stronger": {
+          "value": "#D7E4EE",
+          "type": "color"
+        },
+        "accent": {
+          "value": "{color.fg.strong}",
+          "type": "color"
+        },
+        "softer": {
+          "value": "#fcfcfd",
+          "type": "color"
+        },
+        "soft": {
+          "value": "#f4f5f6",
+          "type": "color"
+        }
+      },
+      "state": {
+        "focus": {
+          "value": "{color.bg.primary.main}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{color.bg.danger.main}",
+          "type": "color"
+        },
+        "alert": {
+          "value": "{color.bg.warning.main}",
+          "type": "color"
+        },
+        "success": {
+          "value": "{color.bg.positive.main}",
+          "type": "color"
+        },
+        "info": {
+          "value": "#305DFF",
+          "type": "color"
+        }
+      }
+    },
+    "fg": {
+      "soft": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.512",
+              "space": "lch",
+              "color": "{white} "
+            }
+          }
+        }
+      },
+      "softer": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.412",
+              "space": "lch",
+              "color": "{white} "
+            }
+          }
+        }
+      },
+      "main": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.309",
+              "space": "lch",
+              "color": "{white} "
+            }
+          }
+        }
+      },
+      "strong": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.214",
+              "space": "lch",
+              "color": "{white} "
+            }
+          }
+        }
+      },
+      "stronger": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "mix",
+              "value": "0.114",
+              "space": "lch",
+              "color": "{white} "
+            }
+          }
+        },
+        "accent": {
+          "value": "{white}",
+          "type": "color"
+        }
+      },
+      "inverse": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "primary": {
+        "value": "{color.bg.primary.strong}",
+        "type": "color"
+      },
+      "link": {
+        "value": "#305DFF",
+        "type": "color"
+      },
+      "alert": {
+        "value": "{color.fg.strong}",
+        "type": "color"
+      },
+      "error": {
+        "value": "{color.bg.danger.main}",
+        "type": "color"
+      },
+      "icon": {
+        "soft": {
+          "value": "#ecedee",
+          "type": "color"
+        },
+        "main": {
+          "value": "#8e959d",
+          "type": "color"
+        },
+        "strong": {
+          "value": "#3c444d",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "value": "#305DFF",
+        "type": "color"
+      },
+      "danger": {
+        "value": "#FF003D",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#FF7A00",
+        "type": "color"
+      },
+      "warning-stronger": {
+        "value": "#925e1f",
+        "type": "color"
+      },
+      "positive": {
+        "value": "#00B11C",
+        "type": "color"
+      },
+      "magic": {
+        "value": "#A027FF",
+        "type": "color"
+      },
+      "muted": {
+        "value": "#405463",
+        "type": "color"
+      },
+      "input": {
+        "value": "#8e959d",
+        "type": "color"
+      },
+      "container": {
+        "value": "#D7E4EE",
+        "type": "color"
+      },
+      "input-strong": {
+        "value": "#3c444d",
+        "type": "color"
+      },
+      "contrast": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.214",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "contrast-soft": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.326",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "contrast-strong": {
+        "value": "#000000",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.124",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "inverse": {
+        "value": "#FFFFFF",
+        "type": "color"
+      }
+    }
+  }
+}

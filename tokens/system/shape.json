@@ -1,0 +1,39 @@
+{
+  "shape": {
+    "zero": {
+      "value": "0rem",
+      "type": "borderRadius",
+      "description": "This is the initial shape of every new element. Use this for backgrounds screens and fixed navigation containers such as headers, and side-panels."
+    },
+    "xhalf": {
+      "value": "0.125rem",
+      "type": "borderRadius",
+      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches."
+    },
+    "x1": {
+      "value": "0.25rem",
+      "type": "borderRadius",
+      "description": "Use this for form components presenting text information or inputs: Text Inputs and Text Area, Dropdowns, Menus and Banners."
+    },
+    "x2": {
+      "value": "0.5rem",
+      "type": "borderRadius",
+      "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts."
+    },
+    "x4": {
+      "value": "1rem",
+      "type": "borderRadius",
+      "description": "(Mobile) Primary containers that house a large amount of other elements and complex information\n"
+    },
+    "x6": {
+      "value": "1.5rem",
+      "type": "borderRadius",
+      "description": "(Mobile) Full width sheets that are temporary and modal views"
+    },
+    "round": {
+      "value": "62.5rem",
+      "type": "borderRadius",
+      "description": "Commonly used for our standard buttons and profile avatars: All Primary, Secondary Buttons, Radio Buttons and Notification Badges."
+    }
+  }
+}
