@@ -1,12 +1,12 @@
 {
   "space": {
     "zero": {
-      "value": "0",
+      "value": "{base.unit} * 0",
       "type": "spacing",
       "description": "Stacks, rows in tables"
     },
     "xhalf": {
-      "value": "{base.unit} * 0.5",
+      "value": "{base.unit} / 2",
       "type": "spacing",
       "description": "Mobile only"
     },
@@ -28,12 +28,18 @@
     "x4": {
       "value": "{base.unit} * 4",
       "type": "spacing",
-      "description": "Default space token. Used to group Inputs with related data"
+      "description": "Default",
+      "$extensions": {
+        "studio.tokens": {}
+      }
     },
     "x5": {
       "value": "{base.unit} * 5",
       "type": "spacing",
-      "description": "Mobile only"
+      "description": "Form spacing",
+      "$extensions": {
+        "studio.tokens": {}
+      }
     },
     "x6": {
       "value": "{base.unit} * 6",
