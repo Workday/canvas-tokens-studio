@@ -704,24 +704,24 @@
     }
   },
   "opacity": {
-    "100": {
-      "value": "0.08",
-      "type": "number"
-    },
-    "200": {
+    "12": {
       "value": "0.12",
       "type": "number"
     },
-    "300": {
+    "40": {
       "value": "0.4",
       "type": "number"
     },
-    "400": {
+    "65": {
       "value": "0.65",
       "type": "number"
     },
-    "500": {
+    "85": {
       "value": "0.85",
+      "type": "number"
+    },
+    "08": {
+      "value": "0.08",
       "type": "number"
     }
   },
@@ -942,18 +942,18 @@
       "value": [
         {
           "x": "0",
-          "y": "1",
-          "blur": "4",
+          "y": "{z.1}",
+          "blur": "{z.1} * {z.scale}",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "2",
-          "blur": "8",
+          "y": "({z.1} * {z.scale}) / 2",
+          "blur": "{z.1} * {z.scale} * 2",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -966,7 +966,7 @@
           "y": "2",
           "blur": "8",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -974,7 +974,7 @@
           "y": "4",
           "blur": "16",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -988,7 +988,7 @@
           "y": "3",
           "blur": "12",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -996,7 +996,7 @@
           "y": "6",
           "blur": "24",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1009,7 +1009,7 @@
           "y": "4",
           "blur": "16",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -1017,7 +1017,7 @@
           "y": "8",
           "blur": "32",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1030,7 +1030,7 @@
           "y": "5",
           "blur": "20",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -1038,7 +1038,7 @@
           "y": "10",
           "blur": "40",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1051,7 +1051,7 @@
           "y": "6",
           "blur": "24",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -1059,7 +1059,7 @@
           "y": "12",
           "blur": "48",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1070,5 +1070,35 @@
     "value": "2",
     "type": "number",
     "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
+  },
+  "z": {
+    "1": {
+      "value": "1",
+      "type": "number"
+    },
+    "2": {
+      "value": "2",
+      "type": "number"
+    },
+    "3": {
+      "value": "3",
+      "type": "number"
+    },
+    "4": {
+      "value": "4",
+      "type": "number"
+    },
+    "5": {
+      "value": "5",
+      "type": "number"
+    },
+    "6": {
+      "value": "6",
+      "type": "number"
+    },
+    "scale": {
+      "value": "4",
+      "type": "number"
+    }
   }
 }
