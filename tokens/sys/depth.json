@@ -1,34 +1,130 @@
 {
   "depth": {
     "1": {
-      "value": "{shadow.100}",
-      "type": "boxShadow",
-      "description": "Standard card depth"
+      "value": [
+        {
+          "x": "0",
+          "y": "{z.1}",
+          "blur": "{z.1} * {z.scale}",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "({z.1} * {z.scale}) / 2",
+          "blur": "{z.1} * {z.scale} * 2",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "2": {
-      "value": "{shadow.200}",
-      "type": "boxShadow",
-      "description": "Top navigation, Bottom Navigation"
+      "value": [
+        {
+          "x": "0",
+          "y": "{z.2}",
+          "blur": "{z.2} * {z.scale}",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "({z.1} * {z.scale}) / 2",
+          "blur": "{z.1} * {z.scale} * 2",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "3": {
-      "value": "{shadow.300}",
-      "type": "boxShadow",
-      "description": "Floating Action Buttons (FAB), Menus"
+      "value": [
+        {
+          "x": "0",
+          "y": "{z.3}",
+          "blur": "{z.3} * {z.scale}",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "({z.3} * {z.scale}) / 2",
+          "blur": "{z.3} * {z.scale} * 2",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "4": {
-      "value": "{shadow.400}",
-      "type": "boxShadow",
-      "description": "Bottom Sheets"
+      "value": [
+        {
+          "x": "0",
+          "y": "{z.4}",
+          "blur": "{z.4} * {z.scale}",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "({z.4} * {z.scale}) / 2",
+          "blur": "{z.4} * {z.scale} * 2",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "5": {
-      "value": "{shadow.500}",
-      "type": "boxShadow",
-      "description": "Banners, Snackbars, Toast Messages, Non modal Dialogs, \nSide Panels (when opacity overlay behaviour is not applied)"
+      "value": [
+        {
+          "x": "0",
+          "y": "{z.5}",
+          "blur": "{z.5} * {z.scale}",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "({z.5} * {z.scale}) / 2",
+          "blur": "{z.5} * {z.scale} * 2",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "6": {
-      "value": "{shadow.600}",
-      "type": "boxShadow",
-      "description": "Modal Dialogs, Side Panels (when opacity overlay behaviour\nis applied)"
+      "value": [
+        {
+          "x": "0",
+          "y": "{z.6}",
+          "blur": "{z.6} * {z.scale}",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "({z.6} * {z.scale}) / 2",
+          "blur": "{z.6} * {z.scale} * 2",
+          "spread": "0",
+          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     }
   }
 }
