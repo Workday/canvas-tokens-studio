@@ -3,37 +3,37 @@
     "zero": {
       "value": "0rem",
       "type": "borderRadius",
-      "description": "This is the initial shape of every new element. Use this for backgrounds screens and fixed navigation containers such as headers, and side-panels."
+      "description": "Backgrounds, Headers, Side-Panels"
     },
-    "half": {
+    "xhalf": {
       "value": "{base.unit} * 0.5",
       "type": "borderRadius",
-      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches."
+      "description": "Status Indicators, Checkboxes, Color Swatches."
     },
     "x1": {
       "value": "{base.unit}",
       "type": "borderRadius",
-      "description": "Use this for form components presenting text information or inputs: Text Inputs and Text Area, Dropdowns, Menus and Banners."
+      "description": " Form Elements / Inputs, Text Inputs, Text Area, Dropdowns, Menus, Banners"
     },
     "x2": {
       "value": "{base.unit} * 2",
       "type": "borderRadius",
-      "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts."
+      "description": " Cards, Modals, Tooltip, Toasts."
     },
     "x4": {
       "value": "{base.unit} * 4",
       "type": "borderRadius",
-      "description": "(Mobile) Primary containers that house a large amount of other elements and complex information\n"
+      "description": "* Mobile Cards\n"
     },
     "x6": {
       "value": "{base.unit} * 6",
       "type": "borderRadius",
-      "description": "(Mobile) Full width sheets that are temporary and modal views"
+      "description": "* Mobile * Sheets, Modal"
     },
     "round": {
       "value": "{base.unit} * 250",
       "type": "borderRadius",
-      "description": "Commonly used for our standard buttons and profile avatars: All Primary, Secondary Buttons, Radio Buttons and Notification Badges."
+      "description": "Primary Buttons, Secondary Buttons, Radio Buttons, Notification Badges."
     }
   }
 }

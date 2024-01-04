@@ -390,6 +390,32 @@
         "type": "color"
       }
     },
+    "dragon-fruit": {
+      "100": {
+        "value": "#FBF1FF",
+        "type": "color"
+      },
+      "200": {
+        "value": "#EFD3FF",
+        "type": "color"
+      },
+      "300": {
+        "value": "#BE61F6",
+        "type": "color"
+      },
+      "400": {
+        "value": "#8C17D2",
+        "type": "color"
+      },
+      "500": {
+        "value": "#6B11A3",
+        "type": "color"
+      },
+      "600": {
+        "value": "#4A0D71",
+        "type": "color"
+      }
+    },
     "island-punch": {
       "100": {
         "value": "#f5f0ff",
@@ -701,27 +727,83 @@
         "value": "#000000",
         "type": "color"
       }
+    },
+    "extended": {
+      "dragon-fruit": {
+        "100": {
+          "value": "#FBF1FF",
+          "type": "color"
+        },
+        "200": {
+          "value": "#EFD3FF",
+          "type": "color"
+        },
+        "300": {
+          "value": "#BE61F6",
+          "type": "color"
+        },
+        "400": {
+          "value": "#8C17D2",
+          "type": "color"
+        },
+        "500": {
+          "value": "#6B11A3",
+          "type": "color"
+        },
+        "600": {
+          "value": "#4A0D71",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "extended": {
+    "dragon-fruit": {
+      "100": {
+        "value": "#FBF1FF",
+        "type": "color"
+      },
+      "200": {
+        "value": "#EFD3FF",
+        "type": "color"
+      },
+      "300": {
+        "value": "#BE61F6",
+        "type": "color"
+      },
+      "400": {
+        "value": "#8C17D2",
+        "type": "color"
+      },
+      "500": {
+        "value": "#6B11A3",
+        "type": "color"
+      },
+      "600": {
+        "value": "#4A0D71",
+        "type": "color"
+      }
     }
   },
   "opacity": {
-    "100": {
-      "value": "0.08",
-      "type": "number"
-    },
-    "200": {
+    "12": {
       "value": "0.12",
       "type": "number"
     },
-    "300": {
+    "40": {
       "value": "0.4",
       "type": "number"
     },
-    "400": {
+    "65": {
       "value": "0.65",
       "type": "number"
     },
-    "500": {
+    "85": {
       "value": "0.85",
+      "type": "number"
+    },
+    "08": {
+      "value": "0.08",
       "type": "number"
     }
   },
@@ -730,6 +812,10 @@
       "value": "0.25rem",
       "type": "dimension",
       "description": "The base unit used in the grid system.\n"
+    },
+    "fontSize": {
+      "value": "16",
+      "type": "fontSizes"
     }
   },
   "font-size": {
@@ -938,18 +1024,18 @@
       "value": [
         {
           "x": "0",
-          "y": "1",
-          "blur": "4",
+          "y": "{z.1}",
+          "blur": "{z.1} * {z.scale}",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "2",
-          "blur": "8",
+          "y": "({z.1} * {z.scale}) / 2",
+          "blur": "{z.1} * {z.scale} * 2",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -962,7 +1048,7 @@
           "y": "2",
           "blur": "8",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -970,7 +1056,7 @@
           "y": "4",
           "blur": "16",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -984,7 +1070,7 @@
           "y": "3",
           "blur": "12",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -992,7 +1078,7 @@
           "y": "6",
           "blur": "24",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1005,7 +1091,7 @@
           "y": "4",
           "blur": "16",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -1013,7 +1099,7 @@
           "y": "8",
           "blur": "32",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1026,7 +1112,7 @@
           "y": "5",
           "blur": "20",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -1034,7 +1120,7 @@
           "y": "10",
           "blur": "40",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1047,7 +1133,7 @@
           "y": "6",
           "blur": "24",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
@@ -1055,7 +1141,7 @@
           "y": "12",
           "blur": "48",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "color": "rgba({palette.licorice.600},{opacity.08})",
           "type": "dropShadow"
         }
       ],
@@ -1067,34 +1153,34 @@
     "type": "number",
     "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
   },
-  "extended": {
-    "palette": {
-      "dragon-fruit": {
-        "100": {
-          "value": "#FBF1FF",
-          "type": "color"
-        },
-        "200": {
-          "value": "#EFD3FF",
-          "type": "color"
-        },
-        "300": {
-          "value": "#BE61F6",
-          "type": "color"
-        },
-        "400": {
-          "value": "#8C17D2",
-          "type": "color"
-        },
-        "500": {
-          "value": "#6B11A3",
-          "type": "color"
-        },
-        "600": {
-          "value": "#4A0D71",
-          "type": "color"
-        }
-      }
+  "z": {
+    "1": {
+      "value": "1",
+      "type": "number"
+    },
+    "2": {
+      "value": "2",
+      "type": "number"
+    },
+    "3": {
+      "value": "3",
+      "type": "number"
+    },
+    "4": {
+      "value": "4",
+      "type": "number"
+    },
+    "5": {
+      "value": "5",
+      "type": "number"
+    },
+    "6": {
+      "value": "6",
+      "type": "number"
+    },
+    "scale": {
+      "value": "4",
+      "type": "number"
     }
   }
 }
