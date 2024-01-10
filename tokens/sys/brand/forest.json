@@ -149,38 +149,6 @@
         "type": "color"
       }
     },
-    "magic": {
-      "lightest": {
-        "value": "{palette.extended.dragon-fruit.100}",
-        "type": "color",
-        "description": "The lightest background color used to represent AI generated content."
-      },
-      "light": {
-        "value": "{palette.extended.dragon-fruit.200}",
-        "type": "color",
-        "description": "The light background color used to represent AI generated content."
-      },
-      "base": {
-        "value": "{palette.extended.dragon-fruit.400}",
-        "type": "color",
-        "description": "The base background color used to represent AI generated content."
-      },
-      "dark": {
-        "value": "{palette.dragon-fruit.500}",
-        "type": "color",
-        "description": "The dark background color used to represent AI generated content."
-      },
-      "darkest": {
-        "value": "{palette.dragon-fruit.600}",
-        "type": "color",
-        "description": "The darkest background color used to represent AI generated content."
-      },
-      "accent": {
-        "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "The foreground color used to represent AI generated content."
-      }
-    },
     "neutral": {
       "lightest": {
         "value": "{palette.soap.200}",
