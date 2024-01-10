@@ -1,9 +1,9 @@
 {
   "tokenSetOrder": [
     "base",
-    "sys/brand/default",
     "sys/brand/recruiting",
     "sys/brand/custom",
+    "sys/brand/canvas",
     "sys/space",
     "sys/shape",
     "sys/type",

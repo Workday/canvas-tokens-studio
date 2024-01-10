@@ -193,8 +193,7 @@
     "name": "Default",
     "group": "Brand",
     "selectedTokenSets": {
-      "base": "source",
-      "sys/brand/default": "enabled"
+      "base": "source"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,",
