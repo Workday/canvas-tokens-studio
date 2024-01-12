@@ -273,8 +273,7 @@
     "id": "069e87c90def0e3d6074bd44041b77ca0dc9e5b5",
     "name": "Candidate Home",
     "selectedTokenSets": {
-      "base": "source",
-      "sys/brand/recruiting": "enabled"
+      "base": "source"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -320,8 +319,7 @@
     "id": "6ca304153445ff80c95aed8790b5445a5dead0ef",
     "name": "Custom",
     "selectedTokenSets": {
-      "base": "source",
-      "sys/brand/custom": "enabled"
+      "base": "source"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
