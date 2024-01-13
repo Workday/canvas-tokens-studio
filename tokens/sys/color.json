@@ -10,6 +10,16 @@
         "type": "color"
       }
     },
+    "header": {
+      "DEFAULT": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.100}",
+        "type": "color"
+      }
+    },
     "surface": {
       "DEFAULT": {
         "value": "{palette.french-vanilla.100}",
@@ -223,17 +233,37 @@
       }
     },
     "shadow": {
-      "value": "{palette.licorice.600}",
-      "type": "color"
-    },
-    "header": {
       "DEFAULT": {
-        "value": "{palette.french-vanilla.100}",
+        "value": "{palette.licorice.600}",
         "type": "color"
       },
-      "subtle": {
-        "value": "{palette.soap.100}",
-        "type": "color"
+      "shadow-1": {
+        "value": "{palette.licorice.600}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "{opacity.200}",
+              "space": "lch"
+            }
+          }
+        },
+        "description": "Color used in 1st depth shadow"
+      },
+      "shadow-2": {
+        "value": "{palette.licorice.600}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "{opacity.100}",
+              "space": "lch"
+            }
+          }
+        },
+        "description": "Color used in 2nd depth shadow"
       }
     },
     "transparent": {

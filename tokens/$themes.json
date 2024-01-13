@@ -532,12 +532,12 @@
       "color.constant.gray.strong": "df0d0be645959cdcd3334a820aea321d59897c1f",
       "color.constant.white": "2e99fc49b42f73138b291ad423aa6e1b667d8540",
       "color.constant.black": "7bb4065258746d1b846c054a376d0a87d70ebd9e",
-      "color.shadow": "e330c457239a7a1ffc432d2c81d36a9bbd7b31ba",
       "color.header.DEFAULT": "14d908874dc8c4ee6dc9f77504c9edcbc17af698",
       "color.header.subtle": "26de3df44d99f83892566f61b70697494e378db6",
       "color.transparent": "6fc967bd5485951d25291bd53a9645c218d71011",
       "color.overlay": "0288ab20b62b366a71f328685dca9590b79818af",
-      "color.translucent": "fa20e0b984b3435901ed2a72089793f398df523a"
+      "color.translucent": "fa20e0b984b3435901ed2a72089793f398df523a",
+      "color.shadow.DEFAULT": "e330c457239a7a1ffc432d2c81d36a9bbd7b31ba"
     },
     "$figmaCollectionId": "VariableCollectionId:1:8170",
     "$figmaModeId": "1:2",
