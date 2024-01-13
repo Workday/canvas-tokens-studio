@@ -205,11 +205,11 @@
       },
       "gray": {
         "subtle": {
-          "value": "{palette.soap.500}",
+          "value": "{palette.soap.100}",
           "type": "color"
         },
         "strong": {
-          "value": "{palette.soap.100}",
+          "value": "{palette.soap.500}",
           "type": "color"
         }
       },
@@ -224,6 +224,28 @@
     },
     "shadow": {
       "value": "{palette.licorice.600}",
+      "type": "color"
+    },
+    "header": {
+      "DEFAULT": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.100}",
+        "type": "color"
+      }
+    },
+    "transparent": {
+      "value": "rgba( {color.constant.white}, 0)",
+      "type": "color"
+    },
+    "overlay": {
+      "value": "rgba( {color.constant.black} , {opacity.500})",
+      "type": "color"
+    },
+    "translucent": {
+      "value": "rgba( {color.constant.black} , {opacity.500})",
       "type": "color"
     }
   }
