@@ -1,0 +1,282 @@
+{
+  "color": {
+    "app": {
+      "main": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.100}",
+        "type": "color"
+      }
+    },
+    "header": {
+      "main": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.100}",
+        "type": "color"
+      }
+    },
+    "surface": {
+      "main": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.200}",
+        "type": "color"
+      },
+      "muted": {
+        "value": "{palette.soap.300}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.soap.400}",
+        "type": "color"
+      },
+      "strong": {
+        "value": "{palette.soap.500}",
+        "type": "color"
+      }
+    },
+    "text": {
+      "main": {
+        "value": "{palette.black-pepper.300}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.licorice.100}",
+        "type": "color"
+      },
+      "muted": {
+        "value": "{palette.licorice.300}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.black-pepper.400}",
+        "type": "color"
+      },
+      "strong": {
+        "value": "{palette.black-pepper.500}",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "main": {
+        "value": "{palette.licorice.200}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.600}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.licorice.500}",
+        "type": "color"
+      },
+      "accent": {
+        "value": "{palette.soap.100}",
+        "type": "color"
+      }
+    },
+    "border": {
+      "main": {
+        "value": "{palette.licorice.200}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.soap.600}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.licorice.500}",
+        "type": "color"
+      },
+      "accent": {
+        "value": "{palette.soap.100}",
+        "type": "color"
+      }
+    },
+    "primary": {
+      "main": {
+        "value": "{palette.blueberry.500}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.blueberry.100}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.blueberry.500}",
+        "type": "color"
+      },
+      "strong": {
+        "value": "{palette.blueberry.600}",
+        "type": "color"
+      }
+    },
+    "positive": {
+      "main": {
+        "value": "{palette.green-apple.400}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.green-apple.100}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.green-apple.500}",
+        "type": "color"
+      },
+      "strong": {
+        "value": "{palette.green-apple.600}",
+        "type": "color"
+      }
+    },
+    "caution": {
+      "main": {
+        "value": "{palette.cantaloupe.400}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.cantaloupe.100}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.cantaloupe.500}",
+        "type": "color"
+      },
+      "strong": {
+        "value": "{palette.cantaloupe.600}",
+        "type": "color"
+      }
+    },
+    "critical": {
+      "main": {
+        "value": "{palette.cinnamon.500}",
+        "type": "color"
+      },
+      "subtle": {
+        "value": "{palette.cinnamon.100}",
+        "type": "color"
+      },
+      "bold": {
+        "value": "{palette.cinnamon.600}",
+        "type": "color"
+      },
+      "strong": {
+        "value": "#80160E",
+        "type": "color"
+      }
+    },
+    "constant": {
+      "blue": {
+        "subtle": {
+          "value": "{palette.blueberry.100}",
+          "type": "color"
+        },
+        "strong": {
+          "value": "{palette.blueberry.500}",
+          "type": "color"
+        }
+      },
+      "green": {
+        "subtle": {
+          "value": "{palette.green-apple.100}",
+          "type": "color"
+        },
+        "strong": {
+          "value": "{palette.green-apple.500}",
+          "type": "color"
+        }
+      },
+      "red": {
+        "subtle": {
+          "value": "{palette.cinnamon.100}",
+          "type": "color"
+        },
+        "strong": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color"
+        }
+      },
+      "orange": {
+        "subtle": {
+          "value": "{palette.cantaloupe.100}",
+          "type": "color"
+        },
+        "strong": {
+          "value": "{palette.cantaloupe.500}",
+          "type": "color"
+        }
+      },
+      "gray": {
+        "subtle": {
+          "value": "{palette.soap.100}",
+          "type": "color"
+        },
+        "strong": {
+          "value": "{palette.soap.500}",
+          "type": "color"
+        }
+      },
+      "white": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color"
+      },
+      "black": {
+        "value": "{palette.black-pepper.300}",
+        "type": "color"
+      }
+    },
+    "shadow": {
+      "main": {
+        "value": "{palette.licorice.600}",
+        "type": "color"
+      },
+      "shadow-1": {
+        "value": "{palette.licorice.600}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "{opacity.200}",
+              "space": "lch"
+            }
+          }
+        },
+        "description": "Color used in 1st depth shadow"
+      },
+      "shadow-2": {
+        "value": "{palette.licorice.600}",
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "{opacity.100}",
+              "space": "lch"
+            }
+          }
+        },
+        "description": "Color used in 2nd depth shadow"
+      }
+    },
+    "transparent": {
+      "value": "rgba( {color.constant.white}, 0)",
+      "type": "color"
+    },
+    "overlay": {
+      "value": "rgba( {color.constant.black} , {opacity.500})",
+      "type": "color"
+    },
+    "translucent": {
+      "value": "rgba( {color.constant.black} , {opacity.500})",
+      "type": "color"
+    }
+  }
+}

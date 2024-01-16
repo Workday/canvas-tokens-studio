@@ -1,34 +1,130 @@
 {
   "depth": {
     "1": {
-      "value": "{shadow.100}",
-      "type": "boxShadow",
-      "description": "Standard card depth"
+      "value": [
+        {
+          "x": "0",
+          "y": "{elevation.1}",
+          "blur": "{elevation.1}* {elevation.blur}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{elevation.1} * {elevation.scale}",
+          "blur": "{elevation.1}* {elevation.blur} * {elevation.scale}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "2": {
-      "value": "{shadow.200}",
-      "type": "boxShadow",
-      "description": "Top navigation, Bottom Navigation"
+      "value": [
+        {
+          "x": "0",
+          "y": "{elevation.2}",
+          "blur": "{elevation.2}* {elevation.blur}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{elevation.2} * {elevation.scale}",
+          "blur": "{elevation.2}* {elevation.blur} * {elevation.scale}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "3": {
-      "value": "{shadow.300}",
-      "type": "boxShadow",
-      "description": "Floating Action Buttons (FAB), Menus"
+      "value": [
+        {
+          "x": "0",
+          "y": "{elevation.3}",
+          "blur": "{elevation.3}* {elevation.blur}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{elevation.3} * {elevation.scale}",
+          "blur": "{elevation.3}* {elevation.blur} * {elevation.scale}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "4": {
-      "value": "{shadow.400}",
-      "type": "boxShadow",
-      "description": "Bottom Sheets"
+      "value": [
+        {
+          "x": "0",
+          "y": "{elevation.4}",
+          "blur": "{elevation.4}* {elevation.blur}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{elevation.4} * {elevation.scale}",
+          "blur": "{elevation.4}* {elevation.blur} * {elevation.scale}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "5": {
-      "value": "{shadow.500}",
-      "type": "boxShadow",
-      "description": "Banners, Snackbars, Toast Messages, Non modal Dialogs, \nSide Panels (when opacity overlay behaviour is not applied)"
+      "value": [
+        {
+          "x": "0",
+          "y": "{elevation.5}",
+          "blur": "{elevation.5}* {elevation.blur}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{elevation.5} * {elevation.scale}",
+          "blur": "{elevation.5}* {elevation.blur} * {elevation.scale}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
     "6": {
-      "value": "{shadow.600}",
-      "type": "boxShadow",
-      "description": "Modal Dialogs, Side Panels (when opacity overlay behaviour\nis applied)"
+      "value": [
+        {
+          "x": "0",
+          "y": "{elevation.6}",
+          "blur": "{elevation.6}* {elevation.blur}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{elevation.6} * {elevation.scale}",
+          "blur": "{elevation.6}* {elevation.blur} * {elevation.scale}",
+          "spread": "0",
+          "color": "rgba( {color.shadow.main} , {opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     }
   }
 }
