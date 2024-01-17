@@ -4,18 +4,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.1}",
-          "blur": "{z.1} * {z.scale}",
+          "y": "{elevation.1}",
+          "blur": "{elevation.1} * {elevation.blur}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.1} * {z.scale}) / 2",
-          "blur": "{z.1} * {z.scale} * 2",
+          "y": "{elevation.1} * {elevation.scale}",
+          "blur": "{elevation.1} * {elevation.blur} * {elevation.scale}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -25,18 +25,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.2}",
-          "blur": "{z.2} * {z.scale}",
+          "y": "{elevation.2}",
+          "blur": "{elevation.2} * {elevation.blur}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.1} * {z.scale}) / 2",
-          "blur": "{z.1} * {z.scale} * 2",
+          "y": "{elevation.2} * {elevation.scale}",
+          "blur": "{elevation.2} * {elevation.blur} * {elevation.scale}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -46,18 +46,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.3}",
-          "blur": "{z.3} * {z.scale}",
+          "y": "{elevation.3}",
+          "blur": "{elevation.3} * {elevation.blur}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.3} * {z.scale}) / 2",
-          "blur": "{z.3} * {z.scale} * 2",
+          "y": "{elevation.3} * {elevation.scale}",
+          "blur": "{elevation.3} * {elevation.blur} * {elevation.scale}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -67,18 +67,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.4}",
-          "blur": "{z.4} * {z.scale}",
+          "y": "{elevation.4}",
+          "blur": "{elevation.4} * {elevation.blur}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.4} * {z.scale}) / 2",
-          "blur": "{z.4} * {z.scale} * 2",
+          "y": "{elevation.4} * {elevation.scale}",
+          "blur": "{elevation.4} * {elevation.blur} * {elevation.scale}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -88,18 +88,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.5}",
-          "blur": "{z.5} * {z.scale}",
+          "y": "{elevation.5}",
+          "blur": "{elevation.5} * {elevation.blur}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.5} * {z.scale}) / 2",
-          "blur": "{z.5} * {z.scale} * 2",
+          "y": "{elevation.5} * {elevation.scale}",
+          "blur": "{elevation.5} * {elevation.blur} * {elevation.scale}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -109,18 +109,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.6}",
-          "blur": "{z.6} * {z.scale}",
+          "y": "{elevation.6}",
+          "blur": "{elevation.6} * {elevation.blur}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.12})",
+          "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.6} * {z.scale}) / 2",
-          "blur": "{z.6} * {z.scale} * 2",
+          "y": "{elevation.6} * {elevation.scale}",
+          "blur": "{elevation.6} * {elevation.blur} * {elevation.scale}",
           "spread": "0",
-          "color": "rgba({brand.shadow.main},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],

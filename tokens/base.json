@@ -732,6 +732,10 @@
     }
   },
   "opacity": {
+    "8": {
+      "value": "0.08",
+      "type": "number"
+    },
     "12": {
       "value": "0.12",
       "type": "number"
@@ -746,10 +750,6 @@
     },
     "85": {
       "value": "0.85",
-      "type": "number"
-    },
-    "08": {
-      "value": "0.08",
       "type": "number"
     }
   },
@@ -970,18 +970,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{z.1}",
-          "blur": "{z.1} * {z.scale}",
+          "y": "{elevation.1}",
+          "blur": "{elevation.1} * {elevation.blur}",
           "spread": "0",
           "color": "rgba({palette.licorice.600},{opacity.12})",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "({z.1} * {z.scale}) / 2",
-          "blur": "{z.1} * {z.scale} * 2",
+          "y": "({elevation.1} * {elevation.blur}) / 2",
+          "blur": "{elevation.1} * {elevation.blur} * 2",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -1002,7 +1002,7 @@
           "y": "4",
           "blur": "16",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -1024,7 +1024,7 @@
           "y": "6",
           "blur": "24",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -1045,7 +1045,7 @@
           "y": "8",
           "blur": "32",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -1066,7 +1066,7 @@
           "y": "10",
           "blur": "40",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -1087,7 +1087,7 @@
           "y": "12",
           "blur": "48",
           "spread": "0",
-          "color": "rgba({palette.licorice.600},{opacity.08})",
+          "color": "rgba({palette.licorice.600},{opacity.8})",
           "type": "dropShadow"
         }
       ],
@@ -1099,7 +1099,7 @@
     "type": "number",
     "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
   },
-  "z": {
+  "elevation": {
     "1": {
       "value": "1",
       "type": "number"
@@ -1124,8 +1124,12 @@
       "value": "6",
       "type": "number"
     },
-    "scale": {
+    "blur": {
       "value": "4",
+      "type": "number"
+    },
+    "scale": {
+      "value": "2",
       "type": "number"
     }
   }
