@@ -129,7 +129,7 @@
         "type": "color"
       },
       "light": {
-        "value": "{palette.green-apple.300}",
+        "value": "{palette.green-apple.200}",
         "type": "color"
       },
       "base": {
