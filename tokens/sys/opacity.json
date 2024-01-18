@@ -1,7 +1,7 @@
 {
   "opacity": {
     "disabled": {
-      "value": "{opacity.40}",
+      "value": "{opacity.300}",
       "type": "opacity",
       "description": "State layer added on top of disabled elements."
     }

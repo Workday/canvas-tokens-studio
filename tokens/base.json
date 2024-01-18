@@ -704,51 +704,53 @@
     }
   },
   "extended": {
-    "dragon-fruit": {
-      "100": {
-        "value": "#FBF1FF",
-        "type": "color"
-      },
-      "200": {
-        "value": "#EFD3FF",
-        "type": "color"
-      },
-      "300": {
-        "value": "#BE61F6",
-        "type": "color"
-      },
-      "400": {
-        "value": "#8C17D2",
-        "type": "color"
-      },
-      "500": {
-        "value": "#6B11A3",
-        "type": "color"
-      },
-      "600": {
-        "value": "#4A0D71",
-        "type": "color"
+    "palette": {
+      "dragon-fruit": {
+        "100": {
+          "value": "#FBF1FF",
+          "type": "color"
+        },
+        "200": {
+          "value": "#EFD3FF",
+          "type": "color"
+        },
+        "300": {
+          "value": "#BE61F6",
+          "type": "color"
+        },
+        "400": {
+          "value": "#8C17D2",
+          "type": "color"
+        },
+        "500": {
+          "value": "#6B11A3",
+          "type": "color"
+        },
+        "600": {
+          "value": "#4A0D71",
+          "type": "color"
+        }
       }
     }
   },
   "opacity": {
-    "8": {
+    "100": {
       "value": "0.08",
       "type": "number"
     },
-    "12": {
+    "200": {
       "value": "0.12",
       "type": "number"
     },
-    "40": {
+    "300": {
       "value": "0.4",
       "type": "number"
     },
-    "65": {
+    "400": {
       "value": "0.65",
       "type": "number"
     },
-    "85": {
+    "500": {
       "value": "0.85",
       "type": "number"
     }
@@ -970,38 +972,133 @@
     "type": "number",
     "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
   },
-  "elevation": {
-    "1": {
-      "value": "1",
-      "type": "number"
+  "shadow": {
+    "100": {
+      "value": [
+        {
+          "x": "0",
+          "y": "1",
+          "blur": "4",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "2",
+          "blur": "8",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
-    "2": {
-      "value": "2",
-      "type": "number"
+    "200": {
+      "value": [
+        {
+          "x": "0",
+          "y": "2",
+          "blur": "8",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "4",
+          "blur": "16",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Top navigation, Bottom navigation"
     },
-    "3": {
-      "value": "3",
-      "type": "number"
+    "300": {
+      "value": [
+        {
+          "x": "0",
+          "y": "3",
+          "blur": "12",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "6",
+          "blur": "24",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
-    "4": {
-      "value": "4",
-      "type": "number"
+    "400": {
+      "value": [
+        {
+          "x": "0",
+          "y": "4",
+          "blur": "16",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "8",
+          "blur": "32",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
-    "5": {
-      "value": "5",
-      "type": "number"
+    "500": {
+      "value": [
+        {
+          "x": "0",
+          "y": "5",
+          "blur": "20",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "10",
+          "blur": "40",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     },
-    "6": {
-      "value": "6",
-      "type": "number"
-    },
-    "blur": {
-      "value": "4",
-      "type": "number"
-    },
-    "scale": {
-      "value": "2",
-      "type": "number"
+    "600": {
+      "value": [
+        {
+          "x": "0",
+          "y": "6",
+          "blur": "24",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.200})",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "12",
+          "blur": "48",
+          "spread": "0",
+          "color": "rgba({palette.licorice.600},{opacity.100})",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     }
   }
 }

@@ -362,7 +362,7 @@
     },
     "common": {
       "focus-outline": {
-        "value": "{palette.soap.100}",
+        "value": "{palette.blueberry.400}",
         "type": "color"
       },
       "error-inner": {
@@ -378,41 +378,6 @@
       "primary": {
         "value": "linear-gradient(90deg, {brand.primary.base} 0%, {brand.primary.dark} 100%)",
         "type": "color"
-      }
-    },
-    "shadow": {
-      "main": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "description": "The base shadow hue"
-      },
-      "shadow-1": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": "{opacity.12}",
-              "space": "lch"
-            }
-          }
-        },
-        "description": "The shadow color used on the first shadow for depth."
-      },
-      "shadow-2": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": "{opacity.8}",
-              "space": "lch"
-            }
-          }
-        },
-        "description": "The shadow color used on the second shadow for depth."
       }
     }
   }
