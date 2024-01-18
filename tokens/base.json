@@ -703,36 +703,6 @@
       }
     }
   },
-  "extended": {
-    "palette": {
-      "dragon-fruit": {
-        "100": {
-          "value": "#FBF1FF",
-          "type": "color"
-        },
-        "200": {
-          "value": "#EFD3FF",
-          "type": "color"
-        },
-        "300": {
-          "value": "#BE61F6",
-          "type": "color"
-        },
-        "400": {
-          "value": "#8C17D2",
-          "type": "color"
-        },
-        "500": {
-          "value": "#6B11A3",
-          "type": "color"
-        },
-        "600": {
-          "value": "#4A0D71",
-          "type": "color"
-        }
-      }
-    }
-  },
   "opacity": {
     "100": {
       "value": "0.08",
@@ -760,10 +730,6 @@
       "value": "0.25rem",
       "type": "dimension",
       "description": "The base unit used in the grid system.\n"
-    },
-    "fontSize": {
-      "value": "16",
-      "type": "fontSizes"
     }
   },
   "font-size": {
@@ -967,11 +933,6 @@
       "type": "letterSpacing"
     }
   },
-  "level": {
-    "value": "2",
-    "type": "number",
-    "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
-  },
   "shadow": {
     "100": {
       "value": [
@@ -1099,6 +1060,41 @@
         }
       ],
       "type": "boxShadow"
+    }
+  },
+  "level": {
+    "value": "2",
+    "type": "number",
+    "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
+  },
+  "extended": {
+    "palette": {
+      "dragon-fruit": {
+        "100": {
+          "value": "#FBF1FF",
+          "type": "color"
+        },
+        "200": {
+          "value": "#EFD3FF",
+          "type": "color"
+        },
+        "300": {
+          "value": "#BE61F6",
+          "type": "color"
+        },
+        "400": {
+          "value": "#8C17D2",
+          "type": "color"
+        },
+        "500": {
+          "value": "#6B11A3",
+          "type": "color"
+        },
+        "600": {
+          "value": "#4A0D71",
+          "type": "color"
+        }
+      }
     }
   }
 }
