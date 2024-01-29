@@ -2,7 +2,11 @@
   "tokenSetOrder": [
     "base",
     "sys/brand/canvas",
+    "sys/brand/forest",
+    "sys/brand/island",
+    "sys/brand/peach",
     "sys/color",
+    "sys/color--brand",
     "sys/space",
     "sys/shape",
     "sys/type",
