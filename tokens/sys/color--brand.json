@@ -110,22 +110,22 @@
       },
       "critical": {
         "muted": {
-          "value": "{brand.error.100}",
+          "value": "{brand.error.lightest}",
           "type": "color",
           "description": "The muted background color used to indicate danger, such as an error."
         },
         "default": {
-          "value": "{brand.error.500}",
+          "value": "{brand.error.base}",
           "type": "color",
           "description": "The default background color used to indicate danger, such as an error."
         },
         "strong": {
-          "value": "{brand.error.600}",
+          "value": "{brand.error.dark}",
           "type": "color",
           "description": "The strong background color used to indicate danger, such as an error."
         },
         "stronger": {
-          "value": "#80160E",
+          "value": "{brand.error.darkest}",
           "type": "color",
           "description": "The stronger background color used to indicate danger, such as an error."
         }

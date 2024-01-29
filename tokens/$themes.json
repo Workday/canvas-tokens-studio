@@ -205,11 +205,7 @@
     "name": "Canvas",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/canvas": "enabled",
-      "sys/brand/forest": "disabled",
-      "sys/brand/island": "disabled",
-      "sys/brand/peach": "disabled",
-      "sys/color--brand": "disabled"
+      "sys/brand/canvas": "enabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,"
