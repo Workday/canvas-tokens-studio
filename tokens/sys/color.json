@@ -1,6 +1,6 @@
 {
   "color": {
-    "app": {
+    "page": {
       "DEFAULT": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
