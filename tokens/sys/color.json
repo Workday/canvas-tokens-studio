@@ -33,7 +33,7 @@
           "stronger": {
             "value": "{palette.soap.400}",
             "type": "color",
-            "description": "The stronger color used on surfaces."
+            "description": "The stronger background color used on surfaces."
           },
           "strongest": {
             "value": "{palette.soap.500}",
@@ -267,37 +267,68 @@
         "description": "The color used on foregrounds sitting on top of a dark background, shared between all foreground elements"
       },
       "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "The primaryed text color.",
+        "default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "accent": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "The strong color used on backgrounds meant to contrast against a parent background."
+          },
+          "description": "The text color used on branded, selected, or link text."
+        },
         "accent": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
-          "description": "The strong color used on backgrounds meant to contrast against a parent background."
+          "accent": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "The strong color used on backgrounds meant to contrast against a parent background."
+          },
+          "description": "The foreground color used on top of primary backgrounds."
         }
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "The critical text color, mean to imply danger.",
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "accent": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "The foreground color used to indicate danger, such as an error."
+          },
+          "description": "The default critical text color, meant to imply danger."
+        },
         "accent": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
-          "description": "The foreground color used to indicate danger, such as an error."
+          "accent": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "The foreground color used to indicate danger, such as an error."
+          },
+          "description": "The foreground color meant to be used on top of critical backgrounds."
         }
       },
       "positive": {
         "accent": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
-          "description": "The foreground color used to inform success."
+          "description": "The foreground color used on top of positive background colors.\n"
         }
       },
       "caution": {
         "accent": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color",
-          "description": "The foreground color used to indicate a warning."
+          "default": {
+            "value": "{palette.black-pepper.400}",
+            "type": "color",
+            "description": "The foreground color used on top of caution background colors.\n"
+          },
+          "strong": {
+            "value": "{palette.black-pepper.500}",
+            "type": "color",
+            "description": "The foreground color used on top of strong caution backgrounds.\n"
+          }
         }
       }
     },
