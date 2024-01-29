@@ -369,7 +369,7 @@
         "description": "The primaryed text color, used in Links."
       },
       "critical": {
-        "value": "{brand.error.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "The critical text color, mean to imply danger."
       }
@@ -401,7 +401,7 @@
         "description": "The primaryed icon color."
       },
       "critical": {
-        "value": "{brand.error.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "The critical icon color, meant to imply danger."
       },
@@ -450,7 +450,7 @@
         "description": "The caution border color, mean to imply a warning."
       },
       "critical": {
-        "value": "{brand.error.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "The critical border color, mean to imply danger."
       },
@@ -472,7 +472,7 @@
         "description": "The color used for the shadows in Depth."
       },
       "shadow-1": {
-        "value": "{shadow.default}",
+        "value": "{color.shadow.default}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
@@ -486,7 +486,7 @@
         "description": "Color used in the first Depth shadow"
       },
       "shadow-2": {
-        "value": "{shadow.default}",
+        "value": "{color.shadow.default}",
         "type": "color",
         "$extensions": {
           "studio.tokens": {
