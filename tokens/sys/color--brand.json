@@ -290,7 +290,7 @@
       },
       "critical": {
         "default": {
-          "value": "{brand.error.500}",
+          "value": "{brand.error.base}",
           "type": "color",
           "accent": {
             "value": "{palette.french-vanilla.100}",
