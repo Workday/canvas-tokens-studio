@@ -150,48 +150,48 @@
       "static": {
         "blue": {
           "muted": {
-            "value": "{brand.primary.lightest}",
+            "value": "{palette.blueberry.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
           "strong": {
-            "value": "{brand.primary.dark}",
+            "value": "{palette.blueberry.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "green": {
           "muted": {
-            "value": "{brand.success.lightest}",
+            "value": "{palette.green-apple.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
           "strong": {
-            "value": "{brand.success.dark}",
+            "value": "{palette.green-apple.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "red": {
           "muted": {
-            "value": "{brand.error.100}",
+            "value": "{palette.cinnamon.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
           "strong": {
-            "value": "{brand.error.500}",
+            "value": "{palette.cinnamon.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "orange": {
           "muted": {
-            "value": "{brand.alert.lightest}",
+            "value": "{palette.cantaloupe.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
           "strong": {
-            "value": "{brand.alert.dark}",
+            "value": "{palette.cantaloupe.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
