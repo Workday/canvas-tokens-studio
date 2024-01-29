@@ -110,9 +110,14 @@
         "description": "The branded icon color."
       },
       "critical": {
-        "value": "{palette.cinnamon.400}",
+        "value": "{palette.cinnamon.500}",
         "type": "color",
         "description": "The critical icon color, meant to imply danger."
+      },
+      "caution": {
+        "value": "{palette.cantaloupe.400}",
+        "type": "color",
+        "description": "The caution icon color, meant to imply a warning."
       },
       "positive": {
         "value": "{palette.green-apple.500}",
@@ -196,7 +201,7 @@
         "description": "The caution border color, mean to imply a warning."
       },
       "critical": {
-        "value": "{palette.cinnamon.400}",
+        "value": "{palette.cinnamon.500}",
         "type": "color",
         "description": "The critical border color, mean to imply danger."
       },
