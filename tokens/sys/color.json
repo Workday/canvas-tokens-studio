@@ -2,207 +2,207 @@
   "color": {
     "bg": {
       "page": {
-        "default": {
+        "100": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
           "description": "The primary color used on the background of the app."
         },
-        "muted": {
+        "200": {
           "value": "{palette.soap.200}",
           "type": "color",
           "description": "The alternative background color used for the app background."
         }
       },
       "container": {
-        "default": {
+        "100": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
           "description": "The main color for used on surfaces, such as Cards or Side Panels."
         },
-        "muted": {
-          "default": {
-            "value": "{palette.soap.200}",
-            "type": "color",
-            "description": "The alternative background color used on surfaces that sit on top of some other UI elements."
-          },
-          "strong": {
-            "value": "{palette.soap.300}",
-            "type": "color",
-            "description": "The strong background color used on surfaces."
-          },
-          "stronger": {
-            "value": "{palette.soap.400}",
-            "type": "color",
-            "description": "The stronger background color used on surfaces."
-          },
-          "strongest": {
-            "value": "{palette.soap.500}",
-            "type": "color",
-            "description": "The strongest background color used on surfaces."
-          }
+        "200": {
+          "value": "{palette.soap.200}",
+          "type": "color",
+          "description": "The alternative background color used on surfaces that sit on top of some other UI elements."
+        },
+        "300": {
+          "value": "{palette.soap.300}",
+          "type": "color",
+          "description": "The strong background color used on surfaces."
+        },
+        "400": {
+          "value": "{palette.soap.400}",
+          "type": "color",
+          "description": "The stronger background color used on surfaces."
+        },
+        "500": {
+          "value": "{palette.soap.500}",
+          "type": "color",
+          "description": "The strongest background color used on surfaces."
         }
       },
       "primary": {
-        "default": {
-          "value": "{palette.blueberry.400}",
-          "type": "color",
-          "description": "The default primary primary color."
-        },
-        "muted": {
+        "100": {
           "value": "{palette.blueberry.100}",
           "type": "color",
           "description": "The muted primary primary color."
         },
-        "strong": {
+        "500": {
           "value": "{palette.blueberry.500}",
           "type": "color",
           "description": "The strong color used on backgrounds meant to contrast against a parent background."
         },
-        "stronger": {
+        "600": {
           "value": "{palette.blueberry.600}",
           "type": "color",
           "description": "The strong color used on backgrounds meant to contrast against a parent background."
+        },
+        "default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "The default primary primary color."
         }
       },
       "positive": {
-        "default": {
-          "value": "{palette.green-apple.400}",
-          "type": "color",
-          "description": "The primary background color used to inform success."
-        },
-        "muted": {
+        "100": {
           "value": "{palette.green-apple.100}",
           "type": "color",
           "description": "The muted background color used to inform success."
         },
-        "strong": {
+        "500": {
           "value": "{palette.green-apple.500}",
           "type": "color",
           "description": "The strong background color used to inform success."
         },
-        "stronger": {
+        "600": {
           "value": "{palette.green-apple.600}",
           "type": "color",
           "description": "The stronger background color used to inform success."
+        },
+        "default": {
+          "value": "{palette.green-apple.400}",
+          "type": "color",
+          "description": "The primary background color used to inform success."
         }
       },
       "caution": {
-        "default": {
-          "value": "{palette.cantaloupe.400}",
-          "type": "color",
-          "description": "The default background color used to indicate a warning."
-        },
-        "muted": {
+        "100": {
           "value": "{palette.cantaloupe.100}",
           "type": "color",
           "description": "The muted background color used to indicate a warning."
         },
-        "strong": {
+        "400": {
+          "value": "{palette.cantaloupe.400}",
+          "type": "color",
+          "description": "The default background color used to indicate a warning."
+        },
+        "500": {
           "value": "{palette.cantaloupe.500}",
           "type": "color",
           "description": "The strong background color used to indicate a warning."
         },
-        "stronger": {
+        "600": {
           "value": "{palette.cantaloupe.600}",
           "type": "color",
           "description": "The stronger background color used to indicate a warning."
         }
       },
       "critical": {
-        "muted": {
+        "100": {
           "value": "{palette.cinnamon.100}",
           "type": "color",
           "description": "The muted background color used to indicate danger, such as an error."
         },
-        "default": {
+        "500": {
           "value": "{palette.cinnamon.500}",
           "type": "color",
           "description": "The default background color used to indicate danger, such as an error."
         },
-        "strong": {
+        "600": {
           "value": "{palette.cinnamon.600}",
           "type": "color",
           "description": "The strong background color used to indicate danger, such as an error."
         },
-        "stronger": {
+        "700": {
           "value": "#80160E",
           "type": "color",
           "description": "The stronger background color used to indicate danger, such as an error."
         }
       },
       "contrast": {
-        "default": {
+        "400": {
           "value": "{palette.black-pepper.400}",
           "type": "color",
           "description": "The default background color used to contrast against the app or surface background."
         },
-        "strong": {
+        "500": {
           "value": "{palette.black-pepper.500}",
           "type": "color",
           "description": "The strong background color used to contrast against the app or surface background."
         },
-        "inverse": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color",
-          "description": "The forground color of contrast backgrounds."
+        "fg": {
+          "100": {
+            "value": "{palette.french-vanilla.100}",
+            "type": "color",
+            "description": "The forground color of contrast backgrounds."
+          }
         }
       },
       "static": {
         "blue": {
-          "muted": {
+          "100": {
             "value": "{palette.blueberry.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
-          "strong": {
+          "500": {
             "value": "{palette.blueberry.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "green": {
-          "muted": {
+          "100": {
             "value": "{palette.green-apple.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
-          "strong": {
+          "500": {
             "value": "{palette.green-apple.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "red": {
-          "muted": {
+          "100": {
             "value": "{palette.cinnamon.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
-          "strong": {
+          "500": {
             "value": "{palette.cinnamon.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "orange": {
-          "muted": {
+          "100": {
             "value": "{palette.cantaloupe.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
-          "strong": {
+          "500": {
             "value": "{palette.cantaloupe.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           }
         },
         "gray": {
-          "muted": {
+          "100": {
             "value": "{palette.soap.100}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
           },
-          "strong": {
+          "500": {
             "value": "{palette.soap.500}",
             "type": "color",
             "description": "Constants do not apply semantic meaning to the color."
@@ -227,7 +227,7 @@
       "overlay": {
         "value": "rgba( {color.bg.static.black} , {opacity.400})",
         "type": "color",
-        "description": "Color used for overlay backgrounds, such as the Modal or Bottom Sheet scrim."
+        "description": "Color used for overlay backgrounds, such as the Modal or Bottom Sheet."
       },
       "translucent": {
         "value": "rgba( {color.bg.static.black} , {opacity.500})",
@@ -236,268 +236,292 @@
       }
     },
     "fg": {
-      "default": {
+      "100": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color",
+        "description": "Foreground colors on dark backgrounds"
+      },
+      "300": {
         "value": "{palette.black-pepper.300}",
         "type": "color",
         "description": "The default foreground color, shared between all foreground elements"
       },
-      "disabled": {
-        "value": "{palette.licorice.100}",
-        "type": "color",
-        "description": "The disabled foreground color, shared between all foreground elements"
-      },
-      "hint": {
-        "value": "{palette.licorice.300}",
-        "type": "color",
-        "description": "The hint foreground color, shared between all foreground elements."
-      },
-      "strong": {
+      "400": {
         "value": "{palette.black-pepper.400}",
         "type": "color",
         "description": "The strong foreground color, shared between all foreground elements"
       },
-      "stronger": {
+      "500": {
         "value": "{palette.black-pepper.500}",
         "type": "color",
         "description": "The stronger foreground color, shared between all foreground elements"
       },
-      "inverse": {
-        "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "The color used on foregrounds sitting on top of a dark background, shared between all foreground elements"
+      "muted": {
+        "100": {
+          "value": "{palette.licorice.100}",
+          "type": "color",
+          "description": "The disabled foreground color, shared between all foreground elements"
+        },
+        "300": {
+          "value": "{palette.licorice.300}",
+          "type": "color",
+          "description": "The hint foreground color, shared between all foreground elements."
+        }
       },
       "primary": {
-        "default": {
+        "100": {
+          "value": "{palette.french-vanilla.100}",
+          "description": "The foreground color used on primary backgrounds",
+          "type": "color"
+        },
+        "200": {
+          "value": "{palette.blueberry.200}",
+          "type": "color",
+          "description": "Selected Menu Items"
+        },
+        "400": {
           "value": "{palette.blueberry.400}",
           "type": "color",
-          "accent": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "The strong color used on backgrounds meant to contrast against a parent background."
-          },
           "description": "The text color used on branded, selected, or link text."
-        },
-        "accent": {
-          "value": "{palette.french-vanilla.100}",
-          "type": "color",
-          "accent": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "The strong color used on backgrounds meant to contrast against a parent background."
-          },
-          "description": "The foreground color used on top of primary backgrounds."
         }
       },
       "critical": {
-        "default": {
-          "value": "{palette.cinnamon.500}",
-          "type": "color",
-          "accent": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "The foreground color used to indicate danger, such as an error."
-          },
-          "description": "The default critical text color, meant to imply danger."
-        },
-        "accent": {
+        "100": {
           "value": "{palette.french-vanilla.100}",
           "type": "color",
-          "accent": {
-            "value": "{palette.french-vanilla.100}",
-            "type": "color",
-            "description": "The foreground color used to indicate danger, such as an error."
-          },
-          "description": "The foreground color meant to be used on top of critical backgrounds."
+          "description": "The foreground color used on top of critical background colors.\n"
+        },
+        "500": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "Text informs danger"
         }
       },
       "positive": {
-        "accent": {
+        "100": {
           "value": "{palette.french-vanilla.100}",
+          "type": "color",
+          "description": "The foreground color used on top of positive background colors.\n"
+        },
+        "500": {
+          "value": "{palette.green-apple.500}",
           "type": "color",
           "description": "The foreground color used on top of positive background colors.\n"
         }
       },
       "caution": {
-        "accent": {
-          "default": {
-            "value": "{palette.black-pepper.400}",
-            "type": "color",
-            "description": "The foreground color used on top of caution background colors.\n"
-          },
-          "strong": {
-            "value": "{palette.black-pepper.500}",
-            "type": "color",
-            "description": "The foreground color used on top of strong caution backgrounds.\n"
-          }
+        "400": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color",
+          "description": "The foreground color used on top of caution background colors.\n"
+        },
+        "500": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color",
+          "description": "The foreground color used on top of strong caution backgrounds.\n"
         }
       }
     },
     "text": {
-      "default": {
+      "300": {
         "value": "{palette.black-pepper.300}",
         "type": "color",
         "description": "The default text color, such as Body Text."
       },
-      "disabled": {
-        "value": "{palette.licorice.100}",
-        "type": "color",
-        "description": "The disabled text color."
-      },
-      "hint": {
-        "value": "{palette.licorice.300}",
-        "type": "color",
-        "description": "The strong color used on backgrounds meant to contrast against a parent background."
-      },
-      "bold": {
+      "400": {
         "value": "{palette.black-pepper.400}",
         "type": "color",
         "description": "The strong text color, such as Headings."
       },
-      "bolder": {
+      "500": {
         "value": "{palette.black-pepper.500}",
         "type": "color",
         "description": "The stronger text color, such as Headings on muted backgrounds."
       },
+      "muted": {
+        "100": {
+          "value": "{palette.licorice.100}",
+          "type": "color",
+          "description": "The disabled text color."
+        },
+        "300": {
+          "value": "{palette.licorice.300}",
+          "type": "color",
+          "description": "The strong color used on backgrounds meant to contrast against a parent background."
+        }
+      },
       "inverse": {
-        "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "The color used on text to contrast against backgrounds."
+        "100": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color",
+          "description": "The color used on text to contrast against backgrounds."
+        }
       },
       "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "The primaryed text color, used in Links."
+        "400": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "The primaryed text color, used in Links."
+        }
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "The critical text color, mean to imply danger."
+        "500": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "The critical text color, mean to imply danger."
+        }
+      },
+      "caution": {
+        "400": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color",
+          "description": "The critical text color, mean to imply danger."
+        },
+        "500": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color",
+          "description": "The critical text color, mean to imply danger."
+        }
       }
     },
     "icon": {
-      "default": {
+      "200": {
         "value": "{palette.licorice.200}",
         "type": "color",
         "description": "The default color used on icons."
       },
-      "disabled": {
-        "value": "{palette.soap.600}",
-        "type": "color",
-        "description": "The disabled color used on icons."
-      },
-      "strong": {
+      "500": {
         "value": "{palette.licorice.500}",
         "type": "color",
         "description": "The strong color used on icons."
       },
+      "muted": {
+        "600": {
+          "value": "{palette.soap.600}",
+          "type": "color",
+          "description": "The disabled color used on icons."
+        },
+        "critical": {
+          "500": {
+            "value": "{palette.cinnamon.500}",
+            "type": "color",
+            "description": "The critical icon color, meant to imply danger."
+          }
+        },
+        "caution": {
+          "400": {
+            "value": "{palette.cantaloupe.400}",
+            "type": "color",
+            "description": "The caution icon color, meant to imply a warning."
+          }
+        },
+        "positive": {
+          "500": {
+            "value": "{palette.green-apple.500}",
+            "type": "color",
+            "description": "The positive icon color, meant to imply success."
+          }
+        }
+      },
       "inverse": {
-        "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "The color used on icons to contrast against backgrounds."
+        "100": {
+          "value": "{palette.french-vanilla.100}",
+          "type": "color",
+          "description": "The color used on icons to contrast against backgrounds."
+        }
       },
       "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "The primaryed icon color."
-      },
-      "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "The critical icon color, meant to imply danger."
-      },
-      "caution": {
-        "value": "{palette.cantaloupe.400}",
-        "type": "color",
-        "description": "The caution icon color, meant to imply a warning."
-      },
-      "positive": {
-        "value": "{palette.green-apple.500}",
-        "type": "color",
-        "description": "The positive icon color, meant to imply success."
+        "400": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "The primary brand icon color."
+        }
       }
     },
     "border": {
-      "default": {
-        "value": "{palette.licorice.200}",
-        "type": "color",
-        "description": "Primary border color for inputs."
-      },
       "input": {
-        "disabled": {
+        "100": {
           "value": "{palette.licorice.100}",
           "type": "color",
           "description": "Disabled border color for inputs."
         },
-        "strong": {
+        "500": {
           "value": "{palette.licorice.500}",
           "type": "color",
           "description": "strong border color for inputs."
+        },
+        "default": {
+          "value": "{palette.licorice.200}",
+          "type": "color",
+          "description": "Primary border color for inputs."
+        },
+        "transparent": {
+          "value": "rgba({palette.french-vanilla.100},0%)",
+          "type": "color",
+          "description": "A transparent border."
+        },
+        "primary": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "The primary border color."
+        },
+        "caution": {
+          "value": "{palette.cantaloupe.400}",
+          "type": "color",
+          "description": "The caution border color, mean to imply a warning."
+        },
+        "critical": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "The critical border color, mean to imply danger."
+        },
+        "container": {
+          "value": "{palette.soap.500}",
+          "type": "color",
+          "description": "The border color used on containers, such as Cards or Side Panels"
+        },
+        "divider": {
+          "value": "{palette.soap.400}",
+          "type": "color",
+          "description": "The border color used on dividers that separate sections or elements from one another"
         }
-      },
-      "transparent": {
-        "value": "rgba({palette.french-vanilla.100},0%)",
-        "type": "color",
-        "description": "A transparent border."
-      },
-      "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "The primaryed border color."
-      },
-      "caution": {
-        "value": "{palette.cantaloupe.400}",
-        "type": "color",
-        "description": "The caution border color, mean to imply a warning."
-      },
-      "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "The critical border color, mean to imply danger."
-      },
-      "container": {
-        "value": "{palette.soap.500}",
-        "type": "color",
-        "description": "The border color used on containers, such as Cards or Side Panels"
-      },
-      "divider": {
-        "value": "{palette.soap.400}",
-        "type": "color",
-        "description": "The border color used on dividers that separate sections or elements from one another"
       }
     },
     "shadow": {
-      "default": {
+      "600": {
         "value": "{palette.licorice.600}",
         "type": "color",
         "description": "The color used for the shadows in Depth."
       },
-      "shadow-1": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": "{opacity.200}",
-              "space": "lch"
+      "shadow": {
+        "1": {
+          "value": "{palette.licorice.600}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "{opacity.200}",
+                "space": "lch"
+              }
             }
-          }
+          },
+          "description": "Color used in the first Depth shadow"
         },
-        "description": "Color used in the first Depth shadow"
-      },
-      "shadow-2": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "alpha",
-              "value": "{opacity.100}",
-              "space": "lch"
+        "2": {
+          "value": "{palette.licorice.600}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "{opacity.100}",
+                "space": "lch"
+              }
             }
-          }
-        },
-        "description": "Color used in second Depth shadow"
+          },
+          "description": "Color used in second Depth shadow"
+        }
       }
     }
   }
