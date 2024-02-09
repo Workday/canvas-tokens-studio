@@ -408,6 +408,18 @@
           "type": "color",
           "description": "All elements on top of the background"
         }
+      },
+      "contrast": {
+        "default": {
+          "value": "{palette.black-pepper.400}",
+          "type": "color",
+          "description": "All elements on top of the background"
+        },
+        "strong": {
+          "value": "{palette.black-pepper.500}",
+          "type": "color",
+          "description": "All elements on top of the background"
+        }
       }
     },
     "shadow": {
