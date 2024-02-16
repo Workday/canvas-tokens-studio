@@ -1,9 +1,21 @@
 {
   "opacity": {
     "disabled": {
-      "value": "{opacity.300}",
-      "type": "opacity",
-      "description": "State layer added on top of disabled elements."
+      "value": "40",
+      "type": "number",
+      "description": "Opacity represented as a percentage."
+    },
+    "shadow": {
+      "first": {
+        "value": "12",
+        "type": "number",
+        "description": "Opacity represented as a percentage. Figma only."
+      },
+      "second": {
+        "value": "8",
+        "type": "number",
+        "description": "Opacity represented as a percentage."
+      }
     }
   }
 }

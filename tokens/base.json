@@ -704,6 +704,10 @@
     }
   },
   "opacity": {
+    "0": {
+      "value": "0",
+      "type": "opacity"
+    },
     "100": {
       "value": "0.08",
       "type": "opacity"
@@ -723,21 +727,6 @@
     "500": {
       "value": "0.85",
       "type": "opacity"
-    },
-    "disabled": {
-      "value": "40",
-      "type": "number",
-      "description": "Opacity represented as a percentage. Figma only."
-    },
-    "shadow-1": {
-      "value": "12",
-      "type": "number",
-      "description": "Opacity represented as a percentage. Figma only."
-    },
-    "shadow-2": {
-      "value": "8",
-      "type": "number",
-      "description": "Opacity represented as a percentage. Figma only."
     }
   },
   "base": {
