@@ -721,18 +721,18 @@
       "type": "opacity"
     },
     "400": {
-      "value": "0.65",
+      "value": "0.64",
       "type": "opacity"
     },
     "500": {
-      "value": "0.85",
+      "value": "0.84",
       "type": "opacity"
     }
   },
   "base": {
     "unit": {
-      "value": "0.25rem",
-      "type": "dimension",
+      "value": "4",
+      "type": "number",
       "description": "The base unit used in the grid system.\n"
     }
   },
@@ -1001,10 +1001,11 @@
       "value": "4",
       "type": "number",
       "description": "Base blur value\n"
-    },
-    "scale": {
-      "value": "2",
-      "type": "number"
     }
+  },
+  "scale": {
+    "value": "2",
+    "type": "number",
+    "description": "Half of a unit, used for type and elevation scale"
   }
 }

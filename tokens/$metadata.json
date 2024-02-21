@@ -6,6 +6,7 @@
     "sys/brand/island",
     "sys/brand/peach",
     "sys/color/default",
+    "sys/color/branded",
     "sys/space",
     "sys/shape",
     "sys/type",

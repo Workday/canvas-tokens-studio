@@ -56,88 +56,88 @@
       },
       "primary": {
         "default": {
-          "value": "{palette.blueberry.400}",
+          "value": "{brand.primary.base}",
           "type": "color",
           "description": "Primary brand color"
         },
         "soft": {
-          "value": "{palette.blueberry.200}",
+          "value": "{brand.primary.light}",
           "type": "color",
           "description": "Brand selected background"
         },
         "strong": {
-          "value": "{palette.blueberry.500}",
+          "value": "{brand.primary.dark}",
           "type": "color",
           "description": "Brand hover background"
         },
         "stronger": {
-          "value": "{palette.blueberry.600}",
+          "value": "{brand.primary.darkest}",
           "type": "color",
           "description": "Brand active background"
         }
       },
       "positive": {
         "default": {
-          "value": "{palette.green-apple.400}",
+          "value": "{brand.success.base}",
           "type": "color",
           "description": "Disabled success background"
         },
         "soft": {
-          "value": "{palette.green-apple.100}",
+          "value": "{brand.success.lightest}",
           "type": "color",
           "description": "Default success background"
         },
         "strong": {
-          "value": "{palette.green-apple.500}",
+          "value": "{brand.success.dark}",
           "type": "color",
           "description": "Hover success background"
         },
         "stronger": {
-          "value": "{palette.green-apple.600}",
+          "value": "{brand.success.darkest}",
           "type": "color",
           "description": "Active success background"
         }
       },
       "caution": {
         "default": {
-          "value": "{palette.cantaloupe.400}",
+          "value": "{brand.alert.base}",
           "type": "color",
           "description": "Default warning background"
         },
         "softer": {
-          "value": "{palette.cantaloupe.100}",
+          "value": "{brand.alert.lightest}",
           "type": "color",
           "description": "Disabled warning background"
         },
         "strong": {
-          "value": "{palette.cantaloupe.500}",
+          "value": "{brand.alert.dark}",
           "type": "color",
           "description": "Strong warning background"
         },
         "stronger": {
-          "value": "{palette.cantaloupe.600}",
+          "value": "{brand.alert.darkest}",
           "type": "color",
           "description": "Stronger warning background"
         }
       },
       "critical": {
         "default": {
-          "value": "{palette.cinnamon.500}",
+          "value": "{brand.error.base}",
           "type": "color",
           "description": "Default error background"
         },
         "softer": {
-          "value": "{palette.cinnamon.100}",
+          "value": "{brand.error.lightest}",
           "type": "color",
           "description": "Disabled error background"
         },
         "strong": {
-          "value": "{palette.cinnamon.600}",
+          "value": "{brand.error.dark}",
           "type": "color",
           "description": "Strong error background"
         },
         "stronger": {
-          "value": "#80160E",
+          "value": "{brand.error.darkest}",
           "type": "color",
           "description": "Stronger error background"
         }
@@ -191,18 +191,18 @@
       },
       "primary": {
         "default": {
-          "value": "{palette.blueberry.400}",
+          "value": "{brand.primary.base}",
           "type": "color",
           "description": "Branded text"
         },
         "strong": {
-          "value": "{palette.blueberry.500}",
+          "value": "{brand.primary.dark}",
           "type": "color",
           "description": "Branded hover text"
         }
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "Error text"
       },
@@ -236,17 +236,17 @@
         "description": "Hover icon color"
       },
       "primary": {
-        "value": "{palette.blueberry.400}",
+        "value": "{brand.primary.base}",
         "type": "color",
         "description": "Brand icon color"
       },
       "positive": {
-        "value": "{palette.green-apple.500}",
+        "value": "{brand.success.base}",
         "type": "color",
         "description": "Success icon color"
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "Error icon color"
       },
@@ -272,23 +272,23 @@
       "default": {
         "value": "{palette.black-pepper.300}",
         "type": "color",
-        "description": "Body"
+        "description": "Default foreground color"
       },
       "strong": {
         "value": "{palette.black-pepper.400}",
         "type": "color",
-        "description": "Headings"
+        "description": "Strong foreground color"
       },
       "stronger": {
         "value": "{palette.black-pepper.500}",
         "type": "color",
-        "description": "Heading on hover"
+        "description": "Stronger foreground color"
       },
       "muted": {
         "default": {
           "value": "{palette.licorice.300}",
           "type": "color",
-          "description": "Hint text"
+          "description": "Soft foreground color"
         },
         "strong": {
           "value": "{palette.licorice.400}",
@@ -302,27 +302,27 @@
       "disabled": {
         "value": "{palette.licorice.100}",
         "type": "color",
-        "description": "Disabled"
+        "description": "Disabled foreground"
       },
       "inverse": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
-        "description": "Inverse"
+        "description": "Inverse foreground"
       },
       "primary": {
         "default": {
-          "value": "{palette.blueberry.400}",
+          "value": "{brand.primary.base}",
           "type": "color",
           "description": "Interactive foreground elements"
         },
         "strong": {
-          "value": "{palette.blueberry.500}",
+          "value": "{brand.primary.dark}",
           "type": "color",
           "description": "Hover interactive foregrounds"
         }
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "Error"
       },
@@ -342,12 +342,12 @@
         "default": {
           "value": "{palette.black-pepper.400}",
           "type": "color",
-          "description": "Contrast"
+          "description": "Contrast elements"
         },
         "strong": {
           "value": "{palette.black-pepper.500}",
           "type": "color",
-          "description": "Strong contrast"
+          "description": "Strong contrast elements"
         }
       }
     },
@@ -382,25 +382,25 @@
         }
       },
       "primary": {
-        "value": "{palette.blueberry.400}",
+        "value": "{brand.primary.base}",
         "type": "color",
         "description": "Brand, Focus"
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
+        "value": "{brand.error.base}",
         "type": "color",
         "description": "Error"
       },
       "caution": {
         "default": {
-          "value": "{palette.cantaloupe.400}",
+          "value": "{brand.alert.base}",
           "type": "color",
-          "description": "Warning inner"
+          "description": "Warning Inner"
         },
         "strong": {
-          "value": "{palette.cantaloupe.600}",
+          "value": "{brand.alert.darkest}",
           "type": "color",
-          "description": "Warning outer (box shadow)"
+          "description": "Warning Outer (box shadow)"
         }
       },
       "transparent": {
@@ -411,7 +411,7 @@
       "inverse": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
-        "description": "Inverse"
+        "description": "Use on top of dark backgrounds"
       },
       "divider": {
         "value": "{palette.soap.400}",
@@ -421,22 +421,18 @@
       "container": {
         "value": "{palette.soap.500}",
         "type": "color",
-        "description": "Cards, Toasts"
+        "description": "Border on containers"
       }
     },
     "shadow": {
       "default": {
         "value": "{palette.licorice.600}",
         "type": "color",
-        "description": "Main shadow color",
-        "$extensions": {
-          "studio.tokens": {}
-        }
+        "description": "The main shadow color"
       },
       "first": {
         "value": "{color.shadow.default}",
         "type": "color",
-        "description": "First shadow color",
         "$extensions": {
           "studio.tokens": {
             "modify": {
@@ -445,12 +441,12 @@
               "space": "lch"
             }
           }
-        }
+        },
+        "description": "First shadow in depth"
       },
       "second": {
         "value": "{palette.licorice.600}",
         "type": "color",
-        "description": "Second shadow color",
         "$extensions": {
           "studio.tokens": {
             "modify": {
@@ -459,7 +455,8 @@
               "space": "lch"
             }
           }
-        }
+        },
+        "description": "Second shadow in depth"
       }
     },
     "static": {
@@ -475,7 +472,7 @@
           "description": "Light blue"
         },
         "strong": {
-          "value": "{palette.blueberry.500}",
+          "value": "{palette.blueberry.600}",
           "type": "color",
           "description": "Stronger blue"
         }
@@ -484,7 +481,7 @@
         "default": {
           "value": "{palette.green-apple.400}",
           "type": "color",
-          "description": "Default green"
+          "description": "Stronger green"
         },
         "soft": {
           "value": "{palette.green-apple.100}",
@@ -494,7 +491,7 @@
         "strong": {
           "value": "{palette.green-apple.600}",
           "type": "color",
-          "description": "Stronger green"
+          "description": "Strong green"
         }
       },
       "red": {
@@ -516,7 +513,7 @@
       },
       "orange": {
         "default": {
-          "value": "{palette.cantaloupe.500}",
+          "value": "{palette.cantaloupe.400}",
           "type": "color",
           "description": "Orange"
         },

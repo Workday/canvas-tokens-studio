@@ -3,18 +3,28 @@
     "disabled": {
       "value": "40",
       "type": "number",
-      "description": "Opacity represented as a percentage."
+      "description": "Disabled states"
+    },
+    "overlay": {
+      "value": "{opacity.400}",
+      "type": "number",
+      "description": "Overlay"
+    },
+    "contrast": {
+      "value": "{opacity.400}",
+      "type": "number",
+      "description": "Tooltips, Status Indicator "
     },
     "shadow": {
       "first": {
         "value": "12",
         "type": "number",
-        "description": "Opacity represented as a percentage. Figma only."
+        "description": "Alpha on first shadow "
       },
       "second": {
         "value": "8",
         "type": "number",
-        "description": "Opacity represented as a percentage."
+        "description": "Alpha on second shadow"
       }
     }
   }

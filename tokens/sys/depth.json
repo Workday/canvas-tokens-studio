@@ -4,18 +4,18 @@
       "value": [
         {
           "x": "0",
-          "y": "{depth.shadow-1.y.1}",
-          "blur": "{depth.shadow-1.blur.1}",
+          "y": "{depth.shadow-one.y.1}",
+          "blur": "{depth.shadow-one.blur.1}",
           "spread": "0",
-          "color": "{color.shadow.shadow-1}",
+          "color": "{color.shadow.first}",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "{depth.shadow-2.y.1}",
-          "blur": "{depth.shadow-2.blur.1}",
+          "y": "{depth.shadow-two.y.1}",
+          "blur": "{depth.shadow-two.blur.1}",
           "spread": "0",
-          "color": "{color.shadow.shadow-2}",
+          "color": "{color.shadow.second}",
           "type": "dropShadow"
         }
       ],
@@ -39,24 +39,25 @@
           "value": "{elevation.1} * {elevation.blur} * {elevation.scale}",
           "type": "number"
         }
-      }
+      },
+      "description": "Cards\n"
     },
     "2": {
       "value": [
         {
           "x": "0",
-          "y": "{depth.shadow-1.y.2}",
-          "blur": "{depth.shadow-1.blur.2}",
+          "y": "{depth.shadow-one.y.2}",
+          "blur": "{depth.shadow-one.blur.2}",
           "spread": "0",
-          "color": "{color.shadow.shadow-1}",
+          "color": "{color.shadow.first}",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "{depth.shadow-2.y.2}",
-          "blur": "{depth.shadow-2.blur.2}",
+          "y": "{depth.shadow-two.y.2}",
+          "blur": "{depth.shadow-two.blur.2}",
           "spread": "0",
-          "color": "{color.shadow.shadow-2}",
+          "color": "{color.shadow.second}",
           "type": "dropShadow"
         }
       ],
@@ -80,24 +81,25 @@
           "value": "{elevation.1} * {elevation.blur} * {elevation.scale}",
           "type": "number"
         }
-      }
+      },
+      "description": "Top and Bottom Navigation"
     },
     "3": {
       "value": [
         {
           "x": "0",
-          "y": "{depth.shadow-1.y.3}",
-          "blur": "{depth.shadow-1.blur.3}",
+          "y": "{depth.shadow-one.y.3}",
+          "blur": "{depth.shadow-one.blur.3}",
           "spread": "0",
-          "color": "{color.shadow.shadow-1}",
+          "color": "{color.shadow.first}",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "{depth.shadow-2.y.3}",
-          "blur": "{depth.shadow-2.blur.3}",
+          "y": "{depth.shadow-two.y.3}",
+          "blur": "{depth.shadow-two.blur.3}",
           "spread": "0",
-          "color": "{color.shadow.shadow-2}",
+          "color": "{color.shadow.second}",
           "type": "dropShadow"
         }
       ],
@@ -121,24 +123,25 @@
           "value": "{elevation.3} * {elevation.blur} * {elevation.scale}",
           "type": "number"
         }
-      }
+      },
+      "description": "Floating Action Button (FAB), Menus\n"
     },
     "4": {
       "value": [
         {
           "x": "0",
-          "y": "{depth.shadow-1.y.4}",
-          "blur": "{depth.shadow-1.blur.4}",
+          "y": "{depth.shadow-one.y.4}",
+          "blur": "{depth.shadow-one.blur.4}",
           "spread": "0",
-          "color": "{color.shadow.shadow-1}",
+          "color": "{color.shadow.first}",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "{depth.shadow-2.y.4}",
-          "blur": "{depth.shadow-2.blur.4}",
+          "y": "{depth.shadow-two.y.4}",
+          "blur": "{depth.shadow-two.blur.4}",
           "spread": "0",
-          "color": "{color.shadow.shadow-2}",
+          "color": "{color.shadow.second}",
           "type": "dropShadow"
         }
       ],
@@ -162,24 +165,25 @@
           "value": "{elevation.4} * {elevation.blur} * {elevation.scale}",
           "type": "number"
         }
-      }
+      },
+      "description": "Bottom Sheet"
     },
     "5": {
       "value": [
         {
           "x": "0",
-          "y": "{depth.shadow-1.y.5}",
-          "blur": "{depth.shadow-1.blur.5}",
+          "y": "{depth.shadow-one.y.5}",
+          "blur": "{depth.shadow-one.blur.5}",
           "spread": "0",
-          "color": "{color.shadow.shadow-1}",
+          "color": "{color.shadow.first}",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "{depth.shadow-2.y.5}",
-          "blur": "{depth.shadow-2.blur.5}",
+          "y": "{depth.shadow-two.y.5}",
+          "blur": "{depth.shadow-two.blur.5}",
           "spread": "0",
-          "color": "{color.shadow.shadow-2}",
+          "color": "{color.shadow.second}",
           "type": "dropShadow"
         }
       ],
@@ -203,24 +207,25 @@
           "value": "{elevation.5} * {elevation.blur} * {elevation.scale}",
           "type": "number"
         }
-      }
+      },
+      "description": "Banners, Snackbars, Toasts, Non-modal Dialogs, Side Panels"
     },
     "6": {
       "value": [
         {
           "x": "0",
-          "y": "{depth.shadow-1.y.6}",
-          "blur": "{depth.shadow-1.blur.6}",
+          "y": "{depth.shadow-one.y.6}",
+          "blur": "{depth.shadow-one.blur.6}",
           "spread": "0",
-          "color": "{color.shadow.shadow-1}",
+          "color": "{color.shadow.first}",
           "type": "dropShadow"
         },
         {
           "x": "0",
-          "y": "{depth.shadow-2.y.6}",
-          "blur": "{depth.shadow-2.blur.6}",
+          "y": "{depth.shadow-two.y.6}",
+          "blur": "{depth.shadow-two.blur.6}",
           "spread": "0",
-          "color": "{color.shadow.shadow-2}",
+          "color": "{color.shadow.second}",
           "type": "dropShadow"
         }
       ],
@@ -244,9 +249,10 @@
           "value": "{elevation.6} * {elevation.blur} * {elevation.scale}",
           "type": "number"
         }
-      }
+      },
+      "description": "Modal Dialogs, Side Panels"
     },
-    "shadow-1": {
+    "shadow-one": {
       "y": {
         "1": {
           "value": "{elevation.1}",
@@ -300,56 +306,56 @@
         }
       }
     },
-    "shadow-2": {
+    "shadow-two": {
       "y": {
         "1": {
-          "value": "{elevation.1} * {elevation.scale}",
+          "value": "{elevation.1} * {scale}",
           "type": "number"
         },
         "2": {
-          "value": "{elevation.2} * {elevation.scale}",
+          "value": "{elevation.2} * {scale}",
           "type": "number"
         },
         "3": {
-          "value": "{elevation.3} * {elevation.scale}",
+          "value": "{elevation.3} * {scale}",
           "type": "number"
         },
         "4": {
-          "value": "{elevation.4} * {elevation.scale}",
+          "value": "{elevation.4} * {scale}",
           "type": "number"
         },
         "5": {
-          "value": "{elevation.5} * {elevation.scale}",
+          "value": "{elevation.5} * {scale}",
           "type": "number"
         },
         "6": {
-          "value": "{elevation.6} * {elevation.scale}",
+          "value": "{elevation.6} * {scale}",
           "type": "number"
         }
       },
       "blur": {
         "1": {
-          "value": "{elevation.1} * {elevation.blur} * {elevation.scale}",
+          "value": "{elevation.1} * {elevation.blur} * {scale}",
           "type": "number"
         },
         "2": {
-          "value": "{elevation.2} * {elevation.blur} * {elevation.scale}",
+          "value": "{elevation.2} * {elevation.blur} * {scale}",
           "type": "number"
         },
         "3": {
-          "value": "{elevation.3} * {elevation.blur} * {elevation.scale}",
+          "value": "{elevation.3} * {elevation.blur} * {scale}",
           "type": "number"
         },
         "4": {
-          "value": "{elevation.4} * {elevation.blur} * {elevation.scale}",
+          "value": "{elevation.4} * {elevation.blur} * {scale}",
           "type": "number"
         },
         "5": {
-          "value": "{elevation.5} * {elevation.blur} * {elevation.scale}",
+          "value": "{elevation.5} * {elevation.blur} * {scale}",
           "type": "number"
         },
         "6": {
-          "value": "{elevation.6} * {elevation.blur} * {elevation.scale}",
+          "value": "{elevation.6} * {elevation.blur} * {scale}",
           "type": "number"
         }
       }
