@@ -425,18 +425,9 @@
       }
     },
     "shadow": {
-      "default": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "description": "Main shadow color",
-        "$extensions": {
-          "studio.tokens": {}
-        }
-      },
-      "first": {
+      "1": {
         "value": "{color.shadow.default}",
         "type": "color",
-        "description": "First shadow color",
         "$extensions": {
           "studio.tokens": {
             "modify": {
@@ -445,12 +436,12 @@
               "space": "lch"
             }
           }
-        }
+        },
+        "description": "First shadow color"
       },
-      "second": {
+      "2": {
         "value": "{palette.licorice.600}",
         "type": "color",
-        "description": "Second shadow color",
         "$extensions": {
           "studio.tokens": {
             "modify": {
@@ -459,6 +450,15 @@
               "space": "lch"
             }
           }
+        },
+        "description": "Second shadow color"
+      },
+      "default": {
+        "value": "{palette.licorice.600}",
+        "type": "color",
+        "description": "Main shadow color",
+        "$extensions": {
+          "studio.tokens": {}
         }
       }
     },

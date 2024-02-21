@@ -692,8 +692,6 @@
       "color.border.divider": "bc73cf506f79a532af0a46600ed520454eb13543",
       "color.border.container": "894728157992e4c0128cf5205b0eab9551259cca",
       "color.shadow.default": "526e976e8c585ca840812f0ff433ac9b460a33de",
-      "color.shadow.first": "4414a032241e4d3c896dd79a36c094f04520a646",
-      "color.shadow.second": "7c578086e017883fd209ddb1ac91fc2fe9014873",
       "color.static.blue.default": "b3cd662872e89a56be37a0a1cc2bf5b897a0253e",
       "color.static.blue.strong": "f488fc3d9a8aa1d1452b00cac61e809cebdadedf",
       "color.static.green.strong": "353e959f04a094cb70218559af3879784362a433",
@@ -707,7 +705,9 @@
       "color.static.gray.strong": "106d2b66f99117727542c53b2c433530e9236dbd",
       "color.static.gray.stronger": "ef8d1475e5fab147131a11e859bf7e26f4f8c874",
       "color.static.white": "9fa3ac0c328b8a7e805441d14789a4a49a22c8da",
-      "color.static.black": "60f1abd100fd2f7c7526ecf8cc0c2a1ab2fe2037"
+      "color.static.black": "60f1abd100fd2f7c7526ecf8cc0c2a1ab2fe2037",
+      "color.shadow.1": "4414a032241e4d3c896dd79a36c094f04520a646",
+      "color.shadow.2": "7c578086e017883fd209ddb1ac91fc2fe9014873"
     },
     "$figmaCollectionId": "VariableCollectionId:23884:18299",
     "$figmaModeId": "26011:1",
@@ -719,11 +719,45 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/forest": "source"
+      "sys/brand/forest": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:20250:26303",
     "$figmaModeId": "20250:6",
-    "$figmaVariableReferences": {},
+    "$figmaVariableReferences": {
+      "brand.primary.lightest": "f81039edcdc614e343a90cffdefc5113a7a1f3b3",
+      "brand.primary.light": "aeeecf6d96b2c936d2548a2bd2377d86a9088a38",
+      "brand.primary.base": "f598c02669896c9a2ea439b58af3faf66aa92be6",
+      "brand.primary.dark": "b6ac67b239db052ea61cf95f92d50c41fb9b67fe",
+      "brand.primary.darkest": "62fbae83a4b3f7885de7e4816ed8f09739afce47",
+      "brand.primary.accent": "0efb50467c5e166d9e7aad034738441a1c833c5d",
+      "brand.alert.lightest": "c73988f2adfdcd8d2e32dde2e661caca639fe6d2",
+      "brand.alert.light": "fedd3a7edf5b21d86e004e550b65c77978ac1d9f",
+      "brand.alert.base": "c1db49a34a0cc8891017c0722a15c595eae3b665",
+      "brand.alert.dark": "fa15e6c6a20968019d7adbb6c96d9839a05a59e6",
+      "brand.alert.darkest": "4fe15e008b43f61a3114a9d37ae9023ed3a05f6f",
+      "brand.alert.accent": "34491a850b8e527a9c26f1bdfc88216a29b5dceb",
+      "brand.error.lightest": "e827eb8af4d05433df9d56ec6dd0bea7f31a0f03",
+      "brand.error.light": "70de3ee11f03318dc33ee581bd02cf9208431744",
+      "brand.error.base": "c11c76d15ce07102ee71a3790d7dd091ce5de434",
+      "brand.error.dark": "31d9540da786e925ba7e082384e936475fed626c",
+      "brand.error.darkest": "a506f802703ee1a48d70d1fa797ba59f869d59f3",
+      "brand.error.accent": "3ab359f6de8c26689ee2cebad90e45827a2e959d",
+      "brand.success.lightest": "9d21d7f16d2a6db465ce65f0985a1cb82ccdcfa7",
+      "brand.success.light": "ed42ff7a28a55db5b3e62c290a9d534f329ec0fe",
+      "brand.success.base": "593fd78f6688c699c7ab3f4e2928109a6e6793e2",
+      "brand.success.dark": "3ce19c2e0646a0fcaf92bebf2f8b2cf63fc339f8",
+      "brand.success.darkest": "c821a62cfa28d9658d95f4787271014e04f659cc",
+      "brand.success.accent": "37782b28bca9e9c3d97170b87c2083a037c3eca5",
+      "brand.neutral.lightest": "a80b46719e0bee839abb801c800ddde1fa767c68",
+      "brand.neutral.light": "b20cb26f4c05f49e513c791228e54f6c4afba853",
+      "brand.neutral.base": "390a9c2f5f067ccfbc26a23eb78ecdeeae9345e6",
+      "brand.neutral.dark": "d50446459bd33b892669989c9f260de166df094f",
+      "brand.neutral.darkest": "6be3df08aaa5aec0ac27091dfefe773a6b309e91",
+      "brand.neutral.accent": "a9474755bd43bb6e3a685b36904cd0bb7385a064",
+      "brand.common.focus-outline": "c9a29bf914c6c9e16d6d488ce8cc41179abe1dd6",
+      "brand.common.error-inner": "012160e7579f2c87c81ddc148edac825079e53f9",
+      "brand.common.alert-inner": "9c6c88f1405c7fb9b441e6d45249bb647e27b8bd"
+    },
     "group": "Brand"
   },
   {
@@ -976,8 +1010,6 @@
       "color.border.divider": "bc73cf506f79a532af0a46600ed520454eb13543",
       "color.border.container": "894728157992e4c0128cf5205b0eab9551259cca",
       "color.shadow.default": "526e976e8c585ca840812f0ff433ac9b460a33de",
-      "color.shadow.first": "4414a032241e4d3c896dd79a36c094f04520a646",
-      "color.shadow.second": "7c578086e017883fd209ddb1ac91fc2fe9014873",
       "color.static.blue.default": "b3cd662872e89a56be37a0a1cc2bf5b897a0253e",
       "color.static.blue.strong": "f488fc3d9a8aa1d1452b00cac61e809cebdadedf",
       "color.static.green.strong": "353e959f04a094cb70218559af3879784362a433",
@@ -991,7 +1023,9 @@
       "color.static.gray.strong": "106d2b66f99117727542c53b2c433530e9236dbd",
       "color.static.gray.stronger": "ef8d1475e5fab147131a11e859bf7e26f4f8c874",
       "color.static.white": "9fa3ac0c328b8a7e805441d14789a4a49a22c8da",
-      "color.static.black": "60f1abd100fd2f7c7526ecf8cc0c2a1ab2fe2037"
+      "color.static.black": "60f1abd100fd2f7c7526ecf8cc0c2a1ab2fe2037",
+      "color.shadow.1": "4414a032241e4d3c896dd79a36c094f04520a646",
+      "color.shadow.2": "7c578086e017883fd209ddb1ac91fc2fe9014873"
     },
     "group": "System"
   }

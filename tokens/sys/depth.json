@@ -7,7 +7,7 @@
           "y": "{depth.shadow-one.y.1}",
           "blur": "{depth.shadow-one.blur.1}",
           "spread": "0",
-          "color": "{color.shadow.first}",
+          "color": "{color.shadow.1}",
           "type": "dropShadow"
         },
         {
@@ -15,7 +15,7 @@
           "y": "{depth.shadow-two.y.1}",
           "blur": "{depth.shadow-two.blur.1}",
           "spread": "0",
-          "color": "{color.shadow.second}",
+          "color": "{color.shadow.2}",
           "type": "dropShadow"
         }
       ],
@@ -49,7 +49,7 @@
           "y": "{depth.shadow-one.y.2}",
           "blur": "{depth.shadow-one.blur.2}",
           "spread": "0",
-          "color": "{color.shadow.first}",
+          "color": "{color.shadow.1}",
           "type": "dropShadow"
         },
         {
@@ -57,7 +57,7 @@
           "y": "{depth.shadow-two.y.2}",
           "blur": "{depth.shadow-two.blur.2}",
           "spread": "0",
-          "color": "{color.shadow.second}",
+          "color": "{color.shadow.2}",
           "type": "dropShadow"
         }
       ],
@@ -91,7 +91,7 @@
           "y": "{depth.shadow-one.y.3}",
           "blur": "{depth.shadow-one.blur.3}",
           "spread": "0",
-          "color": "{color.shadow.first}",
+          "color": "{color.shadow.1}",
           "type": "dropShadow"
         },
         {
@@ -99,7 +99,7 @@
           "y": "{depth.shadow-two.y.3}",
           "blur": "{depth.shadow-two.blur.3}",
           "spread": "0",
-          "color": "{color.shadow.second}",
+          "color": "{color.shadow.2}",
           "type": "dropShadow"
         }
       ],
@@ -133,7 +133,7 @@
           "y": "{depth.shadow-one.y.4}",
           "blur": "{depth.shadow-one.blur.4}",
           "spread": "0",
-          "color": "{color.shadow.first}",
+          "color": "{color.shadow.1}",
           "type": "dropShadow"
         },
         {
@@ -141,7 +141,7 @@
           "y": "{depth.shadow-two.y.4}",
           "blur": "{depth.shadow-two.blur.4}",
           "spread": "0",
-          "color": "{color.shadow.second}",
+          "color": "{color.shadow.2}",
           "type": "dropShadow"
         }
       ],
@@ -175,7 +175,7 @@
           "y": "{depth.shadow-one.y.5}",
           "blur": "{depth.shadow-one.blur.5}",
           "spread": "0",
-          "color": "{color.shadow.first}",
+          "color": "{color.shadow.1}",
           "type": "dropShadow"
         },
         {
@@ -183,7 +183,7 @@
           "y": "{depth.shadow-two.y.5}",
           "blur": "{depth.shadow-two.blur.5}",
           "spread": "0",
-          "color": "{color.shadow.second}",
+          "color": "{color.shadow.2}",
           "type": "dropShadow"
         }
       ],
@@ -217,7 +217,7 @@
           "y": "{depth.shadow-one.y.6}",
           "blur": "{depth.shadow-one.blur.6}",
           "spread": "0",
-          "color": "{color.shadow.first}",
+          "color": "{color.shadow.1}",
           "type": "dropShadow"
         },
         {
@@ -225,7 +225,7 @@
           "y": "{depth.shadow-two.y.6}",
           "blur": "{depth.shadow-two.blur.6}",
           "spread": "0",
-          "color": "{color.shadow.second}",
+          "color": "{color.shadow.2}",
           "type": "dropShadow"
         }
       ],

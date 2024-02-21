@@ -425,12 +425,7 @@
       }
     },
     "shadow": {
-      "default": {
-        "value": "{palette.licorice.600}",
-        "type": "color",
-        "description": "The main shadow color"
-      },
-      "first": {
+      "1": {
         "value": "{color.shadow.default}",
         "type": "color",
         "$extensions": {
@@ -444,7 +439,7 @@
         },
         "description": "First shadow in depth"
       },
-      "second": {
+      "2": {
         "value": "{palette.licorice.600}",
         "type": "color",
         "$extensions": {
@@ -457,6 +452,11 @@
           }
         },
         "description": "Second shadow in depth"
+      },
+      "default": {
+        "value": "{palette.licorice.600}",
+        "type": "color",
+        "description": "The main shadow color"
       }
     },
     "static": {
