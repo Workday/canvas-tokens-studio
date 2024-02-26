@@ -6,7 +6,7 @@
       "description": "Use to set a media query `min-width` below small."
     },
     "s": {
-      "value": "320px",
+      "value": "{base.unit} * 80",
       "type": "dimension",
       "description": "The `min-width` for mobile devices, such as phones and tablets."
     },

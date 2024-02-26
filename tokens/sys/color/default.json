@@ -6,6 +6,21 @@
         "type": "color",
         "description": "Main background color\n"
       },
+      "transparent": {
+        "value": "rgba({color.static.white}, 0)",
+        "type": "color",
+        "description": "Transparent background"
+      },
+      "overlay": {
+        "value": "rgba({color.static.black},{opacity.400})",
+        "type": "color",
+        "description": "Overlay background"
+      },
+      "translucent": {
+        "value": "rgba({color.static.black},{opacity.500})",
+        "type": "color",
+        "description": "Tooltip, Status Indicator"
+      },
       "alt": {
         "default": {
           "value": "{palette.soap.300}",
@@ -141,21 +156,6 @@
           "type": "color",
           "description": "Stronger error background"
         }
-      },
-      "transparent": {
-        "value": "rgba({color.static.white}, 0)",
-        "type": "color",
-        "description": "Transparent background"
-      },
-      "overlay": {
-        "value": "rgba({color.static.black},{opacity.400})",
-        "type": "color",
-        "description": "Overlay background"
-      },
-      "translucent": {
-        "value": "rgba({color.static.black},{opacity.500})",
-        "type": "color",
-        "description": "Tooltip, Status Indicator"
       }
     },
     "text": {
@@ -189,6 +189,13 @@
         "type": "color",
         "description": "Inverse text color"
       },
+      "critical": {
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "Error text"
+        }
+      },
       "primary": {
         "default": {
           "value": "{palette.blueberry.400}",
@@ -200,11 +207,6 @@
           "type": "color",
           "description": "Branded hover text"
         }
-      },
-      "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "Error text"
       },
       "caution": {
         "default": {
@@ -235,25 +237,31 @@
         "type": "color",
         "description": "Hover icon color"
       },
-      "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "Brand icon color"
-      },
-      "positive": {
-        "value": "{palette.green-apple.500}",
-        "type": "color",
-        "description": "Success icon color"
-      },
-      "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "Error icon color"
-      },
       "inverse": {
         "value": "{palette.french-vanilla.100}",
         "type": "color",
         "description": "Inverse icon color"
+      },
+      "primary": {
+        "default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "Brand icon color"
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{palette.green-apple.500}",
+          "type": "color",
+          "description": "Success icon color"
+        }
+      },
+      "critical": {
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "Error icon color"
+        }
       },
       "caution": {
         "default": {
@@ -284,6 +292,23 @@
         "type": "color",
         "description": "Heading on hover"
       },
+      "disabled": {
+        "value": "{palette.licorice.100}",
+        "type": "color",
+        "description": "Disabled"
+      },
+      "inverse": {
+        "value": "{palette.french-vanilla.100}",
+        "type": "color",
+        "description": "Inverse"
+      },
+      "critical": {
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "Error"
+        }
+      },
       "muted": {
         "default": {
           "value": "{palette.licorice.300}",
@@ -299,16 +324,6 @@
           "type": "color"
         }
       },
-      "disabled": {
-        "value": "{palette.licorice.100}",
-        "type": "color",
-        "description": "Disabled"
-      },
-      "inverse": {
-        "value": "{palette.french-vanilla.100}",
-        "type": "color",
-        "description": "Inverse"
-      },
       "primary": {
         "default": {
           "value": "{palette.blueberry.400}",
@@ -320,11 +335,6 @@
           "type": "color",
           "description": "Hover interactive foregrounds"
         }
-      },
-      "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "Error"
       },
       "caution": {
         "default": {
@@ -382,14 +392,18 @@
         }
       },
       "primary": {
-        "value": "{palette.blueberry.400}",
-        "type": "color",
-        "description": "Brand, Focus"
+        "default": {
+          "value": "{palette.blueberry.400}",
+          "type": "color",
+          "description": "Brand, Focus"
+        }
       },
       "critical": {
-        "value": "{palette.cinnamon.500}",
-        "type": "color",
-        "description": "Error"
+        "default": {
+          "value": "{palette.cinnamon.500}",
+          "type": "color",
+          "description": "Error"
+        }
       },
       "caution": {
         "default": {

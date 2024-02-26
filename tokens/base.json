@@ -704,10 +704,6 @@
     }
   },
   "opacity": {
-    "0": {
-      "value": "0",
-      "type": "opacity"
-    },
     "100": {
       "value": "0.08",
       "type": "opacity"
@@ -731,8 +727,8 @@
   },
   "base": {
     "unit": {
-      "value": "4",
-      "type": "number",
+      "value": "0.25rem",
+      "type": "dimension",
       "description": "The base unit used in the grid system.\n"
     }
   },
@@ -1007,5 +1003,9 @@
     "value": "2",
     "type": "number",
     "description": "Half of a unit, used for type and elevation scale"
+  },
+  "underline": {
+    "value": "underline",
+    "type": "textDecoration"
   }
 }
