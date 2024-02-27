@@ -1,34 +1,364 @@
 {
   "depth": {
     "1": {
-      "value": "{shadow.100}",
+      "value": [
+        {
+          "x": "0",
+          "y": "{depth.shadow-one.y.1}",
+          "blur": "{depth.shadow-one.blur.1}",
+          "spread": "0",
+          "color": "{color.shadow.1}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{depth.shadow-two.y.1}",
+          "blur": "{depth.shadow-two.blur.1}",
+          "spread": "0",
+          "color": "{color.shadow.2}",
+          "type": "dropShadow"
+        }
+      ],
       "type": "boxShadow",
-      "description": "Standard card depth"
+      "shadow-1": {
+        "y": {
+          "value": "{elevation.1}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.1} * {elevation.blur}",
+          "type": "number"
+        }
+      },
+      "shadow-2": {
+        "y": {
+          "value": "{elevation.1} * {elevation.scale}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.1} * {elevation.blur} * {elevation.scale}",
+          "type": "number"
+        }
+      },
+      "description": "Cards\n"
     },
     "2": {
-      "value": "{shadow.200}",
+      "value": [
+        {
+          "x": "0",
+          "y": "{depth.shadow-one.y.2}",
+          "blur": "{depth.shadow-one.blur.2}",
+          "spread": "0",
+          "color": "{color.shadow.1}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{depth.shadow-two.y.2}",
+          "blur": "{depth.shadow-two.blur.2}",
+          "spread": "0",
+          "color": "{color.shadow.2}",
+          "type": "dropShadow"
+        }
+      ],
       "type": "boxShadow",
-      "description": "Top navigation, Bottom Navigation"
+      "shadow-1": {
+        "y": {
+          "value": "{elevation.1}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.1} * {elevation.blur}",
+          "type": "number"
+        }
+      },
+      "shadow-2": {
+        "y": {
+          "value": "{elevation.1} * {elevation.scale}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.1} * {elevation.blur} * {elevation.scale}",
+          "type": "number"
+        }
+      },
+      "description": "Top and Bottom Navigation"
     },
     "3": {
-      "value": "{shadow.300}",
+      "value": [
+        {
+          "x": "0",
+          "y": "{depth.shadow-one.y.3}",
+          "blur": "{depth.shadow-one.blur.3}",
+          "spread": "0",
+          "color": "{color.shadow.1}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{depth.shadow-two.y.3}",
+          "blur": "{depth.shadow-two.blur.3}",
+          "spread": "0",
+          "color": "{color.shadow.2}",
+          "type": "dropShadow"
+        }
+      ],
       "type": "boxShadow",
-      "description": "Floating Action Buttons (FAB), Menus"
+      "shadow-1": {
+        "y": {
+          "value": "{elevation.3}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.3} * {elevation.blur}",
+          "type": "number"
+        }
+      },
+      "shadow-2": {
+        "y": {
+          "value": "{elevation.3} * {elevation.scale}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.3} * {elevation.blur} * {elevation.scale}",
+          "type": "number"
+        }
+      },
+      "description": "Floating Action Button (FAB), Menus\n"
     },
     "4": {
-      "value": "{shadow.400}",
+      "value": [
+        {
+          "x": "0",
+          "y": "{depth.shadow-one.y.4}",
+          "blur": "{depth.shadow-one.blur.4}",
+          "spread": "0",
+          "color": "{color.shadow.1}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{depth.shadow-two.y.4}",
+          "blur": "{depth.shadow-two.blur.4}",
+          "spread": "0",
+          "color": "{color.shadow.2}",
+          "type": "dropShadow"
+        }
+      ],
       "type": "boxShadow",
-      "description": "Bottom Sheets"
+      "shadow-1": {
+        "y": {
+          "value": "{elevation.4}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.4} * {elevation.blur}",
+          "type": "number"
+        }
+      },
+      "shadow-2": {
+        "y": {
+          "value": "{elevation.4} * {elevation.scale}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.4} * {elevation.blur} * {elevation.scale}",
+          "type": "number"
+        }
+      },
+      "description": "Bottom Sheet"
     },
     "5": {
-      "value": "{shadow.500}",
+      "value": [
+        {
+          "x": "0",
+          "y": "{depth.shadow-one.y.5}",
+          "blur": "{depth.shadow-one.blur.5}",
+          "spread": "0",
+          "color": "{color.shadow.1}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{depth.shadow-two.y.5}",
+          "blur": "{depth.shadow-two.blur.5}",
+          "spread": "0",
+          "color": "{color.shadow.2}",
+          "type": "dropShadow"
+        }
+      ],
       "type": "boxShadow",
-      "description": "Banners, Snackbars, Toast Messages, Non modal Dialogs, \nSide Panels (when opacity overlay behaviour is not applied)"
+      "shadow-1": {
+        "y": {
+          "value": "{elevation.5}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.5} * {elevation.blur}",
+          "type": "number"
+        }
+      },
+      "shadow-2": {
+        "y": {
+          "value": "{elevation.5} * {elevation.scale}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.5} * {elevation.blur} * {elevation.scale}",
+          "type": "number"
+        }
+      },
+      "description": "Banners, Snackbars, Toasts, Non-modal Dialogs, Side Panels"
     },
     "6": {
-      "value": "{shadow.600}",
+      "value": [
+        {
+          "x": "0",
+          "y": "{depth.shadow-one.y.6}",
+          "blur": "{depth.shadow-one.blur.6}",
+          "spread": "0",
+          "color": "{color.shadow.1}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{depth.shadow-two.y.6}",
+          "blur": "{depth.shadow-two.blur.6}",
+          "spread": "0",
+          "color": "{color.shadow.2}",
+          "type": "dropShadow"
+        }
+      ],
       "type": "boxShadow",
-      "description": "Modal Dialogs, Side Panels (when opacity overlay behaviour\nis applied)"
+      "shadow-1": {
+        "y": {
+          "value": "{elevation.6}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.6} * {elevation.blur}",
+          "type": "number"
+        }
+      },
+      "shadow-2": {
+        "y": {
+          "value": "{elevation.6} * {elevation.scale}",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{elevation.6} * {elevation.blur} * {elevation.scale}",
+          "type": "number"
+        }
+      },
+      "description": "Modal Dialogs, Side Panels"
+    },
+    "shadow-one": {
+      "y": {
+        "1": {
+          "value": "{elevation.1}",
+          "type": "number"
+        },
+        "2": {
+          "value": "{elevation.2}",
+          "type": "number"
+        },
+        "3": {
+          "value": "{elevation.3}",
+          "type": "number"
+        },
+        "4": {
+          "value": "{elevation.4}",
+          "type": "number"
+        },
+        "5": {
+          "value": "{elevation.5}",
+          "type": "number"
+        },
+        "6": {
+          "value": "{elevation.6}",
+          "type": "number"
+        }
+      },
+      "blur": {
+        "1": {
+          "value": "{elevation.1} * {elevation.blur}",
+          "type": "number"
+        },
+        "2": {
+          "value": "{elevation.2} * {elevation.blur}",
+          "type": "number"
+        },
+        "3": {
+          "value": "{elevation.3} * {elevation.blur}",
+          "type": "number"
+        },
+        "4": {
+          "value": "{elevation.4} * {elevation.blur}",
+          "type": "number"
+        },
+        "5": {
+          "value": "{elevation.5} * {elevation.blur}",
+          "type": "number"
+        },
+        "6": {
+          "value": "{elevation.6} * {elevation.blur}",
+          "type": "number"
+        }
+      }
+    },
+    "shadow-two": {
+      "y": {
+        "1": {
+          "value": "{elevation.1} * {scale}",
+          "type": "number"
+        },
+        "2": {
+          "value": "{elevation.2} * {scale}",
+          "type": "number"
+        },
+        "3": {
+          "value": "{elevation.3} * {scale}",
+          "type": "number"
+        },
+        "4": {
+          "value": "{elevation.4} * {scale}",
+          "type": "number"
+        },
+        "5": {
+          "value": "{elevation.5} * {scale}",
+          "type": "number"
+        },
+        "6": {
+          "value": "{elevation.6} * {scale}",
+          "type": "number"
+        }
+      },
+      "blur": {
+        "1": {
+          "value": "{elevation.1} * {elevation.blur} * {scale}",
+          "type": "number"
+        },
+        "2": {
+          "value": "{elevation.2} * {elevation.blur} * {scale}",
+          "type": "number"
+        },
+        "3": {
+          "value": "{elevation.3} * {elevation.blur} * {scale}",
+          "type": "number"
+        },
+        "4": {
+          "value": "{elevation.4} * {elevation.blur} * {scale}",
+          "type": "number"
+        },
+        "5": {
+          "value": "{elevation.5} * {elevation.blur} * {scale}",
+          "type": "number"
+        },
+        "6": {
+          "value": "{elevation.6} * {elevation.blur} * {scale}",
+          "type": "number"
+        }
+      }
     }
   }
 }
