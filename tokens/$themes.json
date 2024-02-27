@@ -3,10 +3,7 @@
     "id": "d7e478d7ffe3ebda4917fb959ada99d301f8254b",
     "name": "Base",
     "selectedTokenSets": {
-      "base": "enabled",
-      "sys/color/color": "disabled",
-      "sys/color/branded": "disabled",
-      "sys/breakpoint": "disabled"
+      "base": "enabled"
     },
     "$figmaStyleReferences": {
       "palette.cinnamon.100": "S:f9a2f6023a453bc92c3d963609c1a93474d3b71c,",
@@ -365,10 +362,7 @@
     "name": "Canvas",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/canvas": "enabled",
-      "sys/color/color": "disabled",
-      "sys/color/branded": "disabled",
-      "sys/breakpoint": "disabled"
+      "sys/brand/canvas": "enabled"
     },
     "$figmaStyleReferences": {
       "brand.gradient": "S:62e67ceadb31f3df10abdeae6000cff6054c0243,"
@@ -417,10 +411,7 @@
     "name": "Forest",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/forest": "enabled",
-      "sys/color/color": "disabled",
-      "sys/color/branded": "disabled",
-      "sys/breakpoint": "disabled"
+      "sys/brand/forest": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -467,10 +458,7 @@
     "name": "Island",
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/island": "enabled",
-      "sys/color/color": "disabled",
-      "sys/color/branded": "disabled",
-      "sys/breakpoint": "disabled"
+      "sys/brand/island": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -792,10 +780,7 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base": "source",
-      "sys/brand/peach": "enabled",
-      "sys/color/color": "disabled",
-      "sys/color/branded": "disabled",
-      "sys/breakpoint": "disabled"
+      "sys/brand/peach": "enabled"
     },
     "group": "Brand",
     "$figmaCollectionId": "VariableCollectionId:2711:14619",
