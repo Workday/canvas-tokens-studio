@@ -29,7 +29,7 @@
       "first": {
         "value": "{opacity.200}",
         "type": "number",
-        "description": "Alpha on first shadow "
+        "description": "Alpha on first shadow"
       },
       "second": {
         "value": "{opacity.100}",
