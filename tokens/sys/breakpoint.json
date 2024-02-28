@@ -13,17 +13,17 @@
     "m": {
       "value": "{base.unit} * 192",
       "type": "dimension",
-      "description": "Medium screens, such as laptops"
+      "description": "Medium screens, such as laptops."
     },
     "l": {
       "value": "{base.unit} * 256",
       "type": "dimension",
-      "description": "Medium screens, such as laptops"
+      "description": "Large screens, such as desktops."
     },
     "xl": {
       "value": "{base.unit} * 360",
       "type": "dimension",
-      "description": "Used for very large screens"
+      "description": "Used for extra large screens, such as wide monitors and TVs."
     }
   }
 }
