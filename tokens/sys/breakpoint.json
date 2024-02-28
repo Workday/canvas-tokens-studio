@@ -16,7 +16,7 @@
       "description": "Medium screens, such as laptops"
     },
     "l": {
-      "value": "{base.unit} *256",
+      "value": "{base.unit} * 256",
       "type": "dimension",
       "description": "Medium screens, such as laptops"
     },
