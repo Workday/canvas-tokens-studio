@@ -21,7 +21,7 @@
       "description": "Medium screens, such as laptops"
     },
     "xl": {
-      "value": "{base.unit} *360",
+      "value": "{base.unit} * 360",
       "type": "dimension",
       "description": "Used for very large screens"
     }
