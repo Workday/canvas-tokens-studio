@@ -247,6 +247,11 @@
           "value": "{palette.blueberry.400}",
           "type": "color",
           "description": "Brand icon color"
+        },
+        "strong": {
+          "value": "{palette.blueberry.500}",
+          "type": "color",
+          "description": "Stronger brand icon color"
         }
       },
       "positive": {
