@@ -1,7 +1,7 @@
 {
   "breakpoints": {
     "zero": {
-      "value": "0rem",
+      "value": "0",
       "type": "dimension",
       "description": "Use to set a media query `min-width` below small."
     },
