@@ -717,11 +717,11 @@
       "type": "number"
     },
     "400": {
-      "value": "0.65",
+      "value": "0.64",
       "type": "number"
     },
     "500": {
-      "value": "0.85",
+      "value": "0.84",
       "type": "number"
     }
   },

@@ -1,9 +1,41 @@
 {
   "opacity": {
+    "zero": {
+      "value": "0",
+      "type": "number",
+      "description": "Dev only"
+    },
     "disabled": {
       "value": "{opacity.300}",
-      "type": "opacity",
-      "description": "State layer added on top of disabled elements."
+      "type": "number",
+      "description": "Disabled states"
+    },
+    "overlay": {
+      "value": "{opacity.400}",
+      "type": "number",
+      "description": "Overlay"
+    },
+    "contrast": {
+      "value": "{opacity.500}",
+      "type": "number",
+      "description": "Tooltips, Status Indicator"
+    },
+    "full": {
+      "value": "1",
+      "type": "number",
+      "description": "Dev only"
+    },
+    "shadow": {
+      "first": {
+        "value": "{opacity.200}",
+        "type": "number",
+        "description": "Alpha on first shadow"
+      },
+      "second": {
+        "value": "{opacity.100}",
+        "type": "number",
+        "description": "Alpha on second shadow"
+      }
     }
   }
 }
