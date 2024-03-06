@@ -58,7 +58,7 @@
     "x16": {
       "value": "{base.unit} * 16",
       "type": "spacing",
-      "description": "- Use to de-clutter your UI when alot of space is available\n- Separate banner sections from page content\n- Use to differentiate page content like page sections"
+      "description": "- Use to de-clutter your UI when a lot of space is available\n- Separate banner sections from page content\n- Use to differentiate page content like page sections"
     },
     "x20": {
       "value": "{base.unit} * 20",
