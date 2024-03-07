@@ -1,17 +1,5 @@
 {
   "tokenSetOrder": [
-    "base",
-    "sys/brand/canvas",
-    "sys/brand/forest",
-    "sys/brand/island",
-    "sys/brand/peach",
-    "sys/color/color",
-    "sys/color/branded",
-    "sys/space",
-    "sys/shape",
-    "sys/type",
-    "sys/depth",
-    "sys/opacity",
-    "sys/breakpoint"
+    "global"
   ]
 }
