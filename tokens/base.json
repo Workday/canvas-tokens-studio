@@ -705,23 +705,23 @@
   },
   "opacity": {
     "100": {
-      "value": "0.08",
+      "value": "8",
       "type": "number"
     },
     "200": {
-      "value": "0.12",
+      "value": "12",
       "type": "number"
     },
     "300": {
-      "value": "0.4",
+      "value": "4",
       "type": "number"
     },
     "400": {
-      "value": "0.64",
+      "value": "64",
       "type": "number"
     },
     "500": {
-      "value": "0.84",
+      "value": "84",
       "type": "number"
     }
   },
