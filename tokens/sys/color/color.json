@@ -12,12 +12,12 @@
         "description": "Transparent background"
       },
       "overlay": {
-        "value": "rgba({color.static.black},{opacity.400})",
+        "value": "rgba({color.static.black},.{opacity.400})",
         "type": "color",
         "description": "Overlay background"
       },
       "translucent": {
-        "value": "rgba({palette.black-pepper.600} ,{opacity.500})",
+        "value": "rgba({palette.black-pepper.600} ,.{opacity.500})",
         "type": "color",
         "description": "Tooltip, Status Indicator"
       },
@@ -26,6 +26,11 @@
           "value": "{palette.soap.300}",
           "type": "color",
           "description": "Hover states"
+        },
+        "softer": {
+          "value": "{palette.soap.100}",
+          "type": "color",
+          "description": "Page background"
         },
         "soft": {
           "value": "{palette.soap.200}",
@@ -206,6 +211,11 @@
           "value": "{palette.blueberry.500}",
           "type": "color",
           "description": "Branded hover text"
+        },
+        "stronger": {
+          "value": "{palette.blueberry.600}",
+          "type": "color",
+          "description": "Active link text"
         }
       },
       "caution": {
@@ -320,6 +330,16 @@
           "type": "color",
           "description": "Hint text"
         },
+        "softer": {
+          "value": "{palette.soap.200}",
+          "type": "color",
+          "description": "Skeleton loaders"
+        },
+        "soft": {
+          "value": "{palette.soap.400}",
+          "type": "color",
+          "description": "Loading dots "
+        },
         "strong": {
           "value": "{palette.licorice.400}",
           "type": "color"
@@ -339,6 +359,11 @@
           "value": "{palette.blueberry.500}",
           "type": "color",
           "description": "Hover interactive foregrounds"
+        },
+        "stronger": {
+          "value": "{palette.blueberry.600}",
+          "type": "color",
+          "description": "Active foreground elements"
         }
       },
       "caution": {
@@ -368,15 +393,15 @@
     },
     "border": {
       "input": {
-        "disabled": {
-          "value": "{palette.licorice.100}",
-          "type": "color",
-          "description": "Disabled inputs"
-        },
         "default": {
           "value": "{palette.licorice.200}",
           "type": "color",
           "description": "Inputs"
+        },
+        "disabled": {
+          "value": "{palette.licorice.100}",
+          "type": "color",
+          "description": "Disabled inputs"
         },
         "strong": {
           "value": "{palette.licorice.500}",
@@ -451,7 +476,7 @@
           "studio.tokens": {
             "modify": {
               "type": "alpha",
-              "value": "{opacity.200}",
+              "value": "{opacity.200} / 100",
               "space": "lch"
             }
           }
@@ -465,7 +490,7 @@
           "studio.tokens": {
             "modify": {
               "type": "alpha",
-              "value": "{opacity.100}",
+              "value": "{opacity.100} / 100",
               "space": "lch"
             }
           }
@@ -535,7 +560,7 @@
       },
       "orange": {
         "default": {
-          "value": "{palette.cantaloupe.500}",
+          "value": "{palette.cantaloupe.400}",
           "type": "color",
           "description": "Orange"
         },
@@ -581,6 +606,12 @@
         "value": "{palette.black-pepper.600}",
         "type": "color",
         "description": "Just black"
+      },
+      "toasted": {
+        "strong": {
+          "value": "{palette.toasted-marshmallow.600}",
+          "type": "color"
+        }
       }
     }
   }
