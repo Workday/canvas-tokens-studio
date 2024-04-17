@@ -566,7 +566,7 @@
       },
       "orange": {
         "default": {
-          "value": "{palette.cantaloupe.500}",
+          "value": "{palette.cantaloupe.400}",
           "type": "color",
           "description": "Orange"
         },
