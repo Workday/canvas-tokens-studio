@@ -885,52 +885,52 @@
   "font-family": {
     "50": {
       "value": "Roboto",
-      "type": "fontFamilies",
+      "type": "text",
       "description": "Default font-family"
     },
     "100": {
       "value": "Roboto Mono",
-      "type": "fontFamilies"
+      "type": "text"
     },
     "200": {
       "value": "Noto Sans",
-      "type": "fontFamilies"
+      "type": "text"
     }
   },
   "font-weight": {
     "300": {
-      "value": "300",
-      "type": "fontWeights"
+      "value": "Light",
+      "type": "text"
     },
     "400": {
-      "value": "400",
-      "type": "fontWeights"
+      "value": "Regular",
+      "type": "text"
     },
     "500": {
-      "value": "500",
-      "type": "fontWeights"
+      "value": "Medium",
+      "type": "text"
     },
     "700": {
-      "value": "700",
-      "type": "fontWeights"
+      "value": "Bold",
+      "type": "text"
     }
   },
   "letter-spacing": {
     "50": {
       "value": "0.4",
-      "type": "letterSpacing"
+      "type": "number"
     },
     "100": {
       "value": "0.32",
-      "type": "letterSpacing"
+      "type": "number"
     },
     "150": {
       "value": "0.24",
-      "type": "letterSpacing"
+      "type": "number"
     },
     "200": {
       "value": "0.16",
-      "type": "letterSpacing"
+      "type": "number"
     }
   },
   "shadow": {
