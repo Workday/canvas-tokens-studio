@@ -2,15 +2,15 @@
   "font-family": {
     "default": {
       "value": "{font-family.50}",
-      "type": "fontFamilies"
+      "type": "text"
     },
     "mono": {
       "value": "{font-family.100}",
-      "type": "fontFamilies"
+      "type": "text"
     },
     "global": {
       "value": "{font-family.200}",
-      "type": "fontFamilies"
+      "type": "text"
     }
   },
   "font-size": {
@@ -132,19 +132,19 @@
   "font-weight": {
     "light": {
       "value": "{font-weight.300}",
-      "type": "fontWeights"
+      "type": "text"
     },
     "normal": {
       "value": "{font-weight.400}",
-      "type": "fontWeights"
+      "type": "text"
     },
     "medium": {
       "value": "{font-weight.500}",
-      "type": "fontWeights"
+      "type": "text"
     },
     "bold": {
       "value": "{font-weight.700}",
-      "type": "fontWeights"
+      "type": "text"
     }
   },
   "type": {
