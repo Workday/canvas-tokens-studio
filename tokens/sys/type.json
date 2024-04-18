@@ -75,57 +75,57 @@
     "subtext": {
       "small": {
         "value": "{line-height.50}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "medium": {
         "value": "{line-height.50}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "large": {
         "value": "{line-height.100}",
-        "type": "lineHeights"
+        "type": "number"
       }
     },
     "body": {
       "small": {
         "value": "{line-height.150}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "medium": {
         "value": "{line-height.200}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "large": {
         "value": "{line-height.200}",
-        "type": "lineHeights"
+        "type": "number"
       }
     },
     "heading": {
       "small": {
         "value": "{line-height.250}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "medium": {
         "value": "{line-height.300}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "large": {
         "value": "{line-height.350}",
-        "type": "lineHeights"
+        "type": "number"
       }
     },
     "title": {
       "small": {
         "value": "{line-height.400}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "medium": {
         "value": "{line-height.500}",
-        "type": "lineHeights"
+        "type": "number"
       },
       "large": {
         "value": "{line-height.600}",
-        "type": "lineHeights"
+        "type": "number"
       }
     }
   },
