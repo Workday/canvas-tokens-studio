@@ -106,10 +106,10 @@
           "type": "color",
           "description": "Disabled success background"
         },
-        "soft": {
+        "softer": {
           "value": "{palette.green-apple.100}",
           "type": "color",
-          "description": "Default success background"
+          "description": "Softer success background"
         },
         "strong": {
           "value": "{palette.green-apple.500}",
