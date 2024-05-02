@@ -689,7 +689,6 @@
       "color.bg.primary.strong": "c16ed303b4a56c86d724de627fb92f249bed512d",
       "color.bg.primary.stronger": "945bea01881424c065b19951c2f53900d2c46e69",
       "color.bg.positive.default": "f06ec618e348adeef3420a255a69220125811f02",
-      "color.bg.positive.soft": "e48e727104b1ee85b9acb107044baaa6d48b0f72",
       "color.bg.positive.strong": "f599e1282415aabe60bf43d9ccaa201aa358f854",
       "color.bg.positive.stronger": "b1590bd0756424cd55cb4cadce28ff9b49974689",
       "color.bg.caution.default": "24bcc4a02be31efc6e276f7b625c48f094ee1ee2",
@@ -768,7 +767,8 @@
       "color.static.gray.strong": "46511408b6544310a08480130da2618a1f9f070a",
       "color.static.gray.stronger": "6792c3c94b613cec3e37f16d8537a55e7d98d693",
       "color.static.white": "9a80a767c51cf607d8bb0210b36297cf4689c1df",
-      "color.static.black": "4f818719efc474c9478d64c75f556e0116381c26"
+      "color.static.black": "4f818719efc474c9478d64c75f556e0116381c26",
+      "color.bg.positive.softer": "e48e727104b1ee85b9acb107044baaa6d48b0f72"
     },
     "$figmaCollectionId": "VariableCollectionId:2682:14289",
     "$figmaModeId": "19390:4",
@@ -898,7 +898,6 @@
       "color.bg.primary.strong": "c16ed303b4a56c86d724de627fb92f249bed512d",
       "color.bg.primary.stronger": "945bea01881424c065b19951c2f53900d2c46e69",
       "color.bg.positive.default": "f06ec618e348adeef3420a255a69220125811f02",
-      "color.bg.positive.soft": "e48e727104b1ee85b9acb107044baaa6d48b0f72",
       "color.bg.positive.strong": "f599e1282415aabe60bf43d9ccaa201aa358f854",
       "color.bg.positive.stronger": "b1590bd0756424cd55cb4cadce28ff9b49974689",
       "color.bg.caution.default": "24bcc4a02be31efc6e276f7b625c48f094ee1ee2",
@@ -980,7 +979,8 @@
       "color.static.gray.strong": "46511408b6544310a08480130da2618a1f9f070a",
       "color.static.gray.stronger": "6792c3c94b613cec3e37f16d8537a55e7d98d693",
       "color.static.white": "9a80a767c51cf607d8bb0210b36297cf4689c1df",
-      "color.static.black": "4f818719efc474c9478d64c75f556e0116381c26"
+      "color.static.black": "4f818719efc474c9478d64c75f556e0116381c26",
+      "color.bg.positive.softer": "e48e727104b1ee85b9acb107044baaa6d48b0f72"
     }
   }
 ]
