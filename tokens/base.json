@@ -1012,7 +1012,7 @@
           "type": "number"
         },
         "blur": {
-          "value": "8",
+          "value": "16",
           "type": "number"
         }
       },
@@ -1034,7 +1034,7 @@
           "type": "number"
         },
         "blur": {
-          "value": "10",
+          "value": "20",
           "type": "number"
         }
       },
@@ -1056,7 +1056,7 @@
           "type": "number"
         },
         "blur": {
-          "value": "12",
+          "value": "24",
           "type": "number"
         }
       },
