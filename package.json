@@ -13,9 +13,8 @@
   ],
   "license": "ISC",
   "devDependencies": {
-    "@octokit/rest": "^21.0.2"
-  },
-  "dependencies": {
+    "@octokit/rest": "^21.0.2",
     "kebab-case": "^2.0.1"
-  }
+  },
+  "dependencies": {}
 }
