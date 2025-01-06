@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import kebabCase from "kebab-case";
 
 const rootDir = process.cwd();
 
@@ -33,11 +34,9 @@ export const isBaseToken = (ref) => {
   const keys = ref.split(".");
 
   keys.forEach((key, i) => {
-    if (content[key]) {
-      content = content[key];
-      if (i + 1 === keys.length) {
-        isMapable = true;
-      }
+    content = content?.[key];
+    if (i + 1 === keys.length && content) {
+      isMapable = true;
     }
   });
 
@@ -45,16 +44,19 @@ export const isBaseToken = (ref) => {
 };
 
 /**
- * Utility function to update references to have a token level in the inner object of a token value.
+ * Utility function to update references to have a token level and kebab cased property names in the inner object of a token value.
  * @param {Record<string, string>} subtoken The inner object of a token value
  * @returns {Record<string, string>} The updated inner object
  */
 export const updateInnerObject = (subtoken) => {
+  let updatedSubtoken = {};
   Object.keys(subtoken).forEach((key) => {
-    subtoken[key] = replaceReferences(subtoken[key]);
+    updatedSubtoken[kebabCase(key)] = replaceReferences(subtoken[key]);
   });
 
-  return subtoken;
+  console.log(updatedSubtoken);
+
+  return updatedSubtoken;
 };
 
 /**
@@ -91,8 +93,8 @@ export const updateReferences = (token) => {
   }
 
   if (token.value?.length) {
-    token.value.forEach((subToken) => {
-      token.value = updateInnerObject(subToken);
+    token.value.forEach((subToken, i) => {
+      token.value[i] = updateInnerObject(subToken);
     });
 
     return token.value;
@@ -168,9 +170,9 @@ export const removeFigmaTokens = (tokens) => {
  * @returns {{value: string, type?: string, description?: string}} The updated token object
  */
 export const updateToken = (token) => {
+  transformExtensions(token);
   updateReferences(token);
   replaceDescriptionByComment(token);
-  transformExtensions(token);
 
   return token;
 };
