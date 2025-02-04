@@ -1,0 +1,20 @@
+{
+  "name": "canvas-tokens-studio",
+  "version": "1.0.0",
+  "description": "A central repository to sync design tokens configuration between Tokens Studio and code.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "author": "",
+  "contributors": [
+    "Alan Smith",
+    "Taka Shimokobe",
+    "Raisa Primerova"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@octokit/rest": "^21.0.2",
+    "kebab-case": "^2.0.1"
+  },
+  "dependencies": {}
+}
