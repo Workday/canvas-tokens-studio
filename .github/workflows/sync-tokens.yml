@@ -5,10 +5,11 @@ on:
   push:
     branches:
       - main
+      - prerelease/*
 
 jobs:
-  get-changes:
-    if: startsWith(github.event.head_commit.message, 'feat:') || startsWith(github.event.head_commit.message, 'fix:')
+  update-tokens:
+    if: startsWith(github.event.head_commit.message, 'feat') || startsWith(github.event.head_commit.message, 'fix')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,25 +25,25 @@ jobs:
       - name: Install Packages
         run: yarn
 
-      - name: Get Changes from head PR
-        id: get-changes
-        run: echo "changed=$(node utils/get-changes.js)" >> $GITHUB_OUTPUT
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HEAD_COMMIT: ${{ github.event.head_commit.message}}
+      - name: Set head commit sha
+        id: head_commit
+        run: echo "sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Get Changed Files
+        id: changed_files
+        run: |
+          echo "changed=$(git diff-tree --no-commit-id --name-only -r ${{ steps.head_commit.outputs.sha }} | grep tokens/ | xargs)" >> $GITHUB_OUTPUT
 
       - name: Parse tokens
-        if: ${{ !!steps.get-changes.outputs.changed }}
+        if: ${{ !!steps.changed_files.outputs.changed }}
         run: node utils/parser.js
         env:
-          CHANGED: ${{ steps.get-changes.outputs.changed }}
-
-      - name: Check changes
-        run: echo ${{ steps.get-changes.outputs.changed }}
+          CHANGED: ${{ steps.changed_files.outputs.changed }}
 
       - name: Sync Web Tokens
-        if: ${{ !!steps.get-changes.outputs.changed }}
+        if: ${{ !!steps.changed_files.outputs.changed }}
         run: node utils/sync-web-tokens.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CHANGED: ${{ steps.get-changes.outputs.changed }}
+          BRANCH: ${{ github.ref_name}}

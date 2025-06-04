@@ -54,8 +54,6 @@ export const updateInnerObject = (subtoken) => {
     updatedSubtoken[kebabCase(key)] = replaceReferences(subtoken[key]);
   });
 
-  console.log(updatedSubtoken);
-
   return updatedSubtoken;
 };
 

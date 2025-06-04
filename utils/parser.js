@@ -5,15 +5,15 @@ import { createExportSysTokens } from "./tokens/createExportSysTokens.js";
 const { CHANGED } = process.env;
 
 if (CHANGED) {
-  if (CHANGED.includes("base")) {
+  if (CHANGED.includes("base.json")) {
     createExportBaseTokens();
   }
 
-  if (CHANGED.includes("brand")) {
+  if (CHANGED.includes("brand/canvas.json")) {
     createExportBrandTokens();
   }
 
-  if (CHANGED.includes("sys")) {
+  if (CHANGED.includes("tokens/sys")) {
     createExportSysTokens();
   }
 }
