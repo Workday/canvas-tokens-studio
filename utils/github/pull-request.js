@@ -52,11 +52,11 @@ export async function createPullRequest(params) {
   }
 }
 
-export async function createSyncPullRequest() {
+export async function createSyncPullRequest(base) {
   await createPullRequest({
     owner: canvasTokensRepoParams.owner,
     repo: canvasTokensRepoParams.repo,
-    base: "main",
+    base,
     head: canvasTokensRepoParams.syncBranch,
     maintainer_can_modify: true,
     title: "chore: Sync Tokens Studio config 🤖",

@@ -4,22 +4,22 @@ import { syncBase } from "./sync/sync-base.js";
 import { syncBrand } from "./sync/sync-brand.js";
 import { syncSys } from "./sync/sync-sys.js";
 
-const { CHANGED } = process.env;
+const { CHANGED, BRANCH } = process.env;
 
 if (CHANGED) {
   await createSyncBranch();
 
-  if (CHANGED.includes("base")) {
+  if (CHANGED.includes("base.json")) {
     await syncBase();
   }
 
-  if (CHANGED.includes("brand")) {
+  if (CHANGED.includes("brand/canvas.json")) {
     await syncBrand();
   }
 
-  if (CHANGED.includes("sys")) {
+  if (CHANGED.includes("tokens/sys")) {
     await syncSys();
   }
 
-  await createSyncPullRequest();
+  await createSyncPullRequest(BRANCH);
 }
