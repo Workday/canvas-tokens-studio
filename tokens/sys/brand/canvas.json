@@ -169,11 +169,11 @@
     },
     "common": {
       "focus-outline": {
-        "value": "{palette.blue.600}",
+        "value": "{palette.blue.500}",
         "type": "color"
       },
       "error-inner": {
-        "value": "{palette.red.700}",
+        "value": "{palette.red.500}",
         "type": "color"
       },
       "alert-inner": {
