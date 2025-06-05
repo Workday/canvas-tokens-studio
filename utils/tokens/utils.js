@@ -11,7 +11,7 @@ const rootDir = process.cwd();
  * @returns
  */
 export const mapObjectContent = (fn, obj) => {
-  if (obj.value) {
+  if ("value" in obj) {
     return fn(obj);
   }
 
@@ -81,7 +81,7 @@ export const replaceReferences = (value) => {
  * @returns {{value: string, type?: string, description?: string}|void} The updated token object
  */
 export const updateReferences = (token) => {
-  if (!token.value) {
+  if (!token.value || typeof token.value === "number") {
     return;
   }
 
@@ -98,7 +98,22 @@ export const updateReferences = (token) => {
     return token.value;
   }
 
-  return (token.value = updateInnerObject(token.value));
+  token.value = updateInnerObject(token.value);
+  return;
+};
+
+export const updateColorObject = (token) => {
+  if (!token.value) {
+    return;
+  }
+
+  if (token.value?.colorSpace === "oklch") {
+    const lch = token.value.components.join(" ");
+    const alpha = token.value.alpha || 1;
+
+    token.value = `oklch(${lch} / ${alpha})`;
+    token.fallback = token.value.hex;
+  }
 };
 
 /**
@@ -121,12 +136,6 @@ export const replaceDescriptionByComment = (token) => {
  */
 export const transformExtensions = (token) => {
   if (token["$extensions"]) {
-    const { modify } = token["$extensions"]["studio.tokens"];
-
-    if (modify && modify.type === "alpha") {
-      token.value = `rgba(${token.value},${modify.value})`;
-    }
-
     delete token["$extensions"];
   }
 };
@@ -168,6 +177,7 @@ export const removeFigmaTokens = (tokens) => {
  * @returns {{value: string, type?: string, description?: string}} The updated token object
  */
 export const updateToken = (token) => {
+  updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);
   replaceDescriptionByComment(token);
