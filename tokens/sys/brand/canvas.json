@@ -22,7 +22,7 @@
         "type": "color"
       },
       "accent": {
-        "value": "{palette.base.0}",
+        "value": "{palette.neutral.0}",
         "type": "color"
       }
     },
@@ -48,7 +48,7 @@
         "type": "color"
       },
       "accent": {
-        "value": "{palette.base.900}",
+        "value": "{palette.neutral.900}",
         "type": "color"
       }
     },
@@ -74,7 +74,7 @@
         "type": "color"
       },
       "accent": {
-        "value": "{palette.base.0}",
+        "value": "{palette.neutral.0}",
         "type": "color"
       }
     },
@@ -100,7 +100,7 @@
         "type": "color"
       },
       "accent": {
-        "value": "{palette.base.0}",
+        "value": "{palette.neutral.0}",
         "type": "color"
       }
     },
@@ -126,7 +126,7 @@
         "type": "color"
       },
       "accent": {
-        "value": "{palette.base.0}",
+        "value": "{palette.neutral.0}",
         "type": "color"
       }
     },
@@ -162,7 +162,7 @@
         "description": "Darkest action color"
       },
       "accent": {
-        "value": "{palette.base.0}",
+        "value": "{palette.neutral.0}",
         "type": "color",
         "description": "Foreground color in actions"
       }
