@@ -9,6 +9,7 @@ on:
 
 jobs:
   update-tokens:
+    permissions: write-all
     if: startsWith(github.event.head_commit.message, 'feat') || startsWith(github.event.head_commit.message, 'fix')
     runs-on: ubuntu-latest
     steps:
@@ -44,6 +45,6 @@ jobs:
         if: ${{ !!steps.changed_files.outputs.changed }}
         run: node utils/sync-web-tokens.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CHANGED: ${{ steps.get-changes.outputs.changed }}
+          GITHUB_TOKEN: ${{ secrets.GH_RW_TOKEN }}
+          CHANGED: ${{ steps.changed_files.outputs.changed }}
           BRANCH: ${{ github.ref_name}}

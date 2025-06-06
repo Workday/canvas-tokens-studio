@@ -1,5 +1,169 @@
 {
   "palette": {
+    "neutral": {
+      "0": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [1, 0, 0],
+          "alpha": 1,
+          "hex": "#fff"
+        }
+      },
+      "25": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.985, 0, 0],
+          "alpha": 1,
+          "hex": "#fafafa"
+        }
+      },
+      "50": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.969, 0, 0],
+          "alpha": 1,
+          "hex": "#f5f5f5"
+        }
+      },
+      "100": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.944, 0, 0],
+          "alpha": 1,
+          "hex": "#ececec"
+        }
+      },
+      "150": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.908, 0, 0],
+          "alpha": 1,
+          "hex": "#e0e0e0"
+        }
+      },
+      "200": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.871, 0, 0],
+          "alpha": 1,
+          "hex": "#d4d4d4"
+        }
+      },
+      "250": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.835, 0, 0],
+          "alpha": 1,
+          "hex": "#c9c9c9"
+        }
+      },
+      "300": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.803, 0, 0],
+          "alpha": 1,
+          "hex": "#bebebe"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.72, 0, 0],
+          "alpha": 1,
+          "hex": "#a4a4a4"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.63, 0, 0],
+          "alpha": 1,
+          "hex": "#898989"
+        }
+      },
+      "600": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.51, 0, 0],
+          "alpha": 1,
+          "hex": "#666"
+        }
+      },
+      "700": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.45, 0, 0],
+          "alpha": 1,
+          "hex": "#555"
+        }
+      },
+      "800": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.351, 0, 0],
+          "alpha": 1,
+          "hex": "#3b3b3b"
+        }
+      },
+      "850": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.29, 0, 0],
+          "alpha": 1,
+          "hex": "#2b2b2b"
+        }
+      },
+      "900": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.21, 0, 0],
+          "alpha": 1,
+          "hex": "#181818"
+        }
+      },
+      "950": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.15, 0, 0],
+          "alpha": 1,
+          "hex": "#0b0b0b"
+        }
+      },
+      "975": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0.11, 0, 0],
+          "alpha": 1,
+          "hex": "#040404"
+        }
+      },
+      "1000": {
+        "type": "color",
+        "value": {
+          "colorSpace": "oklch",
+          "components": [0, 0, 0],
+          "alpha": 1,
+          "hex": "#000"
+        }
+      }
+    },
     "red": {
       "25": {
         "type": "color",
@@ -1140,6 +1304,10 @@
     }
   },
   "opacity": {
+    "0": {
+      "value": "0",
+      "type": "number"
+    },
     "100": {
       "value": "0.08",
       "type": "number"
