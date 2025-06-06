@@ -9,7 +9,6 @@ on:
 
 jobs:
   update-tokens:
-    permissions: write-all
     if: startsWith(github.event.head_commit.message, 'feat') || startsWith(github.event.head_commit.message, 'fix')
     runs-on: ubuntu-latest
     steps:

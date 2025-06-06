@@ -7,7 +7,7 @@ import { syncSys } from "./sync/sync-sys.js";
 const { CHANGED, BRANCH } = process.env;
 
 if (CHANGED) {
-  await createSyncBranch();
+  await createSyncBranch(BRANCH);
 
   if (CHANGED.includes("base.json")) {
     await syncBase();

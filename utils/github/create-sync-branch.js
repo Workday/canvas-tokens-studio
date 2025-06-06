@@ -38,17 +38,19 @@ async function updateBranch(params) {
   }
 }
 
-export async function createSyncBranch() {
+export async function createSyncBranch(baseBranch) {
   // Instead of grabbing the base and sync branches in separate API calls,
   // fetch all branches in one call.
   const branches = await getBranches();
+
   if (branches) {
     const syncBranch = branches.find(
       (branch) => branch.name === canvasTokensRepoParams.syncBranch
     );
-    const mainBranch = branches.find(
-      (branch) => branch.name === canvasTokensRepoParams.defaultBranch
-    );
+    const mainBranch = branches.find((branch) => branch.name === baseBranch);
+
+    console.log(syncBranch, mainBranch);
+
     // The main branch should always be available, but TS doesn't know that, so we have this extra conditional.
     if (mainBranch) {
       // If the sync branch doesn't exist, create it
