@@ -191,7 +191,7 @@ export const updateToken = (token) => {
  * @param {Record<string, any>} tokens The object containing the tokens.
  */
 export const generatePlatformFiles = (level, allTokens) => {
-  const platforms = ["mobile", "web"];
+  const platforms = ["web"];
 
   platforms.forEach((platform) => {
     const tokens = platform === "web" ? filterWebTokens(allTokens) : allTokens;
@@ -221,20 +221,20 @@ export const getSytemTokenFilesList = () => {
  * @returns {Record<'sys', Record<string, any>>} The combined system tokens object
  */
 export const combineSysTokens = () => {
-  let updatedSysTokens = { sys: {} };
   const sysFiles = getSytemTokenFilesList();
 
-  sysFiles.forEach((file) => {
+  const innerToken = sysFiles.reduce((acc, file) => {
     const filePath = path.join(rootDir, "tokens/sys", file);
     const originalJson = fs.readFileSync(filePath, "utf8");
+    const parsedJson = JSON.parse(originalJson);
 
-    updatedSysTokens.sys = {
-      ...updatedSysTokens.sys,
-      ...JSON.parse(originalJson),
+    return {
+      ...acc,
+      ...parsedJson,
     };
-  });
+  }, {});
 
-  return updatedSysTokens;
+  return { sys: innerToken };
 };
 
 /**

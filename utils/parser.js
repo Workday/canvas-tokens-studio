@@ -2,6 +2,10 @@ import { createExportBaseTokens } from "./tokens/createExportBaseTokens.js";
 import { createExportBrandTokens } from "./tokens/createExportBrandTokens.js";
 import { createExportSysTokens } from "./tokens/createExportSysTokens.js";
 
+createExportBaseTokens();
+createExportBrandTokens();
+createExportSysTokens();
+
 const { CHANGED } = process.env;
 
 if (CHANGED) {
