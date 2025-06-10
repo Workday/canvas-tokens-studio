@@ -398,9 +398,11 @@
         "description": "Inverse"
       },
       "critical": {
-        "value": "{palette.red.600}",
-        "type": "color",
-        "description": "Error"
+        "default": {
+          "value": "{palette.red.600}",
+          "type": "color",
+          "description": "Error"
+        }
       },
       "muted": {
         "soft": {
