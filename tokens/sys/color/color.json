@@ -634,6 +634,13 @@
           "description": "Stronger green"
         }
       },
+      "gold": {
+        "stronger": {
+          "value": "{palette.amber.600}",
+          "type": "color",
+          "description": "Foregrounds in low emphasis status indicators"
+        }
+      },
       "red": {
         "default": {
           "value": "{palette.red.600}",
