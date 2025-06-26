@@ -179,6 +179,10 @@
       "alert-inner": {
         "value": "{palette.amber.400}",
         "type": "color"
+      },
+      "alert-outer": {
+        "value": "{palette.amber.500}",
+        "type": "color"
       }
     },
     "gradient": {
