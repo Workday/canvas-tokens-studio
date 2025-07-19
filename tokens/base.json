@@ -1171,18 +1171,18 @@
         "type": "color",
         "value": {
           "colorSpace": "oklch",
-          "components": [0.5177, 0.1727, 313.91],
+          "components": [0.5177, 0.162, 313.92],
           "alpha": 1,
-          "hex": "#8b41ac"
+          "hex": "#8945a8"
         }
       },
       "700": {
         "type": "color",
         "value": {
           "colorSpace": "oklch",
-          "components": [0.476, 0.153, 316.19],
+          "components": [0.476, 0.156, 313.2],
           "alpha": 1,
-          "hex": "#7d3a95"
+          "hex": "#7b3a99"
         }
       },
       "800": {
