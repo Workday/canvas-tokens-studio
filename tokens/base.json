@@ -1594,6 +1594,10 @@
       "value": "0.12",
       "type": "number"
     },
+    "250": {
+      "value": "0.2",
+      "type": "number"
+    },
     "300": {
       "value": "0.4",
       "type": "number"
