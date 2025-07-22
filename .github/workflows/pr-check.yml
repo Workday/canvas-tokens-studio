@@ -3,6 +3,50 @@ name: Pull Request Check
 on: pull_request
 
 jobs:
+  pr-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check PR title and changed files
+        run: |
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          # Check if any file in tokens/ is changed
+          TOKENS_CHANGED=false
+          for file in $CHANGED_FILES; do
+            if [[ "$file" == tokens/* ]]; then
+              TOKENS_CHANGED=true
+              break
+            fi
+          done
+
+          # Get PR title
+          PR_TITLE="${{ github.event.pull_request.title }}"
+
+          # If tokens changed, PR title must start with feat
+          if [ "$TOKENS_CHANGED" = true ]; then
+            if [[ ! "$PR_TITLE" =~ ^feat ]]; then
+              echo "Error: Changes to 'tokens/' must be in a PR with a title starting with 'feat'"
+              exit 1
+            fi
+          else
+            # Otherwise, check for conventional commit pattern in PR title
+            if [[ ! "$PR_TITLE" =~ ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|ops|revert|merge)(\([^\)]+\))?:\  ]]; then
+              echo "Error: PR title does not follow Conventional Commits format."
+              exit 1
+            fi
+          fi
+
+      - name: Check PR body
+        run: |
+          PR_BODY="${{ github.event.pull_request.body }}"
+          # Check if PR body is empty
+          if [ -z "$PR_BODY" ]; then
+            echo "Error: PR body is empty"
+            exit 1
+          fi
+
   build:
     runs-on: ubuntu-latest
 
