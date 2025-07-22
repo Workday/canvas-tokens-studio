@@ -12,7 +12,7 @@ jobs:
       - name: Check PR title and changed files
         run: |
           # Use branch names instead of commit SHAs to get changed files
-          CHANGED_FILES=$(git diff --name-only origin/${{ github.event.pull_request.base.ref }}...origin/${{ github.event.pull_request.head.ref }})
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.ref }}...${{ github.event.pull_request.head.ref }})
           # Check if any file in tokens/ is changed
           TOKENS_CHANGED=false
           for file in $CHANGED_FILES; do
