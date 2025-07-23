@@ -374,7 +374,7 @@ const createComment = (result, report) => {
       : acc;
   }, "");
 
-  return body ? `## Visual Comparison\n\n${report}` : "";
+  return body ? `## Visual Comparison${body}` : "";
 };
 
 const getReport = () => {
