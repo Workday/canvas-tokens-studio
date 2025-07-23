@@ -111,14 +111,7 @@ jobs:
           echo "content<<EOF" >> $GITHUB_OUTPUT
           echo "$REPORT_OUTPUT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: Create visual report file
-        run: |
           echo "$REPORT_OUTPUT" > visual-report.md
-
-      - name: Print report file
-        run: |
-          cat visual-report.md
 
       - name: Cache visual report file
         uses: actions/cache/save@v4
