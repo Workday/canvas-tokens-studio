@@ -338,53 +338,46 @@ const diffTokens = (newTokens, baselineTokens, token = "") => {
  */
 const createComment = (result, report) => {
   return result.reduce((acc, { filename, diff }) => {
-    return (
-      `${acc}\n\n### ${filename}\n\n` +
-      "| Token name | Old value | New value |\n" +
-      "| --- | :---: | :---: |" +
-      diff.reduce(
-        (
-          acc,
-          {
-            token,
-            newColor,
-            newColorLabel,
-            newValue,
-            prevColor,
-            prevColorLabel,
-            prevValue,
-          }
-        ) => {
-          const oldTokenColumnText = prevColor
-            ? fillMdSwatch(token, prevColor, prevColorLabel)
-            : prevValue
-            ? `\`${prevValue}\``
-            : "none";
-
-          const newTokenColumnText = newColor
-            ? fillMdSwatch(token, newColor, newColorLabel)
-            : newValue
-            ? `\`${newValue}\``
-            : "none";
-
-          const newContent = `| \`${token}\` | ${oldTokenColumnText} | ${newTokenColumnText} |`;
-
-          if (report.includes(newContent)) {
-            return acc;
-          }
-
-          return `${acc}\n` + newContent;
-        },
-        ""
+    const diffRows = diff
+      .map(
+        ({
+          token,
+          newColor,
+          newColorLabel,
+          newValue,
+          prevColor,
+          prevColorLabel,
+          prevValue,
+        }) => {
+          return `| \`${token}\` | ${
+            prevColor
+              ? fillMdSwatch(token, prevColor, prevColorLabel)
+              : prevValue
+              ? `\`${prevValue}\``
+              : "none"
+          } | ${
+            newColor
+              ? fillMdSwatch(token, newColor, newColorLabel)
+              : newValue
+              ? `\`${newValue}\``
+              : "none"
+          } |`;
+        }
       )
-    );
+      .filter((row) => !report?.includes(row));
+
+    return diffRows
+      ? `${acc}\n\n### ${filename}\n\n` +
+          "| Token name | Old value | New value |\n" +
+          "| --- | :---: | :---: |" +
+          diffRows.join("\n")
+      : `${acc}\n\nNo other changes have been made.`;
   }, "## Visual Comparison");
 };
 
 const getReport = () => {
   if (fs.existsSync("visual-report.md")) {
-    const reportFile = fs.readFileSync("visual-report.md", "utf8");
-    return reportFile;
+    return fs.readFileSync("visual-report.md", "utf8");
   }
 };
 
