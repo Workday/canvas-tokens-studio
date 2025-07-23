@@ -120,7 +120,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: visual-report.md
-          key: visual-report-${{ github.event.pull_request.head.sha }}
+          key: visual-report-${{ github.event.pull_request.head.ref }}
 
       - name: Comment PR with Markdown report
         if: steps.visual_report.outputs.content != ''
