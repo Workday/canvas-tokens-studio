@@ -94,6 +94,14 @@ jobs:
           name: tokens
           path: tokens-base/
 
+      - name: Extract cache report file
+        uses: actions/cache/restore@v4
+        with:
+          path: visual-report.md
+          key: visual-report-${{ github.event.pull_request.head.sha }}
+          restore-keys: |
+            visual-report-${{ github.event.pull_request.head.sha }}
+
       - name: Run visual report and capture Markdown
         id: visual_report
         run: |
@@ -101,6 +109,16 @@ jobs:
           echo "content<<EOF" >> $GITHUB_OUTPUT
           echo "$REPORT_OUTPUT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create visual report file
+        run: |
+          echo "$REPORT_OUTPUT" > visual-report.md
+
+      - name: Cache visual report file
+        uses: actions/cache/save@v4
+        with:
+          path: visual-report.md
+          key: visual-report-${{ github.event.pull_request.head.sha }}
 
       - name: Comment PR with Markdown report
         uses: thollander/actions-comment-pull-request@v1

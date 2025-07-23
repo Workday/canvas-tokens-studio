@@ -336,7 +336,7 @@ const diffTokens = (newTokens, baselineTokens, token = "") => {
  * ]);
  * // Returns: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n| --- | :---: | :---: |\n| `color.primary` | [color swatch] | [color swatch] |"
  */
-const createComment = (result) => {
+const createComment = (result, report) => {
   return result.reduce((acc, { filename, diff }) => {
     return (
       `${acc}\n\n### ${filename}\n\n` +
@@ -367,12 +367,25 @@ const createComment = (result) => {
             ? `\`${newValue}\``
             : "none";
 
-          return `${acc}\n| \`${token}\` | ${oldTokenColumnText} | ${newTokenColumnText} |`;
+          const newContent = `| \`${token}\` | ${oldTokenColumnText} | ${newTokenColumnText} |`;
+
+          if (report.includes(newContent)) {
+            return acc;
+          }
+
+          return `${acc}\n` + newContent;
         },
         ""
       )
     );
-  }, "## Visual Comparison\n\n");
+  }, "## Visual Comparison");
+};
+
+const getReport = () => {
+  if (fs.existsSync("visual-report.md")) {
+    const reportFile = fs.readFileSync("visual-report.md", "utf8");
+    return reportFile;
+  }
 };
 
 /**
@@ -391,7 +404,7 @@ const createComment = (result) => {
  * // Outputs: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n..."
  */
 function generateReport() {
-  // const baselineTokensFiles = getDirectoryFiles("tokens-base");
+  const existingReport = getReport();
   const newTokensFiles = getDirectoryFiles("tokens");
 
   const result = newTokensFiles.reduce((acc, filename) => {
@@ -403,7 +416,7 @@ function generateReport() {
     return diff.length ? [...acc, { filename, diff }] : acc;
   }, []);
 
-  return createComment(result);
+  return createComment(result, existingReport);
 }
 
 console.log(generateReport());
