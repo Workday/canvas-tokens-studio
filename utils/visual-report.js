@@ -337,7 +337,7 @@ const diffTokens = (newTokens, baselineTokens, token = "") => {
  * // Returns: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n| --- | :---: | :---: |\n| `color.primary` | [color swatch] | [color swatch] |"
  */
 const createComment = (result, report) => {
-  return result.reduce((acc, { filename, diff }) => {
+  const body = result.reduce((acc, { filename, diff }) => {
     const diffRows = diff
       .map(
         ({
@@ -371,8 +371,10 @@ const createComment = (result, report) => {
           "| Token name | Old value | New value |\n" +
           "| --- | :---: | :---: |\n" +
           diffRows.join("\n")
-      : `${acc}\n\nNo other changes have been made.`;
-  }, "## Visual Comparison");
+      : acc;
+  }, "");
+
+  return body ? `## Visual Comparison\n\n${report}` : "";
 };
 
 const getReport = () => {
