@@ -369,7 +369,7 @@ const createComment = (result, report) => {
     return diffRows
       ? `${acc}\n\n### ${filename}\n\n` +
           "| Token name | Old value | New value |\n" +
-          "| --- | :---: | :---: |" +
+          "| --- | :---: | :---: |\n" +
           diffRows.join("\n")
       : `${acc}\n\nNo other changes have been made.`;
   }, "## Visual Comparison");
