@@ -113,6 +113,10 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
           echo "$REPORT_OUTPUT" > visual-report.md
 
+      - name: Print report file
+        run: |
+          cat visual-report.md
+
       - name: Cache visual report file
         uses: actions/cache/save@v4
         with:
