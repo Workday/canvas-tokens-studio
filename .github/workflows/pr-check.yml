@@ -26,26 +26,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check PR title and changed files
+      - name: Get Changed Files
+        id: changed_files
         run: |
-          # Use branch names instead of commit SHAs to get changed files
-          CHANGED_FILES=$(git diff --name-only origin/${{ github.event.pull_request.base.ref }}...origin/${{ github.event.pull_request.head.ref }})
-          # Check if any file in tokens/ is changed
-          TOKENS_CHANGED=false
-          for file in $CHANGED_FILES; do
-            if [[ "$file" == tokens/* ]]; then
-              TOKENS_CHANGED=true
-              break
-            fi
-          done
+          BASE="origin/${{ github.event.pull_request.base.ref }}"
+          HEAD="origin/${{ github.event.pull_request.head.ref }}"
+          echo "changed_files=$(git diff --name-only $BASE...$HEAD | grep tokens/ | xargs)" >> $GITHUB_OUTPUT
 
+      - name: Check PR title
+        run: |
           # Get PR title
           PR_TITLE="${{ github.event.pull_request.title }}"
+          TOKENS_CHANGED="${{ steps.changed_files.outputs.changed_files }}"
 
           # If tokens changed, PR title must start with feat
           if [ "$TOKENS_CHANGED" = true ]; then
             if [[ ! "$PR_TITLE" =~ ^feat ]]; then
-              echo "Error: Changes to 'tokens/' must be in a PR with a title starting with 'feat'"
+              echo "Error: Changes to 'tokens/' must be in a PR with a title starting with 'feat' or 'fix'"
               exit 1
             fi
           else
@@ -61,7 +58,7 @@ jobs:
           PR_BODY="${{ github.event.pull_request.body }}"
           # Check if PR body is empty
           if [ -z "$PR_BODY" ]; then
-            echo "Error: PR body is empty"
+            echo "Error: PR body is empty. Please provide a description of the changes."
             exit 1
           fi
 
