@@ -41,7 +41,7 @@ jobs:
 
           # If tokens changed, PR title must start with feat
           if [ -n "$TOKENS_CHANGED" ]; then
-            if [[ ! "$PR_TITLE" =~ ^feat ]]; then
+            if [[ ! "$PR_TITLE" =~ ^(feat|fix) ]]; then
               echo "Error: Changes to 'tokens/' must be in a PR with a title starting with 'feat' or 'fix'"
               exit 1
             fi
