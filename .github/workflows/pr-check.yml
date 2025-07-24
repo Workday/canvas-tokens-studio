@@ -40,7 +40,7 @@ jobs:
           TOKENS_CHANGED="${{ steps.changed_files.outputs.changed_files }}"
 
           # If tokens changed, PR title must start with feat
-          if [ "$TOKENS_CHANGED" = true ]; then
+          if [ -n "$TOKENS_CHANGED" ]; then
             if [[ ! "$PR_TITLE" =~ ^feat ]]; then
               echo "Error: Changes to 'tokens/' must be in a PR with a title starting with 'feat' or 'fix'"
               exit 1
