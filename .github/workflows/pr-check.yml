@@ -57,7 +57,7 @@ jobs:
         run: |
           PR_BODY="${{ github.event.pull_request.body }}"
           # Check if PR body is empty
-          if [ -z "$PR_BODY" ]; then
+          if [ -n "$PR_BODY" ]; then
             echo "Error: PR body is empty. Please provide a description of the changes."
             exit 1
           fi
