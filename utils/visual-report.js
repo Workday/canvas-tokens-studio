@@ -314,7 +314,7 @@ const diffTokens = (newTokens, baselineTokens, token = "") => {
           ...diffTokens(newTokens[key], baselineTokens[key], newTokenName),
         ];
       } else {
-        return [...acc, generateNewChanges(newTokens[key], newTokenName)];
+        return [...acc, ...generateNewChanges(newTokens[key], newTokenName)];
       }
     }, [])
     .flat();
