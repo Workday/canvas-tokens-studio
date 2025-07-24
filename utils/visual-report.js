@@ -336,37 +336,34 @@ const diffTokens = (newTokens, baselineTokens, token = "") => {
  * ]);
  * // Returns: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n| --- | :---: | :---: |\n| `color.primary` | [color swatch] | [color swatch] |"
  */
-const createComment = (result, report) => {
+const createComment = (result) => {
   const body = result.reduce((acc, { filename, diff }) => {
-    const diffRows = diff
-      .map(
-        ({
-          token,
-          newColor,
-          newColorLabel,
-          newValue,
-          prevColor,
-          prevColorLabel,
-          prevValue,
-        }) => {
-          return `| \`${token}\` | ${
-            prevColor
-              ? fillMdSwatch(token, prevColor, prevColorLabel)
-              : prevValue
-              ? `\`${prevValue}\``
-              : "none"
-          } | ${
-            newColor
-              ? fillMdSwatch(token, newColor, newColorLabel)
-              : newValue
-              ? `\`${newValue}\``
-              : "none"
-          } |`;
-        }
-      )
-      .filter((row) => !report?.includes(row));
+    const diffRows = diff.map(
+      ({
+        token,
+        newColor,
+        newColorLabel,
+        newValue,
+        prevColor,
+        prevColorLabel,
+        prevValue,
+      }) =>
+        `| \`${token}\` | ${
+          prevColor
+            ? fillMdSwatch(token, prevColor, prevColorLabel)
+            : prevValue
+            ? `\`${prevValue}\``
+            : "none"
+        } | ${
+          newColor
+            ? fillMdSwatch(token, newColor, newColorLabel)
+            : newValue
+            ? `\`${newValue}\``
+            : "none"
+        } |`
+    );
 
-    return diffRows
+    return diff.length
       ? `${acc}\n\n### ${filename}\n\n` +
           "| Token name | Old value | New value |\n" +
           "| --- | :---: | :---: |\n" +
@@ -375,12 +372,6 @@ const createComment = (result, report) => {
   }, "");
 
   return body ? `## Visual Comparison${body}` : "";
-};
-
-const getReport = () => {
-  if (fs.existsSync("visual-report.md")) {
-    return fs.readFileSync("visual-report.md", "utf8");
-  }
 };
 
 /**
@@ -399,7 +390,6 @@ const getReport = () => {
  * // Outputs: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n..."
  */
 function generateReport() {
-  const existingReport = getReport();
   const newTokensFiles = getDirectoryFiles("tokens");
 
   const result = newTokensFiles.reduce((acc, filename) => {
@@ -411,7 +401,7 @@ function generateReport() {
     return diff.length ? [...acc, { filename, diff }] : acc;
   }, []);
 
-  return createComment(result, existingReport);
+  return createComment(result);
 }
 
 console.log(generateReport());

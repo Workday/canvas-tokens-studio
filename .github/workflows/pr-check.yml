@@ -96,14 +96,6 @@ jobs:
           name: tokens
           path: tokens-base/
 
-      - name: Extract cache report file
-        uses: actions/cache/restore@v4
-        with:
-          path: visual-report.md
-          key: visual-report-${{ github.event.pull_request.head.ref }}
-          restore-keys: |
-            visual-report-${{ github.event.pull_request.head.ref }}
-
       - name: Run visual report and capture Markdown
         id: visual_report
         run: |
@@ -111,21 +103,11 @@ jobs:
           echo "content<<EOF" >> $GITHUB_OUTPUT
           echo "$REPORT_OUTPUT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-          echo "$REPORT_OUTPUT" > visual-report.md
 
-      - name: Print report file
-        run: |
-          cat visual-report.md
-
-      - name: Cache visual report file
-        uses: actions/cache/save@v4
+      - name: Comment PR with Markdown report
+        if: steps.visual_report.outputs.content != ''
+        uses: thollander/actions-comment-pull-request@v3
         with:
-          path: visual-report.md
-          key: visual-report-${{ github.event.pull_request.head.ref }}
-
-      # - name: Comment PR with Markdown report
-      #   if: steps.visual_report.outputs.content != ''
-      #   uses: thollander/actions-comment-pull-request@v1
-      #   with:
-      #     message: ${{ steps.visual_report.outputs.content }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message: ${{ steps.visual_report.outputs.content }}
+          comment-tag: visual-regression
+          github-token: ${{ secrets.GITHUB_TOKEN }}
