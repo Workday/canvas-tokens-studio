@@ -10,6 +10,7 @@ node_modules/
 # Ignore build directories
 dist/
 build/
+tokens-base/
 
 # Ignore temporary files
 *.tmp
