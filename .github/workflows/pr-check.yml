@@ -53,13 +53,11 @@ jobs:
             fi
           fi
 
-      - name: Check PR body safely
+      - name: Check if PR body is empty
+        if: ${{ github.event.pull_request.body == '' }}
         run: |
-          PR_BODY="${{ github.event.pull_request.body }}"
-          if [ -z "$PR_BODY" ]; then
-            echo "Error: PR body is empty. Please provide a description of the changes."
-            exit 1
-          fi
+          echo "❌ Error: PR body is empty. Please provide a description of the changes."
+          exit 1
 
   build:
     runs-on: ubuntu-latest
