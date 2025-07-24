@@ -47,7 +47,7 @@ jobs:
             fi
           else
             # Otherwise, check for conventional commit pattern in PR title
-            if [[ ! "$PR_TITLE" =~ ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|ops|revert|merge)(\([^\)]+\))?:\  ]]; then
+            if [[ ! "$PR_TITLE" =~ ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|ops|revert|merge)(\([^\)]+\))?: ]]; then
               echo "Error: PR title does not follow Conventional Commits format."
               exit 1
             fi
