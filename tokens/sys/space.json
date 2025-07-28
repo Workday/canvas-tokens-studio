@@ -1,9 +1,74 @@
 {
   "space": {
-    "zero": {
+        "0": {
       "value": "0",
       "type": "spacing",
       "description": "Stacks, rows in tables"
+    },
+    "25": {
+      "value": "{base.baseline} * 0.25",
+      "type": "spacing",
+      "description": "Mobile only"
+    },
+    "50": {
+      "value": "{base.baseline} * 0.50",
+      "type": "spacing",
+      "description": "Compact spacing between text or icons"
+    },
+    "100": {
+      "value": "{base.baseline} * 1.00",
+      "type": "spacing",
+      "description": "Commonly used to group compact elements like icon buttons"
+    },
+    "150": {
+      "value": "{base.baseline} * 1.50",
+      "type": "spacing",
+      "description": "Use when compact padding is required"
+    },
+    "200": {
+      "value": "{base.baseline} * 2.00",
+      "type": "spacing",
+      "description": "Default space token. Used to group Inputs with related data"
+    },
+    "250": {
+      "value": "{base.baseline} * 2.50",
+      "type": "spacing",
+      "description": "Mobile only"
+    },
+    "300": {
+      "value": "{base.baseline} * 3.00",
+      "type": "spacing",
+      "description": "• Padding around card content\n• Related elements where more space between them can be afforded\n• Separate section headings or titles from body text or inputs"
+    },
+    "400": {
+      "value": "{base.baseline} * 4.00",
+      "type": "spacing",
+      "description": "• Standard spacing between cards\n• Used to separate groups of content \n• Separate section headings or titles from body text or inputs"
+    },
+    "500": {
+      "value": "{base.baseline} * 5.00",
+      "type": "spacing",
+      "description": "• Used for outer margins on the overall page content \n• Used for inner margins on large items such as page sections"
+    },
+    "700": {
+      "value": "{base.unit} * 7.00",
+      "type": "spacing",
+      "description": "Mobile only"
+    },
+    "800": {
+      "value": "{base.unit} * 8.00",
+      "type": "spacing",
+      "description": "- Use to de-clutter your UI when a lot of space is available\n- Separate banner sections from page content\n- Use to differentiate page content like page sections"
+    },
+    "1000": {
+      "value": "{base.unit} * 10.00",
+      "type": "spacing",
+      "description": "- Use sparingly\n- Helps to put focus on the primary element within your page\n- Use to de-clutter your UI when a lot of space is available"
+    },
+    "zero": {
+      "value": "0",
+      "type": "spacing",
+      "description": "Stacks, rows in tables",
     },
     "half": {
       "value": "{base.unit} * 0.5",
