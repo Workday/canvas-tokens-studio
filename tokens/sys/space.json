@@ -1,6 +1,6 @@
 {
   "space": {
-        "0": {
+    "0": {
       "value": "0",
       "type": "spacing",
       "description": "Stacks, rows in tables"
@@ -68,7 +68,7 @@
     "zero": {
       "value": "0",
       "type": "spacing",
-      "description": "Stacks, rows in tables",
+      "description": "Stacks, rows in tables"
     },
     "half": {
       "value": "{base.unit} * 0.5",
