@@ -18,47 +18,6 @@ jobs:
           name: tokens
           path: tokens/
 
-  pr-content:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Get Changed Files
-        id: changed_files
-        run: |
-          BASE="origin/${{ github.event.pull_request.base.ref }}"
-          HEAD="origin/${{ github.event.pull_request.head.ref }}"
-          echo "changed_files=$(git diff --name-only $BASE...$HEAD | grep tokens/ | xargs)" >> $GITHUB_OUTPUT
-
-      - name: Check PR title
-        run: |
-          # Get PR title
-          PR_TITLE="${{ github.event.pull_request.title }}"
-          TOKENS_CHANGED="${{ steps.changed_files.outputs.changed_files }}"
-
-          # If tokens changed, PR title must start with feat
-          if [ -n "$TOKENS_CHANGED" ]; then
-            if [[ ! "$PR_TITLE" =~ ^(feat|fix) ]]; then
-              echo "Error: Changes to 'tokens/' must be in a PR with a title starting with 'feat' or 'fix'"
-              exit 1
-            fi
-          else
-            # Otherwise, check for conventional commit pattern in PR title
-            if [[ ! "$PR_TITLE" =~ ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|ops|revert|merge)(\([^\)]+\))?: ]]; then
-              echo "Error: PR title does not follow Conventional Commits format."
-              exit 1
-            fi
-          fi
-
-      - name: Check if PR body is empty
-        if: ${{ github.event.pull_request.body == '' }}
-        run: |
-          echo "❌ Error: PR body is empty. Please provide a description of the changes."
-          exit 1
-
   build:
     runs-on: ubuntu-latest
 

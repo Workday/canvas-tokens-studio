@@ -21,6 +21,15 @@
         "type": "color",
         "description": "Tooltip, Status Indicator"
       },
+      "translucent-inverse": {
+        "value": "oklch({base.palette.neutral.0} / {base.opacity.250})",
+        "type": "color"
+      },
+      "overlay-inverse": {
+        "value": "oklch({base.palette.neutral.0} / {base.opacity.200})",
+        "type": "color",
+        "comment": "Inverse overlay background"
+      },
       "alt": {
         "default": {
           "value": "{palette.slate.100}",
