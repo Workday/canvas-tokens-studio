@@ -22,11 +22,11 @@
         "description": "Tooltip, Status Indicator"
       },
       "translucent-inverse": {
-        "value": "oklch({base.palette.neutral.0} / {base.opacity.250})",
+        "value": "oklch({palette.neutral.1000} / {opacity.250})",
         "type": "color"
       },
       "overlay-inverse": {
-        "value": "oklch({base.palette.neutral.0} / {base.opacity.200})",
+        "value": "oklch({palette.neutral.1000} / {opacity.200})",
         "type": "color",
         "comment": "Inverse overlay background"
       },
@@ -236,15 +236,6 @@
           "type": "color",
           "description": "AI surfaces"
         }
-      },
-      "translucent-inverse": {
-        "value": "oklch({palette.neutral.0} / {opacity.250})",
-        "type": "color"
-      },
-      "overlay-inverse": {
-        "value": "oklch({palette.neutral.0} / {opacity.200})",
-        "type": "color",
-        "description": "Inverse overlay background"
       },
       "info": {
         "softest": {
