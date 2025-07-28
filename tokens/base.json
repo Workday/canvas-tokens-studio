@@ -1619,12 +1619,12 @@
     },
     "fontSize": {
       "value": "1rem",
-      "type": dimension",
+      "type": "dimension",
       "description": "Default fontSize"
     },
     "baseline": {
       "value": "{base.fontSize} * 0.5",
-      "type": dimension",
+      "type": "dimension",
       "description": "8pt baseline grid"
     }
   },
