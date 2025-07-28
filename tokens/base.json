@@ -1616,6 +1616,16 @@
       "value": "0.25rem",
       "type": "dimension",
       "description": "The base unit used in the grid system.\n"
+    },
+    "fontSize": {
+      "value": "1rem",
+      "type": dimension",
+      "description": "Default fontSize"
+    },
+    "baseline": {
+      "value": "{base.fontSize} * 0.5",
+      "type": dimension",
+      "description": "8pt baseline grid"
     }
   },
   "font-size": {
