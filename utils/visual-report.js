@@ -123,18 +123,26 @@ const getOklchString = (value, { withComma = false } = {}) => {
  * const changes = generateNewChanges({ value: { colorSpace: "oklch", components: [0.5,0.1,45], alpha: 1 } }, "primary");
  * // Returns: [{ token: "primary", newColor: "oklch(0.5,0.1,45,1)", newColorLabel: "oklch(0.5 0.1 45 / 1)", prevColor: "", prevColorLabel: "" }]
  */
-const generateNewChanges = (tokens, token) => {
+const generateNewChanges = (tokens, tokenName) => {
   if ("value" in tokens) {
     const { value } = tokens;
 
     if (typeof value === "object" && value.colorSpace === "oklch") {
       return [
         {
-          token,
+          token: tokenName,
           newColor: getOklchString(value, { withComma: true }),
           newColorLabel: getOklchString(value),
           prevColor: "",
           prevColorLabel: "",
+        },
+      ];
+    } else {
+      return [
+        {
+          token: tokenName,
+          newValue: value,
+          prevValue: "",
         },
       ];
     }
