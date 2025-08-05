@@ -249,8 +249,10 @@ export const getBaseTokens = () => {
   );
   const originalBaseJson = fs.readFileSync(baseJsonPath, 'utf8');
   const deprecatedBaseJson = fs.readFileSync(deprecatedBaseJsonPath, 'utf8');
+  const originalBaseTokens = JSON.parse(originalBaseJson);
+  const deprecatedBaseTokens = JSON.parse(deprecatedBaseJson);
   let updatedBaseTokens = {
-    base: JSON.parse(originalBaseJson.concat(deprecatedBaseJson)),
+    base: {...originalBaseTokens, ...deprecatedBaseTokens},
   };
 
   // Flat unit property to the base level
