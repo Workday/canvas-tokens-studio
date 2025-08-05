@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
-import kebabCase from "kebab-case";
+import fs from 'fs';
+import path from 'path';
+import kebabCase from 'kebab-case';
 
 const rootDir = process.cwd();
 
@@ -11,7 +11,7 @@ const rootDir = process.cwd();
  * @returns
  */
 export const mapObjectContent = (fn, obj) => {
-  if ("value" in obj) {
+  if ('value' in obj) {
     return fn(obj);
   }
 
@@ -26,12 +26,12 @@ export const mapObjectContent = (fn, obj) => {
  * @returns {boolean} Result of validation if the token is a base token
  */
 export const isBaseToken = (ref) => {
-  const baseJson = fs.readFileSync(path.join(rootDir, "tokens/base.json"));
+  const baseJson = fs.readFileSync(path.join(rootDir, 'tokens/base.json'));
 
   let isMapable = false;
   let content = JSON.parse(baseJson);
 
-  const keys = ref.split(".");
+  const keys = ref.split('.');
 
   keys.forEach((key, i) => {
     content = content?.[key];
@@ -64,14 +64,14 @@ export const updateInnerObject = (subtoken) => {
  */
 export const replaceReferences = (value) => {
   return value.replace(/\{([^}]+)\}/gi, (a, b) => {
-    const tokenCategory = b.split(".")[0];
+    const tokenCategory = b.split('.')[0];
     if (tokenCategory.match(/^(base|brand|sys)$/)) {
       return a;
     }
 
-    const newLevel = isBaseToken(b) ? "base" : "sys";
+    const newLevel = isBaseToken(b) ? 'base' : 'sys';
 
-    return a.replace("{", `{${newLevel}.`);
+    return a.replace('{', `{${newLevel}.`);
   });
 };
 
@@ -81,11 +81,11 @@ export const replaceReferences = (value) => {
  * @returns {{value: string, type?: string, description?: string}|void} The updated token object
  */
 export const updateReferences = (token) => {
-  if (!token.value || typeof token.value === "number") {
+  if (!token.value || typeof token.value === 'number') {
     return;
   }
 
-  if (typeof token.value === "string") {
+  if (typeof token.value === 'string') {
     token.value = replaceReferences(token.value);
     return token.value;
   }
@@ -107,8 +107,8 @@ export const updateColorObject = (token) => {
     return;
   }
 
-  if (token.value?.colorSpace === "oklch") {
-    const lch = token.value.components.join(" ");
+  if (token.value?.colorSpace === 'oklch') {
+    const lch = token.value.components.join(' ');
     const alpha = token.value.alpha || 1;
 
     token.value = `oklch(${lch} / ${alpha})`;
@@ -121,11 +121,11 @@ export const updateColorObject = (token) => {
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
 export const replaceDescriptionByComment = (token) => {
-  const { description } = token;
+  const {description} = token;
 
   if (description) {
     delete token.description;
-    const updated = description.replace(/\n+/g, "; ");
+    const updated = description.replace(/\n+/g, '; ');
     token.comment = updated;
   }
 };
@@ -135,8 +135,8 @@ export const replaceDescriptionByComment = (token) => {
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
 export const transformExtensions = (token) => {
-  if (token["$extensions"]) {
-    delete token["$extensions"];
+  if (token['$extensions']) {
+    delete token['$extensions'];
   }
 };
 
@@ -152,10 +152,10 @@ export const filterWebTokens = (tokens) => {
 
   const webTokens = tokens;
 
-  const { half, x5, x14, ...restSpace } = webTokens.sys.space;
+  const {half, x5, x14, ...restSpace} = webTokens.sys.space;
   webTokens.sys.space = restSpace;
 
-  const { x4, x6, ...restShape } = webTokens.sys.shape;
+  const {x4, x6, ...restShape} = webTokens.sys.shape;
   webTokens.sys.shape = restShape;
 
   return webTokens;
@@ -167,8 +167,8 @@ export const filterWebTokens = (tokens) => {
  * @returns {Record<string, any>} The filtered JSON token object containing only web tokens
  */
 export const removeFigmaTokens = (tokens) => {
-  delete tokens.sys["More styles"];
-  delete tokens.sys["layer-opacity"];
+  delete tokens.sys['More styles'];
+  delete tokens.sys['layer-opacity'];
 };
 
 /**
@@ -191,15 +191,15 @@ export const updateToken = (token) => {
  * @param {Record<string, any>} tokens The object containing the tokens.
  */
 export const generatePlatformFiles = (level, allTokens) => {
-  const platforms = ["web"];
+  const platforms = ['web'];
 
   platforms.forEach((platform) => {
-    const tokens = platform === "web" ? filterWebTokens(allTokens) : allTokens;
+    const tokens = platform === 'web' ? filterWebTokens(allTokens) : allTokens;
 
-    fs.mkdirSync(path.join(rootDir, "export", platform), { recursive: true });
+    fs.mkdirSync(path.join(rootDir, 'export', platform), {recursive: true});
     const exportPath = path.join(rootDir, `export/${platform}/${level}.json`);
 
-    fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), "utf8");
+    fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
   });
 };
 
@@ -208,12 +208,12 @@ export const generatePlatformFiles = (level, allTokens) => {
  * @returns {string[]} The list of system token files
  */
 export const getSytemTokenFilesList = () => {
-  const sysFolderPath = path.join(rootDir, "tokens/sys");
+  const sysFolderPath = path.join(rootDir, 'tokens/sys');
   const sysJsonFiles = fs
     .readdirSync(sysFolderPath)
-    .filter((file) => file.endsWith(".json"));
+    .filter((file) => file.endsWith('.json'));
 
-  return [...sysJsonFiles, "color/color.json"];
+  return [...sysJsonFiles, 'color/color.json'];
 };
 
 /**
@@ -224,8 +224,8 @@ export const combineSysTokens = () => {
   const sysFiles = getSytemTokenFilesList();
 
   const innerToken = sysFiles.reduce((acc, file) => {
-    const filePath = path.join(rootDir, "tokens/sys", file);
-    const originalJson = fs.readFileSync(filePath, "utf8");
+    const filePath = path.join(rootDir, 'tokens/sys', file);
+    const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
 
     return {
@@ -234,7 +234,7 @@ export const combineSysTokens = () => {
     };
   }, {});
 
-  return { sys: innerToken };
+  return {sys: innerToken};
 };
 
 /**
@@ -242,12 +242,19 @@ export const combineSysTokens = () => {
  * @returns {Record<'base', Record<string, any>>} The combined system tokens object
  */
 export const getBaseTokens = () => {
-  const baseJsonPath = path.join(rootDir, "tokens/base.json");
-  const originalBaseJson = fs.readFileSync(baseJsonPath, "utf8");
-  let updatedBaseTokens = { base: JSON.parse(originalBaseJson) };
+  const baseJsonPath = path.join(rootDir, 'tokens/base.json');
+  const deprecatedBaseJsonPath = path.join(
+    rootDir,
+    'tokens/deprecated/base.json'
+  );
+  const originalBaseJson = fs.readFileSync(baseJsonPath, 'utf8');
+  const deprecatedBaseJson = fs.readFileSync(deprecatedBaseJsonPath, 'utf8');
+  let updatedBaseTokens = {
+    base: JSON.parse(originalBaseJson.concat(deprecatedBaseJson)),
+  };
 
   // Flat unit property to the base level
-  const { unit } = updatedBaseTokens.base.base;
+  const {unit} = updatedBaseTokens.base.base;
   delete updatedBaseTokens.base.base;
   updatedBaseTokens.base.unit = unit;
 
@@ -259,7 +266,7 @@ export const getBaseTokens = () => {
  * @param {Record<'base', Record<string, any>>} tokens The base tokens object
  */
 export const generateBaseTokens = (tokens) => {
-  fs.mkdirSync(path.join(rootDir, "export"), { recursive: true });
-  const exportPath = path.join(rootDir, "export", "base.json");
-  fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), "utf8");
+  fs.mkdirSync(path.join(rootDir, 'export'), {recursive: true});
+  const exportPath = path.join(rootDir, 'export', 'base.json');
+  fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
 };

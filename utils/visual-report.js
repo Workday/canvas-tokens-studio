@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from 'fs';
 
 /**
  * Retrieves all Canvas-only JSON filenames from a directory.
@@ -14,16 +14,20 @@ import fs from "fs";
  * // Returns: ["base.json", "sys/brand/canvas.json", "sys/color/color.json", ...]
  */
 const getDirectoryFiles = (directory) => {
-  return fs.readdirSync(directory, { recursive: true }).filter((file) => {
-    const isBase = file.endsWith("base.json");
-    const isBrand = file.endsWith("canvas.json");
-    const isColor = file.includes("sys/color");
+  return fs.readdirSync(directory, {recursive: true}).filter((file) => {
+    const isBase = file.endsWith('base.json');
+    const isDeprecatedBase = file.includes('deprecated/base');
+    const isBrand = file.endsWith('canvas.json');
+    const isColor = file.includes('sys/color');
     const isSystem =
-      file.includes("sys/") &&
-      !file.includes("sys/brand") &&
-      !file.includes("sys/color");
+      file.includes('sys/') &&
+      !file.includes('sys/brand') &&
+      !file.includes('sys/color');
 
-    return file.endsWith(".json") && (isBase || isBrand || isColor || isSystem);
+    return (
+      file.endsWith('.json') &&
+      (isBase || isBrand || isColor || isSystem || isDeprecatedBase)
+    );
   });
 };
 
@@ -61,19 +65,19 @@ const getContrastLight = (light) => {
  */
 const fillMdSwatch = (token, color, colorLabel) => {
   const match = color.match(/[-+]?\d*\.?\d+/);
-  const alpha = parseFloat(color.split(",")[3]);
+  const alpha = parseFloat(color.split(',')[3]);
 
   const light = match ? parseFloat(match[0]) : 0;
   const newLight = getContrastLight(light);
 
   const textColor =
     alpha < 0.4
-      ? "oklch(0,0,0,1)"
+      ? 'oklch(0,0,0,1)'
       : light
       ? color.replace(light, newLight).replace(`,${alpha})`, `,1)`)
-      : "oklch(1,0,0,1)";
+      : 'oklch(1,0,0,1)';
 
-  const label = colorLabel.replaceAll(" ", "%20");
+  const label = colorLabel.replaceAll(' ', '%20');
   return `<img valign='middle' alt='${token} color swatch' src='https://md-color-swatches.vercel.app/${color}?top=24&left=48&text=${label}&tc=${textColor}&style=round'/>`;
 };
 
@@ -87,7 +91,7 @@ const fillMdSwatch = (token, color, colorLabel) => {
  * // Returns: { "color": { "primary": { "value": "oklch(0.5,0.1,45,1)" } } }
  */
 const getContent = (filename) => {
-  const content = fs.readFileSync(`${filename}`, "utf8");
+  const content = fs.readFileSync(`${filename}`, 'utf8');
   if (content) {
     return JSON.parse(content);
   }
@@ -107,10 +111,10 @@ const getContent = (filename) => {
  * getOklchString(colorObj); // Returns: "oklch(0.5 0.1 45 / 1)"
  * getOklchString(colorObj, { withComma: true }); // Returns: "oklch(0.5,0.1,45,1)"
  */
-const getOklchString = (value, { withComma = false } = {}) => {
+const getOklchString = (value, {withComma = false} = {}) => {
   return withComma
-    ? `oklch(${value.components.join(",")},${value.alpha})`
-    : `oklch(${value.components.join(" ")} / ${value.alpha})`;
+    ? `oklch(${value.components.join(',')},${value.alpha})`
+    : `oklch(${value.components.join(' ')} / ${value.alpha})`;
 };
 
 /**
@@ -124,17 +128,17 @@ const getOklchString = (value, { withComma = false } = {}) => {
  * // Returns: [{ token: "primary", newColor: "oklch(0.5,0.1,45,1)", newColorLabel: "oklch(0.5 0.1 45 / 1)", prevColor: "", prevColorLabel: "" }]
  */
 const generateNewChanges = (tokens, tokenName) => {
-  if ("value" in tokens) {
-    const { value } = tokens;
+  if ('value' in tokens) {
+    const {value} = tokens;
 
-    if (typeof value === "object" && value.colorSpace === "oklch") {
+    if (typeof value === 'object' && value.colorSpace === 'oklch') {
       return [
         {
           token: tokenName,
-          newColor: getOklchString(value, { withComma: true }),
+          newColor: getOklchString(value, {withComma: true}),
           newColorLabel: getOklchString(value),
-          prevColor: "",
-          prevColorLabel: "",
+          prevColor: '',
+          prevColorLabel: '',
         },
       ];
     } else {
@@ -142,7 +146,7 @@ const generateNewChanges = (tokens, tokenName) => {
         {
           token: tokenName,
           newValue: value,
-          prevValue: "",
+          prevValue: '',
         },
       ];
     }
@@ -172,9 +176,9 @@ const checkOklchColors = (newToken, baselineToken) => {
 
   if (newColor !== prevColor) {
     return {
-      newColor: getOklchString(newToken.value, { withComma: true }),
+      newColor: getOklchString(newToken.value, {withComma: true}),
       newColorLabel: getOklchString(newToken.value),
-      prevColor: getOklchString(baselineToken.value, { withComma: true }),
+      prevColor: getOklchString(baselineToken.value, {withComma: true}),
       prevColorLabel: getOklchString(baselineToken.value),
     };
   }
@@ -192,7 +196,7 @@ const checkOklchColors = (newToken, baselineToken) => {
  */
 const resolvePath = (path, tokens) => {
   if (path) {
-    return path.split(".").reduce((acc, key) => acc[key], tokens);
+    return path.split('.').reduce((acc, key) => acc[key], tokens);
   }
 };
 
@@ -211,7 +215,7 @@ const transformRef = (value, folder) => {
   const tokenName = value.match(/{([^}]+)}/)?.[1];
   const tokenRef = resolvePath(tokenName, baseTokens);
   const alphaRef = resolvePath(
-    value.match(/{([^}]+)}/g)?.[1]?.replace(/[{}]/g, ""),
+    value.match(/{([^}]+)}/g)?.[1]?.replace(/[{}]/g, ''),
     baseTokens
   );
 
@@ -220,8 +224,8 @@ const transformRef = (value, folder) => {
   }
 
   return tokenRef
-    ? { tokenName, color: getOklchString(tokenRef.value, { withComma: true }) }
-    : { tokenName: tokenName || value, color: value };
+    ? {tokenName, color: getOklchString(tokenRef.value, {withComma: true})}
+    : {tokenName: tokenName || value, color: value};
 };
 
 /**
@@ -240,21 +244,21 @@ const transformRef = (value, folder) => {
  * // Returns: { newColor: "oklch(0.5,0.1,45,1)", newColorLabel: "color.primary", prevColor: "oklch(0.6,0.1,45,1)", prevColorLabel: "color.secondary" }
  */
 const checkStringColors = (newToken, baselineToken) => {
-  const { value: newValue } = newToken;
-  const { value: prevValue } = baselineToken;
+  const {value: newValue} = newToken;
+  const {value: prevValue} = baselineToken;
 
   if (newValue !== prevValue) {
-    const { tokenName: newColorLabel, color: newColor } = transformRef(
+    const {tokenName: newColorLabel, color: newColor} = transformRef(
       newValue,
-      "tokens"
+      'tokens'
     );
 
-    const { tokenName: prevColorLabel, color: prevColor } = transformRef(
+    const {tokenName: prevColorLabel, color: prevColor} = transformRef(
       prevValue,
-      "tokens-base"
+      'tokens-base'
     );
 
-    return { newColor, newColorLabel, prevColor, prevColorLabel };
+    return {newColor, newColorLabel, prevColor, prevColorLabel};
   }
 };
 
@@ -272,27 +276,27 @@ const checkStringColors = (newToken, baselineToken) => {
  * );
  * // Returns: [{ token: "color.primary", newColor: "oklch(0.6,0.1,45,1)", newColorLabel: "oklch(0.6 0.1 45 / 1)", prevColor: "oklch(0.5,0.1,45,1)", prevColorLabel: "oklch(0.5 0.1 45 / 1)" }]
  */
-const diffTokens = (newTokens, baselineTokens, token = "") => {
+const diffTokens = (newTokens, baselineTokens, token = '') => {
   const newTokensKeys = Object.keys(newTokens);
 
-  if ("value" in newTokens) {
-    if (newTokens.type === "color") {
+  if ('value' in newTokens) {
+    if (newTokens.type === 'color') {
       if (
-        typeof newTokens.value === "object" &&
-        newTokens.value.colorSpace === "oklch"
+        typeof newTokens.value === 'object' &&
+        newTokens.value.colorSpace === 'oklch'
       ) {
         const checkResult = checkOklchColors(newTokens, baselineTokens);
 
         if (checkResult) {
-          return [{ token, ...checkResult }];
+          return [{token, ...checkResult}];
         }
       }
 
-      if (typeof newTokens.value === "string") {
+      if (typeof newTokens.value === 'string') {
         const checkResult = checkStringColors(newTokens, baselineTokens);
 
         if (checkResult) {
-          return [{ token, ...checkResult }];
+          return [{token, ...checkResult}];
         }
       }
     } else {
@@ -345,7 +349,7 @@ const diffTokens = (newTokens, baselineTokens, token = "") => {
  * // Returns: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n| --- | :---: | :---: |\n| `color.primary` | [color swatch] | [color swatch] |"
  */
 const createComment = (result) => {
-  const body = result.reduce((acc, { filename, diff }) => {
+  const body = result.reduce((acc, {filename, diff}) => {
     const diffRows = diff.map(
       ({
         token,
@@ -361,25 +365,25 @@ const createComment = (result) => {
             ? fillMdSwatch(token, prevColor, prevColorLabel)
             : prevValue
             ? `\`${prevValue}\``
-            : "none"
+            : 'none'
         } | ${
           newColor
             ? fillMdSwatch(token, newColor, newColorLabel)
             : newValue
             ? `\`${newValue}\``
-            : "none"
+            : 'none'
         } |`
     );
 
     return diff.length
       ? `${acc}\n\n### ${filename}\n\n` +
-          "| Token name | Old value | New value |\n" +
-          "| --- | :---: | :---: |\n" +
-          diffRows.join("\n")
+          '| Token name | Old value | New value |\n' +
+          '| --- | :---: | :---: |\n' +
+          diffRows.join('\n')
       : acc;
-  }, "");
+  }, '');
 
-  return body ? `## Visual Comparison${body}` : "";
+  return body ? `## Visual Comparison${body}` : '';
 };
 
 /**
@@ -398,7 +402,7 @@ const createComment = (result) => {
  * // Outputs: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n..."
  */
 function generateReport() {
-  const newTokensFiles = getDirectoryFiles("tokens");
+  const newTokensFiles = getDirectoryFiles('tokens');
 
   const result = newTokensFiles.reduce((acc, filename) => {
     const newTokens = getContent(`tokens/${filename}`);
@@ -406,7 +410,7 @@ function generateReport() {
 
     const diff = diffTokens(newTokens, baselineTokens);
 
-    return diff.length ? [...acc, { filename, diff }] : acc;
+    return diff.length ? [...acc, {filename, diff}] : acc;
   }, []);
 
   return createComment(result);
