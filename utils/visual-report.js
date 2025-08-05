@@ -9,14 +9,19 @@ import fs from 'fs';
  *   - Files ending with "canvas.json"
  *   - Files containing "sys/color" in their path
  *   - Files containing "sys/" but not "sys/brand" or "sys/color"
+ *   - Excludes files in "deprecated/" directories
  * @example
  * const files = getDirectoryFiles("tokens");
  * // Returns: ["base.json", "sys/brand/canvas.json", "sys/color/color.json", ...]
  */
 const getDirectoryFiles = (directory) => {
   return fs.readdirSync(directory, {recursive: true}).filter((file) => {
+    // Skip deprecated files
+    if (file.includes('deprecated/')) {
+      return false;
+    }
+
     const isBase = file.endsWith('base.json');
-    const isDeprecatedBase = file.includes('deprecated/base');
     const isBrand = file.endsWith('canvas.json');
     const isColor = file.includes('sys/color');
     const isSystem =
@@ -24,10 +29,7 @@ const getDirectoryFiles = (directory) => {
       !file.includes('sys/brand') &&
       !file.includes('sys/color');
 
-    return (
-      file.endsWith('.json') &&
-      (isBase || isBrand || isColor || isSystem || isDeprecatedBase)
-    );
+    return file.endsWith('.json') && (isBase || isBrand || isColor || isSystem);
   });
 };
 
