@@ -104,7 +104,7 @@ jobs:
       - name: Commit changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
         run: |
-          git commit -m "chore: Sync tokens from canvas-tokens-studio"
+          git commit -m "feat: Sync tokens from canvas-tokens-studio"
 
       - name: Push changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
