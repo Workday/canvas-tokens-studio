@@ -249,9 +249,11 @@ export const getBaseTokens = isDeprecated => {
   };
 
   // Flat unit property to the base level
-  const {unit} = updatedBaseTokens.base.base;
-  delete updatedBaseTokens.base.base;
-  updatedBaseTokens.base.unit = unit;
+  const {unit} = updatedBaseTokens.base.base || {};
+  if (unit) {
+    delete updatedBaseTokens.base.base;
+    updatedBaseTokens.base.unit = unit;
+  }
 
   return updatedBaseTokens;
 };
