@@ -240,11 +240,9 @@ export const combineSysTokens = () => {
  * @returns {Record<'base', Record<string, any>>} The combined system tokens object
  */
 export const getBaseTokens = isDeprecated => {
-  const baseJsonPath = isDeprecated
-    ? path.join(rootDir, 'tokens/deprecated/base.json')
-    : path.join(rootDir, 'tokens/base.json');
-
-  const originalBaseTokens = JSON.parse(baseJsonPath);
+  const path = isDeprecated ? 'tokens/deprecated/base.json' : 'tokens/base.json';
+  const content = fs.readFileSync(path.join(rootDir, path), 'utf8');
+  const originalBaseTokens = JSON.parse(content);
 
   let updatedBaseTokens = {
     base: originalBaseTokens,
