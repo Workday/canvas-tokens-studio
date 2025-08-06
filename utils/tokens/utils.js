@@ -15,7 +15,7 @@ export const mapObjectContent = (fn, obj) => {
     return fn(obj);
   }
 
-  Object.keys(obj).forEach((key) => {
+  Object.keys(obj).forEach(key => {
     mapObjectContent(fn, obj[key]);
   });
 };
@@ -25,7 +25,7 @@ export const mapObjectContent = (fn, obj) => {
  * @param {string} ref The token reference, e.g. 'brand.primary.base'
  * @returns {boolean} Result of validation if the token is a base token
  */
-export const isBaseToken = (ref) => {
+export const isBaseToken = ref => {
   const baseJson = fs.readFileSync(path.join(rootDir, 'tokens/base.json'));
 
   let isMapable = false;
@@ -48,9 +48,9 @@ export const isBaseToken = (ref) => {
  * @param {Record<string, string>} subtoken The inner object of a token value
  * @returns {Record<string, string>} The updated inner object
  */
-export const updateInnerObject = (subtoken) => {
+export const updateInnerObject = subtoken => {
   let updatedSubtoken = {};
-  Object.keys(subtoken).forEach((key) => {
+  Object.keys(subtoken).forEach(key => {
     updatedSubtoken[kebabCase(key)] = replaceReferences(subtoken[key]);
   });
 
@@ -62,7 +62,7 @@ export const updateInnerObject = (subtoken) => {
  * @param {string} value The token value to update
  * @returns {string} The updated token value
  */
-export const replaceReferences = (value) => {
+export const replaceReferences = value => {
   return value.replace(/\{([^}]+)\}/gi, (a, b) => {
     const tokenCategory = b.split('.')[0];
     if (tokenCategory.match(/^(base|brand|sys)$/)) {
@@ -80,7 +80,7 @@ export const replaceReferences = (value) => {
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  * @returns {{value: string, type?: string, description?: string}|void} The updated token object
  */
-export const updateReferences = (token) => {
+export const updateReferences = token => {
   if (!token.value || typeof token.value === 'number') {
     return;
   }
@@ -102,7 +102,7 @@ export const updateReferences = (token) => {
   return;
 };
 
-export const updateColorObject = (token) => {
+export const updateColorObject = token => {
   if (!token.value) {
     return;
   }
@@ -120,7 +120,7 @@ export const updateColorObject = (token) => {
  * Utility function to replace the description property of a token object with a comment property.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
-export const replaceDescriptionByComment = (token) => {
+export const replaceDescriptionByComment = token => {
   const {description} = token;
 
   if (description) {
@@ -134,7 +134,7 @@ export const replaceDescriptionByComment = (token) => {
  * Utility function to transform token extensions into the correct token value.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
-export const transformExtensions = (token) => {
+export const transformExtensions = token => {
   if (token['$extensions']) {
     delete token['$extensions'];
   }
@@ -145,7 +145,7 @@ export const transformExtensions = (token) => {
  * @param {Record<string, any>} tokens The token object to filter web tokens from non-web tokens
  * @returns {Record<string, any>} The filtered JSON token object containing only web tokens
  */
-export const filterWebTokens = (tokens) => {
+export const filterWebTokens = tokens => {
   if (!tokens.sys) {
     return tokens;
   }
@@ -166,7 +166,7 @@ export const filterWebTokens = (tokens) => {
  * @param {Record<string, any>} tokens The token object to filter web tokens from non-web tokens
  * @returns {Record<string, any>} The filtered JSON token object containing only web tokens
  */
-export const removeFigmaTokens = (tokens) => {
+export const removeFigmaTokens = tokens => {
   delete tokens.sys['More styles'];
   delete tokens.sys['layer-opacity'];
 };
@@ -176,7 +176,7 @@ export const removeFigmaTokens = (tokens) => {
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  * @returns {{value: string, type?: string, description?: string}} The updated token object
  */
-export const updateToken = (token) => {
+export const updateToken = token => {
   updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);
@@ -193,7 +193,7 @@ export const updateToken = (token) => {
 export const generatePlatformFiles = (level, allTokens) => {
   const platforms = ['web'];
 
-  platforms.forEach((platform) => {
+  platforms.forEach(platform => {
     const tokens = platform === 'web' ? filterWebTokens(allTokens) : allTokens;
 
     fs.mkdirSync(path.join(rootDir, 'export', platform), {recursive: true});
@@ -209,9 +209,7 @@ export const generatePlatformFiles = (level, allTokens) => {
  */
 export const getSytemTokenFilesList = () => {
   const sysFolderPath = path.join(rootDir, 'tokens/sys');
-  const sysJsonFiles = fs
-    .readdirSync(sysFolderPath)
-    .filter((file) => file.endsWith('.json'));
+  const sysJsonFiles = fs.readdirSync(sysFolderPath).filter(file => file.endsWith('.json'));
 
   return [...sysJsonFiles, 'color/color.json'];
 };
@@ -241,18 +239,15 @@ export const combineSysTokens = () => {
  * Utility function to get the base tokens object.
  * @returns {Record<'base', Record<string, any>>} The combined system tokens object
  */
-export const getBaseTokens = () => {
-  const baseJsonPath = path.join(rootDir, 'tokens/base.json');
-  const deprecatedBaseJsonPath = path.join(
-    rootDir,
-    'tokens/deprecated/base.json'
-  );
-  const originalBaseJson = fs.readFileSync(baseJsonPath, 'utf8');
-  const deprecatedBaseJson = fs.readFileSync(deprecatedBaseJsonPath, 'utf8');
-  const originalBaseTokens = JSON.parse(originalBaseJson);
-  const deprecatedBaseTokens = JSON.parse(deprecatedBaseJson);
+export const getBaseTokens = isDeprecated => {
+  const baseJsonPath = isDeprecated
+    ? path.join(rootDir, 'tokens/deprecated/base.json')
+    : path.join(rootDir, 'tokens/base.json');
+
+  const originalBaseTokens = JSON.parse(baseJsonPath);
+
   let updatedBaseTokens = {
-    base: {...originalBaseTokens, ...deprecatedBaseTokens},
+    base: originalBaseTokens,
   };
 
   // Flat unit property to the base level
@@ -267,8 +262,8 @@ export const getBaseTokens = () => {
  * Utility function to generate the base tokens file.
  * @param {Record<'base', Record<string, any>>} tokens The base tokens object
  */
-export const generateBaseTokens = (tokens) => {
-  fs.mkdirSync(path.join(rootDir, 'export'), {recursive: true});
-  const exportPath = path.join(rootDir, 'export', 'base.json');
+export const generateBaseTokens = (tokens, folderPath) => {
+  fs.mkdirSync(path.join(rootDir, folderPath), {recursive: true});
+  const exportPath = path.join(rootDir, folderPath, 'base.json');
   fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
 };

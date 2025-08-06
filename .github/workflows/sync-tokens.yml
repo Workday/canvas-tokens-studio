@@ -42,10 +42,6 @@ jobs:
         env:
           CHANGED: ${{ steps.changed_files.outputs.changed }}
 
-      - name: Move deprecated tokens to exported tokens
-        run: |
-          mv tokens/deprecated/* exported-tokens/deprecated/
-
       - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
         id: artifact
