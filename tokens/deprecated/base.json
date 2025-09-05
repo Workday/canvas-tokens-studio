@@ -70,8 +70,8 @@
         "value": "#ff643d",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace peach400 with {base.palette.кув.400}",
-        "fallback": "{base.palette.кув.400}"
+        "deprecatedComment": "replace peach400 with {base.palette.red.400}",
+        "fallback": "{base.palette.red.400}"
       },
       "500": {
         "value": "#de4721",
