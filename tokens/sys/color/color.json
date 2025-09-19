@@ -707,7 +707,7 @@
                     "description": "Warning on hover"
                 },
                 "soft": {
-                    "value": "{palette.amber.700}",
+                    "value": "{palette.amber.400}",
                     "type": "color",
                     "description": "Warning"
                 },
