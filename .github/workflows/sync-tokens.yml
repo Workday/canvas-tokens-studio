@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       tokens: ${{ steps.artifact.outputs.artifact-id }}
+      message: ${{ steps.commit.outputs.message }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -49,6 +50,12 @@ jobs:
         with:
           name: exported-tokens
           path: export
+
+      - name: Get commit message (first line only)
+        id: commit
+        run: |
+          msg=$(git log -1 --pretty=%B | head -n 1 | sed -E 's/ \(#.*\)//')
+          echo "message=$msg" >> $GITHUB_OUTPUT
 
   sync-tokens:
     runs-on: ubuntu-latest
@@ -104,7 +111,7 @@ jobs:
       - name: Commit changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
         run: |
-          git commit -m "feat: Sync tokens from canvas-tokens-studio"
+          git commit -m "${{ needs.update-tokens.outputs.message }}"
 
       - name: Push changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
@@ -124,7 +131,7 @@ jobs:
             github.rest.pulls.create({
               owner: 'Workday',
               repo: 'canvas-tokens',
-              title: 'feat: Sync tokens from canvas-tokens-studio',
+              title: '${{ needs.update-tokens.outputs.message }}',
               head: '${{ steps.sync_branch.outputs.name }}',
               base: '${{ github.ref_name}}'
             });
