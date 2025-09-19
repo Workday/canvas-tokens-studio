@@ -104,7 +104,7 @@ jobs:
       - name: Commit changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
         run: |
-          git commit -m "feat: Sync tokens from canvas-tokens-studio"
+          git commit -m "${{ github.event.head_commit.message }}"
 
       - name: Push changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
@@ -124,7 +124,7 @@ jobs:
             github.rest.pulls.create({
               owner: 'Workday',
               repo: 'canvas-tokens',
-              title: 'feat: Sync tokens from canvas-tokens-studio',
+              title: ${{ github.event.head_commit.message }},
               head: '${{ steps.sync_branch.outputs.name }}',
               base: '${{ github.ref_name}}'
             });
