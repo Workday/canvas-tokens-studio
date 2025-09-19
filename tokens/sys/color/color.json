@@ -370,7 +370,7 @@
           "description": "Strong warning text"
         },
         "soft": {
-          "value": "{palette.amber.500}",
+          "value": "{palette.amber.400}",
           "type": "color",
           "description": "Strong warning text"
         },
@@ -380,7 +380,7 @@
           "description": "Strong warning text"
         },
         "softer": {
-          "value": "{palette.amber.300}",
+          "value": "{palette.amber.200}",
           "type": "color",
           "description": "Strong warning text"
         }
@@ -563,12 +563,12 @@
           "description": "Strong caution icon color"
         },
         "soft": {
-          "value": "{palette.amber.700}",
+          "value": "{palette.amber.400}",
           "type": "color",
           "description": "Strong caution icon color"
         },
         "softer": {
-          "value": "{palette.amber.500}",
+          "value": "{palette.amber.200}",
           "type": "color",
           "description": "Strong caution icon color"
         }
@@ -707,7 +707,7 @@
           "description": "Warning on hover"
         },
         "soft": {
-          "value": "{palette.amber.700}",
+          "value": "{palette.amber.400}",
           "type": "color",
           "description": "Warning"
         },
