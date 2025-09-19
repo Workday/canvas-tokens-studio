@@ -1,4 +1,4 @@
-name: "sync-tokens"
+name: Sync Tokens Studio
 
 on:
   workflow_dispatch:
@@ -11,6 +11,8 @@ jobs:
   update-tokens:
     if: startsWith(github.event.head_commit.message, 'feat') || startsWith(github.event.head_commit.message, 'fix')
     runs-on: ubuntu-latest
+    outputs:
+      tokens: ${{ steps.artifact.outputs.artifact-id }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -32,7 +34,7 @@ jobs:
       - name: Get Changed Files
         id: changed_files
         run: |
-          echo "changed=$(git diff-tree --no-commit-id --name-only -r ${{ steps.head_commit.outputs.sha }} | grep tokens/ | xargs)" >> $GITHUB_OUTPUT
+          echo "changed=tokens/base.json tokens/sys/brand/canvas.json tokens/sys/color/color.json" >> $GITHUB_OUTPUT
 
       - name: Parse tokens
         if: ${{ !!steps.changed_files.outputs.changed }}
@@ -40,10 +42,89 @@ jobs:
         env:
           CHANGED: ${{ steps.changed_files.outputs.changed }}
 
-      - name: Sync Web Tokens
+      - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
-        run: node utils/sync-web-tokens.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CHANGED: ${{ steps.get-changes.outputs.changed }}
-          BRANCH: ${{ github.ref_name}}
+        id: artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-tokens
+          path: export
+
+  sync-tokens:
+    runs-on: ubuntu-latest
+    needs: update-tokens
+    if: ${{ needs.update-tokens.outputs.tokens }}
+    steps:
+      - name: Checkout canvas-tokens repository
+        uses: actions/checkout@v3
+        with:
+          repository: Workday/canvas-tokens
+          persist-credentials: false
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Set sync branch name
+        id: sync_branch
+        run: echo "name=tokens-studio-sync" >> $GITHUB_OUTPUT
+
+      - name: Create and checkout sync branch
+        run: |
+          git fetch origin
+          if git show-ref --verify --quiet refs/remotes/origin/${{ steps.sync_branch.outputs.name }}; then
+            git checkout ${{ steps.sync_branch.outputs.name }}
+            git pull origin ${{ steps.sync_branch.outputs.name }}
+          else
+            if git show-ref --verify --quiet refs/remotes/origin/${GITHUB_REF_NAME}; then
+              git checkout -b ${{ steps.sync_branch.outputs.name }} origin/${GITHUB_REF_NAME}
+            else
+              git checkout -b ${{ steps.sync_branch.outputs.name }}
+            fi
+          fi
+
+      - name: Download exported tokens
+        uses: actions/download-artifact@v4
+        with:
+          name: exported-tokens
+          path: packages/canvas-tokens/tokens
+
+      - run: git add packages/canvas-tokens/tokens
+
+      - name: Check for staged changes
+        id: check_staged
+        run: |
+          if git diff --cached --quiet; then
+            echo "has_staged=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_staged=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
+        run: |
+          git commit -m "feat: Sync tokens from canvas-tokens-studio"
+
+      - name: Push changes
+        if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_RW_TOKEN }}
+          branch: ${{ steps.sync_branch.outputs.name }}
+          force: true
+          repository: Workday/canvas-tokens
+
+      - name: Create Pull Request
+        if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_RW_TOKEN }}
+          script: |
+            github.rest.pulls.create({
+              owner: 'Workday',
+              repo: 'canvas-tokens',
+              title: 'feat: Sync tokens from canvas-tokens-studio',
+              head: '${{ steps.sync_branch.outputs.name }}',
+              base: '${{ github.ref_name}}'
+            });
