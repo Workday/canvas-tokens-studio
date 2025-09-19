@@ -372,7 +372,7 @@
         "soft": {
           "value": "{palette.amber.400}",
           "type": "color",
-          "description": "Strong warning text"
+          "description": "Disabled warning text"
         },
         "stronger": {
           "value": "{palette.amber.975}",
@@ -382,7 +382,7 @@
         "softer": {
           "value": "{palette.amber.200}",
           "type": "color",
-          "description": "Strong warning text"
+          "description": "Softer warning text"
         }
       },
       "ai": {
@@ -563,14 +563,14 @@
           "description": "Strong caution icon color"
         },
         "soft": {
-          "value": "{palette.amber.400}",
+          "value": "{palette.amber.700}",
           "type": "color",
-          "description": "Strong caution icon color"
+          "description": "Soft caution icon color"
         },
         "softer": {
-          "value": "{palette.amber.200}",
+          "value": "{palette.amber.500}",
           "type": "color",
-          "description": "Strong caution icon color"
+          "description": "Softer caution icon color"
         }
       },
       "disabled": {
@@ -707,7 +707,7 @@
           "description": "Warning on hover"
         },
         "soft": {
-          "value": "{palette.amber.400}",
+          "value": "{palette.amber.700}",
           "type": "color",
           "description": "Warning"
         },
@@ -717,7 +717,7 @@
           "description": "Warning on hover"
         },
         "softer": {
-          "value": "{palette.amber.200}",
+          "value": "{palette.amber.500}",
           "type": "color",
           "description": "Warning"
         }
