@@ -14,8 +14,8 @@ import fs from 'fs';
  * const files = getDirectoryFiles("tokens");
  * // Returns: ["base.json", "sys/brand/canvas.json", "sys/color/color.json", ...]
  */
-const getDirectoryFiles = (directory) => {
-  return fs.readdirSync(directory, {recursive: true}).filter((file) => {
+const getDirectoryFiles = directory => {
+  return fs.readdirSync(directory, {recursive: true}).filter(file => {
     // Skip deprecated files
     if (file.includes('deprecated/')) {
       return false;
@@ -25,9 +25,7 @@ const getDirectoryFiles = (directory) => {
     const isBrand = file.endsWith('canvas.json');
     const isColor = file.includes('sys/color');
     const isSystem =
-      file.includes('sys/') &&
-      !file.includes('sys/brand') &&
-      !file.includes('sys/color');
+      file.includes('sys/') && !file.includes('sys/brand') && !file.includes('sys/color');
 
     return file.endsWith('.json') && (isBase || isBrand || isColor || isSystem);
   });
@@ -41,7 +39,7 @@ const getDirectoryFiles = (directory) => {
  * @example
  * const contrastLight = getContrastLight(0.3); // Returns ~0.7
  */
-const getContrastLight = (light) => {
+const getContrastLight = light => {
   const newLight =
     light < 0.4 && light > 0.2
       ? 1 - light + 0.3
@@ -92,7 +90,7 @@ const fillMdSwatch = (token, color, colorLabel) => {
  * const tokens = getContent("tokens/base.json");
  * // Returns: { "color": { "primary": { "value": "oklch(0.5,0.1,45,1)" } } }
  */
-const getContent = (filename) => {
+const getContent = filename => {
   const content = fs.readFileSync(`${filename}`, 'utf8');
   if (content) {
     return JSON.parse(content);
@@ -114,9 +112,13 @@ const getContent = (filename) => {
  * getOklchString(colorObj, { withComma: true }); // Returns: "oklch(0.5,0.1,45,1)"
  */
 const getOklchString = (value, {withComma = false} = {}) => {
-  return withComma
-    ? `oklch(${value.components.join(',')},${value.alpha})`
-    : `oklch(${value.components.join(' ')} / ${value.alpha})`;
+  if (value.components) {
+    return withComma
+      ? `oklch(${value.components.join(',')},${value.alpha})`
+      : `oklch(${value.components.join(' ')} / ${value.alpha})`;
+  }
+
+  return value;
 };
 
 /**
@@ -216,10 +218,7 @@ const transformRef = (value, folder) => {
   const baseTokens = getContent(`${folder}/base.json`);
   const tokenName = value.match(/{([^}]+)}/)?.[1];
   const tokenRef = resolvePath(tokenName, baseTokens);
-  const alphaRef = resolvePath(
-    value.match(/{([^}]+)}/g)?.[1]?.replace(/[{}]/g, ''),
-    baseTokens
-  );
+  const alphaRef = resolvePath(value.match(/{([^}]+)}/g)?.[1]?.replace(/[{}]/g, ''), baseTokens);
 
   if (alphaRef && tokenRef) {
     tokenRef.value.alpha = alphaRef.value;
@@ -250,15 +249,9 @@ const checkStringColors = (newToken, baselineToken) => {
   const {value: prevValue} = baselineToken;
 
   if (newValue !== prevValue) {
-    const {tokenName: newColorLabel, color: newColor} = transformRef(
-      newValue,
-      'tokens'
-    );
+    const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, 'tokens');
 
-    const {tokenName: prevColorLabel, color: prevColor} = transformRef(
-      prevValue,
-      'tokens-base'
-    );
+    const {tokenName: prevColorLabel, color: prevColor} = transformRef(prevValue, 'tokens-base');
 
     return {newColor, newColorLabel, prevColor, prevColorLabel};
   }
@@ -283,10 +276,7 @@ const diffTokens = (newTokens, baselineTokens, token = '') => {
 
   if ('value' in newTokens) {
     if (newTokens.type === 'color') {
-      if (
-        typeof newTokens.value === 'object' &&
-        newTokens.value.colorSpace === 'oklch'
-      ) {
+      if (typeof newTokens.value === 'object' && newTokens.value.colorSpace === 'oklch') {
         const checkResult = checkOklchColors(newTokens, baselineTokens);
 
         if (checkResult) {
@@ -323,10 +313,7 @@ const diffTokens = (newTokens, baselineTokens, token = '') => {
     .reduce((acc, key) => {
       const newTokenName = token ? `${token}.${key}` : key;
       if (baselineTokens[key]) {
-        return [
-          ...acc,
-          ...diffTokens(newTokens[key], baselineTokens[key], newTokenName),
-        ];
+        return [...acc, ...diffTokens(newTokens[key], baselineTokens[key], newTokenName)];
       } else {
         return [...acc, ...generateNewChanges(newTokens[key], newTokenName)];
       }
@@ -350,18 +337,10 @@ const diffTokens = (newTokens, baselineTokens, token = '') => {
  * ]);
  * // Returns: "## Visual Comparison\n\n### base.json\n\n| Token name | Old value | New value |\n| --- | :---: | :---: |\n| `color.primary` | [color swatch] | [color swatch] |"
  */
-const createComment = (result) => {
+const createComment = result => {
   const body = result.reduce((acc, {filename, diff}) => {
     const diffRows = diff.map(
-      ({
-        token,
-        newColor,
-        newColorLabel,
-        newValue,
-        prevColor,
-        prevColorLabel,
-        prevValue,
-      }) =>
+      ({token, newColor, newColorLabel, newValue, prevColor, prevColorLabel, prevValue}) =>
         `| \`${token}\` | ${
           prevColor
             ? fillMdSwatch(token, prevColor, prevColorLabel)
