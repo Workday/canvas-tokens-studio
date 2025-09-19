@@ -275,7 +275,7 @@
         },
         "text": {
             "default": {
-                "value": "{palette.neutral.900}",
+                "value": "{palette.neutral.800}",
                 "type": "color",
                 "description": "Body text"
             },
@@ -290,12 +290,12 @@
                 "description": "Hint text color"
             },
             "strong": {
-                "value": "{palette.neutral.950}",
+                "value": "{palette.neutral.900}",
                 "type": "color",
                 "description": "Heading text"
             },
             "stronger": {
-                "value": "{palette.neutral.975}",
+                "value": "{palette.neutral.950}",
                 "type": "color",
                 "description": "Display text"
             },
@@ -370,7 +370,7 @@
                     "description": "Strong warning text"
                 },
                 "soft": {
-                    "value": "{palette.amber.700}",
+                    "value": "{palette.amber.400}",
                     "type": "color",
                     "description": "Strong warning text"
                 },
@@ -380,7 +380,7 @@
                     "description": "Strong warning text"
                 },
                 "softer": {
-                    "value": "{palette.amber.500}",
+                    "value": "{palette.amber.200}",
                     "type": "color",
                     "description": "Strong warning text"
                 }
@@ -446,7 +446,7 @@
         },
         "icon": {
             "default": {
-                "value": "{palette.neutral.900}",
+                "value": "{palette.neutral.800}",
                 "type": "color",
                 "description": "Default icon color"
             },
@@ -456,7 +456,7 @@
                 "description": "Disabled icon color"
             },
             "strong": {
-                "value": "{palette.neutral.950}",
+                "value": "{palette.neutral.900}",
                 "type": "color",
                 "description": "Hover icon color"
             },
@@ -563,14 +563,14 @@
                     "description": "Strong caution icon color"
                 },
                 "soft": {
-                    "value": "{palette.amber.700}",
+                    "value": "{palette.amber.400}",
                     "type": "color",
-                    "description": "Strong caution icon color"
+                    "description": "Soft caution icon color"
                 },
                 "softer": {
-                    "value": "{palette.amber.500}",
+                    "value": "{palette.amber.200}",
                     "type": "color",
-                    "description": "Strong caution icon color"
+                    "description": "Softer caution icon color"
                 }
             },
             "disabled": {
@@ -582,17 +582,17 @@
                 "default": {
                     "value": "{palette.blue.600}",
                     "type": "color",
-                    "description": "Brand icon color"
+                    "description": "Info icon color"
                 },
                 "strong": {
                     "value": "{palette.blue.700}",
                     "type": "color",
-                    "description": "Stronger brand icon color"
+                    "description": "Stronger info icon color"
                 },
                 "stronger": {
                     "value": "{palette.blue.800}",
                     "type": "color",
-                    "description": "Stronger brand icon color"
+                    "description": "Stronger info icon color"
                 }
             }
         },
@@ -724,12 +724,12 @@
             },
             "contrast": {
                 "default": {
-                    "value": "{palette.neutral.950}",
+                    "value": "{palette.neutral.900}",
                     "type": "color",
                     "description": "Contrast"
                 },
                 "strong": {
-                    "value": "{palette.neutral.975}",
+                    "value": "{palette.neutral.950}",
                     "type": "color",
                     "description": "Strong contrast"
                 }
