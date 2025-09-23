@@ -226,7 +226,20 @@ export const combineSysTokens = () => {
   const sysFiles = getSytemTokenFilesList();
 
   const innerToken = sysFiles.reduce((acc, file) => {
-    const filePath = path.join(rootDir, 'tokens/sys', file);
+    let filePath;
+
+    // Handle files from different directories
+    if (file === 'color.json') {
+      // This is from the deprecated directory
+      filePath = path.join(rootDir, 'tokens/deprecated/sys/color', file);
+    } else if (file === 'color/color.json') {
+      // This is from the current sys directory
+      filePath = path.join(rootDir, 'tokens/sys', file);
+    } else {
+      // Regular files from tokens/sys
+      filePath = path.join(rootDir, 'tokens/sys', file);
+    }
+
     const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
 
