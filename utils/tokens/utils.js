@@ -210,9 +210,6 @@ export const generatePlatformFiles = (level, allTokens) => {
 export const getSytemTokenFilesList = () => {
   const sysFolderPath = path.join(rootDir, 'tokens/sys');
   const sysJsonFiles = fs.readdirSync(sysFolderPath).filter(file => file.endsWith('.json'));
-  const deprecatedSysJsonFiles = fs
-    .readdirSync(deprecatedSysFolderPath)
-    .filter(file => file.endsWith('.json'));
 
   return [...sysJsonFiles, 'color/color.json'];
 };
