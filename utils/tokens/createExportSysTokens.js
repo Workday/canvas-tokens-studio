@@ -4,7 +4,7 @@ import {
   mapObjectContent,
   removeFigmaTokens,
   updateToken,
-} from "./utils.js";
+} from './utils.js';
 
 export const createExportSysTokens = () => {
   const updatedSysTokens = combineSysTokens();
@@ -16,5 +16,5 @@ export const createExportSysTokens = () => {
   mapObjectContent(updateToken, updatedSysTokens);
 
   // Generate files with system tokens for each platform
-  generatePlatformFiles("sys", updatedSysTokens);
+  generatePlatformFiles('sys', updatedSysTokens);
 };
