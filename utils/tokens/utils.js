@@ -190,14 +190,16 @@ export const updateToken = token => {
  * @param {'base'|'brand'|'sys'} level The level of the tokens to be generated.
  * @param {Record<string, any>} tokens The object containing the tokens.
  */
-export const generatePlatformFiles = (level, allTokens) => {
+export const generatePlatformFiles = (level, allTokens, isDeprecated) => {
   const platforms = ['web'];
 
   platforms.forEach(platform => {
-    const tokens = platform === 'web' ? filterWebTokens(allTokens) : allTokens;
+    const folderPath = isDeprecated ? `deprecated/${platform}` : platform;
 
-    fs.mkdirSync(path.join(rootDir, 'export', platform), {recursive: true});
-    const exportPath = path.join(rootDir, `export/${platform}/${level}.json`);
+    const tokens = platform === 'web' && !isDeprecated ? filterWebTokens(allTokens) : allTokens;
+
+    fs.mkdirSync(path.join(rootDir, 'export', folderPath), {recursive: true});
+    const exportPath = path.join(rootDir, `export/${folderPath}/${level}.json`);
 
     fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
   });
@@ -207,8 +209,8 @@ export const generatePlatformFiles = (level, allTokens) => {
  * Utility function to get the list of system token files.
  * @returns {string[]} The list of system token files
  */
-export const getSytemTokenFilesList = () => {
-  const sysFolderPath = path.join(rootDir, 'tokens/sys');
+export const getSytemTokenFilesList = folderPath => {
+  const sysFolderPath = path.join(rootDir, 'tokens', folderPath);
   const sysJsonFiles = fs.readdirSync(sysFolderPath).filter(file => file.endsWith('.json'));
 
   return [...sysJsonFiles, 'color/color.json'];
@@ -218,11 +220,11 @@ export const getSytemTokenFilesList = () => {
  * Utility function to combine all system tokens into a single object.
  * @returns {Record<'sys', Record<string, any>>} The combined system tokens object
  */
-export const combineSysTokens = () => {
-  const sysFiles = getSytemTokenFilesList();
+export const combineSysTokens = folderPath => {
+  const sysFiles = getSytemTokenFilesList(folderPath);
 
   const innerToken = sysFiles.reduce((acc, file) => {
-    const filePath = path.join(rootDir, 'tokens/sys', file);
+    const filePath = path.join(rootDir, 'tokens', folderPath, file);
     const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
 
