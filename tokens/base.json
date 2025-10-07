@@ -1615,123 +1615,308 @@
     "unit": {
       "value": "0.25rem",
       "type": "dimension",
-      "description": "The base unit used in the grid system.\n"
+      "description": "The base unit used for the typographic grid system.\n",
+	  "deprecated": true,
+	  "deprecatedComment": "Use {base.baseline} instead for consistent sizing calculations"
+    },
+	"fontSize": {
+		"value": "16",
+		"type": "sizing",
+		"description": "Default fontSize for the browser, may be overriden by user preferences"
+	  },
+	  "baseline": {
+		"value": "{base.fontSize} / 2",
+		"type": "sizing",
+		"description": "Baseline unit used for the 8pt sizing grid"
+	  }
+  },
+  "size": {
+    "25": {
+      "value": "{base.baseline} * 0.25",
+      "type": "sizing",
+      "description": "2px / 0.125rem"
+    },
+    "50": {
+      "value": "{base.baseline} * 0.50",
+      "type": "sizing",
+      "description": "4px / 0.25rem"
+    },
+    "75": {
+      "value": "{base.baseline} * 0.75",
+      "type": "sizing",
+      "description": "6px / 0.375rem"
+    },
+    "100": {
+      "value": "{base.baseline} * 1.00",
+      "type": "sizing",
+      "description": "8px / 0.5rem"
+    },
+    "125": {
+      "value": "{base.baseline} * 1.25",
+      "type": "sizing",
+      "description": "10px / 0.625rem"
+    },
+    "150": {
+      "value": "{base.baseline} * 1.50",
+      "type": "sizing",
+      "description": "12px / 0.75rem"
+    },
+    "175": {
+      "value": "{base.baseline} * 1.75",
+      "type": "sizing",
+      "description": "14px / 0.875rem"
+    },
+    "200": {
+      "value": "{base.baseline} * 2.00",
+      "type": "sizing",
+      "description": "16px / 1rem"
+    },
+    "225": {
+      "value": "{base.baseline} * 2.25",
+      "type": "sizing",
+      "description": "18px / 1.125rem"
+    },
+    "250": {
+      "value": "{base.baseline} * 2.50",
+      "type": "sizing",
+      "description": "20px / 1.25rem"
+    },
+    "300": {
+      "value": "{base.baseline} * 3.00",
+      "type": "sizing",
+      "description": "24px / 1.5rem"
+    },
+    "350": {
+      "value": "{base.baseline} * 3.50",
+      "type": "sizing",
+      "description": "28px / 1.75rem"
+    },
+    "400": {
+      "value": "{base.baseline} * 4.00",
+      "type": "sizing",
+      "description": "32px / 2rem"
+    },
+    "450": {
+      "value": "{base.baseline} * 4.50",
+      "type": "sizing",
+      "description": "36px / 2.25rem"
+    },
+    "500": {
+      "value": "{base.baseline} * 5.00",
+      "type": "sizing",
+      "description": "40px / 2.5rem"
+    },
+    "600": {
+      "value": "{base.baseline} * 6.00",
+      "type": "sizing",
+      "description": "48px / 3rem"
+    },
+    "700": {
+      "value": "{base.baseline} * 7.00",
+      "type": "sizing",
+      "description": "56px / 3.5rem"
+    },
+    "800": {
+      "value": "{base.baseline} * 8.00",
+      "type": "sizing",
+      "description": "64px / 4rem"
+    },
+    "900": {
+      "value": "{base.baseline} * 9.00",
+      "type": "sizing",
+      "description": "72px / 4.5rem"
+    },
+    "1100": {
+      "value": "{base.baseline} * 11.00",
+      "type": "sizing",
+      "description": "88px / 5.5rem"
+    },
+    "1200": {
+      "value": "{base.baseline} * 12.00",
+      "type": "sizing",
+      "description": "96px / 6rem"
+    },
+    "1300": {
+      "value": "{base.baseline} * 13.00",
+      "type": "sizing",
+      "description": "104px / 6.5rem"
+    },
+    "1400": {
+      "value": "{base.baseline} * 14.00",
+      "type": "sizing",
+      "description": "112px / 7rem"
     }
   },
   "font-size": {
     "25": {
       "value": "0.625rem",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "50": {
       "value": "{font-size.25} + {typescale.size.default}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "75": {
       "value": "{font-size.50} + {typescale.size.default}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "100": {
       "value": "{font-size.75} + {typescale.size.default}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "125": {
       "value": "{font-size.100} + {typescale.size.default}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "150": {
       "value": "{font-size.125} + {typescale.size.default}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "200": {
       "value": "{font-size.150} + {typescale.size.heading}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "250": {
       "value": "{font-size.200} + {typescale.size.heading}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "300": {
       "value": "{font-size.250} + {typescale.size.heading}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "400": {
       "value": "{font-size.300} + {typescale.size.title}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "500": {
       "value": "{font-size.400} + {typescale.size.title}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "600": {
       "value": "{font-size.500} + {typescale.size.title}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "750": {
       "value": "{font-size.600} + {typescale.size.display}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "900": {
       "value": "{font-size.750} + {typescale.size.display}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "1050": {
       "value": "{font-size.900} + {typescale.size.display}",
-      "type": "fontSizes"
+      "type": "fontSizes",
+      "deprecated": true,
+      "deprecatedComment": "Use {size.1050} for consistent spacing and sizing"
     }
   },
   "line-height": {
     "50": {
       "value": "16",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "100": {
       "value": "20",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "150": {
       "value": "24",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "200": {
       "value": "28",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "250": {
       "value": "32",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "300": {
       "value": "36",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "350": {
       "value": "40",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "400": {
       "value": "48",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "500": {
       "value": "56",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "600": {
       "value": "64",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "750": {
       "value": "72",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "900": {
       "value": "88",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     },
     "1050": {
       "value": "104",
-      "type": "number"
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use system instead"
     }
   },
   "typescale": {
@@ -1822,27 +2007,34 @@
   "level": {
     "value": "2",
     "type": "number",
-    "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading."
+    "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading.",
+	"deprecated": true,
+	"deprecatedComment": "Use explicit size tokens instead of calculated type ramp values"
   },
   "shadow": {
+    "level": {
+      "value": "1",
+      "type": "number",
+      "description": "Shadow level multiplier for y offset and blur calculations"
+    },
     "1": {
       "100": {
         "y": {
-          "value": "1",
+          "value": "{shadow.level}",
           "type": "number"
         },
         "blur": {
-          "value": "4",
+          "value": "{size.50}",
           "type": "number"
         }
       },
       "200": {
         "y": {
-          "value": "2",
+          "value": "{shadow.level} * 2",
           "type": "number"
         },
         "blur": {
-          "value": "8",
+          "value": "{size.100}",
           "type": "number"
         }
       }
@@ -1850,21 +2042,21 @@
     "2": {
       "100": {
         "y": {
-          "value": "2",
+          "value": "{shadow.level} * 2",
           "type": "number"
         },
         "blur": {
-          "value": "8",
+          "value": "{size.100}",
           "type": "number"
         }
       },
       "200": {
         "y": {
-          "value": "4",
+          "value": "{shadow.level} * 4",
           "type": "number"
         },
         "blur": {
-          "value": "16",
+          "value": "{size.200}",
           "type": "number"
         }
       }
@@ -1872,21 +2064,21 @@
     "3": {
       "100": {
         "y": {
-          "value": "3",
+          "value": "{shadow.level} * 3",
           "type": "number"
         },
         "blur": {
-          "value": "12",
+          "value": "{size.150}",
           "type": "number"
         }
       },
       "200": {
         "y": {
-          "value": "6",
+          "value": "{shadow.level} * 6",
           "type": "number"
         },
         "blur": {
-          "value": "24",
+          "value": "{size.300}",
           "type": "number"
         }
       }
@@ -1894,21 +2086,21 @@
     "4": {
       "100": {
         "y": {
-          "value": "4",
+          "value": "{shadow.level} * 4",
           "type": "number"
         },
         "blur": {
-          "value": "16",
+          "value": "{size.200}",
           "type": "number"
         }
       },
       "200": {
         "y": {
-          "value": "8",
+          "value": "{shadow.level} * 8",
           "type": "number"
         },
         "blur": {
-          "value": "32",
+          "value": "{size.400}",
           "type": "number"
         }
       }
@@ -1916,21 +2108,21 @@
     "5": {
       "100": {
         "y": {
-          "value": "5",
+          "value": "{shadow.level} * 5",
           "type": "number"
         },
         "blur": {
-          "value": "20",
+          "value": "{size.250}",
           "type": "number"
         }
       },
       "200": {
         "y": {
-          "value": "10",
+          "value": "{shadow.level} * 10",
           "type": "number"
         },
         "blur": {
-          "value": "40",
+          "value": "{size.500}",
           "type": "number"
         }
       }
@@ -1938,21 +2130,21 @@
     "6": {
       "100": {
         "y": {
-          "value": "6",
+          "value": "{shadow.level} * 6",
           "type": "number"
         },
         "blur": {
-          "value": "24",
+          "value": "{size.300}",
           "type": "number"
         }
       },
       "200": {
         "y": {
-          "value": "12",
+          "value": "{shadow.level} * 12",
           "type": "number"
         },
         "blur": {
-          "value": "48",
+          "value": "{size.600}",
           "type": "number"
         }
       }
