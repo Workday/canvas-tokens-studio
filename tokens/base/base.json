@@ -1,0 +1,14 @@
+{
+  	"base": {
+		"fontSize": {
+			"value": "16",
+			"type": "sizing",
+			"description": "Default fontSize for the browser, may be overriden by user preferences"
+		},
+		"baseline": {
+			"value": "{base.fontSize} / 2",
+			"type": "sizing",
+			"description": "Baseline unit used for the 8pt sizing grid"
+		}
+	}
+}
