@@ -1631,6 +1631,11 @@
 	  }
   },
   "size": {
+	"0": {
+      "value": "{base.baseline} * 0.00",
+      "type": "sizing",
+      "description": "0px / 0rem"
+    },
     "25": {
       "value": "{base.baseline} * 0.25",
       "type": "sizing",
