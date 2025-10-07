@@ -1,0 +1,259 @@
+{
+	"font-size": {
+		"25": {
+			"value": "0.625rem",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"50": {
+			"value": "{font-size.25} + {typescale.size.default}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"75": {
+			"value": "{font-size.50} + {typescale.size.default}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"100": {
+			"value": "{font-size.75} + {typescale.size.default}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"125": {
+			"value": "{font-size.100} + {typescale.size.default}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"150": {
+			"value": "{font-size.125} + {typescale.size.default}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"200": {
+			"value": "{font-size.150} + {typescale.size.heading}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"250": {
+			"value": "{font-size.200} + {typescale.size.heading}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"300": {
+			"value": "{font-size.250} + {typescale.size.heading}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"400": {
+			"value": "{font-size.300} + {typescale.size.title}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"500": {
+			"value": "{font-size.400} + {typescale.size.title}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"600": {
+			"value": "{font-size.500} + {typescale.size.title}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"750": {
+			"value": "{font-size.600} + {typescale.size.display}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"900": {
+			"value": "{font-size.750} + {typescale.size.display}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"1050": {
+			"value": "{font-size.900} + {typescale.size.display}",
+			"type": "fontSizes",
+			"deprecated": true,
+			"deprecatedComment": "Use {size.1050} for consistent spacing and sizing"
+		}
+	},
+	"line-height": {
+		"50": {
+			"value": 16,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"100": {
+			"value": 20,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"150": {
+			"value": 24,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"200": {
+			"value": 28,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"250": {
+			"value": 32,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"300": {
+			"value": 36,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"350": {
+			"value": 40,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"400": {
+			"value": 48,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"500": {
+			"value": 56,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"600": {
+			"value": 64,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"750": {
+			"value": 72,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"900": {
+			"value": 88,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		},
+		"1050": {
+			"value": 104,
+			"type": "number",
+			"deprecated": true,
+			"deprecatedComment": "Use system instead"
+		}
+	},
+	"typescale": {
+		"size": {
+			"default": {
+				"value": "0.125rem",
+				"type": "dimension"
+			},
+			"heading": {
+				"value": "{typescale.size.default}  *  {level}",
+				"type": "dimension"
+			},
+			"title": {
+				"value": "{typescale.size.heading} * {level}",
+				"type": "dimension"
+			},
+			"display": {
+				"value": "{typescale.size.title} * {level}",
+				"type": "dimension"
+			}
+		},
+		"height": {
+			"default": {
+				"value": "0.25rem",
+				"type": "dimension"
+			},
+			"title": {
+				"value": "{typescale.height.default} * {level}",
+				"type": "dimension"
+			},
+			"display": {
+				"value": "1rem",
+				"type": "dimension"
+			}
+		}
+	},
+	"font-family": {
+		"50": {
+			"value": "Roboto",
+			"type": "text",
+			"description": "Default font-family"
+		},
+		"100": {
+			"value": "Roboto Mono",
+			"type": "text"
+		},
+		"200": {
+			"value": "Noto Sans",
+			"type": "text"
+		}
+	},
+	"font-weight": {
+		"300": {
+			"value": "Light",
+			"type": "text"
+		},
+		"400": {
+			"value": "Regular",
+			"type": "text"
+		},
+		"500": {
+			"value": "Medium",
+			"type": "text"
+		},
+		"700": {
+			"value": "Bold",
+			"type": "text"
+		}
+	},
+	"letter-spacing": {
+		"50": {
+			"value": 0.4,
+			"type": "number"
+		},
+		"100": {
+			"value": 0.32,
+			"type": "number"
+		},
+		"150": {
+			"value": 0.24,
+			"type": "number"
+		},
+		"200": {
+			"value": 0.16,
+			"type": "number"
+		}
+	}
+}
