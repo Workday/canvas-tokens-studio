@@ -1,11 +1,4 @@
 {
-	"level": {
-		"value": 2,
-		"type": "number",
-		"description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading.",
-		"deprecated": true,
-		"deprecatedComment": "Use explicit size tokens instead of calculated type ramp values"
-	},
 	"shadow": {
 		"1": {
 			"100": {
