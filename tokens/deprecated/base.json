@@ -1417,33 +1417,40 @@
 		"size": {
 			"default": {
 				"value": "0.125rem",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			},
 			"heading": {
 				"value": "{typescale.size.default}  *  {level}",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			},
 			"title": {
 				"value": "{typescale.size.heading} * {level}",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			},
 			"display": {
 				"value": "{typescale.size.title} * {level}",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			}
 		},
 		"height": {
 			"default": {
 				"value": "0.25rem",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			},
 			"title": {
 				"value": "{typescale.height.default} * {level}",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			},
 			"display": {
 				"value": "1rem",
-				"type": "dimension"
+				"type": "dimension",
+				"deprecated": true,
 			}
 		}
 	}
