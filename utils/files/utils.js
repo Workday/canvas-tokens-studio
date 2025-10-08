@@ -20,6 +20,22 @@ export const mapObjectContent = (fn, obj) => {
   });
 };
 
+export const recursivelyCombineTwoObjects = (obj1, obj2) => {
+  return Object.keys(obj2).reduce((acc, key) => {
+    if (obj1[key]) {
+      acc[key] = {
+        ...acc[key],
+        ...obj1[key],
+        ...recursivelyCombineTwoObjects(obj1[key], obj2[key]),
+      };
+    } else {
+      acc[key] = {...acc[key], ...obj2[key]};
+    }
+
+    return acc;
+  }, {});
+};
+
 /**
  * Utility function to transform studio tokens to Style Dictionary consumable format.
  * It does
@@ -47,10 +63,8 @@ export const isBaseToken = ref => {
   const baseTokens = combineTokens('base', 'base');
   const deprecatedBaseTokens = combineTokens('deprecated/base', 'base');
 
-  let content = {
-    ...baseTokens.base,
-    ...deprecatedBaseTokens.base,
-  };
+  const commbined = recursivelyCombineTwoObjects(baseTokens, deprecatedBaseTokens);
+  let content = commbined.base;
 
   const keys = ref.split('.');
 
