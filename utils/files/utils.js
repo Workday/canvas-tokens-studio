@@ -280,7 +280,8 @@ export const combineTokens = (folderPath, type) => {
     const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
 
-    const hasTypeWrapper = Object.keys(parsedJson).includes(type);
+    const keys = Object.keys(parsedJson);
+    const hasTypeWrapper = keys.length === 1 && keys.includes(type);
     const tokens = hasTypeWrapper ? parsedJson[type] : parsedJson;
 
     return {
