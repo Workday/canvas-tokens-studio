@@ -21,15 +21,36 @@ export const mapObjectContent = (fn, obj) => {
 };
 
 /**
+ * Utility function to transform studio tokens to Style Dictionary consumable format.
+ * It does
+ * - remove figma specific tokens
+ * - flatten the base token object to avoid `base.base.*` references
+ * - change oklch color object to string
+ * - remove studio extensions
+ * - replace TS description with SD comment
+ * - add level token reference to TS
+ * @param {Record<string, any>} tokens The tokens object to transform
+ * @returns {Record<string, any>} The transformed tokens object
+ */
+export const transformStudioTokensToSD = tokens => {
+  cleanOutTokens(tokens);
+  mapObjectContent(updateToken, tokens);
+};
+
+/**
  * Utility function to determine if a token is a base token.
  * @param {string} ref The token reference, e.g. 'brand.primary.base'
  * @returns {boolean} Result of validation if the token is a base token
  */
 export const isBaseToken = ref => {
-  const baseJson = fs.readFileSync(path.join(rootDir, 'tokens/base.json'));
-
   let isMapable = false;
-  let content = JSON.parse(baseJson);
+  const baseTokens = combineTokens('base', 'base');
+  const deprecatedBaseTokens = combineTokens('deprecated/base', 'base');
+
+  let content = {
+    ...baseTokens.base,
+    ...deprecatedBaseTokens.base,
+  };
 
   const keys = ref.split('.');
 
@@ -166,11 +187,12 @@ export const filterWebTokens = tokens => {
  * @param {Record<string, any>} tokens The token object to filter web tokens from non-web tokens
  * @returns {Record<string, any>} The filtered JSON token object containing only web tokens
  */
-export const removeFigmaTokens = tokens => {
+export const cleanOutTokens = tokens => {
   if (tokens.sys) {
     delete tokens.sys['More styles'];
     delete tokens.sys['layer-opacity'];
   }
+
   if (tokens.base) {
     const {unit} = tokens.base.base || {};
     if (unit) {
@@ -219,13 +241,17 @@ export const generatePlatformFiles = (level, allTokens, isDeprecated) => {
  * @returns {string[]} The list of token files
  */
 export const getTokensFilesList = (folderPath, type) => {
-  const folder = path.join(rootDir, 'tokens', folderPath);
+  const allFiles = fs
+    .readdirSync(path.join(rootDir, 'tokens'), {recursive: true})
+    .filter(
+      file =>
+        file.startsWith(folderPath) &&
+        file.endsWith('.json') &&
+        ((type !== 'brand' && !file.includes('brand/')) ||
+          (type === 'brand' && file.includes('brand/')))
+    );
 
-  const jsonFiles = fs
-    .readdirSync(folder, {recursive: true})
-    .filter(file => file.endsWith('.json') && type !== 'brand' && !file.includes('brand/'));
-
-  return jsonFiles;
+  return allFiles;
 };
 
 /**
@@ -236,17 +262,20 @@ export const combineTokens = (folderPath, type) => {
   const files = getTokensFilesList(folderPath, type);
 
   const innerToken = files.reduce((acc, file) => {
-    const filePath = path.join(rootDir, 'tokens', folderPath, file);
+    const filePath = path.join(rootDir, 'tokens', file);
     const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
 
+    const hasTypeWrapper = Object.keys(parsedJson).includes(type);
+    const tokens = hasTypeWrapper ? parsedJson[type] : parsedJson;
+
     return {
       ...acc,
-      ...parsedJson,
+      ...tokens,
     };
   }, {});
 
-  return {[type]: innerToken};
+  return Object.keys(innerToken).length ? {[type]: innerToken} : innerToken;
 };
 
 /**
