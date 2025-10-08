@@ -11,7 +11,7 @@ import path from 'path';
 
 const rootDir = process.cwd();
 
-export const createExportTokens = types => {
+export const createExportTokens = (types = []) => {
   types.forEach(type => {
     ['main', 'deprecated'].forEach(category => {
       const isDeprecated = category === 'deprecated';
