@@ -9,7 +9,7 @@
 ## Checks
 
 - [ ] Overview Added
-- [ ] Deprecated tokens placed in `deprecated` tokens
+- [ ] Deprecated tokens placed in `deprecated` folder
 - [ ] Deprecated tokens file structure is the same as main.
 - [ ] Main tokens file doesn't have deprecated tokens.
 - [ ] Math values have spaces around math sign.
