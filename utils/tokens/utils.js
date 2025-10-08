@@ -257,8 +257,8 @@ export const combineTokens = (folderPath, type) => {
  * Utility function to generate the base tokens file.
  * @param {Record<'base', Record<string, any>>} tokens The base tokens object
  */
-export const generateBaseTokens = (tokens, folderPath) => {
-  fs.mkdirSync(path.join(rootDir, folderPath), {recursive: true});
-  const exportPath = path.join(rootDir, folderPath, 'base.json');
-  fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
+export const generateBaseTokens = (tokens, folder) => {
+  fs.mkdirSync(path.join(rootDir, 'export', folder), {recursive: true});
+  const exportFile = path.join(rootDir, 'export', folder, 'base.json');
+  fs.writeFileSync(exportFile, JSON.stringify(tokens, null, 2), 'utf8');
 };
