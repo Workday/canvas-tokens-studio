@@ -6,10 +6,6 @@
 
 <!-- Give a brief description of what this PR does. -->
 
-## Where Should the Reviewer Start?
-
-<!-- e.g. `/src/components/SomeComponent.js` -->
-
 ## Thank You Gif
 
 <!-- Share a fun [gif](https://giphy.com) to say thanks to your reviewer: -->

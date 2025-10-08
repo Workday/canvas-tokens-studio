@@ -37,6 +37,20 @@ jobs:
         env:
           CHANGED: all
 
+  check-deprecated-tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check deprecated folders organization
+        id: check-deprecated-folders
+        run: echo "result=$(node utils/check/deprecatedFolder.js)" >> $GITHUB_OUTPUT
+
+      - name: Fail if deprecated tokens are found
+        if: steps.check-deprecated-folders.outputs.result != ''
+        run: |
+          exit 1
+
   visual-regression:
     runs-on: ubuntu-latest
     needs: get-baseline

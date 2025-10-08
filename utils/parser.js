@@ -1,25 +1,28 @@
-import {createExportBaseTokens} from './tokens/createExportBaseTokens.js';
-import {createExportBrandTokens} from './tokens/createExportBrandTokens.js';
-import {createExportSysTokens} from './tokens/createExportSysTokens.js';
+import {createExportTokens} from './tokens/createExportTokens.js';
 
 const {CHANGED} = process.env;
 
+const getTypes = changed => {
+  if (changed === 'all') {
+    return ['base', 'brand', 'sys'];
+  }
+
+  if (changed.includes('base.json')) {
+    return ['base'];
+  }
+
+  if (changed.includes('brand/canvas.json')) {
+    return ['brand'];
+  }
+
+  if (changed.includes('tokens/sys')) {
+    return ['sys'];
+  }
+
+  return [];
+};
+
 if (CHANGED) {
-  if (CHANGED === 'all') {
-    createExportBaseTokens();
-    createExportBrandTokens();
-    createExportSysTokens();
-  }
-
-  if (CHANGED.includes('base.json')) {
-    createExportBaseTokens();
-  }
-
-  if (CHANGED.includes('brand/canvas.json')) {
-    createExportBrandTokens();
-  }
-
-  if (CHANGED.includes('tokens/sys')) {
-    createExportSysTokens();
-  }
+  const types = getTypes(CHANGED);
+  createExportTokens(types);
 }

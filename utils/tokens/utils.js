@@ -167,8 +167,10 @@ export const filterWebTokens = tokens => {
  * @returns {Record<string, any>} The filtered JSON token object containing only web tokens
  */
 export const removeFigmaTokens = tokens => {
-  delete tokens.sys['More styles'];
-  delete tokens.sys['layer-opacity'];
+  if (tokens.sys) {
+    delete tokens.sys['More styles'];
+    delete tokens.sys['layer-opacity'];
+  }
 };
 
 /**
@@ -217,13 +219,27 @@ export const getSytemTokenFilesList = folderPath => {
 };
 
 /**
- * Utility function to combine all system tokens into a single object.
- * @returns {Record<'sys', Record<string, any>>} The combined system tokens object
+ * Utility function to get the list of tokens files.
+ * @returns {string[]} The list of token files
  */
-export const combineSysTokens = folderPath => {
-  const sysFiles = getSytemTokenFilesList(folderPath);
+export const getTokensFilesList = folderPath => {
+  const folder = path.join(rootDir, 'tokens', folderPath);
 
-  const innerToken = sysFiles.reduce((acc, file) => {
+  const jsonFiles = fs
+    .readdirSync(folder, {recursive: true})
+    .filter(file => file.endsWith('.json'));
+
+  return jsonFiles;
+};
+
+/**
+ * Utility function to combine all tokens into a single object.
+ * @returns {Record<'sys', Record<string, any>>} The combined tokens object
+ */
+export const combineTokens = (folderPath, type) => {
+  const files = getTokensFilesList(folderPath);
+
+  const innerToken = files.reduce((acc, file) => {
     const filePath = path.join(rootDir, 'tokens', folderPath, file);
     const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
@@ -234,30 +250,7 @@ export const combineSysTokens = folderPath => {
     };
   }, {});
 
-  return {sys: innerToken};
-};
-
-/**
- * Utility function to get the base tokens object.
- * @returns {Record<'base', Record<string, any>>} The combined system tokens object
- */
-export const getBaseTokens = isDeprecated => {
-  const filePath = isDeprecated ? 'tokens/deprecated/base.json' : 'tokens/base.json';
-  const content = fs.readFileSync(path.join(rootDir, filePath), 'utf8');
-  const originalBaseTokens = JSON.parse(content);
-
-  let updatedBaseTokens = {
-    base: originalBaseTokens,
-  };
-
-  // Flat unit property to the base level
-  const {unit} = updatedBaseTokens.base.base || {};
-  if (unit) {
-    delete updatedBaseTokens.base.base;
-    updatedBaseTokens.base.unit = unit;
-  }
-
-  return updatedBaseTokens;
+  return {[type]: innerToken};
 };
 
 /**
