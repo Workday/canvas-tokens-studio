@@ -171,6 +171,13 @@ export const removeFigmaTokens = tokens => {
     delete tokens.sys['More styles'];
     delete tokens.sys['layer-opacity'];
   }
+  if (tokens.base) {
+    const {unit} = tokens.base.base || {};
+    if (unit) {
+      delete tokens.base.base;
+      tokens.base.unit = unit;
+    }
+  }
 };
 
 /**
@@ -208,26 +215,15 @@ export const generatePlatformFiles = (level, allTokens, isDeprecated) => {
 };
 
 /**
- * Utility function to get the list of system token files.
- * @returns {string[]} The list of system token files
- */
-export const getSytemTokenFilesList = folderPath => {
-  const sysFolderPath = path.join(rootDir, 'tokens', folderPath);
-  const sysJsonFiles = fs.readdirSync(sysFolderPath).filter(file => file.endsWith('.json'));
-
-  return [...sysJsonFiles, 'color/color.json'];
-};
-
-/**
  * Utility function to get the list of tokens files.
  * @returns {string[]} The list of token files
  */
-export const getTokensFilesList = folderPath => {
+export const getTokensFilesList = (folderPath, type) => {
   const folder = path.join(rootDir, 'tokens', folderPath);
 
   const jsonFiles = fs
     .readdirSync(folder, {recursive: true})
-    .filter(file => file.endsWith('.json'));
+    .filter(file => file.endsWith('.json') && type !== 'brand' && !file.includes('brand/'));
 
   return jsonFiles;
 };
@@ -237,7 +233,7 @@ export const getTokensFilesList = folderPath => {
  * @returns {Record<'sys', Record<string, any>>} The combined tokens object
  */
 export const combineTokens = (folderPath, type) => {
-  const files = getTokensFilesList(folderPath);
+  const files = getTokensFilesList(folderPath, type);
 
   const innerToken = files.reduce((acc, file) => {
     const filePath = path.join(rootDir, 'tokens', folderPath, file);

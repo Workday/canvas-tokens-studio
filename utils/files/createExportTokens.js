@@ -35,7 +35,7 @@ export const createExportTokens = (types = ['base', 'brand', 'sys']) => {
         const originalBaseJson = fs.readFileSync(brandJsonPath, 'utf8');
         const originalTokens = JSON.parse(originalBaseJson);
 
-        tokens = originalTokens;
+        tokens = {[type]: originalTokens.brand || originalTokens};
       } else {
         // If there are folder with tokens, combine them into a single object
         tokens = combineTokens(importPathFolder, type);
