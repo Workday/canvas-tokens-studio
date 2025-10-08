@@ -1,4 +1,4 @@
-import {createExportTokens} from './tokens/createExportTokens.js';
+import {createExportTokens} from './files/createExportTokens.js';
 
 const {CHANGED} = process.env;
 
