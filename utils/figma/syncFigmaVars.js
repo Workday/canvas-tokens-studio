@@ -3,7 +3,7 @@ import * as fs from 'fs';
 
 import FigmaApi from './figmaAPI.js';
 
-import {tokenFilesFromLocalVariables} from './token_export.js';
+import {tokenFilesFromLocalVariables} from './exportTokens.js';
 
 /**
  * Usage:
