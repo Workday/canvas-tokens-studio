@@ -16,6 +16,9 @@ function tokenValueFromVariable(variable, modeId, localVariables) {
   if (typeof value === 'object') {
     if ('type' in value && value.type === 'VARIABLE_ALIAS') {
       const aliasedVariable = localVariables[value.id];
+      if (!aliasedVariable) {
+        return value;
+      }
       return `{${aliasedVariable.name.replace(/\//g, '.')}}`;
     }
 
