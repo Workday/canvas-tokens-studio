@@ -56,16 +56,9 @@ export function tokenFilesFromLocalVariables(localVariablesResponse) {
       });
 
       const token = {
-        $type: tokenTypeFromVariable(variable),
-        $value: tokenValueFromVariable(variable, mode.modeId, localVariables),
-        $description: variable.description,
-        $extensions: {
-          'com.figma': {
-            hiddenFromPublishing: variable.hiddenFromPublishing,
-            scopes: variable.scopes,
-            codeSyntax: variable.codeSyntax,
-          },
-        },
+        type: tokenTypeFromVariable(variable),
+        value: tokenValueFromVariable(variable, mode.modeId, localVariables),
+        description: variable.description,
       };
 
       Object.assign(obj, token);
