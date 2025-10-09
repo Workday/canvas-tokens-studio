@@ -15,6 +15,7 @@
   "devDependencies": {
     "@figma/rest-api-spec": "^0.34.0",
     "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
     "kebab-case": "^2.0.1"
   },
   "dependencies": {}
