@@ -13,6 +13,8 @@
   ],
   "license": "ISC",
   "devDependencies": {
+    "@figma/rest-api-spec": "^0.34.0",
+    "axios": "^1.12.2",
     "kebab-case": "^2.0.1"
   },
   "dependencies": {}

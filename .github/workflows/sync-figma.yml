@@ -1,0 +1,57 @@
+name: "Sync Figma Tokens"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - test-actions
+
+jobs:
+  check-tokens:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: 'test-synced'
+
+      - name: Check file secret exists
+        run: |
+          if [ -z "${{ secrets.FIGMA_FILE_KEY }}" ]; then
+            echo "FIGMA_FILE_KEY is not set"
+            exit 1
+          fi
+
+  sync-figma:
+    needs: check-tokens
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: 'test-synced'
+
+      - name: Node Setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+
+      - name: Install Packages
+        run: yarn
+
+      - name: Sync Figma Tokens
+        run: node utils/figma/syncFigmaVars.js
+        env:
+          FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.FIGMA_PAT }}
+
+      - name: Commit Changes
+        run: |
+          git add synced-tokens
+          git commit -m "chore: Sync Figma Tokens"
+
+      - name: Push Changes
+        run: |
+          git push origin test-synced
