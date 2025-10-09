@@ -38,5 +38,3 @@ export const createExportTokens = (types = ['base', 'brand', 'sys']) => {
     });
   });
 };
-
-console.log(createExportTokens());
