@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export default class FigmaApi {
   constructor(token) {
+    this.baseUrl = 'https://api.figma.com';
     this.token = token;
   }
 
