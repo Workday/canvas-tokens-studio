@@ -21,9 +21,10 @@ const getDirectoryFiles = directory => {
       return false;
     }
 
-    const isBase = file.endsWith('base.json');
+    const isBase = file.endsWith('/base');
     const isBrand = file.endsWith('canvas.json');
     const isColor = file.includes('sys/color');
+
     const isSystem =
       file.includes('sys/') && !file.includes('sys/brand') && !file.includes('sys/color');
 
