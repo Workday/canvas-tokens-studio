@@ -40,7 +40,7 @@
   },
   "layer-opacity": {
     "disabled": {
-      "value": "{opacity.300}*100",
+      "value": "{opacity.300} * 100",
       "type": "number",
       "description": "Figma only for layer opacity"
     }
