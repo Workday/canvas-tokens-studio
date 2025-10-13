@@ -20,6 +20,8 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    outputs:
+      tokens: ${{ steps.artifact.outputs.artifact-id }}
 
     steps:
       - uses: actions/checkout@v4
@@ -36,6 +38,56 @@ jobs:
         run: node utils/parser.js
         env:
           CHANGED: all
+
+      - name: Set artifact
+        id: artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-tokens
+          path: export
+
+  web-build:
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ needs.build.outputs.tokens }}
+    steps:
+      - name: Checkout canvas-tokens repository
+        uses: actions/checkout@v3
+        with:
+          repository: Workday/canvas-tokens
+          ref: ${{ github.event.pull_request.base.ref }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+          registry-url: https://registry.npmjs.org
+
+      - name: Install Packages
+        run: yarn
+
+      - name: Download exported tokens
+        uses: actions/download-artifact@v4
+        with:
+          name: exported-tokens
+          path: packages/canvas-tokens/tokens
+
+      - name: Build canvas-tokens
+        run: yarn build:tokens
+
+  check-deprecated-tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check deprecated folders organization
+        id: check-deprecated-folders
+        run: echo "result=$(node utils/check/deprecatedFolder.js)" >> $GITHUB_OUTPUT
+
+      - name: Fail if deprecated tokens are found
+        if: steps.check-deprecated-folders.outputs.result != ''
+        run: |
+          exit 1
 
   visual-regression:
     runs-on: ubuntu-latest

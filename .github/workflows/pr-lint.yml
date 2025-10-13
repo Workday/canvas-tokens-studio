@@ -21,7 +21,7 @@ jobs:
         run: |
           BASE="origin/${{ github.event.pull_request.base.ref }}"
           HEAD="origin/${{ github.event.pull_request.head.ref }}"
-          echo "changed_files=$(git diff --name-only $BASE...$HEAD | grep tokens/ | xargs)" >> $GITHUB_OUTPUT
+          echo "changed_files=$(git diff --name-only $BASE...$HEAD | grep '^tokens/' | xargs)" >> $GITHUB_OUTPUT
 
       - name: Check PR title
         run: |
