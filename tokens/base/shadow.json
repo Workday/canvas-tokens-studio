@@ -1,136 +1,136 @@
 {
-	"shadow": {
-		"1": {
-			"100": {
-				"y": {
-					"value": 1,
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.50}",
-					"type": "number"
-				}
-			},
-			"200": {
-				"y": {
-					"value": "{shadow.1.100.y} * 2",
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.100}",
-					"type": "number"
-				}
-			}
-		},
-		"2": {
-			"100": {
-				"y": {
-					"value": 2,
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.100}",
-					"type": "number"
-				}
-			},
-			"200": {
-				"y": {
-					"value": "{shadow.2.100.y} * 2",
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.200}",
-					"type": "number"
-				}
-			}
-		},
-		"3": {
-			"100": {
-				"y": {
-					"value": 3,
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.150}",
-					"type": "number"
-				}
-			},
-			"200": {
-				"y": {
-					"value": "{shadow.3.100.y} * 2",
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.300}",
-					"type": "number"
-				}
-			}
-		},
-		"4": {
-			"100": {
-				"y": {
-					"value": 4,
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.200}",
-					"type": "number"
-				}
-			},
-			"200": {
-				"y": {
-					"value": "{shadow.4.100.y} * 2",
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.400}",
-					"type": "number"
-				}
-			}
-		},
-		"5": {
-			"100": {
-				"y": {
-					"value": 5,
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.250}",
-					"type": "number"
-				}
-			},
-			"200": {
-				"y": {
-					"value": "{shadow.5.100.y} * 2",
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.500}",
-					"type": "number"
-				}
-			}
-		},
-		"6": {
-			"100": {
-				"y": {
-					"value": 6,
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.300}",
-					"type": "number"
-				}
-			},
-			"200": {
-				"y": {
-					"value": "{shadow.6.100.y} * 2",
-					"type": "number"
-				},
-				"blur": {
-					"value": "{size.600}",
-					"type": "number"
-				}
-			}
-		}
-	}
+  "shadow": {
+    "1": {
+      "100": {
+        "y": {
+          "value": 1,
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.50}",
+          "type": "number"
+        }
+      },
+      "200": {
+        "y": {
+          "value": "{shadow.1.100.y} * 2",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.100}",
+          "type": "number"
+        }
+      }
+    },
+    "2": {
+      "100": {
+        "y": {
+          "value": 2,
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.100}",
+          "type": "number"
+        }
+      },
+      "200": {
+        "y": {
+          "value": "{shadow.2.100.y} * 2",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.200}",
+          "type": "number"
+        }
+      }
+    },
+    "3": {
+      "100": {
+        "y": {
+          "value": 3,
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.150}",
+          "type": "number"
+        }
+      },
+      "200": {
+        "y": {
+          "value": "{shadow.3.100.y} * 2",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.300}",
+          "type": "number"
+        }
+      }
+    },
+    "4": {
+      "100": {
+        "y": {
+          "value": 4,
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.200}",
+          "type": "number"
+        }
+      },
+      "200": {
+        "y": {
+          "value": "{shadow.4.100.y} * 2",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.400}",
+          "type": "number"
+        }
+      }
+    },
+    "5": {
+      "100": {
+        "y": {
+          "value": 5,
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.250}",
+          "type": "number"
+        }
+      },
+      "200": {
+        "y": {
+          "value": "{shadow.5.100.y} * 2",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.500}",
+          "type": "number"
+        }
+      }
+    },
+    "6": {
+      "100": {
+        "y": {
+          "value": 6,
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.300}",
+          "type": "number"
+        }
+      },
+      "200": {
+        "y": {
+          "value": "{shadow.6.100.y} * 2",
+          "type": "number"
+        },
+        "blur": {
+          "value": "{size.600}",
+          "type": "number"
+        }
+      }
+    }
+  }
 }
