@@ -5,7 +5,7 @@ import {
   transformStudioTokensToSD,
 } from './utils.js';
 
-export const createExportTokens = (types = ['base', 'brand', 'sys']) => {
+export const createExportTokens = (types = []) => {
   types.forEach(type => {
     ['main', 'deprecated'].forEach(category => {
       const isDeprecated = category === 'deprecated';
