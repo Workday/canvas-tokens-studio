@@ -1,0 +1,57 @@
+{
+  "shape": {
+    "zero": {
+      "value": "0rem",
+      "type": "borderRadius",
+      "description": "This is the initial shape of every new element. Use this for backgrounds screens and fixed navigation containers such as headers, and side-panels.",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    },
+    "half": {
+      "value": "{base.unit} * 0.5",
+      "type": "borderRadius",
+      "description": "Use this for subtle and small components that don’t require to group complex information like Status Indicators, Checkboxes and Color Swatches.",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    },
+    "x1": {
+      "value": "{base.unit}",
+      "type": "borderRadius",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    },
+    "x1-half": {
+      "value": "{base.unit} * 1.5",
+      "type": "borderRadius",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    },
+    "x2": {
+      "value": "{base.unit} * 2",
+      "type": "borderRadius",
+      "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts.",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    },
+    "x4": {
+      "value": "{base.unit} * 4",
+      "type": "borderRadius",
+      "description": "(Mobile) Primary containers that house a large amount of other elements and complex information\n",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    },
+    "x6": {
+      "value": "{base.unit} * 6",
+      "type": "borderRadius",
+      "description": "(Mobile) Full width sheets that are temporary and modal views",
+      "deprecated": true
+    },
+    "round": {
+      "value": "{base.unit} * 250",
+      "type": "borderRadius",
+      "description": "Commonly used for our standard buttons and profile avatars: All Primary, Secondary Buttons, Radio Buttons and Notification Badges.",
+      "deprecated": true,
+      "deprecatedComment": "This token is deprecated and will be replaced by our new shape tokens. Please refer to our v4 token upgrade for more details"
+    }
+  }
+}
