@@ -1,7 +1,7 @@
 {
   "size": {
     "0": {
-      "value": "{base.baseline} * 0.00",
+      "value": "0",
       "type": "sizing",
       "description": "0px / 0rem"
     },
