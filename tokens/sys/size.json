@@ -1,0 +1,44 @@
+{
+  "size": {
+    "2xs": {
+      "value": "{size.200}",
+      "type": "size",
+      "description": "Switch Track"
+    },
+    "xs": {
+      "value": "{size.250}",
+      "type": "size",
+      "description": "Count Badge"
+    },
+    "sm": {
+      "value": "{size.300}",
+      "type": "size",
+      "description": "X-Small Buttons, Pills, Checkboxes, Radio Buttons"
+    },
+    "md": {
+      "value": "{size.400}",
+      "type": "size",
+      "description": "Small Buttons, Segmented Control, Tooltip, Avatar"
+    },
+    "lg": {
+      "value": "{size.500}",
+      "type": "size",
+      "description": "Default height for most components, like Medium Buttons, Segmented Control, Banner, Input Fields, and Menu List Items"
+    },
+    "xl": {
+      "value": "{size.600}",
+      "type": "size",
+      "description": "Large size used in Large Buttons, Segmented Controls, Expandable Container Trigger, Tabs, and Avatar"
+    },
+    "2xl": {
+      "value": "{size.700}",
+      "type": "size",
+      "description": "Table Cell, Toast"
+    },
+    "3xl": {
+      "value": "{size.800}",
+      "type": "size",
+      "description": "Expandable Container"
+    }
+  }
+}
