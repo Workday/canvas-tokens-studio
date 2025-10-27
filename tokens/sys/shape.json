@@ -6,7 +6,7 @@
       "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels."
     },
     "xs": {
-      "value": "{size.50}",
+      "value": "{size.100}",
       "type": "borderRadius",
       "description": "Use this for subtle and smaller elements that don't contain complex information. Often high-density components. Checkbox, Pill"
     },
