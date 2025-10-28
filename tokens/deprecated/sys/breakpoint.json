@@ -1,0 +1,28 @@
+{
+  "breakpoints": {
+    "s": {
+      "value": "{base.unit} * 80",
+      "type": "dimension",
+      "description": "The `min-width` for mobile devices, such as phones and tablets.",
+      "deprecated": true
+    },
+    "m": {
+      "value": "{base.unit} * 192",
+      "type": "dimension",
+      "description": "Medium screens, such as laptops.",
+      "deprecated": true
+    },
+    "l": {
+      "value": "{base.unit} * 256",
+      "type": "dimension",
+      "description": "Large screens, such as desktops.",
+      "deprecated": true
+    },
+    "xl": {
+      "value": "{base.unit} * 360",
+      "type": "dimension",
+      "description": "Used for extra large screens, such as wide monitors and TVs.",
+      "deprecated": true
+    }
+  }
+}
