@@ -5,17 +5,17 @@
       "type": "dimension",
       "description": "Use to set a media query `min-width` below small."
     },
-    "s": {
+    "sm": {
       "value": "{base.unit} * 80",
       "type": "dimension",
       "description": "The `min-width` for mobile devices, such as phones and tablets."
     },
-    "m": {
+    "md": {
       "value": "{base.unit} * 192",
       "type": "dimension",
       "description": "Medium screens, such as laptops."
     },
-    "l": {
+    "lg": {
       "value": "{base.unit} * 256",
       "type": "dimension",
       "description": "Large screens, such as desktops."
