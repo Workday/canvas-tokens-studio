@@ -1,0 +1,95 @@
+{
+    "space": {
+        "zero": {
+            "value": "0",
+            "type": "spacing",
+            "description": "Stacks, rows in tables",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "half": {
+            "value": "{base.unit} * 0.5",
+            "type": "spacing",
+            "description": "Mobile only",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x1": {
+            "value": "{base.unit}",
+            "type": "spacing",
+            "description": "Compact spacing between text or icons",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x2": {
+            "value": "{base.unit} * 2",
+            "type": "spacing",
+            "description": "Commonly used to group compact elements like icon buttons",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x3": {
+            "value": "{base.unit} * 3",
+            "type": "spacing",
+            "description": "Use when compact padding is required",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x4": {
+            "value": "{base.unit} * 4",
+            "type": "spacing",
+            "description": "Default space token. Used to group Inputs with related data",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x5": {
+            "value": "{base.unit} * 5",
+            "type": "spacing",
+            "description": "Mobile only",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x6": {
+            "value": "{base.unit} * 6",
+            "type": "spacing",
+            "description": "• Padding around card content\n• Related elements where more space between them can be afforded\n• Separate section headings or titles from body text or inputs",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x8": {
+            "value": "{base.unit} * 8",
+            "type": "spacing",
+            "description": "• Standard spacing between cards\n• Used to separate groups of content \n• Separate section headings or titles from body text or inputs",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x10": {
+            "value": "{base.unit} * 10",
+            "type": "spacing",
+            "description": "• Used for outer margins on the overall page content \n• Used for inner margins on large items such as page sections",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x14": {
+            "value": "{base.unit} * 14",
+            "type": "spacing",
+            "description": "Mobile only",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x16": {
+            "value": "{base.unit} * 16",
+            "type": "spacing",
+            "description": "- Use to de-clutter your UI when a lot of space is available\n- Separate banner sections from page content\n- Use to differentiate page content like page sections",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        },
+        "x20": {
+            "value": "{base.unit} * 20",
+            "type": "spacing",
+            "description": "- Use sparingly\n- Helps to put focus on the primary element within your page\n- Use to de-clutter your UI when a lot of space is available",
+            "deprecated": true,
+            "deprecatedComment": "Use semantic padding and gap values instead"
+        }
+    }
+}
