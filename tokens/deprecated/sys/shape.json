@@ -1,0 +1,44 @@
+{
+  "shape": {
+    "half": {
+      "value": "{base.unit} * 0.5",
+      "type": "borderRadius",
+      "deprecated": true,
+      "description": "Use this for subtle and small components that don't require to group complex information like Status Indicators, Checkboxes and Color Swatches."
+    },
+    "x1": {
+      "value": "{base.unit}",
+      "type": "borderRadius",
+      "deprecated": true
+    },
+    "x1-half": {
+      "value": "{base.unit} * 1.5",
+      "type": "borderRadius",
+      "deprecated": true
+    },
+    "x2": {
+      "value": "{base.unit} * 2",
+      "type": "borderRadius",
+      "deprecated": true,
+      "description": "Use this for all the containers and popups: All Cards, Modals, Tooltips and Toasts."
+    },
+    "x4": {
+      "value": "{base.unit} * 4",
+      "type": "borderRadius",
+      "deprecated": true,
+      "description": "(Mobile) Primary containers that house a large amount of other elements and complex information"
+    },
+    "x6": {
+      "value": "{base.unit} * 6",
+      "type": "borderRadius",
+      "deprecated": true,
+      "description": "(Mobile) Full width sheets that are temporary and modal views"
+    },
+    "round": {
+      "value": "{base.unit} * 250",
+      "type": "borderRadius",
+      "deprecated": true,
+      "description": "Commonly used for our standard buttons and profile avatars: All Primary, Secondary Buttons, Radio Buttons and Notification Badges."
+    }
+  }
+}
