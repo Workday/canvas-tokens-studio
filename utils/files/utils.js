@@ -10,13 +10,13 @@ const rootDir = process.cwd();
  * @param {Record<string, any>} obj The tokens object to transform
  * @returns
  */
-export const mapObjectContent = (fn, obj) => {
+export const mapObjectContent = (fn, obj, key) => {
   if ('value' in obj) {
-    return fn(obj);
+    return fn(obj, key);
   }
 
   Object.keys(obj).forEach(key => {
-    mapObjectContent(fn, obj[key]);
+    mapObjectContent(fn, obj[key], key);
   });
 };
 
@@ -50,7 +50,7 @@ export const recursivelyCombineTwoObjects = (obj1, obj2) => {
  */
 export const transformStudioTokensToSD = tokens => {
   cleanOutTokens(tokens);
-  mapObjectContent(updateToken, tokens);
+  mapObjectContent(updateToken, tokens, '');
 };
 
 /**
@@ -216,12 +216,19 @@ export const cleanOutTokens = tokens => {
   }
 };
 
+const updateBaseFontSize = (token, key) => {
+  if (key === 'fontSize') {
+    token.value = `${token.value / 16}rem`;
+  }
+};
+
 /**
  * Update a token object with the correct references, comments and extensions.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  * @returns {{value: string, type?: string, description?: string}} The updated token object
  */
-export const updateToken = token => {
+export const updateToken = (token, key) => {
+  updateBaseFontSize(token, key);
   updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);

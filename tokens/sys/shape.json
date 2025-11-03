@@ -25,7 +25,7 @@
       "type": "borderRadius",
       "description": "Primarily used for elevated and simple parent containers with greater amounts of content and UI. Dialogs, Modals, Bottom Sheets"
     },
-    "round": {
+    "full": {
       "value": "{size.75} * 100",
       "type": "borderRadius",
       "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)"

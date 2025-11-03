@@ -33,6 +33,12 @@
       "type": "borderRadius",
       "deprecated": true,
       "description": "(Mobile) Full width sheets that are temporary and modal views"
+    },
+    "round": {
+      "value": "{base.unit} * 250",
+      "type": "borderRadius",
+      "deprecated": true,
+      "description": "Commonly used for our standard buttons and profile avatars: All Primary, Secondary Buttons, Radio Buttons and Notification Badges."
     }
   }
 }

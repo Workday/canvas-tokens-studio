@@ -40,8 +40,6 @@ jobs:
       - name: Parse tokens
         if: ${{ !!steps.changed_files.outputs.changed }}
         run: node utils/parser.js
-        env:
-          CHANGED: ${{ steps.changed_files.outputs.changed }}
 
       - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
