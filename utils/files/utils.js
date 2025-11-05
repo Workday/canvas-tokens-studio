@@ -187,11 +187,15 @@ export const filterWebTokens = tokens => {
 
   const webTokens = tokens;
 
-  const {half, x5, x14, ...restSpace} = webTokens.sys.space;
-  webTokens.sys.space = restSpace;
+  if (webTokens.sys.space) {
+    const {half, x5, x14, ...restSpace} = webTokens.sys.space;
+    webTokens.sys.space = restSpace;
+  }
 
-  const {x4, x6, ...restShape} = webTokens.sys.shape;
-  webTokens.sys.shape = restShape;
+  if (webTokens.sys.shape) {
+    const {x4, x6, ...restShape} = webTokens.sys.shape;
+    webTokens.sys.shape = restShape;
+  }
 
   return webTokens;
 };
