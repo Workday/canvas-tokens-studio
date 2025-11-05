@@ -160,7 +160,7 @@
             "value": "{font-weight.400}",
             "type": "text"
         },
-        "md": {
+        "medium": {
             "value": "{font-weight.500}",
             "type": "text"
         },
