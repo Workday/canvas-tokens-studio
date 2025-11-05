@@ -6,7 +6,7 @@ import {
 } from './utils.js';
 
 export const createExportTokens = () => {
-  ['base', 'brand', 'system'].forEach(type => {
+  ['base', 'brand', 'sys'].forEach(type => {
     ['main', 'deprecated'].forEach(category => {
       const isDeprecated = category === 'deprecated';
       const typeFolder = type === 'brand' ? 'sys/brand' : type;
@@ -32,7 +32,7 @@ export const createExportTokens = () => {
         // Base json should be placed to main level
         generateBaseTokens(tokens, isDeprecated ? 'deprecated' : '');
       } else {
-        // System and brand tokens are web specific, so we generate them for platforms
+        // Sys and brand tokens are web specific, so we generate them for platforms
         generatePlatformFiles(type, tokens, isDeprecated);
       }
     });

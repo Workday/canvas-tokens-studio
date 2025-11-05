@@ -187,11 +187,15 @@ export const filterWebTokens = tokens => {
 
   const webTokens = tokens;
 
-  const {half, x5, x14, ...restSpace} = webTokens.sys.space;
-  webTokens.sys.space = restSpace;
+  if (webTokens.sys.space) {
+    const {half, x5, x14, ...restSpace} = webTokens.sys.space;
+    webTokens.sys.space = restSpace;
+  }
 
-  const {x4, x6, ...restShape} = webTokens.sys.shape;
-  webTokens.sys.shape = restShape;
+  if (webTokens.sys.shape) {
+    const {x4, x6, ...restShape} = webTokens.sys.shape;
+    webTokens.sys.shape = restShape;
+  }
 
   return webTokens;
 };
@@ -258,19 +262,44 @@ export const generatePlatformFiles = (level, allTokens, isDeprecated) => {
 };
 
 /**
+ * Recursively read all files in a directory
+ * @param {string} dirPath The directory path to read
+ * @param {string} basePath The base path for relative file paths
+ * @returns {string[]} Array of relative file paths
+ */
+const readDirRecursive = (dirPath, basePath = '') => {
+  const files = [];
+  const entries = fs.readdirSync(dirPath, {withFileTypes: true});
+
+  for (const entry of entries) {
+    const fullPath = path.join(dirPath, entry.name);
+    const relativePath = basePath ? `${basePath}/${entry.name}` : entry.name;
+
+    if (entry.isDirectory()) {
+      files.push(...readDirRecursive(fullPath, relativePath));
+    } else if (entry.isFile()) {
+      files.push(relativePath);
+    }
+  }
+
+  return files;
+};
+
+/**
  * Utility function to get the list of tokens files.
  * @returns {string[]} The list of token files
  */
 export const getTokensFilesList = (folderPath, type) => {
-  const allFiles = fs
-    .readdirSync(path.join(rootDir, 'tokens'), {recursive: true})
-    .filter(
-      file =>
-        file.startsWith(folderPath) &&
-        file.endsWith('.json') &&
-        ((type !== 'brand' && !file.includes('brand/')) ||
-          (type === 'brand' && file.includes('brand/')))
-    );
+  const tokensDir = path.join(rootDir, 'tokens');
+  const allFilesFromDir = readDirRecursive(tokensDir);
+
+  const allFiles = allFilesFromDir.filter(
+    file =>
+      file.startsWith(folderPath) &&
+      file.endsWith('.json') &&
+      ((type !== 'brand' && !file.includes('brand/')) ||
+        (type === 'brand' && file.includes('brand/')))
+  );
 
   return allFiles;
 };
