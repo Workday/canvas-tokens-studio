@@ -68,8 +68,8 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.name "${{ github.actor }}"
-           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Set sync branch name
         id: sync_branch
@@ -143,6 +143,11 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+
+      - name: Set up Git user
+        run: |
+          git config --local user.name "${{ github.actor }}"
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Create empty commit
         run: |
