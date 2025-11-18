@@ -1,81 +1,81 @@
 {
-	"padding": {
-		"none": {
-			"value": "{size.0}",
-			"type": "spacing",
-			"description": "Use when there should be no space between content and element's edges."
-		},
-		"2xs": {
-			"value": "{size.50}",
-			"type": "spacing",
-			"description": ""
-		},
-		"xs": {
-			"value": "{size.100}",
-			"type": "spacing",
-			"description": "Horizontal padding on Input Fields"
-		},
-		"sm": {
-			"value": "{size.150}",
-			"type": "spacing",
-			"description": "Compact padding, used in Rich Text Editor, or X-Small Buttons"
-		},
-		"md": {
-			"value": "{size.200}",
-			"type": "spacing",
-			"description": "Default padding used for components used around Small Button content."
-		},
-		"lg": {
-			"value": "{size.250}",
-			"type": "spacing",
-			"description": "Large padding, used in Medium Buttons with Icons"
-		},
-		"xl": {
-			"value": "{size.300}",
-			"type": "spacing",
-			"description": "Padding used around Card and Medium Button content"
-		},
-		"2xl": {
-			"value": "{size.400}",
-			"type": "spacing",
-			"description": "Padding used around Modal and Large Button content"
-		}
-	},
-	"gap": {
-		"none": {
-			"value": "{size.0}",
-			"type": "spacing",
-			"description": "Use when there is no space between elements"
-		},
-		"xs": {
-			"value": "{size.50}",
-			"type": "spacing",
-			"description": "Compact spacing from icon to text, labels to inputs, between tab items."
-		},
-		"sm": {
-			"value": "{size.100}",
-			"type": "spacing",
-			"description": "Horizontal space between pills, tighter space between buttons, inline icon to text, segmented controls."
-		},
-		"md": {
-			"value": "{size.200}",
-			"type": "spacing",
-			"description": "Use the default inline spacing when other gap tokens may not fit."
-		},
-		"lg": {
-			"value": "{size.300}",
-			"type": "spacing",
-			"description": "Use this for tighter spacing between cards. Cards are self contained blocks of content."
-		},
-		"xl": {
-			"value": "{size.400}",
-			"type": "spacing",
-			"description": "Use this for the default spacing between cards, as well as the gutter width used in the large 12-column grid."
-		},
-		"2xl": {
-			"value": "{size.800}",
-			"type": "spacing",
-			"description": "Use this for the space between content sections"
-		}
-	}
+  "padding": {
+    "none": {
+      "value": "{size.0}",
+      "type": "spacing",
+      "description": "Use when there should be no space between content and element's edges."
+    },
+    "xxs": {
+      "value": "{size.50}",
+      "type": "spacing",
+      "description": ""
+    },
+    "xs": {
+      "value": "{size.100}",
+      "type": "spacing",
+      "description": "Horizontal padding on Input Fields"
+    },
+    "sm": {
+      "value": "{size.150}",
+      "type": "spacing",
+      "description": "Compact padding, used in Rich Text Editor, or X-Small Buttons"
+    },
+    "md": {
+      "value": "{size.200}",
+      "type": "spacing",
+      "description": "Default padding used for components used around Small Button content."
+    },
+    "lg": {
+      "value": "{size.250}",
+      "type": "spacing",
+      "description": "Large padding, used in Medium Buttons with Icons"
+    },
+    "xl": {
+      "value": "{size.300}",
+      "type": "spacing",
+      "description": "Padding used around Card and Medium Button content"
+    },
+    "xxl": {
+      "value": "{size.400}",
+      "type": "spacing",
+      "description": "Padding used around Modal and Large Button content"
+    }
+  },
+  "gap": {
+    "none": {
+      "value": "{size.0}",
+      "type": "spacing",
+      "description": "Use when there is no space between elements"
+    },
+    "xs": {
+      "value": "{size.50}",
+      "type": "spacing",
+      "description": "Compact spacing from icon to text, labels to inputs, between tab items."
+    },
+    "sm": {
+      "value": "{size.100}",
+      "type": "spacing",
+      "description": "Horizontal space between pills, tighter space between buttons, inline icon to text, segmented controls."
+    },
+    "md": {
+      "value": "{size.200}",
+      "type": "spacing",
+      "description": "Use the default inline spacing when other gap tokens may not fit."
+    },
+    "lg": {
+      "value": "{size.300}",
+      "type": "spacing",
+      "description": "Use this for tighter spacing between cards. Cards are self contained blocks of content."
+    },
+    "xl": {
+      "value": "{size.400}",
+      "type": "spacing",
+      "description": "Use this for the default spacing between cards, as well as the gutter width used in the large 12-column grid."
+    },
+    "xxl": {
+      "value": "{size.800}",
+      "type": "spacing",
+      "description": "Use this for the space between content sections"
+    }
+  }
 }

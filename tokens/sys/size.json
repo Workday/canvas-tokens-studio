@@ -1,6 +1,6 @@
 {
   "size": {
-    "2xs": {
+    "xxs": {
       "value": "{size.200}",
       "type": "size",
       "description": "Switch Track"
@@ -30,12 +30,12 @@
       "type": "size",
       "description": "Large size used in Large Buttons, Segmented Controls, Expandable Container Trigger, Tabs, and Avatar"
     },
-    "2xl": {
+    "xxl": {
       "value": "{size.700}",
       "type": "size",
       "description": "Table Cell, Toast"
     },
-    "3xl": {
+    "xxxl": {
       "value": "{size.800}",
       "type": "size",
       "description": "Expandable Container"
