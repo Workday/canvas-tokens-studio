@@ -253,11 +253,12 @@ export const generatePlatformFiles = (level, allTokens, isDeprecated) => {
     const folderPath = isDeprecated ? `deprecated/${platform}` : platform;
 
     const tokens = platform === 'web' && !isDeprecated ? filterWebTokens(allTokens) : allTokens;
+    const exportContent = addComments(tokens, isDeprecated);
 
     fs.mkdirSync(path.join(rootDir, 'export', folderPath), {recursive: true});
     const exportPath = path.join(rootDir, `export/${folderPath}/${level}.json`);
 
-    fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
+    fs.writeFileSync(exportPath, JSON.stringify(exportContent, null, 2), 'utf8');
   });
 };
 
@@ -309,7 +310,24 @@ export const combineTokens = (folderPath, type) => {
  * @param {Record<'base', Record<string, any>>} tokens The base tokens object
  */
 export const generateBaseTokens = (tokens, folder) => {
+  const isDeprecated = folder.includes('deprecated');
+  const exportContent = addComments(tokens, isDeprecated);
+
   fs.mkdirSync(path.join(rootDir, 'export', folder), {recursive: true});
   const exportFile = path.join(rootDir, 'export', folder, 'base.json');
-  fs.writeFileSync(exportFile, JSON.stringify(tokens, null, 2), 'utf8');
+  fs.writeFileSync(exportFile, JSON.stringify(exportContent, null, 2), 'utf8');
+};
+
+const addComments = (tokens, isDeprecated) => {
+  const COMMENT = 'File is auto-generated, do not edit it manually.';
+  const DESCRIPTION =
+    'File contains deprecated tokens that are no longer supported and will be removed in the future.';
+
+  return isDeprecated
+    ? {
+        _comment: COMMENT,
+        _description: DESCRIPTION,
+        ...tokens,
+      }
+    : {_comment: COMMENT, ...tokens};
 };
