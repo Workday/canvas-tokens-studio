@@ -5,7 +5,7 @@ import {
   transformStudioTokensToSD,
 } from './files/utils.js';
 
-export const createExportTokens = () => {
+(() => {
   ['base', 'brand', 'sys'].forEach(type => {
     ['main', 'deprecated'].forEach(category => {
       const isDeprecated = category === 'deprecated';
@@ -37,4 +37,4 @@ export const createExportTokens = () => {
       }
     });
   });
-};
+})();
