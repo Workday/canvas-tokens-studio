@@ -25,10 +25,49 @@
       "type": "borderRadius",
       "description": "Primarily used for elevated and simple parent containers with greater amounts of content and UI. Dialogs, Modals, Bottom Sheets"
     },
+    "xl": {
+      "value": "{size.400}",
+      "type": "borderRadius",
+      "description": "Extra large rounding for prominent containers"
+    },
+    "xxl": {
+      "value": "{size.500}",
+      "type": "borderRadius",
+      "description": "Extra extra large rounding for cards and items"
+    },
+    "xxxl": {
+      "value": "{size.600}",
+      "type": "borderRadius",
+      "description": "Maximum rounding for modals and large containers"
+    },
     "full": {
       "value": "{size.75} * 100",
       "type": "borderRadius",
       "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)"
+    },
+    "card": {
+      "value": "{shape.xxl}",
+      "type": "borderRadius"
+    },
+    "action": {
+      "value": "{shape.full}",
+      "type": "borderRadius"
+    },
+    "input": {
+      "value": "{shape.md}",
+      "type": "borderRadius"
+    },
+    "pills": {
+      "value": "{shape.sm}",
+      "type": "borderRadius"
+    },
+    "modal": {
+      "value": "{shape.xxxl}",
+      "type": "borderRadius"
+    },
+    "item": {
+      "value": "{shape.xxl}",
+      "type": "borderRadius"
     }
   }
 }
