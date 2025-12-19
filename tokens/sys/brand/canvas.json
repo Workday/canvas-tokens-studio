@@ -216,87 +216,85 @@
         "type": "color"
       }
     },
-    "brand": {
-      "brand25": {
-        "value": "{base.palette.blue.25}",
-        "type": "color",
-        "description": ""
-      },
-      "brand50": {
-        "value": "{base.palette.blue.50}",
-        "type": "color",
-        "description": ""
-      },
-      "brand100": {
-        "value": "{base.palette.blue.100}",
-        "type": "color",
-        "description": ""
-      },
-      "brand200": {
-        "value": "{base.palette.blue.200}",
-        "type": "color",
-        "description": ""
-      },
-      "brand300": {
-        "value": "{base.palette.blue.300}",
-        "type": "color",
-        "description": ""
-      },
-      "brand400": {
-        "value": "{base.palette.blue.400}",
-        "type": "color",
-        "description": ""
-      },
-      "brand500": {
-        "value": "{base.palette.blue.500}",
-        "type": "color",
-        "description": ""
-      },
-      "brand600": {
-        "value": "{base.palette.blue.600}",
-        "type": "color",
-        "description": ""
-      },
-      "brand700": {
-        "value": "{base.palette.blue.700}",
-        "type": "color",
-        "description": ""
-      },
-      "brand800": {
-        "value": "{base.palette.blue.800}",
-        "type": "color",
-        "description": ""
-      },
-      "brand900": {
-        "value": "{base.palette.blue.900}",
-        "type": "color",
-        "description": ""
-      },
-      "brand950": {
-        "value": "{base.palette.blue.950}",
-        "type": "color",
-        "description": ""
-      },
-      "brand975": {
-        "value": "{base.palette.blue.975}",
-        "type": "color",
-        "description": ""
-      },
-      "brandA25": {
-        "value": "{base.palette.blue.A25}",
-        "type": "color",
-        "description": ""
-      },
-      "brandA50": {
-        "value": "{base.palette.blue.A50}",
-        "type": "color",
-        "description": ""
-      },
-      "brandA100": {
-        "value": "{base.palette.blue.A100}",
-        "type": "color",
-        "description": ""
-      }
+    "brand25": {
+      "value": "{base.palette.blue.25}",
+      "type": "color",
+      "description": ""
+    },
+    "brand50": {
+      "value": "{base.palette.blue.50}",
+      "type": "color",
+      "description": ""
+    },
+    "brand100": {
+      "value": "{base.palette.blue.100}",
+      "type": "color",
+      "description": ""
+    },
+    "brand200": {
+      "value": "{base.palette.blue.200}",
+      "type": "color",
+      "description": ""
+    },
+    "brand300": {
+      "value": "{base.palette.blue.300}",
+      "type": "color",
+      "description": ""
+    },
+    "brand400": {
+      "value": "{base.palette.blue.400}",
+      "type": "color",
+      "description": ""
+    },
+    "brand500": {
+      "value": "{base.palette.blue.500}",
+      "type": "color",
+      "description": ""
+    },
+    "brand600": {
+      "value": "{base.palette.blue.600}",
+      "type": "color",
+      "description": ""
+    },
+    "brand700": {
+      "value": "{base.palette.blue.700}",
+      "type": "color",
+      "description": ""
+    },
+    "brand800": {
+      "value": "{base.palette.blue.800}",
+      "type": "color",
+      "description": ""
+    },
+    "brand900": {
+      "value": "{base.palette.blue.900}",
+      "type": "color",
+      "description": ""
+    },
+    "brand950": {
+      "value": "{base.palette.blue.950}",
+      "type": "color",
+      "description": ""
+    },
+    "brand975": {
+      "value": "{base.palette.blue.975}",
+      "type": "color",
+      "description": ""
+    },
+    "brandA25": {
+      "value": "{base.palette.blue.A25}",
+      "type": "color",
+      "description": ""
+    },
+    "brandA50": {
+      "value": "{base.palette.blue.A50}",
+      "type": "color",
+      "description": ""
+    },
+    "brandA100": {
+      "value": "{base.palette.blue.A100}",
+      "type": "color",
+      "description": ""
     }
   }
 }
