@@ -92,10 +92,15 @@ const fillMdSwatch = (token, color, colorLabel) => {
  * // Returns: { "color": { "primary": { "value": "oklch(0.5,0.1,45,1)" } } }
  */
 const getContent = filename => {
-  const content = fs.readFileSync(`${filename}`, 'utf8');
-  if (content) {
-    return JSON.parse(content);
+  const checkFile = fs.existsSync(`${filename}`);
+  if (checkFile) {
+    const content = fs.readFileSync(`${filename}`, 'utf8');
+    if (content) {
+      return JSON.parse(content);
+    }
   }
+
+  return {};
 };
 
 /**
@@ -113,7 +118,7 @@ const getContent = filename => {
  * getOklchString(colorObj, { withComma: true }); // Returns: "oklch(0.5,0.1,45,1)"
  */
 const getOklchString = (value, {withComma = false} = {}) => {
-  if (value.components) {
+  if (value?.components) {
     return withComma
       ? `oklch(${value.components.join(',')},${value.alpha})`
       : `oklch(${value.components.join(' ')} / ${value.alpha})`;
@@ -201,7 +206,7 @@ const checkOklchColors = (newToken, baselineToken) => {
  */
 const resolvePath = (path, tokens) => {
   if (path) {
-    return path.split('.').reduce((acc, key) => acc[key], tokens);
+    return path.split('.').reduce((acc, key) => (key in acc ? acc[key] : {}), tokens);
   }
 };
 
@@ -216,18 +221,23 @@ const resolvePath = (path, tokens) => {
  * // Returns: { tokenName: "color.primary", color: "oklch(0.5,0.1,45,1)" }
  */
 const transformRef = (value, folder) => {
-  const baseDir = fs.readdirSync(folder, {recursive: true});
-  const baseTokens = baseDir.reduce((acc, file) => {
-    return {
-      ...acc,
-      ...getContent(`${folder}/${file}`),
-    };
-  }, {});
+  const baseDir = fs.readdirSync(folder, {recursive: true}).filter(file => file.endsWith('.json'));
+  const baseTokens = baseDir.reduce(
+    (acc, file) => {
+      return {
+        base: {
+          ...acc.base,
+          ...getContent(`${folder}/${file}`),
+        },
+      };
+    },
+    {base: {}}
+  );
   const tokenName = value.match(/{([^}]+)}/)?.[1];
   const tokenRef = resolvePath(tokenName, baseTokens);
   const alphaRef = resolvePath(value.match(/{([^}]+)}/g)?.[1]?.replace(/[{}]/g, ''), baseTokens);
 
-  if (alphaRef && tokenRef) {
+  if (alphaRef && tokenRef && tokenRef.value?.alpha) {
     tokenRef.value.alpha = alphaRef.value;
   }
 
