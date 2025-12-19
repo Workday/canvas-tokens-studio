@@ -32,106 +32,106 @@
     },
     "fg": {
       "default": {
-        "value": "{palette.neutral.800}",
+        "value": "{base.palette.neutral.800}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Value changed to {palette.neutral.A800}"
+        "deprecatedComment": "Value changed to {base.palette.neutral.A800}"
       },
       "strong": {
-        "value": "{palette.neutral.900}",
+        "value": "{base.palette.neutral.900}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Value changed to {palette.neutral.A900}"
+        "deprecatedComment": "Value changed to {base.palette.neutral.A900}"
       },
       "stronger": {
-        "value": "{palette.neutral.950}",
+        "value": "{base.palette.neutral.950}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Value changed to {palette.neutral.A950}"
+        "deprecatedComment": "Value changed to {base.palette.neutral.A950}"
       },
       "disabled": {
-        "value": "{palette.slate.400}",
+        "value": "{base.palette.slate.400}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Value changed to {palette.slate.A400}"
+        "deprecatedComment": "Value changed to {base.palette.slate.A400}"
       },
       "muted": {
         "default": {
-          "value": "{palette.slate.600}",
+          "value": "{base.palette.slate.600}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.slate.A600}"
+          "deprecatedComment": "Value changed to {base.palette.slate.A600}"
         },
         "strong": {
-          "value": "{palette.slate.700}",
+          "value": "{base.palette.slate.700}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.slate.A700}"
+          "deprecatedComment": "Value changed to {base.palette.slate.A700}"
         }
       },
       "contrast": {
         "default": {
-          "value": "{palette.neutral.900}",
+          "value": "{base.palette.neutral.900}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.neutral.A900}"
+          "deprecatedComment": "Value changed to {base.palette.neutral.A900}"
         },
         "strong": {
-          "value": "{palette.neutral.950}",
+          "value": "{base.palette.neutral.950}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.neutral.A950}"
+          "deprecatedComment": "Value changed to {base.palette.neutral.A950}"
         }
       },
       "caution": {
         "default": {
-          "value": "{palette.amber.900}",
+          "value": "{base.palette.amber.900}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.amber.650}"
+          "deprecatedComment": "Value changed to {base.palette.amber.650}"
         },
         "strong": {
-          "value": "{palette.amber.950}",
+          "value": "{base.palette.amber.950}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.amber.700}"
+          "deprecatedComment": "Value changed to {base.palette.amber.700}"
         }
       }
     },
     "border": {
       "input": {
         "default": {
-          "value": "{palette.slate.500}",
+          "value": "{base.palette.slate.500}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.slate.A500}"
+          "deprecatedComment": "Value changed to {base.palette.slate.A500}"
         },
         "strong": {
-          "value": "{palette.slate.700}",
+          "value": "{base.palette.slate.700}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.slate.A700}"
+          "deprecatedComment": "Value changed to {base.palette.slate.A700}"
         }
       },
       "contrast": {
         "default": {
-          "value": "{palette.neutral.900}",
+          "value": "{base.palette.neutral.900}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Value changed to {palette.neutral.A900}"
+          "deprecatedComment": "Value changed to {base.palette.neutral.A900}"
         }
       },
       "inverse": {
-        "value": "{palette.neutral.0}",
+        "value": "{base.palette.neutral.0}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Value changed to nested structure with {palette.white.A500} and {palette.white.A700}"
+        "deprecatedComment": "Value changed to nested structure with {base.palette.white.A500} and {base.palette.white.A700}"
       },
       "transparent": {
-        "value": "oklch({palette.neutral.0} / {opacity.0})",
+        "value": "oklch({base.palette.neutral.0} / {opacity.0})",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Value changed to {palette.neutral.A0}"
+        "deprecatedComment": "Value changed to {base.palette.neutral.A0}"
       }
     }
   }

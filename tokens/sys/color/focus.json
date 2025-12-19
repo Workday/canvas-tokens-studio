@@ -1,23 +1,23 @@
 {
   "focus": {
     "primary": {
-      "value": "{palette.blue.500}",
+      "value": "{base.palette.blue.500}",
       "type": "color"
     },
     "critical": {
-      "value": "{palette.red.500}",
+      "value": "{base.palette.red.500}",
       "type": "color"
     },
     "caution": {
-      "value": "{palette.amber.500}",
+      "value": "{base.palette.amber.500}",
       "type": "color"
     },
     "inverse": {
-      "value": "{palette.neutral.0}",
+      "value": "{base.palette.neutral.0}",
       "type": "color"
     },
     "contrast": {
-      "value": "{palette.neutral.A900}",
+      "value": "{base.palette.neutral.A900}",
       "type": "color"
     }
   }
