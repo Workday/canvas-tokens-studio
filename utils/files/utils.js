@@ -21,28 +21,19 @@ export const mapObjectContent = (fn, obj, key) => {
 };
 
 export const recursivelyCombineTwoObjects = (obj1, obj2) => {
-  // If either is not an object or is null, prefer obj2 (for values)
-  if (typeof obj1 !== 'object' || obj1 === null || typeof obj2 !== 'object' || obj2 === null) {
-    // If both are defined, prefer obj2
-    return obj2 !== undefined ? obj2 : obj1;
-  }
-
-  const result = {...obj1};
-
-  for (const key of Object.keys(obj2)) {
-    if (
-      obj1.hasOwnProperty(key) &&
-      typeof obj1[key] === 'object' &&
-      obj1[key] !== null &&
-      typeof obj2[key] === 'object' &&
-      obj2[key] !== null
-    ) {
-      result[key] = recursivelyCombineTwoObjects(obj1[key], obj2[key]);
+  return Object.keys(obj2).reduce((acc, key) => {
+    if (obj1[key]) {
+      acc[key] = {
+        ...acc[key],
+        ...obj1[key],
+        ...recursivelyCombineTwoObjects(obj1[key], obj2[key]),
+      };
     } else {
-      result[key] = obj2[key];
+      acc[key] = {...acc[key], ...obj2[key]};
     }
-  }
-  return result;
+
+    return acc;
+  }, {});
 };
 
 /**
@@ -161,6 +152,27 @@ export const updateColorObject = token => {
 };
 
 /**
+ * Utility function to resolve references in fallback and description fields.
+ * @param {{value: string, type?: string, description?: string, fallback?: string, deprecatedComment?: string}} token The token object to update
+ */
+export const updateFallbackAndDescription = token => {
+  // Resolve references in fallback field
+  if (token.fallback && typeof token.fallback === 'string') {
+    token.fallback = replaceReferences(token.fallback);
+  }
+
+  // Resolve references in description field
+  if (token.description && typeof token.description === 'string') {
+    token.description = replaceReferences(token.description);
+  }
+
+  // Resolve references in deprecatedComment field
+  if (token.deprecatedComment && typeof token.deprecatedComment === 'string') {
+    token.deprecatedComment = replaceReferences(token.deprecatedComment);
+  }
+};
+
+/**
  * Utility function to replace the description property of a token object with a comment property.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
@@ -245,6 +257,7 @@ export const updateToken = (token, key) => {
   updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);
+  updateFallbackAndDescription(token);
   replaceDescriptionByComment(token);
 
   return token;
