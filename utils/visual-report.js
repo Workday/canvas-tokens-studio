@@ -216,7 +216,13 @@ const resolvePath = (path, tokens) => {
  * // Returns: { tokenName: "color.primary", color: "oklch(0.5,0.1,45,1)" }
  */
 const transformRef = (value, folder) => {
-  const baseTokens = getContent(`${folder}/base.json`);
+  const baseDir = fs.readdirSync(folder, {recursive: true});
+  const baseTokens = baseDir.reduce((acc, file) => {
+    return {
+      ...acc,
+      ...getContent(`${folder}/${file}`),
+    };
+  }, {});
   const tokenName = value.match(/{([^}]+)}/)?.[1];
   const tokenRef = resolvePath(tokenName, baseTokens);
   const alphaRef = resolvePath(value.match(/{([^}]+)}/g)?.[1]?.replace(/[{}]/g, ''), baseTokens);
