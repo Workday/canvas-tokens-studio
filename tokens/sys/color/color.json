@@ -924,7 +924,7 @@
       },
       "caution": {
         "default": {
-          "value": "{palette.amber.650}",
+          "value": "{palette.amber.600}",
           "type": "color",
           "description": "Warning"
         },
