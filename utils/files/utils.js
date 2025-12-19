@@ -21,19 +21,28 @@ export const mapObjectContent = (fn, obj, key) => {
 };
 
 export const recursivelyCombineTwoObjects = (obj1, obj2) => {
-  return Object.keys(obj2).reduce((acc, key) => {
-    if (obj1[key]) {
-      acc[key] = {
-        ...acc[key],
-        ...obj1[key],
-        ...recursivelyCombineTwoObjects(obj1[key], obj2[key]),
-      };
-    } else {
-      acc[key] = {...acc[key], ...obj2[key]};
-    }
+  // If either is not an object or is null, prefer obj2 (for values)
+  if (typeof obj1 !== 'object' || obj1 === null || typeof obj2 !== 'object' || obj2 === null) {
+    // If both are defined, prefer obj2
+    return obj2 !== undefined ? obj2 : obj1;
+  }
 
-    return acc;
-  }, {});
+  const result = {...obj1};
+
+  for (const key of Object.keys(obj2)) {
+    if (
+      obj1.hasOwnProperty(key) &&
+      typeof obj1[key] === 'object' &&
+      obj1[key] !== null &&
+      typeof obj2[key] === 'object' &&
+      obj2[key] !== null
+    ) {
+      result[key] = recursivelyCombineTwoObjects(obj1[key], obj2[key]);
+    } else {
+      result[key] = obj2[key];
+    }
+  }
+  return result;
 };
 
 /**
