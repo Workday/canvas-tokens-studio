@@ -664,6 +664,7 @@ function generateReport(newTokensDir = 'tokens', baselineTokensDir = 'tokens-bas
   const newTokensPath = path.isAbsolute(newTokensDir)
     ? newTokensDir
     : path.resolve(process.cwd(), newTokensDir);
+
   const baselineTokensPath = path.isAbsolute(baselineTokensDir)
     ? baselineTokensDir
     : path.resolve(process.cwd(), baselineTokensDir);
