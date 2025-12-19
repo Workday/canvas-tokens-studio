@@ -438,7 +438,35 @@ const transformRef = (value, folder) => {
 };
 
 /**
+ * Normalizes token references by removing common prefixes that don't change the semantic meaning.
+ * Examples:
+ * - "base.palette.blue.100" -> "palette.blue.100"
+ * - "system.shape.xs" -> "shape.xs"
+ * - "sys.shape.xs" -> "shape.xs"
+ *
+ * @param {string} value - The token reference string or value
+ * @returns {string} Normalized value with prefixes removed
+ * @example
+ * normalizeTokenRef("{base.palette.blue.100}"); // Returns: "{palette.blue.100}"
+ * normalizeTokenRef("system.shape.xs"); // Returns: "shape.xs"
+ */
+const normalizeTokenRef = value => {
+  if (typeof value !== 'string') {
+    return value;
+  }
+
+  // Normalize references within curly braces: {base.palette.blue.100} -> {palette.blue.100}
+  // Also handle complex strings like: oklch({base.palette.neutral.1000} / {opacity.0})
+  return value.replace(/{([^}]+)}/g, (match, ref) => {
+    // Remove common prefixes: base., system., sys.
+    let normalized = ref.replace(/^(base\.|brand\.|system\.|sys\.)/, '');
+    return `{${normalized}}`;
+  });
+};
+
+/**
  * Compares two string-based color tokens and returns differences if they don't match.
+ * Ignores differences that are only due to reference prefix variations (e.g., base.palette vs palette).
  *
  * @param {Object} newToken - The new token object
  * @param {Object} baselineToken - The baseline token object to compare against
@@ -467,16 +495,20 @@ const checkStringColors = (newToken, baselineToken, newTokensDir, baselineTokens
 
   const {value: prevValue} = baselineToken;
 
-  if (newValue !== prevValue) {
-    const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, newTokensDir);
+  // Normalize both values to ignore prefix differences
+  const normalizedNewValue = normalizeTokenRef(newValue);
+  const normalizedPrevValue = normalizeTokenRef(prevValue);
 
-    const {tokenName: prevColorLabel, color: prevColor} = transformRef(
-      prevValue,
-      baselineTokensDir
-    );
-
-    return {newColor, newColorLabel, prevColor, prevColorLabel};
+  // If normalized values are the same, they're equivalent - no difference
+  if (normalizedNewValue === normalizedPrevValue) {
+    return null;
   }
+
+  // Values are different even after normalization, so show the difference
+  const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, newTokensDir);
+  const {tokenName: prevColorLabel, color: prevColor} = transformRef(prevValue, baselineTokensDir);
+
+  return {newColor, newColorLabel, prevColor, prevColorLabel};
 };
 
 /**
@@ -532,17 +564,27 @@ const diffTokens = (
         }
       }
     } else {
-      const newTokensValue = JSON.stringify(newTokens.value);
-      const baselineTokensValue = baselineTokens.value ? JSON.stringify(baselineTokens.value) : '';
+      // For non-color values, normalize string references before comparing
+      let newTokensValue = newTokens.value;
+      let baselineTokensValue = baselineTokens.value || '';
 
-      if (newTokensValue !== baselineTokensValue) {
-        return [
-          {
-            token,
-            newValue: newTokensValue,
-            prevValue: baselineTokensValue,
-          },
-        ];
+      // If values are strings, normalize them to ignore prefix differences
+      if (typeof newTokensValue === 'string' && typeof baselineTokensValue === 'string') {
+        const normalizedNew = normalizeTokenRef(newTokensValue);
+        const normalizedPrev = normalizeTokenRef(baselineTokensValue);
+
+        // If normalized values are the same, they're equivalent - no difference
+        if (normalizedNew === normalizedPrev) {
+          return [];
+        }
+      }
+
+      // Values are different, show the difference
+      const newTokensValueStr = JSON.stringify(newTokensValue);
+      const baselineTokensValueStr = JSON.stringify(baselineTokensValue);
+
+      if (newTokensValueStr !== baselineTokensValueStr) {
+        return [{token, newValue: newTokensValueStr, prevValue: baselineTokensValueStr}];
       }
     }
 
