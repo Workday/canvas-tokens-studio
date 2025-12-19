@@ -1020,7 +1020,7 @@
         }
       },
       "selected": {
-        "value": "{palette.blue.700}",
+        "value": "{brand.brand700}",
         "type": "color"
       }
     },
