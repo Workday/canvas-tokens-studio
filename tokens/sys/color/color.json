@@ -1090,7 +1090,7 @@
         }
       },
       "transparent": {
-        "value": "{palette.neutral.A0}",
+        "value": "{palette.white.A0}",
         "type": "color",
         "description": "Transparent"
       },
