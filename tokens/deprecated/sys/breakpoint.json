@@ -17,12 +17,6 @@
       "type": "dimension",
       "description": "Large screens, such as desktops.",
       "deprecated": true
-    },
-    "xl": {
-      "value": "{base.unit} * 360",
-      "type": "dimension",
-      "description": "Used for extra large screens, such as wide monitors and TVs.",
-      "deprecated": true
     }
   }
 }
