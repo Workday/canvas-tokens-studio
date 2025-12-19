@@ -34,7 +34,7 @@
         "type": "color"
       },
       "strong": {
-        "value": "{base.palette.blue.A50}",
+        "value": "{b}",
         "type": "color"
       }
     },
@@ -79,7 +79,7 @@
       }
     },
     "transparent": {
-      "value": "{base.palette.neutral.A0}",
+      "value": "{base.palette.white.A0}",
       "type": "color"
     },
     "overlay": {

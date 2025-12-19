@@ -9,7 +9,7 @@
       "type": "color"
     },
     "caution": {
-      "value": "{base.palette.amber.450}",
+      "value": "{base.palette.amber.400}",
       "type": "color"
     },
     "info": {
