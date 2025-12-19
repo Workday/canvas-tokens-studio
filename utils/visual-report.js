@@ -328,19 +328,20 @@ const transformRef = (value, folder) => {
       return target;
     }
     for (const key in source) {
+      const sourceValue = source[key];
       if (
-        source[key] &&
-        typeof source[key] === 'object' &&
-        !Array.isArray(source[key]) &&
-        !('value' in source[key]) &&
-        !('type' in source[key])
+        sourceValue &&
+        typeof sourceValue === 'object' &&
+        !Array.isArray(sourceValue) &&
+        !('value' in sourceValue) &&
+        !('type' in sourceValue)
       ) {
-        // It's a nested object, merge recursively
+        // It's a nested object (like palette.blue), merge recursively
         target[key] = target[key] || {};
-        deepMerge(target[key], source[key]);
+        deepMerge(target[key], sourceValue);
       } else {
-        // It's a leaf value or token object, assign directly
-        target[key] = source[key];
+        // It's a leaf value or token object (has value/type), assign directly
+        target[key] = sourceValue;
       }
     }
     return target;
@@ -353,20 +354,44 @@ const transformRef = (value, folder) => {
       return acc;
     }
 
-    const unwrapped = unwrapTokens(content);
-    if (!unwrapped || Object.keys(unwrapped).length === 0) {
-      return acc;
-    }
+    // Check if content has a single top-level key (wrapper)
+    const contentKeys = Object.keys(content);
+    const hasWrapper = contentKeys.length === 1 && !('value' in content) && !('type' in content);
 
-    // Merge unwrapped content at root level
-    deepMerge(acc, unwrapped);
+    if (hasWrapper) {
+      // Preserve the wrapper key structure (e.g., {"palette": {...}} stays as {"palette": {...}})
+      const wrapperKey = contentKeys[0];
+      const unwrapped = content[wrapperKey];
 
-    // If file is in base/ folder, also add it under "base" key for base.* references
-    if (file.startsWith('base/')) {
-      if (!acc.base) {
-        acc.base = {};
+      // Merge at root level with wrapper key preserved
+      if (!acc[wrapperKey]) {
+        acc[wrapperKey] = {};
       }
-      deepMerge(acc.base, unwrapped);
+      deepMerge(acc[wrapperKey], unwrapped);
+
+      // If file is in base/ folder, also add it under "base" key for base.* references
+      if (file.startsWith('base/')) {
+        if (!acc.base) {
+          acc.base = {};
+        }
+        if (!acc.base[wrapperKey]) {
+          acc.base[wrapperKey] = {};
+        }
+        deepMerge(acc.base[wrapperKey], unwrapped);
+      }
+    } else {
+      // No wrapper, merge directly (already unwrapped or flat structure)
+      const unwrapped = unwrapTokens(content);
+      if (unwrapped && Object.keys(unwrapped).length > 0) {
+        deepMerge(acc, unwrapped);
+
+        if (file.startsWith('base/')) {
+          if (!acc.base) {
+            acc.base = {};
+          }
+          deepMerge(acc.base, unwrapped);
+        }
+      }
     }
 
     return acc;
