@@ -152,6 +152,27 @@ export const updateColorObject = token => {
 };
 
 /**
+ * Utility function to resolve references in fallback and description fields.
+ * @param {{value: string, type?: string, description?: string, fallback?: string, deprecatedComment?: string}} token The token object to update
+ */
+export const updateFallbackAndDescription = token => {
+  // Resolve references in fallback field
+  if (token.fallback && typeof token.fallback === 'string') {
+    token.fallback = replaceReferences(token.fallback);
+  }
+
+  // Resolve references in description field
+  if (token.description && typeof token.description === 'string') {
+    token.description = replaceReferences(token.description);
+  }
+
+  // Resolve references in deprecatedComment field
+  if (token.deprecatedComment && typeof token.deprecatedComment === 'string') {
+    token.deprecatedComment = replaceReferences(token.deprecatedComment);
+  }
+};
+
+/**
  * Utility function to replace the description property of a token object with a comment property.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
@@ -236,6 +257,7 @@ export const updateToken = (token, key) => {
   updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);
+  updateFallbackAndDescription(token);
   replaceDescriptionByComment(token);
 
   return token;
