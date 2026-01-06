@@ -2,7 +2,7 @@
   "color": {
     "focus": {
       "primary": {
-        "value": "{brand.primary500}",
+        "value": "{brand.primary.500}",
         "type": "color"
       },
       "critical": {
@@ -25,7 +25,7 @@
     "bg": {
       "accent": {
         "primary": {
-          "value": "{brand.primary600}",
+          "value": "{brand.primary.600}",
           "type": "color"
         },
         "critical": {
@@ -73,7 +73,7 @@
           }
         },
         "action": {
-          "value": "{brand.primary600}",
+          "value": "{brand.primary.600}",
           "type": "color"
         }
       },
@@ -108,11 +108,11 @@
         },
         "primary": {
           "default": {
-            "value": "{brand.primary.light}",
+            "value": "{brand.primary.A25}",
             "type": "color"
           },
           "strong": {
-            "value": "{brand.primaryA50}",
+            "value": "{brand.primary.A50}",
             "type": "color"
           }
         },
@@ -215,7 +215,7 @@
           }
         },
         "selected": {
-          "value": "{brand.primaryA50}",
+          "value": "{brand.primary.A50}",
           "type": "color"
         },
         "loading": {
@@ -898,12 +898,12 @@
       },
       "primary": {
         "default": {
-          "value": "{brand.primary600}",
+          "value": "{brand.primary.600}",
           "type": "color",
           "description": "Links, Accent"
         },
         "strong": {
-          "value": "{brand.primary700}",
+          "value": "{brand.primary.700}",
           "type": "color",
           "description": "Links on hover"
         },
@@ -1020,7 +1020,7 @@
         }
       },
       "selected": {
-        "value": "{brand.primary700}",
+        "value": "{brand.primary.700}",
         "type": "color"
       }
     },
@@ -1065,7 +1065,7 @@
       },
       "primary": {
         "default": {
-          "value": "{brand.primary500}",
+          "value": "{brand.primary.500}",
           "type": "color",
           "description": "Brand, Focus"
         }
