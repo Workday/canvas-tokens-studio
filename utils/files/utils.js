@@ -347,7 +347,8 @@ const addComments = (tokens, isDeprecated) => {
 
   return isDeprecated
     ? {
-        $comment: `${COMMENT} ${DESCRIPTION}`,
+        _comment: `${COMMENT}`,
+        _description: `${DESCRIPTION}`,
         ...tokens,
       }
     : {$comment: COMMENT, ...tokens};
