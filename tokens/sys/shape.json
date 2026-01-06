@@ -44,30 +44,6 @@
       "value": "{size.75} * 100",
       "type": "borderRadius",
       "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)"
-    },
-    "card": {
-      "value": "{shape.xxl}",
-      "type": "borderRadius"
-    },
-    "action": {
-      "value": "{shape.full}",
-      "type": "borderRadius"
-    },
-    "input": {
-      "value": "{shape.md}",
-      "type": "borderRadius"
-    },
-    "pills": {
-      "value": "{shape.sm}",
-      "type": "borderRadius"
-    },
-    "modal": {
-      "value": "{shape.xxxl}",
-      "type": "borderRadius"
-    },
-    "item": {
-      "value": "{shape.xxl}",
-      "type": "borderRadius"
     }
   }
 }
