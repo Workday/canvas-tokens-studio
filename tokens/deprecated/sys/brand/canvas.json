@@ -1,0 +1,55 @@
+{
+  "brand": {
+    "primary": {
+      "base": {
+        "value": "{base.palette.blue.600}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.base with {brand.primary.600}",
+        "fallback": "{brand.primary.600}"
+      },
+      "lightest": {
+        "value": "{base.palette.blue.25}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.lightest with {brand.primary.25}",
+        "fallback": "{brand.primary.25}"
+      },
+      "darkest": {
+        "value": "{base.palette.blue.800}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.darkest with {brand.primary.800}",
+        "fallback": "{brand.primary.800}"
+      },
+      "dark": {
+        "value": "{base.palette.blue.700}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.dark with {brand.primary.700}",
+        "fallback": "{brand.primary.700}"
+      },
+      "accent": {
+        "value": "{base.palette.neutral.0}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.accent with {brand.primary.accent}",
+        "fallback": "{brand.primary.accent}"
+      },
+      "lighter": {
+        "value": "{base.palette.blue.50}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.lighter with {brand.primary.50}",
+        "fallback": "{brand.primary.50}"
+      },
+      "light": {
+        "value": "{base.palette.blue.200}",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace primary.light with {brand.primary.200}",
+        "fallback": "{brand.primary.200}"
+      }
+    }
+  }
+}

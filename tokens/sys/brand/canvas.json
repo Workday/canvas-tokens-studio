@@ -28,6 +28,86 @@
       "light": {
         "value": "{base.palette.blue.200}",
         "type": "color"
+      },
+      "25": {
+        "value": "{base.palette.blue.25}",
+        "type": "color",
+        "description": ""
+      },
+      "50": {
+        "value": "{base.palette.blue.50}",
+        "type": "color",
+        "description": ""
+      },
+      "100": {
+        "value": "{base.palette.blue.100}",
+        "type": "color",
+        "description": ""
+      },
+      "200": {
+        "value": "{base.palette.blue.200}",
+        "type": "color",
+        "description": ""
+      },
+      "300": {
+        "value": "{base.palette.blue.300}",
+        "type": "color",
+        "description": ""
+      },
+      "400": {
+        "value": "{base.palette.blue.400}",
+        "type": "color",
+        "description": ""
+      },
+      "500": {
+        "value": "{base.palette.blue.500}",
+        "type": "color",
+        "description": ""
+      },
+      "600": {
+        "value": "{base.palette.blue.600}",
+        "type": "color",
+        "description": ""
+      },
+      "700": {
+        "value": "{base.palette.blue.700}",
+        "type": "color",
+        "description": ""
+      },
+      "800": {
+        "value": "{base.palette.blue.800}",
+        "type": "color",
+        "description": ""
+      },
+      "900": {
+        "value": "{base.palette.blue.900}",
+        "type": "color",
+        "description": ""
+      },
+      "950": {
+        "value": "{base.palette.blue.950}",
+        "type": "color",
+        "description": ""
+      },
+      "975": {
+        "value": "{base.palette.blue.975}",
+        "type": "color",
+        "description": ""
+      },
+      "A25": {
+        "value": "{base.palette.blue.A25}",
+        "type": "color",
+        "description": ""
+      },
+      "A50": {
+        "value": "{base.palette.blue.A50}",
+        "type": "color",
+        "description": ""
+      },
+      "A100": {
+        "value": "{base.palette.blue.A100}",
+        "type": "color",
+        "description": ""
       }
     },
     "error": {
@@ -215,86 +295,6 @@
         "value": "linear-gradient(90deg, {brand.primary.base} 0%, {brand.primary.dark} 100%)",
         "type": "color"
       }
-    },
-    "primary25": {
-      "value": "{base.palette.blue.25}",
-      "type": "color",
-      "description": ""
-    },
-    "primary50": {
-      "value": "{base.palette.blue.50}",
-      "type": "color",
-      "description": ""
-    },
-    "primary100": {
-      "value": "{base.palette.blue.100}",
-      "type": "color",
-      "description": ""
-    },
-    "primary200": {
-      "value": "{base.palette.blue.200}",
-      "type": "color",
-      "description": ""
-    },
-    "primary300": {
-      "value": "{base.palette.blue.300}",
-      "type": "color",
-      "description": ""
-    },
-    "primary400": {
-      "value": "{base.palette.blue.400}",
-      "type": "color",
-      "description": ""
-    },
-    "primary500": {
-      "value": "{base.palette.blue.500}",
-      "type": "color",
-      "description": ""
-    },
-    "primary600": {
-      "value": "{base.palette.blue.600}",
-      "type": "color",
-      "description": ""
-    },
-    "primary700": {
-      "value": "{base.palette.blue.700}",
-      "type": "color",
-      "description": ""
-    },
-    "primary800": {
-      "value": "{base.palette.blue.800}",
-      "type": "color",
-      "description": ""
-    },
-    "primary900": {
-      "value": "{base.palette.blue.900}",
-      "type": "color",
-      "description": ""
-    },
-    "primary950": {
-      "value": "{base.palette.blue.950}",
-      "type": "color",
-      "description": ""
-    },
-    "primary975": {
-      "value": "{base.palette.blue.975}",
-      "type": "color",
-      "description": ""
-    },
-    "primaryA25": {
-      "value": "{base.palette.blue.A25}",
-      "type": "color",
-      "description": ""
-    },
-    "primaryA50": {
-      "value": "{base.palette.blue.A50}",
-      "type": "color",
-      "description": ""
-    },
-    "primaryA100": {
-      "value": "{base.palette.blue.A100}",
-      "type": "color",
-      "description": ""
     }
   }
 }
