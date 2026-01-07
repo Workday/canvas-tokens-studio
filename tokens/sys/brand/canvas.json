@@ -1,10 +1,6 @@
 {
   "brand": {
     "primary": {
-      "0": {
-        "value": "{palette.neutral.0}",
-        "type": "color"
-      },
       "25": {
         "value": "{palette.blue.25}",
         "type": "color",

@@ -223,7 +223,7 @@
           }
         },
         "action": {
-          "value": "{brand.primary.600}",
+          "value": "{brand.action.base}",
           "type": "color"
         }
       },
