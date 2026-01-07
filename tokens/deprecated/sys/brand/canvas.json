@@ -33,8 +33,8 @@
         "value": "{palette.neutral.0}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace primary.accent with {brand.primary.accent}",
-        "fallback": "{brand.primary.accent}"
+        "deprecatedComment": "replace primary.accent with {brand.primary.0}",
+        "fallback": "{brand.primary.0}"
       },
       "lighter": {
         "value": "{palette.blue.50}",
