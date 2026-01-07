@@ -1,0 +1,98 @@
+{
+  "duration": {
+    "instant": {
+      "snap": {
+        "value": "{motion.duration.50}",
+        "type": "number"
+      },
+      "base": {
+        "value": "{motion.duration.100}",
+        "type": "number"
+      },
+      "fluid": {
+        "value": "{motion.duration.150}",
+        "type": "number"
+      }
+    },
+    "small": {
+      "snap": {
+        "value": "{motion.duration.200}",
+        "type": "number"
+      },
+      "base": {
+        "value": "{motion.duration.250}",
+        "type": "number"
+      },
+      "fluid": {
+        "value": "{motion.duration.300}",
+        "type": "number"
+      }
+    },
+    "large": {
+      "snap": {
+        "value": "{motion.duration.350}",
+        "type": "number"
+      },
+      "base": {
+        "value": "{motion.duration.400}",
+        "type": "number"
+      },
+      "fluid": {
+        "value": "{motion.duration.450}",
+        "type": "number"
+      },
+      "emphasis": {
+        "value": "{motion.duration.500}",
+        "type": "number"
+      }
+    },
+    "extra-large": {
+      "snap": {
+        "value": "{motion.duration.600}",
+        "type": "number"
+      },
+      "base": {
+        "value": "{motion.duration.700}",
+        "type": "number"
+      },
+      "fluid": {
+        "value": "{motion.duration.800}",
+        "type": "number"
+      },
+      "emphasis": {
+        "value": "{motion.duration.1000}",
+        "type": "number"
+      }
+    }
+  },
+  "easing": {
+    "quick": {
+      "default": {
+        "value": "{motion.easing.curve-a-100}",
+        "type": "cubic-bezier"
+      },
+      "acceleration": {
+        "value": "{motion.easing.curve-a-200}",
+        "type": "cubic-bezier"
+      },
+      "deceleration": {
+        "value": "{motion.easing.curve-a-300}",
+        "type": "cubic-bezier"
+      }
+    },
+    "engaging": {
+      "default": {
+        "value": "{motion.easing.curve-b-100}",
+        "type": "cubic-bezier"
+      },
+      "acceleration": {
+        "value": "{motion.easing.curve-b-200}",
+        "type": "cubic-bezier"
+      },
+      "deceleration": {
+        "value": "{motion.easing.curve-b-300}",
+        "type": "cubic-bezier"
+      }
+    }
+  }
+}
