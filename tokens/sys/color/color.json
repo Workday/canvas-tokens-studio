@@ -40,7 +40,7 @@
           }
         },
         "navigation": {
-          "value": "{palette.neutral.0}",
+          "value": "{palette.white.A0}",
           "type": "color",
           "description": "Surface color for navigation elements, like the SidePanel or Top Nav Bar"
         },
