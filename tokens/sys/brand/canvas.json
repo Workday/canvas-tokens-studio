@@ -1,525 +1,525 @@
 {
-    "brand": {
-        "primary": {
-            "25": {
-                "value": "{palette.blue.25}",
-                "type": "color",
-                "description": ""
-            },
-            "50": {
-                "value": "{palette.blue.50}",
-                "type": "color",
-                "description": ""
-            },
-            "100": {
-                "value": "{palette.blue.100}",
-                "type": "color",
-                "description": ""
-            },
-            "200": {
-                "value": "{palette.blue.200}",
-                "type": "color",
-                "description": ""
-            },
-            "300": {
-                "value": "{palette.blue.300}",
-                "type": "color",
-                "description": ""
-            },
-            "400": {
-                "value": "{palette.blue.400}",
-                "type": "color",
-                "description": ""
-            },
-            "500": {
-                "value": "{palette.blue.500}",
-                "type": "color",
-                "description": ""
-            },
-            "600": {
-                "value": "{palette.blue.600}",
-                "type": "color",
-                "description": "Base primary color. Use fg.inverse on this."
-            },
-            "700": {
-                "value": "{palette.blue.700}",
-                "type": "color",
-                "description": ""
-            },
-            "800": {
-                "value": "{palette.blue.800}",
-                "type": "color",
-                "description": ""
-            },
-            "900": {
-                "value": "{palette.blue.900}",
-                "type": "color",
-                "description": ""
-            },
-            "950": {
-                "value": "{palette.blue.950}",
-                "type": "color",
-                "description": ""
-            },
-            "975": {
-                "value": "{palette.blue.975}",
-                "type": "color",
-                "description": ""
-            },
-            "A25": {
-                "value": "{palette.blue.A25}",
-                "type": "color"
-            },
-            "A50": {
-                "value": "{palette.blue.A50}",
-                "type": "color"
-            },
-            "A100": {
-                "value": "{palette.blue.A100}",
-                "type": "color"
-            },
-            "A200": {
-                "value": "{palette.blue.A200}",
-                "type": "color"
-            }
-        },
-        "critical": {
-            "25": {
-                "value": "{palette.red.25}",
-                "type": "color",
-                "description": ""
-            },
-            "50": {
-                "value": "{palette.red.50}",
-                "type": "color",
-                "description": ""
-            },
-            "100": {
-                "value": "{palette.red.100}",
-                "type": "color",
-                "description": ""
-            },
-            "200": {
-                "value": "{palette.red.200}",
-                "type": "color",
-                "description": ""
-            },
-            "300": {
-                "value": "{palette.red.300}",
-                "type": "color",
-                "description": ""
-            },
-            "400": {
-                "value": "{palette.red.400}",
-                "type": "color",
-                "description": ""
-            },
-            "500": {
-                "value": "{palette.red.500}",
-                "type": "color",
-                "description": ""
-            },
-            "600": {
-                "value": "{palette.red.600}",
-                "type": "color",
-                "description": "Base critical color. Use fg.inverse on this."
-            },
-            "700": {
-                "value": "{palette.red.700}",
-                "type": "color",
-                "description": ""
-            },
-            "800": {
-                "value": "{palette.red.800}",
-                "type": "color",
-                "description": ""
-            },
-            "900": {
-                "value": "{palette.red.900}",
-                "type": "color",
-                "description": ""
-            },
-            "950": {
-                "value": "{palette.red.950}",
-                "type": "color",
-                "description": ""
-            },
-            "975": {
-                "value": "{palette.red.975}",
-                "type": "color",
-                "description": ""
-            },
-            "A25": {
-                "value": "{palette.red.A25}",
-                "type": "color"
-            },
-            "A50": {
-                "value": "{palette.red.A50}",
-                "type": "color"
-            },
-            "A100": {
-                "value": "{palette.red.A100}",
-                "type": "color"
-            },
-            "A200": {
-                "value": "{palette.red.A200}",
-                "type": "color"
-            }
-        },
-        "caution": {
-            "25": {
-                "value": "{palette.amber.25}",
-                "type": "color",
-                "description": ""
-            },
-            "50": {
-                "value": "{palette.amber.50}",
-                "type": "color",
-                "description": ""
-            },
-            "100": {
-                "value": "{palette.amber.100}",
-                "type": "color",
-                "description": ""
-            },
-            "200": {
-                "value": "{palette.amber.200}",
-                "type": "color",
-                "description": ""
-            },
-            "300": {
-                "value": "{palette.amber.300}",
-                "type": "color",
-                "description": ""
-            },
-            "400": {
-                "value": "{palette.amber.400}",
-                "type": "color",
-                "description": "Base caution color (amber.400). Use fg.contrast on this."
-            },
-            "500": {
-                "value": "{palette.amber.500}",
-                "type": "color",
-                "description": ""
-            },
-            "600": {
-                "value": "{palette.amber.600}",
-                "type": "color",
-                "description": ""
-            },
-            "700": {
-                "value": "{palette.amber.700}",
-                "type": "color",
-                "description": ""
-            },
-            "800": {
-                "value": "{palette.amber.800}",
-                "type": "color",
-                "description": ""
-            },
-            "900": {
-                "value": "{palette.amber.900}",
-                "type": "color",
-                "description": ""
-            },
-            "950": {
-                "value": "{palette.amber.950}",
-                "type": "color",
-                "description": ""
-            },
-            "975": {
-                "value": "{palette.amber.975}",
-                "type": "color",
-                "description": ""
-            },
-            "A25": {
-                "value": "{palette.amber.A25}",
-                "type": "color"
-            },
-            "A50": {
-                "value": "{palette.amber.A50}",
-                "type": "color"
-            },
-            "A100": {
-                "value": "{palette.amber.A100}",
-                "type": "color"
-            },
-            "A200": {
-                "value": "{palette.amber.A200}",
-                "type": "color"
-            }
-        },
-        "success": {
-            "25": {
-                "value": "{palette.green.25}",
-                "type": "color",
-                "description": ""
-            },
-            "50": {
-                "value": "{palette.green.50}",
-                "type": "color",
-                "description": ""
-            },
-            "100": {
-                "value": "{palette.green.100}",
-                "type": "color",
-                "description": ""
-            },
-            "200": {
-                "value": "{palette.green.200}",
-                "type": "color",
-                "description": ""
-            },
-            "300": {
-                "value": "{palette.green.300}",
-                "type": "color",
-                "description": ""
-            },
-            "400": {
-                "value": "{palette.green.400}",
-                "type": "color",
-                "description": ""
-            },
-            "500": {
-                "value": "{palette.green.500}",
-                "type": "color",
-                "description": ""
-            },
-            "600": {
-                "value": "{palette.green.600}",
-                "type": "color",
-                "description": "Base success color. Use fg.inverse on this."
-            },
-            "700": {
-                "value": "{palette.green.700}",
-                "type": "color",
-                "description": ""
-            },
-            "800": {
-                "value": "{palette.green.800}",
-                "type": "color",
-                "description": ""
-            },
-            "900": {
-                "value": "{palette.green.900}",
-                "type": "color",
-                "description": ""
-            },
-            "950": {
-                "value": "{palette.green.950}",
-                "type": "color",
-                "description": ""
-            },
-            "975": {
-                "value": "{palette.green.975}",
-                "type": "color",
-                "description": ""
-            },
-            "A25": {
-                "value": "{palette.green.A25}",
-                "type": "color"
-            },
-            "A50": {
-                "value": "{palette.green.A50}",
-                "type": "color"
-            },
-            "A100": {
-                "value": "{palette.green.A100}",
-                "type": "color"
-            },
-            "A200": {
-                "value": "{palette.green.A200}",
-                "type": "color"
-            }
-        },
-        "neutral": {
-            "25": {
-                "value": "{palette.slate.25}",
-                "type": "color",
-                "description": ""
-            },
-            "50": {
-                "value": "{palette.slate.50}",
-                "type": "color",
-                "description": ""
-            },
-            "100": {
-                "value": "{palette.slate.100}",
-                "type": "color",
-                "description": ""
-            },
-            "200": {
-                "value": "{palette.slate.200}",
-                "type": "color",
-                "description": ""
-            },
-            "300": {
-                "value": "{palette.slate.300}",
-                "type": "color",
-                "description": ""
-            },
-            "400": {
-                "value": "{palette.slate.400}",
-                "type": "color",
-                "description": ""
-            },
-            "500": {
-                "value": "{palette.slate.500}",
-                "type": "color",
-                "description": ""
-            },
-            "600": {
-                "value": "{palette.slate.600}",
-                "type": "color",
-                "description": ""
-            },
-            "700": {
-                "value": "{palette.slate.700}",
-                "type": "color",
-                "description": ""
-            },
-            "800": {
-                "value": "{palette.slate.800}",
-                "type": "color",
-                "description": ""
-            },
-            "900": {
-                "value": "{palette.slate.900}",
-                "type": "color",
-                "description": ""
-            },
-            "950": {
-                "value": "{palette.slate.950}",
-                "type": "color",
-                "description": ""
-            },
-            "975": {
-                "value": "{palette.slate.975}",
-                "type": "color",
-                "description": ""
-            },
-            "A0": {
-                "value": "{palette.slate.A0}",
-                "type": "color"
-            },
-            "A25": {
-                "value": "{palette.slate.A25}",
-                "type": "color"
-            },
-            "A50": {
-                "value": "{palette.slate.A50}",
-                "type": "color"
-            },
-            "A100": {
-                "value": "{palette.slate.A100}",
-                "type": "color"
-            },
-            "A200": {
-                "value": "{palette.slate.A200}",
-                "type": "color"
-            },
-            "A300": {
-                "value": "{palette.slate.A300}",
-                "type": "color"
-            },
-            "A400": {
-                "value": "{palette.slate.A400}",
-                "type": "color"
-            },
-            "A500": {
-                "value": "{palette.slate.A500}",
-                "type": "color"
-            },
-            "A600": {
-                "value": "{palette.slate.A600}",
-                "type": "color"
-            },
-            "A700": {
-                "value": "{palette.slate.A700}",
-                "type": "color"
-            },
-            "A800": {
-                "value": "{palette.slate.A800}",
-                "type": "color"
-            },
-            "A900": {
-                "value": "{palette.slate.A900}",
-                "type": "color"
-            },
-            "A950": {
-                "value": "{palette.slate.A950}",
-                "type": "color"
-            },
-            "A975": {
-                "value": "{palette.slate.A975}",
-                "type": "color"
-            }
-        },
-        "common": {
-            "focus-outline": {
-                "value": "{palette.blue.500}",
-                "type": "color"
-            },
-            "error-inner": {
-                "value": "{palette.red.500}",
-                "type": "color"
-            },
-            "alert-inner": {
-                "value": "{palette.amber.400}",
-                "type": "color"
-            },
-            "alert-outer": {
-                "value": "{palette.amber.500}",
-                "type": "color"
-            }
-        },
-        "action": {
-            "base": {
-                "value": "{palette.blue.600}",
-                "type": "color",
-                "description": "Base action color"
-            },
-            "lightest": {
-                "value": "{palette.blue.25}",
-                "type": "color",
-                "description": "Lightest action color"
-            },
-            "light": {
-                "value": "{palette.blue.200}",
-                "type": "color",
-                "description": "Light action color"
-            },
-            "darkest": {
-                "value": "{palette.blue.950}",
-                "type": "color",
-                "description": "Darkest action color"
-            },
-            "dark": {
-                "value": "{palette.blue.700}",
-                "type": "color",
-                "description": "Dark action color"
-            },
-            "accent": {
-                "value": "{palette.neutral.0}",
-                "type": "color",
-                "description": "Foreground color in actions"
-            },
-            "darker": {
-                "value": "{palette.blue.800}",
-                "type": "color",
-                "description": "Dark action color"
-            },
-            "lighter": {
-                "value": "{palette.blue.50}",
-                "type": "color",
-                "description": "Lightest action color"
-            }
-        },
-        "gradient": {
-            "primary": {
-                "value": "linear-gradient(90deg, {brand.primary.base} 0%, {brand.primary.dark} 100%)",
-                "type": "color"
-            }
-        }
+  "brand": {
+    "primary": {
+      "25": {
+        "value": "{palette.blue.25}",
+        "type": "color",
+        "description": ""
+      },
+      "50": {
+        "value": "{palette.blue.50}",
+        "type": "color",
+        "description": ""
+      },
+      "100": {
+        "value": "{palette.blue.100}",
+        "type": "color",
+        "description": ""
+      },
+      "200": {
+        "value": "{palette.blue.200}",
+        "type": "color",
+        "description": ""
+      },
+      "300": {
+        "value": "{palette.blue.300}",
+        "type": "color",
+        "description": ""
+      },
+      "400": {
+        "value": "{palette.blue.400}",
+        "type": "color",
+        "description": ""
+      },
+      "500": {
+        "value": "{palette.blue.500}",
+        "type": "color",
+        "description": ""
+      },
+      "600": {
+        "value": "{palette.blue.600}",
+        "type": "color",
+        "description": "Base primary color. Use fg.inverse on this."
+      },
+      "700": {
+        "value": "{palette.blue.700}",
+        "type": "color",
+        "description": ""
+      },
+      "800": {
+        "value": "{palette.blue.800}",
+        "type": "color",
+        "description": ""
+      },
+      "900": {
+        "value": "{palette.blue.900}",
+        "type": "color",
+        "description": ""
+      },
+      "950": {
+        "value": "{palette.blue.950}",
+        "type": "color",
+        "description": ""
+      },
+      "975": {
+        "value": "{palette.blue.975}",
+        "type": "color",
+        "description": ""
+      },
+      "A25": {
+        "value": "{palette.blue.A25}",
+        "type": "color"
+      },
+      "A50": {
+        "value": "{palette.blue.A50}",
+        "type": "color"
+      },
+      "A100": {
+        "value": "{palette.blue.A100}",
+        "type": "color"
+      },
+      "A200": {
+        "value": "{palette.blue.A200}",
+        "type": "color"
+      }
+    },
+    "critical": {
+      "25": {
+        "value": "{palette.red.25}",
+        "type": "color",
+        "description": ""
+      },
+      "50": {
+        "value": "{palette.red.50}",
+        "type": "color",
+        "description": ""
+      },
+      "100": {
+        "value": "{palette.red.100}",
+        "type": "color",
+        "description": ""
+      },
+      "200": {
+        "value": "{palette.red.200}",
+        "type": "color",
+        "description": ""
+      },
+      "300": {
+        "value": "{palette.red.300}",
+        "type": "color",
+        "description": ""
+      },
+      "400": {
+        "value": "{palette.red.400}",
+        "type": "color",
+        "description": ""
+      },
+      "500": {
+        "value": "{palette.red.500}",
+        "type": "color",
+        "description": ""
+      },
+      "600": {
+        "value": "{palette.red.600}",
+        "type": "color",
+        "description": "Base critical color. Use fg.inverse on this."
+      },
+      "700": {
+        "value": "{palette.red.700}",
+        "type": "color",
+        "description": ""
+      },
+      "800": {
+        "value": "{palette.red.800}",
+        "type": "color",
+        "description": ""
+      },
+      "900": {
+        "value": "{palette.red.900}",
+        "type": "color",
+        "description": ""
+      },
+      "950": {
+        "value": "{palette.red.950}",
+        "type": "color",
+        "description": ""
+      },
+      "975": {
+        "value": "{palette.red.975}",
+        "type": "color",
+        "description": ""
+      },
+      "A25": {
+        "value": "{palette.red.A25}",
+        "type": "color"
+      },
+      "A50": {
+        "value": "{palette.red.A50}",
+        "type": "color"
+      },
+      "A100": {
+        "value": "{palette.red.A100}",
+        "type": "color"
+      },
+      "A200": {
+        "value": "{palette.red.A200}",
+        "type": "color"
+      }
+    },
+    "caution": {
+      "25": {
+        "value": "{palette.amber.25}",
+        "type": "color",
+        "description": ""
+      },
+      "50": {
+        "value": "{palette.amber.50}",
+        "type": "color",
+        "description": ""
+      },
+      "100": {
+        "value": "{palette.amber.100}",
+        "type": "color",
+        "description": ""
+      },
+      "200": {
+        "value": "{palette.amber.200}",
+        "type": "color",
+        "description": ""
+      },
+      "300": {
+        "value": "{palette.amber.300}",
+        "type": "color",
+        "description": ""
+      },
+      "400": {
+        "value": "{palette.amber.400}",
+        "type": "color",
+        "description": "Base caution color (amber.400). Use fg.contrast on this."
+      },
+      "500": {
+        "value": "{palette.amber.500}",
+        "type": "color",
+        "description": ""
+      },
+      "600": {
+        "value": "{palette.amber.600}",
+        "type": "color",
+        "description": ""
+      },
+      "700": {
+        "value": "{palette.amber.700}",
+        "type": "color",
+        "description": ""
+      },
+      "800": {
+        "value": "{palette.amber.800}",
+        "type": "color",
+        "description": ""
+      },
+      "900": {
+        "value": "{palette.amber.900}",
+        "type": "color",
+        "description": ""
+      },
+      "950": {
+        "value": "{palette.amber.950}",
+        "type": "color",
+        "description": ""
+      },
+      "975": {
+        "value": "{palette.amber.975}",
+        "type": "color",
+        "description": ""
+      },
+      "A25": {
+        "value": "{palette.amber.A25}",
+        "type": "color"
+      },
+      "A50": {
+        "value": "{palette.amber.A50}",
+        "type": "color"
+      },
+      "A100": {
+        "value": "{palette.amber.A100}",
+        "type": "color"
+      },
+      "A200": {
+        "value": "{palette.amber.A200}",
+        "type": "color"
+      }
+    },
+    "success": {
+      "25": {
+        "value": "{palette.green.25}",
+        "type": "color",
+        "description": ""
+      },
+      "50": {
+        "value": "{palette.green.50}",
+        "type": "color",
+        "description": ""
+      },
+      "100": {
+        "value": "{palette.green.100}",
+        "type": "color",
+        "description": ""
+      },
+      "200": {
+        "value": "{palette.green.200}",
+        "type": "color",
+        "description": ""
+      },
+      "300": {
+        "value": "{palette.green.300}",
+        "type": "color",
+        "description": ""
+      },
+      "400": {
+        "value": "{palette.green.400}",
+        "type": "color",
+        "description": ""
+      },
+      "500": {
+        "value": "{palette.green.500}",
+        "type": "color",
+        "description": ""
+      },
+      "600": {
+        "value": "{palette.green.600}",
+        "type": "color",
+        "description": "Base success color. Use fg.inverse on this."
+      },
+      "700": {
+        "value": "{palette.green.700}",
+        "type": "color",
+        "description": ""
+      },
+      "800": {
+        "value": "{palette.green.800}",
+        "type": "color",
+        "description": ""
+      },
+      "900": {
+        "value": "{palette.green.900}",
+        "type": "color",
+        "description": ""
+      },
+      "950": {
+        "value": "{palette.green.950}",
+        "type": "color",
+        "description": ""
+      },
+      "975": {
+        "value": "{palette.green.975}",
+        "type": "color",
+        "description": ""
+      },
+      "A25": {
+        "value": "{palette.green.A25}",
+        "type": "color"
+      },
+      "A50": {
+        "value": "{palette.green.A50}",
+        "type": "color"
+      },
+      "A100": {
+        "value": "{palette.green.A100}",
+        "type": "color"
+      },
+      "A200": {
+        "value": "{palette.green.A200}",
+        "type": "color"
+      }
+    },
+    "neutral": {
+      "25": {
+        "value": "{palette.slate.25}",
+        "type": "color",
+        "description": ""
+      },
+      "50": {
+        "value": "{palette.slate.50}",
+        "type": "color",
+        "description": ""
+      },
+      "100": {
+        "value": "{palette.slate.100}",
+        "type": "color",
+        "description": ""
+      },
+      "200": {
+        "value": "{palette.slate.200}",
+        "type": "color",
+        "description": ""
+      },
+      "300": {
+        "value": "{palette.slate.300}",
+        "type": "color",
+        "description": ""
+      },
+      "400": {
+        "value": "{palette.slate.400}",
+        "type": "color",
+        "description": ""
+      },
+      "500": {
+        "value": "{palette.slate.500}",
+        "type": "color",
+        "description": ""
+      },
+      "600": {
+        "value": "{palette.slate.600}",
+        "type": "color",
+        "description": ""
+      },
+      "700": {
+        "value": "{palette.slate.700}",
+        "type": "color",
+        "description": ""
+      },
+      "800": {
+        "value": "{palette.slate.800}",
+        "type": "color",
+        "description": ""
+      },
+      "900": {
+        "value": "{palette.slate.900}",
+        "type": "color",
+        "description": ""
+      },
+      "950": {
+        "value": "{palette.slate.950}",
+        "type": "color",
+        "description": ""
+      },
+      "975": {
+        "value": "{palette.slate.975}",
+        "type": "color",
+        "description": ""
+      },
+      "A0": {
+        "value": "{palette.slate.A0}",
+        "type": "color"
+      },
+      "A25": {
+        "value": "{palette.slate.A25}",
+        "type": "color"
+      },
+      "A50": {
+        "value": "{palette.slate.A50}",
+        "type": "color"
+      },
+      "A100": {
+        "value": "{palette.slate.A100}",
+        "type": "color"
+      },
+      "A200": {
+        "value": "{palette.slate.A200}",
+        "type": "color"
+      },
+      "A300": {
+        "value": "{palette.slate.A300}",
+        "type": "color"
+      },
+      "A400": {
+        "value": "{palette.slate.A400}",
+        "type": "color"
+      },
+      "A500": {
+        "value": "{palette.slate.A500}",
+        "type": "color"
+      },
+      "A600": {
+        "value": "{palette.slate.A600}",
+        "type": "color"
+      },
+      "A700": {
+        "value": "{palette.slate.A700}",
+        "type": "color"
+      },
+      "A800": {
+        "value": "{palette.slate.A800}",
+        "type": "color"
+      },
+      "A900": {
+        "value": "{palette.slate.A900}",
+        "type": "color"
+      },
+      "A950": {
+        "value": "{palette.slate.A950}",
+        "type": "color"
+      },
+      "A975": {
+        "value": "{palette.slate.A975}",
+        "type": "color"
+      }
+    },
+    "common": {
+      "focus-outline": {
+        "value": "{brand.primary.500}",
+        "type": "color"
+      },
+      "critical": {
+        "value": "{brand.critical.500}",
+        "type": "color"
+      },
+      "caution-inner": {
+        "value": "{brand.caution.400}",
+        "type": "color"
+      },
+      "caution-outer": {
+        "value": "{brand.caution.500}",
+        "type": "color"
+      }
+    },
+    "action": {
+      "base": {
+        "value": "{palette.blue.600}",
+        "type": "color",
+        "description": "Base action color"
+      },
+      "lightest": {
+        "value": "{palette.blue.25}",
+        "type": "color",
+        "description": "Lightest action color"
+      },
+      "light": {
+        "value": "{palette.blue.200}",
+        "type": "color",
+        "description": "Light action color"
+      },
+      "darkest": {
+        "value": "{palette.blue.950}",
+        "type": "color",
+        "description": "Darkest action color"
+      },
+      "dark": {
+        "value": "{palette.blue.700}",
+        "type": "color",
+        "description": "Dark action color"
+      },
+      "accent": {
+        "value": "{palette.neutral.0}",
+        "type": "color",
+        "description": "Foreground color in actions"
+      },
+      "darker": {
+        "value": "{palette.blue.800}",
+        "type": "color",
+        "description": "Dark action color"
+      },
+      "lighter": {
+        "value": "{palette.blue.50}",
+        "type": "color",
+        "description": "Lightest action color"
+      }
+    },
+    "gradient": {
+      "primary": {
+        "value": "linear-gradient(90deg, {brand.primary.base} 0%, {brand.primary.dark} 100%)",
+        "type": "color"
+      }
     }
+  }
 }
