@@ -456,7 +456,7 @@
       }
     },
     "common": {
-      "focus-outline": {
+      "focus": {
         "value": "{brand.primary.500}",
         "type": "color"
       },

@@ -260,8 +260,8 @@
         "value": "{palette.blue.500}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace focus-outline with {brand.common.focus-outline}",
-        "fallback": "{brand.common.focus-outline}"
+        "deprecatedComment": "replace focus-outline with {brand.common.focus}",
+        "fallback": "{brand.common.focus}"
       },
       "error-inner": {
         "value": "{palette.red.500}",
