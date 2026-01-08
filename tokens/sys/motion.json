@@ -14,7 +14,7 @@
         "type": "number"
       }
     },
-    "small": {
+    "sm": {
       "snap": {
         "value": "{motion.duration.200}",
         "type": "number"
@@ -28,7 +28,7 @@
         "type": "number"
       }
     },
-    "large": {
+    "lg": {
       "snap": {
         "value": "{motion.duration.350}",
         "type": "number"
@@ -46,7 +46,7 @@
         "type": "number"
       }
     },
-    "extra-large": {
+    "xl": {
       "snap": {
         "value": "{motion.duration.600}",
         "type": "number"
