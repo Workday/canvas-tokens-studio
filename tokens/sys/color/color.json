@@ -1,18 +1,109 @@
 {
   "color": {
+    "brand": {
+      "focus": {
+        "primary": {
+          "value": "{brand.primary.500}",
+          "type": "color"
+        },
+        "critical": {
+          "value": "{brand.critical.500}",
+          "type": "color"
+        },
+        "caution": {
+          "value": "{brand.caution.500}",
+          "type": "color"
+        }
+      },
+      "bg": {
+        "surface": {
+          "primary": {
+            "default": {
+              "value": "{brand.primary.A25}",
+              "type": "color"
+            },
+            "strong": {
+              "value": "{brand.primary.A50}",
+              "type": "color"
+            }
+          },
+          "selected": {
+            "value": "{brand.primary.A50}",
+            "type": "color"
+          }
+        },
+        "accent": {
+          "primary": {
+            "value": "{brand.primary.600}",
+            "type": "color"
+          },
+          "action": {
+            "value": "{brand.action.base}",
+            "type": "color"
+          }
+        },
+        "primary": {
+          "softest": {
+            "value": "{brand.primary.25}",
+            "type": "color",
+            "description": "Surface"
+          },
+          "softer": {
+            "value": "{brand.primary.50}",
+            "type": "color",
+            "description": "Select"
+          },
+          "soft": {
+            "value": "{brand.primary.100}",
+            "type": "color",
+            "description": "Primary disabled"
+          },
+          "default": {
+            "value": "{brand.primary.600}",
+            "type": "color",
+            "description": "Primary brand color"
+          },
+          "strong": {
+            "value": "{brand.primary.700}",
+            "type": "color",
+            "description": "Brand hover background"
+          },
+          "stronger": {
+            "value": "{brand.primary.800}",
+            "type": "color",
+            "description": "Brand active background"
+          }
+        }
+      },
+      "fg": {
+        "primary": {
+          "default": {
+            "value": "{brand.primary.600}",
+            "type": "color",
+            "description": "Links, Accent"
+          },
+          "strong": {
+            "value": "{brand.primary.700}",
+            "type": "color",
+            "description": "Links on hover"
+          }
+        },
+        "selected": {
+          "value": "{brand.primary.700}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "primary": {
+          "default": {
+            "value": "{brand.primary.500}",
+            "type": "color",
+            "description": "Brand, Focus"
+          }
+        }
+      }
+    },
     "focus": {
-      "primary": {
-        "value": "{brand.primary.500}",
-        "type": "color"
-      },
-      "critical": {
-        "value": "{palette.red.500}",
-        "type": "color"
-      },
-      "caution": {
-        "value": "{palette.amber.500}",
-        "type": "color"
-      },
       "inverse": {
         "value": "{palette.neutral.0}",
         "type": "color"
@@ -51,16 +142,6 @@
         "raised": {
           "value": "{palette.slate.A25}",
           "type": "color"
-        },
-        "primary": {
-          "default": {
-            "value": "{brand.primary.A25}",
-            "type": "color"
-          },
-          "strong": {
-            "value": "{brand.primary.A50}",
-            "type": "color"
-          }
         },
         "critical": {
           "default": {
@@ -160,10 +241,6 @@
             "type": "color"
           }
         },
-        "selected": {
-          "value": "{brand.primary.A50}",
-          "type": "color"
-        },
         "loading": {
           "value": "{palette.slate.A200}",
           "type": "color"
@@ -174,10 +251,6 @@
         }
       },
       "accent": {
-        "primary": {
-          "value": "{brand.primary.600}",
-          "type": "color"
-        },
         "critical": {
           "value": "{palette.red.600}",
           "type": "color"
@@ -221,10 +294,6 @@
             "value": "{palette.slate.400}",
             "type": "color"
           }
-        },
-        "action": {
-          "value": "{brand.action.base}",
-          "type": "color"
         }
       },
       "default": {
@@ -314,38 +383,6 @@
           "value": "{palette.neutral.950}",
           "type": "color",
           "description": "Contrast backgrounds, like Secondary Buttons"
-        }
-      },
-      "primary": {
-        "softest": {
-          "value": "{brand.primary.25}",
-          "type": "color",
-          "description": "Surface"
-        },
-        "softer": {
-          "value": "{brand.primary.50}",
-          "type": "color",
-          "description": "Select"
-        },
-        "soft": {
-          "value": "{brand.primary.100}",
-          "type": "color",
-          "description": "Primary disabled"
-        },
-        "default": {
-          "value": "{brand.primary.600}",
-          "type": "color",
-          "description": "Primary brand color"
-        },
-        "strong": {
-          "value": "{brand.primary.700}",
-          "type": "color",
-          "description": "Brand hover background"
-        },
-        "stronger": {
-          "value": "{brand.primary.800}",
-          "type": "color",
-          "description": "Brand active background"
         }
       },
       "positive": {
@@ -485,7 +522,7 @@
         "default": {
           "value": "{palette.blue.600}",
           "type": "color",
-          "description": "Primary brand color"
+          "description": "Info color"
         },
         "strong": {
           "value": "{palette.blue.700}",
@@ -897,16 +934,6 @@
         }
       },
       "primary": {
-        "default": {
-          "value": "{brand.primary.600}",
-          "type": "color",
-          "description": "Links, Accent"
-        },
-        "strong": {
-          "value": "{brand.primary.700}",
-          "type": "color",
-          "description": "Links on hover"
-        },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color"
@@ -1018,10 +1045,6 @@
           "type": "color",
           "description": "Error"
         }
-      },
-      "selected": {
-        "value": "{brand.primary.700}",
-        "type": "color"
       }
     },
     "border": {
@@ -1061,13 +1084,6 @@
           "value": "{palette.neutral.950}",
           "type": "color",
           "description": "Secondary Button Hover"
-        }
-      },
-      "primary": {
-        "default": {
-          "value": "{brand.primary.500}",
-          "type": "color",
-          "description": "Brand, Focus"
         }
       },
       "critical": {
