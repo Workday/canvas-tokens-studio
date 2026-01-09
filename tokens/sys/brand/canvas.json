@@ -249,7 +249,7 @@
         "type": "color"
       }
     },
-    "success": {
+    "positive": {
       "25": {
         "value": "{palette.green.25}",
         "type": "color",
