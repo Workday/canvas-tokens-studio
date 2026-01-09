@@ -30,7 +30,7 @@
         "fallback": "{brand.primary.700}"
       },
       "accent": {
-        "value": "{palette.neutral.0}",
+        "value": "{sys.color.fg.inverse}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.accent with {sys.color.fg.inverse}",
@@ -234,7 +234,7 @@
         "fallback": "{brand.neutral.800}"
       },
       "accent": {
-        "value": "{palette.neutral.0}",
+        "value": "{sys.color.fg.inverse}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.accent with {sys.color.fg.inverse}",

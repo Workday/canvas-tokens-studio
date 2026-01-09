@@ -510,7 +510,7 @@
         "type": "color"
       },
       "transparent": {
-        "value": "{palette.black.A0}",
+        "value": "{palette.neutral.A0}",
         "type": "color"
       }
     },

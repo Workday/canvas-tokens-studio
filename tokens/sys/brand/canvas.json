@@ -398,10 +398,6 @@
         "type": "color",
         "description": ""
       },
-      "A0": {
-        "value": "{palette.slate.A0}",
-        "type": "color"
-      },
       "A25": {
         "value": "{palette.slate.A25}",
         "type": "color"
