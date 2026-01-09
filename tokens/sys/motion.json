@@ -1,73 +1,65 @@
 {
   "duration": {
-    "instant": {
-      "snap": {
+      "50": {
         "value": "{motion.duration.50}",
         "type": "number"
       },
-      "base": {
+      "100": {
         "value": "{motion.duration.100}",
         "type": "number"
       },
-      "fluid": {
+      "150": {
         "value": "{motion.duration.150}",
         "type": "number"
       }
-    },
-    "sm": {
-      "snap": {
+      "200": {
         "value": "{motion.duration.200}",
         "type": "number"
       },
-      "base": {
+      "250": {
         "value": "{motion.duration.250}",
         "type": "number"
       },
-      "fluid": {
+      "300": {
         "value": "{motion.duration.300}",
         "type": "number"
-      }
-    },
-    "lg": {
-      "snap": {
+      },
+      "350": {
         "value": "{motion.duration.350}",
         "type": "number"
       },
-      "base": {
+      "400": {
         "value": "{motion.duration.400}",
         "type": "number"
       },
-      "fluid": {
+      "450": {
         "value": "{motion.duration.450}",
         "type": "number"
       },
-      "emphasis": {
+      "500": {
         "value": "{motion.duration.500}",
         "type": "number"
-      }
-    },
-    "xl": {
-      "snap": {
+      },
+      "600": {
         "value": "{motion.duration.600}",
         "type": "number"
       },
-      "base": {
+      "700": {
         "value": "{motion.duration.700}",
         "type": "number"
       },
-      "fluid": {
+      "800": {
         "value": "{motion.duration.800}",
         "type": "number"
       },
-      "emphasis": {
+      "900": {
         "value": "{motion.duration.1000}",
         "type": "number"
       }
-    }
   },
   "easing": {
     "quick": {
-      "default": {
+      "standard": {
         "value": "{motion.easing.curve-a-100}",
         "type": "cubic-bezier"
       },
@@ -80,8 +72,8 @@
         "type": "cubic-bezier"
       }
     },
-    "engaging": {
-      "default": {
+    "purposeful": {
+      "standard": {
         "value": "{motion.easing.curve-b-100}",
         "type": "cubic-bezier"
       },
