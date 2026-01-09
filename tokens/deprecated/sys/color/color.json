@@ -1108,20 +1108,6 @@
         }
       },
       "muted": {
-        "default": {
-          "value": "{palette.slate.A600}",
-          "type": "color",
-          "description": "Used for hint and placeholder text",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.muted instead"
-        },
-        "strong": {
-          "value": "{palette.slate.A700}",
-          "type": "color",
-          "description": "Stronger color used for hint or placeholder text",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.muted-strong instead"
-        },
         "stronger": {
           "value": "{palette.slate.800}",
           "type": "color",
@@ -1195,22 +1181,6 @@
           "deprecatedComment": "Use sys.color.fg.warning instead"
         }
       },
-      "contrast": {
-        "default": {
-          "value": "{palette.neutral.A900}",
-          "type": "color",
-          "description": "Contrast",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.contrast instead"
-        },
-        "strong": {
-          "value": "{palette.neutral.A950}",
-          "type": "color",
-          "description": "Strong contrast",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.contrast-strong instead"
-        }
-      },
       "info": {
         "softer": {
           "value": "{palette.blue.200}",
@@ -1224,20 +1194,6 @@
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.fg.info instead"
-        },
-        "default": {
-          "value": "{palette.blue.600}",
-          "type": "color",
-          "description": "Links, Accent",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
-        },
-        "strong": {
-          "value": "{palette.blue.700}",
-          "type": "color",
-          "description": "Links on hover",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
         },
         "stronger": {
           "value": "{palette.blue.800}",
