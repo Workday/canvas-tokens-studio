@@ -361,9 +361,11 @@
         "description": "Default page background"
       },
       "alt": {
-        "value": "{palette.slate.50}",
-        "type": "color",
-        "description": "The alternative page background"
+        "default": {
+          "value": "{palette.slate.50}",
+          "type": "color",
+          "description": "The alternative page background"
+        }
       }
     },
     "fg": {
@@ -506,8 +508,10 @@
         }
       },
       "contrast": {
-        "value": "{palette.neutral.A900}",
-        "type": "color"
+        "default": {
+          "value": "{palette.neutral.A900}",
+          "type": "color"
+        }
       },
       "transparent": {
         "value": "{palette.neutral.A0}",
