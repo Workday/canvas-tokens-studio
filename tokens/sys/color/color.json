@@ -509,8 +509,10 @@
         }
       },
       "contrast": {
-        "value": "{palette.neutral.A900}",
-        "type": "color"
+        "default": {
+          "value": "{palette.neutral.A900}",
+          "type": "color"
+        }
       },
       "transparent": {
         "value": "{palette.neutral.A0}",
