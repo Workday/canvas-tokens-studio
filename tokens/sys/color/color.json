@@ -499,12 +499,14 @@
         "type": "color"
       },
       "inverse": {
-        "value": "{palette.white.A500}",
-        "type": "color"
-      },
-      "inverse-strong": {
-        "value": "{palette.white.A700}",
-        "type": "color"
+        "default": {
+          "value": "{palette.white.A500}",
+          "type": "color"
+        },
+        "strong": {
+          "value": "{palette.white.A700}",
+          "type": "color"
+        }
       },
       "contrast": {
         "value": "{palette.neutral.A900}",
