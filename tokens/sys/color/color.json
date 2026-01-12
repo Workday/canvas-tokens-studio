@@ -473,7 +473,6 @@
         "value": "{palette.slate.A300}",
         "type": "color"
       },
-
       "input": {
         "default": {
           "value": "{palette.slate.A500}",
