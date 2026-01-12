@@ -95,7 +95,7 @@
           "type": "color",
           "description": "Alternative page background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.bg.alt instead"
+          "deprecatedComment": "Use sys.color.bg.alt.default instead"
         },
         "strong": {
           "value": "{palette.slate.200}",
@@ -1061,7 +1061,9 @@
         "default": {
           "value": "{palette.blue.500}",
           "type": "color",
-          "description": "Brand, Focus"
+          "description": "Brand, Focus",
+          "deprecated": true,
+          "deprecatedComment": "Use sys.color.brand.border.primary.default instead"
         }
       },
       "container": {
