@@ -83,13 +83,6 @@
         "deprecatedComment": "Use sys.color.surface.contrast tokens instead"
       },
       "alt": {
-        "default": {
-          "value": "{palette.slate.50}",
-          "type": "color",
-          "description": "Alternative page background",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.bg.alt instead"
-        },
         "softer": {
           "value": "{palette.slate.25}",
           "type": "color",
