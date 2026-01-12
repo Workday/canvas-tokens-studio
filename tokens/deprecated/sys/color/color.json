@@ -1001,7 +1001,7 @@
         }
       },
       "inverse": {
-        "value": "{palette.neutral.0}",
+        "value": "{palette.white.A500}",
         "type": "color",
         "description": "Borders on checkboxes and radios",
         "deprecated": true,
