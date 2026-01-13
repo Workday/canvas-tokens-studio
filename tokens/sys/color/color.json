@@ -328,11 +328,9 @@
       },
       "border": {
         "primary": {
-          "default": {
-            "value": "{brand.primary.500}",
-            "type": "color",
-            "description": "Brand, Focus"
-          }
+          "value": "{brand.primary.500}",
+          "type": "color",
+          "description": "Brand, Focus"
         },
         "critical": {
           "value": "{brand.critical.500}",
