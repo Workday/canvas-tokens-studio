@@ -1,6 +1,6 @@
 {
   "shape": {
-    "zero": {
+    "none": {
       "value": "{size.0}",
       "type": "borderRadius",
       "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels."
