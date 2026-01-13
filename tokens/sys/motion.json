@@ -2,29 +2,29 @@
   "easing": {
     "quick": {
       "standard": {
-        "value": "{motion.easing.curve-a-100}",
+        "value": "{motion.easing.a-100}",
         "type": "cubic-bezier"
       },
       "acceleration": {
-        "value": "{motion.easing.curve-a-200}",
+        "value": "{motion.easing.a-200}",
         "type": "cubic-bezier"
       },
       "deceleration": {
-        "value": "{motion.easing.curve-a-300}",
+        "value": "{motion.easing.a-300}",
         "type": "cubic-bezier"
       }
     },
     "purposeful": {
       "standard": {
-        "value": "{motion.easing.curve-b-100}",
+        "value": "{motion.easing.b-100}",
         "type": "cubic-bezier"
       },
       "acceleration": {
-        "value": "{motion.easing.curve-b-200}",
+        "value": "{motion.easing.b-200}",
         "type": "cubic-bezier"
       },
       "deceleration": {
-        "value": "{motion.easing.curve-b-300}",
+        "value": "{motion.easing.b-300}",
         "type": "cubic-bezier"
       }
     }
