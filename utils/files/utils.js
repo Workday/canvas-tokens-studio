@@ -10,14 +10,47 @@ const rootDir = process.cwd();
  * @param {Record<string, any>} obj The tokens object to transform
  * @returns
  */
-export const mapObjectContent = (fn, obj) => {
+export const mapObjectContent = (fn, obj, key) => {
   if ('value' in obj) {
-    return fn(obj);
+    return fn(obj, key);
   }
 
   Object.keys(obj).forEach(key => {
-    mapObjectContent(fn, obj[key]);
+    mapObjectContent(fn, obj[key], key);
   });
+};
+
+export const recursivelyCombineTwoObjects = (obj1, obj2) => {
+  return Object.keys(obj2).reduce((acc, key) => {
+    if (obj1[key]) {
+      acc[key] = {
+        ...acc[key],
+        ...obj1[key],
+        ...recursivelyCombineTwoObjects(obj1[key], obj2[key]),
+      };
+    } else {
+      acc[key] = {...acc[key], ...obj2[key]};
+    }
+
+    return acc;
+  }, {});
+};
+
+/**
+ * Utility function to transform studio tokens to Style Dictionary consumable format.
+ * It does
+ * - remove figma specific tokens
+ * - flatten the base token object to avoid `base.base.*` references
+ * - change oklch color object to string
+ * - remove studio extensions
+ * - replace TS description with SD comment
+ * - add level token reference to TS
+ * @param {Record<string, any>} tokens The tokens object to transform
+ * @returns {Record<string, any>} The transformed tokens object
+ */
+export const transformStudioTokensToSD = tokens => {
+  cleanOutTokens(tokens);
+  mapObjectContent(updateToken, tokens, '');
 };
 
 /**
@@ -26,10 +59,12 @@ export const mapObjectContent = (fn, obj) => {
  * @returns {boolean} Result of validation if the token is a base token
  */
 export const isBaseToken = ref => {
-  const baseJson = fs.readFileSync(path.join(rootDir, 'tokens/base.json'));
-
   let isMapable = false;
-  let content = JSON.parse(baseJson);
+  const baseTokens = combineTokens('base', 'base');
+  const deprecatedBaseTokens = combineTokens('deprecated/base', 'base');
+
+  const commbined = recursivelyCombineTwoObjects(baseTokens, deprecatedBaseTokens);
+  let content = commbined.base;
 
   const keys = ref.split('.');
 
@@ -117,6 +152,27 @@ export const updateColorObject = token => {
 };
 
 /**
+ * Utility function to resolve references in fallback and description fields.
+ * @param {{value: string, type?: string, description?: string, fallback?: string, deprecatedComment?: string}} token The token object to update
+ */
+export const updateFallbackAndDescription = token => {
+  // Resolve references in fallback field
+  if (token.fallback && typeof token.fallback === 'string') {
+    token.fallback = replaceReferences(token.fallback);
+  }
+
+  // Resolve references in description field
+  if (token.description && typeof token.description === 'string') {
+    token.description = replaceReferences(token.description);
+  }
+
+  // Resolve references in deprecatedComment field
+  if (token.deprecatedComment && typeof token.deprecatedComment === 'string') {
+    token.deprecatedComment = replaceReferences(token.deprecatedComment);
+  }
+};
+
+/**
  * Utility function to replace the description property of a token object with a comment property.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  */
@@ -152,11 +208,15 @@ export const filterWebTokens = tokens => {
 
   const webTokens = tokens;
 
-  const {half, x5, x14, ...restSpace} = webTokens.sys.space;
-  webTokens.sys.space = restSpace;
+  if (webTokens.sys.space) {
+    const {half, x5, x14, ...restSpace} = webTokens.sys.space;
+    webTokens.sys.space = restSpace;
+  }
 
-  const {x4, x6, ...restShape} = webTokens.sys.shape;
-  webTokens.sys.shape = restShape;
+  if (webTokens.sys.shape) {
+    const {x4, x6, ...restShape} = webTokens.sys.shape;
+    webTokens.sys.shape = restShape;
+  }
 
   return webTokens;
 };
@@ -166,9 +226,25 @@ export const filterWebTokens = tokens => {
  * @param {Record<string, any>} tokens The token object to filter web tokens from non-web tokens
  * @returns {Record<string, any>} The filtered JSON token object containing only web tokens
  */
-export const removeFigmaTokens = tokens => {
-  delete tokens.sys['More styles'];
-  delete tokens.sys['layer-opacity'];
+export const cleanOutTokens = tokens => {
+  if (tokens.sys) {
+    delete tokens.sys['More styles'];
+    delete tokens.sys['layer-opacity'];
+  }
+
+  if (tokens.base) {
+    const {unit} = tokens.base.base || {};
+    if (unit) {
+      delete tokens.base.base;
+      tokens.base.unit = unit;
+    }
+  }
+};
+
+const updateBaseFontSize = (token, key) => {
+  if (key === 'fontSize') {
+    token.value = `${token.value / 16}rem`;
+  }
 };
 
 /**
@@ -176,10 +252,12 @@ export const removeFigmaTokens = tokens => {
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  * @returns {{value: string, type?: string, description?: string}} The updated token object
  */
-export const updateToken = token => {
+export const updateToken = (token, key) => {
+  updateBaseFontSize(token, key);
   updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);
+  updateFallbackAndDescription(token);
   replaceDescriptionByComment(token);
 
   return token;
@@ -197,75 +275,81 @@ export const generatePlatformFiles = (level, allTokens, isDeprecated) => {
     const folderPath = isDeprecated ? `deprecated/${platform}` : platform;
 
     const tokens = platform === 'web' && !isDeprecated ? filterWebTokens(allTokens) : allTokens;
+    const exportContent = addComments(tokens, isDeprecated);
 
     fs.mkdirSync(path.join(rootDir, 'export', folderPath), {recursive: true});
     const exportPath = path.join(rootDir, `export/${folderPath}/${level}.json`);
 
-    fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
+    fs.writeFileSync(exportPath, JSON.stringify(exportContent, null, 2), 'utf8');
   });
 };
 
 /**
- * Utility function to get the list of system token files.
- * @returns {string[]} The list of system token files
+ * Utility function to get the list of tokens files.
+ * @returns {string[]} The list of token files
  */
-export const getSytemTokenFilesList = folderPath => {
-  const sysFolderPath = path.join(rootDir, 'tokens', folderPath);
-  const sysJsonFiles = fs.readdirSync(sysFolderPath).filter(file => file.endsWith('.json'));
+export const getTokensFilesList = (folderPath, type) => {
+  const allFiles = fs
+    .readdirSync(path.join(rootDir, 'tokens'), {recursive: true})
+    .filter(
+      file =>
+        file.startsWith(folderPath) &&
+        file.endsWith('.json') &&
+        ((type !== 'brand' && !file.includes('brand/')) ||
+          (type === 'brand' && file.includes('brand/')))
+    );
 
-  return [...sysJsonFiles, 'color/color.json'];
+  return allFiles;
 };
 
 /**
- * Utility function to combine all system tokens into a single object.
- * @returns {Record<'sys', Record<string, any>>} The combined system tokens object
+ * Utility function to combine all tokens into a single object.
+ * @returns {Record<'sys', Record<string, any>>} The combined tokens object
  */
-export const combineSysTokens = folderPath => {
-  const sysFiles = getSytemTokenFilesList(folderPath);
+export const combineTokens = (folderPath, type) => {
+  const files = getTokensFilesList(folderPath, type);
 
-  const innerToken = sysFiles.reduce((acc, file) => {
-    const filePath = path.join(rootDir, 'tokens', folderPath, file);
+  const innerToken = files.reduce((acc, file) => {
+    const filePath = path.join(rootDir, 'tokens', file);
     const originalJson = fs.readFileSync(filePath, 'utf8');
     const parsedJson = JSON.parse(originalJson);
 
+    const keys = Object.keys(parsedJson);
+    const hasTypeWrapper = keys.length === 1 && keys.includes(type);
+    const tokens = hasTypeWrapper ? parsedJson[type] : parsedJson;
+
     return {
       ...acc,
-      ...parsedJson,
+      ...tokens,
     };
   }, {});
 
-  return {sys: innerToken};
-};
-
-/**
- * Utility function to get the base tokens object.
- * @returns {Record<'base', Record<string, any>>} The combined system tokens object
- */
-export const getBaseTokens = isDeprecated => {
-  const filePath = isDeprecated ? 'tokens/deprecated/base.json' : 'tokens/base.json';
-  const content = fs.readFileSync(path.join(rootDir, filePath), 'utf8');
-  const originalBaseTokens = JSON.parse(content);
-
-  let updatedBaseTokens = {
-    base: originalBaseTokens,
-  };
-
-  // Flat unit property to the base level
-  const {unit} = updatedBaseTokens.base.base || {};
-  if (unit) {
-    delete updatedBaseTokens.base.base;
-    updatedBaseTokens.base.unit = unit;
-  }
-
-  return updatedBaseTokens;
+  return Object.keys(innerToken).length ? {[type]: innerToken} : innerToken;
 };
 
 /**
  * Utility function to generate the base tokens file.
  * @param {Record<'base', Record<string, any>>} tokens The base tokens object
  */
-export const generateBaseTokens = (tokens, folderPath) => {
-  fs.mkdirSync(path.join(rootDir, folderPath), {recursive: true});
-  const exportPath = path.join(rootDir, folderPath, 'base.json');
-  fs.writeFileSync(exportPath, JSON.stringify(tokens, null, 2), 'utf8');
+export const generateBaseTokens = (tokens, folder) => {
+  const isDeprecated = folder.includes('deprecated');
+  const exportContent = addComments(tokens, isDeprecated);
+
+  fs.mkdirSync(path.join(rootDir, 'export', folder), {recursive: true});
+  const exportFile = path.join(rootDir, 'export', folder, 'base.json');
+  fs.writeFileSync(exportFile, JSON.stringify(exportContent, null, 2), 'utf8');
+};
+
+const addComments = (tokens, isDeprecated) => {
+  const COMMENT = 'File is auto-generated, do not edit it manually.';
+  const DESCRIPTION =
+    'File contains deprecated tokens that are no longer supported and will be removed in the future.';
+
+  return isDeprecated
+    ? {
+        _comment: COMMENT,
+        _description: DESCRIPTION,
+        ...tokens,
+      }
+    : {_comment: COMMENT, ...tokens};
 };

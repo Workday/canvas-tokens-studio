@@ -1,25 +1,40 @@
-import {createExportBaseTokens} from './tokens/createExportBaseTokens.js';
-import {createExportBrandTokens} from './tokens/createExportBrandTokens.js';
-import {createExportSysTokens} from './tokens/createExportSysTokens.js';
+import {
+  combineTokens,
+  generateBaseTokens,
+  generatePlatformFiles,
+  transformStudioTokensToSD,
+} from './files/utils.js';
 
-const {CHANGED} = process.env;
+(() => {
+  ['base', 'brand', 'sys'].forEach(type => {
+    ['main', 'deprecated'].forEach(category => {
+      const isDeprecated = category === 'deprecated';
+      const typeFolder = type === 'brand' ? 'sys/brand' : type;
+      const importPathFolder = isDeprecated ? `deprecated/${typeFolder}` : typeFolder;
 
-if (CHANGED) {
-  if (CHANGED === 'all') {
-    createExportBaseTokens();
-    createExportBrandTokens();
-    createExportSysTokens();
-  }
+      const tokens = combineTokens(importPathFolder, type);
 
-  if (CHANGED.includes('base.json')) {
-    createExportBaseTokens();
-  }
+      // Skip if there are no tokens
+      if (!Object.keys(tokens).length) {
+        return;
+      }
 
-  if (CHANGED.includes('brand/canvas.json')) {
-    createExportBrandTokens();
-  }
+      // It does
+      // - remove figma specific tokens
+      // - flatten the base token object to avoid `base.base.*` references
+      // - change oklch color object to string
+      // - remove studio extensions
+      // - replace TS description with SD comment
+      // - add level token reference to TS
+      transformStudioTokensToSD(tokens);
 
-  if (CHANGED.includes('tokens/sys')) {
-    createExportSysTokens();
-  }
-}
+      if (type === 'base') {
+        // Base json should be placed to main level
+        generateBaseTokens(tokens, isDeprecated ? 'deprecated' : '');
+      } else {
+        // Sys and brand tokens are web specific, so we generate them for platforms
+        generatePlatformFiles(type, tokens, isDeprecated);
+      }
+    });
+  });
+})();
