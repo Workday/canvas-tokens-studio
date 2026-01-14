@@ -1,98 +1,99 @@
 {
   "level": {
-    "value": "{explicit.default}",
+    "value": 2,
     "type": "number",
     "description": "Used to calculate the skip level amount between levels in the type ramp, such as going from subtext to body, body to heading.",
     "deprecated": true,
     "deprecatedComment": "Use explicit size tokens instead of calculated type ramp values"
   },
+
   "font-size": {
     "25": {
-      "value": "{system.default}",
+      "value": "0.625rem",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "50": {
-      "value": "{system.default}",
+      "value": "{font-size.25} + {typescale.size.default}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "75": {
-      "value": "{system.default}",
+      "value": "{font-size.50} + {typescale.size.default}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "100": {
-      "value": "{system.default}",
+      "value": "{font-size.75} + {typescale.size.default}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "125": {
-      "value": "{system.default}",
+      "value": "{font-size.100} + {typescale.size.default}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "150": {
-      "value": "{system.default}",
+      "value": "{font-size.125} + {typescale.size.default}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "200": {
-      "value": "{system.default}",
+      "value": "{font-size.150} + {typescale.size.heading}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "250": {
-      "value": "{system.default}",
+      "value": "{font-size.200} + {typescale.size.heading}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "300": {
-      "value": "{system.default}",
+      "value": "{font-size.250} + {typescale.size.heading}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "400": {
-      "value": "{system.default}",
+      "value": "{font-size.300} + {typescale.size.title}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "500": {
-      "value": "{system.default}",
+      "value": "{font-size.400} + {typescale.size.title}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "600": {
-      "value": "{system.default}",
+      "value": "{font-size.500} + {typescale.size.title}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "750": {
-      "value": "{system.default}",
+      "value": "{font-size.600} + {typescale.size.display}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "900": {
-      "value": "{system.default}",
+      "value": "{font-size.750} + {typescale.size.display}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "1050": {
-      "value": "{base.size.1100}",
+      "value": "{font-size.900} + {typescale.size.display}",
       "type": "fontSizes",
       "deprecated": true,
       "deprecatedComment": "Use {base.size.1100} for consistent spacing and sizing"
@@ -100,79 +101,79 @@
   },
   "line-height": {
     "50": {
-      "value": "{system.default}",
+      "value": 16,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "100": {
-      "value": "{system.default}",
+      "value": 20,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "150": {
-      "value": "{system.default}",
+      "value": 24,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "200": {
-      "value": "{system.default}",
+      "value": 28,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "250": {
-      "value": "{system.default}",
+      "value": 32,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "300": {
-      "value": "{system.default}",
+      "value": 36,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "350": {
-      "value": "{system.default}",
+      "value": 40,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "400": {
-      "value": "{system.default}",
+      "value": 48,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "500": {
-      "value": "{system.default}",
+      "value": 56,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "600": {
-      "value": "{system.default}",
+      "value": 64,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "750": {
-      "value": "{system.default}",
+      "value": 72,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "900": {
-      "value": "{system.default}",
+      "value": 88,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
     },
     "1050": {
-      "value": "{system.default}",
+      "value": 104,
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use system instead"
