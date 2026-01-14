@@ -2,28 +2,28 @@
   "brand": {
     "primary": {
       "base": {
-        "value": "{brand.primary.600}",
+        "value": "{palette.blue.600}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.base with {brand.primary.600}",
         "fallback": "{brand.primary.600}"
       },
       "lightest": {
-        "value": "{brand.primary.25}",
+        "value": "{palette.blue.25}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.lightest with {brand.primary.25}",
         "fallback": "{brand.primary.25}"
       },
       "darkest": {
-        "value": "{brand.primary.800}",
+        "value": "{palette.blue.800}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.darkest with {brand.primary.800}",
         "fallback": "{brand.primary.800}"
       },
       "dark": {
-        "value": "{brand.primary.700}",
+        "value": "{palette.blue.700}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.dark with {brand.primary.700}",
@@ -37,14 +37,14 @@
         "fallback": "{sys.color.fg.inverse}"
       },
       "lighter": {
-        "value": "{brand.primary.50}",
+        "value": "{palette.blue.50}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.lighter with {brand.primary.50}",
         "fallback": "{brand.primary.50}"
       },
       "light": {
-        "value": "{brand.primary.200}",
+        "value": "{palette.blue.200}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace primary.light with {brand.primary.200}",
@@ -53,49 +53,49 @@
     },
     "error": {
       "base": {
-        "value": "{brand.critical.600}",
+        "value": "{palette.red.600}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.base with {brand.critical.600}",
         "fallback": "{brand.critical.600}"
       },
       "lightest": {
-        "value": "{brand.critical.25}",
+        "value": "{palette.red.25}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.lightest with {brand.critical.25}",
         "fallback": "{brand.critical.25}"
       },
       "dark": {
-        "value": "{brand.critical.700}",
+        "value": "{palette.red.700}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.dark with {brand.critical.700}",
         "fallback": "{brand.critical.700}"
       },
       "darkest": {
-        "value": "{brand.critical.800}",
+        "value": "{palette.red.800}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.darkest with {brand.critical.800}",
         "fallback": "{brand.critical.800}"
       },
       "accent": {
-        "value": "{sys.color.fg.inverse}",
+        "value": "{palette.neutral.0}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.accent with {sys.color.fg.inverse}",
         "fallback": "{sys.color.fg.inverse}"
       },
       "lighter": {
-        "value": "{brand.critical.50}",
+        "value": "{palette.red.50}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.lighter with {brand.critical.50}",
         "fallback": "{brand.critical.50}"
       },
       "light": {
-        "value": "{brand.critical.200}",
+        "value": "{palette.red.200}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error.light with {brand.critical.200}",
@@ -104,49 +104,49 @@
     },
     "alert": {
       "base": {
-        "value": "{brand.caution.400}",
+        "value": "{palette.amber.400}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.base with {brand.caution.400}",
         "fallback": "{brand.caution.400}"
       },
       "lighter": {
-        "value": "{brand.caution.50}",
+        "value": "{palette.amber.50}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.lighter with {brand.caution.50}",
         "fallback": "{brand.caution.50}"
       },
       "lightest": {
-        "value": "{brand.caution.25}",
+        "value": "{palette.amber.25}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.lightest with {brand.caution.25}",
         "fallback": "{brand.caution.25}"
       },
       "dark": {
-        "value": "{brand.caution.500}",
+        "value": "{palette.amber.500}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.dark with {brand.caution.500}",
         "fallback": "{brand.caution.500}"
       },
       "darkest": {
-        "value": "{brand.caution.600}",
+        "value": "{palette.amber.600}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.darkest with {brand.caution.600}",
         "fallback": "{brand.caution.600}"
       },
       "accent": {
-        "value": "{sys.color.fg.contrast}",
+        "value": "{palette.neutral.950}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.darkest with {sys.color.fg.contrast}",
         "fallback": "{sys.color.fg.contrast}"
       },
       "light": {
-        "value": "{brand.caution.200}",
+        "value": "{palette.amber.200}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert.light with {brand.caution.200}",
@@ -155,49 +155,49 @@
     },
     "success": {
       "base": {
-        "value": "{brand.positive.600}",
+        "value": "{palette.green.600}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.base with {brand.positive.600}",
         "fallback": "{brand.positive.600}"
       },
       "lightest": {
-        "value": "{brand.positive.25}",
+        "value": "{palette.green.25}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.lightest with {brand.positive.25}",
         "fallback": "{brand.positive.25}"
       },
       "lighter": {
-        "value": "{brand.positive.50}",
+        "value": "{palette.green.50}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.lighter with {brand.positive.50}",
         "fallback": "{brand.positive.50}"
       },
       "dark": {
-        "value": "{brand.positive.700}",
+        "value": "{palette.green.700}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.dark with {brand.positive.700}",
         "fallback": "{brand.positive.700}"
       },
       "darkest": {
-        "value": "{brand.positive.800}",
+        "value": "{palette.green.800}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.darkest with {brand.positive.800}",
         "fallback": "{brand.positive.800}"
       },
       "accent": {
-        "value": "{sys.color.fg.inverse}",
+        "value": "{palette.neutral.0}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.accent with {sys.color.fg.inverse}",
         "fallback": "{sys.color.fg.inverse}"
       },
       "light": {
-        "value": "{brand.positive.200}",
+        "value": "{palette.green.200}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace success.light with {brand.positive.200}",
@@ -206,28 +206,28 @@
     },
     "neutral": {
       "lightest": {
-        "value": "{brand.neutral.25}",
+        "value": "{palette.slate.25}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.lightest with {brand.neutral.25}",
         "fallback": "{brand.neutral.25}"
       },
       "base": {
-        "value": "{brand.neutral.600}",
+        "value": "{palette.slate.600}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.base with {brand.neutral.600}",
         "fallback": "{brand.neutral.600}"
       },
       "dark": {
-        "value": "{brand.neutral.700}",
+        "value": "{palette.slate.700}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.dark with {brand.neutral.700}",
         "fallback": "{brand.neutral.700}"
       },
       "darkest": {
-        "value": "{brand.neutral.800}",
+        "value": "{palette.slate.800}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.darkest with {brand.neutral.800}",
@@ -241,14 +241,14 @@
         "fallback": "{sys.color.fg.inverse}"
       },
       "lighter": {
-        "value": "{brand.neutral.50}",
+        "value": "{palette.slate.50}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.lighter with {brand.neutral.50}",
         "fallback": "{brand.neutral.50}"
       },
       "light": {
-        "value": "{brand.neutral.200}",
+        "value": "{palette.slate.200}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace neutral.light with {brand.neutral.200}",
@@ -257,28 +257,28 @@
     },
     "common": {
       "focus-outline": {
-        "value": "{brand.common.focus}",
+        "value": "{palette.blue.500}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace focus-outline with {brand.common.focus}",
         "fallback": "{brand.common.focus}"
       },
       "error-inner": {
-        "value": "{brand.common.critical}",
+        "value": "{palette.red.500}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace error-inner with {brand.common.critical}",
         "fallback": "{brand.common.critical}"
       },
       "alert-inner": {
-        "value": "{brand.common.caution-inner}",
+        "value": "{palette.amber.400}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert-inner with {brand.common.caution-inner}",
         "fallback": "{brand.common.caution-inner}"
       },
       "alert-outer": {
-        "value": "{brand.common.caution-outer}",
+        "value": "{palette.amber.500}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace alert-outer with {brand.common.caution-outer}",
