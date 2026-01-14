@@ -2,42 +2,42 @@
   "palette": {
     "cinnamon": {
       "100": {
-        "value": "#ffefee",
+        "value": "{palette.red.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cinnamon100 with {palette.red.50}. Prefer to replace with `sys.color.bg.critical.softer` if used as a background color.",
         "fallback": "{palette.red.50}"
       },
       "200": {
-        "value": "#FCC9C5",
+        "value": "{palette.red.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cinnamon200 with {palette.red.100}. Prefer to replace with `sys.color.bg.critical.soft` if used as a background color.",
         "fallback": "{palette.red.100}"
       },
       "300": {
-        "value": "#ff867d",
+        "value": "{palette.red.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cinnamon300 with {palette.red.300}",
         "fallback": "{palette.red.300}"
       },
       "400": {
-        "value": "#ff5347",
+        "value": "{palette.red.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cinnamon400 with {palette.red.400}. Prefer to replace with `sys.color.fg.critical.soft` if used as a foreground (text/icon) color.",
         "fallback": "{palette.red.400}"
       },
       "500": {
-        "value": "#de2e21",
+        "value": "{palette.red.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cinnamon500 with {palette.red.600}. Prefer to replace with `sys.color.bg.critical.default` if used as a background color, or `sys.color.fg.critical.default` if used as a foreground (text/icon) color, or `sys.color.border.critical.default` if used as a border color.",
         "fallback": "{palette.red.600}"
       },
       "600": {
-        "value": "#a31b12",
+        "value": "{palette.red.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cinnamon600 with {palette.red.700}. Prefer to replace with `sys.color.bg.critical.strong` if used as a background color, or `sys.color.fg.critical.strong` if used as a foreground (text/icon) color.",
@@ -46,42 +46,42 @@
     },
     "peach": {
       "100": {
-        "value": "#fff3f0",
+        "value": "{palette.coral.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace peach100 with {palette.coral.50}",
         "fallback": "{palette.coral.50}"
       },
       "200": {
-        "value": "#ffc2b3",
+        "value": "{palette.coral.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace peach200 with {palette.coral.200}",
         "fallback": "{palette.coral.200}"
       },
       "300": {
-        "value": "#ff957a",
+        "value": "{palette.coral.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace peach300 with {palette.coral.300}",
         "fallback": "{palette.coral.300}"
       },
       "400": {
-        "value": "#ff643d",
+        "value": "{palette.red.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace peach400 with {palette.red.400}",
         "fallback": "{palette.red.400}"
       },
       "500": {
-        "value": "#de4721",
+        "value": "{palette.coral.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace peach500 with {palette.coral.600}",
         "fallback": "{palette.coral.600}"
       },
       "600": {
-        "value": "#b53413",
+        "value": "{palette.coral.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace peach600 with {palette.coral.700}",
@@ -90,42 +90,42 @@
     },
     "chili-mango": {
       "100": {
-        "value": "#ffe6d9",
+        "value": "{palette.coral.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace chili-mango100 with {palette.coral.100}",
         "fallback": "{palette.coral.100}"
       },
       "200": {
-        "value": "#ffc7ab",
+        "value": "{palette.coral.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace chili-mango200 with {palette.coral.200}",
         "fallback": "{palette.coral.200}"
       },
       "300": {
-        "value": "#ff9b69",
+        "value": "{palette.coral.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace chili-mango300 with {palette.coral.300}",
         "fallback": "{palette.coral.300}"
       },
       "400": {
-        "value": "#ff671b",
+        "value": "{palette.orange.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace chili-mango400 with {palette.orange.500}",
         "fallback": "{palette.orange.500}"
       },
       "500": {
-        "value": "#e04b00",
+        "value": "{palette.orange.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace chili-mango500 with {palette.orange.500}",
         "fallback": "{palette.orange.500}"
       },
       "600": {
-        "value": "#a33600",
+        "value": "{palette.orange.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace chili-mango600 with {palette.orange.700}",
@@ -134,42 +134,42 @@
     },
     "cantaloupe": {
       "100": {
-        "value": "#ffeed9",
+        "value": "{palette.amber.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cantaloupe100 with {palette.amber.50}. Prefer to replace with `sys.color.bg.caution.softer` if used as a background color.",
         "fallback": "{palette.amber.50}"
       },
       "200": {
-        "value": "#fcd49f",
+        "value": "{palette.amber.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cantaloupe200 with {palette.amber.200}. Prefer to replace with `sys.color.fg.caution.softer` if used as a foreground (text/icon) color.",
         "fallback": "{palette.amber.200}"
       },
       "300": {
-        "value": "#ffbc63",
+        "value": "{palette.amber.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cantaloupe300 with {palette.amber.300}. Prefer to replace with `sys.color.bg.caution.soft` if used as a background color.",
         "fallback": "{palette.amber.300}"
       },
       "400": {
-        "value": "#ffa126",
+        "value": "{palette.amber.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cantaloupe400 with {palette.amber.400}. Prefer to replace with `sys.color.bg.caution.default` if used as a background color, or `sys.color.border.caution.default` if used as a border color.",
         "fallback": "{palette.amber.400}"
       },
       "500": {
-        "value": "#f38b00",
+        "value": "{palette.amber.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cantaloupe500 with {palette.amber.500}. Prefer to replace with `sys.color.bg.caution.strong` if used as a background color.",
         "fallback": "{palette.amber.500}"
       },
       "600": {
-        "value": "#c06c00",
+        "value": "{palette.amber.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cantaloupe600 with {palette.amber.600}. Prefer to replace with `sys.color.bg.caution.stronger` if used as a background color, or with `sys.color.border.caution.strong` if used as a border color.",
@@ -178,42 +178,42 @@
     },
     "sour-lemon": {
       "100": {
-        "value": "#fff9e6",
+        "value": "{palette.amber.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace sour-lemon100 with {palette.amber.25}",
         "fallback": "{palette.amber.25}"
       },
       "200": {
-        "value": "#ffecab",
+        "value": "{palette.amber.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace sour-lemon200 with {palette.amber.100}",
         "fallback": "{palette.amber.100}"
       },
       "300": {
-        "value": "#ffda61",
+        "value": "{palette.amber.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace sour-lemon300 with {palette.amber.200}",
         "fallback": "{palette.amber.200}"
       },
       "400": {
-        "value": "#ffc629",
+        "value": "{palette.amber.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace sour-lemon400 with {palette.amber.300}",
         "fallback": "{palette.amber.300}"
       },
       "500": {
-        "value": "#ebb400",
+        "value": "{palette.amber.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace sour-lemon500 with {palette.amber.300}",
         "fallback": "{palette.amber.300}"
       },
       "600": {
-        "value": "#bd9100",
+        "value": "{palette.amber.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace sour-lemon600 with {palette.amber.500}",
@@ -222,42 +222,42 @@
     },
     "juicy-pear": {
       "100": {
-        "value": "#f7fae6",
+        "value": "{palette.amber.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace juicy-pear100 with {palette.amber.25}",
         "fallback": "{palette.amber.25}"
       },
       "200": {
-        "value": "#e2f391",
+        "value": "{palette.amber.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace juicy-pear200 with {palette.amber.100}",
         "fallback": "{palette.amber.100}"
       },
       "300": {
-        "value": "#c4de40",
+        "value": "{palette.amber.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace juicy-pear300 with {palette.amber.200}",
         "fallback": "{palette.amber.200}"
       },
       "400": {
-        "value": "#a8c224",
+        "value": "{palette.amber.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace juicy-pear400 with {palette.amber.200}",
         "fallback": "{palette.amber.200}"
       },
       "500": {
-        "value": "#8ea618",
+        "value": "{palette.green.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace juicy-pear500 with {palette.green.500}",
         "fallback": "{palette.green.500}"
       },
       "600": {
-        "value": "#687818",
+        "value": "{palette.green.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace juicy-pear600 with {palette.green.700}",
@@ -266,42 +266,42 @@
     },
     "kiwi": {
       "100": {
-        "value": "#ecfcd7",
+        "value": "{palette.green.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace kiwi100 with {palette.green.50}",
         "fallback": "{palette.green.50}"
       },
       "200": {
-        "value": "#caf593",
+        "value": "{palette.green.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace kiwi200 with {palette.green.100}",
         "fallback": "{palette.green.100}"
       },
       "300": {
-        "value": "#a7e05c",
+        "value": "{palette.green.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace kiwi300 with {palette.green.200}",
         "fallback": "{palette.green.200}"
       },
       "400": {
-        "value": "#77bc1f",
+        "value": "{palette.green.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace kiwi400 with {palette.green.500}",
         "fallback": "{palette.green.500}"
       },
       "500": {
-        "value": "#609915",
+        "value": "{palette.green.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace kiwi500 with {palette.green.500}",
         "fallback": "{palette.green.500}"
       },
       "600": {
-        "value": "#537824",
+        "value": "{palette.green.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace kiwi600 with {palette.green.700}",
@@ -310,42 +310,42 @@
     },
     "green-apple": {
       "100": {
-        "value": "#ebfff0",
+        "value": "{palette.green.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace green-apple100 with {palette.green.50}. Prefer to replace with `sys.color.bg.positive.softer` if used as a background color.",
         "fallback": "{palette.green.50}"
       },
       "200": {
-        "value": "#acf5be",
+        "value": "{palette.green.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace green-apple200 with {palette.green.100}. Prefer to replace with `sys.color.bg.positive.soft` if used as a background color.",
         "fallback": "{palette.green.100}"
       },
       "300": {
-        "value": "#5fe380",
+        "value": "{palette.green.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace green-apple300 with {palette.green.200}. Prefer to replace `sys.color.fg.positive.soft` if used as a foreground (text/icon) color.",
         "fallback": "{palette.green.200}"
       },
       "400": {
-        "value": "#43c463",
+        "value": "{palette.green.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace green-apple400 with {palette.green.600}. Prefer to replace with `sys.color.bg.positive.default` if used as a background color, or `sys.color.fg.positive.default` if used as a foreground (text/icon) color.",
         "fallback": "{palette.green.600}"
       },
       "500": {
-        "value": "#319c4c",
+        "value": "{palette.green.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace green-apple500 with {palette.green.700}. Prefer to replace with `sys.color.bg.positive.strong` if used as a background color, or `sys.color.fg.positive.strong` if used as a foreground (text/icon) color.",
         "fallback": "{palette.green.700}"
       },
       "600": {
-        "value": "#217a37",
+        "value": "{palette.green.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace green-apple600 with {palette.green.800}. Prefer to replace with `sys.color.bg.positive.stronger` if used as a background color, or `sys.color.text.positive.stronger` if used as a text color.",
@@ -354,42 +354,42 @@
     },
     "watermelon": {
       "100": {
-        "value": "#ebfdf8",
+        "value": "{palette.teal.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace watermelon100 with {palette.teal.25}",
         "fallback": "{palette.teal.25}"
       },
       "200": {
-        "value": "#b7edde",
+        "value": "{palette.teal.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace watermelon200 with {palette.teal.100}",
         "fallback": "{palette.teal.100}"
       },
       "300": {
-        "value": "#65ccaf",
+        "value": "{palette.green.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace watermelon300 with {palette.green.100}",
         "fallback": "{palette.green.100}"
       },
       "400": {
-        "value": "#12a67c",
+        "value": "{palette.green.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace watermelon400 with {palette.green.600}",
         "fallback": "{palette.green.600}"
       },
       "500": {
-        "value": "#0c7a5b",
+        "value": "{palette.green.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace watermelon500 with {palette.green.800}",
         "fallback": "{palette.green.800}"
       },
       "600": {
-        "value": "#00573e",
+        "value": "{palette.green.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace watermelon600 with {palette.green.800}",
@@ -398,42 +398,42 @@
     },
     "jewel": {
       "100": {
-        "value": "#ebfdff",
+        "value": "{palette.teal.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace jewel100 with {palette.teal.25}",
         "fallback": "{palette.teal.25}"
       },
       "200": {
-        "value": "#acecf3",
+        "value": "{palette.teal.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace jewel200 with {palette.teal.200}",
         "fallback": "{palette.teal.200}"
       },
       "300": {
-        "value": "#44c8d7",
+        "value": "{palette.teal.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace jewel300 with {palette.teal.400}",
         "fallback": "{palette.teal.400}"
       },
       "400": {
-        "value": "#1ea4b3",
+        "value": "{palette.teal.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace jewel400 with {palette.teal.500}",
         "fallback": "{palette.teal.500}"
       },
       "500": {
-        "value": "#1a818c",
+        "value": "{palette.teal.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace jewel500 with {palette.teal.600}",
         "fallback": "{palette.teal.600}"
       },
       "600": {
-        "value": "#156973",
+        "value": "{palette.teal.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace jewel600 with {palette.teal.700}",
@@ -442,42 +442,42 @@
     },
     "toothpaste": {
       "100": {
-        "value": "#d7f1fc",
+        "value": "{palette.azure.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toothpaste100 with {palette.azure.50}",
         "fallback": "{palette.azure.50}"
       },
       "200": {
-        "value": "#99e0ff",
+        "value": "{palette.azure.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toothpaste200 with {palette.azure.200}",
         "fallback": "{palette.azure.200}"
       },
       "300": {
-        "value": "#40b4e5",
+        "value": "{palette.azure.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toothpaste300 with {palette.azure.300}",
         "fallback": "{palette.azure.300}"
       },
       "400": {
-        "value": "#1894c9",
+        "value": "{palette.azure.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toothpaste400 with {palette.azure.500}",
         "fallback": "{palette.azure.500}"
       },
       "500": {
-        "value": "#0271a1",
+        "value": "{palette.azure.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toothpaste500 with {palette.azure.700}",
         "fallback": "{palette.azure.700}"
       },
       "600": {
-        "value": "#005B82",
+        "value": "{palette.azure.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toothpaste600 with {palette.azure.800}",
@@ -486,42 +486,42 @@
     },
     "blueberry": {
       "100": {
-        "value": "#D7EAFC",
+        "value": "{palette.blue.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blueberry100 with {palette.blue.100}",
         "fallback": "{palette.blue.100}"
       },
       "200": {
-        "value": "#A6D2FF",
+        "value": "{palette.blue.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blueberry200 with {palette.blue.100}. Prefer to replace with `sys.color.bg.primary.soft` if used as a background color.",
         "fallback": "{palette.blue.100}"
       },
       "300": {
-        "value": "#40A0FF",
+        "value": "{palette.blue.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blueberry300 with {palette.blue.400}. Prefer to replace with `sys.color.bg.primary.default` if used as a background color, or `sys.color.fg.primary.soft` if used as a foreground (text/icon) color.",
         "fallback": "{palette.blue.400}"
       },
       "400": {
-        "value": "#0875E1",
+        "value": "{palette.blue.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blueberry400 with {palette.blue.600}. Prefer to replace with `sys.color.bg.primary.default` if used as a background color, or `sys.color.fg.primary.default` if used as a foreground (text/icon) color, or `sys.color.border.primary.default` if used as a border color.",
         "fallback": "{palette.blue.600}"
       },
       "500": {
-        "value": "#005cb9",
+        "value": "{palette.blue.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blueberry500 with {palette.blue.700}. Prefer to replace with `sys.color.bg.primary.strong` if used as a background color, or `sys.color.fg.primary.strong` if used as a foreground (text/icon) color.",
         "fallback": "{palette.blue.700}"
       },
       "600": {
-        "value": "#004387",
+        "value": "{palette.blue.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blueberry600 with {palette.blue.800}. Prefer to replace with `sys.color.bg.primary.stronger` if used as a background color, or `sys.color.text.primary.stronger` if used as a text color.",
@@ -530,42 +530,42 @@
     },
     "plum": {
       "100": {
-        "value": "#e6f1ff",
+        "value": "{palette.blue.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace plum100 with {palette.blue.100}",
         "fallback": "{palette.blue.100}"
       },
       "200": {
-        "value": "#A6CDFF",
+        "value": "{palette.blue.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace plum200 with {palette.blue.200}",
         "fallback": "{palette.blue.200}"
       },
       "300": {
-        "value": "#529bfa",
+        "value": "{palette.blue.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace plum300 with {palette.blue.400}",
         "fallback": "{palette.blue.400}"
       },
       "400": {
-        "value": "#3881E1",
+        "value": "{palette.blue.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace plum400 with {palette.blue.600}",
         "fallback": "{palette.blue.600}"
       },
       "500": {
-        "value": "#3166ab",
+        "value": "{palette.blue.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace plum500 with {palette.blue.700}",
         "fallback": "{palette.blue.700}"
       },
       "600": {
-        "value": "#264a7a",
+        "value": "{palette.blue.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace plum600 with {palette.blue.800}",
@@ -574,42 +574,42 @@
     },
     "berry-smoothie": {
       "100": {
-        "value": "#e8edff",
+        "value": "{palette.indigo.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace berry-smoothie100 with {palette.indigo.50}",
         "fallback": "{palette.indigo.50}"
       },
       "200": {
-        "value": "#c2cfff",
+        "value": "{palette.indigo.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace berry-smoothie200 with {palette.indigo.200}",
         "fallback": "{palette.indigo.200}"
       },
       "300": {
-        "value": "#7891FF",
+        "value": "{palette.indigo.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace berry-smoothie300 with {palette.indigo.400}",
         "fallback": "{palette.indigo.400}"
       },
       "400": {
-        "value": "#5E77E6",
+        "value": "{palette.blue.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace berry-smoothie400 with {palette.blue.500}",
         "fallback": "{palette.blue.500}"
       },
       "500": {
-        "value": "#4b5eb3",
+        "value": "{palette.blue.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace berry-smoothie500 with {palette.blue.700}",
         "fallback": "{palette.blue.700}"
       },
       "600": {
-        "value": "#3b4987",
+        "value": "{palette.blue.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace berry-smoothie600 with {palette.blue.800}",
@@ -618,42 +618,42 @@
     },
     "blackberry": {
       "100": {
-        "value": "#f0f0ff",
+        "value": "{palette.indigo.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blackberry100 with {palette.indigo.25}",
         "fallback": "{palette.indigo.25}"
       },
       "200": {
-        "value": "#c3c2ff",
+        "value": "{palette.indigo.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blackberry200 with {palette.indigo.200}",
         "fallback": "{palette.indigo.200}"
       },
       "300": {
-        "value": "#8483e6",
+        "value": "{palette.indigo.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blackberry300 with {palette.indigo.400}",
         "fallback": "{palette.indigo.400}"
       },
       "400": {
-        "value": "#5c59e6",
+        "value": "{palette.indigo.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blackberry400 with {palette.indigo.500}",
         "fallback": "{palette.indigo.500}"
       },
       "500": {
-        "value": "#413fcc",
+        "value": "{palette.indigo.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blackberry500 with {palette.indigo.700}",
         "fallback": "{palette.indigo.700}"
       },
       "600": {
-        "value": "#2e2d91",
+        "value": "{palette.indigo.900.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace blackberry600 with {palette.indigo.900}",
@@ -662,42 +662,42 @@
     },
     "island-punch": {
       "100": {
-        "value": "#f5f0ff",
+        "value": "{palette.purple.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace island-punch100 with {palette.purple.25}",
         "fallback": "{palette.purple.25}"
       },
       "200": {
-        "value": "#d2befa",
+        "value": "{palette.purple.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace island-punch200 with {palette.purple.200}",
         "fallback": "{palette.purple.200}"
       },
       "300": {
-        "value": "#a88ae6",
+        "value": "{palette.purple.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace island-punch300 with {palette.purple.500}",
         "fallback": "{palette.purple.500}"
       },
       "400": {
-        "value": "#8660d1",
+        "value": "{palette.purple.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace island-punch400 with {palette.purple.500}",
         "fallback": "{palette.purple.500}"
       },
       "500": {
-        "value": "#6345a1",
+        "value": "{palette.purple.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace island-punch500 with {palette.purple.700}",
         "fallback": "{palette.purple.700}"
       },
       "600": {
-        "value": "#503882",
+        "value": "{palette.purple.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace island-punch600 with {palette.purple.800}",
@@ -706,42 +706,42 @@
     },
     "grape-soda": {
       "100": {
-        "value": "#feebff",
+        "value": "{palette.magenta.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace grape-soda100 with {palette.magenta.50}",
         "fallback": "{palette.magenta.50}"
       },
       "200": {
-        "value": "#fac0ff",
+        "value": "{palette.magenta.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace grape-soda200 with {palette.magenta.200}",
         "fallback": "{palette.magenta.200}"
       },
       "300": {
-        "value": "#de8ae6",
+        "value": "{palette.purple.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace grape-soda300 with {palette.purple.400}",
         "fallback": "{palette.purple.400}"
       },
       "400": {
-        "value": "#c860d1",
+        "value": "{palette.purple.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace grape-soda400 with {palette.purple.500}",
         "fallback": "{palette.purple.500}"
       },
       "500": {
-        "value": "#97499e",
+        "value": "{palette.purple.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace grape-soda500 with {palette.purple.600}",
         "fallback": "{palette.purple.600}"
       },
       "600": {
-        "value": "#7C3882",
+        "value": "{palette.purple.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace grape-soda600 with {palette.purple.800}",
@@ -750,42 +750,42 @@
     },
     "pomegranate": {
       "100": {
-        "value": "#ffebf3",
+        "value": "{palette.magenta.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace pomegranate100 with {palette.magenta.50}",
         "fallback": "{palette.magenta.50}"
       },
       "200": {
-        "value": "#ffbdd6",
+        "value": "{palette.magenta.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace pomegranate200 with {palette.magenta.100}",
         "fallback": "{palette.magenta.100}"
       },
       "300": {
-        "value": "#ff5c9a",
+        "value": "{palette.magenta.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace pomegranate300 with {palette.magenta.500}",
         "fallback": "{palette.magenta.500}"
       },
       "400": {
-        "value": "#f31167",
+        "value": "{palette.magenta.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace pomegranate400 with {palette.magenta.500}",
         "fallback": "{palette.magenta.500}"
       },
       "500": {
-        "value": "#c70550",
+        "value": "{palette.red.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace pomegranate500 with {palette.red.700}",
         "fallback": "{palette.red.700}"
       },
       "600": {
-        "value": "#99003a",
+        "value": "{palette.red.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace pomegranate600 with {palette.red.800}",
@@ -794,42 +794,42 @@
     },
     "fruit-punch": {
       "100": {
-        "value": "#FFEEEE",
+        "value": "{palette.red.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace fruit-punch100 with {palette.red.25}",
         "fallback": "{palette.red.25}"
       },
       "200": {
-        "value": "#ffbdbd",
+        "value": "{palette.red.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace fruit-punch200 with {palette.red.200}",
         "fallback": "{palette.red.200}"
       },
       "300": {
-        "value": "#FF7E7E",
+        "value": "{palette.red.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace fruit-punch300 with {palette.red.300}",
         "fallback": "{palette.red.300}"
       },
       "400": {
-        "value": "#ff4c4c",
+        "value": "{palette.red.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace fruit-punch400 with {palette.red.400}",
         "fallback": "{palette.red.400}"
       },
       "500": {
-        "value": "#e12f2f",
+        "value": "{palette.red.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace fruit-punch500 with {palette.red.400}",
         "fallback": "{palette.red.400}"
       },
       "600": {
-        "value": "#b82828",
+        "value": "{palette.red.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace fruit-punch600 with {palette.red.700}",
@@ -838,42 +838,42 @@
     },
     "root-beer": {
       "100": {
-        "value": "#faf3f0",
+        "value": "{palette.coral.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace root-beer100 with {palette.coral.25}",
         "fallback": "{palette.coral.25}"
       },
       "200": {
-        "value": "#EBD7CF",
+        "value": "{palette.coral.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace root-beer200 with {palette.coral.100}",
         "fallback": "{palette.coral.100}"
       },
       "300": {
-        "value": "#dcbbad",
+        "value": "{palette.coral.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace root-beer300 with {palette.coral.200}",
         "fallback": "{palette.coral.200}"
       },
       "400": {
-        "value": "#ba9a8c",
+        "value": "{palette.coral.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace root-beer400 with {palette.coral.200}",
         "fallback": "{palette.coral.200}"
       },
       "500": {
-        "value": "#8C7266",
+        "value": "{palette.amber.900.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace root-beer500 with {palette.amber.900}",
         "fallback": "{palette.amber.900}"
       },
       "600": {
-        "value": "#664d42",
+        "value": "{palette.amber.950.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace root-beer600 with {palette.amber.950}",
@@ -882,42 +882,42 @@
     },
     "toasted-marshmallow": {
       "100": {
-        "value": "#fdf6e6",
+        "value": "{palette.amber.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toasted-marshmallow100 with {palette.amber.25}",
         "fallback": "{palette.amber.25}"
       },
       "200": {
-        "value": "#ebd6a9",
+        "value": "{palette.orange.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toasted-marshmallow200 with {palette.orange.100}",
         "fallback": "{palette.orange.100}"
       },
       "300": {
-        "value": "#e6bf6c",
+        "value": "{palette.orange.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toasted-marshmallow300 with {palette.orange.200}",
         "fallback": "{palette.orange.200}"
       },
       "400": {
-        "value": "#CC9E3B",
+        "value": "{palette.orange.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toasted-marshmallow400 with {palette.orange.300}",
         "fallback": "{palette.orange.300}"
       },
       "500": {
-        "value": "#b37f10",
+        "value": "{palette.amber.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toasted-marshmallow500 with {palette.amber.500}",
         "fallback": "{palette.amber.500}"
       },
       "600": {
-        "value": "#8C6000",
+        "value": "{palette.amber.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace toasted-marshmallow600 with {palette.amber.600}",
@@ -926,42 +926,42 @@
     },
     "licorice": {
       "100": {
-        "value": "#A1AAB3",
+        "value": "{palette.slate.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace licorice100 with {palette.slate.400}. Prefer to replace with `sys.color.bg.muted.softer` if used as a background color, or `sys.color.fg.disabled` if used as a foreground (text/icon) color, or `sys.color.border.input.disabled` if used as a border color.",
         "fallback": "{palette.slate.400}"
       },
       "200": {
-        "value": "#7b858f",
+        "value": "{palette.slate.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace licorice200 with {palette.slate.500}. Prefer to replace with `sys.color.bg.muted.soft` if used as a background color, or `sys.color.fg.muted.soft` if used as a foreground (text/icon) color, or `sys.color.border.input.default` if used as a border color.",
         "fallback": "{palette.slate.500}"
       },
       "300": {
-        "value": "#5E6A75",
+        "value": "{palette.slate.600.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace licorice300 with {palette.slate.600}. Prefer to replace with `sys.color.bg.muted.default` if used as a background color, or `sys.color.fg.muted.default` if used as a foreground (text/icon) color, or `sys.color.text.hint` if used as a text hint color.",
         "fallback": "{palette.slate.600}"
       },
       "400": {
-        "value": "#4a5561",
+        "value": "{palette.slate.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace licorice400 with {palette.slate.700}. Prefer to replace with `sys.color.fg.muted.strong` if used as a foreground (text/icon) color.",
         "fallback": "{palette.slate.700}"
       },
       "500": {
-        "value": "#333d47",
+        "value": "{palette.slate.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace licorice500 with {palette.slate.800}. Prefer to replace with `sys.color.bg.muted.strong` if used as a background color, or `sys.color.fg.muted.stronger` if used as a foreground (text/icon) color, or `sys.color.border.input.strong` if used as a border color.",
         "fallback": "{palette.slate.800}"
       },
       "600": {
-        "value": "#1f262e",
+        "value": "{palette.slate.900.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace licorice600 with {palette.slate.900}",
@@ -970,42 +970,42 @@
     },
     "soap": {
       "100": {
-        "value": "#f6f7f8",
+        "value": "{palette.slate.25.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace soap100 with {palette.slate.25}. Prefer to replace with `sys.color.bg.alt.softer` if used as a background color.",
         "fallback": "{palette.slate.25}"
       },
       "200": {
-        "value": "#F0F1F2",
+        "value": "{palette.slate.50.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace soap200 with {palette.slate.50}. Prefer to replace with `sys.color.bg.alt.soft` if used as a background color.",
         "fallback": "{palette.slate.50}"
       },
       "300": {
-        "value": "#e8ebed",
+        "value": "{palette.slate.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace soap300 with {palette.slate.100}. Prefer to replace with `sys.color.bg.alt.default` if used as a background color, or `sys.color.border.input.inverse` if used as a border color.",
         "fallback": "{palette.slate.100}"
       },
       "400": {
-        "value": "#DFE2E6",
+        "value": "{palette.slate.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace soap400 with {palette.slate.200}. Prefer to replace with `sys.color.bg.alt.strong` if used as a background color, or `sys.color.border.divider` if used as a border color.",
         "fallback": "{palette.slate.200}"
       },
       "500": {
-        "value": "#ced3d9",
+        "value": "{palette.slate.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace soap500 with {palette.slate.300}. Prefer to replace with `sys.color.bg.alt.stronger` if used as a background color, or `sys.color.border.container` if used as a border color.",
         "fallback": "{palette.slate.300}"
       },
       "600": {
-        "value": "#B9C0C7",
+        "value": "{palette.slate.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace soap600 with {palette.slate.300}",
@@ -1014,42 +1014,42 @@
     },
     "french-vanilla": {
       "100": {
-        "value": "#ffffff",
+        "value": "{palette.neutral.0.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace french-vanilla100 with {palette.neutral.0}. Prefer to replace with `sys.color.bg.default` if used as a background color, or `sys.color.fg.default` if used as a foreground (text/icon) color, or `sys.color.border.default` if used as a border color.",
         "fallback": "{palette.neutral.0}"
       },
       "200": {
-        "value": "#ebebeb",
+        "value": "{palette.neutral.100.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace french-vanilla200 with {palette.neutral.100}",
         "fallback": "{palette.neutral.100}"
       },
       "300": {
-        "value": "#d4d4d4",
+        "value": "{palette.neutral.200.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace french-vanilla300 with {palette.neutral.200}",
         "fallback": "{palette.neutral.200}"
       },
       "400": {
-        "value": "#bdbdbd",
+        "value": "{palette.neutral.300.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace french-vanilla400 with {palette.neutral.300}",
         "fallback": "{palette.neutral.300}"
       },
       "500": {
-        "value": "#a6a6a6",
+        "value": "{palette.neutral.400.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace french-vanilla500 with {palette.neutral.400}",
         "fallback": "{palette.neutral.400}"
       },
       "600": {
-        "value": "#8f8f8f",
+        "value": "{palette.neutral.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace french-vanilla600 with {palette.neutral.500}",
@@ -1058,42 +1058,42 @@
     },
     "black-pepper": {
       "100": {
-        "value": "#787878",
+        "value": "{palette.neutral.500.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace black-pepper100 with {palette.neutral.500}",
         "fallback": "{palette.neutral.500}"
       },
       "200": {
-        "value": "#616161",
+        "value": "{palette.neutral.700.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace black-pepper200 with {palette.neutral.700}",
         "fallback": "{palette.neutral.700}"
       },
       "300": {
-        "value": "#494949",
+        "value": "{palette.neutral.800.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace black-pepper300 with {palette.neutral.800}. Prefer to replace with `sys.color.fg.default` if used as a foreground (text/icon) color.",
         "fallback": "{palette.neutral.800}"
       },
       "400": {
-        "value": "#333333",
+        "value": "{palette.neutral.900.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace black-pepper400 with {palette.neutral.900}. Prefer to replace with `sys.color.bg.contrast.default` if used as a contrast background color, or `sys.color.fg.strong` if used as a foreground (text/icon) color, or `sys.color.border.contrast.default` if used as a border color.",
         "fallback": "{palette.neutral.900}"
       },
       "500": {
-        "value": "#1e1e1e",
+        "value": "{palette.neutral.950.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace black-pepper500 with {palette.neutral.950}. Prefer to replace with `sys.color.bg.contrast.strong` if used as a contrast background color, or `sys.color.fg.stronger` if used as a foreground (text/icon) color, or `sys.color.border.contrast.strong` if used as a border color.",
         "fallback": "{palette.neutral.950}"
       },
       "600": {
-        "value": "#000000",
+        "value": "{palette.neutral.1000.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace black-pepper600 with {palette.neutral.1000}",
@@ -1102,37 +1102,37 @@
     },
     "coconut": {
       "100": {
-        "value": "#F0EEEE",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace coconut100 with appropriate replacement color"
       },
       "200": {
-        "value": "#e3dfdf",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace coconut200 with appropriate replacement color"
       },
       "300": {
-        "value": "#d1cbcc",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace coconut300 with appropriate replacement color"
       },
       "400": {
-        "value": "#b3acac",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace coconut400 with appropriate replacement color"
       },
       "500": {
-        "value": "#9e9595",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace coconut500 with appropriate replacement color"
       },
       "600": {
-        "value": "#8F8687",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace coconut600 with appropriate replacement color"
@@ -1140,37 +1140,37 @@
     },
     "cappuccino": {
       "100": {
-        "value": "#7A7374",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cappuccino100 with appropriate replacement color"
       },
       "200": {
-        "value": "#706869",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cappuccino200 with appropriate replacement color"
       },
       "300": {
-        "value": "#5E5757",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cappuccino300 with appropriate replacement color"
       },
       "400": {
-        "value": "#4A4242",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cappuccino400 with appropriate replacement color"
       },
       "500": {
-        "value": "#352f2f",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cappuccino500 with appropriate replacement color"
       },
       "600": {
-        "value": "#231f20",
+        "value": "{appropriate.default}",
         "type": "color",
         "deprecated": true,
         "deprecatedComment": "replace cappuccino600 with appropriate replacement color"
@@ -1181,42 +1181,42 @@
     "palette": {
       "dragon-fruit": {
         "100": {
-          "value": "#fbf5ff",
+          "value": "{palette.purple.25.default}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "replace dragon-fruit100 with {palette.purple.25}. Prefer to replace it with ai system tokens: `sys.color.bg.ai.*`, `sys.color.border.ai` or `sys.color.text.ai`.",
           "fallback": "{palette.purple.25}"
         },
         "200": {
-          "value": "#f1d5ff",
+          "value": "{palette.purple.100.default}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "replace dragon-fruit200 with {palette.purple.100}. Prefer to replace it with ai system tokens: `sys.color.bg.ai.*`, `sys.color.border.ai` or `sys.color.text.ai`.",
           "fallback": "{palette.purple.100}"
         },
         "300": {
-          "value": "#736bff",
+          "value": "{palette.indigo.500.default}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "replace dragon-fruit300 with {palette.indigo.500}. Prefer to replace it with ai system tokens: `sys.color.bg.ai.*`, `sys.color.border.ai` or `sys.color.text.ai`.",
           "fallback": "{palette.indigo.500}"
         },
         "400": {
-          "value": "#5f4ae6",
+          "value": "{palette.indigo.600.default}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "replace dragon-fruit400 with {palette.indigo.600}. Prefer to replace it with ai system tokens: `sys.color.bg.ai.*`, `sys.color.border.ai` or `sys.color.text.ai`.",
           "fallback": "{palette.indigo.600}"
         },
         "500": {
-          "value": "#4e3ec2",
+          "value": "{palette.indigo.700.default}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "replace dragon-fruit500 with {palette.indigo.700}. Prefer to replace it with ai system tokens: `sys.color.bg.ai.*`, `sys.color.border.ai` or `sys.color.text.ai`.",
           "fallback": "{palette.indigo.700}"
         },
         "600": {
-          "value": "#272077",
+          "value": "{palette.indigo.900.default}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "replace dragon-fruit600 with {palette.indigo.900}. Prefer to replace it with ai system tokens: `sys.color.bg.ai.*`, `sys.color.border.ai` or `sys.color.text.ai`.",

@@ -1,7 +1,7 @@
 {
   "shape": {
     "zero": {
-      "value": "{size.0}",
+      "value": "{shape.none.default}",
       "type": "borderRadius",
       "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels.",
       "deprecated": true,
