@@ -484,8 +484,10 @@
         }
       },
       "info": {
-        "value": "{palette.blue.500}",
-        "type": "color"
+        "default": {
+          "value": "{palette.blue.500}",
+          "type": "color"
+        }
       },
       "danger": {
         "value": "{palette.red.500}",
