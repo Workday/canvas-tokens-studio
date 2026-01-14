@@ -1000,15 +1000,6 @@
           "deprecatedComment": "Use sys.color.fg.inverse instead"
         }
       },
-      "inverse": {
-        "default": {
-          "value": "{palette.neutral.0}",
-          "type": "color",
-          "description": "Borders on checkboxes and radios",
-          "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.inverse.default instead"
-        }
-      },
       "contrast": {
         "default": {
           "value": "{palette.neutral.A900}",
