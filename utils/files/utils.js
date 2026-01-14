@@ -23,11 +23,28 @@ export const mapObjectContent = (fn, obj, key) => {
 export const recursivelyCombineTwoObjects = (obj1, obj2) => {
   return Object.keys(obj2).reduce((acc, key) => {
     if (obj1[key]) {
-      acc[key] = {
-        ...acc[key],
-        ...obj1[key],
-        ...recursivelyCombineTwoObjects(obj1[key], obj2[key]),
-      };
+      // Check if both values are objects (not arrays, not primitives)
+      const isObj1Object = obj1[key] && typeof obj1[key] === 'object' && !Array.isArray(obj1[key]);
+      const isObj2Object = obj2[key] && typeof obj2[key] === 'object' && !Array.isArray(obj2[key]);
+
+      // Check if either is a token object (has a 'value' property) - these should be merged directly, not recursively
+      const isObj1Token = isObj1Object && 'value' in obj1[key];
+      const isObj2Token = isObj2Object && 'value' in obj2[key];
+
+      if (isObj1Token || isObj2Token) {
+        // At least one is a token object, merge directly (obj2 takes precedence for overlapping properties)
+        acc[key] = {...acc[key], ...obj1[key], ...obj2[key]};
+      } else if (isObj1Object && isObj2Object) {
+        // Both are plain objects (not token objects), recurse to merge nested structures
+        acc[key] = {
+          ...acc[key],
+          ...obj1[key],
+          ...recursivelyCombineTwoObjects(obj1[key], obj2[key]),
+        };
+      } else {
+        // At least one is not an object, merge directly
+        acc[key] = {...acc[key], ...obj1[key], ...obj2[key]};
+      }
     } else {
       acc[key] = {...acc[key], ...obj2[key]};
     }
