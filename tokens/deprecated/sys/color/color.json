@@ -1128,11 +1128,11 @@
       },
       "blue": {
         "default": {
-          "value": "{palette.blue.600}",
+          "value": "{sys.color.accent.info}",
           "type": "color",
           "description": "Blue",
           "deprecated": true,
-          "deprecatedComment": "Use palette.blue tokens directly instead"
+          "deprecatedComment": "Use sys.color.accent.info instead"
         },
         "softest": {
           "value": "{palette.blue.25}",
@@ -1346,32 +1346,32 @@
       },
       "amber": {
         "default": {
-          "value": "{palette.amber.400}",
+          "value": "{sys.color.accent.warning}",
           "type": "color",
           "description": "amber",
           "deprecated": true,
-          "deprecatedComment": "Use palette.amber tokens directly instead"
+          "deprecatedComment": "Use sys.color.accent.warning token instead"
         },
         "softest": {
-          "value": "{palette.amber.25}",
+          "value": "{sys.color.surface.warning.default}",
           "type": "color",
           "description": "Soft amber",
           "deprecated": true,
-          "deprecatedComment": "Use palette.amber tokens directly instead"
+          "deprecatedComment": "Use sys.color.accent.warning instead"
         },
         "strong": {
-          "value": "{palette.amber.500}",
+          "value": "{sys.color.accent.warning}",
           "type": "color",
           "description": "Stronger amber",
           "deprecated": true,
-          "deprecatedComment": "Use palette.amber tokens directly instead"
+          "deprecatedComment": "Use sys.color.accent.warning instead"
         },
         "stronger": {
-          "value": "{palette.amber.600}",
+          "value": "{sys.color.accent.warning}",
           "type": "color",
           "description": "Stronger amber",
           "deprecated": true,
-          "deprecatedComment": "Use palette.amber tokens directly instead"
+          "deprecatedComment": "Use sys.color.accent.warning instead"
         },
         "softer": {
           "value": "{palette.amber.50}",
@@ -1381,18 +1381,18 @@
           "deprecatedComment": "Use palette.amber tokens directly instead"
         },
         "strongest": {
-          "value": "{palette.amber.950}",
+          "value": "{sys.color.fg.warning.strong}",
           "type": "color",
           "description": "Stronger amber",
           "deprecated": true,
-          "deprecatedComment": "Use palette.amber tokens directly instead"
+          "deprecatedComment": "Use sys.color.fg.warning.strong instead"
         },
         "soft": {
-          "value": "{palette.amber.100}",
+          "value": "{sys.color.surface.warning.strong}",
           "type": "color",
           "description": "Soft amber",
           "deprecated": true,
-          "deprecatedComment": "Use palette.amber tokens directly instead"
+          "deprecatedComment": "Use sys.color.surface.warning.strong instead"
         }
       }
     }
