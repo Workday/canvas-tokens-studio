@@ -1,7 +1,7 @@
 {
   "opacity": {
     "zero": {
-      "value": "0",
+      "value": "{opacity.0}",
       "type": "number",
       "description": "Dev only"
     },

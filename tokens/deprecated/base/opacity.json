@@ -1,37 +1,37 @@
 {
   "opacity": {
     "100": {
-      "value": "{opacity.80}",
+      "value": "{base.opacity.80}",
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.80} instead"
     },
     "200": {
-      "value": "{opacity.120}",
+      "value": "{base.opacity.120}",
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.120} instead"
     },
     "250": {
-      "value": "{opacity.200}",
+      "value": "{base.opacity.200}",
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.200} instead"
     },
     "300": {
-      "value": "{opacity.400}",
+      "value": "{base.opacity.400}",
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.400} instead"
     },
     "400": {
-      "value": "{opacity.640}",
+      "value": "{base.opacity.640}",
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.640} instead"
     },
     "500": {
-      "value": "{opacity.840}",
+      "value": "{base.opacity.840}",
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.840} instead"
