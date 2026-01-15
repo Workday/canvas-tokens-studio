@@ -73,7 +73,7 @@ jobs:
         run: node scripts/utils/generate-existing-tokens.js
 
       - name: Clear canvas-tokens build
-        run: yarn clear:tokens
+        run: yarn clean:tokens
 
       - name: Download exported tokens
         uses: actions/download-artifact@v4
