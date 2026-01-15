@@ -1076,21 +1076,21 @@
     },
     "shadow": {
       "1": {
-        "value": "oklch({palette.slate.900} / {opacity.200})",
+        "value": "{sys.color.shadow.base}",
         "type": "color",
         "description": "First shadow color",
         "deprecated": true,
         "deprecatedComment": "Use sys.color.shadow.base instead"
       },
       "2": {
-        "value": "oklch({palette.slate.900} / {opacity.100})",
+        "value": "{sys.color.shadow.ambient}",
         "type": "color",
         "description": "Second shadow color",
         "deprecated": true,
         "deprecatedComment": "Use sys.color.shadow.ambient instead"
       },
       "default": {
-        "value": "{palette.slate.900}",
+        "value": "{sys.color.shadow.base}",
         "type": "color",
         "description": "Main shadow color",
         "deprecated": true,
