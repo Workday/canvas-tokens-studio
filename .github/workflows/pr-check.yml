@@ -84,8 +84,11 @@ jobs:
       - name: Build canvas-tokens
         run: yarn build:tokens
 
-      - run: ls
-      - run: ls ../
+      - name: Log files in root
+        run: ls -la
+
+      - name: Log files prev directory
+        run: ls -la ../
 
       - name: Verify CSS tokens
         id: validate-tokens
