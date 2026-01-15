@@ -66,12 +66,6 @@ jobs:
       - name: Install Packages
         run: yarn
 
-      - name: Build canvas-tokens
-        run: yarn build:tokens
-
-      - name: Clear canvas-tokens build
-        run: yarn clean:tokens
-
       - name: Download exported tokens
         uses: actions/download-artifact@v4
         with:
