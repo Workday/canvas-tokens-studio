@@ -89,9 +89,11 @@ jobs:
       - name: Verify CSS tokens
         id: validate-tokens
         run: |
-          OUTPUT=$(node scripts/utils/validate-tokens.js || true)
+          OUTPUT=$(node scripts/utils/validate-tokens.js 2>&1 || true)
           # Filter out the error for sys.color.border.info since we intentionally changed its structure
-          FILTERED_OUTPUT=$(echo "$OUTPUT" | grep -v "sys.color.border.info" | grep -v "Invalid format.*sys.color.border.info" || true)
+          FILTERED_OUTPUT=$(echo "$OUTPUT" | \
+            grep -v "sys.color.border.info" | \
+            grep -v "Invalid format.*sys.color.border.info" || true)
           if [ -n "$FILTERED_OUTPUT" ]; then
             echo "result=$FILTERED_OUTPUT" >> $GITHUB_OUTPUT
           fi

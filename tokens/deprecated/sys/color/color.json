@@ -56,14 +56,14 @@
         "strong": {
           "value": "{sys.color.surface.overlay.hover}",
           "type": "color",
-          "comment": "Inverse Secondary Button Hover state",
+          "description": "Inverse Secondary Button Hover state",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.surface.overlay.hover tokens instead"
         },
         "stronger": {
           "value": "{sys.color.surface.overlay.pressed}",
           "type": "color",
-          "comment": "Inverse Secondary Button Active state",
+          "description": "Inverse Secondary Button Active state",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.surface.overlay.pressed tokens instead"
         }
