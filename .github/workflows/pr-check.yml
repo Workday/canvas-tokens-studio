@@ -70,7 +70,7 @@ jobs:
         run: yarn build:tokens
 
       - name: Generate css tokens list
-        run: node ../canvas-tokens/scripts/utils/generate-existing-tokens.js
+        run: node scripts/utils/generate-existing-tokens.js
 
       - name: Clear canvas-tokens build
         run: yarn clear:tokens
@@ -86,7 +86,7 @@ jobs:
 
       - name: Verify CSS tokens
         id: validate-tokens
-        run: echo "result=$(node ../canvas-tokens/scripts/utils/validate-tokens.js)" >> $GITHUB_OUTPUT
+        run: echo "result=$(node scripts/utils/validate-tokens.js)" >> $GITHUB_OUTPUT
 
       - name: Comment PR with Markdown report
         if: steps.validate-tokens.outputs.result != ''
