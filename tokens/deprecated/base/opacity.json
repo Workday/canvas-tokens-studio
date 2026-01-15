@@ -6,12 +6,6 @@
       "deprecated": true,
       "deprecatedComment": "Use {opacity.80} instead"
     },
-    "200": {
-      "value": "{base.opacity.120}",
-      "type": "number",
-      "deprecated": true,
-      "deprecatedComment": "Use {opacity.120} instead"
-    },
     "250": {
       "value": "{base.opacity.200}",
       "type": "number",
@@ -23,12 +17,6 @@
       "type": "number",
       "deprecated": true,
       "deprecatedComment": "Use {opacity.400} instead"
-    },
-    "400": {
-      "value": "{base.opacity.640}",
-      "type": "number",
-      "deprecated": true,
-      "deprecatedComment": "Use {opacity.640} instead"
     },
     "500": {
       "value": "{base.opacity.840}",
