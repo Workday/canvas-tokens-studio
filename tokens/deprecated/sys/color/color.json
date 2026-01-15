@@ -170,7 +170,7 @@
           "deprecatedComment": "Use sys.color.brand.surface.positive.strong tokens instead"
         },
         "soft": {
-          "value": "{sys.color.brad.surface.positive.default}",
+          "value": "{sys.color.brand.surface.positive.default}",
           "type": "color",
           "description": "Disabled success background",
           "deprecated": true,
