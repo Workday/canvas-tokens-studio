@@ -467,6 +467,13 @@
         "value": "{palette.slate.A200}",
         "type": "color"
       },
+      "ai": {
+        "value": "{palette.blue.950}",
+        "type": "color",
+        "description": "Active state on AI borders",
+        "deprecated": true,
+        "deprecatedComment": "Use sys.color.accent.ai instead"
+      },
       "strong": {
         "value": "{palette.slate.A300}",
         "type": "color"

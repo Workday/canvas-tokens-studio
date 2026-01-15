@@ -979,70 +979,70 @@
     "border": {
       "input": {
         "disabled": {
-          "value": "{palette.slate.400}",
+          "value": "{sys.opacity.disabled}",
           "type": "color",
           "description": "Disabled inputs",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.fg.disabled instead"
         },
         "strong": {
-          "value": "{palette.slate.A700}",
+          "value": "{sys.color.border.input.hover}",
           "type": "color",
           "description": "Input hover",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.border.input.hover instead"
         },
         "inverse": {
-          "value": "{palette.neutral.0}",
+          "value": "{sys.color.border.inverse.default}",
           "type": "color",
           "description": "Borders on checkboxes and radios",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.inverse instead"
+          "deprecatedComment": "Use sys.color.border.inverse.default instead"
         }
       },
       "contrast": {
         "default": {
-          "value": "{palette.neutral.A900}",
+          "value": "{sys.color.border.contrast.default}",
           "type": "color",
           "description": "Secondary Button",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.contrast instead"
+          "deprecatedComment": "Use sys.color.border.contrast.default instead"
         },
         "strong": {
-          "value": "{palette.neutral.950}",
+          "value": "{sys.color.border.contrast.default}",
           "type": "color",
           "description": "Secondary Button Hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.contrast instead"
+          "deprecatedComment": "Use sys.color.border.contrast.default instead"
         }
       },
       "critical": {
         "default": {
-          "value": "{palette.red.500}",
+          "value": "{sys.color.brand.border.critical}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.danger instead"
+          "deprecatedComment": "Use sys.color.brand.border.critical instead"
         }
       },
       "caution": {
         "default": {
-          "value": "{palette.amber.400}",
+          "value": "{sys.color.brand.focus.caution.inner}",
           "type": "color",
           "description": "Warning inner",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.warning instead"
+          "deprecatedComment": "Use sys.color.brand.focus.caution.inner instead"
         },
         "strong": {
-          "value": "{palette.amber.500}",
+          "value": "{sys.color.brand.focus.caution.outer}",
           "type": "color",
           "description": "Warning outer (box shadow)",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.warning instead"
+          "deprecatedComment": "Use sys.color.brand.focus.caution.outer instead"
         }
       },
       "divider": {
-        "value": "{palette.slate.200}",
+        "value": "{sys.color.border.default}",
         "type": "color",
         "description": "Dividers",
         "deprecated": true,
@@ -1050,34 +1050,27 @@
       },
       "primary": {
         "default": {
-          "value": "{palette.blue.500}",
+          "value": "{sys.color.brand.border.primary}",
           "type": "color",
           "description": "Brand, Focus",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.border.primary.default instead"
+          "deprecatedComment": "Use sys.color.brand.border.primary instead"
         }
       },
       "container": {
-        "value": "{palette.slate.300}",
+        "value": "{sys.color.border.strong}",
         "type": "color",
         "description": "Cards, Toasts, Surfaces",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.border.default or sys.color.border.strong instead"
-      },
-      "ai": {
-        "value": "{palette.blue.950}",
-        "type": "color",
-        "description": "Active state on AI borders",
-        "deprecated": true,
-        "deprecatedComment": "Use sys.color.accent.ai instead"
+        "deprecatedComment": "Use sys.color.border.strong or sys.color.border.strong instead"
       },
       "info": {
         "default": {
-          "value": "{palette.blue.500}",
+          "value": "{sys.color.border.info.default}",
           "type": "color",
           "description": "Brand, Focus",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.info instead"
+          "deprecatedComment": "Use sys.color.border.info.default instead"
         }
       }
     },
