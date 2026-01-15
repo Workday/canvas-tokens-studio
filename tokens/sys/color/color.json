@@ -328,11 +328,9 @@
       },
       "border": {
         "primary": {
-          "default": {
-            "value": "{brand.primary.500}",
-            "type": "color",
-            "description": "Brand, Focus"
-          }
+          "value": "{brand.primary.500}",
+          "type": "color",
+          "description": "Brand, Focus"
         },
         "critical": {
           "value": "{brand.critical.500}",
@@ -412,7 +410,7 @@
           "type": "color"
         },
         "strong": {
-          "value": "{palette.blue.700}",
+          "value": "{sys.color.fg.ai}",
           "type": "color"
         }
       },
@@ -469,6 +467,13 @@
         "value": "{palette.slate.A200}",
         "type": "color"
       },
+      "ai": {
+        "value": "{palette.blue.950}",
+        "type": "color",
+        "description": "Active state on AI borders",
+        "deprecated": true,
+        "deprecatedComment": "Use sys.color.accent.ai instead"
+      },
       "strong": {
         "value": "{palette.slate.A300}",
         "type": "color"
@@ -486,8 +491,10 @@
         }
       },
       "info": {
-        "value": "{palette.blue.500}",
-        "type": "color"
+        "default": {
+          "value": "{palette.blue.500}",
+          "type": "color"
+        }
       },
       "danger": {
         "value": "{palette.red.500}",

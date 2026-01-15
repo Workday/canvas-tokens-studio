@@ -1,42 +1,37 @@
 {
   "shape": {
-    "zero": {
+    "none": {
       "value": "{size.0}",
       "type": "borderRadius",
       "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels."
     },
-    "xs": {
-      "value": "{size.50}",
-      "type": "borderRadius",
-      "description": "Use this for subtle and smaller elements that don't contain complex information. Often high-density components. Checkbox, Pill"
-    },
     "sm": {
-      "value": "{size.100}",
+      "value": "{size.50}",
       "type": "borderRadius",
       "description": "Components presenting info text, user input, user feedback. Inputs, Toasts, Snack bars, Tooltips, Error Alert Banner"
     },
     "md": {
-      "value": "{size.200}",
+      "value": "{size.100}",
       "type": "borderRadius",
       "description": "Core large containers, card containers and popups that house moderate amounts of content and/or data: Card, Menus"
     },
     "lg": {
-      "value": "{size.300}",
+      "value": "{size.150}",
       "type": "borderRadius",
       "description": "Primarily used for elevated and simple parent containers with greater amounts of content and UI. Dialogs, Modals, Bottom Sheets"
     },
     "xl": {
-      "value": "{size.400}",
+      "value": "{size.200}",
       "type": "borderRadius",
       "description": "Extra large rounding for prominent containers"
     },
     "xxl": {
-      "value": "{size.500}",
+      "value": "{size.300}",
       "type": "borderRadius",
       "description": "Extra extra large rounding for cards and items"
     },
     "xxxl": {
-      "value": "{size.600}",
+      "value": "{size.400}",
       "type": "borderRadius",
       "description": "Maximum rounding for modals and large containers"
     },
