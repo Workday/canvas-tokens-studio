@@ -95,7 +95,9 @@ jobs:
             grep -v "sys.color.border.info" | \
             grep -v "Invalid format.*sys.color.border.info" | \
             grep -v "transparent.stronger" | \
-            grep -v "removed.*transparent.stronger" || true)
+            grep -v "removed.*transparent.stronger" | \
+            grep -v "transparent.strong" | \
+            grep -v "removed.*transparent.strong" || true)
           if [ -n "$FILTERED_OUTPUT" ]; then
             echo "result=$FILTERED_OUTPUT" >> $GITHUB_OUTPUT
           fi
