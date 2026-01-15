@@ -363,42 +363,42 @@
     },
     "text": {
       "default": {
-        "value": "{palette.neutral.800}",
+        "value": "{sys.color.fg.default}",
         "type": "color",
         "description": "Body text",
         "deprecated": true,
         "deprecatedComment": "Use sys.color.fg.default instead"
       },
       "strong": {
-        "value": "{palette.neutral.900}",
+        "value": "{sys.color.fg.strong}",
         "type": "color",
         "description": "Heading text",
         "deprecated": true,
         "deprecatedComment": "Use sys.color.fg.strong instead"
       },
       "stronger": {
-        "value": "{palette.neutral.950}",
+        "value": "{sys.color.fg.strong}",
         "type": "color",
         "description": "Display text",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.stronger instead"
+        "deprecatedComment": "Use sys.color.fg.strong instead"
       },
       "disabled": {
         "value": "{palette.slate.400}",
         "type": "color",
         "description": "Disabled text color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.disabled instead"
+        "deprecatedComment": "Use opacity.disabled instead"
       },
       "hint": {
-        "value": "{palette.slate.600}",
+        "value": "{sys.color.fg.muted.default}",
         "type": "color",
         "description": "Hint text color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.muted instead"
+        "deprecatedComment": "Use sys.color.fg.muted.default instead"
       },
       "inverse": {
-        "value": "{palette.neutral.0}",
+        "value": "{sys.color.fg.inverse}",
         "type": "color",
         "description": "Inverse text color",
         "deprecated": true,
@@ -406,25 +406,25 @@
       },
       "critical": {
         "default": {
-          "value": "{palette.red.600}",
+          "value": "{sys.color.brand.fg.critical.default}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use sys.color.brand.fg.critical.default instead"
         },
         "strong": {
-          "value": "{palette.red.700}",
+          "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.critical.strong instead"
         },
         "stronger": {
-          "value": "{palette.red.800}",
+          "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.critical.strong instead"
         },
         "soft": {
           "value": "{palette.red.400}",
@@ -443,25 +443,25 @@
       },
       "primary": {
         "default": {
-          "value": "{palette.blue.600}",
+          "value": "{sys.color.brand.fg.primary.default}",
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
         },
         "strong": {
-          "value": "{palette.blue.700}",
+          "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Branded hover text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
         },
         "stronger": {
-          "value": "{palette.blue.800}",
+          "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
@@ -480,18 +480,18 @@
       },
       "caution": {
         "default": {
-          "value": "{palette.amber.900}",
+          "value": "{sys.color.fg.contrast.default}",
           "type": "color",
           "description": "Warning text",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.fg.warning instead"
         },
         "strong": {
-          "value": "{palette.amber.950}",
+          "value": "{sys.color.fg.contrast.strong}",
           "type": "color",
           "description": "Strong warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning-strong instead"
+          "deprecatedComment": "Use sys.color.fg.contrast.strong instead"
         },
         "soft": {
           "value": "{palette.amber.400}",
@@ -501,11 +501,11 @@
           "deprecatedComment": "Use sys.color.fg.warning instead"
         },
         "stronger": {
-          "value": "{palette.amber.975}",
+          "value": "{sys.color.fg.contrast.strong}",
           "type": "color",
           "description": "Stronger warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning-strong instead"
+          "deprecatedComment": "Use sys.color.fg.contrast.strong instead"
         },
         "softer": {
           "value": "{palette.amber.200}",
@@ -523,25 +523,25 @@
       },
       "positive": {
         "default": {
-          "value": "{palette.green.600}",
+          "value": "{sys.color.brand.fg.positive.default}",
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use sys.color.brand.fg.positive.default instead"
         },
         "strong": {
-          "value": "{palette.green.700}",
+          "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Branded hover text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead"
         },
         "stronger": {
-          "value": "{palette.green.800}",
+          "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead"
         },
         "soft": {
           "value": "{palette.green.400}",
@@ -560,32 +560,32 @@
       },
       "info": {
         "default": {
-          "value": "{palette.blue.600}",
+          "value": "{sys.color.fg.info.default}",
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use sys.color.fg.info.default instead"
         },
         "strong": {
-          "value": "{palette.blue.700}",
+          "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Branded hover text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.fg.info.strong instead"
         },
         "stronger": {
-          "value": "{palette.blue.800}",
+          "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.fg.info.strong instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use sys.color.fg.info.default instead"
         },
         "softer": {
           "value": "{palette.blue.200}",

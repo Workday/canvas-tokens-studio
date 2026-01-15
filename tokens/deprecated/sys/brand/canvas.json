@@ -274,15 +274,15 @@
         "value": "{brand.common.caution.inner}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace alert-inner with {brand.common.caution-inner}",
-        "fallback": "{brand.common.caution-inner}"
+        "deprecatedComment": "replace alert-inner with {brand.common.caution.inner}",
+        "fallback": "{brand.common.caution.inner}"
       },
       "alert-outer": {
         "value": "{brand.common.caution.outer}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace alert-outer with {brand.common.caution-outer}",
-        "fallback": "{brand.common.caution-outer}"
+        "deprecatedComment": "replace alert-outer with {brand.common.caution.outer}",
+        "fallback": "{brand.common.caution.outer}"
       }
     }
   }
