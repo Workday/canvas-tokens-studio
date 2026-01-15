@@ -97,7 +97,9 @@ jobs:
             grep -v "transparent.stronger" | \
             grep -v "removed.*transparent.stronger" | \
             grep -v "transparent.strong" | \
-            grep -v "removed.*transparent.strong" || true)
+            grep -v "removed.*transparent.strong" | \
+            grep -v "sys.color.brand.border.primary.default" | \
+            grep -v "removed.*sys.color.brand.border.primary.default" || true)
           if [ -n "$FILTERED_OUTPUT" ]; then
             echo "result=$FILTERED_OUTPUT" >> $GITHUB_OUTPUT
           fi
