@@ -598,25 +598,25 @@
     },
     "icon": {
       "default": {
-        "value": "{palette.neutral.800}",
+        "value": "{sys.color.fg.default",
         "type": "color",
         "description": "Default icon color",
         "deprecated": true,
         "deprecatedComment": "Use sys.color.fg.default instead"
       },
       "soft": {
-        "value": "{palette.slate.600}",
+        "value": "{sys.color.fg.muted.default}",
         "type": "color",
         "description": "Disabled icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.muted instead"
+        "deprecatedComment": "Use sys.color.fg.muted.default instead"
       },
       "strong": {
-        "value": "{palette.neutral.900}",
+        "value": "{sys.color.fg.muted.strong}",
         "type": "color",
         "description": "Hover icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.strong instead"
+        "deprecatedComment": "Use sys.color.fg.muted.strong instead"
       },
       "inverse": {
         "value": "{palette.neutral.0}",
@@ -627,25 +627,25 @@
       },
       "primary": {
         "default": {
-          "value": "{palette.blue.600}",
+          "value": "{sys.color.brand.fg.primary.default}",
           "type": "color",
           "description": "Brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
         },
         "strong": {
-          "value": "{palette.blue.700}",
+          "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
         },
         "stronger": {
-          "value": "{palette.blue.800}",
+          "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
@@ -664,25 +664,25 @@
       },
       "positive": {
         "default": {
-          "value": "{palette.green.600}",
+          "value": "{sys.color.brand.fg.positive.default}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use sys.color.brand.fg.positive.default instead"
         },
         "strong": {
-          "value": "{palette.green.700}",
+          "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead with sys.color.accent.overlay.hover"
         },
         "stronger": {
-          "value": "{palette.green.800}",
+          "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead with sys.color.accent.overlay.pressed"
         },
         "soft": {
           "value": "{palette.green.400}",
@@ -701,14 +701,14 @@
       },
       "critical": {
         "default": {
-          "value": "{palette.red.600}",
+          "value": "{sys.color.brand.fg.critical.default}",
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use sys.color.brand.fg.critical.default instead"
         },
         "strong": {
-          "value": "{palette.red.700}",
+          "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
@@ -719,7 +719,7 @@
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger-strong instead"
+          "deprecatedComment": "Use sys.color.fg.danger.strong instead"
         },
         "soft": {
           "value": "{palette.red.400}",
@@ -738,28 +738,28 @@
       },
       "caution": {
         "default": {
-          "value": "{palette.amber.900}",
+          "value": "{sys.color.fg.contrast.default}",
           "type": "color",
           "description": "Caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use sys.color.fg.contrast.default instead"
         },
         "strong": {
-          "value": "{palette.amber.950}",
+          "value": "{sys.color.brand.fg.caution.default}",
           "type": "color",
           "description": "Strong caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning-strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.caution.default instead"
         },
         "stronger": {
-          "value": "{palette.amber.975}",
+          "value": "{sys.color.brand.fg.caution.strong}",
           "type": "color",
           "description": "Strong caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning-strong instead"
+          "deprecatedComment": "Use ssys.color.brand.fg.caution.strong instead"
         },
         "soft": {
-          "value": "{palette.amber.700}",
+          "value": "{sys.color.brand.fg.caution.default}",
           "type": "color",
           "description": "Soft caution icon color",
           "deprecated": true,
@@ -782,25 +782,25 @@
       },
       "info": {
         "default": {
-          "value": "{palette.blue.600}",
+          "value": "{sys.color.fg.info.default}",
           "type": "color",
           "description": "Brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use sys.color.fg.info.default instead"
         },
         "strong": {
-          "value": "{palette.blue.700}",
+          "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.fg.info.strong instead"
         },
         "stronger": {
           "value": "{palette.blue.800}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info-strong instead"
+          "deprecatedComment": "Use sys.color.fg.info.strong instead"
         }
       }
     },
