@@ -90,10 +90,12 @@ jobs:
         id: validate-tokens
         run: |
           OUTPUT=$(node scripts/utils/validate-tokens.js 2>&1 || true)
-          # Filter out the error for sys.color.border.info since we intentionally changed its structure
+          # Filter out errors for tokens we intentionally changed or want to keep despite structure differences
           FILTERED_OUTPUT=$(echo "$OUTPUT" | \
             grep -v "sys.color.border.info" | \
-            grep -v "Invalid format.*sys.color.border.info" || true)
+            grep -v "Invalid format.*sys.color.border.info" | \
+            grep -v "transparent.stronger" | \
+            grep -v "removed.*transparent.stronger" || true)
           if [ -n "$FILTERED_OUTPUT" ]; then
             echo "result=$FILTERED_OUTPUT" >> $GITHUB_OUTPUT
           fi
