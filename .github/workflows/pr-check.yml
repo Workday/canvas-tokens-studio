@@ -84,6 +84,9 @@ jobs:
       - name: Build canvas-tokens
         run: yarn build:tokens
 
+      - run: ls
+      - run: ls ../
+
       - name: Verify CSS tokens
         id: validate-tokens
         run: echo "result=$(node scripts/utils/validate-tokens.js)" >> $GITHUB_OUTPUT
