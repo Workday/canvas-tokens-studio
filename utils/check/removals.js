@@ -22,8 +22,8 @@ const transformObjectToTokens = (tokensObj, tokensList = [], prefix = '') => {
   return tokensList;
 };
 
-const getTokensList = (file, folder) => {
-  const tokensObj = JSON.parse(fs.readFileSync(path.join(folder, file), 'utf8'));
+const getTokensList = (filename, folder) => {
+  const tokensObj = JSON.parse(fs.readFileSync(path.join(folder, filename), 'utf8'));
   return transformObjectToTokens(tokensObj);
 };
 
@@ -35,11 +35,11 @@ const generateReport = (removed, errors) => {
   const removedDeprecated = removed.deprecated.map(token => `-[ ] \`${token}\``).join('\n');
 
   const mainReport = isMainMissing
-    ? `### Main Tokens\n\n⚠️ The following tokens are removed from the main tokens files:\n\n${removedMain}\n\nThe main tokens shouldn't be removed but deprecated.\n\n`
+    ? `### Main Tokens\n\n⚠️  The following tokens are removed from the main tokens files:\n\n${removedMain}\n\nThe main tokens shouldn't be removed but deprecated.\n\n`
     : '';
 
   const deprecatedReport = isDeprecatedMissing
-    ? `### Deprecated Tokens\n\n⚠️ The following tokens are removed from the deprecated tokens files:\n\n${removedDeprecated}\n\n. Deprecated tokens removal is not restricted, but should be reviewed before merge to identify if the removal is necessary.`
+    ? `### Deprecated Tokens\n\n⚠️  The following tokens are removed from the deprecated tokens files:\n\n${removedDeprecated}\n\n. Deprecated tokens removal is not restricted, but should be reviewed before merge to identify if the removal is necessary.`
     : '';
 
   const fileIssuesReport = errors.length ? `## File Issues\n\n${errors.join('\n\n')}` : '';
@@ -53,58 +53,67 @@ const generateReport = (removed, errors) => {
 
 const checkRemovals = () => {
   const baseLineTokensFiles = getDirectoryFiles('tokens-base');
-  const mainTokensFiles = getDirectoryFiles('tokens');
 
   const removed = {main: [], deprecated: []};
   const errors = [];
 
-  baseLineTokensFiles.forEach(file => {
-    const type = file.includes('/deprecated/') ? 'deprecated' : 'main';
-    const tokens = getTokensList(file, 'tokens-base');
+  baseLineTokensFiles.forEach(filename => {
+    const type = filename.includes('deprecated/') ? 'deprecated' : 'main';
+    const tokens = getTokensList(filename, 'tokens-base');
 
     if (type === 'main') {
-      const newFilesMain = path.join('tokens', file);
-      const newFilesDeprecated = path.join('tokens', 'deprecated', file);
-
-      const notInMain = [];
+      const newFilesMain = path.join('tokens', filename);
+      const newFilesDeprecated = path.join('tokens', 'deprecated', filename);
 
       if (!fs.existsSync(newFilesMain) && !fs.existsSync(newFilesDeprecated)) {
         errors.push(
-          `### \`${file}\`:\n\n⚠️ The previous token file is removed! The main token file should not be fully removed, but tokens should be moved under deprecated folder instead.\n\n-[ ] Checked if removal is approved.`
+          `### \`${filename}\`:\n\n⚠️  The previous token file is removed! The main token file should not be fully removed, but tokens should be moved under deprecated folder instead.\n\n-[ ] Checked if removal is approved.`
         );
 
         return;
       }
 
-      if (fs.existsSync(newFilesMain)) {
-        const newTokens = getTokensList(file, 'tokens');
-        const notPresentedTokens = tokens.filter(token => !newTokens.includes(token));
+      const notInMain = [];
 
-        notInMain.push(...notPresentedTokens);
+      if (fs.existsSync(newFilesMain)) {
+        const newTokens = getTokensList(filename, 'tokens');
+        const notPresentedTokens = tokens.filter(token => !newTokens.includes(token));
 
         if (!fs.existsSync(newFilesDeprecated)) {
           removed.main.push(...notPresentedTokens);
+        } else {
+          notInMain.push(...notPresentedTokens);
         }
       }
 
-      if (fs.existsSync(newFilesDeprecated) && !notInMain.length) {
-        const deprecatedTokens = getTokensList(file, 'tokens/deprecated');
+      if (fs.existsSync(newFilesDeprecated) && notInMain.length) {
+        const deprecatedTokens = getTokensList(filename, 'tokens/deprecated');
         const notPresentedTokens = notInMain.filter(token => !deprecatedTokens.includes(token));
 
-        if (!fs.existsSync(newFilesMain)) {
-          removed.main.push(...notPresentedTokens);
-        }
+        removed.main.push(...notPresentedTokens);
       }
     } else {
-      const newFilesDeprecated = path.join('tokens', 'deprecated', file);
+      const newFilesDeprecated = path.join('tokens', filename);
 
       if (!fs.existsSync(newFilesDeprecated)) {
         removed.deprecated.push(...tokens);
       } else {
-        const deprecatedTokens = getTokensList(file, 'tokens/deprecated');
-        const notPresentedTokens = tokens.filter(token => !deprecatedTokens.includes(token));
+        const mainTokens = getTokensList(filename.replace('deprecated/', ''), 'tokens');
+        const deprecatedTokens = getTokensList(filename, 'tokens');
 
-        removed.deprecated.push(...notPresentedTokens);
+        const notPresentedTokens = tokens.filter(token => !deprecatedTokens.includes(token));
+        const revertedTokens = notPresentedTokens.filter(token => mainTokens.includes(token));
+        const notRevertedTokens = notPresentedTokens.filter(token => !mainTokens.includes(token));
+
+        if (revertedTokens.length) {
+          errors.push(
+            `### Returned Tokens [${filename}]:\n\n⚠️  The following tokens are returned to the main token file:\n\n${revertedTokens
+              .map(token => `-[ ] \`${token}\``)
+              .join('\n')}\n\nCheck if the return was intended.`
+          );
+        }
+
+        removed.deprecated.push(...notRevertedTokens);
       }
     }
   });
