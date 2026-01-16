@@ -32,9 +32,9 @@ const generateReport = (removed, errors) => {
   const isDeprecatedMissing = removed.deprecated.length;
   const isReturnedMissing = removed.returned.length;
 
-  const removedMain = removed.main.map(token => `-[ ] \`${token}\``).join('\n');
-  const removedDeprecated = removed.deprecated.map(token => `-[ ] \`${token}\``).join('\n');
-  const returnedTokens = removed.returned.map(token => `-[ ] \`${token}\``).join('\n');
+  const removedMain = removed.main.map(token => `- [ ] \`${token}\``).join('\n');
+  const removedDeprecated = removed.deprecated.map(token => `- [ ] \`${token}\``).join('\n');
+  const returnedTokens = removed.returned.map(token => `- [ ] \`${token}\``).join('\n');
 
   const mainReport = isMainMissing
     ? `### Main Tokens\n\n⚠️  The following tokens are removed from the main tokens files:\n\n${removedMain}\n\nThe main tokens shouldn't be removed but deprecated.\n\n`
@@ -76,7 +76,7 @@ const checkRemovals = () => {
 
       if (!fs.existsSync(newFilesMain) && !fs.existsSync(newFilesDeprecated)) {
         errors.push(
-          `### \`${filename}\`:\n\n⚠️  The previous token file is removed! The main token file should not be fully removed, but tokens should be moved under deprecated folder instead.\n\n-[ ] Checked if removal is approved.`
+          `### \`${filename}\`:\n\n⚠️  The previous token file is removed! The main token file should not be fully removed, but tokens should be moved under deprecated folder instead.\n\n- [ ] Checked if removal is approved.`
         );
 
         return;
