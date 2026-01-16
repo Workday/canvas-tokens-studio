@@ -94,6 +94,12 @@ jobs:
     needs: get-baseline
     steps:
       - uses: actions/checkout@v4
+
+      - name: Get tokens
+        uses: actions/download-artifact@v4
+        with:
+          name: tokens-base
+          path: tokens-base/
       
       - name: Check for removals
         id: check-for-removals
