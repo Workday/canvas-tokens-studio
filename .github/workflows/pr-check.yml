@@ -69,7 +69,7 @@ jobs:
       - name: Log files in canvas-tokens
         run: ls ./scripts/utils
 
-      - run: node ./scripts/utils/generate-existing-tokens.js
+      - run: node ${{ github.workspace }}/scripts/utils/generate-existing-tokens.js
 
       - name: Download exported tokens
         uses: actions/download-artifact@v4
