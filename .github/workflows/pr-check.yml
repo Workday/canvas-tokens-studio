@@ -81,11 +81,15 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check deprecated folders organization
-        id: check-deprecated-folders
+        id: check-deprecated
         run: echo "result=$(node utils/check/deprecated.js)" >> $GITHUB_OUTPUT
 
+      - name: Check deprecated tokens
+        id: check-deprecated-tokens
+        run: echo ${{ steps.check-deprecated.outputs.result }}
+
       - name: Fail if deprecated tokens are found
-        if: steps.check-deprecated-folders.outputs.result != ''
+        if: steps.check-deprecated.outputs.result != ''
         run: |
           exit 1
 
