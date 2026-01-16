@@ -239,7 +239,7 @@
           "type": "color",
           "description": "Stronger warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.caution instead with sys.color.accent.overlay.presse"
+          "deprecatedComment": "Use sys.color.brand.accent.caution instead with sys.color.accent.overlay.pressed"
         }
       },
       "critical": {
@@ -598,7 +598,7 @@
     },
     "icon": {
       "default": {
-        "value": "{sys.color.fg.default",
+        "value": "{sys.color.fg.default}",
         "type": "color",
         "description": "Default icon color",
         "deprecated": true,
@@ -756,7 +756,7 @@
           "type": "color",
           "description": "Strong caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use ssys.color.brand.fg.caution.strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.caution.strong instead"
         },
         "soft": {
           "value": "{sys.color.brand.fg.caution.default}",
@@ -884,6 +884,13 @@
           "description": "Links on hover",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.brand.fg.primary.strong  instead"
+        },
+        "strong": {
+          "value": "{sys.color.brand.fg.primary.strong}",
+          "type": "color",
+          "description": "Links on hover",
+          "deprecated": true,
+          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
         }
       },
       "caution": {
