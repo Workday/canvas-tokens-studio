@@ -30,31 +30,40 @@ const getTokensList = (filename, folder) => {
 const generateReport = (removed, errors) => {
   const isMainMissing = removed.main.length;
   const isDeprecatedMissing = removed.deprecated.length;
+  const isReturnedMissing = removed.returned.length;
 
   const removedMain = removed.main.map(token => `-[ ] \`${token}\``).join('\n');
   const removedDeprecated = removed.deprecated.map(token => `-[ ] \`${token}\``).join('\n');
+  const returnedTokens = removed.returned.map(token => `-[ ] \`${token}\``).join('\n');
 
   const mainReport = isMainMissing
     ? `### Main Tokens\n\n⚠️  The following tokens are removed from the main tokens files:\n\n${removedMain}\n\nThe main tokens shouldn't be removed but deprecated.\n\n`
     : '';
 
   const deprecatedReport = isDeprecatedMissing
-    ? `### Deprecated Tokens\n\n⚠️  The following tokens are removed from the deprecated tokens files:\n\n${removedDeprecated}\n\n. Deprecated tokens removal is not restricted, but should be reviewed before merge to identify if the removal is necessary.`
+    ? `### Deprecated Tokens\n\n⚠️  The following tokens are removed from the deprecated tokens files:\n\n${removedDeprecated}\n\n. Deprecated tokens removal is not restricted, but should be reviewed before merge to identify if the removal is necessary.\n\n`
     : '';
 
-  const fileIssuesReport = errors.length ? `## File Issues\n\n${errors.join('\n\n')}` : '';
+  const returnedReport = isReturnedMissing
+    ? `## Returned Tokens\n\n⚠️  The following tokens are returned to the main token file:\n\n${returnedTokens}\n\nCheck if the return was intended.`
+    : '';
+
+  const fileIssuesReport = errors.length
+    ? `## Tokens Removal Issues\n\n${errors.join('\n\n')}`
+    : '';
+
   const removedTokensReport =
     isMainMissing || isDeprecatedMissing
       ? `## Removed Tokens\n\n${mainReport}${deprecatedReport}`
       : '';
 
-  return fileIssuesReport + '\n\n' + removedTokensReport;
+  return fileIssuesReport + '\n\n' + removedTokensReport + returnedReport;
 };
 
 const checkRemovals = () => {
   const baseLineTokensFiles = getDirectoryFiles('tokens-base');
 
-  const removed = {main: [], deprecated: []};
+  const removed = {main: [], deprecated: [], returned: []};
   const errors = [];
 
   baseLineTokensFiles.forEach(filename => {
@@ -106,11 +115,7 @@ const checkRemovals = () => {
         const notRevertedTokens = notPresentedTokens.filter(token => !mainTokens.includes(token));
 
         if (revertedTokens.length) {
-          errors.push(
-            `### Returned Tokens [${filename}]:\n\n⚠️  The following tokens are returned to the main token file:\n\n${revertedTokens
-              .map(token => `-[ ] \`${token}\``)
-              .join('\n')}\n\nCheck if the return was intended.`
-          );
+          removed.returned.push(...revertedTokens);
         }
 
         removed.deprecated.push(...notRevertedTokens);
