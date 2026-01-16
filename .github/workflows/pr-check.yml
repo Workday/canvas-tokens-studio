@@ -84,8 +84,7 @@ jobs:
         id: check-deprecated
         run: echo "result=$(node utils/check/deprecated.js)" >> $GITHUB_OUTPUT
 
-      - name: Check deprecated tokens
-        id: check-deprecated-tokens
+      - name: Get deprecated check report
         run: echo ${{ steps.check-deprecated.outputs.result }}
 
       - name: Fail if deprecated tokens are found
@@ -108,6 +107,9 @@ jobs:
       - name: Check for removals
         id: check-for-removals
         run: echo "result=$(node utils/check/removals.js)" >> $GITHUB_OUTPUT
+
+      - name: Get removals check report
+        run: echo ${{ steps.check-for-removals.outputs.result }}
 
       - name: Comment PR with Markdown report
         if: steps.check-for-removals.outputs.result != ''
