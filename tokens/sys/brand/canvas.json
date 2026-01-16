@@ -5,10 +5,6 @@
         "value": "{palette.blue.600}",
         "type": "color"
       },
-      "lightest": {
-        "value": "{palette.blue.25}",
-        "type": "color"
-      },
       "darkest": {
         "value": "{palette.blue.800}",
         "type": "color"

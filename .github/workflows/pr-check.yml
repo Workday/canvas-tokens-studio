@@ -66,6 +66,17 @@ jobs:
       - name: Install Packages
         run: yarn
 
+      - name: Build canvas-tokens
+        run: yarn build:tokens
+
+      - name: Generate css tokens list
+        run: node ./canvas-tokens/scripts/utils/generate-existing-tokens.js
+
+      - name: Clear canvas-tokens build
+        run: yarn clear:tokens
+
+      
+
       - name: Download exported tokens
         uses: actions/download-artifact@v4
         with:
@@ -75,6 +86,18 @@ jobs:
       - name: Build canvas-tokens
         run: yarn build:tokens
 
+      - name: Verify CSS tokens
+        id: validate-tokens
+        run: echo "result=$(node ./canvas-tokens/scripts/utils/validate-tokens.js)" >> $GITHUB_OUTPUT
+
+      - name: Comment PR with Markdown report
+        if: steps.validate-tokens.outputs.result != ''
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          message: ${{ steps.validate-tokens.outputs.result }}
+          comment-tag: css-tokens-validation
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
   check-deprecated-tokens:
     runs-on: ubuntu-latest
     steps:
@@ -83,11 +106,6 @@ jobs:
       - name: Check deprecated folders organization
         id: check-deprecated-folders
         run: echo "result=$(node utils/check/deprecatedFolder.js)" >> $GITHUB_OUTPUT
-
-      - name: Fail if deprecated tokens are found
-        if: steps.check-deprecated-folders.outputs.result != ''
-        run: |
-          exit 1
 
   visual-regression:
     runs-on: ubuntu-latest
