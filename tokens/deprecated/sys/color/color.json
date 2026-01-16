@@ -858,6 +858,13 @@
         }
       },
       "primary": {
+        "default": {
+          "value": "{sys.color.brand.fg.primary.default}",
+          "type": "color",
+          "description": "Branded text",
+          "deprecated": true,
+          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
+        },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
