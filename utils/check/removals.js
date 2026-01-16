@@ -41,7 +41,7 @@ const generateReport = (removed, errors) => {
     : '';
 
   const deprecatedReport = isDeprecatedMissing
-    ? `### Deprecated Tokens\n\n⚠️  The following tokens are removed from the deprecated tokens files:\n\n${removedDeprecated}\n\n. Deprecated tokens removal is not restricted, but should be reviewed before merge to identify if the removal is necessary.\n\n`
+    ? `### Deprecated Tokens\n\n⚠️  The following tokens are removed from the deprecated tokens files:\n\n${removedDeprecated}\n\nDeprecated tokens removal is not restricted, but should be reviewed before merge to identify if the removal is necessary.\n\n`
     : '';
 
   const returnedReport = isReturnedMissing
@@ -86,20 +86,20 @@ const checkRemovals = () => {
 
       if (fs.existsSync(newFilesMain)) {
         const newTokens = getTokensList(filename, 'tokens');
-        const notPresentedTokens = tokens.filter(token => !newTokens.includes(token));
+        const missingTokens = tokens.filter(token => !newTokens.includes(token));
 
         if (!fs.existsSync(newFilesDeprecated)) {
-          removed.main.push(...notPresentedTokens);
+          removed.main.push(...missingTokens);
         } else {
-          notInMain.push(...notPresentedTokens);
+          notInMain.push(...missingTokens);
         }
       }
 
       if (fs.existsSync(newFilesDeprecated) && notInMain.length) {
         const deprecatedTokens = getTokensList(filename, 'tokens/deprecated');
-        const notPresentedTokens = notInMain.filter(token => !deprecatedTokens.includes(token));
+        const missingTokens = notInMain.filter(token => !deprecatedTokens.includes(token));
 
-        removed.main.push(...notPresentedTokens);
+        removed.main.push(...missingTokens);
       }
     } else {
       const newFilesDeprecated = path.join('tokens', filename);
@@ -110,9 +110,9 @@ const checkRemovals = () => {
         const mainTokens = getTokensList(filename.replace('deprecated/', ''), 'tokens');
         const deprecatedTokens = getTokensList(filename, 'tokens');
 
-        const notPresentedTokens = tokens.filter(token => !deprecatedTokens.includes(token));
-        const revertedTokens = notPresentedTokens.filter(token => mainTokens.includes(token));
-        const notRevertedTokens = notPresentedTokens.filter(token => !mainTokens.includes(token));
+        const missingTokens = tokens.filter(token => !deprecatedTokens.includes(token));
+        const revertedTokens = missingTokens.filter(token => mainTokens.includes(token));
+        const notRevertedTokens = missingTokens.filter(token => !mainTokens.includes(token));
 
         if (revertedTokens.length) {
           removed.returned.push(...revertedTokens);

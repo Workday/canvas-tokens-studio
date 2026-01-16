@@ -4,6 +4,10 @@ import fs from 'fs';
  * Retrieves all Canvas-only JSON filenames from a directory.
  *
  * @param {string} directory - The directory path to scan for files
+ * @param {'all' | 'main' | 'deprecated'} [includes='all'] - Controls inclusion of deprecated files:
+ *   - 'main': include only non-deprecated files (exclude paths containing "deprecated/").
+ *   - 'deprecated': include only files in "deprecated/" directories.
+ *   - 'all': include both deprecated and non-deprecated files.
  * @returns {string[]} Array of file paths that match the criteria:
  *   - Files ending with "base.json" or in "base/" folder
  *   - Files ending with "canvas.json"
