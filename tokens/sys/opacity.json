@@ -5,6 +5,11 @@
       "type": "number",
       "description": "Dev only"
     },
+    "disabled": {
+      "value": "{opacity.400}",
+      "type": "number",
+      "description": "Disabled states"
+    },
     "overlay": {
       "value": "{opacity.640}",
       "type": "number",
