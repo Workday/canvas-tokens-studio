@@ -54,14 +54,14 @@
           "deprecatedComment": "Use sys.color.surface.transparent instead"
         },
         "strong": {
-          "value": "{sys.color.surface.overlay.hover}",
+          "value": "{sys.color.surface.overlay.hover.default}",
           "type": "color",
           "description": "Inverse Secondary Button Hover state",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.surface.overlay.hover tokens instead"
         },
         "stronger": {
-          "value": "{sys.color.surface.overlay.pressed}",
+          "value": "{sys.color.surface.overlay.pressed.default}",
           "type": "color",
           "description": "Inverse Secondary Button Active state",
           "deprecated": true,
@@ -239,7 +239,7 @@
           "type": "color",
           "description": "Stronger warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.caution instead with sys.color.accent.overlay.presse"
+          "deprecatedComment": "Use sys.color.brand.accent.caution instead with sys.color.accent.overlay.pressed"
         }
       },
       "critical": {
@@ -598,7 +598,7 @@
     },
     "icon": {
       "default": {
-        "value": "{sys.color.fg.default",
+        "value": "{sys.color.fg.default}",
         "type": "color",
         "description": "Default icon color",
         "deprecated": true,
@@ -756,7 +756,7 @@
           "type": "color",
           "description": "Strong caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use ssys.color.brand.fg.caution.strong instead"
+          "deprecatedComment": "Use sys.color.brand.fg.caution.strong instead"
         },
         "soft": {
           "value": "{sys.color.brand.fg.caution.default}",
@@ -858,6 +858,13 @@
         }
       },
       "primary": {
+        "default": {
+          "value": "{sys.color.brand.fg.primary.default}",
+          "type": "color",
+          "description": "Branded text",
+          "deprecated": true,
+          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
+        },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
@@ -877,6 +884,13 @@
           "description": "Links on hover",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.brand.fg.primary.strong  instead"
+        },
+        "strong": {
+          "value": "{sys.color.brand.fg.primary.strong}",
+          "type": "color",
+          "description": "Links on hover",
+          "deprecated": true,
+          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
         }
       },
       "caution": {

@@ -21,11 +21,6 @@ const getDirectoryFiles = directory => {
   }
 
   return fs.readdirSync(directory, {recursive: true}).filter(file => {
-    // Skip deprecated files
-    if (file.includes('deprecated/')) {
-      return false;
-    }
-
     // Skip metadata and theme files
     if (file === '$metadata.json' || file === '$themes.json') {
       return false;
