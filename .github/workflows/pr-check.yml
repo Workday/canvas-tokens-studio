@@ -103,10 +103,14 @@ jobs:
         with:
           name: tokens-base
           path: tokens-base/
-      
+
       - name: Check for removals
         id: check-for-removals
-        run: echo "result=$(node utils/check/removals.js)" >> $GITHUB_OUTPUT
+        run: |
+          REPORT_OUTPUT="$(node utils/check/removals.js)"
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo "$REPORT_OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Get removals check report
         run: echo ${{ steps.check-for-removals.outputs.result }}
@@ -118,7 +122,7 @@ jobs:
           message: ${{ steps.check-for-removals.outputs.result }}
           comment-tag: removals
           github-token: ${{ secrets.GITHUB_TOKEN }}
-        
+
 
   visual-regression:
     runs-on: ubuntu-latest
