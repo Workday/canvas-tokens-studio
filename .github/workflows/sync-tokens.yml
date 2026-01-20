@@ -138,7 +138,7 @@ jobs:
             });
 
       - name: Check Status
-        if: ${{ steps.create-pull-request.outcome == 'failure' && JSON.parse(steps.create-pull-request.outputs.result).status != 422 }}
+        if: ${{ steps.create-pull-request.outcome == 'failure' && steps.create-pull-request.outputs.result && fromJson(steps.create-pull-request.outputs.result).status != 422 }}
         run: |
           echo "❌ Error: Failed to create pull request."
 
