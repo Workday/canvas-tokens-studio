@@ -121,10 +121,13 @@ jobs:
           repository: Workday/canvas-tokens
 
       - name: Create Pull Request
+        id: create-pull-request 
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
         uses: actions/github-script@v7
+        continue-on-error: true
         with:
           github-token: ${{ secrets.GH_RW_TOKEN }}
+            
           script: |
             github.rest.pulls.create({
               owner: 'Workday',
@@ -133,6 +136,11 @@ jobs:
               head: '${{ steps.sync_branch.outputs.name }}',
               base: '${{ github.ref_name}}'
             });
+
+      - name: Check Status
+        if: ${{ steps.create-pull-request.outcome == 'failure' && JSON.parse(steps.create-pull-request.outputs.result).status != 422 }}
+        run: |
+          echo "❌ Error: Failed to create pull request."
 
   finalize:
     runs-on: ubuntu-latest
@@ -143,6 +151,11 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Create empty commit
         run: |
