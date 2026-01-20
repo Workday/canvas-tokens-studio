@@ -163,8 +163,9 @@ export const updateColorObject = token => {
 
   if (token.value?.colorSpace === 'oklch') {
     const lch = token.value.components.join(' ');
+
     const alpha =
-      typeof token.value.alpha === 'string' || typeof token.value.alpha === number
+      typeof token.value.alpha === 'string' || typeof token.value.alpha === 'number'
         ? token.value.alpha
         : 1;
 
