@@ -113,7 +113,7 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Get removals check report
-        run: echo ${{ steps.check-for-removals.outputs.result }}
+        run: echo "${{ steps.check-for-removals.outputs.result }}"
 
       - name: Comment PR with Markdown report
         if: steps.check-for-removals.outputs.result != ''
