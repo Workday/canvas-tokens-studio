@@ -1,27 +1,5 @@
 {
   "size": {
-    "icon": {
-      "xs": {
-        "value": "{size.175}",
-        "type": "icon size"
-      },
-      "sm": {
-        "value": "{size.200}",
-        "type": "icon size"
-      },
-      "md": {
-        "value": "{size.225}",
-        "type": "icon size"
-      },
-      "lg": {
-        "value": "{size.250}",
-        "type": "icon size"
-      },
-      "xl": {
-        "value": "{size.300}",
-        "type": "icon size"
-      }
-    },
     "xxxs": {
       "value": "{size.200}",
       "type": "size",
