@@ -1,0 +1,28 @@
+{
+  "opacity": {
+    "100": {
+      "value": "{base.opacity.80}",
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use {opacity.80} instead"
+    },
+    "250": {
+      "value": "{base.opacity.200}",
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use {opacity.200} instead"
+    },
+    "300": {
+      "value": "{base.opacity.400}",
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use {opacity.400} instead"
+    },
+    "500": {
+      "value": "{base.opacity.840}",
+      "type": "number",
+      "deprecated": true,
+      "deprecatedComment": "Use {opacity.840} instead"
+    }
+  }
+}

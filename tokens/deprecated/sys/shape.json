@@ -1,5 +1,12 @@
 {
   "shape": {
+    "zero": {
+      "value": "{shape.none}",
+      "type": "borderRadius",
+      "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels.",
+      "deprecated": true,
+      "deprecatedComment": "Use {shape.none} instead"
+    },
     "half": {
       "value": "{base.unit} * 0.5",
       "type": "borderRadius",
