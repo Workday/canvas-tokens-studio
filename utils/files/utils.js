@@ -22,13 +22,14 @@ export const mapObjectContent = (fn, obj, key) => {
 
 export const recursivelyCombineTwoObjects = (obj1, obj2) => {
   // Start with all keys from obj1
-  const result = { ...obj1 };
-  
+  const result = {...obj1};
+
   // Then process all keys from obj2
   Object.keys(obj2).forEach(key => {
     if (result[key]) {
       // Key exists in both objects
-      const isObj1Object = result[key] && typeof result[key] === 'object' && !Array.isArray(result[key]);
+      const isObj1Object =
+        result[key] && typeof result[key] === 'object' && !Array.isArray(result[key]);
       const isObj2Object = obj2[key] && typeof obj2[key] === 'object' && !Array.isArray(obj2[key]);
 
       // Check if either is a token object (has a 'value' property) - these should be merged directly, not recursively
@@ -50,7 +51,7 @@ export const recursivelyCombineTwoObjects = (obj1, obj2) => {
       result[key] = obj2[key];
     }
   });
-  
+
   return result;
 };
 
@@ -162,7 +163,10 @@ export const updateColorObject = token => {
 
   if (token.value?.colorSpace === 'oklch') {
     const lch = token.value.components.join(' ');
-    const alpha = token.value.alpha || 1;
+    const alpha =
+      typeof token.value.alpha === string || typeof token.value.alpha === number
+        ? token.value.alpha
+        : 1;
 
     token.value = `oklch(${lch} / ${alpha})`;
     token.fallback = token.value.hex;
