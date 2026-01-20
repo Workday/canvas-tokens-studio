@@ -140,6 +140,7 @@ jobs:
         if: ${{ steps.create-pull-request.outcome == 'failure' && steps.create-pull-request.outputs.result && fromJson(steps.create-pull-request.outputs.result).status != 422 }}
         run: |
           echo "❌ Error: Failed to create pull request."
+          exit 1
 
   finalize:
     runs-on: ubuntu-latest
