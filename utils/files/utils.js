@@ -271,34 +271,12 @@ const updateBaseFontSize = (token, key) => {
 };
 
 /**
- * Update opacity values to convert from integer format to decimal format.
- * Opacity values use the key name (80, 120, 200, etc.) to represent the actual
- * opacity value, which needs to be converted to decimals by dividing by 1000
- * (80 -> 0.08, 120 -> 0.12, etc.)
- * @param {{value: string|number, type?: string}} token The token object to update
- * @param {string} key The key name of the token (e.g., "80", "120", "200")
- */
-const updateOpacity = (token, key) => {
-  // Check if this is an opacity token (type is number and key is numeric)
-  if (token.type === 'number' && key && /^\d+$/.test(key)) {
-    // Convert key to number and divide by 1000 to get decimal opacity value
-    const keyNum = parseFloat(key);
-    if (!isNaN(keyNum) && keyNum > 0) {
-      const decimalValue = keyNum / 1000;
-      // Format as string with proper decimal notation
-      token.value = decimalValue.toString();
-    }
-  }
-};
-
-/**
  * Update a token object with the correct references, comments and extensions.
  * @param {{value: string, type?: string, description?: string}} token The token object to update
  * @returns {{value: string, type?: string, description?: string}} The updated token object
  */
 export const updateToken = (token, key) => {
   updateBaseFontSize(token, key);
-  updateOpacity(token, key);
   updateColorObject(token);
   transformExtensions(token);
   updateReferences(token);
