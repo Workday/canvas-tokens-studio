@@ -7,42 +7,42 @@
           "type": "color",
           "description": "Surface",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.primary.default instead"
+          "deprecatedComment": "Use system.color.brand.surface.primary.default instead"
         },
         "softer": {
           "value": "{sys.color.brand.surface.primary.strong}",
           "type": "color",
           "description": "Select",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.primary.strong tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.primary.strong tokens instead"
         },
         "soft": {
           "value": "{sys.color.brand.surface.primary.default}",
           "type": "color",
           "description": "Primary disabled",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.primary.default tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.primary.default tokens instead"
         },
         "default": {
           "value": "{sys.color.brand.accent.primary}",
           "type": "color",
           "description": "Primary brand color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.primary instead"
+          "deprecatedComment": "Use system.color.brand.accent.primary instead"
         },
         "strong": {
           "value": "{sys.color.brand.accent.primary}",
           "type": "color",
           "description": "Brand hover background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.primary instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.accent.primary instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.brand.accent.primary}",
           "type": "color",
           "description": "Brand active background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.primary instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.brand.accent.primary instead with system.color.accent.overlay.pressed"
         }
       },
       "transparent": {
@@ -51,21 +51,21 @@
           "type": "color",
           "description": "Transparent background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.transparent instead"
+          "deprecatedComment": "Use system.color.surface.transparent instead"
         },
         "strong": {
           "value": "{sys.color.surface.overlay.hover.default}",
           "type": "color",
           "description": "Inverse Secondary Button Hover state",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.overlay.hover tokens instead"
+          "deprecatedComment": "Use system.color.surface.overlay.hover tokens instead"
         },
         "stronger": {
           "value": "{sys.color.surface.overlay.pressed.default}",
           "type": "color",
           "description": "Inverse Secondary Button Active state",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.overlay.pressed tokens instead"
+          "deprecatedComment": "Use system.color.surface.overlay.pressed tokens instead"
         }
       },
       "overlay": {
@@ -73,14 +73,14 @@
         "type": "color",
         "description": "Overlay background",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.surface.overlay.scrim instead"
+        "deprecatedComment": "Use system.color.surface.overlay.scrim instead"
       },
       "translucent": {
         "value": "{sys.color.surface.contrast.default}",
         "type": "color",
         "description": "Tooltip, Status Indicator",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.surface.contrast.default tokens instead"
+        "deprecatedComment": "Use system.color.surface.contrast.default tokens instead"
       },
       "alt": {
         "softer": {
@@ -88,28 +88,28 @@
           "type": "color",
           "description": "Disabled inputs",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.raised tokens instead"
+          "deprecatedComment": "Use system.color.surface.raised tokens instead"
         },
         "soft": {
           "value": "{sys.color.surface.alt.default}",
           "type": "color",
           "description": "Alternative page background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.alt.default instead"
+          "deprecatedComment": "Use system.color.surface.alt.default instead"
         },
         "strong": {
           "value": "{sys.color.surface.alt.default}",
           "type": "color",
           "description": "Active states",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.default tokens instead with sys.color.surface.overlay.hover"
+          "deprecatedComment": "Use system.color.surface.default tokens instead with system.color.surface.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.surface.alt.default}",
           "type": "color",
           "description": "Active state for segmented control, Pill",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.alt.default with sys.color.surface.overlay.pressed"
+          "deprecatedComment": "Use system.color.surface.alt.default with system.color.surface.overlay.pressed"
         }
       },
       "muted": {
@@ -117,25 +117,25 @@
           "value": "{sys.color.accent.muted.soft}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.muted.soft token instead"
+          "deprecatedComment": "Use system.color.accent.muted.soft token instead"
         },
         "soft": {
           "value": "{sys.color.accent.muted.soft}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.muted.soft token instead"
+          "deprecatedComment": "Use system.color.accent.muted.soft token instead"
         },
         "default": {
           "value": "{sys.color.accent.muted.default}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.muted.default instead"
+          "deprecatedComment": "Use system.color.accent.muted.default instead"
         },
         "strong": {
           "value": "{sys.color.accent.muted.default}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.muted.default token instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.accent.muted.default token instead with system.color.accent.overlay.hover"
         }
       },
       "contrast": {
@@ -144,14 +144,14 @@
           "type": "color",
           "description": "Contrast backgrounds, like Secondary Buttons",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.contrast.default instead"
+          "deprecatedComment": "Use system.color.surface.contrast.default instead"
         },
         "strong": {
           "value": "{sys.color.surface.contrast.strong}",
           "type": "color",
           "description": "Contrast backgrounds, like Secondary Buttons",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.contrast.strong with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.surface.contrast.strong with system.color.accent.overlay.hover"
         }
       },
       "positive": {
@@ -160,42 +160,42 @@
           "type": "color",
           "description": "Lightest surface success background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.success tokens instead"
+          "deprecatedComment": "Use system.color.surface.success tokens instead"
         },
         "softer": {
           "value": "{sys.color.brand.surface.positive.strong}",
           "type": "color",
           "description": "Surface success background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.positive.strong tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.positive.strong tokens instead"
         },
         "soft": {
           "value": "{sys.color.brand.surface.positive.default}",
           "type": "color",
           "description": "Disabled success background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.positive.default tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.positive.default tokens instead"
         },
         "default": {
           "value": "{sys.color.brand.accent.positive}",
           "type": "color",
           "description": "Disabled success background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.success instead"
+          "deprecatedComment": "Use system.color.accent.success instead"
         },
         "strong": {
           "value": "{sys.color.brand.accent.positive}",
           "type": "color",
           "description": "Hover success background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.positive instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.accent.positive instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.brand.accent.positive}",
           "type": "color",
           "description": "Active success background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.positive instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.brand.accent.positive instead with system.color.accent.overlay.pressed"
         }
       },
       "caution": {
@@ -204,42 +204,42 @@
           "type": "color",
           "description": "Disabled warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.caution.default tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.caution.default tokens instead"
         },
         "softer": {
           "value": "{sys.color.brand.surface.caution.strong}",
           "type": "color",
           "description": "Softer warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.caution.strong tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.caution.strong tokens instead"
         },
         "soft": {
           "value": "{palette.amber.100}",
           "type": "color",
           "description": "Softer warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.warning tokens instead"
+          "deprecatedComment": "Use system.color.surface.warning tokens instead"
         },
         "default": {
           "value": "{sys.color.brand.accent.caution}",
           "type": "color",
           "description": "Default warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.caution instead"
+          "deprecatedComment": "Use system.color.brand.accent.caution instead"
         },
         "strong": {
           "value": "{sys.color.brand.accent.caution}",
           "type": "color",
           "description": "Strong warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.caution instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.accent.caution instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.brand.accent.caution}",
           "type": "color",
           "description": "Stronger warning background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.caution instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.brand.accent.caution instead with system.color.accent.overlay.pressed"
         }
       },
       "critical": {
@@ -248,42 +248,42 @@
           "type": "color",
           "description": "Input error background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.critical.default tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.critical.default tokens instead"
         },
         "softer": {
           "value": "{sys.color.brand.surface.critical.strong}",
           "type": "color",
           "description": "Disabled error background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.surface.critical.strong tokens instead"
+          "deprecatedComment": "Use system.color.brand.surface.critical.strong tokens instead"
         },
         "soft": {
           "value": "{palette.red.100}",
           "type": "color",
           "description": "Disabled error background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.danger tokens instead"
+          "deprecatedComment": "Use system.color.surface.danger tokens instead"
         },
         "default": {
           "value": "{sys.color.brand.accent.critical}",
           "type": "color",
           "description": "Default error background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.critical instead"
+          "deprecatedComment": "Use system.color.brand.accent.critical instead"
         },
         "strong": {
           "value": "{sys.color.brand.accent.critical}",
           "type": "color",
           "description": "Strong error background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.critical instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.accent.critical instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.brand.accent.critical}",
           "type": "color",
           "description": "Stronger error background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.accent.critical instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.brand.accent.critical instead with system.color.accent.overlay.pressed"
         }
       },
       "ai": {
@@ -292,28 +292,28 @@
           "type": "color",
           "description": "AI container",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.ai.default instead"
+          "deprecatedComment": "Use system.color.surface.ai.default instead"
         },
         "strong": {
           "value": "{sys.color.surface.ai.hover}",
           "type": "color",
           "description": "Hover on AI container",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.ai.hover instead"
+          "deprecatedComment": "Use system.color.surface.ai.hover instead"
         },
         "stronger": {
           "value": "{sys.color.surface.ai.pressed}",
           "type": "color",
           "description": "Active state on AI containers",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.ai.pressed instead"
+          "deprecatedComment": "Use system.color.surface.ai.pressed instead"
         },
         "strongest": {
           "value": "{sys.color.accent.ai}",
           "type": "color",
           "description": "AI surfaces",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.ai instead"
+          "deprecatedComment": "Use system.color.accent.ai instead"
         }
       },
       "info": {
@@ -322,42 +322,42 @@
           "type": "color",
           "description": "Surface",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.info.default instead"
+          "deprecatedComment": "Use system.color.surface.info.default instead"
         },
         "softer": {
           "value": "{sys.color.surface.info.strong}",
           "type": "color",
           "description": "Select",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.info.strong instead"
+          "deprecatedComment": "Use system.color.surface.info.strong instead"
         },
         "soft": {
           "value": "{sys.color.surface.info.default}",
           "type": "color",
           "description": "Disabled",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.info.default tokens instead"
+          "deprecatedComment": "Use system.color.surface.info.default tokens instead"
         },
         "default": {
           "value": "{sys.color.accent.info}",
           "type": "color",
           "description": "Info color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.info instead"
+          "deprecatedComment": "Use system.color.accent.info instead"
         },
         "strong": {
           "value": "{sys.color.accent.info}",
           "type": "color",
           "description": "Brand hover background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.info instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.accent.info instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.accent.info}",
           "type": "color",
           "description": "Brand active background",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.info instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.accent.info instead with system.color.accent.overlay.pressed"
         }
       }
     },
@@ -367,21 +367,21 @@
         "type": "color",
         "description": "Body text",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.default instead"
+        "deprecatedComment": "Use system.color.fg.default instead"
       },
       "strong": {
         "value": "{sys.color.fg.strong}",
         "type": "color",
         "description": "Heading text",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.strong instead"
+        "deprecatedComment": "Use system.color.fg.strong instead"
       },
       "stronger": {
         "value": "{sys.color.fg.strong}",
         "type": "color",
         "description": "Display text",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.strong instead"
+        "deprecatedComment": "Use system.color.fg.strong instead"
       },
       "disabled": {
         "value": "{palette.slate.400}",
@@ -395,14 +395,14 @@
         "type": "color",
         "description": "Hint text color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.muted.default instead"
+        "deprecatedComment": "Use system.color.fg.muted.default instead"
       },
       "inverse": {
         "value": "{sys.color.fg.inverse}",
         "type": "color",
         "description": "Inverse text color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.inverse instead"
+        "deprecatedComment": "Use system.color.fg.inverse instead"
       },
       "critical": {
         "default": {
@@ -410,35 +410,35 @@
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.critical.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.critical.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.critical.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.critical.strong instead"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.critical.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.critical.strong instead"
         },
         "soft": {
           "value": "{palette.red.400}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use system.color.fg.danger instead"
         },
         "softer": {
           "value": "{palette.red.200}",
           "type": "color",
           "description": "Error text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use system.color.fg.danger instead"
         }
       },
       "primary": {
@@ -447,35 +447,35 @@
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Branded hover text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.strong instead"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.strong instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use system.color.fg.info instead"
         },
         "softer": {
           "value": "{palette.blue.200}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use system.color.fg.info instead"
         }
       },
       "caution": {
@@ -484,42 +484,42 @@
           "type": "color",
           "description": "Warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         },
         "strong": {
           "value": "{sys.color.fg.contrast.strong}",
           "type": "color",
           "description": "Strong warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.contrast.strong instead"
+          "deprecatedComment": "Use system.color.fg.contrast.strong instead"
         },
         "soft": {
           "value": "{palette.amber.400}",
           "type": "color",
           "description": "Disabled warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         },
         "stronger": {
           "value": "{sys.color.fg.contrast.strong}",
           "type": "color",
           "description": "Stronger warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.contrast.strong instead"
+          "deprecatedComment": "Use system.color.fg.contrast.strong instead"
         },
         "softer": {
           "value": "{palette.amber.200}",
           "type": "color",
           "description": "Softer warning text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         }
       },
       "ai": {
         "value": "{palette.blue.950}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.ai instead"
+        "deprecatedComment": "Use system.color.fg.ai instead"
       },
       "positive": {
         "default": {
@@ -527,35 +527,35 @@
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.positive.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Branded hover text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.positive.strong instead"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.positive.strong instead"
         },
         "soft": {
           "value": "{palette.green.400}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use system.color.fg.success instead"
         },
         "softer": {
           "value": "{palette.green.200}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use system.color.fg.success instead"
         }
       },
       "info": {
@@ -564,35 +564,35 @@
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.default instead"
+          "deprecatedComment": "Use system.color.fg.info.default instead"
         },
         "strong": {
           "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Branded hover text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.strong instead"
+          "deprecatedComment": "Use system.color.fg.info.strong instead"
         },
         "stronger": {
           "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.strong instead"
+          "deprecatedComment": "Use system.color.fg.info.strong instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.default instead"
+          "deprecatedComment": "Use system.color.fg.info.default instead"
         },
         "softer": {
           "value": "{palette.blue.200}",
           "type": "color",
           "description": "Active links",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use system.color.fg.info instead"
         }
       }
     },
@@ -602,28 +602,28 @@
         "type": "color",
         "description": "Default icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.default instead"
+        "deprecatedComment": "Use system.color.fg.default instead"
       },
       "soft": {
         "value": "{sys.color.fg.muted.default}",
         "type": "color",
         "description": "Disabled icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.muted.default instead"
+        "deprecatedComment": "Use system.color.fg.muted.default instead"
       },
       "strong": {
         "value": "{sys.color.fg.muted.strong}",
         "type": "color",
         "description": "Hover icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.muted.strong instead"
+        "deprecatedComment": "Use system.color.fg.muted.strong instead"
       },
       "inverse": {
         "value": "{palette.neutral.0}",
         "type": "color",
         "description": "Inverse icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.inverse instead"
+        "deprecatedComment": "Use system.color.fg.inverse instead"
       },
       "primary": {
         "default": {
@@ -631,35 +631,35 @@
           "type": "color",
           "description": "Brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.strong instead"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.strong instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use system.color.fg.info instead"
         },
         "softer": {
           "value": "{palette.blue.200}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use system.color.fg.info instead"
         }
       },
       "positive": {
@@ -668,35 +668,35 @@
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.positive.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.fg.positive.strong instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.brand.fg.positive.strong instead with system.color.accent.overlay.pressed"
         },
         "soft": {
           "value": "{palette.green.400}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use system.color.fg.success instead"
         },
         "softer": {
           "value": "{palette.green.200}",
           "type": "color",
           "description": "Success icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use system.color.fg.success instead"
         }
       },
       "critical": {
@@ -705,35 +705,35 @@
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.critical.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.critical.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger-strong instead"
+          "deprecatedComment": "Use system.color.fg.danger-strong instead"
         },
         "stronger": {
           "value": "{palette.red.800}",
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger.strong instead"
+          "deprecatedComment": "Use system.color.fg.danger.strong instead"
         },
         "soft": {
           "value": "{palette.red.400}",
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use system.color.fg.danger instead"
         },
         "softer": {
           "value": "{palette.red.200}",
           "type": "color",
           "description": "Error icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use system.color.fg.danger instead"
         }
       },
       "caution": {
@@ -742,35 +742,35 @@
           "type": "color",
           "description": "Caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.contrast.default instead"
+          "deprecatedComment": "Use system.color.fg.contrast.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.caution.default}",
           "type": "color",
           "description": "Strong caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.caution.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.caution.default instead"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.caution.strong}",
           "type": "color",
           "description": "Strong caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.caution.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.caution.strong instead"
         },
         "soft": {
           "value": "{sys.color.brand.fg.caution.default}",
           "type": "color",
           "description": "Soft caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         },
         "softer": {
           "value": "{palette.amber.500}",
           "type": "color",
           "description": "Softer caution icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         }
       },
       "disabled": {
@@ -778,7 +778,7 @@
         "type": "color",
         "description": "Disabled icon color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.fg.disabled instead"
+        "deprecatedComment": "Use system.color.fg.disabled instead"
       },
       "info": {
         "default": {
@@ -786,21 +786,21 @@
           "type": "color",
           "description": "Brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.default instead"
+          "deprecatedComment": "Use system.color.fg.info.default instead"
         },
         "strong": {
           "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.strong instead"
+          "deprecatedComment": "Use system.color.fg.info.strong instead"
         },
         "stronger": {
           "value": "{palette.blue.800}",
           "type": "color",
           "description": "Stronger brand icon color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.strong instead"
+          "deprecatedComment": "Use system.color.fg.info.strong instead"
         }
       }
     },
@@ -811,35 +811,35 @@
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.critical.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.critical.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.critical.strong}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.critical.strong instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.fg.critical.strong instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{palette.red.800}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger tokens instead"
+          "deprecatedComment": "Use system.color.fg.danger tokens instead"
         },
         "soft": {
           "value": "{palette.red.400}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use system.color.fg.danger instead"
         },
         "softer": {
           "value": "{palette.red.200}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.danger instead"
+          "deprecatedComment": "Use system.color.fg.danger instead"
         }
       },
       "muted": {
@@ -847,14 +847,14 @@
           "value": "{sys.color.fg.muted.strong}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.muted.strong instead"
+          "deprecatedComment": "Use system.color.fg.muted.strong instead"
         },
         "soft": {
           "value": "{palette.slate.400}",
           "type": "color",
           "description": "Tab item foreground",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.muted instead"
+          "deprecatedComment": "Use system.color.fg.muted instead"
         }
       },
       "primary": {
@@ -863,34 +863,34 @@
           "type": "color",
           "description": "Branded text",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.default instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info or sys.color.brand.fg.primary instead"
+          "deprecatedComment": "Use system.color.fg.info or system.color.brand.fg.primary instead"
         },
         "softer": {
           "value": "{palette.blue.200}",
           "type": "color",
           "description": "Link Inverse, Disabled",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info or sys.color.brand.fg.primary instead"
+          "deprecatedComment": "Use system.color.fg.info or system.color.brand.fg.primary instead"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Links on hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.strong  instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.strong  instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.primary.strong}",
           "type": "color",
           "description": "Links on hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.primary.strong instead"
+          "deprecatedComment": "Use system.color.brand.fg.primary.strong instead"
         }
       },
       "caution": {
@@ -899,35 +899,35 @@
           "type": "color",
           "description": "Warning",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.caution.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.caution.default instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.caution.strong}",
           "type": "color",
           "description": "Warning on hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.caution.strong instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.fg.caution.strong instead with system.color.accent.overlay.hover"
         },
         "soft": {
           "value": "{palette.amber.700}",
           "type": "color",
           "description": "Warning",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         },
         "stronger": {
           "value": "{palette.amber.975}",
           "type": "color",
           "description": "Warning on hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning-strong instead"
+          "deprecatedComment": "Use system.color.fg.warning-strong instead"
         },
         "softer": {
           "value": "{palette.amber.500}",
           "type": "color",
           "description": "Warning",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning instead"
+          "deprecatedComment": "Use system.color.fg.warning instead"
         }
       },
       "info": {
@@ -936,20 +936,20 @@
           "type": "color",
           "description": "Link Inverse, Disabled",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.ai instead"
+          "deprecatedComment": "Use system.color.fg.ai instead"
         },
         "soft": {
           "value": "{palette.blue.400}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info instead"
+          "deprecatedComment": "Use system.color.fg.info instead"
         },
         "stronger": {
           "value": "{sys.color.fg.info.strong}",
           "type": "color",
           "description": "Links on hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.info.strong instead"
+          "deprecatedComment": "Use system.color.fg.info.strong instead"
         }
       },
       "positive": {
@@ -958,35 +958,35 @@
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.default instead"
+          "deprecatedComment": "Use system.color.brand.fg.positive.default instead"
         },
         "softer": {
           "value": "{palette.green.200}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use system.color.fg.success instead"
         },
         "soft": {
           "value": "{palette.green.400}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.success instead"
+          "deprecatedComment": "Use system.color.fg.success instead"
         },
         "strong": {
           "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead with sys.color.accent.overlay.hover"
+          "deprecatedComment": "Use system.color.brand.fg.positive.strong instead with system.color.accent.overlay.hover"
         },
         "stronger": {
           "value": "{sys.color.brand.fg.positive.strong}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.fg.positive.strong instead with sys.color.accent.overlay.pressed"
+          "deprecatedComment": "Use system.color.brand.fg.positive.strong instead with system.color.accent.overlay.pressed"
         }
       }
     },
@@ -996,7 +996,7 @@
         "type": "color",
         "description": "Active state on AI borders",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.accent.ai instead"
+        "deprecatedComment": "Use system.color.accent.ai instead"
       },
       "input": {
         "disabled": {
@@ -1004,21 +1004,21 @@
           "type": "color",
           "description": "Disabled inputs",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.disabled instead"
+          "deprecatedComment": "Use system.color.fg.disabled instead"
         },
         "strong": {
           "value": "{sys.color.border.input.hover}",
           "type": "color",
           "description": "Input hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.input.hover instead"
+          "deprecatedComment": "Use system.color.border.input.hover instead"
         },
         "inverse": {
           "value": "{sys.color.border.inverse.default}",
           "type": "color",
           "description": "Borders on checkboxes and radios",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.inverse.default instead"
+          "deprecatedComment": "Use system.color.border.inverse.default instead"
         }
       },
       "contrast": {
@@ -1027,7 +1027,7 @@
           "type": "color",
           "description": "Secondary Button Hover",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.border.contrast.default instead"
+          "deprecatedComment": "Use system.color.border.contrast.default instead"
         }
       },
       "critical": {
@@ -1036,7 +1036,7 @@
           "type": "color",
           "description": "Error",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.border.critical instead"
+          "deprecatedComment": "Use system.color.brand.border.critical instead"
         }
       },
       "caution": {
@@ -1045,14 +1045,14 @@
           "type": "color",
           "description": "Warning inner",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.focus.caution.inner instead"
+          "deprecatedComment": "Use system.color.brand.focus.caution.inner instead"
         },
         "strong": {
           "value": "{sys.color.brand.focus.caution.outer}",
           "type": "color",
           "description": "Warning outer (box shadow)",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.focus.caution.outer instead"
+          "deprecatedComment": "Use system.color.brand.focus.caution.outer instead"
         }
       },
       "divider": {
@@ -1060,7 +1060,7 @@
         "type": "color",
         "description": "Dividers",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.border.default instead"
+        "deprecatedComment": "Use system.color.border.default instead"
       },
       "primary": {
         "default": {
@@ -1068,7 +1068,7 @@
           "type": "color",
           "description": "Brand, Focus",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.brand.border.primary instead"
+          "deprecatedComment": "Use system.color.brand.border.primary instead"
         }
       },
       "container": {
@@ -1076,7 +1076,7 @@
         "type": "color",
         "description": "Cards, Toasts, Surfaces",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.border.strong or sys.color.border.strong instead"
+        "deprecatedComment": "Use system.color.border.strong or system.color.border.strong instead"
       }
     },
     "shadow": {
@@ -1085,21 +1085,21 @@
         "type": "color",
         "description": "First shadow color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.shadow.base instead"
+        "deprecatedComment": "Use system.color.shadow.base instead"
       },
       "2": {
         "value": "{sys.color.shadow.ambient}",
         "type": "color",
         "description": "Second shadow color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.shadow.ambient instead"
+        "deprecatedComment": "Use system.color.shadow.ambient instead"
       },
       "default": {
         "value": "{sys.color.shadow.base}",
         "type": "color",
         "description": "Main shadow color",
         "deprecated": true,
-        "deprecatedComment": "Use sys.color.shadow.base instead"
+        "deprecatedComment": "Use system.color.shadow.base instead"
       }
     },
     "static": {
@@ -1108,7 +1108,7 @@
           "value": "{palette.amber.600}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "replace static.gold.stronger with {sys.color.static.amber.stronger}. Prefer to replace with `sys.color.bg.caution.stronger` if used as a background color."
+          "deprecatedComment": "replace static.gold.stronger with {system.color.static.amber.stronger}. Prefer to replace with `system.color.bg.caution.stronger` if used as a background color."
         }
       },
       "orange": {
@@ -1116,19 +1116,19 @@
           "value": "{palette.amber.400}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "replace static.orange.default with {sys.color.static.amber.default}. Prefer to replace with `sys.color.bg.caution.default` if used as a background color."
+          "deprecatedComment": "replace static.orange.default with {system.color.static.amber.default}. Prefer to replace with `system.color.bg.caution.default` if used as a background color."
         },
         "soft": {
           "value": "{palette.amber.100}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "replace static.orange.soft with {sys.color.static.amber.soft}. Prefer to replace with `sys.color.bg.caution.soft` if used as a background color."
+          "deprecatedComment": "replace static.orange.soft with {system.color.static.amber.soft}. Prefer to replace with `system.color.bg.caution.soft` if used as a background color."
         },
         "strong": {
           "value": "{palette.amber.500}",
           "type": "color",
           "deprecated": true,
-          "deprecatedComment": "replace static.orange.strong with {sys.color.static.amber.strong}. Prefer to replace with `sys.color.bg.caution.strong` if used as a background color."
+          "deprecatedComment": "replace static.orange.strong with {system.color.static.amber.strong}. Prefer to replace with `system.color.bg.caution.strong` if used as a background color."
         }
       },
       "blue": {
@@ -1137,7 +1137,7 @@
           "type": "color",
           "description": "Blue",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.info instead"
+          "deprecatedComment": "Use system.color.accent.info instead"
         },
         "softest": {
           "value": "{palette.blue.25}",
@@ -1355,28 +1355,28 @@
           "type": "color",
           "description": "amber",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.warning token instead"
+          "deprecatedComment": "Use system.color.accent.warning token instead"
         },
         "softest": {
           "value": "{sys.color.surface.warning.default}",
           "type": "color",
           "description": "Soft amber",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.warning instead"
+          "deprecatedComment": "Use system.color.accent.warning instead"
         },
         "strong": {
           "value": "{sys.color.accent.warning}",
           "type": "color",
           "description": "Stronger amber",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.warning instead"
+          "deprecatedComment": "Use system.color.accent.warning instead"
         },
         "stronger": {
           "value": "{sys.color.accent.warning}",
           "type": "color",
           "description": "Stronger amber",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.accent.warning instead"
+          "deprecatedComment": "Use system.color.accent.warning instead"
         },
         "softer": {
           "value": "{palette.amber.50}",
@@ -1390,14 +1390,14 @@
           "type": "color",
           "description": "Stronger amber",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.fg.warning.strong instead"
+          "deprecatedComment": "Use system.color.fg.warning.strong instead"
         },
         "soft": {
           "value": "{sys.color.surface.warning.strong}",
           "type": "color",
           "description": "Soft amber",
           "deprecated": true,
-          "deprecatedComment": "Use sys.color.surface.warning.strong instead"
+          "deprecatedComment": "Use system.color.surface.warning.strong instead"
         }
       }
     }
