@@ -33,7 +33,7 @@
         "value": "{sys.color.fg.inverse}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace primary.accent with {sys.color.fg.inverse}",
+        "deprecatedComment": "replace primary.accent with {system.color.fg.inverse}",
         "fallback": "{sys.color.fg.inverse}"
       },
       "lighter": {
@@ -84,7 +84,7 @@
         "value": "{sys.color.fg.inverse}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace error.accent with {sys.color.fg.inverse}",
+        "deprecatedComment": "replace error.accent with {system.color.fg.inverse}",
         "fallback": "{sys.color.fg.inverse}"
       },
       "lighter": {
@@ -142,7 +142,7 @@
         "value": "{sys.color.fg.contrast.default}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace alert.darkest with {sys.color.fg.contrast.default}",
+        "deprecatedComment": "replace alert.darkest with {system.color.fg.contrast.default}",
         "fallback": "{sys.color.fg.contrast.default}"
       },
       "light": {
@@ -193,7 +193,7 @@
         "value": "{sys.color.fg.inverse}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace success.accent with {sys.color.fg.inverse}",
+        "deprecatedComment": "replace success.accent with {system.color.fg.inverse}",
         "fallback": "{sys.color.fg.inverse}"
       },
       "light": {
@@ -237,7 +237,7 @@
         "value": "{sys.color.fg.inverse}",
         "type": "color",
         "deprecated": true,
-        "deprecatedComment": "replace neutral.accent with {sys.color.fg.inverse}",
+        "deprecatedComment": "replace neutral.accent with {system.color.fg.inverse}",
         "fallback": "{sys.color.fg.inverse}"
       },
       "lighter": {
