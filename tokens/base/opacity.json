@@ -5,7 +5,7 @@
       "type": "number"
     },
     "80": {
-      "value": "08",
+      "value": "8",
       "type": "number"
     },
     "120": {
@@ -13,11 +13,11 @@
       "type": "number"
     },
     "200": {
-      "value": "2",
+      "value": "20",
       "type": "number"
     },
     "400": {
-      "value": "4",
+      "value": "40",
       "type": "number"
     },
     "640": {
