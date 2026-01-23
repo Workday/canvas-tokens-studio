@@ -1,0 +1,32 @@
+{
+  "opacity": {
+    "0": {
+      "value": "0",
+      "type": "number"
+    },
+    "80": {
+      "value": "8",
+      "type": "number"
+    },
+    "120": {
+      "value": "12",
+      "type": "number"
+    },
+    "200": {
+      "value": "20",
+      "type": "number"
+    },
+    "400": {
+      "value": "40",
+      "type": "number"
+    },
+    "640": {
+      "value": "64",
+      "type": "number"
+    },
+    "840": {
+      "value": "84",
+      "type": "number"
+    }
+  }
+}

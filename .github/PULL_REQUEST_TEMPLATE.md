@@ -6,9 +6,13 @@
 
 <!-- Give a brief description of what this PR does. -->
 
-## Where Should the Reviewer Start?
+## Checks
 
-<!-- e.g. `/src/components/SomeComponent.js` -->
+- [ ] Overview Added
+- [ ] Deprecated tokens placed in `deprecated` folder
+- [ ] Deprecated tokens file structure is the same as main.
+- [ ] Main tokens file doesn't have deprecated tokens.
+- [ ] Math values have spaces around math sign.
 
 ## Thank You Gif
 

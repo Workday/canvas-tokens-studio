@@ -1,69 +1,81 @@
 {
-  "space": {
-    "zero": {
-      "value": "0",
+  "padding": {
+    "none": {
+      "value": "{size.0}",
       "type": "spacing",
-      "description": "Stacks, rows in tables"
+      "description": "Use when there should be no space between content and element's edges."
     },
-    "half": {
-      "value": "{base.unit} * 0.5",
+    "xxs": {
+      "value": "{size.50}",
       "type": "spacing",
-      "description": "Mobile only"
+      "description": ""
     },
-    "x1": {
-      "value": "{base.unit}",
+    "xs": {
+      "value": "{size.100}",
       "type": "spacing",
-      "description": "Compact spacing between text or icons"
+      "description": "Horizontal padding on Input Fields"
     },
-    "x2": {
-      "value": "{base.unit} * 2",
+    "sm": {
+      "value": "{size.150}",
       "type": "spacing",
-      "description": "Commonly used to group compact elements like icon buttons"
+      "description": "Compact padding, used in Rich Text Editor, or X-Small Buttons"
     },
-    "x3": {
-      "value": "{base.unit} * 3",
+    "md": {
+      "value": "{size.200}",
       "type": "spacing",
-      "description": "Use when compact padding is required"
+      "description": "Default padding used for components used around Small Button content."
     },
-    "x4": {
-      "value": "{base.unit} * 4",
+    "lg": {
+      "value": "{size.250}",
       "type": "spacing",
-      "description": "Default space token. Used to group Inputs with related data"
+      "description": "Large padding, used in Medium Buttons with Icons"
     },
-    "x5": {
-      "value": "{base.unit} * 5",
+    "xl": {
+      "value": "{size.300}",
       "type": "spacing",
-      "description": "Mobile only"
+      "description": "Padding used around Card and Medium Button content"
     },
-    "x6": {
-      "value": "{base.unit} * 6",
+    "xxl": {
+      "value": "{size.400}",
       "type": "spacing",
-      "description": "• Padding around card content\n• Related elements where more space between them can be afforded\n• Separate section headings or titles from body text or inputs"
+      "description": "Padding used around Modal and Large Button content"
+    }
+  },
+  "gap": {
+    "none": {
+      "value": "{size.0}",
+      "type": "spacing",
+      "description": "Use when there is no space between elements"
     },
-    "x8": {
-      "value": "{base.unit} * 8",
+    "xs": {
+      "value": "{size.50}",
       "type": "spacing",
-      "description": "• Standard spacing between cards\n• Used to separate groups of content \n• Separate section headings or titles from body text or inputs"
+      "description": "Compact spacing from icon to text, labels to inputs, between tab items."
     },
-    "x10": {
-      "value": "{base.unit} * 10",
+    "sm": {
+      "value": "{size.100}",
       "type": "spacing",
-      "description": "• Used for outer margins on the overall page content \n• Used for inner margins on large items such as page sections"
+      "description": "Horizontal space between pills, tighter space between buttons, inline icon to text, segmented controls."
     },
-    "x14": {
-      "value": "{base.unit} * 14",
+    "md": {
+      "value": "{size.200}",
       "type": "spacing",
-      "description": "Mobile only"
+      "description": "Use the default inline spacing when other gap tokens may not fit."
     },
-    "x16": {
-      "value": "{base.unit} * 16",
+    "lg": {
+      "value": "{size.300}",
       "type": "spacing",
-      "description": "- Use to de-clutter your UI when a lot of space is available\n- Separate banner sections from page content\n- Use to differentiate page content like page sections"
+      "description": "Use this for tighter spacing between cards. Cards are self contained blocks of content."
     },
-    "x20": {
-      "value": "{base.unit} * 20",
+    "xl": {
+      "value": "{size.400}",
       "type": "spacing",
-      "description": "- Use sparingly\n- Helps to put focus on the primary element within your page\n- Use to de-clutter your UI when a lot of space is available"
+      "description": "Use this for the default spacing between cards, as well as the gutter width used in the large 12-column grid."
+    },
+    "xxl": {
+      "value": "{size.800}",
+      "type": "spacing",
+      "description": "Use this for the space between content sections"
     }
   }
 }
