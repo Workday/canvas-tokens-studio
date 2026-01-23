@@ -91,14 +91,14 @@
           "deprecatedComment": "Use sys.color.surface.raised tokens instead"
         },
         "soft": {
-          "value": "{sys.color.surface.alt.default}",
+          "value": "{palette.slate.50}",
           "type": "color",
           "description": "Alternative page background",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.surface.alt.default instead"
         },
         "strong": {
-          "value": "{sys.color.surface.alt.default}",
+          "value": "{palette.slate.200}",
           "type": "color",
           "description": "Active states",
           "deprecated": true,
@@ -961,7 +961,7 @@
           "deprecatedComment": "Use sys.color.brand.fg.positive.default instead"
         },
         "softer": {
-          "value": "{palette.green.200}",
+          "value": "{palette.green.50}",
           "type": "color",
           "description": "Error",
           "deprecated": true,
@@ -1000,7 +1000,7 @@
       },
       "input": {
         "disabled": {
-          "value": "{sys.opacity.disabled}",
+          "value": "{palette.slate.400}",
           "type": "color",
           "description": "Disabled inputs",
           "deprecated": true,
