@@ -92,7 +92,7 @@
           "type": "color"
         },
         "pressed": {
-          "value": "{palette.blue.A200}",
+          "value": "{palette.blue.400}",
           "type": "color"
         }
       },
