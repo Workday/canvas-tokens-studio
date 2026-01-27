@@ -902,7 +902,7 @@
           "deprecatedComment": "Use sys.color.brand.fg.caution.default instead"
         },
         "strong": {
-          "value": "{sys.color.brand.fg.caution.strong}",
+          "value": "{sys.color.fg.contrast.default}",
           "type": "color",
           "description": "Warning on hover",
           "deprecated": true,
