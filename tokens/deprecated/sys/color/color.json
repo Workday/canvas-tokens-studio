@@ -91,7 +91,7 @@
           "deprecatedComment": "Use sys.color.surface.raised tokens instead"
         },
         "soft": {
-          "value": "{palette.slate.50}",
+          "value": "{palette.slate.A50}",
           "type": "color",
           "description": "Alternative page background",
           "deprecated": true,
@@ -120,7 +120,7 @@
           "deprecatedComment": "Use sys.color.accent.muted.soft token instead"
         },
         "soft": {
-          "value": "{sys.color.accent.muted.soft}",
+          "value": "{palette.slate.A500}",
           "type": "color",
           "deprecated": true,
           "deprecatedComment": "Use sys.color.accent.muted.soft token instead"
@@ -214,7 +214,7 @@
           "deprecatedComment": "Use sys.color.brand.surface.caution.strong tokens instead"
         },
         "soft": {
-          "value": "{palette.amber.100}",
+          "value": "{palette.amber.A100}",
           "type": "color",
           "description": "Softer warning background",
           "deprecated": true,
@@ -258,7 +258,7 @@
           "deprecatedComment": "Use sys.color.brand.surface.critical.strong tokens instead"
         },
         "soft": {
-          "value": "{palette.red.100}",
+          "value": "{palette.red.A100}",
           "type": "color",
           "description": "Disabled error background",
           "deprecated": true,
@@ -346,7 +346,7 @@
           "deprecatedComment": "Use sys.color.accent.info instead"
         },
         "strong": {
-          "value": "{sys.color.accent.info}",
+          "value": "{palette.blue.700}",
           "type": "color",
           "description": "Brand hover background",
           "deprecated": true,
