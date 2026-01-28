@@ -17,7 +17,7 @@
           "deprecatedComment": "Use sys.color.brand.surface.primary.strong tokens instead"
         },
         "soft": {
-          "value": "{sys.color.brand.surface.primary.default}",
+          "value": "{palette.blue.100}",
           "type": "color",
           "description": "Primary disabled",
           "deprecated": true,
@@ -105,7 +105,7 @@
           "deprecatedComment": "Use sys.color.surface.default tokens instead with sys.color.surface.overlay.hover"
         },
         "stronger": {
-          "value": "{sys.color.surface.alt.default}",
+          "value": "{palette.slate.300}",
           "type": "color",
           "description": "Active state for segmented control, Pill",
           "deprecated": true,
@@ -170,7 +170,7 @@
           "deprecatedComment": "Use sys.color.brand.surface.positive.strong tokens instead"
         },
         "soft": {
-          "value": "{sys.color.brand.surface.positive.default}",
+          "value": "{palette.green.100}",
           "type": "color",
           "description": "Disabled success background",
           "deprecated": true,
@@ -332,7 +332,7 @@
           "deprecatedComment": "Use sys.color.surface.info.strong instead"
         },
         "soft": {
-          "value": "{sys.color.surface.info.default}",
+          "value": "{palette.blue.100}",
           "type": "color",
           "description": "Disabled",
           "deprecated": true,
