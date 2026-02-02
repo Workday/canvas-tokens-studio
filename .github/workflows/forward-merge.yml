@@ -8,19 +8,7 @@ on:
 
 jobs:
   get-branch-names:
-    # Only run if:
-    # - commit contains '[skip release]' (release commits or commits that skipped a release)
-    # - branch is prerelease/minor
-    #
-    # We don't want to run a forward merge on support/master on commits that will trigger a release.
-    # This would cause forward merge to run twice (once for normal commit, and one for the release)
-    # commit. `prerelease/minor` branch does not create release commits, so those branches are safe
-    # to forward-merge. A release commit looks like "chore: Release vx.x.x [skip release]" and all
-    # commits that skip the release action also contain "[skip release]". We will run forward merge
-    # on any commit that will not trigger another commit
-    if:
-      startsWith(github.ref_name, 'prerelease/') || contains(github.event.head_commit.message,
-      '[skip release]')
+    if: startsWith(github.ref_name, 'prerelease/')
     runs-on: ubuntu-latest
     outputs: # Output branch names for the make-pull-request job
       branch: ${{steps.extract-branch.outputs.branch}}
