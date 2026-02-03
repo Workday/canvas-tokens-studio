@@ -106,7 +106,7 @@ async function main() {
   const isSkipRelease = commitMessage.includes('[skip release]');
 
   try {
-    console.log(`Creating a merge branch`);
+    console.log(`Merging ${branch} into ${nextBranch}`);
     // The CI uses `origin` while locally we use `upstream`.
     const remote = alreadyMerging ? 'upstream' : 'origin';
     const {stdout} = await exec(
