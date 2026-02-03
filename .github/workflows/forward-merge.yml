@@ -8,7 +8,7 @@ on:
 
 jobs:
   get-branch-names:
-    if: startsWith(github.ref_name, 'prerelease/')
+    if: startsWith(github.ref_name, 'prerelease/') || github.ref_name == 'main'
     runs-on: ubuntu-latest
     outputs: # Output branch names for the make-pull-request job
       branch: ${{steps.extract-branch.outputs.branch}}
