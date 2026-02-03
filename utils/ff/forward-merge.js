@@ -10,7 +10,10 @@ const exec = promisify(originalExec);
 
 // Tokenize and parse command arguments and be aware that anything in quotes is part of a single argument
 // For example: `echo "hello there" bob` returns args like `['"hello there"', 'bob']
-function splitArgs(/** @type {string} */ input) {
+/**
+ * @param {string} input
+ */
+function splitArgs(input) {
   const [name, ...rest] = input.split(' ');
 
   /** @type {string[]} */
