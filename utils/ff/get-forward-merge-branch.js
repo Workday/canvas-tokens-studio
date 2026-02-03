@@ -9,7 +9,7 @@ const forwardMergeBranches = {
   'prerelease/minor': 'prerelease/major',
 };
 
-function getForwardMergeBranch(/** @type string */ branch) {
+function getForwardMergeBranch(/** @type {string} */ branch) {
   const nextBranch = forwardMergeBranches[branch];
 
   assert(
