@@ -65,7 +65,11 @@ async function spawn(/** @type {string} */ cmd, /** @type {object} */ opts = und
   return;
 }
 
-function getBranches(/** @type string */ branch) {
+/**
+ * @param {string} branch
+ * @returns {string[]}
+ */
+function getBranches(branch) {
   if (branch.startsWith('merge')) {
     // we're already merging, so extract branch information
     const matches = branch.match(/merge\/(.+)-into-(.+)/);
