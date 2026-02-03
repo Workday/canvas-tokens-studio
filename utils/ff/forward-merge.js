@@ -39,7 +39,13 @@ function splitArgs(/** @type {string} */ input) {
   return {name, args};
 }
 
-/**  */
+/**
+ * Runs a command in a child process, streaming stdout and stderr to the console.
+ *
+ * @param {string} cmd - The command to execute, including its arguments as a single string.
+ * @param {object} [opts] - Optional spawn options forwarded to node:child_process.spawn.
+ * @returns {Promise<void>} Resolves when the command exits successfully; rejects on non-zero exit code.
+ */
 async function spawn(/** @type {string} */ cmd, /** @type {object} */ opts = undefined) {
   console.log(`Running: "${cmd}"`);
   const {name, args} = splitArgs(cmd);
