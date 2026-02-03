@@ -93,7 +93,7 @@ jobs:
 
       ## Create a merge branch
       - name: Forward merge
-        run: node utils/forward-merge.js
+        run: node utils/ff/forward-merge.js
 
       - name: Git Log
         run: git log
