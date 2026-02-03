@@ -133,7 +133,7 @@ jobs:
                 git checkout --track upstream/merge/${{needs.get-branch-names.outputs.branch}}-into-${{ needs.get-branch-names.outputs.next-branch }}
                 git pull upstream merge/${{needs.get-branch-names.outputs.branch}}-into-${{ needs.get-branch-names.outputs.next-branch }} -f
                 git pull upstream ${{needs.get-branch-names.outputs.branch}}
-                node utils/forward-merge.js
+                node utils/ff/forward-merge.js
                 ```
             2. If the previous step succeeded, skip to step 4.
             3. Resolve conflicts manually. Then run the following.
