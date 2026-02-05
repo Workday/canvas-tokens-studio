@@ -39,24 +39,24 @@
     },
     "surface": {
       "hover": {
-        "value": "{opacity.10}",
+        "value": "{opacity.100}",
         "type": "number",
         "description": "Surface hover opacity"
       },
       "pressed": {
-        "value": "{opacity.18}",
+        "value": "{opacity.180}",
         "type": "number",
         "description": "Surface pressed opacity"
       }
     },
     "accent": {
       "hover": {
-        "value": "{opacity.18}",
+        "value": "{opacity.180}",
         "type": "number",
         "description": "Accent hover opacity"
       },
       "pressed": {
-        "value": "{opacity.36}",
+        "value": "{opacity.360}",
         "type": "number",
         "description": "Accent pressed opacity"
       }
