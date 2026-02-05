@@ -46,19 +46,19 @@
       "pressed": {
         "value": "{opacity.180}",
         "type": "number",
-        "description": "Surface pressed opacity"
+        "description": "Surface pressed opacity use with surface colors"
       }
     },
     "accent": {
       "hover": {
         "value": "{opacity.180}",
         "type": "number",
-        "description": "Accent hover opacity"
+        "description": "Accent hover opacity use with accent colors"
       },
       "pressed": {
         "value": "{opacity.360}",
         "type": "number",
-        "description": "Accent pressed opacity"
+        "description": "Accent pressed opacity use with accent colors"
       }
     }
   },
