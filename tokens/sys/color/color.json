@@ -123,6 +123,10 @@
           "inverse": {
             "value": "{palette.white.A200}",
             "type": "color"
+          },
+          "mixin": {
+            "value": "{palette.slate.500}",
+            "type": "color"
           }
         },
         "pressed": {
@@ -183,6 +187,10 @@
         },
         "pressed": {
           "value": "{palette.neutral.A400}",
+          "type": "color"
+        },
+        "mixin": {
+          "value": "{palette.neutral.1000}",
           "type": "color"
         }
       }
