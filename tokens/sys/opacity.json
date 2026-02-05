@@ -36,6 +36,30 @@
         "type": "number",
         "description": "Alpha on second shadow"
       }
+    },
+    "surface": {
+      "hover": {
+        "value": "{opacity.10}",
+        "type": "number",
+        "description": "Surface hover opacity"
+      },
+      "pressed": {
+        "value": "{opacity.18}",
+        "type": "number",
+        "description": "Surface pressed opacity"
+      }
+    },
+    "accent": {
+      "hover": {
+        "value": "{opacity.18}",
+        "type": "number",
+        "description": "Accent hover opacity"
+      },
+      "pressed": {
+        "value": "{opacity.36}",
+        "type": "number",
+        "description": "Accent pressed opacity"
+      }
     }
   },
   "layer-opacity": {
