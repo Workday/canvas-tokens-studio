@@ -59,6 +59,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: update-tokens
     if: ${{ needs.update-tokens.outputs.tokens }}
+    outputs:
+      has_diff: ${{ steps.check_staged.outputs.has_staged }}
     steps:
       - name: Checkout canvas-tokens repository
         uses: actions/checkout@v3
@@ -145,7 +147,7 @@ jobs:
   finalize:
     runs-on: ubuntu-latest
     needs: sync-tokens
-    if: ${{ needs.sync-tokens.result == 'success' }}
+    if: ${{ needs.sync-tokens.result == 'success' && needs.sync-tokens.outputs.has_diff == 'true' }}
     steps:
       - uses: actions/checkout@v3
         with:
