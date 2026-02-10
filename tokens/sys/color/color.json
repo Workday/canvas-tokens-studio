@@ -125,6 +125,10 @@
             "type": "color"
           }
         },
+        "mixin": {
+          "value": "{palette.slate.500}",
+          "type": "color"
+        },
         "pressed": {
           "default": {
             "value": "{palette.slate.A100}",
@@ -183,6 +187,10 @@
         },
         "pressed": {
           "value": "{palette.neutral.A400}",
+          "type": "color"
+        },
+        "mixin": {
+          "value": "{palette.neutral.1000}",
           "type": "color"
         }
       }
