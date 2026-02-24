@@ -8,17 +8,17 @@
     "sm": {
       "value": "{size.50}",
       "type": "borderRadius",
-      "description": "Components presenting info text, user input, user feedback. Inputs, Toasts, Snack bars, Tooltips, Error Alert Banner"
+      "description": "Pill, Status Indicator, Checkbox"
     },
     "md": {
       "value": "{size.100}",
       "type": "borderRadius",
-      "description": "Core large containers, card containers and popups that house moderate amounts of content and/or data: Card, Menus"
+      "description": "Inputs, Toast, Tooltip, Snackbar"
     },
     "lg": {
       "value": "{size.150}",
       "type": "borderRadius",
-      "description": "Primarily used for elevated and simple parent containers with greater amounts of content and UI. Dialogs, Modals, Bottom Sheets"
+      "description": "Rich text editor"
     },
     "xl": {
       "value": "{size.200}",

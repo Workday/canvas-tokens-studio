@@ -41,24 +41,24 @@
       "hover": {
         "value": "{opacity.100}",
         "type": "number",
-        "description": "Surface hover opacity"
+        "description": "State layer applied to surface colors on hover"
       },
       "pressed": {
         "value": "{opacity.180}",
         "type": "number",
-        "description": "Surface pressed opacity use with surface colors"
+        "description": "State layer applied to surface colors while pressing"
       }
     },
     "accent": {
       "hover": {
         "value": "{opacity.180}",
         "type": "number",
-        "description": "Accent hover opacity use with accent colors"
+        "description": "State layer applied to accent colors on hover"
       },
       "pressed": {
         "value": "{opacity.360}",
         "type": "number",
-        "description": "Accent pressed opacity use with accent colors"
+        "description": "State layer applied to accent colors while pressing"
       }
     }
   },
