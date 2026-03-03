@@ -1,0 +1,32 @@
+{
+    "system-icon": {
+        "icon": {
+            "size": {
+                "xxs": {
+                    "value": "{size.175}",
+                    "type": "size"
+                },
+                "xs": {
+                    "value": "{size.200}",
+                    "type": "size"
+                },
+                "sm": {
+                    "value": "{size.225}",
+                    "type": "size"
+                },
+                "md": {
+                    "value": "{size.250}",
+                    "type": "size"
+                },
+                "lg": {
+                    "value": "{size.300}",
+                    "type": "size"
+                },
+                "xl": {
+                    "value": "{size.400}",
+                    "type": "size"
+                }
+            }
+        }
+    }
+}
