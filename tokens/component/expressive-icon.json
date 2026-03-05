@@ -1,12 +1,12 @@
 {
     "expressive-icon": {
         "color": {
-            "fill": {
+            "accent": {
                 "value": "{brand.neutral.A200}",
                 "type": "color",
                 "description": "Component level color used on the soft filled areas of expressive icons"
             },
-            "accent": {
+            "fill": {
                 "value": "{color.fg.default}",
                 "type": "color",
                 "description": "Component level color used on the visible outlines of expressive icons"
