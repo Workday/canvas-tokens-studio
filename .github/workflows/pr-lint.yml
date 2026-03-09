@@ -18,16 +18,22 @@ jobs:
 
       - name: Get Changed Files
         id: changed_files
+        env:
+          PR_BASE_REF: ${{github.event.pull_request.base.ref}}
+          PR_HEAD_REF: ${{github.event.pull_request.head.ref}}
         run: |
-          BASE="origin/${{ github.event.pull_request.base.ref }}"
-          HEAD="origin/${{ github.event.pull_request.head.ref }}"
+          BASE="origin/${{env.PR_BASE_REF}}"
+          HEAD="origin/${{env.PR_HEAD_REF}}"
           echo "changed_files=$(git diff --name-only $BASE...$HEAD | grep '^tokens/' | xargs)" >> $GITHUB_OUTPUT
 
       - name: Check PR title
+        env:
+          PR_TITLE: ${{github.event.pull_request.title}}
+          TOKENS_CHANGED: ${{steps.changed_files.outputs.changed_files}}
         run: |
           # Get PR title
-          PR_TITLE="${{ github.event.pull_request.title }}"
-          TOKENS_CHANGED="${{ steps.changed_files.outputs.changed_files }}"
+          PR_TITLE="${{env.PR_TITLE}}"
+          TOKENS_CHANGED="${{env.TOKENS_CHANGED}}"
 
           # If tokens changed, PR title must start with feat
           if [ -n "$TOKENS_CHANGED" ]; then
