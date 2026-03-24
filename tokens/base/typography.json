@@ -1,35 +1,38 @@
 {
   "font-family": {
     "50": {
-      "value": "Roboto",
-      "type": "text",
-      "description": "Default font-family"
+      "value": "Inter",
+      "type": "fontFamily",
     },
     "100": {
       "value": "Roboto Mono",
-      "type": "text"
+      "type": "fontFamily"
     },
     "200": {
       "value": "Noto Sans",
-      "type": "text"
+      "type": "fontFamily"
     }
   },
   "font-weight": {
     "300": {
-      "value": "Light",
-      "type": "text"
+      "value": 310,
+      "type": "fontWeight"
     },
     "400": {
-      "value": "Regular",
-      "type": "text"
+      "value": 410,
+      "type": "fontWeight"
     },
     "500": {
-      "value": "Medium",
-      "type": "text"
+      "value": 580,
+      "type": "fontWeight"
+    },
+    "600": {
+      "value": 620,
+      "type": "fontWeight"
     },
     "700": {
-      "value": "Bold",
-      "type": "text"
+      "value": 710,
+      "type": "fontWeight"
     }
   },
   "letter-spacing": {
