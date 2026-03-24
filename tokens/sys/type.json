@@ -2,58 +2,58 @@
     "font-family": {
         "default": {
             "value": "{font-family.50}",
-            "type": "text"
+            "type": "fontFamily"
         },
         "mono": {
             "value": "{font-family.100}",
-            "type": "text"
+            "type": "fontFamily"
         },
         "global": {
             "value": "{font-family.200}",
-            "type": "text"
+            "type": "fontFamily"
         }
     },
     "font-size": {
         "subtext": {
             "sm": {
                 "value": "{size.125}",
-                "type": "sizing"
+                "type": "fontSize"
             },
             "md": {
                 "value": "{size.150}",
-                "type": "sizing"
+                "type": "fontSize"
             },
             "lg": {
                 "value": "{size.175}",
-                "type": "sizing"
+                "type": "fontSize"
             }
         },
         "body": {
             "sm": {
                 "value": "{size.200}",
-                "type": "sizing"
+                "type": "fontSize"
             },
             "md": {
                 "value": "{size.225}",
-                "type": "sizing"
+                "type": "fontSize"
             },
             "lg": {
                 "value": "{size.250}",
-                "type": "sizing"
+                "type": "fontSize"
             }
         },
         "heading": {
             "sm": {
                 "value": "{size.300}",
-                "type": "sizing"
+                "type": "fontSize"
             },
             "md": {
                 "value": "{size.350}",
-                "type": "sizing"
+                "type": "fontSize"
             },
             "lg": {
                 "value": "{size.400}",
-                "type": "sizing"
+                "type": "fontSize"
             }
         },
         "title": {
@@ -74,7 +74,7 @@
     "line-height": {
         "subtext": {
             "sm": {
-                "value": "{size.200}",
+                "value": "{size.175}",
                 "type": "number"
             },
             "md": {
@@ -92,7 +92,7 @@
                 "type": "number"
             },
             "md": {
-                "value": "{size.350}",
+                "value": "{size.325}",
                 "type": "number"
             },
             "lg": {
@@ -154,19 +154,19 @@
     "font-weight": {
         "light": {
             "value": "{font-weight.300}",
-            "type": "text"
+            "type": "fontWeight"
         },
         "normal": {
             "value": "{font-weight.400}",
-            "type": "text"
+            "type": "fontWeight"
         },
         "medium": {
             "value": "{font-weight.500}",
-            "type": "text"
+            "type": "fontWeight"
         },
         "bold": {
             "value": "{font-weight.700}",
-            "type": "text"
+            "type": "fontWeight"
         }
     },
     "type": {
