@@ -48,7 +48,9 @@ export const getDirectoryFiles = (directory, includes = 'all') => {
     // Check if file is in sys/ folder but not sys/brand or sys/color
     const isSystem =
       file.includes('sys/') && !file.includes('sys/brand') && !file.includes('sys/color');
+    // Check if file is in component folder
+    const isComponent = file.includes('component/');
 
-    return file.endsWith('.json') && (isBase || isBrand || isColor || isSystem);
+    return file.endsWith('.json') && (isBase || isBrand || isColor || isSystem || isComponent);
   });
 };

@@ -6,7 +6,7 @@ import {
 } from './files/utils.js';
 
 (() => {
-  ['base', 'brand', 'sys'].forEach(type => {
+  ['base', 'brand', 'sys', 'component'].forEach(type => {
     ['main', 'deprecated'].forEach(category => {
       const isDeprecated = category === 'deprecated';
       const typeFolder = type === 'brand' ? 'sys/brand' : type;
