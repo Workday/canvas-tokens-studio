@@ -1,0 +1,38 @@
+{
+  "expressive-icon": {
+    "color": {
+      "accent": {
+        "value": "{palette.neutral.A200}",
+        "type": "color",
+        "description": "Component level color used on the soft filled areas of expressive icons"
+      },
+      "fill": {
+        "value": "{palette.neutral.800}",
+        "type": "color",
+        "description": "Component level color used on the visible outlines of expressive icons"
+      }
+    },
+    "size": {
+      "xs": {
+        "value": "{size.500}",
+        "type": "size"
+      },
+      "sm": {
+        "value": "{size.600}",
+        "type": "size"
+      },
+      "md": {
+        "value": "{size.700}",
+        "type": "size"
+      },
+      "lg": {
+        "value": "{size.800}",
+        "type": "size"
+      },
+      "xl": {
+        "value": "{size.1200}",
+        "type": "size"
+      }
+    }
+  }
+}
