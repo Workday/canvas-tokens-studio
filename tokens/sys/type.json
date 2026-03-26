@@ -132,22 +132,58 @@
     "letter-spacing": {
         "subtext": {
             "sm": {
-                "value": "{letter-spacing.50}",
-                "type": "number"
+                "value": "0.025em",
+                "type": "letterSpacing"
             },
             "md": {
-                "value": "{letter-spacing.100}",
-                "type": "number"
+                "value": "0.01em",
+                "type": "letterSpacing"
             },
             "lg": {
-                "value": "{letter-spacing.150}",
-                "type": "number"
+                "value": "0em",
+                "type": "letterSpacing"
             }
         },
         "body": {
             "sm": {
-                "value": "{letter-spacing.200}",
-                "type": "number"
+                "value": "-0.01em",
+                "type": "letterSpacing"
+            },
+            "md": {
+                "value": "-0.01em",
+                "type": "letterSpacing"
+            },
+            "lg": {
+                "value": "-0.01em",
+                "type": "letterSpacing"
+            }
+        },
+        "heading": {
+            "sm": {
+                "value": "-0.02em",
+                "type": "letterSpacing"
+            },
+            "md": {
+                "value": "-0.02em",
+                "type": "letterSpacing"
+            },
+            "lg": {
+                "value": "-0.02em",
+                "type": "letterSpacing"
+            }
+        },
+        "title": {
+            "sm": {
+                "value": "-0.03em",
+                "type": "letterSpacing"
+            },
+            "md": {
+                "value": "-0.03em",
+                "type": "letterSpacing"
+            },
+            "lg": {
+                "value": "-0.04em",
+                "type": "letterSpacing"
             }
         }
     },
