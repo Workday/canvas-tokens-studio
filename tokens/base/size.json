@@ -121,10 +121,7 @@
       "description": "96px / 6rem"
     },
     "1300": {
-      "value": {
-        "value": "{base.baseline} * 13.00",
-"
-      },
+      "value": "{base.baseline} * 13.00",
       "type": "dimension",
       "description": "104px / 6.5rem"
     },
