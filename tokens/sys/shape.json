@@ -2,42 +2,42 @@
   "shape": {
     "none": {
       "value": "{size.0}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels."
     },
     "sm": {
       "value": "{size.50}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Pill, Status Indicator, Checkbox"
     },
     "md": {
       "value": "{size.100}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Inputs, Toast, Tooltip, Snackbar"
     },
     "lg": {
       "value": "{size.150}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Rich text editor"
     },
     "xl": {
       "value": "{size.200}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Extra large rounding for prominent containers"
     },
     "xxl": {
       "value": "{size.300}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Extra extra large rounding for cards and items"
     },
     "xxxl": {
       "value": "{size.400}",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Maximum rounding for modals and large containers"
     },
     "full": {
       "value": "{size.75} * 100",
-      "type": "borderRadius",
+      "type": "dimension",
       "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)"
     }
   }
