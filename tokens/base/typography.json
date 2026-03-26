@@ -30,23 +30,5 @@
       "value": 710,
       "type": "fontWeight"
     }
-  },
-  "letter-spacing": {
-    "50": {
-      "value": 0.4,
-      "type": "number"
-    },
-    "100": {
-      "value": 0.32,
-      "type": "number"
-    },
-    "150": {
-      "value": 0.24,
-      "type": "number"
-    },
-    "200": {
-      "value": 0.16,
-      "type": "number"
-    }
   }
 }
