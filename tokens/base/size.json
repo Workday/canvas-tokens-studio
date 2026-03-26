@@ -126,8 +126,8 @@
     },
     "1400": {
       "value":  "{base.baseline} * 14.00",
-
       "type": "dimension",
       "description": "112px / 7rem"
     }
   }
+}

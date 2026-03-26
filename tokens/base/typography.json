@@ -2,7 +2,7 @@
   "font-family": {
     "50": {
       "value": "Inter",
-      "type": "fontFamily",
+      "type": "fontFamily"
     },
     "100": {
       "value": "Roboto Mono",
