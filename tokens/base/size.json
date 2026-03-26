@@ -5,8 +5,7 @@
       "description": "0px / 0rem"
     },
     "25": {
-      "value": "{base.baseline} * 0.25"
-      },
+      "value": "{base.baseline} * 0.25",
       "type": "dimension",
       "description": "2px / 0.125rem"
     },
