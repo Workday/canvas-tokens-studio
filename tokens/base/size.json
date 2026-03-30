@@ -2,6 +2,7 @@
   "size": {
     "0": {
       "value": "0",
+      "type": "dimension",
       "description": "0px / 0rem"
     },
     "25": {

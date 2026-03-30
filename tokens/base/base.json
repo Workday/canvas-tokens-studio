@@ -3,7 +3,7 @@
     "fontSize": {
       "value": "16",
       "type": "dimension",
-      "description": "Default fontSize for the browser, may be overriden by user preferences"
+      "description": "Default fontSize for the browser, may be overridden by user preferences"
     },
     "baseline": {
       "value": "{base.fontSize} / 2",
