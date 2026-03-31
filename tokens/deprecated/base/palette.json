@@ -1175,6 +1175,29 @@
         "deprecated": true,
         "deprecatedComment": "replace cappuccino600 with appropriate replacement color"
       }
+    },
+    "neutral": {
+      "0": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace neutral0 with {palette.white.$root}",
+        "fallback": "{palette.white.$root}"
+      },
+      "1000": {
+        "value": "#000000",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace neutral1000 with {palette.black.$root}",
+        "fallback": "{palette.black.$root}"
+      },
+      "A0": {
+        "value": "#00000000",
+        "type": "color",
+        "deprecated": true,
+        "deprecatedComment": "replace neutralA0 with {palette.black.A0}",
+        "fallback": "{palette.black.A0}"
+      }
     }
   },
   "extended": {
