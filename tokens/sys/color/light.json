@@ -1,0 +1,607 @@
+{
+  "color": {
+    "bg": {
+      "default": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Default background color for page surfaces."
+      },
+      "alt": {
+        "default": {
+          "value": "{brand.neutral.50}",
+          "type": "color",
+          "description": "Default alternative background color for page surfaces."
+        }
+      }
+    },
+    "surface": {
+      "default": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Default surface color for container backgrounds."
+      },
+      "navigation": {
+        "value": "{brand.neutral.50}",
+        "type": "color",
+        "description": "Navigation surface color for container backgrounds."
+      },
+      "popover": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Popover surface color for container backgrounds."
+      },
+      "modal": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Modal surface color for container backgrounds."
+      },
+      "raised": {
+        "value": "{brand.neutral.A25}",
+        "type": "color",
+        "description": "Raised surface color for container backgrounds."
+      },
+      "alt": {
+        "default": {
+          "value": "{brand.neutral.A50}",
+          "type": "color",
+          "description": "Default alternative surface color for secondary containers."
+        },
+        "strong": {
+          "value": "{brand.neutral.A100}",
+          "type": "color",
+          "description": "Strong alternative surface color for secondary containers."
+        }
+      },
+      "loading": {
+        "value": "{palette.neutral.A200}",
+        "type": "color",
+        "description": "Loading surface color for container backgrounds."
+      },
+      "info": {
+        "default": {
+          "value": "{palette.blue.A25}",
+          "type": "color",
+          "description": "Default info surface color for status containers."
+        },
+        "strong": {
+          "value": "{palette.blue.A50}",
+          "type": "color",
+          "description": "Strong info surface color for status containers."
+        }
+      },
+      "danger": {
+        "default": {
+          "value": "{palette.red.A25}",
+          "type": "color",
+          "description": "Default danger surface color for status containers."
+        },
+        "strong": {
+          "value": "{palette.red.A50}",
+          "type": "color",
+          "description": "Strong danger surface color for status containers."
+        }
+      },
+      "warning": {
+        "default": {
+          "value": "{palette.amber.A25}",
+          "type": "color",
+          "description": "Default warning surface color for status containers."
+        },
+        "strong": {
+          "value": "{palette.amber.A50}",
+          "type": "color",
+          "description": "Strong warning surface color for status containers."
+        }
+      },
+      "success": {
+        "default": {
+          "value": "{palette.green.A25}",
+          "type": "color",
+          "description": "Default success surface color for status containers."
+        },
+        "strong": {
+          "value": "{palette.green.A50}",
+          "type": "color",
+          "description": "Strong success surface color for status containers."
+        }
+      },
+      "ai": {
+        "default": {
+          "value": "{palette.blue.A100}",
+          "type": "color",
+          "description": "Default AI surface color for AI content containers."
+        },
+        "hover": {
+          "value": "{palette.blue.A200}",
+          "type": "color",
+          "description": "Hover AI surface color for AI content containers."
+        },
+        "pressed": {
+          "value": "{palette.blue.A400}",
+          "type": "color",
+          "description": "Pressed AI surface color for AI content containers."
+        }
+      },
+      "transparent": {
+        "value": "{palette.neutral.A0}",
+        "type": "color",
+        "description": "Transparent surface color for container backgrounds."
+      },
+      "inverse": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Inverse surface color for container backgrounds."
+      },
+      "contrast": {
+        "default": {
+          "value": "{palette.neutral.A900}",
+          "type": "color",
+          "description": "Default contrast surface color for container backgrounds."
+        },
+        "strong": {
+          "value": "{palette.neutral.950}",
+          "type": "color",
+          "description": "Strong contrast surface color for container backgrounds."
+        }
+      },
+      "overlay": {
+        "hover": {
+          "default": {
+            "value": "{brand.neutral.A50}",
+            "type": "color",
+            "description": "Hover overlay color for default surface states."
+          },
+          "inverse": {
+            "value": "{palette.theme.surfaceOverlayHoverInverse}",
+            "type": "color",
+            "description": "Hover overlay color for inverse surface states."
+          }
+        },
+        "mixin": {
+          "value": "{palette.neutral.500}",
+          "type": "color",
+          "description": "Overlay mixin color for pressed surface states."
+        },
+        "pressed": {
+          "default": {
+            "value": "{brand.neutral.A100}",
+            "type": "color",
+            "description": "Pressed overlay color for default surface states."
+          },
+          "inverse": {
+            "value": "{palette.theme.surfaceOverlayPressedInverse}",
+            "type": "color",
+            "description": "Pressed overlay color for inverse surface states."
+          }
+        },
+        "scrim": {
+          "value": "{palette.neutral.A400}",
+          "type": "color",
+          "description": "Scrim overlay color for blocked background states."
+        }
+      },
+      "primary": {
+        "default": {
+          "value": "{brand.primary.A25}",
+          "type": "color",
+          "description": "Default primary surface color for status containers."
+        },
+        "strong": {
+          "value": "{brand.primary.A50}",
+          "type": "color",
+          "description": "Strong primary surface color for status containers."
+        }
+      },
+      "critical": {
+        "default": {
+          "value": "{brand.critical.A25}",
+          "type": "color",
+          "description": "Default critical surface color for status containers."
+        },
+        "strong": {
+          "value": "{brand.critical.A50}",
+          "type": "color",
+          "description": "Strong critical surface color for status containers."
+        }
+      },
+      "caution": {
+        "default": {
+          "value": "{brand.caution.A25}",
+          "type": "color",
+          "description": "Default caution surface color for status containers."
+        },
+        "strong": {
+          "value": "{brand.caution.A50}",
+          "type": "color",
+          "description": "Strong caution surface color for status containers."
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{brand.positive.A25}",
+          "type": "color",
+          "description": "Default positive surface color for status containers."
+        },
+        "strong": {
+          "value": "{brand.positive.A50}",
+          "type": "color",
+          "description": "Strong positive surface color for status containers."
+        }
+      },
+      "selected": {
+        "value": "{brand.primary.A50}",
+        "type": "color",
+        "description": "Selected surface color for container backgrounds."
+      }
+    },
+    "accent": {
+      "ai": {
+        "value": "{palette.blue.950}",
+        "type": "color",
+        "description": "AI accent color for emphasized elements."
+      },
+      "info": {
+        "value": "{palette.blue.600}",
+        "type": "color",
+        "description": "Info accent color for emphasized elements."
+      },
+      "danger": {
+        "value": "{palette.red.600}",
+        "type": "color",
+        "description": "Danger accent color for emphasized elements."
+      },
+      "warning": {
+        "value": "{palette.amber.400}",
+        "type": "color",
+        "description": "Warning accent color for emphasized elements."
+      },
+      "success": {
+        "value": "{palette.green.600}",
+        "type": "color",
+        "description": "Success accent color for emphasized elements."
+      },
+      "contrast": {
+        "value": "{palette.neutral.900}",
+        "type": "color",
+        "description": "Contrast accent color for emphasized elements."
+      },
+      "muted": {
+        "default": {
+          "value": "{brand.neutral.600}",
+          "type": "color",
+          "description": "Default muted accent color for secondary emphasis."
+        },
+        "soft": {
+          "value": "{palette.slate.400}",
+          "type": "color",
+          "description": "Soft muted accent color for secondary emphasis."
+        }
+      },
+      "overlay": {
+        "hover": {
+          "value": "{palette.white.A200}",
+          "type": "color",
+          "description": "Hover accent overlay color for interactive states."
+        },
+        "pressed": {
+          "value": "{palette.neutral.A400}",
+          "type": "color",
+          "description": "Pressed accent overlay color for interactive states."
+        },
+        "mixin": {
+          "value": "{palette.black.$root}",
+          "type": "color",
+          "description": "Mixin accent overlay color for interactive states."
+        }
+      },
+      "primary": {
+        "value": "{brand.primary.600}",
+        "type": "color",
+        "description": "Primary accent color for emphasized elements."
+      },
+      "critical": {
+        "value": "{brand.critical.600}",
+        "type": "color",
+        "description": "Critical accent color for emphasized elements."
+      },
+      "caution": {
+        "value": "{brand.caution.400}",
+        "type": "color",
+        "description": "Caution accent color for emphasized elements."
+      },
+      "positive": {
+        "value": "{brand.positive.600}",
+        "type": "color",
+        "description": "Positive accent color for emphasized elements."
+      },
+      "action": {
+        "value": "{brand.primary.600}",
+        "type": "color",
+        "description": "Action accent color for emphasized elements."
+      }
+    },
+    "fg": {
+      "default": {
+        "value": "{palette.black.A800}",
+        "type": "color",
+        "description": "Default text and icon color."
+      },
+      "strong": {
+        "value": "{palette.black.A900}",
+        "type": "color",
+        "description": "Strong text and icon color."
+      },
+      "stronger": {
+        "value": "{palette.black.A950}",
+        "type": "color",
+        "description": "Stronger text and icon color."
+      },
+      "disabled": {
+        "value": "{brand.neutral.A400}",
+        "type": "color",
+        "description": "Disabled text and icon color."
+      },
+      "muted": {
+        "default": {
+          "value": "{brand.neutral.A600}",
+          "type": "color",
+          "description": "Default muted text and icon color."
+        },
+        "strong": {
+          "value": "{brand.neutral.A700}",
+          "type": "color",
+          "description": "Strong muted text and icon color."
+        }
+      },
+      "inverse": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Inverse text and icon color."
+      },
+      "info": {
+        "default": {
+          "value": "{palette.blue.600}",
+          "type": "color",
+          "description": "Default info text and icon color."
+        },
+        "strong": {
+          "value": "{palette.blue.700}",
+          "type": "color",
+          "description": "Strong info text and icon color."
+        }
+      },
+      "danger": {
+        "default": {
+          "value": "{palette.red.600}",
+          "type": "color",
+          "description": "Default danger text and icon color."
+        },
+        "strong": {
+          "value": "{palette.red.700}",
+          "type": "color",
+          "description": "Strong danger text and icon color."
+        }
+      },
+      "warning": {
+        "default": {
+          "value": "{palette.amber.600}",
+          "type": "color",
+          "description": "Default warning text and icon color."
+        },
+        "strong": {
+          "value": "{palette.amber.700}",
+          "type": "color",
+          "description": "Strong warning text and icon color."
+        }
+      },
+      "success": {
+        "default": {
+          "value": "{palette.green.600}",
+          "type": "color",
+          "description": "Default success text and icon color."
+        },
+        "strong": {
+          "value": "{palette.green.700}",
+          "type": "color",
+          "description": "Strong success text and icon color."
+        }
+      },
+      "ai": {
+        "value": "{palette.blue.950}",
+        "type": "color",
+        "description": "AI text and icon color."
+      },
+      "contrast": {
+        "default": {
+          "value": "{palette.neutral.A900}",
+          "type": "color",
+          "description": "Default contrast text and icon color."
+        },
+        "strong": {
+          "value": "{palette.black.A950}",
+          "type": "color",
+          "description": "Strong contrast text and icon color."
+        }
+      },
+      "primary": {
+        "default": {
+          "value": "{brand.primary.600}",
+          "type": "color",
+          "description": "Default primary text and icon color."
+        },
+        "strong": {
+          "value": "{brand.primary.700}",
+          "type": "color",
+          "description": "Strong primary text and icon color."
+        }
+      },
+      "critical": {
+        "default": {
+          "value": "{brand.critical.600}",
+          "type": "color",
+          "description": "Default critical text and icon color."
+        },
+        "strong": {
+          "value": "{brand.critical.700}",
+          "type": "color",
+          "description": "Strong critical text and icon color."
+        }
+      },
+      "caution": {
+        "default": {
+          "value": "{brand.caution.600}",
+          "type": "color",
+          "description": "Default caution text and icon color."
+        },
+        "strong": {
+          "value": "{brand.caution.700}",
+          "type": "color",
+          "description": "Strong caution text and icon color."
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{brand.positive.600}",
+          "type": "color",
+          "description": "Default positive text and icon color."
+        },
+        "strong": {
+          "value": "{brand.positive.700}",
+          "type": "color",
+          "description": "Strong positive text and icon color."
+        }
+      },
+      "selected": {
+        "value": "{brand.primary.700}",
+        "type": "color",
+        "description": "Selected text and icon color."
+      }
+    },
+    "border": {
+      "default": {
+        "value": "{brand.neutral.A200}",
+        "type": "color",
+        "description": "Default border color for component boundaries."
+      },
+      "strong": {
+        "value": "{palette.neutral.A300}",
+        "type": "color",
+        "description": "Strong border color for component boundaries."
+      },
+      "input": {
+        "default": {
+          "value": "{brand.neutral.A500}",
+          "type": "color",
+          "description": "Default border color for input states."
+        },
+        "hover": {
+          "value": "{palette.neutral.A700}",
+          "type": "color",
+          "description": "Hover border color for input states."
+        }
+      },
+      "info": {
+        "default": {
+          "value": "{palette.blue.500}",
+          "type": "color",
+          "description": "Info Default border color for component boundaries."
+        }
+      },
+      "danger": {
+        "value": "{palette.red.500}",
+        "type": "color",
+        "description": "Danger border color for component boundaries."
+      },
+      "warning": {
+        "value": "{palette.amber.500}",
+        "type": "color",
+        "description": "Warning border color for component boundaries."
+      },
+      "inverse": {
+        "default": {
+          "value": "{palette.neutral.0}",
+          "type": "color",
+          "description": "Default inverse border color for dark surfaces."
+        },
+        "strong": {
+          "value": "{palette.white.A600}",
+          "type": "color",
+          "description": "Strong inverse border color for dark surfaces."
+        }
+      },
+      "contrast": {
+        "default": {
+          "value": "{palette.black.A900}",
+          "type": "color",
+          "description": "Default contrast border color for component boundaries."
+        }
+      },
+      "transparent": {
+        "value": "{palette.white.A0}",
+        "type": "color",
+        "description": "Transparent border color for component boundaries."
+      },
+      "primary": {
+        "value": "{brand.primary.500}",
+        "type": "color",
+        "description": "Primary border color for component boundaries."
+      },
+      "critical": {
+        "value": "{brand.critical.500}",
+        "type": "color",
+        "description": "Critical border color for component boundaries."
+      },
+      "caution": {
+        "value": "{brand.caution.500}",
+        "type": "color",
+        "description": "Caution border color for component boundaries."
+      }
+    },
+    "focus": {
+      "inverse": {
+        "value": "{palette.white.$root}",
+        "type": "color",
+        "description": "Inverse focus ring color for interactive states."
+      },
+      "contrast": {
+        "value": "{palette.black.A950}",
+        "type": "color",
+        "description": "Contrast focus ring color for interactive states."
+      },
+      "primary": {
+        "value": "{brand.primary.500}",
+        "type": "color",
+        "description": "Primary focus ring color for interactive states."
+      },
+      "critical": {
+        "value": "{brand.critical.500}",
+        "type": "color",
+        "description": "Critical focus ring color for interactive states."
+      },
+      "caution": {
+        "outer": {
+          "value": "{brand.caution.500}",
+          "type": "color",
+          "description": "Outer caution focus ring color for warning states."
+        },
+        "inner": {
+          "value": "{brand.caution.400}",
+          "type": "color",
+          "description": "Inner caution focus ring color for warning states."
+        }
+      }
+    },
+    "shadow": {
+      "base": {
+        "value": "{palette.neutral.A200}",
+        "type": "color",
+        "description": "Base shadow color for elevation effects."
+      },
+      "ambient": {
+        "value": "{palette.neutral.A100}",
+        "type": "color",
+        "description": "Ambient shadow color for elevation effects."
+      }
+    }
+  }
+}
