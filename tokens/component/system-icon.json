@@ -7,7 +7,7 @@
         "description": "Component level color used on the accent areas of system icons"
       },
       "fill": {
-        "value": "{palette.neutral.800",
+        "value": "{palette.neutral.800}",
         "type": "color",
         "description": "Component level color used on the fill areas of system icons"
       },
