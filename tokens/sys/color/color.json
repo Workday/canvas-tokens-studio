@@ -680,13 +680,13 @@
           "value": "{palette.neutral.0}",
           "type": "color",
           "description": "Border for use on dark backgrounds",
-          "deprecatedValues": {}
+          "deprecatedValues": {"v3": "sys.color.border.inverse"}
         },
         "strong": {
           "value": "{palette.white.A700}",
           "type": "color",
           "description": "Stronger border for use on dark backgrounds",
-          "deprecatedValues": {}
+          "deprecatedValues": {"v3": "sys.color.border.inverse"}
         }
       },
       "contrast": {
