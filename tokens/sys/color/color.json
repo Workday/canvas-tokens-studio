@@ -494,15 +494,13 @@
       "default": {
         "value": "{palette.neutral.0}",
         "type": "color",
-        "description": "Default page background",
-        "deprecatedValues": {}
+        "description": "Default page background"
       },
       "alt": {
         "default": {
           "value": "{palette.slate.50}",
           "type": "color",
-          "description": "Alternative page background for visual separation between page sections",
-          "deprecatedValues": {}
+          "description": "Alternative page background for visual separation between page sections"
         }
       }
     },
@@ -510,59 +508,50 @@
       "default": {
         "value": "{palette.neutral.A800}",
         "type": "color",
-        "description": "Default body text and icons",
-        "deprecatedValues": {}
+        "description": "Default body text and icons"
       },
       "strong": {
         "value": "{palette.neutral.A900}",
         "type": "color",
-        "description": "Stronger text for headings and labels",
-        "deprecatedValues": {}
+        "description": "Stronger text for headings and labels"
       },
       "stronger": {
         "value": "{palette.neutral.A950}",
         "type": "color",
-        "description": "Strongest text for titles",
-        "deprecatedValues": {}
+        "description": "Strongest text for titles"
       },
       "disabled": {
         "value": "{palette.slate.A400}",
         "type": "color",
-        "description": "Disabled state text and icons",
-        "deprecatedValues": {}
+        "description": "Disabled state text and icons"
       },
       "muted": {
         "default": {
           "value": "{palette.slate.A600}",
           "type": "color",
-          "description": "Secondary text for hints and placeholders",
-          "deprecatedValues": {}
+          "description": "Secondary text for hints and placeholders"
         },
         "strong": {
           "value": "{palette.slate.A700}",
           "type": "color",
-          "description": "Stronger secondary text",
-          "deprecatedValues": {}
+          "description": "Stronger secondary text"
         }
       },
       "inverse": {
         "value": "{palette.neutral.0}",
         "type": "color",
-        "description": "Text and icons for use on dark backgrounds",
-        "deprecatedValues": {}
+        "description": "Text and icons for use on dark backgrounds"
       },
       "info": {
         "default": {
           "value": "{palette.blue.600}",
           "type": "color",
-          "description": "Informational text and icons (not tenant themeable)",
-          "deprecatedValues": {}
+          "description": "Informational text and icons (not tenant themeable)"
         },
         "strong": {
           "value": "{palette.blue.700}",
           "type": "color",
-          "description": "Stronger informational text and icons",
-          "deprecatedValues": {}
+          "description": "Stronger informational text and icons"
         }
       },
       "danger": {
@@ -610,21 +599,18 @@
       "ai": {
         "value": "{palette.blue.950}",
         "type": "color",
-        "description": "Text and icons indicating AI-generated content",
-        "deprecatedValues": {}
+        "description": "Text and icons indicating AI-generated content"
       },
       "contrast": {
         "default": {
           "value": "{palette.neutral.A900}",
           "type": "color",
-          "description": "High contrast text for maximum readability",
-          "deprecatedValues": {}
+          "description": "High contrast text for maximum readability"
         },
         "strong": {
           "value": "{palette.neutral.A950}",
           "type": "color",
-          "description": "Stronger high contrast text",
-          "deprecatedValues": {}
+          "description": "Stronger high contrast text"
         }
       }
     },
@@ -645,8 +631,7 @@
         "default": {
           "value": "{palette.slate.A500}",
           "type": "color",
-          "description": "Default border for form inputs",
-          "deprecatedValues": {}
+          "description": "Default border for form inputs"
         },
         "hover": {
           "value": "{palette.slate.A700}",
@@ -659,8 +644,7 @@
         "default": {
           "value": "{palette.blue.500}",
           "type": "color",
-          "description": "Border for informational containers (not tenant themeable)",
-          "deprecatedValues": {}
+          "description": "Border for informational containers (not tenant themeable)"
         }
       },
       "danger": {
@@ -693,15 +677,13 @@
         "default": {
           "value": "{palette.neutral.A900}",
           "type": "color",
-          "description": "High contrast border for maximum visibility",
-          "deprecatedValues": {}
+          "description": "High contrast border for maximum visibility"
         }
       },
       "transparent": {
         "value": "{palette.neutral.A0}",
         "type": "color",
-        "description": "Invisible border for layout spacing",
-        "deprecatedValues": {}
+        "description": "Invisible border for layout spacing"
       }
     },
     "shadow": {
