@@ -6,7 +6,8 @@
     },
     "80": {
       "value": "8",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {"v3": "base.opacity.100"}
     },
     "100": {
       "value": "10",
@@ -16,13 +17,14 @@
       "value": "12",
       "type": "number"
     },
-     "180": {
+    "180": {
       "value": "18",
       "type": "number"
     },
     "200": {
       "value": "20",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {"v3": "base.opacity.250"}
     },
     "360": {
       "value": "36",
@@ -30,7 +32,8 @@
     },
     "400": {
       "value": "40",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {"v3": "base.opacity.300"}
     },
     "640": {
       "value": "64",
@@ -38,7 +41,8 @@
     },
     "840": {
       "value": "84",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {"v3": "base.opacity.500"}
     }
   }
 }

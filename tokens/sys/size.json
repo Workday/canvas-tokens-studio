@@ -3,42 +3,50 @@
     "xxxs": {
       "value": "{size.200}",
       "type": "size",
-      "description": "Used for switch toggle."
+      "description": "Used for switch toggle.",
+      "deprecatedValues": {"v3": "sys.space.x4"}
     },
     "xxs": {
       "value": "{size.250}",
       "type": "size",
-      "description": "Compact indicators. Used for status indicators and count badges."
+      "description": "Compact indicators. Used for status indicators and count badges.",
+      "deprecatedValues": {"v3": "sys.space.x5"}
     },
     "xs": {
       "value": "{size.300}",
       "type": "size",
-      "description": "Compact interactive elements. Used for small buttons, pills, checkboxes, and radio buttons."
+      "description": "Compact interactive elements. Used for small buttons, pills, checkboxes, and radio buttons.",
+      "deprecatedValues": {"v3": "sys.space.x6"}
     },
     "sm": {
       "value": "{size.400}",
       "type": "size",
-      "description": "Standard interactive components. Used for buttons, segmented controls, tooltips, and avatars."
+      "description": "Standard interactive components. Used for buttons, segmented controls, tooltips, and avatars.",
+      "deprecatedValues": {"v3": "sys.space.x8"}
     },
     "md": {
       "value": "{size.500}",
       "type": "size",
-      "description": "Default size for most components. Used for buttons, segmented controls, banners, input fields, and menu items."
+      "description": "Default size for most components. Used for buttons, segmented controls, banners, input fields, and menu items.",
+      "deprecatedValues": {"v3": "sys.space.x10"}
     },
     "lg": {
       "value": "{size.600}",
       "type": "size",
-      "description": "Prominent components. Used for large buttons, segmented controls, expandable triggers, tabs, and avatars."
+      "description": "Prominent components. Used for large buttons, segmented controls, expandable triggers, tabs, and avatars.",
+      "deprecatedValues": {}
     },
     "xl": {
       "value": "{size.700}",
       "type": "size",
-      "description": "Content containers. Used for table cells and toasts."
+      "description": "Content containers. Used for table cells and toasts.",
+      "deprecatedValues": {"v3": "sys.space.x14"}
     },
     "xxl": {
       "value": "{size.800}",
       "type": "size",
-      "description": "Expandable containers. Used for expandable containers in their collapsed state."
+      "description": "Expandable containers. Used for expandable containers in their collapsed state.",
+      "deprecatedValues": {"v3": "sys.space.x16"}
     }
   }
 }

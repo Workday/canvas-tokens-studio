@@ -4,34 +4,41 @@
       "accent": {
         "value": "{palette.neutral.A200}",
         "type": "color",
-        "description": "Component level color used on the soft filled areas of expressive icons"
+        "description": "Component level color used on the soft filled areas of expressive icons",
+        "deprecatedValues": {}
       },
       "fill": {
         "value": "{palette.neutral.800}",
         "type": "color",
-        "description": "Component level color used on the visible outlines of expressive icons"
+        "description": "Component level color used on the visible outlines of expressive icons",
+        "deprecatedValues": {"v3": "sys.color.fg.default"}
       }
     },
     "size": {
       "xs": {
         "value": "{size.500}",
-        "type": "size"
+        "type": "size",
+        "deprecatedValues": {"v3": "sys.space.x10"}
       },
       "sm": {
         "value": "{size.600}",
-        "type": "size"
+        "type": "size",
+        "deprecatedValues": {}
       },
       "md": {
         "value": "{size.700}",
-        "type": "size"
+        "type": "size",
+        "deprecatedValues": {"v3": "sys.space.x14"}
       },
       "lg": {
         "value": "{size.800}",
-        "type": "size"
+        "type": "size",
+        "deprecatedValues": {"v3": "sys.space.x16"}
       },
       "xl": {
         "value": "{size.1200}",
-        "type": "size"
+        "type": "size",
+        "deprecatedValues": {}
       }
     }
   }

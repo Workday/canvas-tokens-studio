@@ -3,42 +3,50 @@
     "none": {
       "value": "{size.0}",
       "type": "borderRadius",
-      "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels."
+      "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels.",
+      "deprecatedValues": {"v3": "sys.shape.zero"}
     },
     "sm": {
       "value": "{size.50}",
       "type": "borderRadius",
-      "description": "Pill, Status Indicator, Checkbox"
+      "description": "Pill, Status Indicator, Checkbox",
+      "deprecatedValues": {"v3": "sys.shape.x1"}
     },
     "md": {
       "value": "{size.100}",
       "type": "borderRadius",
-      "description": "Inputs, Toast, Tooltip, Snackbar"
+      "description": "Inputs, Toast, Tooltip, Snackbar",
+      "deprecatedValues": {"v3": "sys.shape.x2"}
     },
     "lg": {
       "value": "{size.150}",
       "type": "borderRadius",
-      "description": "Rich text editor"
+      "description": "Rich text editor",
+      "deprecatedValues": {}
     },
     "xl": {
       "value": "{size.200}",
       "type": "borderRadius",
-      "description": "Extra large rounding for prominent containers"
+      "description": "Extra large rounding for prominent containers",
+      "deprecatedValues": {"v3": "sys.shape.x4"}
     },
     "xxl": {
       "value": "{size.300}",
       "type": "borderRadius",
-      "description": "Extra extra large rounding for cards and items"
+      "description": "Extra extra large rounding for cards and items",
+      "deprecatedValues": {"v3": "sys.shape.x6"}
     },
     "xxxl": {
       "value": "{size.400}",
       "type": "borderRadius",
-      "description": "Maximum rounding for modals and large containers"
+      "description": "Maximum rounding for modals and large containers",
+      "deprecatedValues": {}
     },
     "full": {
       "value": "{size.75} * 100",
       "type": "borderRadius",
-      "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)"
+      "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)",
+      "deprecatedValues": {"v3": "sys.shape.round"}
     }
   }
 }
