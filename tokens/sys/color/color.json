@@ -501,7 +501,7 @@
           "value": "{palette.slate.50}",
           "type": "color",
           "description": "Alternative page background for visual separation between page sections",
-          "oldValue": "{palette.slate.25}"
+          "oldValue": "palette.slate.25"
         }
       }
     },
