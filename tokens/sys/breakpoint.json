@@ -9,25 +9,25 @@
       "value": "{base.baseline} * 40",
       "type": "dimension",
       "description": "The `min-width` for mobile devices, such as phones and tablets.",
-      "deprecatedValues": {"v3": "sys.breakpoints.s"}
+      "deprecatedValues": {"v3": "sys.breakpoints.s", "raw": "320px"}
     },
     "md": {
       "value": "{base.baseline} * 96",
       "type": "dimension",
       "description": "Medium screens, such as laptops.",
-      "deprecatedValues": {"v3": "sys.breakpoints.m"}
+      "deprecatedValues": {"v3": "sys.breakpoints.m", "raw": "768px"}
     },
     "lg": {
       "value": "{base.baseline} * 128",
       "type": "dimension",
       "description": "Large screens, such as desktops.",
-      "deprecatedValues": {"v3": "sys.breakpoints.l"}
+      "deprecatedValues": {"v3": "sys.breakpoints.l", "raw": "1024px"}
     },
     "xl": {
       "value": "{base.baseline} * 180",
       "type": "dimension",
       "description": "Used for extra large screens, such as wide monitors and TVs.",
-      "deprecatedValues": {"v3": "sys.breakpoints.xl"}
+      "deprecatedValues": {"v3": "sys.breakpoints.xl", "raw": "1440px"}
     }
   }
 }

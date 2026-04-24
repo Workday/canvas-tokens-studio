@@ -305,7 +305,8 @@
           "components": [0.2138, 0.0455, 235.23],
           "alpha": 1,
           "hex": "#001c2b"
-        }
+        },
+        "deprecatedValues": {}
       },
       "A25": {
         "type": "color",
@@ -1616,7 +1617,8 @@
           "components": [0.3243, 0.1084, 37.05],
           "alpha": 1,
           "hex": "#5f1700"
-        }
+        },
+        "deprecatedValues": {}
       },
       "950": {
         "type": "color",

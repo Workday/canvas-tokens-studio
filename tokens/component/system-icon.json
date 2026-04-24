@@ -24,32 +24,32 @@
       "xxs": {
         "value": "{size.175}",
         "type": "size",
-        "deprecatedValues": {}
+        "deprecatedValues": {"raw": "0.875rem"}
       },
       "xs": {
         "value": "{size.200}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x4"}
+        "deprecatedValues": {"v3": "sys.space.x4", "raw": "1rem"}
       },
       "sm": {
         "value": "{size.225}",
         "type": "size",
-        "deprecatedValues": {}
+        "deprecatedValues": {"raw": "1.125rem"}
       },
       "md": {
         "value": "{size.250}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x5"}
+        "deprecatedValues": {"v3": "sys.space.x5", "raw": "1.25rem"}
       },
       "lg": {
         "value": "{size.300}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x6"}
+        "deprecatedValues": {"v3": "sys.space.x6", "raw": "1.5rem"}
       },
       "xl": {
         "value": "{size.400}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x8"}
+        "deprecatedValues": {"v3": "sys.space.x8", "raw": "2rem"}
       }
     }
   }

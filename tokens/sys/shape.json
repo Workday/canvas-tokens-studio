@@ -10,43 +10,43 @@
       "value": "{size.50}",
       "type": "borderRadius",
       "description": "Pill, Status Indicator, Checkbox",
-      "deprecatedValues": {"v3": "sys.shape.x1"}
+      "deprecatedValues": {"v3": "sys.shape.x1", "raw": "0.25rem"}
     },
     "md": {
       "value": "{size.100}",
       "type": "borderRadius",
       "description": "Inputs, Toast, Tooltip, Snackbar",
-      "deprecatedValues": {"v3": "sys.shape.x2"}
+      "deprecatedValues": {"v3": "sys.shape.x2", "raw": "0.5rem"}
     },
     "lg": {
       "value": "{size.150}",
       "type": "borderRadius",
       "description": "Rich text editor",
-      "deprecatedValues": {}
+      "deprecatedValues": {"raw": "0.75rem"}
     },
     "xl": {
       "value": "{size.200}",
       "type": "borderRadius",
       "description": "Extra large rounding for prominent containers",
-      "deprecatedValues": {"v3": "sys.shape.x4"}
+      "deprecatedValues": {"v3": "sys.shape.x4", "raw": "1rem"}
     },
     "xxl": {
       "value": "{size.300}",
       "type": "borderRadius",
       "description": "Extra extra large rounding for cards and items",
-      "deprecatedValues": {"v3": "sys.shape.x6"}
+      "deprecatedValues": {"v3": "sys.shape.x6", "raw": "1.5rem"}
     },
     "xxxl": {
       "value": "{size.400}",
       "type": "borderRadius",
       "description": "Maximum rounding for modals and large containers",
-      "deprecatedValues": {}
+      "deprecatedValues": {"raw": "2rem"}
     },
     "full": {
       "value": "{size.75} * 100",
       "type": "borderRadius",
       "description": "Full rounding is reserved high-visibility components. This shape is intended to draw attention. Buttons, Badge, Status Indicator, Essential Inputs, Border Containers (Not Cards)",
-      "deprecatedValues": {"v3": "sys.shape.round"}
+      "deprecatedValues": {"v3": "sys.shape.round", "raw": "65rem"}
     }
   }
 }
