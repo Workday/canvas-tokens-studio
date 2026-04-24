@@ -11,15 +11,18 @@
     },
     "100": {
       "value": "10",
-      "type": "number"
+      "type": "number",
+      "oldValue": "0.08"
     },
     "120": {
       "value": "12",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {}
     },
     "180": {
       "value": "18",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {}
     },
     "200": {
       "value": "20",
@@ -28,7 +31,8 @@
     },
     "360": {
       "value": "36",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {}
     },
     "400": {
       "value": "40",
@@ -37,7 +41,8 @@
     },
     "640": {
       "value": "64",
-      "type": "number"
+      "type": "number",
+      "deprecatedValues": {}
     },
     "840": {
       "value": "84",
