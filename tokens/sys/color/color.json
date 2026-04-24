@@ -501,7 +501,7 @@
           "value": "{palette.slate.50}",
           "type": "color",
           "description": "Alternative page background for visual separation between page sections",
-          "oldValue": "palette.slate.25"
+          "oldValue": "base.palette.slate.25"
         }
       }
     },
@@ -510,38 +510,38 @@
         "value": "{palette.neutral.A800}",
         "type": "color",
         "description": "Default body text and icons",
-        "oldValue": "palette.neutral.850"
+        "oldValue": "base.palette.neutral.850"
       },
       "strong": {
         "value": "{palette.neutral.A900}",
         "type": "color",
         "description": "Stronger text for headings and labels",
-        "oldValue": "palette.neutral.900"
+        "oldValue": "base.palette.neutral.900"
       },
       "stronger": {
         "value": "{palette.neutral.A950}",
         "type": "color",
         "description": "Strongest text for titles",
-        "oldValue": "palette.neutral.950"
+        "oldValue": "base.palette.neutral.950"
       },
       "disabled": {
         "value": "{palette.slate.A400}",
         "type": "color",
         "description": "Disabled state text and icons",
-        "oldValue": "palette.slate.400"
+        "oldValue": "base.palette.slate.400"
       },
       "muted": {
         "default": {
           "value": "{palette.slate.A600}",
           "type": "color",
           "description": "Secondary text for hints and placeholders",
-          "oldValue": "palette.slate.600"
+          "oldValue": "base.palette.slate.600"
         },
         "strong": {
           "value": "{palette.slate.A700}",
           "type": "color",
           "description": "Stronger secondary text",
-          "oldValue": "palette.slate.700"
+          "oldValue": "base.palette.slate.700"
         }
       },
       "inverse": {
@@ -615,13 +615,13 @@
           "value": "{palette.neutral.A900}",
           "type": "color",
           "description": "High contrast text for maximum readability",
-          "oldValue": "palette.neutral.900"
+          "oldValue": "base.palette.neutral.900"
         },
         "strong": {
           "value": "{palette.neutral.A950}",
           "type": "color",
           "description": "Stronger high contrast text",
-          "oldValue": "palette.neutral.950"
+          "oldValue": "base.palette.neutral.950"
         }
       }
     },
@@ -643,7 +643,7 @@
           "value": "{palette.slate.A500}",
           "type": "color",
           "description": "Default border for form inputs",
-          "oldValue": "palette.slate.500"
+          "oldValue": "base.palette.slate.500"
         },
         "hover": {
           "value": "{palette.slate.A700}",
@@ -691,7 +691,7 @@
           "value": "{palette.neutral.A900}",
           "type": "color",
           "description": "High contrast border for maximum visibility",
-          "oldValue": "palette.neutral.900"
+          "oldValue": "base.palette.neutral.900"
         }
       },
       "transparent": {
