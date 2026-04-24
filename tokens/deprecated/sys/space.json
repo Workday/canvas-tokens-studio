@@ -52,21 +52,21 @@
     "x6": {
       "value": "{base.unit} * 6",
       "type": "spacing",
-      "description": "- Padding around card content\n- Related elements where more space between them can be afforded\n- Separate section headings or titles from body text or inputs",
+      "description": "- Padding around card content\n- Related elements where more space between them can be afforded\n- Separate section headings or titles from body text or inputs",
       "deprecated": true,
       "deprecatedComment": "Use semantic padding and gap values instead"
     },
     "x8": {
       "value": "{base.unit} * 8",
       "type": "spacing",
-      "description": "- Standard spacing between cards\n- Used to separate groups of content \n- Separate section headings or titles from body text or inputs",
+      "description": "- Standard spacing between cards\n- Used to separate groups of content \n- Separate section headings or titles from body text or inputs",
       "deprecated": true,
       "deprecatedComment": "Use semantic padding and gap values instead"
     },
     "x10": {
       "value": "{base.unit} * 10",
       "type": "spacing",
-      "description": "- Used for outer margins on the overall page content \n- Used for inner margins on large items such as page sections",
+      "description": "- Used for outer margins on the overall page content \n- Used for inner margins on large items such as page sections",
       "deprecated": true,
       "deprecatedComment": "Use semantic padding and gap values instead"
     },
