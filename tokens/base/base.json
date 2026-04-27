@@ -10,7 +10,7 @@
       "value": "{base.fontSize} / 2",
       "type": "sizing",
       "description": "Baseline unit used for the 8pt sizing grid",
-      "deprecatedValues": {"raw": "0.5rem"}
+      "deprecatedValues": {"base": "0.5rem"}
     }
   }
 }

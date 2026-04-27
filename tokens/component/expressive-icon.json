@@ -18,27 +18,27 @@
       "xs": {
         "value": "{size.500}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x10", "raw": "2.5rem"}
+        "deprecatedValues": {"v3": "sys.space.x10", "base": "2.5rem"}
       },
       "sm": {
         "value": "{size.600}",
         "type": "size",
-        "deprecatedValues": {"raw": "3rem"}
+        "deprecatedValues": {"base": "3rem"}
       },
       "md": {
         "value": "{size.700}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x14", "raw": "3.5rem"}
+        "deprecatedValues": {"v3": "sys.space.x14", "base": "3.5rem"}
       },
       "lg": {
         "value": "{size.800}",
         "type": "size",
-        "deprecatedValues": {"v3": "sys.space.x16", "raw": "4rem"}
+        "deprecatedValues": {"v3": "sys.space.x16", "base": "4rem"}
       },
       "xl": {
         "value": "{size.1200}",
         "type": "size",
-        "deprecatedValues": {"raw": "6rem"}
+        "deprecatedValues": {"base": "6rem"}
       }
     }
   }
