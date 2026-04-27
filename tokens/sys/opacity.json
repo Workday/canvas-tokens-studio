@@ -41,24 +41,28 @@
       "hover": {
         "value": "{opacity.100}",
         "type": "number",
-        "description": "State layer applied to surface colors on hover"
+        "description": "State layer applied to surface colors on hover",
+        "deprecatedValues": {}
       },
       "pressed": {
         "value": "{opacity.180}",
         "type": "number",
-        "description": "State layer applied to surface colors while pressing"
+        "description": "State layer applied to surface colors while pressing",
+        "deprecatedValues": {}
       }
     },
     "accent": {
       "hover": {
         "value": "{opacity.180}",
         "type": "number",
-        "description": "State layer applied to accent colors on hover"
+        "description": "State layer applied to accent colors on hover",
+        "deprecatedValues": {}
       },
       "pressed": {
         "value": "{opacity.360}",
         "type": "number",
-        "description": "State layer applied to accent colors while pressing"
+        "description": "State layer applied to accent colors while pressing",
+        "deprecatedValues": {}
       }
     }
   },

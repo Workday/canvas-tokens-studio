@@ -96,7 +96,7 @@
       "value": "{font-size.900} + {typescale.size.display}",
       "type": "fontSizes",
       "deprecated": true,
-      "deprecatedComment": "Use {base.size.1100} for consistent spacing and sizing"
+      "deprecatedComment": "Use `base.size.1100` for consistent spacing and sizing"
     }
   },
   "line-height": {

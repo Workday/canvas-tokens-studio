@@ -3,79 +3,94 @@
     "none": {
       "value": "{size.0}",
       "type": "spacing",
-      "description": "Use when there should be no space between content and element's edges."
+      "description": "Use when there should be no space between content and element's edges.",
+      "deprecatedValues": {"v3": "sys.space.zero"}
     },
     "xxs": {
       "value": "{size.50}",
       "type": "spacing",
-      "description": ""
+      "description": "",
+      "deprecatedValues": {"v3": "sys.space.x1", "base": "0.25rem"}
     },
     "xs": {
       "value": "{size.100}",
       "type": "spacing",
-      "description": "Horizontal padding on Input Fields"
+      "description": "Horizontal padding on Input Fields",
+      "deprecatedValues": {"v3": "sys.space.x2", "base": "0.5rem"}
     },
     "sm": {
       "value": "{size.150}",
       "type": "spacing",
-      "description": "Compact padding, used in Rich Text Editor, or X-Small Buttons"
+      "description": "Compact padding, used in Rich Text Editor, or X-Small Buttons",
+      "deprecatedValues": {"v3": "sys.space.x3", "base": "0.75rem"}
     },
     "md": {
       "value": "{size.200}",
       "type": "spacing",
-      "description": "Default padding used for components used around Small Button content."
+      "description": "Default padding used for components used around Small Button content.",
+      "deprecatedValues": {"v3": "sys.space.x4", "base": "1rem"}
     },
     "lg": {
       "value": "{size.250}",
       "type": "spacing",
-      "description": "Large padding, used in Medium Buttons with Icons"
+      "description": "Large padding, used in Medium Buttons with Icons",
+      "deprecatedValues": {"v3": "sys.space.x5", "base": "1.25rem"}
     },
     "xl": {
       "value": "{size.300}",
       "type": "spacing",
-      "description": "Padding used around Card and Medium Button content"
+      "description": "Padding used around Card and Medium Button content",
+      "deprecatedValues": {"v3": "sys.space.x6", "base": "1.5rem"}
     },
     "xxl": {
       "value": "{size.400}",
       "type": "spacing",
-      "description": "Padding used around Modal and Large Button content"
+      "description": "Padding used around Modal and Large Button content",
+      "deprecatedValues": {"v3": "sys.space.x8", "base": "2rem"}
     }
   },
   "gap": {
     "none": {
       "value": "{size.0}",
       "type": "spacing",
-      "description": "Use when there is no space between elements"
+      "description": "Use when there is no space between elements",
+      "deprecatedValues": {"v3": "sys.space.zero"}
     },
     "xs": {
       "value": "{size.50}",
       "type": "spacing",
-      "description": "Compact spacing from icon to text, labels to inputs, between tab items."
+      "description": "Compact spacing from icon to text, labels to inputs, between tab items.",
+      "deprecatedValues": {"v3": "sys.space.x1", "base": "0.25rem"}
     },
     "sm": {
       "value": "{size.100}",
       "type": "spacing",
-      "description": "Horizontal space between pills, tighter space between buttons, inline icon to text, segmented controls."
+      "description": "Horizontal space between pills, tighter space between buttons, inline icon to text, segmented controls.",
+      "deprecatedValues": {"v3": "sys.space.x2", "base": "0.5rem"}
     },
     "md": {
       "value": "{size.200}",
       "type": "spacing",
-      "description": "Use the default inline spacing when other gap tokens may not fit."
+      "description": "Use the default inline spacing when other gap tokens may not fit.",
+      "deprecatedValues": {"v3": "sys.space.x4", "base": "1rem"}
     },
     "lg": {
       "value": "{size.300}",
       "type": "spacing",
-      "description": "Use this for tighter spacing between cards. Cards are self contained blocks of content."
+      "description": "Use this for tighter spacing between cards. Cards are self contained blocks of content.",
+      "deprecatedValues": {"v3": "sys.space.x6", "base": "1.5rem"}
     },
     "xl": {
       "value": "{size.400}",
       "type": "spacing",
-      "description": "Use this for the default spacing between cards, as well as the gutter width used in the large 12-column grid."
+      "description": "Use this for the default spacing between cards, as well as the gutter width used in the large 12-column grid.",
+      "deprecatedValues": {"v3": "sys.space.x8", "base": "2rem"}
     },
     "xxl": {
       "value": "{size.800}",
       "type": "spacing",
-      "description": "Use this for the space between content sections"
+      "description": "Use this for the space between content sections",
+      "deprecatedValues": {"v3": "sys.space.x16", "base": "4rem"}
     }
   }
 }
