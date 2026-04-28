@@ -26,8 +26,7 @@
     "xl": {
       "value": "{base.baseline} * 180",
       "type": "dimension",
-      "description": "Used for extra large screens, such as wide monitors and TVs.",
-      "deprecatedValues": {"v3": "sys.breakpoints.xl", "base": "1440px"}
+      "description": "Used for extra large screens, such as wide monitors and TVs."
     }
   }
 }
