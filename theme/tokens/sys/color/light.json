@@ -8,11 +8,13 @@
         "description": "Default page background"
       },
       "alt": {
-        "value": "{palette.neutral.50}",
-        "type": "color",
-        "deprecatedValues": {},
-        "oldValue": "base.palette.slate.25",
-        "description": "Alternative page background"
+        "default": {
+          "value": "{palette.neutral.50}",
+          "type": "color",
+          "deprecatedValues": {},
+          "oldValue": "base.palette.slate.25",
+          "description": "Alternative page background"
+        }
       }
     },
     "surface": {
@@ -242,11 +244,6 @@
         },
         "description": "Floating containers like Menus or Tooltip"
       },
-      "selected": {
-        "value": "{palette.neutral.A100}",
-        "type": "color",
-        "deprecatedValues": {}
-      },
       "transparent": {
         "value": "{palette.white.A0}",
         "type": "color",
@@ -294,12 +291,6 @@
           "deprecatedValues": {},
           "description": "Pressed overlay for accent-colored elements"
         }
-      },
-      "action": {
-        "value": "{palette.neutral.975}",
-        "type": "color",
-        "deprecatedValues": {},
-        "description": "Tenant-themeable primary action color for CTAs"
       },
       "ai": {
         "value": "{palette.blue.950}",
@@ -384,44 +375,6 @@
         "deprecatedValues": {},
         "oldValue": "base.palette.slate.400",
         "description": "Disabled state text and icons"
-      },
-      "primary": {
-        "default": {
-          "value": "{palette.neutral.A900}",
-          "type": "color",
-          "deprecatedValues": {
-            "v3": "brand.primary.base"
-          },
-          "description": "Tenant-themeable primary text and icon color"
-        },
-        "strong": {
-          "value": "{palette.neutral.A950}",
-          "type": "color",
-          "deprecatedValues": {
-            "v3": "brand.primary.dark"
-          },
-          "description": "Stronger tenant-themeable primary text and icon color"
-        }
-      },
-      "critical": {
-        "value": "{palette.red.600}",
-        "type": "color",
-        "deprecatedValues": {
-          "v3": "sys.color.fg.critical.default"
-        },
-        "description": "Tenant-themeable critical text and icon color"
-      },
-      "caution": {
-        "value": "{palette.amber.600}",
-        "type": "color",
-        "deprecatedValues": {},
-        "description": "Tenant-themeable caution text and icon color"
-      },
-      "positive": {
-        "value": "{palette.green.600}",
-        "type": "color",
-        "deprecatedValues": {},
-        "description": "Tenant-themeable positive text and icon color"
       },
       "danger": {
         "default": {
@@ -509,14 +462,6 @@
         "type": "color",
         "deprecatedValues": {},
         "description": "Text and icons for use on dark backgrounds"
-      },
-      "selected": {
-        "value": "{palette.neutral.A900}",
-        "type": "color",
-        "deprecatedValues": {
-          "v3": "brand.primary.dark"
-        },
-        "description": "Tenant-themeable text color for selected items"
       }
     },
     "border": {
@@ -576,11 +521,13 @@
         "description": "Invisible border for layout spacing"
       },
       "contrast": {
-        "value": "{palette.neutral.A900}",
-        "type": "color",
-        "deprecatedValues": {},
-        "oldValue": "base.palette.neutral.900",
-        "description": "High contrast border for maximum visibility"
+        "default": {
+          "value": "{palette.neutral.A900}",
+          "type": "color",
+          "deprecatedValues": {},
+          "oldValue": "base.palette.neutral.900",
+          "description": "High contrast border for maximum visibility"
+        }
       },
       "danger": {
         "value": "{palette.red.500}",
@@ -591,12 +538,14 @@
         "description": "Border for error states (not tenant themeable)"
       },
       "info": {
-        "value": "{palette.blue.500}",
-        "type": "color",
-        "deprecatedValues": {
-          "v3": "sys.color.border.primary.default"
-        },
-        "description": "Border for informational containers (not tenant themeable)"
+        "default": {
+          "value": "{palette.blue.500}",
+          "type": "color",
+          "deprecatedValues": {
+            "v3": "sys.color.border.primary.default"
+          },
+          "description": "Border for informational containers (not tenant themeable)"
+        }
       },
       "transparent": {
         "value": "{palette.white.A0}",
@@ -728,6 +677,11 @@
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable primary container background"
           }
+        },
+        "selected": {
+          "value": "{palette.neutral.A100}",
+          "type": "color",
+          "deprecatedValues": {}
         }
       },
       "accent": {
@@ -760,6 +714,12 @@
             "v3": "brand.primary.base"
           },
           "description": "Primary accent for buttons and key actions"
+        },
+        "action": {
+          "value": "{palette.neutral.975}",
+          "type": "color",
+          "deprecatedValues": {},
+          "description": "Tenant-themeable primary action color for CTAs"
         }
       },
       "border": {
@@ -782,6 +742,60 @@
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable primary border for focused inputs"
+        }
+      },
+      "fg": {
+        "primary": {
+          "default": {
+            "value": "{palette.neutral.A900}",
+            "type": "color",
+            "deprecatedValues": {
+              "v3": "brand.primary.base"
+            },
+            "description": "Tenant-themeable primary text and icon color"
+          },
+          "strong": {
+            "value": "{palette.neutral.A950}",
+            "type": "color",
+            "deprecatedValues": {
+              "v3": "brand.primary.dark"
+            },
+            "description": "Stronger tenant-themeable primary text and icon color"
+          }
+        },
+        "critical": {
+          "default": {
+            "value": "{palette.red.600}",
+            "type": "color",
+            "deprecatedValues": {
+              "v3": "sys.color.fg.critical.default"
+            },
+            "description": "Tenant-themeable critical text and icon color"
+          }
+        },
+        "caution": {
+          "default": {
+            "value": "{palette.amber.600}",
+            "type": "color",
+            "deprecatedValues": {},
+            "description": "Tenant-themeable caution text and icon color"
+          }
+        },
+        "positive": {
+          "default": {
+            "value": "{palette.green.600}",
+            "type": "color",
+            "deprecatedValues": {},
+            "description": "Tenant-themeable positive text and icon color"
+          }
+        },
+        "selected": {
+          "value": "{palette.neutral.A900}",
+          "type": "color",
+          "deprecatedValues": {
+            "v3": "brand.primary.dark"
+          },
+          "description": "Tenant-themeable text color for selected items"
         }
       }
     },

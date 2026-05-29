@@ -17,26 +17,6 @@
     }
   },
   "letter-spacing": {
-    "1": {
-      "value": 0.13,
-      "type": "number",
-      "deprecatedValues": {}
-    },
-    "2": {
-      "value": 0.12,
-      "type": "number",
-      "deprecatedValues": {}
-    },
-    "3": {
-      "value": 0.11,
-      "type": "number",
-      "deprecatedValues": {}
-    },
-    "4": {
-      "value": 0.1,
-      "type": "number",
-      "deprecatedValues": {}
-    },
     "5": {
       "value": 0,
       "type": "number",
@@ -74,6 +54,26 @@
     },
     "12": {
       "value": -0.62,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "50": {
+      "value": 0.13,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "100": {
+      "value": 0.12,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "150": {
+      "value": 0.11,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "200": {
+      "value": 0.1,
       "type": "number",
       "deprecatedValues": {}
     }
