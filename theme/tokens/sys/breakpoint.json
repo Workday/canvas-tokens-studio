@@ -15,7 +15,7 @@
       "description": "The `min-width` for mobile devices, such as phones and tablets."
     },
     "md": {
-      "value": "{base.baseline} * 95.875",
+      "value": "{base.baseline} * 96",
       "type": "dimension",
       "deprecatedValues": {
         "v3": "sys.breakpoints.m",

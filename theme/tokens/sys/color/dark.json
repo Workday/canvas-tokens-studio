@@ -2,14 +2,14 @@
   "color": {
     "bg": {
       "default": {
-        "value": "{dark.palette.neutral.25}",
+        "value": "{dark.brand.neutral.25}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Default page background"
       },
       "alt": {
         "default": {
-          "value": "{dark.palette.neutral.50}",
+          "value": "{dark.brand.neutral.50}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Alternative page background"
@@ -18,7 +18,7 @@
     },
     "surface": {
       "default": {
-        "value": "{dark.palette.neutral.50}",
+        "value": "{dark.brand.neutral.50}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.default"
@@ -77,7 +77,7 @@
           "description": "Semi-transparent backdrop behind modals and dialogs"
         },
         "scrim": {
-          "value": "{dark.palette.neutral.A200}",
+          "value": "{dark.brand.neutral.A200}",
           "type": "color",
           "deprecatedValues": {}
         },
@@ -134,7 +134,7 @@
       },
       "contrast": {
         "default": {
-          "value": "{dark.palette.neutral.A900}",
+          "value": "{dark.brand.neutral.A900}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.contrast.default"
@@ -142,7 +142,7 @@
           "description": "High contrast dark container background"
         },
         "strong": {
-          "value": "{dark.palette.neutral.A950}",
+          "value": "{dark.brand.neutral.A950}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.contrast.strong"
@@ -152,13 +152,13 @@
       },
       "danger": {
         "default": {
-          "value": "{dark.palette.red.A25}",
+          "value": "{dark.brand.critical.A25}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Container background for error states (not tenant themeable)"
         },
         "strong": {
-          "value": "{dark.palette.red.A50}",
+          "value": "{dark.brand.critical.A50}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger container background for error states"
@@ -184,13 +184,13 @@
       },
       "success": {
         "default": {
-          "value": "{dark.palette.green.A25}",
+          "value": "{dark.brand.positive.A25}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Container background for success states (not tenant themeable)"
         },
         "strong": {
-          "value": "{dark.palette.green.A50}",
+          "value": "{dark.brand.positive.A50}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger container background for success states"
@@ -198,7 +198,7 @@
       },
       "warning": {
         "default": {
-          "value": "{dark.palette.amber.A25}",
+          "value": "{dark.brand.caution.A25}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.static.amber.softest"
@@ -206,7 +206,7 @@
           "description": "Container background for warning states (not tenant themeable)"
         },
         "strong": {
-          "value": "{dark.palette.amber.A50}",
+          "value": "{dark.brand.caution.A50}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.static.amber.stronger"
@@ -221,7 +221,7 @@
         "description": "Background for skeleton loaders and loading states"
       },
       "modal": {
-        "value": "{dark.palette.neutral.200}",
+        "value": "{dark.brand.neutral.200}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.default"
@@ -229,13 +229,13 @@
         "description": "Modal views, sits on top of a scrim overlay"
       },
       "navigation": {
-        "value": "{dark.palette.neutral.100}",
+        "value": "{dark.brand.neutral.100}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Fixed navigation elements"
       },
       "popover": {
-        "value": "{dark.palette.neutral.150}",
+        "value": "{dark.brand.neutral.150}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.default"
@@ -254,7 +254,7 @@
     "accent": {
       "muted": {
         "default": {
-          "value": "{dark.palette.neutral.600}",
+          "value": "{dark.brand.neutral.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.muted.default"
@@ -262,7 +262,7 @@
           "description": "Muted accent for secondary visual elements"
         },
         "soft": {
-          "value": "{dark.palette.neutral.400}",
+          "value": "{dark.brand.neutral.400}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.muted.softer"
@@ -299,7 +299,7 @@
         "description": "Dark accent indicating AI-generated content"
       },
       "danger": {
-        "value": "{dark.palette.red.600}",
+        "value": "{dark.brand.critical.600}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.critical.default"
@@ -315,7 +315,7 @@
         "description": "Solid info accent for indicators (not tenant themeable)"
       },
       "success": {
-        "value": "{dark.palette.green.600}",
+        "value": "{dark.brand.positive.600}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.positive.default"
@@ -323,7 +323,7 @@
         "description": "Solid success accent for positive indicators (not tenant themeable)"
       },
       "warning": {
-        "value": "{dark.palette.amber.500}",
+        "value": "{dark.brand.caution.500}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Solid warning accent for caution indicators (not tenant themeable)"
@@ -382,7 +382,7 @@
       },
       "danger": {
         "default": {
-          "value": "{dark.palette.red.600}",
+          "value": "{dark.brand.critical.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.fg.critical.default"
@@ -390,7 +390,7 @@
           "description": "Error text and icons (not tenant themeable)"
         },
         "strong": {
-          "value": "{dark.palette.red.700}",
+          "value": "{dark.brand.critical.700}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger error text and icons"
@@ -398,13 +398,13 @@
       },
       "warning": {
         "default": {
-          "value": "{dark.palette.amber.600}",
+          "value": "{dark.brand.caution.600}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Warning text and icons (not tenant themeable)"
         },
         "strong": {
-          "value": "{dark.palette.amber.700}",
+          "value": "{dark.brand.caution.700}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger warning text and icons"
@@ -412,13 +412,13 @@
       },
       "success": {
         "default": {
-          "value": "{dark.palette.green.600}",
+          "value": "{dark.brand.positive.600}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Success text and icons (not tenant themeable)"
         },
         "strong": {
-          "value": "{dark.palette.green.700}",
+          "value": "{dark.brand.positive.700}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger success text and icons"
@@ -535,7 +535,7 @@
         }
       },
       "danger": {
-        "value": "{dark.palette.red.500}",
+        "value": "{dark.brand.critical.500}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.border.critical.default"
@@ -543,7 +543,7 @@
         "description": "Border for error states (not tenant themeable)"
       },
       "warning": {
-        "value": "{dark.palette.amber.400}",
+        "value": "{dark.brand.caution.400}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.border.caution.default"
@@ -609,7 +609,7 @@
             "description": "Tenant-themeable inner focus ring for caution-state elements"
           },
           "outer": {
-            "value": "{dark.palette.amber.500}",
+            "value": "{dark.brand.caution.500}",
             "type": "color",
             "deprecatedValues": {
               "v3": "brand.common.alert-outer"
@@ -618,7 +618,7 @@
           }
         },
         "critical": {
-          "value": "{dark.palette.red.500}",
+          "value": "{dark.brand.critical.500}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.common.error-inner"
@@ -637,13 +637,13 @@
       "surface": {
         "caution": {
           "default": {
-            "value": "{dark.palette.amber.A25}",
+            "value": "{dark.brand.caution.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable caution/warning container background"
           },
           "strong": {
-            "value": "{dark.palette.amber.A50}",
+            "value": "{dark.brand.caution.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable caution container background"
@@ -651,13 +651,13 @@
         },
         "critical": {
           "default": {
-            "value": "{dark.palette.red.A25}",
+            "value": "{dark.brand.critical.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable critical/error container background"
           },
           "strong": {
-            "value": "{dark.palette.red.A50}",
+            "value": "{dark.brand.critical.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable critical container background"
@@ -665,13 +665,13 @@
         },
         "positive": {
           "default": {
-            "value": "{dark.palette.green.A25}",
+            "value": "{dark.brand.positive.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable positive/success container background"
           },
           "strong": {
-            "value": "{dark.palette.green.A50}",
+            "value": "{dark.brand.positive.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable positive container background"
@@ -679,33 +679,33 @@
         },
         "primary": {
           "default": {
-            "value": "{dark.palette.neutral.A25}",
+            "value": "{dark.brand.neutral.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable primary container background"
           },
           "strong": {
-            "value": "{dark.palette.neutral.A50}",
+            "value": "{dark.brand.neutral.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable primary container background"
           }
         },
         "selected": {
-          "value": "{dark.palette.neutral.A100}",
+          "value": "{dark.brand.neutral.A100}",
           "type": "color",
           "deprecatedValues": {}
         }
       },
       "accent": {
         "caution": {
-          "value": "{dark.palette.amber.500}",
+          "value": "{dark.brand.caution.500}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable solid caution accent"
         },
         "critical": {
-          "value": "{dark.palette.red.600}",
+          "value": "{dark.brand.critical.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.error.base"
@@ -713,7 +713,7 @@
           "description": "Tenant-themeable solid critical accent for destructive actions"
         },
         "positive": {
-          "value": "{dark.palette.green.600}",
+          "value": "{dark.brand.positive.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.success.base"
@@ -721,7 +721,7 @@
           "description": "Positive status color used to communicate success"
         },
         "primary": {
-          "value": "{dark.palette.neutral.975}",
+          "value": "{dark.brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.primary.base"
@@ -729,7 +729,7 @@
           "description": "Primary accent for buttons and key actions"
         },
         "action": {
-          "value": "{dark.palette.neutral.975}",
+          "value": "{dark.brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable primary action color for CTAs"
@@ -737,7 +737,7 @@
       },
       "border": {
         "caution": {
-          "value": "{dark.palette.amber.500}",
+          "value": "{dark.brand.caution.500}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.alert.dark"
@@ -745,13 +745,13 @@
           "description": "Border for warning states (not tenant themeable)"
         },
         "critical": {
-          "value": "{dark.palette.red.500}",
+          "value": "{dark.brand.critical.500}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable critical border for error states"
         },
         "primary": {
-          "value": "{dark.palette.neutral.975}",
+          "value": "{dark.brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable primary border for focused inputs"
@@ -778,7 +778,7 @@
         },
         "critical": {
           "default": {
-            "value": "{dark.palette.red.600}",
+            "value": "{dark.brand.critical.600}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.fg.critical.default"
@@ -796,7 +796,7 @@
         },
         "caution": {
           "default": {
-            "value": "{dark.palette.amber.600}",
+            "value": "{dark.brand.caution.600}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable caution text and icon color"
@@ -810,7 +810,7 @@
         },
         "positive": {
           "default": {
-            "value": "{dark.palette.green.600}",
+            "value": "{dark.brand.positive.600}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable positive text and icon color"
@@ -825,7 +825,7 @@
           }
         },
         "selected": {
-          "value": "{dark.palette.neutral.A900}",
+          "value": "{dark.brand.neutral.A900}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.primary.dark"
@@ -894,7 +894,7 @@
               "deprecatedValues": {}
             },
             "12": {
-              "value": "{dark.palette.neutral.25}",
+              "value": "{dark.brand.neutral.25}",
               "type": "color",
               "deprecatedValues": {}
             },
@@ -983,7 +983,7 @@
           "deprecatedValues": {}
         },
         "6": {
-          "value": "{dark.palette.green.600}",
+          "value": "{dark.brand.positive.600}",
           "type": "color",
           "deprecatedValues": {}
         },
@@ -993,7 +993,7 @@
           "deprecatedValues": {}
         },
         "8": {
-          "value": "{dark.palette.amber.500}",
+          "value": "{dark.brand.caution.500}",
           "type": "color",
           "deprecatedValues": {}
         },
@@ -1028,12 +1028,12 @@
           "deprecatedValues": {}
         },
         "15": {
-          "value": "{dark.palette.green.800}",
+          "value": "{dark.brand.positive.800}",
           "type": "color",
           "deprecatedValues": {}
         },
         "16": {
-          "value": "{dark.palette.amber.700}",
+          "value": "{dark.brand.caution.700}",
           "type": "color",
           "deprecatedValues": {}
         }

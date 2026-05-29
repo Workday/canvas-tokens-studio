@@ -9,7 +9,7 @@
       },
       "alt": {
         "default": {
-          "value": "{palette.neutral.50}",
+          "value": "{brand.neutral.50}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.slate.25",
@@ -35,7 +35,7 @@
         "description": "Container background for use on dark backgrounds"
       },
       "raised": {
-        "value": "{palette.neutral.A25}",
+        "value": "{brand.neutral.A25}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.alt.softer"
@@ -45,7 +45,7 @@
       "overlay": {
         "hover": {
           "default": {
-            "value": "{palette.neutral.A50}",
+            "value": "{brand.neutral.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Hover state overlay for interactive containers"
@@ -59,7 +59,7 @@
         },
         "pressed": {
           "default": {
-            "value": "{palette.neutral.A100}",
+            "value": "{brand.neutral.A100}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Pressed state overlay for interactive containers"
@@ -78,7 +78,7 @@
           "description": "Semi-transparent backdrop behind modals and dialogs"
         },
         "scrim": {
-          "value": "{palette.neutral.A400}",
+          "value": "{brand.neutral.A400}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Semi-transparent backdrop behind modals and dialogs"
@@ -118,7 +118,7 @@
       },
       "alt": {
         "default": {
-          "value": "{palette.neutral.A50}",
+          "value": "{brand.neutral.A50}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.alt.soft"
@@ -126,7 +126,7 @@
           "description": "De-emphasized container background for secondary information"
         },
         "strong": {
-          "value": "{palette.neutral.A100}",
+          "value": "{brand.neutral.A100}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.alt.default"
@@ -136,7 +136,7 @@
       },
       "contrast": {
         "default": {
-          "value": "{palette.neutral.A900}",
+          "value": "{brand.neutral.A900}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.contrast.default"
@@ -144,7 +144,7 @@
           "description": "High contrast dark container background"
         },
         "strong": {
-          "value": "{palette.neutral.A950}",
+          "value": "{brand.neutral.A950}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.contrast.strong"
@@ -154,13 +154,13 @@
       },
       "danger": {
         "default": {
-          "value": "{palette.red.A25}",
+          "value": "{brand.critical.A25}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Container background for error states (not tenant themeable)"
         },
         "strong": {
-          "value": "{palette.red.A50}",
+          "value": "{brand.critical.A50}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger container background for error states"
@@ -186,13 +186,13 @@
       },
       "success": {
         "default": {
-          "value": "{palette.green.A25}",
+          "value": "{brand.positive.A25}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Container background for success states (not tenant themeable)"
         },
         "strong": {
-          "value": "{palette.green.A50}",
+          "value": "{brand.positive.A50}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger container background for success states"
@@ -200,7 +200,7 @@
       },
       "warning": {
         "default": {
-          "value": "{palette.amber.A25}",
+          "value": "{brand.caution.A25}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.static.amber.softest"
@@ -208,7 +208,7 @@
           "description": "Container background for warning states (not tenant themeable)"
         },
         "strong": {
-          "value": "{palette.amber.A50}",
+          "value": "{brand.caution.A50}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.static.amber.stronger"
@@ -217,7 +217,7 @@
         }
       },
       "loading": {
-        "value": "{palette.neutral.A50}",
+        "value": "{brand.neutral.A50}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Background for skeleton loaders and loading states"
@@ -231,7 +231,7 @@
         "description": "Modal views, sits on top of a scrim overlay"
       },
       "navigation": {
-        "value": "{palette.neutral.50}",
+        "value": "{brand.neutral.50}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Fixed navigation elements"
@@ -256,7 +256,7 @@
     "accent": {
       "muted": {
         "default": {
-          "value": "{palette.neutral.600}",
+          "value": "{brand.neutral.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.muted.default"
@@ -264,7 +264,7 @@
           "description": "Muted accent for secondary visual elements"
         },
         "soft": {
-          "value": "{palette.neutral.400}",
+          "value": "{brand.neutral.400}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.bg.muted.softer"
@@ -286,7 +286,7 @@
           "description": "Pressed overlay for accent-colored elements"
         },
         "mixin": {
-          "value": "{palette.white.$root}",
+          "value": "{palette.black.$root}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Pressed overlay for accent-colored elements"
@@ -301,7 +301,7 @@
         "description": "Dark accent indicating AI-generated content"
       },
       "danger": {
-        "value": "{palette.red.600}",
+        "value": "{brand.critical.600}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.critical.default"
@@ -317,7 +317,7 @@
         "description": "Solid info accent for indicators (not tenant themeable)"
       },
       "success": {
-        "value": "{palette.green.600}",
+        "value": "{brand.positive.600}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.bg.positive.default"
@@ -325,13 +325,13 @@
         "description": "Solid success accent for positive indicators (not tenant themeable)"
       },
       "warning": {
-        "value": "{palette.amber.400}",
+        "value": "{brand.caution.400}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Solid warning accent for caution indicators (not tenant themeable)"
       },
       "contrast": {
-        "value": "{palette.neutral.A900}",
+        "value": "{brand.neutral.A900}",
         "type": "color",
         "deprecatedValues": {},
         "description": "High contrast accent for maximum visibility"
@@ -339,21 +339,21 @@
     },
     "fg": {
       "default": {
-        "value": "{palette.neutral.A800}",
+        "value": "{brand.neutral.A800}",
         "type": "color",
         "deprecatedValues": {},
         "oldValue": "base.palette.neutral.850",
         "description": "Default body text and icons"
       },
       "strong": {
-        "value": "{palette.neutral.A900}",
+        "value": "{brand.neutral.A900}",
         "type": "color",
         "deprecatedValues": {},
         "oldValue": "base.palette.neutral.900",
         "description": "Stronger text for headings and labels"
       },
       "stronger": {
-        "value": "{palette.neutral.A950}",
+        "value": "{brand.neutral.A950}",
         "type": "color",
         "deprecatedValues": {},
         "oldValue": "base.palette.neutral.950",
@@ -361,14 +361,14 @@
       },
       "muted": {
         "default": {
-          "value": "{palette.neutral.A600}",
+          "value": "{brand.neutral.A600}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.slate.600",
           "description": "Secondary text for hints and placeholders"
         },
         "strong": {
-          "value": "{palette.neutral.A700}",
+          "value": "{brand.neutral.A700}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.slate.700",
@@ -376,7 +376,7 @@
         }
       },
       "disabled": {
-        "value": "{palette.neutral.A400}",
+        "value": "{brand.neutral.A400}",
         "type": "color",
         "deprecatedValues": {},
         "oldValue": "base.palette.slate.400",
@@ -384,7 +384,7 @@
       },
       "danger": {
         "default": {
-          "value": "{palette.red.600}",
+          "value": "{brand.critical.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.fg.critical.default"
@@ -399,13 +399,13 @@
       },
       "warning": {
         "default": {
-          "value": "{palette.amber.600}",
+          "value": "{brand.caution.600}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Warning text and icons (not tenant themeable)"
         },
         "strong": {
-          "value": "{palette.amber.700}",
+          "value": "{brand.caution.700}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger warning text and icons"
@@ -413,13 +413,13 @@
       },
       "success": {
         "default": {
-          "value": "{palette.green.600}",
+          "value": "{brand.positive.600}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Success text and icons (not tenant themeable)"
         },
         "strong": {
-          "value": "{palette.green.700}",
+          "value": "{brand.positive.700}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Stronger success text and icons"
@@ -449,14 +449,14 @@
       },
       "contrast": {
         "default": {
-          "value": "{palette.neutral.A900}",
+          "value": "{palette.black.A900}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.neutral.900",
           "description": "High contrast text for maximum readability"
         },
         "strong": {
-          "value": "{palette.neutral.A950}",
+          "value": "{palette.black.A950}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.neutral.950",
@@ -472,7 +472,7 @@
     },
     "border": {
       "default": {
-        "value": "{palette.neutral.A100}",
+        "value": "{brand.neutral.A100}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.border.divider"
@@ -480,7 +480,7 @@
         "description": "Default border for containers and dividers"
       },
       "strong": {
-        "value": "{palette.neutral.A200}",
+        "value": "{brand.neutral.A200}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.border.container"
@@ -505,14 +505,14 @@
       },
       "input": {
         "default": {
-          "value": "{palette.neutral.A500}",
+          "value": "{brand.neutral.A500}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.slate.500",
           "description": "Default border for form inputs"
         },
         "hover": {
-          "value": "{palette.neutral.A700}",
+          "value": "{brand.neutral.A700}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.border.input.strong"
@@ -528,7 +528,7 @@
       },
       "contrast": {
         "default": {
-          "value": "{palette.neutral.A900}",
+          "value": "{palette.black.A900}",
           "type": "color",
           "deprecatedValues": {},
           "oldValue": "base.palette.neutral.900",
@@ -536,7 +536,7 @@
         }
       },
       "danger": {
-        "value": "{palette.red.500}",
+        "value": "{brand.critical.500}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.border.critical.default"
@@ -544,7 +544,7 @@
         "description": "Border for error states (not tenant themeable)"
       },
       "warning": {
-        "value": "{palette.amber.400}",
+        "value": "{brand.caution.500}",
         "type": "color",
         "deprecatedValues": {
           "v3": "sys.color.border.caution.default"
@@ -578,7 +578,7 @@
         "description": "Focus ring for use on dark backgrounds"
       },
       "contrast": {
-        "value": "{palette.neutral.A900}",
+        "value": "{brand.neutral.A900}",
         "type": "color",
         "deprecatedValues": {},
         "description": "High contrast focus ring for accessibility"
@@ -602,7 +602,7 @@
       "focus": {
         "caution": {
           "inner": {
-            "value": "{palette.amber.400}",
+            "value": "{brand.caution.400}",
             "type": "color",
             "deprecatedValues": {
               "v3": "brand.common.alert-inner"
@@ -610,7 +610,7 @@
             "description": "Tenant-themeable inner focus ring for caution-state elements"
           },
           "outer": {
-            "value": "{palette.amber.500}",
+            "value": "{brand.caution.500}",
             "type": "color",
             "deprecatedValues": {
               "v3": "brand.common.alert-outer"
@@ -619,7 +619,7 @@
           }
         },
         "critical": {
-          "value": "{palette.red.500}",
+          "value": "{brand.critical.500}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.common.error-inner"
@@ -638,13 +638,13 @@
       "surface": {
         "caution": {
           "default": {
-            "value": "{palette.amber.A25}",
+            "value": "{brand.caution.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable caution/warning container background"
           },
           "strong": {
-            "value": "{palette.amber.A50}",
+            "value": "{brand.caution.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable caution container background"
@@ -652,13 +652,13 @@
         },
         "critical": {
           "default": {
-            "value": "{palette.red.A25}",
+            "value": "{brand.critical.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable critical/error container background"
           },
           "strong": {
-            "value": "{palette.red.A50}",
+            "value": "{brand.critical.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable critical container background"
@@ -666,13 +666,13 @@
         },
         "positive": {
           "default": {
-            "value": "{palette.green.A25}",
+            "value": "{brand.positive.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable positive/success container background"
           },
           "strong": {
-            "value": "{palette.green.A50}",
+            "value": "{brand.positive.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable positive container background"
@@ -680,33 +680,33 @@
         },
         "primary": {
           "default": {
-            "value": "{palette.neutral.A25}",
+            "value": "{brand.neutral.A25}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable primary container background"
           },
           "strong": {
-            "value": "{palette.neutral.A50}",
+            "value": "{brand.neutral.A50}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Stronger tenant-themeable primary container background"
           }
         },
         "selected": {
-          "value": "{palette.neutral.A100}",
+          "value": "{brand.neutral.A100}",
           "type": "color",
           "deprecatedValues": {}
         }
       },
       "accent": {
         "caution": {
-          "value": "{palette.amber.400}",
+          "value": "{brand.caution.400}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable solid caution accent"
         },
         "critical": {
-          "value": "{palette.red.600}",
+          "value": "{brand.critical.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.error.base"
@@ -714,7 +714,7 @@
           "description": "Tenant-themeable solid critical accent for destructive actions"
         },
         "positive": {
-          "value": "{palette.green.600}",
+          "value": "{brand.positive.600}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.success.base"
@@ -722,7 +722,7 @@
           "description": "Positive status color used to communicate success"
         },
         "primary": {
-          "value": "{palette.neutral.975}",
+          "value": "{brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.primary.base"
@@ -730,7 +730,7 @@
           "description": "Primary accent for buttons and key actions"
         },
         "action": {
-          "value": "{palette.neutral.975}",
+          "value": "{brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable primary action color for CTAs"
@@ -738,7 +738,7 @@
       },
       "border": {
         "caution": {
-          "value": "{palette.amber.500}",
+          "value": "{brand.caution.500}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.alert.dark"
@@ -746,7 +746,7 @@
           "description": "Border for warning states (not tenant themeable)"
         },
         "critical": {
-          "value": "{palette.red.500}",
+          "value": "{brand.critical.500}",
           "type": "color",
           "deprecatedValues": {},
           "description": "Tenant-themeable critical border for error states"
@@ -761,7 +761,7 @@
       "fg": {
         "primary": {
           "default": {
-            "value": "{palette.neutral.A900}",
+            "value": "{brand.neutral.A900}",
             "type": "color",
             "deprecatedValues": {
               "v3": "brand.primary.base"
@@ -769,7 +769,7 @@
             "description": "Tenant-themeable primary text and icon color"
           },
           "strong": {
-            "value": "{palette.neutral.A950}",
+            "value": "{brand.neutral.A950}",
             "type": "color",
             "deprecatedValues": {
               "v3": "brand.primary.dark"
@@ -779,7 +779,7 @@
         },
         "critical": {
           "default": {
-            "value": "{palette.red.600}",
+            "value": "{brand.critical.600}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.fg.critical.default"
@@ -797,7 +797,7 @@
         },
         "caution": {
           "default": {
-            "value": "{palette.amber.600}",
+            "value": "{brand.caution.600}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable caution text and icon color"
@@ -811,7 +811,7 @@
         },
         "positive": {
           "default": {
-            "value": "{palette.green.600}",
+            "value": "{brand.positive.600}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable positive text and icon color"
@@ -826,7 +826,7 @@
           }
         },
         "selected": {
-          "value": "{palette.neutral.A900}",
+          "value": "{brand.neutral.A900}",
           "type": "color",
           "deprecatedValues": {
             "v3": "brand.primary.dark"
@@ -984,7 +984,7 @@
           "deprecatedValues": {}
         },
         "6": {
-          "value": "{palette.green.600}",
+          "value": "{brand.positive.600}",
           "type": "color",
           "deprecatedValues": {}
         },
@@ -994,7 +994,7 @@
           "deprecatedValues": {}
         },
         "8": {
-          "value": "{palette.amber.500}",
+          "value": "{brand.caution.500}",
           "type": "color",
           "deprecatedValues": {}
         },
@@ -1029,12 +1029,12 @@
           "deprecatedValues": {}
         },
         "15": {
-          "value": "{palette.green.800}",
+          "value": "{brand.positive.800}",
           "type": "color",
           "deprecatedValues": {}
         },
         "16": {
-          "value": "{palette.amber.700}",
+          "value": "{brand.caution.700}",
           "type": "color",
           "deprecatedValues": {}
         }
