@@ -892,8 +892,10 @@
         "value": "linear-gradient(90deg, {brand.primary.base} 0%, {brand.primary.dark} 100%)",
         "type": "color"
       }
-    },
-    "dark": {
+    }
+  },
+  "dark": {
+    "brand": {
       "action": {
         "accent": {
           "value": "{palette.black.$root}",
@@ -901,37 +903,37 @@
           "deprecatedValues": {}
         },
         "base": {
-          "value": "{brand.dark.neutral.975}",
+          "value": "{dark.brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {}
         },
         "dark": {
-          "value": "{brand.dark.neutral.975}",
+          "value": "{dark.brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {}
         },
         "darker": {
-          "value": "{brand.dark.neutral.975}",
+          "value": "{dark.brand.neutral.975}",
           "type": "color",
           "deprecatedValues": {}
         },
         "darkest": {
-          "value": "{brand.dark.neutral.950}",
+          "value": "{dark.brand.neutral.950}",
           "type": "color",
           "deprecatedValues": {}
         },
         "light": {
-          "value": "{brand.dark.neutral.200}",
+          "value": "{dark.brand.neutral.200}",
           "type": "color",
           "deprecatedValues": {}
         },
         "lighter": {
-          "value": "{brand.dark.neutral.100}",
+          "value": "{dark.brand.neutral.100}",
           "type": "color",
           "deprecatedValues": {}
         },
         "lightest": {
-          "value": "{brand.dark.neutral.25}",
+          "value": "{dark.brand.neutral.25}",
           "type": "color",
           "deprecatedValues": {}
         }
