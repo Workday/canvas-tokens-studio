@@ -1,0 +1,46 @@
+{
+  "breakpoints": {
+    "zero": {
+      "value": "0",
+      "type": "dimension",
+      "description": "Use to set a media query `min-width` below small."
+    },
+    "sm": {
+      "value": "{base.baseline} * 40",
+      "type": "dimension",
+      "deprecatedValues": {
+        "v3": "sys.breakpoints.s",
+        "base": "320px"
+      },
+      "description": "The `min-width` for mobile devices, such as phones and tablets."
+    },
+    "md": {
+      "value": "{base.baseline} * 95.875",
+      "type": "dimension",
+      "deprecatedValues": {
+        "v3": "sys.breakpoints.m",
+        "base": "768px"
+      },
+      "description": "Medium screens, such as laptops."
+    },
+    "lg": {
+      "value": "{base.baseline} * 128",
+      "type": "dimension",
+      "deprecatedValues": {
+        "v3": "sys.breakpoints.l",
+        "base": "1024px"
+      },
+      "description": "Large screens, such as desktops."
+    },
+    "xl": {
+      "value": "{base.baseline} * 180",
+      "type": "dimension",
+      "description": "Used for extra large screens, such as wide monitors and TVs."
+    },
+    "xxl": {
+      "value": "{base.baseline} * 272.5",
+      "type": "dimension",
+      "description": "Figma only. Use as the max-width on xl media query."
+    }
+  }
+}

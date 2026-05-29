@@ -1,0 +1,136 @@
+{
+  "depth": {
+    "1": {
+      "value": [
+        {
+          "x": "0",
+          "y": "{shadow.1.100.y}",
+          "blur": "{shadow.1.100.blur}",
+          "spread": "0",
+          "color": "{color.shadow.base}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{shadow.1.200.y}",
+          "blur": "{shadow.1.200.blur}",
+          "spread": "0",
+          "color": "{color.shadow.ambient}",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Standard card depth"
+    },
+    "2": {
+      "value": [
+        {
+          "x": "0",
+          "y": "{shadow.2.100.y}",
+          "blur": "{shadow.2.100.blur}",
+          "spread": "0",
+          "color": "{color.shadow.base}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{shadow.2.200.y}",
+          "blur": "{shadow.2.200.blur}",
+          "spread": "0",
+          "color": "{color.shadow.ambient}",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Top navigation, Bottom Navigation"
+    },
+    "3": {
+      "value": [
+        {
+          "x": "0",
+          "y": "{shadow.3.100.y}",
+          "blur": "{shadow.3.100.blur}",
+          "spread": "0",
+          "color": "{color.shadow.base}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{shadow.3.200.y}",
+          "blur": "{shadow.3.200.blur}",
+          "spread": "0",
+          "color": "{color.shadow.ambient}",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Floating Action Buttons (FAB), Menus"
+    },
+    "4": {
+      "value": [
+        {
+          "x": "0",
+          "y": "{shadow.4.100.y}",
+          "blur": "{shadow.4.100.blur}",
+          "spread": "0",
+          "color": "{color.shadow.ambient}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{shadow.4.200.y}",
+          "blur": "{shadow.4.200.blur}",
+          "spread": "0",
+          "color": "{color.shadow.ambient}",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Bottom Sheets"
+    },
+    "5": {
+      "value": [
+        {
+          "x": "0",
+          "y": "{shadow.5.100.y}",
+          "blur": "{shadow.5.100.blur}",
+          "spread": "{shadow.5.100.spread}",
+          "color": "{palette.black.A100}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{shadow.5.200.y}",
+          "blur": "{shadow.5.200.blur}",
+          "spread": "{shadow.5.200.spread}",
+          "color": "{palette.black.A100}",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Modals"
+    },
+    "6": {
+      "value": [
+        {
+          "x": "0",
+          "y": "{shadow.6.100.y}",
+          "blur": "{shadow.6.100.blur}",
+          "spread": "{shadow.6.100.spread}",
+          "color": "{palette.black.A200}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0",
+          "y": "{shadow.6.200.y}",
+          "blur": "{shadow.6.200.blur}",
+          "spread": "{shadow.6.200.spread}",
+          "color": "{palette.black.A200}",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow",
+      "description": "Modal Popovers"
+    }
+  }
+}

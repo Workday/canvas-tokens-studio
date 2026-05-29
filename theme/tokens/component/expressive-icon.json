@@ -1,0 +1,60 @@
+{
+  "expressive-icon": {
+    "color": {
+      "accent": {
+        "value": "{palette.neutral.A200}",
+        "type": "color",
+        "deprecatedValues": {},
+        "description": "Component level color used on the soft filled areas of expressive icons"
+      },
+      "fill": {
+        "value": "{palette.neutral.800}",
+        "type": "color",
+        "deprecatedValues": {
+          "v3": "sys.color.fg.default"
+        },
+        "description": "Component level color used on the visible outlines of expressive icons"
+      }
+    },
+    "size": {
+      "xs": {
+        "value": "{size.500}",
+        "type": "size",
+        "deprecatedValues": {
+          "v3": "sys.space.x10",
+          "base": "2.5rem"
+        }
+      },
+      "sm": {
+        "value": "{size.600}",
+        "type": "size",
+        "deprecatedValues": {
+          "base": "3rem"
+        }
+      },
+      "md": {
+        "value": "{size.700}",
+        "type": "size",
+        "deprecatedValues": {
+          "v3": "sys.space.x14",
+          "base": "3.5rem"
+        }
+      },
+      "lg": {
+        "value": "{size.800}",
+        "type": "size",
+        "deprecatedValues": {
+          "v3": "sys.space.x16",
+          "base": "4rem"
+        }
+      },
+      "xl": {
+        "value": "{size.1200}",
+        "type": "size",
+        "deprecatedValues": {
+          "base": "6rem"
+        }
+      }
+    }
+  }
+}

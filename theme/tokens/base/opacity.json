@@ -1,0 +1,61 @@
+{
+  "opacity": {
+    "0": {
+      "value": "0",
+      "type": "number"
+    },
+    "80": {
+      "value": "0.08",
+      "type": "number",
+      "deprecatedValues": {
+        "v3": "base.opacity.100"
+      }
+    },
+    "100": {
+      "value": "0.1",
+      "type": "number",
+      "oldValue": "0.08"
+    },
+    "120": {
+      "value": "0.12",
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "180": {
+      "value": "0.18",
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "200": {
+      "value": "0.2",
+      "type": "number",
+      "deprecatedValues": {
+        "v3": "base.opacity.250"
+      }
+    },
+    "360": {
+      "value": "0.36",
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "400": {
+      "value": "0.4",
+      "type": "number",
+      "deprecatedValues": {
+        "v3": "base.opacity.300"
+      }
+    },
+    "640": {
+      "value": "0.64",
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "840": {
+      "value": "0.84",
+      "type": "number",
+      "deprecatedValues": {
+        "v3": "base.opacity.500"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "base": {
+    "fontSize": {
+      "value": "16",
+      "type": "sizing",
+      "deprecatedValues": {
+        "v3": "base.unit"
+      },
+      "description": "Default fontSize for the browser, may be overridden by user preferences"
+    },
+    "baseline": {
+      "value": "{base.fontSize} / 2",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "0.5rem"
+      },
+      "description": "Baseline unit used for the 8pt sizing grid"
+    }
+  }
+}
