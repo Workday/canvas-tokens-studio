@@ -327,6 +327,12 @@
         "type": "color",
         "deprecatedValues": {},
         "description": "Solid warning accent for caution indicators (not tenant themeable)"
+      },
+      "contrast": {
+        "value": "{palette.white.A900}",
+        "type": "color",
+        "deprecatedValues": {},
+        "description": "High contrast accent for maximum visibility"
       }
     },
     "fg": {
@@ -426,7 +432,7 @@
           "description": "Informational text and icons (not tenant themeable)"
         },
         "strong": {
-          "value": "{brand.dark.primary.700}",
+          "value": "{dark.palette.blue.700}",
           "type": "color",
           "deprecatedValues": {
             "v3": "sys.color.fg.primary.strong"
@@ -536,6 +542,14 @@
         },
         "description": "Border for error states (not tenant themeable)"
       },
+      "warning": {
+        "value": "{dark.palette.amber.400}",
+        "type": "color",
+        "deprecatedValues": {
+          "v3": "sys.color.border.caution.default"
+        },
+        "description": "Border for warning states (not tenant themeable)"
+      },
       "info": {
         "default": {
           "value": "{dark.palette.blue.500}",
@@ -587,7 +601,7 @@
       "focus": {
         "caution": {
           "inner": {
-            "value": "{brand.dark.caution.400}",
+            "value": "{dark.brand.caution.400}",
             "type": "color",
             "deprecatedValues": {
               "v3": "brand.common.alert-inner"
@@ -770,6 +784,14 @@
               "v3": "sys.color.fg.critical.default"
             },
             "description": "Tenant-themeable critical text and icon color"
+          },
+          "strong": {
+            "value": "{dark.brand.critical.700}",
+            "type": "color",
+            "deprecatedValues": {
+              "v3": "brand.error.dark"
+            },
+            "description": "Stronger tenant-themeable critical text and icon color"
           }
         },
         "caution": {
@@ -778,6 +800,12 @@
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable caution text and icon color"
+          },
+          "strong": {
+            "value": "{dark.brand.caution.700}",
+            "type": "color",
+            "deprecatedValues": {},
+            "description": "Stronger tenant-themeable caution text and icon color"
           }
         },
         "positive": {
@@ -786,6 +814,14 @@
             "type": "color",
             "deprecatedValues": {},
             "description": "Tenant-themeable positive text and icon color"
+          },
+          "strong": {
+            "value": "{dark.brand.positive.700}",
+            "type": "color",
+            "deprecatedValues": {
+              "v3": "brand.success.dark"
+            },
+            "description": "Stronger tenant-themeable positive text and icon color"
           }
         },
         "selected": {
