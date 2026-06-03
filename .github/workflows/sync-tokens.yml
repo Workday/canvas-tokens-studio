@@ -12,7 +12,7 @@ jobs:
     if: startsWith(github.event.head_commit.message, 'feat') || startsWith(github.event.head_commit.message, 'fix')
     runs-on: ubuntu-latest
     outputs:
-      tokens: ${{ steps.artifact.outputs.artifact-id }}
+      tokens: ${{ steps.tokens-artifact.outputs.artifact-id }}
       message: ${{ steps.commit.outputs.message }}
     steps:
       - uses: actions/checkout@v3
@@ -111,7 +111,7 @@ jobs:
           name: exported-theme
           path: packages/canvas-tokens/theme
 
-      - run: git add packages/canvas-tokens/tokens
+      - run: git add packages/canvas-tokens/
 
       - name: Check for staged changes
         id: check_staged
