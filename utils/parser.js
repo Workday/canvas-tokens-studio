@@ -2,7 +2,6 @@ import {
   combineTokens,
   generateBaseTokens,
   generatePlatformFiles,
-  generateThemeFiles,
   transformStudioTokensToSD,
 } from './files/utils.js';
 
@@ -38,8 +37,4 @@ import {
       }
     });
   });
-
-  // Theme files (e.g. tokens/theme/sana.json) are self-contained themes that are
-  // synced as-is, without going through the Style Dictionary transform pipeline.
-  generateThemeFiles();
 })();

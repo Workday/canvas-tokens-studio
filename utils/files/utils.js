@@ -363,31 +363,6 @@ export const generateBaseTokens = (tokens, folder) => {
   fs.writeFileSync(exportFile, JSON.stringify(exportContent, null, 2), 'utf8');
 };
 
-/**
- * Utility function to sync theme files. Each file under `tokens/theme/` is treated as a
- * self-contained theme and is copied as-is to `export/theme/` without any transformation.
- */
-export const generateThemeFiles = () => {
-  const themeFolder = path.join(rootDir, 'tokens', 'theme');
-
-  if (!fs.existsSync(themeFolder)) {
-    return;
-  }
-
-  const files = fs.readdirSync(themeFolder).filter(file => file.endsWith('.json'));
-
-  if (!files.length) {
-    return;
-  }
-
-  const exportFolder = path.join(rootDir, 'export', 'theme');
-  fs.mkdirSync(exportFolder, {recursive: true});
-
-  files.forEach(file => {
-    fs.copyFileSync(path.join(themeFolder, file), path.join(exportFolder, file));
-  });
-};
-
 const addComments = (tokens, isDeprecated) => {
   const COMMENT = 'File is auto-generated, do not edit it manually.';
   const DESCRIPTION =

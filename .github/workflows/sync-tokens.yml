@@ -43,11 +43,19 @@ jobs:
 
       - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
-        id: artifact
+        id: tokens-artifact
         uses: actions/upload-artifact@v4
         with:
           name: exported-tokens
           path: export
+      
+      - name: Set theme artifacts
+        if: ${{ !!steps.changed_files.outputs.changed }}
+        id: theme-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-theme
+          path: tokens/theme
 
       - name: Get commit message (first line only)
         id: commit
@@ -96,6 +104,12 @@ jobs:
         with:
           name: exported-tokens
           path: packages/canvas-tokens/tokens
+
+      - name: Download exported theme
+        uses: actions/download-artifact@v4
+        with:
+          name: exported-theme
+          path: packages/canvas-tokens/theme
 
       - run: git add packages/canvas-tokens/tokens
 
