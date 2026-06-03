@@ -1958,18 +1958,6 @@
         }
       },
       "white": {
-        "0": {
-          "value": {
-            "colorSpace": "oklch",
-            "components": [1, 0, 89.88],
-            "alpha": 1,
-            "hex": "#ffffff",
-            "description": "Brand anchor: Paper"
-          },
-          "type": "color",
-          "deprecatedValues": {},
-          "description": "Pure white"
-        },
         "A0": {
           "value": {
             "colorSpace": "oklch",
@@ -2132,17 +2120,6 @@
         }
       },
       "black": {
-        "0": {
-          "value": {
-            "colorSpace": "oklch",
-            "components": [0, 0, 0],
-            "alpha": 1,
-            "hex": "#000000"
-          },
-          "type": "color",
-          "deprecatedValues": {},
-          "description": "Pure black"
-        },
         "A0": {
           "value": {
             "colorSpace": "oklch",
@@ -2890,7 +2867,7 @@
         "description": "Dark action color"
       },
       "accent": {
-        "value": "{base.palette.white.0}",
+        "value": "{base.palette.neutral.0}",
         "type": "color",
         "deprecatedValues": {},
         "description": "Foreground color in actions"
@@ -3175,7 +3152,7 @@
       "color": {
         "bg": {
           "default": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Default page background"
@@ -3192,7 +3169,7 @@
         },
         "surface": {
           "default": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.bg.default"
@@ -3200,7 +3177,7 @@
             "description": "Default surface background"
           },
           "inverse": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.bg.default"
@@ -3257,7 +3234,7 @@
               "description": "Semi-transparent backdrop behind modals and dialogs"
             },
             "mixin": {
-              "value": "{base.palette.black.0}",
+              "value": "{base.palette.neutral.1000}",
               "type": "color",
               "deprecatedValues": {},
               "description": "Pressed state overlay for interactive containers"
@@ -3396,7 +3373,7 @@
             "description": "Background for skeleton loaders and loading states"
           },
           "modal": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.bg.default"
@@ -3410,7 +3387,7 @@
             "description": "Fixed navigation elements"
           },
           "popover": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.bg.default"
@@ -3459,7 +3436,7 @@
               "description": "Pressed overlay for accent-colored elements"
             },
             "mixin": {
-              "value": "{base.palette.black.0}",
+              "value": "{base.palette.neutral.1000}",
               "type": "color",
               "deprecatedValues": {},
               "description": "Pressed overlay for accent-colored elements"
@@ -3637,7 +3614,7 @@
             }
           },
           "inverse": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {},
             "description": "Text and icons for use on dark backgrounds"
@@ -3662,7 +3639,7 @@
           },
           "inverse": {
             "default": {
-              "value": "{base.palette.white.0}",
+              "value": "{base.palette.neutral.0}",
               "type": "color",
               "deprecatedValues": {
                 "v3": "sys.color.border.inverse"
@@ -3743,7 +3720,7 @@
         },
         "focus": {
           "inverse": {
-            "value": "{base.palette.white.0}",
+            "value": "{base.palette.neutral.0}",
             "type": "color",
             "deprecatedValues": {
               "v3": "sys.color.border.input.inverse"
@@ -4068,7 +4045,7 @@
                   "deprecatedValues": {}
                 },
                 "12": {
-                  "value": "{base.palette.white.0}",
+                  "value": "{base.palette.neutral.0}",
                   "type": "color",
                   "deprecatedValues": {}
                 },
