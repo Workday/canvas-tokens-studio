@@ -12,7 +12,7 @@ jobs:
     if: startsWith(github.event.head_commit.message, 'feat') || startsWith(github.event.head_commit.message, 'fix')
     runs-on: ubuntu-latest
     outputs:
-      tokens: ${{ steps.artifact.outputs.artifact-id }}
+      tokens: ${{ steps.tokens-artifact.outputs.artifact-id }}
       message: ${{ steps.commit.outputs.message }}
     steps:
       - uses: actions/checkout@v3
@@ -43,11 +43,19 @@ jobs:
 
       - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
-        id: artifact
+        id: tokens-artifact
         uses: actions/upload-artifact@v4
         with:
           name: exported-tokens
           path: export
+      
+      - name: Set theme artifacts
+        if: ${{ !!steps.changed_files.outputs.changed }}
+        id: theme-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-theme
+          path: tokens/theme
 
       - name: Get commit message (first line only)
         id: commit
@@ -97,7 +105,13 @@ jobs:
           name: exported-tokens
           path: packages/canvas-tokens/tokens
 
-      - run: git add packages/canvas-tokens/tokens
+      - name: Download exported theme
+        uses: actions/download-artifact@v4
+        with:
+          name: exported-theme
+          path: packages/canvas-tokens/theme
+
+      - run: git add packages/canvas-tokens/
 
       - name: Check for staged changes
         id: check_staged

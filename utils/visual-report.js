@@ -10,10 +10,11 @@ import path from 'path';
  *   - Files ending with "canvas.json"
  *   - Files containing "sys/color" in their path
  *   - Files containing "sys/" but not "sys/brand" or "sys/color"
+ *   - Files in "theme/" folder
  *   - Excludes files in "deprecated/" directories
  * @example
  * const files = getDirectoryFiles("tokens");
- * // Returns: ["base/base.json", "sys/brand/canvas.json", "sys/color/color.json", ...]
+ * // Returns: ["base/base.json", "sys/brand/canvas.json", "sys/color/color.json", "theme/sana.json", ...]
  */
 const getDirectoryFiles = directory => {
   if (!fs.existsSync(directory)) {
@@ -21,7 +22,7 @@ const getDirectoryFiles = directory => {
   }
 
   return fs.readdirSync(directory, {recursive: true}).filter(file => {
-    // Skip metadata and theme files
+    // Skip Tokens Studio metadata files
     if (file === '$metadata.json' || file === '$themes.json') {
       return false;
     }
@@ -36,8 +37,10 @@ const getDirectoryFiles = directory => {
     // Check if file is in sys/ folder but not sys/brand or sys/color
     const isSystem =
       file.includes('sys/') && !file.includes('sys/brand') && !file.includes('sys/color');
+    // Check if file is in theme folder
+    const isTheme = file.includes('theme/') || file.startsWith('theme/');
 
-    return file.endsWith('.json') && (isBase || isBrand || isColor || isSystem);
+    return file.endsWith('.json') && (isBase || isBrand || isColor || isSystem || isTheme);
   });
 };
 
@@ -54,10 +57,10 @@ const getContrastLight = light => {
     light < 0.4 && light > 0.2
       ? 1 - light + 0.3
       : light > 0.6 && light < 0.7
-      ? 1 - light - 0.3
-      : light >= 0.4 && light <= 0.6
-      ? 1 - light + 0.4
-      : 1 - light;
+        ? 1 - light - 0.3
+        : light >= 0.4 && light <= 0.6
+          ? 1 - light + 0.4
+          : 1 - light;
 
   return newLight > 1 ? 1 : newLight < 0 ? 0 : newLight;
 };
@@ -84,8 +87,8 @@ const fillMdSwatch = (token, color, colorLabel) => {
     alpha < 0.4
       ? 'oklch(0,0,0,1)'
       : light
-      ? color.replace(light, newLight).replace(`,${alpha})`, `,1)`)
-      : 'oklch(1,0,0,1)';
+        ? color.replace(light, newLight).replace(`,${alpha})`, `,1)`)
+        : 'oklch(1,0,0,1)';
 
   const label = colorLabel.replaceAll(' ', '%20');
   return `<img valign='middle' alt='${token} color swatch' src='https://md-color-swatches.vercel.app/${color}?top=24&left=48&text=${label}&tc=${textColor}&style=round'/>`;
@@ -139,19 +142,25 @@ const getOklchString = (value, {withComma = false} = {}) => {
 
 /**
  * Generates change records for new tokens that don't exist in the baseline.
+ * Recursively walks nested namespaces so newly-added branches (e.g. a brand new
+ * theme file with no baseline counterpart) report every leaf as a new token.
  *
- * @param {Object} tokens - The token object to check
- * @param {string} token - The token name/path
+ * @param {Object} tokens - The token object to check (leaf or nested namespace)
+ * @param {string} tokenName - The token name/path
  * @returns {Array} Array of change objects for new tokens
  * @example
  * const changes = generateNewChanges({ value: { colorSpace: "oklch", components: [0.5,0.1,45], alpha: 1 } }, "primary");
  * // Returns: [{ token: "primary", newColor: "oklch(0.5,0.1,45,1)", newColorLabel: "oklch(0.5 0.1 45 / 1)", prevColor: "", prevColorLabel: "" }]
  */
 const generateNewChanges = (tokens, tokenName) => {
+  if (!tokens || typeof tokens !== 'object') {
+    return [];
+  }
+
   if ('value' in tokens) {
     const {value} = tokens;
 
-    if (typeof value === 'object' && value.colorSpace === 'oklch') {
+    if (typeof value === 'object' && value !== null && value.colorSpace === 'oklch') {
       return [
         {
           token: tokenName,
@@ -172,7 +181,11 @@ const generateNewChanges = (tokens, tokenName) => {
     }
   }
 
-  return [];
+  // Nested namespace - recurse into each child to collect new leaves
+  return Object.keys(tokens).reduce((acc, key) => {
+    const childPath = tokenName ? `${tokenName}.${key}` : key;
+    return [...acc, ...generateNewChanges(tokens[key], childPath)];
+  }, []);
 };
 
 /**
@@ -238,18 +251,13 @@ const resolvePath = (path, tokens) => {
 };
 
 /**
- * Transforms a token reference string to resolve the actual color value.
- *
- * @param {string} value - The token reference string (e.g., "{color.primary}")
- * @param {string} folder - The folder containing the base tokens file
- * @returns {Object} Object with tokenName and resolved color value
- * @example
- * const result = transformRef("{color.primary}", "tokens");
- * // Returns: { tokenName: "color.primary", color: "oklch(0.5,0.1,45,1)" }
- */
-/**
  * Recursively resolves a token reference to its actual value.
- * Handles nested references like {palette.blue.600} -> actual OKLCH color
+ * Handles nested references like {palette.blue.600} -> actual OKLCH color.
+ *
+ * @param {string} tokenName - Dot-notation reference path (e.g., "palette.blue.600")
+ * @param {Object} tokens - The tokens object used as the resolution context
+ * @param {Set<string>} [visited] - Set of already-visited tokens used to short-circuit cycles
+ * @returns {Object|string|null} Resolved OKLCH object, raw string value, or null when unresolved
  */
 const resolveTokenValue = (tokenName, tokens, visited = new Set()) => {
   if (!tokenName || visited.has(tokenName)) {
@@ -306,43 +314,68 @@ const resolveTokenValue = (tokenName, tokens, visited = new Set()) => {
   return tokenRef.value;
 };
 
-const transformRef = (value, folder) => {
+/**
+ * Recursively deep-merges a source object into a target object, preserving nested
+ * structures and treating token leaves (objects with `value` or `type`) as atoms.
+ *
+ * @param {Object} target - The target object to merge into
+ * @param {Object} source - The source object to merge from
+ * @returns {Object} The mutated target object
+ */
+const deepMerge = (target, source) => {
+  if (!source || typeof source !== 'object' || Array.isArray(source)) {
+    return target;
+  }
+  for (const key in source) {
+    const sourceValue = source[key];
+    if (
+      sourceValue &&
+      typeof sourceValue === 'object' &&
+      !Array.isArray(sourceValue) &&
+      !('value' in sourceValue) &&
+      !('type' in sourceValue)
+    ) {
+      // It's a nested object (like palette.blue), merge recursively
+      target[key] = target[key] || {};
+      deepMerge(target[key], sourceValue);
+    } else {
+      // It's a leaf value or token object (has value/type), assign directly
+      target[key] = sourceValue;
+    }
+  }
+  return target;
+};
+
+/**
+ * Loads and merges all token JSON files from a folder into a single tokens object
+ * suitable for resolving references. Files in `base/` are also exposed under a
+ * `base` wrapper so both prefixed and unprefixed references resolve.
+ * Theme files (under `theme/`) are skipped here because they are self-contained
+ * and would otherwise pollute the shared reference space.
+ *
+ * @param {string} folder - The folder path to load tokens from
+ * @returns {Object} Merged tokens object used for reference resolution
+ * @example
+ * const tokens = loadTokensFromFolder("tokens");
+ * // Returns: { palette: {...}, base: { palette: {...} }, color: {...}, ... }
+ */
+const loadTokensFromFolder = folder => {
   const folderPath = path.isAbsolute(folder) ? folder : path.resolve(process.cwd(), folder);
 
   if (!fs.existsSync(folderPath)) {
-    return {tokenName: value.match(/{([^}]+)}/)?.[1] || value, color: value};
+    return {};
   }
 
-  const baseDir = fs
-    .readdirSync(folderPath, {recursive: true})
-    .filter(file => file.endsWith('.json') && file !== '$metadata.json' && file !== '$themes.json');
+  const baseDir = fs.readdirSync(folderPath, {recursive: true}).filter(
+    file =>
+      file.endsWith('.json') &&
+      file !== '$metadata.json' &&
+      file !== '$themes.json' &&
+      // Theme files are self-contained and resolved against their own content
+      !file.includes('theme/')
+  );
 
-  // Merge all token files, unwrapping top-level keys and preserving structure
-  const deepMerge = (target, source) => {
-    if (!source || typeof source !== 'object' || Array.isArray(source)) {
-      return target;
-    }
-    for (const key in source) {
-      const sourceValue = source[key];
-      if (
-        sourceValue &&
-        typeof sourceValue === 'object' &&
-        !Array.isArray(sourceValue) &&
-        !('value' in sourceValue) &&
-        !('type' in sourceValue)
-      ) {
-        // It's a nested object (like palette.blue), merge recursively
-        target[key] = target[key] || {};
-        deepMerge(target[key], sourceValue);
-      } else {
-        // It's a leaf value or token object (has value/type), assign directly
-        target[key] = sourceValue;
-      }
-    }
-    return target;
-  };
-
-  const baseTokens = baseDir.reduce((acc, file) => {
+  return baseDir.reduce((acc, file) => {
     const filePath = path.join(folderPath, file);
     const content = getContent(filePath);
     if (!content || Object.keys(content).length === 0) {
@@ -391,17 +424,33 @@ const transformRef = (value, folder) => {
 
     return acc;
   }, {});
+};
+
+/**
+ * Resolves a token reference string to its actual color value using a pre-loaded tokens object.
+ *
+ * @param {string} value - The token reference string (e.g., "{color.primary}")
+ * @param {Object} refTokens - Pre-loaded tokens used as the resolution context
+ * @returns {Object} Object with tokenName and resolved color value
+ * @example
+ * const result = transformRef("{color.primary}", baseTokens);
+ * // Returns: { tokenName: "color.primary", color: "oklch(0.5,0.1,45,1)" }
+ */
+const transformRef = (value, refTokens) => {
+  if (!refTokens || Object.keys(refTokens).length === 0) {
+    return {tokenName: value.match(/{([^}]+)}/)?.[1] || value, color: value};
+  }
 
   const tokenName = value.match(/{([^}]+)}/)?.[1];
 
   // Resolve the token value recursively
-  const resolvedValue = resolveTokenValue(tokenName, baseTokens);
+  const resolvedValue = resolveTokenValue(tokenName, refTokens);
 
   // Handle alpha references (e.g., oklch({base.palette.neutral.1000} / {opacity.0}))
   const alphaMatch = value.match(/{([^}]+)}/g);
   if (alphaMatch && alphaMatch.length > 1) {
     const alphaTokenName = alphaMatch[1]?.replace(/[{}]/g, '');
-    const alphaValue = resolveTokenValue(alphaTokenName, baseTokens);
+    const alphaValue = resolveTokenValue(alphaTokenName, refTokens);
     if (
       alphaValue &&
       resolvedValue &&
@@ -467,24 +516,24 @@ const normalizeTokenRef = value => {
  * @param {Object} baselineToken - The baseline token object to compare against
  * @param {string} newToken.value - The new token's color value (can be reference or direct)
  * @param {string} baselineToken.value - The baseline token's color value
- * @param {string} newTokensDir - Directory path for new tokens
- * @param {string} baselineTokensDir - Directory path for baseline tokens
+ * @param {Object} newRefTokens - Pre-loaded tokens used to resolve references in the new token
+ * @param {Object} baselineRefTokens - Pre-loaded tokens used to resolve references in the baseline token
  * @returns {Object|null} Difference object with resolved color values or null if colors match
  * @example
  * const diff = checkStringColors(
  *   { value: "{color.primary}" },
  *   { value: "{color.secondary}" },
- *   "tokens",
- *   "tokens-base"
+ *   newRefTokens,
+ *   baselineRefTokens
  * );
  * // Returns: { newColor: "oklch(0.5,0.1,45,1)", newColorLabel: "color.primary", prevColor: "oklch(0.6,0.1,45,1)", prevColorLabel: "color.secondary" }
  */
-const checkStringColors = (newToken, baselineToken, newTokensDir, baselineTokensDir) => {
+const checkStringColors = (newToken, baselineToken, newRefTokens, baselineRefTokens) => {
   const {value: newValue} = newToken;
 
   // If baseline token doesn't exist or doesn't have a value, treat as new token
   if (!baselineToken || !baselineToken.value) {
-    const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, newTokensDir);
+    const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, newRefTokens);
     return {newColor, newColorLabel, prevColor: '', prevColorLabel: ''};
   }
 
@@ -500,8 +549,8 @@ const checkStringColors = (newToken, baselineToken, newTokensDir, baselineTokens
   }
 
   // Values are different even after normalization, so show the difference
-  const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, newTokensDir);
-  const {tokenName: prevColorLabel, color: prevColor} = transformRef(prevValue, baselineTokensDir);
+  const {tokenName: newColorLabel, color: newColor} = transformRef(newValue, newRefTokens);
+  const {tokenName: prevColorLabel, color: prevColor} = transformRef(prevValue, baselineRefTokens);
 
   return {newColor, newColorLabel, prevColor, prevColorLabel};
 };
@@ -512,8 +561,8 @@ const checkStringColors = (newToken, baselineToken, newTokensDir, baselineTokens
  * @param {Object} newTokens - The new tokens object to compare
  * @param {Object} baselineTokens - The baseline tokens object to compare against
  * @param {string} [token=""] - The current token path being compared
- * @param {string} [newTokensDir='tokens'] - Directory path for new tokens
- * @param {string} [baselineTokensDir='tokens-base'] - Directory path for baseline tokens
+ * @param {Object} [newRefTokens={}] - Pre-loaded tokens used to resolve references for new values
+ * @param {Object} [baselineRefTokens={}] - Pre-loaded tokens used to resolve references for baseline values
  * @returns {Array} Array of difference objects with token paths and value changes
  * @example
  * const differences = diffTokens(
@@ -526,8 +575,8 @@ const diffTokens = (
   newTokens,
   baselineTokens,
   token = '',
-  newTokensDir = 'tokens',
-  baselineTokensDir = 'tokens-base'
+  newRefTokens = {},
+  baselineRefTokens = {}
 ) => {
   const newTokensKeys = Object.keys(newTokens);
 
@@ -550,8 +599,8 @@ const diffTokens = (
         const checkResult = checkStringColors(
           newTokens,
           baselineTokens,
-          newTokensDir,
-          baselineTokensDir
+          newRefTokens,
+          baselineRefTokens
         );
 
         if (checkResult) {
@@ -596,8 +645,8 @@ const diffTokens = (
             newTokens[key],
             baselineTokens[key],
             newTokenName,
-            newTokensDir,
-            baselineTokensDir
+            newRefTokens,
+            baselineRefTokens
           ),
         ];
       } else {
@@ -631,14 +680,14 @@ const createComment = result => {
           prevColor
             ? fillMdSwatch(token, prevColor, prevColorLabel)
             : prevValue
-            ? `\`${prevValue}\``
-            : 'none'
+              ? `\`${prevValue}\``
+              : 'none'
         } | ${
           newColor
             ? fillMdSwatch(token, newColor, newColorLabel)
             : newValue
-            ? `\`${newValue}\``
-            : 'none'
+              ? `\`${newValue}\``
+              : 'none'
         } |`
     );
 
@@ -708,6 +757,10 @@ function generateReport(newTokensDir = 'tokens', baselineTokensDir = 'tokens-bas
 
   const newTokensFiles = getDirectoryFiles(newTokensPath);
 
+  // Pre-load base/system tokens once for reference resolution across non-theme files
+  const baseNewRefTokens = loadTokensFromFolder(newTokensPath);
+  const baseBaselineRefTokens = loadTokensFromFolder(baselineTokensPath);
+
   const result = newTokensFiles.reduce((acc, filename) => {
     const newTokensFilePath = path.join(newTokensPath, filename);
     const baselineTokensFilePath = path.join(baselineTokensPath, filename);
@@ -715,11 +768,18 @@ function generateReport(newTokensDir = 'tokens', baselineTokensDir = 'tokens-bas
     const newTokensRaw = getContent(newTokensFilePath);
     const baselineTokensRaw = getContent(baselineTokensFilePath);
 
-    // Unwrap the top-level key from both token files
+    // Theme files are self-contained: references like {base.palette.*}, {brand.*}, {sys.*}
+    // resolve within the theme file itself rather than the shared base tokens.
+    const isThemeFile = filename.startsWith('theme/') || filename.includes('/theme/');
+    const newRefTokens = isThemeFile ? newTokensRaw : baseNewRefTokens;
+    const baselineRefTokens = isThemeFile ? baselineTokensRaw : baseBaselineRefTokens;
+
+    // Unwrap the top-level key from both token files.
+    // Theme files have multiple top-level keys (base, brand, sys) so they remain unwrapped.
     const newTokens = unwrapTokens(newTokensRaw);
     const baselineTokens = unwrapTokens(baselineTokensRaw);
 
-    const diff = diffTokens(newTokens, baselineTokens, '', newTokensPath, baselineTokensPath);
+    const diff = diffTokens(newTokens, baselineTokens, '', newRefTokens, baselineRefTokens);
 
     return diff.length ? [...acc, {filename, diff}] : acc;
   }, []);
