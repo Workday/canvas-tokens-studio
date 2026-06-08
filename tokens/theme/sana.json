@@ -1421,18 +1421,15 @@
       },
       "50": {
         "value": "Sana Sans LCG 05 VF",
-        "type": "text",
-        "deprecatedValues": {}
+        "type": "text"
       },
       "100": {
         "value": "IBM Plex Mono",
-        "type": "text",
-        "deprecatedValues": {}
+        "type": "text"
       },
       "200": {
         "value": "Noto Sans",
-        "type": "text",
-        "deprecatedValues": {}
+        "type": "text"
       }
     },
     "font-weight": {
