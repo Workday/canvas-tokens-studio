@@ -2156,6 +2156,11 @@
               "description": "Stronger high contrast dark container background"
             }
           },
+          "text-highlight": {
+            "value": "{base.palette.indigo.A200}",
+            "type": "color",
+            "description": "Background highlight for selected text in body copy"
+          },
           "danger": {
             "default": {
               "value": "{brand.critical.A25}",
