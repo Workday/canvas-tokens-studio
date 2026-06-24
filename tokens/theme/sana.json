@@ -2050,6 +2050,18 @@
             "value": "{brand.neutral.A900}",
             "type": "color",
             "description": "Tenant-themeable text color for selected items"
+          },
+          "link": {
+            "default": {
+              "value": "{base.palette.blue.600}",
+              "type": "color",
+              "description": "Default text color for hyperlinks"
+            },
+            "hover": {
+              "value": "{base.palette.blue.700}",
+              "type": "color",
+              "description": "Text color for hyperlinks on hover"
+            }
           }
         }
       },
