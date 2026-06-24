@@ -1976,7 +1976,7 @@
         "ai": {
           "value": "{base.palette.blue.950}",
           "type": "color",
-          "description": "Invisible border for layout spacing"
+          "description": "Border color for AI-focused input elements"
         },
         "warning": {
           "value": "{base.palette.amber.500}",
