@@ -15,14 +15,14 @@ jobs:
       tokens: ${{ steps.tokens-artifact.outputs.artifact-id }}
       message: ${{ steps.commit.outputs.message }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
           fetch-depth: 0 # Used for conventional commit ranges
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
-          node-version: 22.x
+          node-version: 24.x
           registry-url: https://registry.npmjs.org
 
       - name: Install Packages
@@ -43,8 +43,8 @@ jobs:
 
       - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
-        id: tokens-artifact
-        uses: actions/upload-artifact@v4
+        id: artifact
+        uses: actions/upload-artifact@v6
         with:
           name: exported-tokens
           path: export
@@ -71,7 +71,7 @@ jobs:
       has_diff: ${{ steps.check_staged.outputs.has_staged }}
     steps:
       - name: Checkout canvas-tokens repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: Workday/canvas-tokens
           persist-credentials: false
@@ -100,7 +100,7 @@ jobs:
           fi
 
       - name: Download exported tokens
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: exported-tokens
           path: packages/canvas-tokens/tokens
@@ -163,7 +163,7 @@ jobs:
     needs: sync-tokens
     if: ${{ needs.sync-tokens.result == 'success' && needs.sync-tokens.outputs.has_diff == 'true' }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
           fetch-depth: 0
