@@ -1,12 +1,16 @@
 {
   "font-family": {
-    "50": {
-      "value": "Roboto",
+    "0": {
+      "value": "-apple-system, BlinkMacSystemFont, \"Sana Serif\", Roboto, Inter, system-ui, sans-serif, Avenir, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "type": "text",
-      "description": "Default font-family"
+      "deprecatedValues": {}
+    },
+    "50": {
+      "value": "Sana Sans LCG 05 VF",
+      "type": "text"
     },
     "100": {
-      "value": "Roboto Mono",
+      "value": "IBM Plex Mono",
       "type": "text"
     },
     "200": {
@@ -16,23 +20,88 @@
   },
   "font-weight": {
     "300": {
-      "value": "Light",
+      "value": 300,
       "type": "text"
     },
     "400": {
-      "value": "Regular",
+      "value": 400,
       "type": "text"
     },
     "500": {
-      "value": "Medium",
+      "value": 500,
       "type": "text"
     },
+    "600": {
+      "value": 600,
+      "type": "text",
+      "deprecatedValues": {}
+    },
     "700": {
-      "value": "Bold",
+      "value": 700,
       "type": "text"
     }
   },
   "letter-spacing": {
+    "1": {
+      "value": 0.13,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "2": {
+      "value": 0.12,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "3": {
+      "value": 0.11,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "4": {
+      "value": 0.1,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "5": {
+      "value": 0,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "6": {
+      "value": -0.1,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "7": {
+      "value": -0.3,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "8": {
+      "value": -0.34,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "9": {
+      "value": -0.38,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "10": {
+      "value": -0.46,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "11": {
+      "value": -0.54,
+      "type": "number",
+      "deprecatedValues": {}
+    },
+    "12": {
+      "value": -0.62,
+      "type": "number",
+      "deprecatedValues": {}
+    },
     "50": {
       "value": 0.4,
       "type": "number"

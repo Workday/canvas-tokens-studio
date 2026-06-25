@@ -53,16 +53,14 @@
     },
     "accent": {
       "hover": {
-        "value": "{opacity.180}",
+        "value": "0.045",
         "type": "number",
-        "description": "State layer applied to accent colors on hover",
-        "deprecatedValues": {}
+        "description": "State layer applied to accent colors on hover"
       },
       "pressed": {
-        "value": "{opacity.360}",
+        "value": "0.118",
         "type": "number",
-        "description": "State layer applied to accent colors while pressing",
-        "deprecatedValues": {}
+        "description": "State layer applied to accent colors while pressing"
       }
     }
   },

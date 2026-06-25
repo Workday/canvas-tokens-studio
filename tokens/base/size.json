@@ -149,6 +149,54 @@
       "type": "sizing",
       "description": "112px / 7rem",
       "deprecatedValues": {"base": "7rem"}
+    },
+    "1600": {
+      "value": "{base.baseline} * 16.00",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "8rem"
+      },
+      "description": "128px / 8rem"
+    },
+    "1800": {
+      "value": "{base.baseline} * 18.00",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "9rem"
+      },
+      "description": "144px / 9rem"
+    },
+    "2000": {
+      "value": "{base.baseline} * 20.00",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "10rem"
+      },
+      "description": "160px / 10rem"
+    },
+    "2400": {
+      "value": "{base.baseline} * 24.00",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "12rem"
+      },
+      "description": "192px / 12rem"
+    },
+    "2800": {
+      "value": "{base.baseline} * 28.00",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "14rem"
+      },
+      "description": "224px / 14rem"
+    },
+    "3200": {
+      "value": "{base.baseline} * 32.00",
+      "type": "sizing",
+      "deprecatedValues": {
+        "base": "16rem"
+      },
+      "description": "256px / 16rem"
     }
   }
 }

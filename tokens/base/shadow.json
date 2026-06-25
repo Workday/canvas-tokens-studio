@@ -97,6 +97,10 @@
         "blur": {
           "value": "{size.250}",
           "type": "number"
+        },
+        "spread": {
+          "value": -4,
+          "type": "number"
         }
       },
       "200": {
@@ -106,6 +110,10 @@
         },
         "blur": {
           "value": "{size.500}",
+          "type": "number"
+        },
+        "spread": {
+          "value": -3,
           "type": "number"
         }
       }
@@ -117,7 +125,11 @@
           "type": "number"
         },
         "blur": {
-          "value": "{size.300}",
+          "value": "{base.size.300}",
+          "type": "number"
+        },
+        "spread": {
+          "value": -4,
           "type": "number"
         }
       },
@@ -128,6 +140,10 @@
         },
         "blur": {
           "value": "{size.600}",
+          "type": "number"
+        },
+        "spread": {
+          "value": -12,
           "type": "number"
         }
       }

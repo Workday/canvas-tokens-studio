@@ -12,7 +12,7 @@
     "100": {
       "value": "0.1",
       "type": "number",
-      "oldValue": "0.08"
+      "deprecatedValues": {}
     },
     "120": {
       "value": "0.12",

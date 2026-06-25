@@ -7,7 +7,7 @@
           "y": "{shadow.1.100.y}",
           "blur": "{shadow.1.100.blur}",
           "spread": "0",
-          "color": "{color.shadow.1}",
+          "color": "{color.shadow.base}",
           "type": "dropShadow"
         },
         {
@@ -15,7 +15,7 @@
           "y": "{shadow.1.200.y}",
           "blur": "{shadow.1.200.blur}",
           "spread": "0",
-          "color": "{color.shadow.2}",
+          "color": "{color.shadow.ambient}",
           "type": "dropShadow"
         }
       ],
@@ -29,7 +29,7 @@
           "y": "{shadow.2.100.y}",
           "blur": "{shadow.2.100.blur}",
           "spread": "0",
-          "color": "{color.shadow.1}",
+          "color": "{color.shadow.base}",
           "type": "dropShadow"
         },
         {
@@ -37,7 +37,7 @@
           "y": "{shadow.2.200.y}",
           "blur": "{shadow.2.200.blur}",
           "spread": "0",
-          "color": "{color.shadow.2}",
+          "color": "{color.shadow.ambient}",
           "type": "dropShadow"
         }
       ],
@@ -51,7 +51,7 @@
           "y": "{shadow.3.100.y}",
           "blur": "{shadow.3.100.blur}",
           "spread": "0",
-          "color": "{color.shadow.1}",
+          "color": "{color.shadow.base}",
           "type": "dropShadow"
         },
         {
@@ -59,7 +59,7 @@
           "y": "{shadow.3.200.y}",
           "blur": "{shadow.3.200.blur}",
           "spread": "0",
-          "color": "{color.shadow.2}",
+          "color": "{color.shadow.ambient}",
           "type": "dropShadow"
         }
       ],
@@ -73,7 +73,7 @@
           "y": "{shadow.4.100.y}",
           "blur": "{shadow.4.100.blur}",
           "spread": "0",
-          "color": "{color.shadow.1}",
+          "color": "{color.shadow.ambient}",
           "type": "dropShadow"
         },
         {
@@ -81,7 +81,7 @@
           "y": "{shadow.4.200.y}",
           "blur": "{shadow.4.200.blur}",
           "spread": "0",
-          "color": "{color.shadow.2}",
+          "color": "{color.shadow.ambient}",
           "type": "dropShadow"
         }
       ],
@@ -94,21 +94,21 @@
           "x": "0",
           "y": "{shadow.5.100.y}",
           "blur": "{shadow.5.100.blur}",
-          "spread": "0",
-          "color": "{color.shadow.1}",
+          "spread": "{shadow.5.100.spread}",
+          "color": "{palette.neutral.A150}",
           "type": "dropShadow"
         },
         {
           "x": "0",
           "y": "{shadow.5.200.y}",
           "blur": "{shadow.5.200.blur}",
-          "spread": "0",
-          "color": "{color.shadow.2}",
+          "spread": "{shadow.5.200.spread}",
+          "color": "{palette.neutral.A150}",
           "type": "dropShadow"
         }
       ],
       "type": "boxShadow",
-      "description": "Banners, Snackbars, Toast Messages, Non modal Dialogs, \nSide Panels (when opacity overlay behaviour is not applied)"
+      "description": "Modals"
     },
     "6": {
       "value": [
@@ -116,21 +116,21 @@
           "x": "0",
           "y": "{shadow.6.100.y}",
           "blur": "{shadow.6.100.blur}",
-          "spread": "0",
-          "color": "{color.shadow.1}",
+          "spread": "{shadow.6.100.spread}",
+          "color": "{palette.neutral.A300}",
           "type": "dropShadow"
         },
         {
           "x": "0",
           "y": "{shadow.6.200.y}",
           "blur": "{shadow.6.200.blur}",
-          "spread": "0",
-          "color": "{color.shadow.2}",
+          "spread": "{shadow.6.200.spread}",
+          "color": "{palette.neutral.A300}",
           "type": "dropShadow"
         }
       ],
       "type": "boxShadow",
-      "description": "Modal Dialogs, Side Panels (when opacity overlay behaviour\nis applied)"
+      "description": "Modal Popovers"
     }
   }
 }

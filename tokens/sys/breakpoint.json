@@ -26,7 +26,14 @@
     "xl": {
       "value": "{base.baseline} * 180",
       "type": "dimension",
-      "description": "Used for extra large screens, such as wide monitors and TVs."
+      "description": "Used for extra large screens, such as wide monitors and TVs.",
+      "deprecatedValues": {}
+    },
+    "xxl": {
+      "value": "{base.baseline} * 272.5",
+      "type": "dimension",
+      "description": "Figma only. Use as the max-width on xl media query.",
+      "deprecatedValues": {}
     }
   }
 }

@@ -6,11 +6,17 @@
       "description": "Full-width and background containers. Fixed navigation containers such as headers, and side-panels.",
       "deprecatedValues": {"v3": "sys.shape.zero"}
     },
-    "sm": {
+    "xs": {
       "value": "{size.50}",
       "type": "borderRadius",
       "description": "Pill, Status Indicator, Checkbox",
       "deprecatedValues": {"v3": "sys.shape.x1", "base": "0.25rem"}
+    },
+    "sm": {
+      "value": "{base.size.75}",
+      "type": "borderRadius",
+      "description": "Compact components that leverage smaller typography, like Pills or Status Indicator",
+      "deprecatedValues": {"base": "0.375rem"}
     },
     "md": {
       "value": "{size.100}",
@@ -31,16 +37,16 @@
       "deprecatedValues": {"v3": "sys.shape.x4", "base": "1rem"}
     },
     "xxl": {
-      "value": "{size.300}",
+      "value": "{base.size.250}",
       "type": "borderRadius",
-      "description": "Extra extra large rounding for cards and items",
-      "deprecatedValues": {"v3": "sys.shape.x6", "base": "1.5rem"}
+      "description": "Flat or raised surfaces, like Cards or Menu",
+      "deprecatedValues": {"base": "1.25rem"}
     },
     "xxxl": {
-      "value": "{size.400}",
+      "value": "{base.size.350}",
       "type": "borderRadius",
-      "description": "Maximum rounding for modals and large containers",
-      "deprecatedValues": {"base": "2rem"}
+      "description": "Large elevated surfaces, like Modals",
+      "deprecatedValues": {"base": "1.75rem"}
     },
     "full": {
       "value": "{size.75} * 100",
