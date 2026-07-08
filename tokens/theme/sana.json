@@ -1813,12 +1813,6 @@
         }
       },
       "brand": {
-        "surface": {
-          "selected": {
-            "value": "{brand.neutral.A100}",
-            "type": "color"
-          }
-        },
         "accent": {
           "primary": {
             "value": "{brand.neutral.975}",
@@ -1861,11 +1855,6 @@
               "type": "color",
               "description": "Stronger tenant-themeable primary text and icon color"
             }
-          },
-          "selected": {
-            "value": "{brand.neutral.A900}",
-            "type": "color",
-            "description": "Tenant-themeable text color for selected items"
           },
           "link": {
             "default": {
