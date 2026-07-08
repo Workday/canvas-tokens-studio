@@ -1119,68 +1119,6 @@
         }
       }
     },
-    "shadow": {
-      "5": {
-        "100": {
-          "y": {
-            "value": 5,
-            "type": "number"
-          },
-          "blur": {
-            "value": "{base.size.250}",
-            "type": "number"
-          },
-          "spread": {
-            "value": -4,
-            "type": "number"
-          }
-        },
-        "200": {
-          "y": {
-            "value": "{base.shadow.5.100.y} * 2",
-            "type": "number"
-          },
-          "blur": {
-            "value": "{base.size.500}",
-            "type": "number"
-          },
-          "spread": {
-            "value": -3,
-            "type": "number"
-          }
-        }
-      },
-      "6": {
-        "100": {
-          "y": {
-            "value": 6,
-            "type": "number"
-          },
-          "blur": {
-            "value": "{base.size.300}",
-            "type": "number"
-          },
-          "spread": {
-            "value": -4,
-            "type": "number"
-          }
-        },
-        "200": {
-          "y": {
-            "value": "{base.shadow.6.100.y} * 2",
-            "type": "number"
-          },
-          "blur": {
-            "value": "{base.size.600}",
-            "type": "number"
-          },
-          "spread": {
-            "value": -12,
-            "type": "number"
-          }
-        }
-      }
-    },
     "size": {
       "1600": {
         "value": "{base.baseline} * 16.00",
@@ -1500,140 +1438,6 @@
         "description": "Figma only. Use as the max-width on xl media query."
       }
     },
-    "depth": {
-      "1": {
-        "value": [
-          {
-            "x": "0",
-            "y": "{base.shadow.1.100.y}",
-            "blur": "{base.shadow.1.100.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.base}",
-            "type": "dropShadow"
-          },
-          {
-            "x": "0",
-            "y": "{base.shadow.1.200.y}",
-            "blur": "{base.shadow.1.200.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.ambient}",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "Standard card depth"
-      },
-      "2": {
-        "value": [
-          {
-            "x": "0",
-            "y": "{base.shadow.2.100.y}",
-            "blur": "{base.shadow.2.100.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.base}",
-            "type": "dropShadow"
-          },
-          {
-            "x": "0",
-            "y": "{base.shadow.2.200.y}",
-            "blur": "{base.shadow.2.200.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.ambient}",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "Top navigation, Bottom Navigation"
-      },
-      "3": {
-        "value": [
-          {
-            "x": "0",
-            "y": "{base.shadow.3.100.y}",
-            "blur": "{base.shadow.3.100.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.base}",
-            "type": "dropShadow"
-          },
-          {
-            "x": "0",
-            "y": "{base.shadow.3.200.y}",
-            "blur": "{base.shadow.3.200.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.ambient}",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "Floating Action Buttons (FAB), Menus"
-      },
-      "4": {
-        "value": [
-          {
-            "x": "0",
-            "y": "{base.shadow.4.100.y}",
-            "blur": "{base.shadow.4.100.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.ambient}",
-            "type": "dropShadow"
-          },
-          {
-            "x": "0",
-            "y": "{base.shadow.4.200.y}",
-            "blur": "{base.shadow.4.200.blur}",
-            "spread": "0",
-            "color": "{sys.color.shadow.ambient}",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "Bottom Sheets"
-      },
-      "5": {
-        "value": [
-          {
-            "x": "0",
-            "y": "{base.shadow.5.100.y}",
-            "blur": "{base.shadow.5.100.blur}",
-            "spread": "{base.shadow.5.100.spread}",
-            "color": "{base.palette.neutral.A150}",
-            "type": "dropShadow"
-          },
-          {
-            "x": "0",
-            "y": "{base.shadow.5.200.y}",
-            "blur": "{base.shadow.5.200.blur}",
-            "spread": "{base.shadow.5.200.spread}",
-            "color": "{base.palette.neutral.A150}",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "Modals"
-      },
-      "6": {
-        "value": [
-          {
-            "x": "0",
-            "y": "{base.shadow.6.100.y}",
-            "blur": "{base.shadow.6.100.blur}",
-            "spread": "{base.shadow.6.100.spread}",
-            "color": "{base.palette.neutral.A300}",
-            "type": "dropShadow"
-          },
-          {
-            "x": "0",
-            "y": "{base.shadow.6.200.y}",
-            "blur": "{base.shadow.6.200.blur}",
-            "spread": "{base.shadow.6.200.spread}",
-            "color": "{base.palette.neutral.A300}",
-            "type": "dropShadow"
-          }
-        ],
-        "type": "boxShadow",
-        "description": "Modal Popovers"
-      }
-    },
     "shape": {
       "xs": {
         "value": "{base.size.50}",
@@ -1674,57 +1478,69 @@
       "subtext": {
         "sm": {
           "value": "{base.letter-spacing.1}",
-          "type": "number"
+          "type": "number",
+          "fallback": "sys.type.letter-spacing.subtext.small"
         },
         "md": {
           "value": "{base.letter-spacing.2}",
-          "type": "number"
+          "type": "number",
+          "fallback": "sys.type.letter-spacing.subtext.medium"
         },
         "lg": {
           "value": "{base.letter-spacing.3}",
-          "type": "number"
+          "type": "number",
+          "fallback": "sys.type.letter-spacing.subtext.large"
         }
       },
       "body": {
         "sm": {
           "value": "{base.letter-spacing.4}",
-          "type": "number"
+          "type": "number",
+          "fallback": "sys.type.letter-spacing.body.small"
         },
         "md": {
           "value": "{base.letter-spacing.5}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         },
         "lg": {
           "value": "{base.letter-spacing.6}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         }
       },
       "heading": {
         "sm": {
           "value": "{base.letter-spacing.7}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         },
         "md": {
           "value": "{base.letter-spacing.8}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         },
         "lg": {
           "value": "{base.letter-spacing.9}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         }
       },
       "title": {
         "sm": {
           "value": "{base.letter-spacing.10}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         },
         "md": {
           "value": "{base.letter-spacing.11}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         },
         "lg": {
           "value": "{base.letter-spacing.12}",
-          "type": "number"
+          "type": "number",
+          "fallback": ""
         }
       }
     },
