@@ -15,12 +15,12 @@ jobs:
       tokens: ${{ steps.artifact.outputs.artifact-id }}
       message: ${{ steps.commit.outputs.message }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
           fetch-depth: 0 # Used for conventional commit ranges
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: 24.x
           registry-url: https://registry.npmjs.org
@@ -44,7 +44,7 @@ jobs:
       - name: Set artifact
         if: ${{ !!steps.changed_files.outputs.changed }}
         id: artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: exported-tokens
           path: export
@@ -63,7 +63,7 @@ jobs:
       has_diff: ${{ steps.check_staged.outputs.has_staged }}
     steps:
       - name: Checkout canvas-tokens repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           repository: Workday/canvas-tokens
           persist-credentials: false
@@ -92,7 +92,7 @@ jobs:
           fi
 
       - name: Download exported tokens
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
         with:
           name: exported-tokens
           path: packages/canvas-tokens/tokens
@@ -115,7 +115,7 @@ jobs:
 
       - name: Push changes
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # v1.3.0
         with:
           github_token: ${{ secrets.GH_RW_TOKEN }}
           branch: ${{ steps.sync_branch.outputs.name }}
@@ -125,7 +125,7 @@ jobs:
       - name: Create Pull Request
         id: create-pull-request
         if: ${{ steps.check_staged.outputs.has_staged == 'true' }}
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
         continue-on-error: true
         with:
           github-token: ${{ secrets.GH_RW_TOKEN }}
@@ -149,7 +149,7 @@ jobs:
     needs: sync-tokens
     if: ${{ needs.sync-tokens.result == 'success' && needs.sync-tokens.outputs.has_diff == 'true' }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -164,7 +164,7 @@ jobs:
           git commit --allow-empty -m "chore: Sync tokens for ${{ github.ref_name }} branch"
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # v1.3.0
         with:
           github_token: ${{ secrets.GH_RW_TOKEN }}
           branch: ${{ github.ref_name }}
