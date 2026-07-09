@@ -1825,6 +1825,13 @@
             "description": "Tenant-themeable primary action color for CTAs"
           }
         },
+        "focus": {
+          "primary": {
+            "value": "{base.palette.blue.500}",
+            "type": "color",
+            "description": "Tenant-themeable focus ring for interactive elements"
+          }
+        },
         "border": {
           "caution": {
             "value": "{brand.caution.500}",
