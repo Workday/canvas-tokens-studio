@@ -547,7 +547,7 @@
     },
     "common": {
       "focus": {
-        "value": "{palette.blue.500}",
+        "value": "{brand.primary.500}",
         "type": "color",
         "deprecatedValues": {"v3": "brand.common.focus-outline"}
       },
