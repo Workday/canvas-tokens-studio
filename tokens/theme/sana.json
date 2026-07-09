@@ -1846,7 +1846,6 @@
           "primary": {
             "value": "{base.palette.blue.500}",
             "type": "color",
-
             "description": "Tenant-themeable primary border for focused inputs"
           }
         },
