@@ -605,6 +605,18 @@
           "deprecatedValues": {}
         }
       },
+      "link": {
+        "default": {
+          "value": "{palette.blue.600}",
+          "type": "color",
+          "description": "Default text color for hyperlinks (not tenant themeable)"
+        },
+        "hover": {
+          "value": "{palette.blue.700}",
+          "type": "color",
+          "description": "Text color for hyperlinks on hover"
+        }
+      },
       "ai": {
         "value": "{palette.blue.950}",
         "type": "color",
