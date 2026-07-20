@@ -609,7 +609,7 @@
         "default": {
           "value": "{palette.blue.600}",
           "type": "color",
-          "description": "Default text color for hyperlinks"
+          "description": "Default text color for hyperlinks (not tenant themeable)"
         },
         "hover": {
           "value": "{palette.blue.700}",
