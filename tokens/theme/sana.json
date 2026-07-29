@@ -1626,6 +1626,10 @@
       "default": {
         "value": "\"Sana Sans VF\", {sys.font-family.fallback}",
         "type": "text"
+      },
+      "mono": {
+        "value": "\"IBM Plex Mono\", \"Roboto Mono\", monospace",
+        "type": "text"
       }
     },
     "line-height": {
