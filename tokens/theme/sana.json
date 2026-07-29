@@ -1365,7 +1365,7 @@
         "type": "text"
       },
       "50": {
-        "value": "Sana Sans LCG 05 VF",
+        "value": "Sana Sans VF",
         "type": "text"
       },
       "100": {
@@ -1621,6 +1621,10 @@
     "font-family": {
       "fallback": {
         "value": "{base.font-family.0}",
+        "type": "text"
+      },
+      "default": {
+        "value": "\"Sana Sans VF\", {sys.font-family.fallback}",
         "type": "text"
       }
     },
