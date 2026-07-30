@@ -1624,11 +1624,11 @@
         "type": "text"
       },
       "default": {
-        "value": "\"Sana Sans VF\", {sys.font-family.fallback}",
+        "value": "{base.font-family.50}, {sys.font-family.fallback}",
         "type": "text"
       },
       "mono": {
-        "value": "\"IBM Plex Mono\", \"Roboto Mono\", monospace",
+        "value": "{base.font-family.100}, \"Roboto Mono\", monospace",
         "type": "text"
       }
     },
