@@ -156,7 +156,7 @@
       "overlay": {
         "hover": {
           "default": {
-            "value": "{palette.slate.500}",
+            "value": "{palette.slate.A50}",
             "type": "color",
             "description": "Hover state overlay for interactive containers",
             "deprecatedValues": {}
@@ -248,7 +248,7 @@
       },
       "overlay": {
         "hover": {
-          "value": "{palette.neutral.1000}",
+          "value": "{palette.neutral.A200}",
           "type": "color",
           "description": "Hover overlay for accent-colored elements",
           "deprecatedValues": {}
