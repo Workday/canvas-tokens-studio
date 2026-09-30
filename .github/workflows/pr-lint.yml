@@ -31,10 +31,6 @@ jobs:
           PR_TITLE: ${{github.event.pull_request.title}}
           TOKENS_CHANGED: ${{steps.changed_files.outputs.changed_files}}
         run: |
-          # Get PR title
-          PR_TITLE="${{env.PR_TITLE}}"
-          TOKENS_CHANGED="${{env.TOKENS_CHANGED}}"
-
           # If tokens changed, PR title must start with feat
           if [ -n "$TOKENS_CHANGED" ]; then
             if [[ ! "$PR_TITLE" =~ ^(feat|fix) ]]; then
